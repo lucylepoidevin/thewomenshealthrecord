@@ -95,7 +95,7 @@ export default function Chapter1() {
     ]} />, 'flow'),
     T('for-you', <>
       <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">What this means for you.</p>
-      <p>Start with the drugs you actually take. If one was approved since 2015, it is in the box below: how many women were in the trials that approved it, and what the post-market reports look like.</p>
+      <p>Start with the drugs you actually take. If one was approved since 2015, it is in the box below: how many women were in the trials that approved it, and what the post-market reports look like. Any other drug can be checked live against the FDA's adverse-event reports.</p>
     </>),
     F('lookup', <DrugLookup drugs={data.drugs} minReports={MIN_REPORTS} />, 'flow'),
     T('for-you-2', <>
@@ -108,7 +108,6 @@ export default function Chapter1() {
       <p>And if something goes wrong on a drug, report it. FAERS exists because patients and clinicians file reports through the FDA's <a href="https://www.fda.gov/safety/medwatch-fda-safety-information-and-adverse-event-reporting-program" target="_blank" rel="noreferrer">MedWatch</a> programme, and the share of those reports that come from women is one of the few post-market signals anyone has.<Cite id="openfda-faers" /> Every chart on this page was built from reports somebody took the time to file.</p>
       <p>None of this is medical advice. Bring the numbers to your doctor, not a conclusion.</p>
     </>),
-    T('next', <p className="text-ink-2">New chapters are announced on <a href="https://substack.com/@thewomenshealthrecord" target="_blank" rel="noreferrer">Substack</a>.</p>),
   ]
 
   return (
