@@ -1,0 +1,48 @@
+[
+ {
+  "id": "fda-dsc-2013",
+  "title": "Drug Safety Communication: Risk of next-morning impairment after use of insomnia drugs; FDA requires lower recommended doses for certain drugs containing zolpidem",
+  "publisher": "U.S. Food and Drug Administration, 10 January 2013",
+  "url": "https://www.fda.gov/files/drugs/published/Drug-Safety-Communication--Risk-of-next-morning-impairment-after-use-of-insomnia-drugs--FDA-requires-lower-recommended-doses-for-certain-drugs-containing-zolpidem-%28Ambien--Ambien-CR--Edluar--and-Zolpimist%29.pdf",
+  "retrieved": "2026-10-05"
+ },
+ {
+  "id": "fda-qa-2013",
+  "title": "Questions and Answers: Risk of next-morning impairment after use of insomnia drugs",
+  "publisher": "U.S. Food and Drug Administration",
+  "url": "https://www.fda.gov/drugs/drug-safety-and-availability/questions-and-answers-risk-next-morning-impairment-after-use-insomnia-drugs-fda-requires-lower",
+  "retrieved": "2026-10-05"
+ },
+ {
+  "id": "fda-snapshots",
+  "title": "Drug Trials Snapshots",
+  "publisher": "U.S. Food and Drug Administration",
+  "url": "https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots",
+  "retrieved": "2026-10-05",
+  "note": "443 individual snapshot pages parsed; per-drug URLs are linked from the table."
+ },
+ {
+  "id": "fda-snapshots-archive",
+  "title": "Drug Trials Snapshots index, archived capture of 27 January 2023",
+  "publisher": "Internet Archive Wayback Machine",
+  "url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots",
+  "retrieved": "2026-10-05",
+  "note": "Used for 2015\u20132022 snapshot pages no longer on the live FDA index."
+ },
+ {
+  "id": "openfda-faers",
+  "title": "openFDA Drug Adverse Event API (FDA Adverse Event Reporting System)",
+  "publisher": "U.S. Food and Drug Administration",
+  "url": "https://open.fda.gov/apis/drug/event/",
+  "retrieved": "2026-10-05",
+  "note": "Counts of reports by patient sex per drug; data release 2026-07-30. Reports of unknown sex excluded."
+ },
+ {
+  "id": "carmeli-2023",
+  "title": "FDA Drug Trials Snapshots Data Explorer (dataset, 2015\u20132021)",
+  "publisher": "Carmeli A. et al., Patterns (2023); GitHub / Zenodo record 7373942",
+  "url": "https://github.com/arielcarmeli/FDA-Drug-Trial-Snapshots-Data-Explorer",
+  "retrieved": "2026-10-05",
+  "note": "Used to cross-check our parsed figures, and as the enrollment source for 163 2015\u20132021 drugs whose archived FDA page could not be retrieved or parsed (flagged per drug in the data file)."
+ }
+]

@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-blush: #FDF2F5;
+  --color-blush-2: #F9E1E8;
+  --color-blush-3: #F3CBD8;
+  --color-rose: #E05A8A;
+  --color-berry: #8B1E4B;
+  --color-ink: #2A1F26;
+  --color-ink-2: #5E4F58;
+  --color-ink-3: #8C7A84;
+  --color-bronze: #8A7A2A;
+  --color-hairline: #EBD5DC;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+}
+
+:root {
+  /* chart tokens: female = rose, male = bronze (validated colorblind-safe pair) */
+  --c-female: #E05A8A;
+  --c-male: #8A7A2A;
+  --c-emphasis: #8B1E4B;
+  --c-muted: #C9B3BC;
+  --c-grid: #EBD5DC;
+  --c-text: #2A1F26;
+  --c-text-2: #5E4F58;
+  --c-surface: #FDF2F5;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  background: var(--color-blush);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, .display { font-family: var(--font-display); }
+.prose-step p + p { margin-top: 0.9rem; }
+.prose-step a { color: var(--color-berry); text-decoration: underline; text-underline-offset: 3px; }
+sup.cite a { color: var(--color-berry); text-decoration: none; font-weight: 600; }
+.chart-tooltip {
+  position: absolute; pointer-events: none; z-index: 20;
+  background: #fff; border: 1px solid var(--color-hairline); border-radius: 8px;
+  padding: 8px 10px; font-size: 12px; line-height: 1.35; color: var(--color-ink);
+  box-shadow: 0 6px 20px rgba(139, 30, 75, 0.12); max-width: 240px;
+}
+svg text { font-family: var(--font-body); }
+.table-wrap { overflow-x: auto; }
+.th-sort { cursor: pointer; user-select: none; }
+.th-sort:hover { color: var(--color-berry); }
