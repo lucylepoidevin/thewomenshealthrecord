@@ -2,9 +2,10 @@
 // Usage: node scripts/screenshots.mjs [baseUrl]   (dev server must be running)
 import { chromium } from 'playwright'
 import { mkdirSync } from 'node:fs'
+import { fileURLToPath } from 'node:url'
 
 const base = process.argv[2] ?? 'http://localhost:5173/thewomenshealthrecord/'
-const out = new URL('../../press/', import.meta.url).pathname
+const out = fileURLToPath(new URL('../../press/', import.meta.url))
 mkdirSync(out, { recursive: true })
 
 const browser = await chromium.launch()
