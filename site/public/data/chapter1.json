@@ -190,7 +190,7 @@
    "year": 2016,
    "indication": "EXONDYS 51 is a drug for the treatment of a particular type of Duchenne muscular dystrophy (DMD). It is to be used only in patients who have a specific mutation of the dystrophin gene. Duchenne muscular dystrophy is a rare disease that affects primarily boys. It is caused by a low level of one muscle protein (dystrophin). The lack of dystrophin causes progressive muscle weakness and premature death.",
    "category": "Neurology",
-   "trial_n": 13,
+   "trial_n": 25,
    "trial_female_pct": 0.0,
    "faers_n": 2317,
    "faers_female_pct": 1.7,
@@ -422,40 +422,6 @@
    "enrollment_source": "fda-snapshot"
   },
   {
-   "slug": "drug-trials-snapshots-rukobia",
-   "brand": "Rukobia",
-   "generic": "fostemsavir",
-   "year": 2020,
-   "indication": "RUKOBIA is a drug for the treatment of human immunodeficiency virus-1 (HIV-1) infection in adults who have received several anti-HIV-1 regimens in the past, and have HIV-1 virus that is resistant to many antiretroviral medicines, and who are failing their current antiretroviral therapy because it is not effective, have intolerable side effects or other safety problems.",
-   "category": "Infectious disease",
-   "trial_n": 99,
-   "trial_female_pct": 10.1,
-   "faers_n": 143,
-   "faers_female_pct": 19.6,
-   "faers_serious_n": null,
-   "faers_serious_female_pct": null,
-   "gap": 9.5,
-   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-rukobia",
-   "enrollment_source": "fda-snapshot"
-  },
-  {
-   "slug": "drug-trials-snapshots-jaypirca",
-   "brand": "Jaypirca",
-   "generic": "pirtobrutinib",
-   "year": 2023,
-   "indication": "JAYPIRCA is a Bruton tyrosine kinase (BTK) inhibitor that is used to treat a form of cancer called mantle cell lymphoma (MCL). It is to be used in adult patients whose cancer came back after or did not respond to at least two prior treatment regimens which included a BTK inhibitor.",
-   "category": "Oncology",
-   "trial_n": 223,
-   "trial_female_pct": 11.7,
-   "faers_n": 648,
-   "faers_female_pct": 34.3,
-   "faers_serious_n": null,
-   "faers_serious_female_pct": null,
-   "gap": 22.6,
-   "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-jaypirca",
-   "enrollment_source": "fda-snapshot"
-  },
-  {
    "slug": "drug-trials-snapshots-anktiva",
    "brand": "Anktiva",
    "generic": "nogapendekin alfa inbakicept-pmnl",
@@ -674,6 +640,23 @@
    "faers_serious_female_pct": null,
    "gap": 17.2,
    "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-calquence",
+   "enrollment_source": "fda-snapshot"
+  },
+  {
+   "slug": "drug-trials-snapshots-jaypirca",
+   "brand": "Jaypirca",
+   "generic": "pirtobrutinib",
+   "year": 2023,
+   "indication": "JAYPIRCA is a Bruton tyrosine kinase (BTK) inhibitor that is used to treat a form of cancer called mantle cell lymphoma (MCL). It is to be used in adult patients whose cancer came back after or did not respond to at least two prior treatment regimens which included a BTK inhibitor.",
+   "category": "Oncology",
+   "trial_n": 248,
+   "trial_female_pct": 20.6,
+   "faers_n": 648,
+   "faers_female_pct": 34.3,
+   "faers_serious_n": null,
+   "faers_serious_female_pct": null,
+   "gap": 13.7,
+   "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-jaypirca",
    "enrollment_source": "fda-snapshot"
   },
   {
@@ -1014,6 +997,23 @@
    "faers_serious_female_pct": null,
    "gap": null,
    "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-artesunate",
+   "enrollment_source": "fda-snapshot"
+  },
+  {
+   "slug": "drug-trials-snapshots-rukobia",
+   "brand": "Rukobia",
+   "generic": "fostemsavir",
+   "year": 2020,
+   "indication": "RUKOBIA is a drug for the treatment of human immunodeficiency virus-1 (HIV-1) infection in adults who have received several anti-HIV-1 regimens in the past, and have HIV-1 virus that is resistant to many antiretroviral medicines, and who are failing their current antiretroviral therapy because it is not effective, have intolerable side effects or other safety problems.",
+   "category": "Infectious disease",
+   "trial_n": 272,
+   "trial_female_pct": 26.5,
+   "faers_n": 143,
+   "faers_female_pct": 19.6,
+   "faers_serious_n": null,
+   "faers_serious_female_pct": null,
+   "gap": -6.9,
+   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-rukobia",
    "enrollment_source": "fda-snapshot"
   },
   {
@@ -1694,6 +1694,23 @@
    "faers_serious_female_pct": null,
    "gap": 16.6,
    "snapshot_url": "https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-aphexda",
+   "enrollment_source": "fda-snapshot"
+  },
+  {
+   "slug": "drug-trials-snapshots-detectnet",
+   "brand": "Detectnet",
+   "generic": "copper Cu 64 dotatate",
+   "year": 2020,
+   "indication": "DETECTNET is a drug for detection of the specific type of tumors called somatostatin receptor positive neuro-endocrine tumors (NETs) in adults. NETs are rare tumors that develop in certain hormone-producing cells of the body\u2019s neuro-endocrine system.",
+   "category": "Imaging & diagnostics",
+   "trial_n": 238,
+   "trial_female_pct": 35.3,
+   "faers_n": 35,
+   "faers_female_pct": 80.0,
+   "faers_serious_n": null,
+   "faers_serious_female_pct": null,
+   "gap": 44.7,
+   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-detectnet",
    "enrollment_source": "fda-snapshot"
   },
   {
@@ -2479,23 +2496,6 @@
    "enrollment_source": "fda-snapshot"
   },
   {
-   "slug": "drug-trials-snapshots-xolremdi",
-   "brand": "Xolremdi",
-   "generic": "mavorixafor",
-   "year": 2024,
-   "indication": "XOLREMDI is a prescription drug that increases the number of white blood cells released from the bone marrow into the blood. XOLREMDI is indicated for the treatment of adults and adolescents over the age of 12 years with WHIM (Warts, Hypogammaglobulinemia, Infection, and Myelokathexis) syndrome.",
-   "category": "Infectious disease",
-   "trial_n": 22,
-   "trial_female_pct": 40.9,
-   "faers_n": 8,
-   "faers_female_pct": 87.5,
-   "faers_serious_n": null,
-   "faers_serious_female_pct": null,
-   "gap": 46.6,
-   "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-xolremdi",
-   "enrollment_source": "fda-snapshot"
-  },
-  {
    "slug": "drug-trial-snapshot-braftovi",
    "brand": "Braftovi",
    "generic": "encorafenib",
@@ -2768,23 +2768,6 @@
    "enrollment_source": "fda-snapshot"
   },
   {
-   "slug": "drug-trials-snapshots-turalio",
-   "brand": "Turalio",
-   "generic": "pexidartinib",
-   "year": 2019,
-   "indication": "TURALIO is a drug used to treat adults with a tumor in the protective layer surrounding the tendons called Tenosynovial Giant Cell Tumor or TGCT. It should only be used in patients when the tumor limits daily activity, and if the tumor cannot be removed by surgery.",
-   "category": "Oncology",
-   "trial_n": 85,
-   "trial_female_pct": 42.4,
-   "faers_n": 646,
-   "faers_female_pct": 61.0,
-   "faers_serious_n": null,
-   "faers_serious_female_pct": null,
-   "gap": 18.6,
-   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-turalio",
-   "enrollment_source": "fda-snapshot"
-  },
-  {
    "slug": "drug-trials-snapshots-tecvayli",
    "brand": "Tecvayli",
    "generic": "teclistamab-cqyv",
@@ -2833,23 +2816,6 @@
    "faers_serious_female_pct": null,
    "gap": 19.4,
    "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-yartemlea",
-   "enrollment_source": "fda-snapshot"
-  },
-  {
-   "slug": "drug-trials-snapshots-inrebic",
-   "brand": "Inrebic",
-   "generic": "fedratinib",
-   "year": 2019,
-   "indication": "INREBIC is a drug used to treat adults with a rare type of bone marrow disorder called myelofibrosis. Myelofibrosis is a chronic disorder where scar tissue forms in the bone marrow and the production of the blood cells moves from the bone marrow to the spleen and liver, causing organ enlargement.",
-   "category": "Oncology",
-   "trial_n": 96,
-   "trial_female_pct": 42.7,
-   "faers_n": 1202,
-   "faers_female_pct": 48.8,
-   "faers_serious_n": null,
-   "faers_serious_female_pct": null,
-   "gap": 6.1,
-   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-inrebic",
    "enrollment_source": "fda-snapshot"
   },
   {
@@ -2918,6 +2884,23 @@
    "faers_serious_female_pct": null,
    "gap": 8.0,
    "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-cholbam-bile-acid-synthesis-disorders",
+   "enrollment_source": "fda-snapshot"
+  },
+  {
+   "slug": "drug-trials-snapshots-inrebic",
+   "brand": "Inrebic",
+   "generic": "fedratinib",
+   "year": 2019,
+   "indication": "INREBIC is a drug used to treat adults with a rare type of bone marrow disorder called myelofibrosis. Myelofibrosis is a chronic disorder where scar tissue forms in the bone marrow and the production of the blood cells moves from the bone marrow to the spleen and liver, causing organ enlargement.",
+   "category": "Oncology",
+   "trial_n": 192,
+   "trial_female_pct": 43.2,
+   "faers_n": 1202,
+   "faers_female_pct": 48.8,
+   "faers_serious_n": null,
+   "faers_serious_female_pct": null,
+   "gap": 5.6,
+   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-inrebic",
    "enrollment_source": "fda-snapshot"
   },
   {
@@ -3720,23 +3703,6 @@
    "enrollment_source": "fda-snapshot"
   },
   {
-   "slug": "drug-trials-snapshots-detectnet",
-   "brand": "Detectnet",
-   "generic": "copper Cu 64 dotatate",
-   "year": 2020,
-   "indication": "DETECTNET is a drug for detection of the specific type of tumors called somatostatin receptor positive neuro-endocrine tumors (NETs) in adults. NETs are rare tumors that develop in certain hormone-producing cells of the body\u2019s neuro-endocrine system.",
-   "category": "Imaging & diagnostics",
-   "trial_n": 175,
-   "trial_female_pct": 48.0,
-   "faers_n": 35,
-   "faers_female_pct": 80.0,
-   "faers_serious_n": null,
-   "faers_serious_female_pct": null,
-   "gap": 32.0,
-   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-detectnet",
-   "enrollment_source": "fda-snapshot"
-  },
-  {
    "slug": "drug-trials-snapshots-repatha",
    "brand": "Repatha",
    "generic": "evolocumab",
@@ -3873,6 +3839,23 @@
    "enrollment_source": "fda-snapshot"
   },
   {
+   "slug": "drug-trials-snapshot-briviact",
+   "brand": "Briviact",
+   "generic": null,
+   "year": 2016,
+   "indication": "BRIVIACT is a drug for the treatment of specific type of seizures called partial-onset seizures in patients 16 years of age and older with epilepsy. Epilepsy is a brain disorder that causes people to have recurring seizures. BRIVIACT is to be used in combination with other anti-epileptic drugs that treat the same type of seizures.",
+   "category": "Neurology",
+   "trial_n": 1099,
+   "trial_female_pct": 49.0,
+   "faers_n": 6682,
+   "faers_female_pct": 54.0,
+   "faers_serious_n": null,
+   "faers_serious_female_pct": null,
+   "gap": 5.0,
+   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-briviact",
+   "enrollment_source": "fda-snapshot"
+  },
+  {
    "slug": "drug-trials-snapshot-lenvima",
    "brand": "Lenvima",
    "generic": "N=261",
@@ -3989,23 +3972,6 @@
    "faers_serious_female_pct": null,
    "gap": 24.8,
    "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-sunosi",
-   "enrollment_source": "fda-snapshot"
-  },
-  {
-   "slug": "drug-trials-snapshot-briviact",
-   "brand": "Briviact",
-   "generic": null,
-   "year": 2016,
-   "indication": "BRIVIACT is a drug for the treatment of specific type of seizures called partial-onset seizures in patients 16 years of age and older with epilepsy. Epilepsy is a brain disorder that causes people to have recurring seizures. BRIVIACT is to be used in combination with other anti-epileptic drugs that treat the same type of seizures.",
-   "category": "Neurology",
-   "trial_n": 1558,
-   "trial_female_pct": 49.3,
-   "faers_n": 6682,
-   "faers_female_pct": 54.0,
-   "faers_serious_n": null,
-   "faers_serious_female_pct": null,
-   "gap": 4.7,
-   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-briviact",
    "enrollment_source": "fda-snapshot"
   },
   {
@@ -4740,23 +4706,6 @@
    "enrollment_source": "fda-snapshot"
   },
   {
-   "slug": "drug-trials-snapshots-elucirem",
-   "brand": "Elucirem",
-   "generic": "gadopiclenol",
-   "year": 2022,
-   "indication": "ELUCIREM is a gadolinium-based contrast agent that is used during magnetic resonance imaging (MRI) in adult and pediatric patients aged 2 years and older to detect and visualize lesions with abnormal blood supply in the brain, spine, head and neck, thorax, abdomen, pelvis, and musculoskeletal system.",
-   "category": "Imaging & diagnostics",
-   "trial_n": 1047,
-   "trial_female_pct": 54.0,
-   "faers_n": 70,
-   "faers_female_pct": 72.9,
-   "faers_serious_n": null,
-   "faers_serious_female_pct": null,
-   "gap": 18.9,
-   "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-elucirem",
-   "enrollment_source": "fda-snapshot"
-  },
-  {
    "slug": "drug-trials-snapshot-ebanga",
    "brand": "Ebanga",
    "generic": "ansuvimab-zykl",
@@ -4839,6 +4788,23 @@
    "faers_serious_female_pct": null,
    "gap": -1.6,
    "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-vanflyta",
+   "enrollment_source": "fda-snapshot"
+  },
+  {
+   "slug": "drug-trials-snapshots-elucirem",
+   "brand": "Elucirem",
+   "generic": "gadopiclenol",
+   "year": 2022,
+   "indication": "ELUCIREM is a gadolinium-based contrast agent that is used during magnetic resonance imaging (MRI) in adult and pediatric patients aged 2 years and older to detect and visualize lesions with abnormal blood supply in the brain, spine, head and neck, thorax, abdomen, pelvis, and musculoskeletal system.",
+   "category": "Imaging & diagnostics",
+   "trial_n": 1755,
+   "trial_female_pct": 54.6,
+   "faers_n": 70,
+   "faers_female_pct": 72.9,
+   "faers_serious_n": null,
+   "faers_serious_female_pct": null,
+   "gap": 18.3,
+   "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-elucirem",
    "enrollment_source": "fda-snapshot"
   },
   {
@@ -5199,23 +5165,6 @@
    "enrollment_source": "fda-snapshot"
   },
   {
-   "slug": "drug-trials-snapshots-kisunla",
-   "brand": "Kisunla",
-   "generic": "donanemab-azbt",
-   "year": 2024,
-   "indication": "KISUNLA is an amyloid beta-directed antibody used to treat people with Alzheimer\u2019s disease. Alzheimer\u2019s disease is a common degenerative disease of the brain that starts with mild thinking, judging, and memory problems and progresses to dementia and death.",
-   "category": "Neurology",
-   "trial_n": 1751,
-   "trial_female_pct": 57.2,
-   "faers_n": 1961,
-   "faers_female_pct": 61.7,
-   "faers_serious_n": null,
-   "faers_serious_female_pct": null,
-   "gap": 4.4,
-   "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-kisunla",
-   "enrollment_source": "fda-snapshot"
-  },
-  {
    "slug": "drug-trials-snapshots-zinplava",
    "brand": "Zinplava",
    "generic": "bezlotoxumab",
@@ -5264,6 +5213,23 @@
    "faers_serious_female_pct": null,
    "gap": 17.6,
    "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-bizengri",
+   "enrollment_source": "fda-snapshot"
+  },
+  {
+   "slug": "drug-trials-snapshots-kisunla",
+   "brand": "Kisunla",
+   "generic": "donanemab-azbt",
+   "year": 2024,
+   "indication": "KISUNLA is an amyloid beta-directed antibody used to treat people with Alzheimer\u2019s disease. Alzheimer\u2019s disease is a common degenerative disease of the brain that starts with mild thinking, judging, and memory problems and progresses to dementia and death.",
+   "category": "Neurology",
+   "trial_n": 1758,
+   "trial_female_pct": 57.4,
+   "faers_n": 1961,
+   "faers_female_pct": 61.7,
+   "faers_serious_n": null,
+   "faers_serious_female_pct": null,
+   "gap": 4.3,
+   "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-kisunla",
    "enrollment_source": "fda-snapshot"
   },
   {
@@ -5335,23 +5301,6 @@
    "enrollment_source": "fda-snapshot"
   },
   {
-   "slug": "drug-trials-snapshots-xenpozyme",
-   "brand": "Xenpozyme",
-   "generic": "olipudase alfa-rpcp",
-   "year": 2022,
-   "indication": "XENPOZYME is an enzyme replacement therapy that is used for the treatment of non-central nervous system manifestations of acid sphingomyelinase deficiency (ASMD) in adult and pediatric patients. ASMD is a rare disease where patients have decreased activity of the enzyme sphingomyelinase, which breaks down a fatty lipid called sphingomyelin.",
-   "category": "Cardiovascular",
-   "trial_n": 38,
-   "trial_female_pct": 57.9,
-   "faers_n": 109,
-   "faers_female_pct": 64.2,
-   "faers_serious_n": null,
-   "faers_serious_female_pct": null,
-   "gap": 6.3,
-   "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-xenpozyme",
-   "enrollment_source": "fda-snapshot"
-  },
-  {
    "slug": "drug-trials-snapshots-reblozyl",
    "brand": "Reblozyl",
    "generic": "luspatercept-aamt",
@@ -5366,6 +5315,23 @@
    "faers_serious_female_pct": null,
    "gap": -14.7,
    "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-reblozyl",
+   "enrollment_source": "fda-snapshot"
+  },
+  {
+   "slug": "drug-trials-snapshots-xolremdi",
+   "brand": "Xolremdi",
+   "generic": "mavorixafor",
+   "year": 2024,
+   "indication": "XOLREMDI is a prescription drug that increases the number of white blood cells released from the bone marrow into the blood. XOLREMDI is indicated for the treatment of adults and adolescents over the age of 12 years with WHIM (Warts, Hypogammaglobulinemia, Infection, and Myelokathexis) syndrome.",
+   "category": "Infectious disease",
+   "trial_n": 31,
+   "trial_female_pct": 58.1,
+   "faers_n": 8,
+   "faers_female_pct": 87.5,
+   "faers_serious_n": null,
+   "faers_serious_female_pct": null,
+   "gap": 29.4,
+   "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-xolremdi",
    "enrollment_source": "fda-snapshot"
   },
   {
@@ -5485,6 +5451,23 @@
    "faers_serious_female_pct": null,
    "gap": 15.8,
    "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-mayzent",
+   "enrollment_source": "fda-snapshot"
+  },
+  {
+   "slug": "drug-trials-snapshots-turalio",
+   "brand": "Turalio",
+   "generic": "pexidartinib",
+   "year": 2019,
+   "indication": "TURALIO is a drug used to treat adults with a tumor in the protective layer surrounding the tendons called Tenosynovial Giant Cell Tumor or TGCT. It should only be used in patients when the tumor limits daily activity, and if the tumor cannot be removed by surgery.",
+   "category": "Oncology",
+   "trial_n": 120,
+   "trial_female_pct": 59.2,
+   "faers_n": 646,
+   "faers_female_pct": 61.0,
+   "faers_serious_n": null,
+   "faers_serious_female_pct": null,
+   "gap": 1.8,
+   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-turalio",
    "enrollment_source": "fda-snapshot"
   },
   {
@@ -5811,6 +5794,23 @@
    "enrollment_source": "fda-snapshot"
   },
   {
+   "slug": "drug-trials-snapshots-xenpozyme",
+   "brand": "Xenpozyme",
+   "generic": "olipudase alfa-rpcp",
+   "year": 2022,
+   "indication": "XENPOZYME is an enzyme replacement therapy that is used for the treatment of non-central nervous system manifestations of acid sphingomyelinase deficiency (ASMD) in adult and pediatric patients. ASMD is a rare disease where patients have decreased activity of the enzyme sphingomyelinase, which breaks down a fatty lipid called sphingomyelin.",
+   "category": "Cardiovascular",
+   "trial_n": 42,
+   "trial_female_pct": 61.9,
+   "faers_n": 109,
+   "faers_female_pct": 64.2,
+   "faers_serious_n": null,
+   "faers_serious_female_pct": null,
+   "gap": 2.3,
+   "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-xenpozyme",
+   "enrollment_source": "fda-snapshot"
+  },
+  {
    "slug": "drug-trials-snapshot-cinqair",
    "brand": "Cinqair",
    "generic": null,
@@ -6114,6 +6114,23 @@
    "faers_serious_female_pct": null,
    "gap": 10.1,
    "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-brinsupri",
+   "enrollment_source": "fda-snapshot"
+  },
+  {
+   "slug": "drug-trials-snapshots-ogsiveo",
+   "brand": "Ogsiveo",
+   "generic": "nirogacestat",
+   "year": 2023,
+   "indication": "OGSIVEO is a gamma secretase inhibitor indicated for adult patients with progressing desmoid tumors who require systemic treatment.",
+   "category": "Oncology",
+   "trial_n": 142,
+   "trial_female_pct": 64.8,
+   "faers_n": 704,
+   "faers_female_pct": 66.5,
+   "faers_serious_n": null,
+   "faers_serious_female_pct": null,
+   "gap": 1.7,
+   "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-ogsiveo",
    "enrollment_source": "fda-snapshot"
   },
   {
@@ -6440,23 +6457,6 @@
    "enrollment_source": "fda-snapshot"
   },
   {
-   "slug": "drug-trials-snapshots-izervay",
-   "brand": "Izervay",
-   "generic": "avacincaptad pegol intravitreal solution (ahy-zer-vey",
-   "year": 2023,
-   "indication": "IZERVAY is an RNA aptamer, a PEGylated oligonucleotide that is approved for the treatment of geographic atrophy (GA) secondary to age-related macular degeneration (AMD).",
-   "category": "Ophthalmology",
-   "trial_n": 910,
-   "trial_female_pct": 69.3,
-   "faers_n": null,
-   "faers_female_pct": null,
-   "faers_serious_n": null,
-   "faers_serious_female_pct": null,
-   "gap": null,
-   "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-izervay",
-   "enrollment_source": "fda-snapshot"
-  },
-  {
    "slug": "drug-trials-snapshots-yondelis",
    "brand": "Yondelis",
    "generic": "trabectedin",
@@ -6522,6 +6522,23 @@
    "faers_serious_female_pct": null,
    "gap": 3.6,
    "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-tepezza",
+   "enrollment_source": "fda-snapshot"
+  },
+  {
+   "slug": "drug-trials-snapshot-avycaz-cuti",
+   "brand": "Avycaz",
+   "generic": null,
+   "year": 2015,
+   "indication": "AVYCAZ is a drug used to treat adults who have a serious infection in their urinary tract system called a complicated urinary tract infection (abbreviated as cUTI). It should be used only when few or no other treatment options are available. AVYCAZ is also approved for patients with a serious infection in their belly called a complicated intra-abdominal infection. This is discussed in a separate Snapshot.",
+   "category": "Infectious disease",
+   "trial_n": 135,
+   "trial_female_pct": 74.1,
+   "faers_n": 96,
+   "faers_female_pct": 58.3,
+   "faers_serious_n": null,
+   "faers_serious_female_pct": null,
+   "gap": -15.7,
+   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-avycaz-cuti",
    "enrollment_source": "fda-snapshot"
   },
   {
@@ -6661,23 +6678,6 @@
    "enrollment_source": "fda-snapshot"
   },
   {
-   "slug": "drug-trials-snapshots-ogsiveo",
-   "brand": "Ogsiveo",
-   "generic": "nirogacestat",
-   "year": 2023,
-   "indication": "OGSIVEO is a gamma secretase inhibitor indicated for adult patients with progressing desmoid tumors who require systemic treatment.",
-   "category": "Oncology",
-   "trial_n": 117,
-   "trial_female_pct": 78.6,
-   "faers_n": 704,
-   "faers_female_pct": 66.5,
-   "faers_serious_n": null,
-   "faers_serious_female_pct": null,
-   "gap": -12.2,
-   "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-ogsiveo",
-   "enrollment_source": "fda-snapshot"
-  },
-  {
    "slug": "drug-trials-snapshots-olinvyk",
    "brand": "Olinvyk",
    "generic": "oliceridine",
@@ -6763,6 +6763,23 @@
    "enrollment_source": "fda-snapshot"
   },
   {
+   "slug": "drug-trials-snapshots-izervay",
+   "brand": "Izervay",
+   "generic": "avacincaptad pegol intravitreal solution (ahy-zer-vey",
+   "year": 2023,
+   "indication": "IZERVAY is an RNA aptamer, a PEGylated oligonucleotide that is approved for the treatment of geographic atrophy (GA) secondary to age-related macular degeneration (AMD).",
+   "category": "Ophthalmology",
+   "trial_n": 783,
+   "trial_female_pct": 80.6,
+   "faers_n": null,
+   "faers_female_pct": null,
+   "faers_serious_n": null,
+   "faers_serious_female_pct": null,
+   "gap": null,
+   "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-izervay",
+   "enrollment_source": "fda-snapshot"
+  },
+  {
    "slug": "drug-trials-snapshots-olumiant",
    "brand": "Olumiant",
    "generic": "baricitinib",
@@ -6831,6 +6848,23 @@
    "enrollment_source": "fda-snapshot"
   },
   {
+   "slug": "drug-trials-snapshots-enspryng",
+   "brand": "Enspryng",
+   "generic": "satralizumab-mwge",
+   "year": 2020,
+   "indication": "ENSPRYNG is used to treat neuromyelitis optica spectrum disorder (NMOSD) in adult patients with a particular antibody (who are anti-aquaporin-4 or AQP4 antibody positive). NMOSD is a rare disease that most commonly affects the optic nerves and spinal cord. It is characterized by relapses (attacks) that cause vision loss and serious disability which can lead to death.",
+   "category": "Neurology",
+   "trial_n": 127,
+   "trial_female_pct": 82.7,
+   "faers_n": 1501,
+   "faers_female_pct": 87.3,
+   "faers_serious_n": null,
+   "faers_serious_female_pct": null,
+   "gap": 4.6,
+   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-enspryng",
+   "enrollment_source": "fda-snapshot"
+  },
+  {
    "slug": "drug-trial-snapshot-xeglyze",
    "brand": "Xeglyze",
    "generic": "abametapir",
@@ -6879,23 +6913,6 @@
    "faers_serious_female_pct": null,
    "gap": 5.2,
    "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-zavzpret",
-   "enrollment_source": "fda-snapshot"
-  },
-  {
-   "slug": "drug-trials-snapshot-avycaz-cuti",
-   "brand": "Avycaz",
-   "generic": null,
-   "year": 2015,
-   "indication": "AVYCAZ is a drug used to treat adults who have a serious infection in their urinary tract system called a complicated urinary tract infection (abbreviated as cUTI). It should be used only when few or no other treatment options are available. AVYCAZ is also approved for patients with a serious infection in their belly called a complicated intra-abdominal infection. This is discussed in a separate Snapshot.",
-   "category": "Infectious disease",
-   "trial_n": 118,
-   "trial_female_pct": 84.7,
-   "faers_n": 96,
-   "faers_female_pct": 58.3,
-   "faers_serious_n": null,
-   "faers_serious_female_pct": null,
-   "gap": -26.4,
-   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-avycaz-cuti",
    "enrollment_source": "fda-snapshot"
   },
   {
@@ -7103,23 +7120,6 @@
    "enrollment_source": "fda-snapshot"
   },
   {
-   "slug": "drug-trials-snapshots-enspryng",
-   "brand": "Enspryng",
-   "generic": "satralizumab-mwge",
-   "year": 2020,
-   "indication": "ENSPRYNG is used to treat neuromyelitis optica spectrum disorder (NMOSD) in adult patients with a particular antibody (who are anti-aquaporin-4 or AQP4 antibody positive). NMOSD is a rare disease that most commonly affects the optic nerves and spinal cord. It is characterized by relapses (attacks) that cause vision loss and serious disability which can lead to death.",
-   "category": "Neurology",
-   "trial_n": 116,
-   "trial_female_pct": 90.5,
-   "faers_n": 1501,
-   "faers_female_pct": 87.3,
-   "faers_serious_n": null,
-   "faers_serious_female_pct": null,
-   "gap": -3.2,
-   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-enspryng",
-   "enrollment_source": "fda-snapshot"
-  },
-  {
    "slug": "drug-trials-snapshots-ocaliva",
    "brand": "Ocaliva",
    "generic": "obeticholic acid",
@@ -7151,23 +7151,6 @@
    "faers_serious_female_pct": null,
    "gap": -0.5,
    "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-jeuveau",
-   "enrollment_source": "fda-snapshot"
-  },
-  {
-   "slug": "drug-trials-snapshots-letybo",
-   "brand": "Letybo",
-   "generic": "letibotulinumtoxinA",
-   "year": 2024,
-   "indication": "LETYBO is a drug used in adults to temporarily improve the appearance of moderate to severe glabellar lines (wrinkles between the eyebrows).",
-   "category": "Ophthalmology",
-   "trial_n": 1271,
-   "trial_female_pct": 91.3,
-   "faers_n": 230,
-   "faers_female_pct": 89.6,
-   "faers_serious_n": null,
-   "faers_serious_female_pct": null,
-   "gap": -1.8,
-   "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-letybo",
    "enrollment_source": "fda-snapshot"
   },
   {
@@ -7222,6 +7205,23 @@
    "enrollment_source": "fda-snapshot"
   },
   {
+   "slug": "drug-trials-snapshots-truqap",
+   "brand": "Truqap",
+   "generic": "capivasertib",
+   "year": 2023,
+   "indication": ".",
+   "category": "Other",
+   "trial_n": 294,
+   "trial_female_pct": 97.6,
+   "faers_n": null,
+   "faers_female_pct": null,
+   "faers_serious_n": null,
+   "faers_serious_female_pct": null,
+   "gap": null,
+   "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-truqap",
+   "enrollment_source": "fda-snapshot"
+  },
+  {
    "slug": "drug-trial-snapshot-talzenna",
    "brand": "Talzenna",
    "generic": "talazoparib",
@@ -7236,6 +7236,23 @@
    "faers_serious_female_pct": null,
    "gap": -49.2,
    "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/resources-information-approved-drugs/drug-trial-snapshot-talzenna",
+   "enrollment_source": "fda-snapshot"
+  },
+  {
+   "slug": "drug-trials-snapshots-letybo",
+   "brand": "Letybo",
+   "generic": "letibotulinumtoxinA",
+   "year": 2024,
+   "indication": "LETYBO is a drug used in adults to temporarily improve the appearance of moderate to severe glabellar lines (wrinkles between the eyebrows).",
+   "category": "Ophthalmology",
+   "trial_n": 1179,
+   "trial_female_pct": 98.5,
+   "faers_n": 230,
+   "faers_female_pct": 89.6,
+   "faers_serious_n": null,
+   "faers_serious_female_pct": null,
+   "gap": -8.9,
+   "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-letybo",
    "enrollment_source": "fda-snapshot"
   },
   {
@@ -7273,6 +7290,23 @@
    "enrollment_source": "fda-snapshot"
   },
   {
+   "slug": "drug-trials-snapshot-margenza",
+   "brand": "Margenza",
+   "generic": "margetuximab-cmkb",
+   "year": 2020,
+   "indication": "MARGENZA is a drug for treatment of metastatic HER2-positive breast cancer in adult patients who have been previously treated for their metastatic disease.",
+   "category": "Oncology",
+   "trial_n": 539,
+   "trial_female_pct": 98.9,
+   "faers_n": 21,
+   "faers_female_pct": 100.0,
+   "faers_serious_n": null,
+   "faers_serious_female_pct": null,
+   "gap": 1.1,
+   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-margenza",
+   "enrollment_source": "fda-snapshot"
+  },
+  {
    "slug": "drug-trial-snapshot-trodelvy",
    "brand": "Trodelvy",
    "generic": "sacituzumab govitecan-hziy",
@@ -7287,6 +7321,23 @@
    "faers_serious_female_pct": null,
    "gap": -5.5,
    "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-trodelvy",
+   "enrollment_source": "fda-snapshot"
+  },
+  {
+   "slug": "drug-trials-snapshot-enhertu",
+   "brand": "Enhertu",
+   "generic": "fam-trastuzumab deruxtecan-nxki",
+   "year": 2019,
+   "indication": "ENHERTU is a drug for treatment of adults with human epidermal growth factor receptor 2 (HER2)-positive breast cancer that has spread to other parts of the body (metastatic) or cannot not be removed by surgery. It should be used in patients who have been previously treated for their metastatic disease with at least two anti-HER2 regimens.",
+   "category": "Oncology",
+   "trial_n": 235,
+   "trial_female_pct": 99.1,
+   "faers_n": 8853,
+   "faers_female_pct": 87.7,
+   "faers_serious_n": null,
+   "faers_serious_female_pct": null,
+   "gap": -11.4,
+   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-enhertu",
    "enrollment_source": "fda-snapshot"
   },
   {
@@ -7307,40 +7358,6 @@
    "enrollment_source": "fda-snapshot"
   },
   {
-   "slug": "drug-trials-snapshots-truqap",
-   "brand": "Truqap",
-   "generic": "capivasertib",
-   "year": 2023,
-   "indication": ".",
-   "category": "Other",
-   "trial_n": 289,
-   "trial_female_pct": 99.3,
-   "faers_n": null,
-   "faers_female_pct": null,
-   "faers_serious_n": null,
-   "faers_serious_female_pct": null,
-   "gap": null,
-   "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-truqap",
-   "enrollment_source": "fda-snapshot"
-  },
-  {
-   "slug": "drug-trials-snapshot-margenza",
-   "brand": "Margenza",
-   "generic": "margetuximab-cmkb",
-   "year": 2020,
-   "indication": "MARGENZA is a drug for treatment of metastatic HER2-positive breast cancer in adult patients who have been previously treated for their metastatic disease.",
-   "category": "Oncology",
-   "trial_n": 536,
-   "trial_female_pct": 99.4,
-   "faers_n": 21,
-   "faers_female_pct": 100.0,
-   "faers_serious_n": null,
-   "faers_serious_female_pct": null,
-   "gap": 0.6,
-   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-margenza",
-   "enrollment_source": "fda-snapshot"
-  },
-  {
    "slug": "drug-trials-snapshots-inluriyo",
    "brand": "Inluriyo",
    "generic": "imlunestrant",
@@ -7355,23 +7372,6 @@
    "faers_serious_female_pct": null,
    "gap": 0.6,
    "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-inluriyo",
-   "enrollment_source": "fda-snapshot"
-  },
-  {
-   "slug": "drug-trials-snapshot-enhertu",
-   "brand": "Enhertu",
-   "generic": "fam-trastuzumab deruxtecan-nxki",
-   "year": 2019,
-   "indication": "ENHERTU is a drug for treatment of adults with human epidermal growth factor receptor 2 (HER2)-positive breast cancer that has spread to other parts of the body (metastatic) or cannot not be removed by surgery. It should be used in patients who have been previously treated for their metastatic disease with at least two anti-HER2 regimens.",
-   "category": "Oncology",
-   "trial_n": 234,
-   "trial_female_pct": 99.6,
-   "faers_n": 8853,
-   "faers_female_pct": 87.7,
-   "faers_serious_n": null,
-   "faers_serious_female_pct": null,
-   "gap": -11.9,
-   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-enhertu",
    "enrollment_source": "fda-snapshot"
   },
   {
@@ -7837,11 +7837,11 @@
  "summary": {
   "n_drugs": 459,
   "n_with_faers": 312,
-  "median_trial_female_pct": 49.1,
+  "median_trial_female_pct": 49.2,
   "n_under_30": 75,
-  "n_under_40": 129,
-  "n_gap_quadrant": 44,
-  "median_gap": 23.9,
+  "n_under_40": 130,
+  "n_gap_quadrant": 42,
+  "median_gap": 24.6,
   "years": [
    2015,
    2026

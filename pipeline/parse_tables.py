@@ -36,10 +36,14 @@ def _row_value(cells, has_total_col):
                 return (int(m.group().replace(",", "")), None)
         if len(pairs) == 1:
             return pairs[0]
-        last = pairs[-1]
-        rest = sum(n for n, _ in pairs[:-1])
-        if has_total_col or abs(last[0] - rest) <= 1:
-            return last
+        # a Total column is a pair equal to the sum of the (>=2) arm pairs before it,
+        # wherever it sits (a later cohort column may follow it)
+        for k in range(len(pairs) - 1, 1, -1):
+            for i in range(0, k - 1):
+                if pairs[k][0] == sum(n for n, _ in pairs[i:k]):
+                    return pairs[k]
+        if has_total_col and len(pairs) >= 3:
+            return pairs[-1]
         return (sum(n for n, _ in pairs), None)
     nums = []
     pct = None
