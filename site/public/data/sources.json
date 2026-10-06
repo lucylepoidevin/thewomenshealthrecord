@@ -19,7 +19,7 @@
   "publisher": "U.S. Food and Drug Administration",
   "url": "https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots",
   "retrieved": "2026-10-05",
-  "note": "451 individual snapshot pages parsed; per-drug URLs are linked from the table."
+  "note": "459 individual snapshot pages parsed; per-drug URLs are linked from the table."
  },
  {
   "id": "fda-snapshots-archive",
@@ -43,6 +43,6 @@
   "publisher": "Carmeli A. et al., Patterns (2023); GitHub / Zenodo record 7373942",
   "url": "https://github.com/arielcarmeli/FDA-Drug-Trial-Snapshots-Data-Explorer",
   "retrieved": "2026-10-05",
-  "note": "Used to cross-check our parsed figures, and as the enrollment source for 87 2015\u20132021 drugs whose archived FDA page could not be retrieved or parsed (flagged per drug in the data file)."
+  "note": "Used to cross-check our parsed figures, and as the enrollment source for 7 2015\u20132021 drugs whose archived FDA page could not be retrieved or parsed (flagged per drug in the data file)."
  }
 ]
