@@ -12,20 +12,21 @@ GAP = 15          # percentage points; mirrored in site/src/chapters/Chapter1.ts
 MIN_REPORTS = 100 # minimum sex-recorded FAERS reports for inclusion in scatter/table
 
 CATEGORIES = [
-    ("Oncology", r"cancer|tumou?r|leuk[ae]mia|lymphoma|myeloma|carcinoma|melanoma|sarcoma|neoplasm|metastatic|myelofibrosis|glioma"),
+    ("Imaging & diagnostics", r"imaging|diagnos|contrast agent|radiographic|visuali[sz]e|pet scan|radiopharm|tracer|detect(?:ion)? of"),
+    ("Immunology & dermatology", r"actinic keratosis|plaque psoriasis|atopic dermatitis|hidradenitis"),
+    ("Oncology", r"\bcancer|tumou?r|leuk[ae]mia|lymphoma|myeloma|carcinoma|melanoma|sarcoma|neoplasm|metastatic|myelofibrosis|glioma|mastocytosis"),
     ("Infectious disease", r"infection|hiv\b|hepatitis|covid|sars-cov|bacteri|viral|virus|malaria|tuberculosis|fung|pneumonia|influenza|chagas|smallpox|anthrax|mycobact"),
     ("Cardiovascular", r"heart|cardi|hypertension|cholesterol|lipid|atrial|stroke|thrombo|embol|coronary|angina|amyloidosis|transthyretin|hypotension|cardiomyopathy"),
     ("Neurology", r"seizure|epilep|migraine|parkinson|alzheimer|multiple sclerosis|\bals\b|lateral sclerosis|neuro|myasthenia|dystrophy|huntington|narcolepsy|tardive|rett|spinal muscular|friedreich|chorea|ataxia"),
     ("Psychiatry", r"schizophren|depress|bipolar|adhd|attention deficit|insomnia|anxiety|psychos|postpartum|sleep|binge"),
     ("Metabolic & endocrine", r"diabet|obes|weight|thyroid|growth hormone|lipodystrophy|acromegaly|cushing|hypoparathyroid|hypophosphat|phenylketon|urea cycle|fabry|gaucher|pompe|lysosomal|homocyst|cholestasis|fatty liver|steatohepatitis|nash\b|mash\b|achondroplasia"),
-    ("Immunology & dermatology", r"psoriasis|arthritis|dermatitis|lupus|crohn|colitis|eczema|urticaria|autoimmune|inflammat|alopecia|vitiligo|hidradenitis|spondylitis|eosinophilic|sjögren|sjogren|pemphigus|myositis|graft"),
-    ("Hematology", r"an[ae]mia|hemophilia|haemophilia|sickle|platelet|thrombocytop|neutropenia|blood|hemoglobin|beta thalassemia|thalassemia|iron|coagul|bleeding|hemolytic|paroxysmal nocturnal|von willebrand"),
+    ("Immunology & dermatology", r"psoriasis|arthritis|dermatitis|lupus|crohn|colitis|eczema|urticaria|autoimmune|inflammat|alopecia|vitiligo|hidradenitis|spondylitis|eosinophilic|sjögren|sjogren|pemphigus|myositis|graft|keratosis|\bskin\b|acne|rosacea"),
+    ("Hematology", r"an[ae]mia|hemophilia|haemophilia|sickle|platelet|thrombocytop|neutropenia|blood (?:cell|disorder|clot)|hemoglobin|thalassemia|iron overload|coagul|bleeding|hemolytic|paroxysmal nocturnal|von willebrand"),
     ("Respiratory", r"asthma|copd|pulmonary|cystic fibrosis|lung|bronch|respiratory|interstitial"),
     ("Women's health", r"contracept|menopaus|endometriosis|uterine|fibroid|pregnan|vaginal|vulvovaginal|hot flash|vasomotor|hypoactive sexual|preterm|postpartum"),
     ("Urology & nephrology", r"kidney|renal|bladder|urinary|prostat|erectile|dialysis|nephropathy|iga nephropathy|hyperkal|hyperoxaluria|cystinosis"),
     ("Ophthalmology", r"\beye|retin|macular|glaucoma|ocular|cornea|dry eye|myopia|uveitis|thyroid eye|vision"),
     ("Gastroenterology", r"constipation|bowel|gastro|reflux|nausea|vomiting|liver|biliary|cholangitis|pancrea|celiac|short bowel|diarrhea|crohn"),
-    ("Imaging & diagnostics", r"imaging|diagnos|detect|visuali[sz]|pet scan|contrast|radiopharm|tracer"),
 ]
 
 
@@ -130,6 +131,7 @@ def main():
         "generated": date.today().isoformat(),
         "faers_last_updated": z.get("last_updated") or next((faers[k].get("last_updated") for k in faers if faers[k].get("last_updated")), None),
         "zolpidem": {"female": zf, "male": zm, "unknown": zu, "total": zf + zm + zu},
+        "faers_overall": {k: int(num(faers["__all__"].get(k)) or 0) for k in ("female", "male", "unknown")} if "__all__" in faers else None,
         "pk": [
             {"label": "Immediate-release 10 mg", "female": 15, "male": 3},
             {"label": "Extended-release 12.5 mg", "female": 33, "male": 25},

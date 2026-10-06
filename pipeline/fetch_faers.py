@@ -58,6 +58,13 @@ def main():
             sys.stdout.flush()
     z = count_by_sex("patient.drug.openfda.generic_name", "zolpidem")
     rows.append({"slug": "zolpidem", "query": "generic", **(z or {})})
+    params = {"count": "patient.patientsex"}
+    if KEY:
+        params["api_key"] = KEY
+    j = fetch(API, params=params, as_json=True, sleep=0.3)
+    if j and "results" in j:
+        dd = {r["term"]: r["count"] for r in j["results"]}
+        rows.append({"slug": "__all__", "query": "all", "female": dd.get(2, 0), "male": dd.get(1, 0), "unknown": dd.get(0, 0), "last_updated": j.get("meta", {}).get("last_updated")})
     with open(f"{OUT}/faers_raw.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=["slug", "query", "female", "male", "unknown", "last_updated"])
         w.writeheader()

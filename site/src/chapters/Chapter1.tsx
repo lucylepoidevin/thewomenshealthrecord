@@ -35,18 +35,18 @@ export default function Chapter1() {
 
   const blocks: Block[] = [
     T('ambien', <>
-      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">In January 2013, the FDA cut the recommended dose of the most-prescribed sleeping pill in America in half. For women only.</p>
-      <p>Zolpidem, sold as Ambien, had been on the market for twenty years. The agency told prescribers to halve the dose for women: 10 mg became 5 mg for the immediate-release pill, 12.5 mg became 6.25 mg for the extended-release one.<Cite id="fda-dsc-2013" /> For men, the label said only to "consider" the lower dose.</p>
-      <p>The reason was in the blood. Women clear zolpidem more slowly. Eight hours after a standard 10 mg dose, around 15% of women still had enough of the drug in their blood to impair driving, against about 3% of men.<Cite id="fda-dsc-2013" /></p>
+      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">In January 2013, the FDA cut the recommended dose of one of America's most widely used sleeping pills in half. For women only.</p>
+      <p>Zolpidem, sold as Ambien, had been on the market for twenty years; in 2011 alone about nine million Americans filled a prescription for it, and 63% of them were women.<Cite id="fda-dsc-2013" /> The agency told manufacturers to halve the recommended dose for women: 10 mg became 5 mg for the immediate-release pill, 12.5 mg became 6.25 mg for the extended-release one. For men, the label was to say only that prescribers should "consider" the lower dose.<Cite id="fda-dsc-2013" /></p>
+      <p>The reason was in the blood. In the FDA's pharmacokinetic trials of the 10 mg dose, about 250 men and 250 women, roughly 15% of the women still had zolpidem levels above 50 ng/mL eight hours after taking it, against about 3% of the men. That is the level the FDA says appears capable of impairing driving.<Cite id="fda-dsc-2013" /></p>
     </>),
     F('pk', <Dumbbell rows={data.pk} title="Still impaired the next morning" subtitle="Share of patients with blood zolpidem above 50 ng/mL about 8 hours after dosing" source="Source: FDA Drug Safety Communication, 10 January 2013, pharmacokinetic data submitted by manufacturers." />),
     T('pk-text', <>
-      <p>The FDA's threshold for impairment is 50 nanograms per millilitre. The difference held at every dose it tested.<Cite id="fda-qa-2013" /></p>
-      <p>Nothing about this was discovered in 2013. The sex difference was measurable in the original trials. Nobody had been asked to look.</p>
+      <p>The difference held in every formulation the FDA reported: 33% of women against 25% of men on the 12.5 mg extended-release dose, and 15% against 5% even on the halved 6.25 mg dose.<Cite id="fda-dsc-2013" /></p>
+      <p>None of this required a new discovery. Intermezzo, a lower-dose zolpidem product approved in November 2011, already carried a lower recommended dose for women than for men.<Cite id="fda-dsc-2013" /> For the products most people were actually taking, the label caught up fourteen months later.</p>
     </>),
     T('snapshots', <>
       <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">Was Ambien a one-off?</p>
-      <p>Since 2015 the FDA has published a "Drug Trials Snapshot" for every new drug it approves, listing who was in the pivotal trials by sex, race and age.<Cite id="fda-snapshots" /></p>
+      <p>Since 2015 the FDA has published a "Drug Trials Snapshot" for each novel drug its drug centre approves, listing who was in the pivotal trials by sex, race and age.<Cite id="fda-snapshots" /></p>
       <p>We collected every snapshot, {s.n_drugs} of them across {s.years[0]} to {s.years[1]}, including the ones the FDA has since removed from its live index.<Cite id="fda-snapshots-archive" /> Each dot below is one drug, placed by the share of its trial participants who were women. The median drug was tested on a population that was {s.median_trial_female_pct.toFixed(0)}% women.</p>
     </>),
     F('beeswarm', <Beeswarm drugs={data.drugs} mode="low" title={`Who was in the trial, for ${s.n_drugs} new drugs`} subtitle={`Each dot is one FDA approval. In berry: the ${s.n_under_30} drugs approved on trials under 30% women. Hover for the drug.`} source={snapSrc} />, 'chart', true),
@@ -71,7 +71,7 @@ export default function Chapter1() {
     </>),
     T('caveats', <>
       <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">What this chart cannot say.</p>
-      <p>FAERS is voluntary. It records reports, not rates. If more women than men take a drug, more women will report problems with it even if the drug treats both sexes identically. Women also report adverse events more often than men in general.</p>
+      <p>FAERS is voluntary. It records reports, not rates. If more women than men take a drug, more women will report problems with it even if the drug treats both sexes identically. Women also report adverse events more often than men in general: across every report in the database with a recorded sex, {data.faers_overall ? (data.faers_overall.female / (data.faers_overall.female + data.faers_overall.male) * 100).toFixed(0) : '60'}% come from women.<Cite id="openfda-faers" /></p>
       <p>Zolpidem shows the limit cleanly: the FDA estimated that 63% of its patients were women,<Cite id="fda-dsc-2013" /> and women account for {zF.toFixed(0)}% of its {(z.female + z.male).toLocaleString()} sex-recorded reports. The reporting gap there is almost entirely usage. What proved the sex difference was blood-level data, not reports.</p>
     </>),
     F('zolpidem', (

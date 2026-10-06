@@ -63,7 +63,7 @@ export default function Beeswarm({ drugs, title, subtitle, source, mode, categor
                 <circle key={n.d.slug} cx={n.x} cy={n.y} r={highlightSlug === n.d.slug ? r + 3 : r} fill={colorOf(n.d)}
                   stroke="var(--c-surface)" strokeWidth={1}
                   style={{ transition: 'fill 400ms' }}
-                  onMouseEnter={() => setTip({ x: n.x + m.left, y: n.y + m.top, content: <><b>{n.d.brand}</b> ({n.d.year})<br />{n.d.trial_female_pct.toFixed(0)}% women of {n.d.trial_n.toLocaleString()} trial participants<br /><span style={{ color: 'var(--c-text-2)' }}>{n.d.category}</span></> })}
+                  onMouseEnter={() => setTip({ x: n.x + m.left, y: n.y + m.top, content: <><b>{n.d.brand}</b> ({n.d.year})<br />{n.d.trial_female_pct.toFixed(0)}% of pivotal-trial participants were women<br /><span style={{ color: 'var(--c-text-2)' }}>{n.d.category}</span></> })}
                   onMouseLeave={() => setTip(null)} />
               ))}
               <text x={iw} y={ih + 34} textAnchor="end" fontSize={11} fill="var(--c-text-2)">share of pivotal-trial participants who were women →</text>

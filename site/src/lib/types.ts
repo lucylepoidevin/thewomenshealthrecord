@@ -20,6 +20,7 @@ export type Chapter1Data = {
   generated: string
   faers_last_updated: string | null
   zolpidem: { female: number; male: number; unknown: number; total: number }
+  faers_overall: { female: number; male: number; unknown: number } | null
   pk: { label: string; female: number; male: number }[]
   drugs: Drug[]
   summary: {
