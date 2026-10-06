@@ -5,11 +5,11 @@ export default function ChartFrame({ title, subtitle, source, children }: { titl
   return (
     <div className="flex h-full flex-col">
       <div className="mb-2">
-        <h3 className="display text-lg sm:text-xl font-medium leading-tight text-ink">{title}</h3>
+        <h3 className="display text-lg sm:text-[1.35rem] font-medium leading-tight text-ink">{title}</h3>
         {subtitle && <p className="text-xs sm:text-sm text-ink-2 mt-1">{subtitle}</p>}
       </div>
       <div className="relative flex-1 min-h-0">{children}</div>
-      <p className="mt-2 text-[11px] text-ink-3 leading-snug">{source}</p>
+      <p className="mt-2 text-[11px] text-ink-3/90 leading-snug tracking-wide">{source}</p>
     </div>
   )
 }

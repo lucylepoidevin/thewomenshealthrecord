@@ -17,12 +17,12 @@ export default function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <ScrollToTop />
-      <header className="sticky top-0 z-30 bg-blush/85 backdrop-blur border-b border-hairline">
+      <header className="sticky top-0 z-30 bg-blush/80 backdrop-blur-md">
         <div className="mx-auto max-w-6xl px-4 h-14 flex items-center justify-between gap-4">
-          <Link to="/" className="display text-lg sm:text-xl font-semibold tracking-tight text-berry">
+          <Link to="/" className="display text-lg sm:text-xl font-medium tracking-tight text-berry">
             The Women's Health Record
           </Link>
-          <nav className="flex items-center gap-4 text-sm">
+          <nav className="flex items-center gap-5 text-[13px] font-semibold tracking-wide">
             <NavLink to="/" end className={({ isActive }) => isActive ? 'text-berry font-medium' : 'text-ink-2 hover:text-berry'}>Chapters</NavLink>
             <NavLink to="/methods" className={({ isActive }) => isActive ? 'text-berry font-medium' : 'text-ink-2 hover:text-berry'}>Methods</NavLink>
             <NavLink to="/about" className={({ isActive }) => isActive ? 'text-berry font-medium' : 'text-ink-2 hover:text-berry'}>About</NavLink>
@@ -40,8 +40,8 @@ export default function App() {
           ))}
         </Routes>
       </main>
-      <footer className="border-t border-hairline mt-16">
-        <div className="mx-auto max-w-6xl px-4 py-8 text-sm text-ink-2 flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
+      <footer className="mt-20">
+        <div className="mx-auto max-w-6xl px-4 py-10 text-sm text-ink-2 border-t border-hairline/70 flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
           <div>
             <span className="display text-berry font-semibold">The Women's Health Record</span>
             <span className="mx-2 text-ink-3">·</span>

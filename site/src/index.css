@@ -12,7 +12,7 @@
   --color-bronze: #8A7A2A;
   --color-hairline: #EBD5DC;
   --font-display: "Fraunces", Georgia, serif;
-  --font-body: "Inter", system-ui, sans-serif;
+  --font-body: "Manrope", system-ui, sans-serif;
 }
 
 :root {
@@ -30,11 +30,26 @@
 html { scroll-behavior: smooth; }
 body {
   background: var(--color-blush);
+  background-image: radial-gradient(1200px 600px at 50% -10%, #fff7f9 0%, var(--color-blush) 60%);
   color: var(--color-ink);
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
 }
-h1, h2, h3, .display { font-family: var(--font-display); }
+h1, h2, h3, .display { font-family: var(--font-display); letter-spacing: -0.01em; }
+p { letter-spacing: -0.005em; }
+.eyebrow { font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 700; color: var(--color-berry); }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+.fade-up { animation: fadeUp 520ms cubic-bezier(.2,.7,.2,1) both; }
+.graphic-card {
+  background: rgba(255,255,255,0.62);
+  backdrop-filter: blur(6px);
+  border-radius: 28px;
+  box-shadow: 0 1px 0 rgba(139,30,75,0.06), 0 30px 80px -40px rgba(139,30,75,0.28);
+}
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity 700ms cubic-bezier(.2,.7,.2,1), transform 700ms cubic-bezier(.2,.7,.2,1); }
+.reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } .fade-up { animation: none; } }
+.progress-bar { position: fixed; top: 0; left: 0; height: 2px; background: var(--color-berry); z-index: 50; transition: width 120ms linear; }
 .prose-step p + p { margin-top: 0.9rem; }
 .prose-step a { color: var(--color-berry); text-decoration: underline; text-underline-offset: 3px; }
 sup.cite a { color: var(--color-berry); text-decoration: none; font-weight: 600; }
