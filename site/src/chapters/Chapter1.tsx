@@ -108,7 +108,7 @@ export default function Chapter1() {
       <p>And if something goes wrong on a drug, report it. FAERS exists because patients and clinicians file reports through the FDA's <a href="https://www.fda.gov/safety/medwatch-fda-safety-information-and-adverse-event-reporting-program" target="_blank" rel="noreferrer">MedWatch</a> programme, and the share of those reports that come from women is one of the few post-market signals anyone has.<Cite id="openfda-faers" /> Every chart on this page was built from reports somebody took the time to file.</p>
       <p>None of this is medical advice. Bring the numbers to your doctor, not a conclusion.</p>
     </>),
-    T('next', <p className="text-ink-2">Next chapter: what happens to women once they reach the emergency room. New chapters are announced on <a href="https://substack.com/@thewomenshealthrecord" target="_blank" rel="noreferrer">Substack</a>.</p>),
+    T('next', <p className="text-ink-2">New chapters are announced on <a href="https://substack.com/@thewomenshealthrecord" target="_blank" rel="noreferrer">Substack</a>.</p>),
   ]
 
   return (
