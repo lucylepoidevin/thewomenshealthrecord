@@ -10,6 +10,7 @@ import DataTable from '../components/charts/DataTable'
 import Summary from '../components/charts/Summary'
 import ChartFrame from '../components/charts/ChartFrame'
 import DrugLookup from '../components/DrugLookup'
+import RateRatio from '../components/charts/RateRatio'
 import type { Chapter1Data } from '../lib/types'
 
 const GAP = 15 // percentage points: female share of reports minus female share of trial participants
@@ -23,6 +24,7 @@ export default function Chapter1() {
 
   const withFaers = useMemo(() => (data?.drugs ?? []).filter(d => d.faers_female_pct != null && (d.faers_n ?? 0) >= MIN_REPORTS), [data])
   const quadrant = useMemo(() => withFaers.filter(d => inGapQuadrant(d, GAP)), [withFaers])
+  const withRate = useMemo(() => (data?.drugs ?? []).filter(d => d.rate_ratio != null), [data])
 
   if (!data) return <div className="mx-auto max-w-6xl px-4 py-24 text-ink-3">Loading data…</div>
   const s = data.summary
@@ -83,6 +85,19 @@ export default function Chapter1() {
         </div>
       </ChartFrame>
     ), 'flow'),
+    T('adjusted', <>
+      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">Adjusting for who actually takes it.</p>
+      <p>The missing piece is a denominator: how many women and men take each drug. The federal Medical Expenditure Panel Survey asks a national sample of households about every prescription they fill, and records each person's sex.<Cite id="meps" /> We pooled seven years of it, 2018 to 2024, and counted the people who filled each of our drugs at least once.</p>
+      <p>That turns the share of reports into something closer to a rate. If women are 53% of a drug's users and 65% of its adverse-event reports, they are filing about 1.6 times as many reports per user as men. On the chart, 1× means women and men report at the same rate per user.</p>
+      <p>The survey is a sample of about 30,000 people a year, so it only sees drugs that enough people take. That leaves {s.n_with_rate} of our drugs with at least {30} surveyed users. Specialty biologics and cancer drugs mostly fall out, which is a limit of the data, not a finding.</p>
+    </>),
+    F('rate', <RateRatio drugs={withRate} title="Reports per user, women relative to men" subtitle={`${s.n_with_rate} drugs with enough surveyed users. Hover for the shares behind each ratio.`} source="Sources: openFDA FAERS reports by sex; MEPS Household Component prescribed-medicines and consolidated files 2018–2024, person-weighted. Reporting is voluntary; this is reports per user, not harm per user." />, 'flow', true),
+    T('adjusted-2', <>
+      <p>{s.n_rate_over_1_5} of the {s.n_with_rate} drugs clear 1.5×: women file at least half again as many reports per user as men. {s.n_rate_under_1 > 0 ? `${s.n_rate_under_1} go the other way.` : 'None go the other way.'} The median is {s.median_rate_ratio?.toFixed(1)}×.</p>
+      <p>Zolpidem is the control. The survey puts women at {data.zolpidem_meps ? data.zolpidem_meps.female_pct.toFixed(0) : '63'}% of its users, almost exactly the FDA's 63% from 2011.<Cite id="fda-dsc-2013" /> Set against {zF.toFixed(0)}% of reports, women file {data.zolpidem_meps ? data.zolpidem_meps.rate_ratio.toFixed(1) : '1.0'}× as many reports per user as men. The drug whose dose was halved for women does not stand out on this chart at all, which is the point: the harm was in the blood levels, and the reports never flagged it.</p>
+      <p>The whiskers matter. For a drug with forty surveyed users the share of women is only known to within ten points, and a ratio built on a 94% share swings a long way with that. Read the whisker, not the dot, for the small ones.</p>
+      <p>Even per user, a high ratio is still not proof of harm. Women report more readily than men across all drugs, and the survey does not know doses or duration. What the ratio removes is the biggest confounder, who takes the drug. What is left is worth a trial.</p>
+    </>),
     T('close', <>
       <p>So read the gap as a flag, not a verdict. The flag says: this drug was approved with little evidence about women, and the post-market signal is tilted toward them. That is where someone should look.</p>
       <p>Every number on this page is reproducible from public FDA data with the code in our repository. The <Link to="/methods">methods page</Link> explains each step, including the choices we made and what would change them.</p>
@@ -121,7 +136,7 @@ export default function Chapter1() {
       <Story blocks={blocks} />
       <section className="mx-auto max-w-3xl px-4 pt-16">
         <h2 className="display text-2xl font-medium mb-4">Sources</h2>
-        <SourceList only={['fda-dsc-2013', 'fda-qa-2013', 'fda-snapshots', 'fda-snapshots-archive', 'openfda-faers', 'carmeli-2023']} />
+        <SourceList only={['fda-dsc-2013', 'fda-qa-2013', 'fda-snapshots', 'fda-snapshots-archive', 'openfda-faers', 'meps', 'carmeli-2023']} />
       </section>
     </article>
   )

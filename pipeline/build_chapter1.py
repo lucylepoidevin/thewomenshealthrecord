@@ -10,6 +10,7 @@ from common import CACHE, OUT, SITE_DATA
 
 GAP = 15          # percentage points; mirrored in site/src/chapters/Chapter1.tsx
 MIN_REPORTS = 100 # minimum sex-recorded FAERS reports for inclusion in scatter/table
+MIN_USERS = 30    # minimum unweighted MEPS person-years to publish a users-by-sex share
 
 CATEGORIES = [
     ("Imaging & diagnostics", r"imaging|diagnos|contrast agent|radiographic|visuali[sz]e|pet scan|radiopharm|tracer|detect(?:ion)? of"),
@@ -50,6 +51,12 @@ def main():
         snaps = list(csv.DictReader(f))
     with open(f"{OUT}/faers_raw.csv", encoding="utf-8") as f:
         faers = {r["slug"]: r for r in csv.DictReader(f)}
+    meps = {}
+    try:
+        with open(f"{OUT}/meps_users.csv", encoding="utf-8") as f:
+            meps = {r["slug"]: r for r in csv.DictReader(f)}
+    except FileNotFoundError:
+        pass
 
     # Fallback for pages Wayback failed to serve or we could not parse (2015-21 only):
     # the Carmeli et al. compilation, flagged per drug as enrollment_source.
@@ -103,6 +110,18 @@ def main():
         ff, fm = num(fa.get("female")), num(fa.get("male"))
         faers_n = int(ff + fm) if ff is not None and fm is not None else None
         faers_pct = ff / (ff + fm) * 100 if faers_n else None
+        mp = meps.get(r["slug"]) or {}
+        mu = (int(mp["female_n"]) + int(mp["male_n"])) if mp else 0
+        mfw, mmw = (num(mp.get("female_w")) or 0), (num(mp.get("male_w")) or 0)
+        rate_ratio = rr_lo = rr_hi = None
+        if mu >= MIN_USERS and faers_n and faers_n >= MIN_REPORTS and ff and fm and mfw and mmw:
+            rate_ratio = (ff / fm) / (mfw / mmw)
+            # interval: binomial sampling error of the (weighted) female share of users,
+            # using the unweighted person-year count as n; FAERS counts are large enough to ignore
+            p_ = mfw / (mfw + mmw)
+            se = (p_ * (1 - p_) / mu) ** 0.5
+            lo, hi = max(0.01, p_ - 1.96 * se), min(0.99, p_ + 1.96 * se)
+            rr_lo, rr_hi = (ff / fm) / (hi / (1 - hi)), (ff / fm) / (lo / (1 - lo))
         yr = re.search(r"\d{4}", r.get("approval_date") or "")
         drugs.append({
             "slug": r["slug"],
@@ -118,20 +137,32 @@ def main():
             "faers_serious_n": None,
             "faers_serious_female_pct": None,
             "gap": round(faers_pct - trial_pct, 1) if faers_pct is not None else None,
+            "meps_users_n": mu or None,
+            "meps_female_pct": round(mfw / (mfw + mmw) * 100, 1) if mu >= MIN_USERS and mfw + mmw else None,
+            "rate_ratio": round(rate_ratio, 2) if rate_ratio else None,
+            "rate_ratio_lo": round(rr_lo, 2) if rr_lo else None,
+            "rate_ratio_hi": round(rr_hi, 2) if rr_hi else None,
             "snapshot_url": r["url"],
             "enrollment_source": src,
         })
 
     with_faers = [d for d in drugs if d["faers_n"] and d["faers_n"] >= MIN_REPORTS]
+    with_rate = sorted([d for d in drugs if d["rate_ratio"]], key=lambda d: -d["rate_ratio"])
+    zm = meps.get("zolpidem") or {}
+    zmu = (int(zm["female_n"]) + int(zm["male_n"])) if zm else 0
     quad = [d for d in with_faers if d["trial_female_pct"] < 50 and d["gap"] >= GAP]
     years = [d["year"] for d in drugs if d["year"]]
     z = faers.get("zolpidem", {})
-    zf, zm, zu = int(num(z.get("female")) or 0), int(num(z.get("male")) or 0), int(num(z.get("unknown")) or 0)
+    zf, zm_, zu = int(num(z.get("female")) or 0), int(num(z.get("male")) or 0), int(num(z.get("unknown")) or 0)
     out = {
         "generated": date.today().isoformat(),
         "faers_last_updated": z.get("last_updated") or next((faers[k].get("last_updated") for k in faers if faers[k].get("last_updated")), None),
-        "zolpidem": {"female": zf, "male": zm, "unknown": zu, "total": zf + zm + zu},
+        "zolpidem": {"female": zf, "male": zm_, "unknown": zu, "total": zf + zm_ + zu},
         "faers_overall": {k: int(num(faers["__all__"].get(k)) or 0) for k in ("female", "male", "unknown")} if "__all__" in faers else None,
+        "zolpidem_meps": ({"users_n": zmu,
+                           "female_pct": round(num(zm["female_w"]) / (num(zm["female_w"]) + num(zm["male_w"])) * 100, 1),
+                           "rate_ratio": round((zf / zm_) / (num(zm["female_w"]) / num(zm["male_w"])), 2)}
+                          if zmu >= MIN_USERS and zm_ and num(zm["male_w"]) else None),
         "pk": [
             {"label": "Immediate-release 10 mg", "female": 15, "male": 3},
             {"label": "Extended-release 12.5 mg", "female": 33, "male": 25},
@@ -145,10 +176,14 @@ def main():
             "n_under_30": sum(1 for d in drugs if d["trial_female_pct"] < 30),
             "n_under_40": sum(1 for d in drugs if d["trial_female_pct"] < 40),
             "n_gap_quadrant": len(quad),
+            "n_with_rate": len(with_rate),
+            "n_rate_over_1_5": sum(1 for d in with_rate if d["rate_ratio"] >= 1.5),
+            "n_rate_under_1": sum(1 for d in with_rate if d["rate_ratio"] < 1),
+            "median_rate_ratio": round(statistics.median(d["rate_ratio"] for d in with_rate), 2) if with_rate else None,
             "median_gap": round(statistics.median(d["gap"] for d in quad), 1) if quad else 0,
             "years": [min(years), max(years)] if years else [2015, 2025],
         },
-        "params": {"gap_threshold_points": GAP, "min_reports": MIN_REPORTS, "n_enrollment_from_carmeli": n_fallback},
+        "params": {"gap_threshold_points": GAP, "min_reports": MIN_REPORTS, "min_meps_users": MIN_USERS, "meps_years": "2018-2024", "n_enrollment_from_carmeli": n_fallback},
     }
     with open(f"{SITE_DATA}/chapter1.json", "w", encoding="utf-8") as f:
         json.dump(out, f, indent=1)
@@ -160,12 +195,14 @@ def main():
         {"id": "fda-snapshots", "title": "Drug Trials Snapshots", "publisher": "U.S. Food and Drug Administration", "url": "https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots", "retrieved": today, "note": f"{len(drugs)} individual snapshot pages parsed; per-drug URLs are linked from the table."},
         {"id": "fda-snapshots-archive", "title": "Drug Trials Snapshots index, archived capture of 27 January 2023", "publisher": "Internet Archive Wayback Machine", "url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots", "retrieved": today, "note": "Used for 2015–2022 snapshot pages no longer on the live FDA index."},
         {"id": "openfda-faers", "title": "openFDA Drug Adverse Event API (FDA Adverse Event Reporting System)", "publisher": "U.S. Food and Drug Administration", "url": "https://open.fda.gov/apis/drug/event/", "retrieved": today, "note": f"Counts of reports by patient sex per drug; data release {out['faers_last_updated']}. Reports of unknown sex excluded."},
+        {"id": "meps", "title": "Medical Expenditure Panel Survey, Household Component: Prescribed Medicines files (HC-206A, 213A, 220A, 229A, 239A, 248A, 254A) and Full Year Consolidated files (HC-209, 216, 224, 233, 243, 251, 256), 2018–2024", "publisher": "Agency for Healthcare Research and Quality", "url": "https://meps.ahrq.gov/mepsweb/data_stats/download_data_files.jsp", "retrieved": today, "note": f"Persons with at least one fill, by sex, pooled 2018–2024 and weighted with the person weight; published only for drugs with at least {MIN_USERS} unweighted person-years."},
         {"id": "carmeli-2023", "title": "FDA Drug Trials Snapshots Data Explorer (dataset, 2015–2021)", "publisher": "Carmeli A. et al., Patterns (2023); GitHub / Zenodo record 7373942", "url": "https://github.com/arielcarmeli/FDA-Drug-Trial-Snapshots-Data-Explorer", "retrieved": today, "note": f"Used to cross-check our parsed figures, and as the enrollment source for {n_fallback} 2015–2021 drugs whose archived FDA page could not be retrieved or parsed (flagged per drug in the data file)."},
     ]
     with open(f"{SITE_DATA}/sources.json", "w", encoding="utf-8") as f:
         json.dump(sources, f, indent=1)
 
     print(f"enrollment from Carmeli fallback: {n_fallback}")
+    print(f"with MEPS rate ratio: {len(with_rate)}; " + ", ".join(f"{d['brand']} {d['rate_ratio']}" for d in with_rate[:10]))
     print(f"drugs: {len(drugs)}  with FAERS>={MIN_REPORTS}: {len(with_faers)}  in corner: {len(quad)}  skipped: {len(skipped)}")
     print("summary:", json.dumps(out["summary"]))
     from collections import Counter

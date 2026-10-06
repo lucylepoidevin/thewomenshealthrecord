@@ -105,6 +105,9 @@ export default function DrugLookup({ drugs, minReports }: { drugs: Drug[]; minRe
               <p className="mt-2 text-xs text-ink-2">point gap between the two. {d.gap != null && d.trial_female_pct < 50 && d.gap >= 15 ? 'This drug is in the Ambien corner.' : ''}</p>
             </div>
           </div>
+          {d.rate_ratio != null && (
+            <p className="mt-3 text-sm text-ink-2">Adjusted for who takes it: women are {d.meps_female_pct!.toFixed(0)}% of its users in the federal prescription survey, so they file <span className="font-semibold text-berry">{d.rate_ratio.toFixed(1)}×</span> as many adverse-event reports per user as men.</p>
+          )}
           <p className="mt-4 text-xs text-ink-3">
             <a className="text-berry underline underline-offset-2" href={d.snapshot_url} target="_blank" rel="noreferrer">Read the FDA's snapshot for {d.brand}</a>
             {d.enrollment_source !== 'fda-snapshot' && ' · enrollment figure from the Carmeli et al. 2023 compilation'}

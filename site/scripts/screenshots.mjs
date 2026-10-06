@@ -17,11 +17,11 @@ await page.addStyleTag({ content: '.reveal{opacity:1!important;transform:none!im
 for (let y = 0; y < await page.evaluate(() => document.body.scrollHeight); y += 700) { await page.evaluate(v => window.scrollTo(0, v), y); await page.waitForTimeout(80) }
 await page.waitForTimeout(600)
 
-const names = ['01-zolpidem-dumbbell', '02-beeswarm-trials', '03-scatter-ambien-corner', '04-table-corner', '05-zolpidem-usage-vs-reports', '06-summary', '07-lookup']
+const names = ['01-zolpidem-dumbbell', '02-beeswarm-trials', '03-scatter-ambien-corner', '04-table-corner', '05-zolpidem-usage-vs-reports', '06-reports-per-user', '07-summary', '08-lookup']
 const cards = page.locator('.graphic-card')
 const n = await cards.count()
 for (let i = 0; i < Math.min(n, names.length); i++) {
-  if (names[i] === '07-lookup') {
+  if (names[i] === '08-lookup') {
     await page.fill('input[aria-label="Search drugs"]', 'Ozempic')
     await page.waitForTimeout(200)
     await page.locator('ul li button').first().click()
