@@ -1697,23 +1697,6 @@
    "enrollment_source": "fda-snapshot"
   },
   {
-   "slug": "drug-trials-snapshots-detectnet",
-   "brand": "Detectnet",
-   "generic": "copper Cu 64 dotatate",
-   "year": 2020,
-   "indication": "DETECTNET is a drug for detection of the specific type of tumors called somatostatin receptor positive neuro-endocrine tumors (NETs) in adults. NETs are rare tumors that develop in certain hormone-producing cells of the body\u2019s neuro-endocrine system.",
-   "category": "Imaging & diagnostics",
-   "trial_n": 238,
-   "trial_female_pct": 35.3,
-   "faers_n": 35,
-   "faers_female_pct": 80.0,
-   "faers_serious_n": null,
-   "faers_serious_female_pct": null,
-   "gap": 44.7,
-   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-detectnet",
-   "enrollment_source": "fda-snapshot"
-  },
-  {
    "slug": "drug-trials-snapshot-rydapt",
    "brand": "Rydapt",
    "generic": "midostaurin",
@@ -2836,6 +2819,23 @@
    "enrollment_source": "fda-snapshot"
   },
   {
+   "slug": "drug-trials-snapshots-vtama",
+   "brand": "Vtama",
+   "generic": "tapinarof",
+   "year": 2022,
+   "indication": "VTAMA is a small molecule aryl hydrocarbon receptor (AhR) modulating agent that is indicated for the topical treatment of plaque psoriasis in patients 18 years of age and older.",
+   "category": "Immunology & dermatology",
+   "trial_n": 1092,
+   "trial_female_pct": 42.7,
+   "faers_n": 1229,
+   "faers_female_pct": 52.7,
+   "faers_serious_n": null,
+   "faers_serious_female_pct": null,
+   "gap": 10.1,
+   "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-vtama",
+   "enrollment_source": "fda-snapshot"
+  },
+  {
    "slug": "drug-trial-snapshot-recarbrio",
    "brand": "Recarbrio",
    "generic": "imipenem, cilastatin, and relebactam",
@@ -2850,23 +2850,6 @@
    "faers_serious_female_pct": null,
    "gap": -2.3,
    "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/resources-information-approved-drugs/drug-trial-snapshot-recarbrio",
-   "enrollment_source": "fda-snapshot"
-  },
-  {
-   "slug": "drug-trials-snapshots-vtama",
-   "brand": "Vtama",
-   "generic": "tapinarof",
-   "year": 2022,
-   "indication": "VTAMA is a small molecule aryl hydrocarbon receptor (AhR) modulating agent that is indicated for the topical treatment of plaque psoriasis in patients 18 years of age and older.",
-   "category": "Immunology & dermatology",
-   "trial_n": 1111,
-   "trial_female_pct": 42.8,
-   "faers_n": 1229,
-   "faers_female_pct": 52.7,
-   "faers_serious_n": null,
-   "faers_serious_female_pct": null,
-   "gap": 9.9,
-   "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-vtama",
    "enrollment_source": "fda-snapshot"
   },
   {
@@ -3635,23 +3618,6 @@
    "enrollment_source": "fda-snapshot"
   },
   {
-   "slug": "drug-trials-snapshots-ultomiris",
-   "brand": "Ultomiris",
-   "generic": "ravulizumab-cwvz",
-   "year": 2018,
-   "indication": "ULTOMIRIS is a drug used to treat adults with a disease called paroxysmal nocturnal hemoglobinuria (PNH). PNH is a rare, life-threatening disease in which the bone marrow does not produce enough blood cells and red blood cells break apart prematurely (called hemolysis).",
-   "category": "Hematology",
-   "trial_n": 441,
-   "trial_female_pct": 47.4,
-   "faers_n": 11544,
-   "faers_female_pct": 54.1,
-   "faers_serious_n": null,
-   "faers_serious_female_pct": null,
-   "gap": 6.7,
-   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-ultomiris",
-   "enrollment_source": "fda-snapshot"
-  },
-  {
    "slug": "drug-trials-snapshots-zokinvy",
    "brand": "Zokinvy",
    "generic": "lonafarnib",
@@ -3700,6 +3666,23 @@
    "faers_serious_female_pct": null,
    "gap": -9.5,
    "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-pretomanid",
+   "enrollment_source": "fda-snapshot"
+  },
+  {
+   "slug": "drug-trials-snapshots-detectnet",
+   "brand": "Detectnet",
+   "generic": "copper Cu 64 dotatate",
+   "year": 2020,
+   "indication": "DETECTNET is a drug for detection of the specific type of tumors called somatostatin receptor positive neuro-endocrine tumors (NETs) in adults. NETs are rare tumors that develop in certain hormone-producing cells of the body\u2019s neuro-endocrine system.",
+   "category": "Imaging & diagnostics",
+   "trial_n": 175,
+   "trial_female_pct": 48.0,
+   "faers_n": 35,
+   "faers_female_pct": 80.0,
+   "faers_serious_n": null,
+   "faers_serious_female_pct": null,
+   "gap": 32.0,
+   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-detectnet",
    "enrollment_source": "fda-snapshot"
   },
   {
@@ -4417,6 +4400,23 @@
    "enrollment_source": "fda-snapshot"
   },
   {
+   "slug": "drug-trials-snapshots-ultomiris",
+   "brand": "Ultomiris",
+   "generic": "ravulizumab-cwvz",
+   "year": 2018,
+   "indication": "ULTOMIRIS is a drug used to treat adults with a disease called paroxysmal nocturnal hemoglobinuria (PNH). PNH is a rare, life-threatening disease in which the bone marrow does not produce enough blood cells and red blood cells break apart prematurely (called hemolysis).",
+   "category": "Hematology",
+   "trial_n": 678,
+   "trial_female_pct": 51.9,
+   "faers_n": 11544,
+   "faers_female_pct": 54.1,
+   "faers_serious_n": null,
+   "faers_serious_female_pct": null,
+   "gap": 2.2,
+   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-ultomiris",
+   "enrollment_source": "fda-snapshot"
+  },
+  {
    "slug": "drug-trial-snapshot-bridion",
    "brand": "Bridion",
    "generic": "sugammadex",
@@ -4587,6 +4587,23 @@
    "enrollment_source": "fda-snapshot"
   },
   {
+   "slug": "drug-trials-snapshots-sofdra",
+   "brand": "Sofdra",
+   "generic": "sofpironium bromide",
+   "year": 2024,
+   "indication": "SOFDRA is an anticholinergic antiperspirant approved for primary axillary hyperhidrosis in adult and pediatric patients 9 years of age and older.",
+   "category": "Other",
+   "trial_n": 1275,
+   "trial_female_pct": 53.0,
+   "faers_n": 220,
+   "faers_female_pct": 72.7,
+   "faers_serious_n": null,
+   "faers_serious_female_pct": null,
+   "gap": 19.7,
+   "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-sofdra",
+   "enrollment_source": "fda-snapshot"
+  },
+  {
    "slug": "drug-trial-snapshot-diacomit",
    "brand": "Diacomit",
    "generic": "stiripentol",
@@ -4618,23 +4635,6 @@
    "faers_serious_female_pct": null,
    "gap": -53.3,
    "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-dawnzera",
-   "enrollment_source": "fda-snapshot"
-  },
-  {
-   "slug": "drug-trials-snapshots-sofdra",
-   "brand": "Sofdra",
-   "generic": "sofpironium bromide",
-   "year": 2024,
-   "indication": "SOFDRA is an anticholinergic antiperspirant approved for primary axillary hyperhidrosis in adult and pediatric patients 9 years of age and older.",
-   "category": "Other",
-   "trial_n": 1309,
-   "trial_female_pct": 53.4,
-   "faers_n": 220,
-   "faers_female_pct": 72.7,
-   "faers_serious_n": null,
-   "faers_serious_female_pct": null,
-   "gap": 19.3,
-   "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-sofdra",
    "enrollment_source": "fda-snapshot"
   },
   {
@@ -5301,6 +5301,23 @@
    "enrollment_source": "fda-snapshot"
   },
   {
+   "slug": "drug-trials-snapshots-xenpozyme",
+   "brand": "Xenpozyme",
+   "generic": "olipudase alfa-rpcp",
+   "year": 2022,
+   "indication": "XENPOZYME is an enzyme replacement therapy that is used for the treatment of non-central nervous system manifestations of acid sphingomyelinase deficiency (ASMD) in adult and pediatric patients. ASMD is a rare disease where patients have decreased activity of the enzyme sphingomyelinase, which breaks down a fatty lipid called sphingomyelin.",
+   "category": "Cardiovascular",
+   "trial_n": 38,
+   "trial_female_pct": 57.9,
+   "faers_n": 109,
+   "faers_female_pct": 64.2,
+   "faers_serious_n": null,
+   "faers_serious_female_pct": null,
+   "gap": 6.3,
+   "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-xenpozyme",
+   "enrollment_source": "fda-snapshot"
+  },
+  {
    "slug": "drug-trials-snapshots-reblozyl",
    "brand": "Reblozyl",
    "generic": "luspatercept-aamt",
@@ -5437,23 +5454,6 @@
    "enrollment_source": "fda-snapshot"
   },
   {
-   "slug": "drug-trials-snapshots-mayzent",
-   "brand": "Mayzent",
-   "generic": "siponimod",
-   "year": 2019,
-   "indication": "MAYZENT is a drug used for the treatment of adults with relapsing forms of multiple sclerosis (RMS) including: clinically isolated syndrome, relapsing-remitting disease, and active secondary progressive disease In RMS, patients have episodes of worsening function (relapses) followed by recovery periods. Patients can also experience an increase in the underlying disability, particularly as the disease progresses.",
-   "category": "Neurology",
-   "trial_n": 2112,
-   "trial_female_pct": 59.1,
-   "faers_n": 8278,
-   "faers_female_pct": 74.9,
-   "faers_serious_n": null,
-   "faers_serious_female_pct": null,
-   "gap": 15.8,
-   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-mayzent",
-   "enrollment_source": "fda-snapshot"
-  },
-  {
    "slug": "drug-trials-snapshots-turalio",
    "brand": "Turalio",
    "generic": "pexidartinib",
@@ -5570,6 +5570,23 @@
    "faers_serious_female_pct": null,
    "gap": -5.3,
    "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-crysvita",
+   "enrollment_source": "fda-snapshot"
+  },
+  {
+   "slug": "drug-trials-snapshots-mayzent",
+   "brand": "Mayzent",
+   "generic": "siponimod",
+   "year": 2019,
+   "indication": "MAYZENT is a drug used for the treatment of adults with relapsing forms of multiple sclerosis (RMS) including: clinically isolated syndrome, relapsing-remitting disease, and active secondary progressive disease In RMS, patients have episodes of worsening function (relapses) followed by recovery periods. Patients can also experience an increase in the underlying disability, particularly as the disease progresses.",
+   "category": "Neurology",
+   "trial_n": 2197,
+   "trial_female_pct": 59.9,
+   "faers_n": 8278,
+   "faers_female_pct": 74.9,
+   "faers_serious_n": null,
+   "faers_serious_female_pct": null,
+   "gap": 15.0,
+   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-mayzent",
    "enrollment_source": "fda-snapshot"
   },
   {
@@ -5791,23 +5808,6 @@
    "faers_serious_female_pct": null,
    "gap": -15.9,
    "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-symproic",
-   "enrollment_source": "fda-snapshot"
-  },
-  {
-   "slug": "drug-trials-snapshots-xenpozyme",
-   "brand": "Xenpozyme",
-   "generic": "olipudase alfa-rpcp",
-   "year": 2022,
-   "indication": "XENPOZYME is an enzyme replacement therapy that is used for the treatment of non-central nervous system manifestations of acid sphingomyelinase deficiency (ASMD) in adult and pediatric patients. ASMD is a rare disease where patients have decreased activity of the enzyme sphingomyelinase, which breaks down a fatty lipid called sphingomyelin.",
-   "category": "Cardiovascular",
-   "trial_n": 42,
-   "trial_female_pct": 61.9,
-   "faers_n": 109,
-   "faers_female_pct": 64.2,
-   "faers_serious_n": null,
-   "faers_serious_female_pct": null,
-   "gap": 2.3,
-   "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-xenpozyme",
    "enrollment_source": "fda-snapshot"
   },
   {
@@ -6406,23 +6406,6 @@
    "enrollment_source": "fda-snapshot"
   },
   {
-   "slug": "drug-trials-snapshots-winrevair",
-   "brand": "Winrevair",
-   "generic": "sotatercept-csrk",
-   "year": 2024,
-   "indication": "WINREVAIR is indicated for the treatment of adults with pulmonary arterial hypertension (PAH, WHO group 1) to increase exercise capacity, improve function, and reduce clinical worsening.",
-   "category": "Cardiovascular",
-   "trial_n": 549,
-   "trial_female_pct": 68.3,
-   "faers_n": 4790,
-   "faers_female_pct": 77.2,
-   "faers_serious_n": null,
-   "faers_serious_female_pct": null,
-   "gap": 8.9,
-   "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-winrevair",
-   "enrollment_source": "fda-snapshot"
-  },
-  {
    "slug": "drug-trials-snapshots-hernexeos",
    "brand": "Hernexeos",
    "generic": "zongertinib",
@@ -6505,6 +6488,23 @@
    "faers_serious_female_pct": null,
    "gap": null,
    "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-cardamyst",
+   "enrollment_source": "fda-snapshot"
+  },
+  {
+   "slug": "drug-trials-snapshots-winrevair",
+   "brand": "Winrevair",
+   "generic": "sotatercept-csrk",
+   "year": 2024,
+   "indication": "WINREVAIR is indicated for the treatment of adults with pulmonary arterial hypertension (PAH, WHO group 1) to increase exercise capacity, improve function, and reduce clinical worsening.",
+   "category": "Cardiovascular",
+   "trial_n": 499,
+   "trial_female_pct": 72.3,
+   "faers_n": 4790,
+   "faers_female_pct": 77.2,
+   "faers_serious_n": null,
+   "faers_serious_female_pct": null,
+   "gap": 4.8,
+   "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-winrevair",
    "enrollment_source": "fda-snapshot"
   },
   {
@@ -6848,23 +6848,6 @@
    "enrollment_source": "fda-snapshot"
   },
   {
-   "slug": "drug-trials-snapshots-enspryng",
-   "brand": "Enspryng",
-   "generic": "satralizumab-mwge",
-   "year": 2020,
-   "indication": "ENSPRYNG is used to treat neuromyelitis optica spectrum disorder (NMOSD) in adult patients with a particular antibody (who are anti-aquaporin-4 or AQP4 antibody positive). NMOSD is a rare disease that most commonly affects the optic nerves and spinal cord. It is characterized by relapses (attacks) that cause vision loss and serious disability which can lead to death.",
-   "category": "Neurology",
-   "trial_n": 127,
-   "trial_female_pct": 82.7,
-   "faers_n": 1501,
-   "faers_female_pct": 87.3,
-   "faers_serious_n": null,
-   "faers_serious_female_pct": null,
-   "gap": 4.6,
-   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-enspryng",
-   "enrollment_source": "fda-snapshot"
-  },
-  {
    "slug": "drug-trial-snapshot-xeglyze",
    "brand": "Xeglyze",
    "generic": "abametapir",
@@ -7120,6 +7103,23 @@
    "enrollment_source": "fda-snapshot"
   },
   {
+   "slug": "drug-trials-snapshots-enspryng",
+   "brand": "Enspryng",
+   "generic": "satralizumab-mwge",
+   "year": 2020,
+   "indication": "ENSPRYNG is used to treat neuromyelitis optica spectrum disorder (NMOSD) in adult patients with a particular antibody (who are anti-aquaporin-4 or AQP4 antibody positive). NMOSD is a rare disease that most commonly affects the optic nerves and spinal cord. It is characterized by relapses (attacks) that cause vision loss and serious disability which can lead to death.",
+   "category": "Neurology",
+   "trial_n": 116,
+   "trial_female_pct": 90.5,
+   "faers_n": 1501,
+   "faers_female_pct": 87.3,
+   "faers_serious_n": null,
+   "faers_serious_female_pct": null,
+   "gap": -3.2,
+   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-enspryng",
+   "enrollment_source": "fda-snapshot"
+  },
+  {
    "slug": "drug-trials-snapshots-ocaliva",
    "brand": "Ocaliva",
    "generic": "obeticholic acid",
@@ -7205,23 +7205,6 @@
    "enrollment_source": "fda-snapshot"
   },
   {
-   "slug": "drug-trials-snapshots-truqap",
-   "brand": "Truqap",
-   "generic": "capivasertib",
-   "year": 2023,
-   "indication": ".",
-   "category": "Other",
-   "trial_n": 294,
-   "trial_female_pct": 97.6,
-   "faers_n": null,
-   "faers_female_pct": null,
-   "faers_serious_n": null,
-   "faers_serious_female_pct": null,
-   "gap": null,
-   "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-truqap",
-   "enrollment_source": "fda-snapshot"
-  },
-  {
    "slug": "drug-trial-snapshot-talzenna",
    "brand": "Talzenna",
    "generic": "talazoparib",
@@ -7290,23 +7273,6 @@
    "enrollment_source": "fda-snapshot"
   },
   {
-   "slug": "drug-trials-snapshot-margenza",
-   "brand": "Margenza",
-   "generic": "margetuximab-cmkb",
-   "year": 2020,
-   "indication": "MARGENZA is a drug for treatment of metastatic HER2-positive breast cancer in adult patients who have been previously treated for their metastatic disease.",
-   "category": "Oncology",
-   "trial_n": 539,
-   "trial_female_pct": 98.9,
-   "faers_n": 21,
-   "faers_female_pct": 100.0,
-   "faers_serious_n": null,
-   "faers_serious_female_pct": null,
-   "gap": 1.1,
-   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-margenza",
-   "enrollment_source": "fda-snapshot"
-  },
-  {
    "slug": "drug-trial-snapshot-trodelvy",
    "brand": "Trodelvy",
    "generic": "sacituzumab govitecan-hziy",
@@ -7321,23 +7287,6 @@
    "faers_serious_female_pct": null,
    "gap": -5.5,
    "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-trodelvy",
-   "enrollment_source": "fda-snapshot"
-  },
-  {
-   "slug": "drug-trials-snapshot-enhertu",
-   "brand": "Enhertu",
-   "generic": "fam-trastuzumab deruxtecan-nxki",
-   "year": 2019,
-   "indication": "ENHERTU is a drug for treatment of adults with human epidermal growth factor receptor 2 (HER2)-positive breast cancer that has spread to other parts of the body (metastatic) or cannot not be removed by surgery. It should be used in patients who have been previously treated for their metastatic disease with at least two anti-HER2 regimens.",
-   "category": "Oncology",
-   "trial_n": 235,
-   "trial_female_pct": 99.1,
-   "faers_n": 8853,
-   "faers_female_pct": 87.7,
-   "faers_serious_n": null,
-   "faers_serious_female_pct": null,
-   "gap": -11.4,
-   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-enhertu",
    "enrollment_source": "fda-snapshot"
   },
   {
@@ -7358,6 +7307,40 @@
    "enrollment_source": "fda-snapshot"
   },
   {
+   "slug": "drug-trials-snapshots-truqap",
+   "brand": "Truqap",
+   "generic": "capivasertib",
+   "year": 2023,
+   "indication": ".",
+   "category": "Other",
+   "trial_n": 289,
+   "trial_female_pct": 99.3,
+   "faers_n": null,
+   "faers_female_pct": null,
+   "faers_serious_n": null,
+   "faers_serious_female_pct": null,
+   "gap": null,
+   "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-truqap",
+   "enrollment_source": "fda-snapshot"
+  },
+  {
+   "slug": "drug-trials-snapshot-margenza",
+   "brand": "Margenza",
+   "generic": "margetuximab-cmkb",
+   "year": 2020,
+   "indication": "MARGENZA is a drug for treatment of metastatic HER2-positive breast cancer in adult patients who have been previously treated for their metastatic disease.",
+   "category": "Oncology",
+   "trial_n": 536,
+   "trial_female_pct": 99.4,
+   "faers_n": 21,
+   "faers_female_pct": 100.0,
+   "faers_serious_n": null,
+   "faers_serious_female_pct": null,
+   "gap": 0.6,
+   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-margenza",
+   "enrollment_source": "fda-snapshot"
+  },
+  {
    "slug": "drug-trials-snapshots-inluriyo",
    "brand": "Inluriyo",
    "generic": "imlunestrant",
@@ -7372,6 +7355,23 @@
    "faers_serious_female_pct": null,
    "gap": 0.6,
    "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-inluriyo",
+   "enrollment_source": "fda-snapshot"
+  },
+  {
+   "slug": "drug-trials-snapshot-enhertu",
+   "brand": "Enhertu",
+   "generic": "fam-trastuzumab deruxtecan-nxki",
+   "year": 2019,
+   "indication": "ENHERTU is a drug for treatment of adults with human epidermal growth factor receptor 2 (HER2)-positive breast cancer that has spread to other parts of the body (metastatic) or cannot not be removed by surgery. It should be used in patients who have been previously treated for their metastatic disease with at least two anti-HER2 regimens.",
+   "category": "Oncology",
+   "trial_n": 234,
+   "trial_female_pct": 99.6,
+   "faers_n": 8853,
+   "faers_female_pct": 87.7,
+   "faers_serious_n": null,
+   "faers_serious_female_pct": null,
+   "gap": -11.9,
+   "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-enhertu",
    "enrollment_source": "fda-snapshot"
   },
   {
@@ -7839,7 +7839,7 @@
   "n_with_faers": 312,
   "median_trial_female_pct": 49.2,
   "n_under_30": 75,
-  "n_under_40": 130,
+  "n_under_40": 129,
   "n_gap_quadrant": 42,
   "median_gap": 24.6,
   "years": [

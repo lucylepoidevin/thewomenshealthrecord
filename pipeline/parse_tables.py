@@ -3,7 +3,7 @@ import re
 
 from html_tables import tables
 
-PAIR = re.compile(r"(\d[\d,]*)\s*\(\s*([\d.]+)\s*%?\s*\)")
+PAIR = re.compile(r"(\d[\d,]*)\s*\(\s*([\d.]+)\s*%?\s*\)?")  # tolerate a missing close paren
 FEM = re.compile(r"^\s*(female|females|women|woman|girls)\b", re.I)
 MAL = re.compile(r"^\s*(male|males|men|man|boys)\b", re.I)
 EXCLUDE = re.compile(r"efficacy|subgroup|adverse|response|endpoint|outcome|\bORR\b|hazard|\bHR\b|incidence|events|side effect|change from|percent change|by race|by age|by ethnicity|race\b.*number of patients|weight|dose|mortality|survival|death|cure|remission|responders", re.I)
@@ -14,8 +14,12 @@ def _pairs_in(cells):
     """All (n, pct) values found across cells, in column order."""
     out = []
     for c in cells:
-        for n, pct in PAIR.findall(c):
-            out.append((int(n.replace(",", "")), float(pct)))
+        found = PAIR.findall(c)
+        if found:
+            for n, pct in found:
+                out.append((int(n.replace(",", "")), float(pct)))
+        elif re.fullmatch(r"\s*(0|-|–|—)\s*", c):
+            out.append((0, 0.0))  # an empty arm, e.g. '0' or '-'
     return out
 
 
