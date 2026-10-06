@@ -19,7 +19,7 @@ export default function About() {
 
       <Section title="What it is">
         <p>The Women's Health Record is a series of data chapters on where medicine treats women and men differently: who gets studied, who gets dosed, who waits longest, whose diseases get funded.</p>
-        <p>Each chapter is an original analysis of a public dataset, published with its full method and a link from every number to its source. Chapters are added one at a time, alongside essays on Substack.</p>
+        <p>Each chapter is an original analysis of a public dataset, published with its full method and a link from every number to its source. Chapters are added one at a time, alongside essays on <a href="https://substack.com/@thewomenshealthrecord" target="_blank" rel="noreferrer">Substack</a>.</p>
       </Section>
 
       <Section title="How to read it">

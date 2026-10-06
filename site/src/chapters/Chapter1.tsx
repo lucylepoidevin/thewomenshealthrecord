@@ -9,6 +9,7 @@ import Scatter, { inGapQuadrant } from '../components/charts/Scatter'
 import DataTable from '../components/charts/DataTable'
 import Summary from '../components/charts/Summary'
 import ChartFrame from '../components/charts/ChartFrame'
+import DrugLookup from '../components/DrugLookup'
 import type { Chapter1Data } from '../lib/types'
 
 const GAP = 15 // percentage points: female share of reports minus female share of trial participants
@@ -92,7 +93,22 @@ export default function Chapter1() {
       { value: String(s.n_under_30), label: 'drugs approved on trials under 30% women' },
       { value: String(quadrant.length), label: 'drugs in the Ambien corner' },
     ]} />, 'flow'),
-    T('next', <p className="text-ink-2">Next chapter: what happens to women once they reach the emergency room.</p>),
+    T('for-you', <>
+      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">What this means for you.</p>
+      <p>Start with the drugs you actually take. If one was approved since 2015, it is in the box below: how many women were in the trials that approved it, and what the post-market reports look like.</p>
+    </>),
+    F('lookup', <DrugLookup drugs={data.drugs} minReports={MIN_REPORTS} />, 'flow'),
+    T('for-you-2', <>
+      <p>A low share of women in the trial does not mean a drug is unsafe for you. It means the evidence is thinner, and that is worth a conversation. Three questions carry most of the weight:</p>
+      <ul className="list-disc space-y-2 pl-6">
+        <li><span className="font-semibold">Was the dose studied in women?</span> Zolpidem's problem was not the drug, it was the dose. Some labels now carry sex-specific dosing; many drugs clear differently in women and men without it being on the label.</li>
+        <li><span className="font-semibold">Did the trial report results by sex?</span> Every FDA snapshot has a section headed "Were there any differences in how well the drug worked" and another for side effects. If it says differences could not be determined, that is an answer too.</li>
+        <li><span className="font-semibold">Is there a lower dose, and a reason not to start there?</span> The FDA's own advice after Ambien, for insomnia drugs, was that patients should take the lowest dose capable of treating them.<Cite id="fda-dsc-2013" /></li>
+      </ul>
+      <p>And if something goes wrong on a drug, report it. FAERS exists because patients and clinicians file reports through the FDA's <a href="https://www.fda.gov/safety/medwatch-fda-safety-information-and-adverse-event-reporting-program" target="_blank" rel="noreferrer">MedWatch</a> programme, and the share of those reports that come from women is one of the few post-market signals anyone has.<Cite id="openfda-faers" /> Every chart on this page was built from reports somebody took the time to file.</p>
+      <p>None of this is medical advice. Bring the numbers to your doctor, not a conclusion.</p>
+    </>),
+    T('next', <p className="text-ink-2">Next chapter: what happens to women once they reach the emergency room. New chapters are announced on <a href="https://substack.com/@thewomenshealthrecord" target="_blank" rel="noreferrer">Substack</a>.</p>),
   ]
 
   return (

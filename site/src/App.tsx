@@ -48,6 +48,7 @@ export default function App() {
             <span>by Lucca Labs</span>
           </div>
           <div className="flex gap-4">
+            <a href="https://substack.com/@thewomenshealthrecord" className="hover:text-berry" target="_blank" rel="noreferrer">Substack</a>
             <Link to="/methods" className="hover:text-berry">Methods &amp; sources</Link>
             <a href="https://github.com/lucylepoidevin/thewomenshealthrecord" className="hover:text-berry" target="_blank" rel="noreferrer">Code &amp; data</a>
           </div>
