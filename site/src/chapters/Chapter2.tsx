@@ -92,11 +92,11 @@ export default function Chapter2() {
       <p>If the problem might be your heart, use the words. "Chest pain" or "chest pressure" is what the triage system is built to hear; "I feel off" is not. Ask whether a troponin, the cardiac enzyme test, has been sent. And if it might be your heart, call the ambulance rather than driving: the data shows women do this less, and arrival by ambulance is the surest route to an urgent rating.</p>
       <p>None of this is medical advice. Bring the numbers to your doctor, not a conclusion.</p>
     </>),
-    F('summary', <Summary source={src} items={[
-      { value: `${p(A.severe_share, 'women')}% / ${p(A.severe_share, 'men')}%`, label: 'women / men arriving with pain rated 7–10' },
-      { value: `${p(A.urgent, 'women')}% / ${p(A.urgent, 'men')}%`, label: 'women / men triaged urgent' },
-      { value: `${p(abd.opioid_ed_severe, 'women')}% / ${p(abd.opioid_ed_severe, 'men')}%`, label: 'given an opioid for severe abdominal pain' },
-      { value: `${p(H.cardenz, 'women')}% / ${p(H.cardenz, 'men')}%`, label: 'cardiac enzymes ordered during a heart attack' },
+    F('summary', <Summary title="Chapter 2 in four numbers" source={src} items={[
+      { women: `${p(A.severe_share, 'women')}%`, men: `${p(A.severe_share, 'men')}%`, label: 'arrived with pain rated 7 to 10' },
+      { women: `${p(A.urgent, 'women')}%`, men: `${p(A.urgent, 'men')}%`, label: 'triaged urgent on arrival' },
+      { women: `${p(abd.opioid_ed_severe, 'women')}%`, men: `${p(abd.opioid_ed_severe, 'men')}%`, label: 'given an opioid for severe abdominal pain' },
+      { women: `${p(H.cardenz, 'women')}%`, men: `${p(H.cardenz, 'men')}%`, label: 'had cardiac enzymes ordered during a heart attack' },
     ]} />, 'flow', false),
   ]
 

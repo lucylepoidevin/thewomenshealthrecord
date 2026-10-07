@@ -102,7 +102,7 @@ export default function Chapter1() {
       <p>So read the gap as a flag, not a verdict. The flag says: this drug was approved with little evidence about women, and the post-market signal is tilted toward them. That is where someone should look.</p>
       <p>Every number on this page is reproducible from public FDA data with the code in our repository. The <Link to="/methods">methods page</Link> explains each step, including the choices we made and what would change them.</p>
     </>),
-    F('summary', <Summary source={faersSrc} items={[
+    F('summary', <Summary title="Chapter 1 in four numbers" source={faersSrc} items={[
       { value: String(s.n_drugs), label: `new drugs with a published trial snapshot, ${s.years[0]}–${s.years[1]}` },
       { value: `${s.median_trial_female_pct.toFixed(0)}%`, label: 'women in the median pivotal trial' },
       { value: String(s.n_under_30), label: 'drugs approved on trials under 30% women' },
