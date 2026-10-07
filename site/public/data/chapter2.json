@@ -4,6 +4,254 @@
   2018,
   2022
  ],
+ "heart_attack": {
+  "n": 377,
+  "n_women": 138,
+  "n_men": 239,
+  "weighted_per_year_k": 650,
+  "metrics": {
+   "age_mean": {
+    "women": {
+     "est": 67.6,
+     "lo": 64.3,
+     "hi": 70.8,
+     "n": 138
+    },
+    "men": {
+     "est": 63.3,
+     "lo": 60.3,
+     "hi": 66.3,
+     "n": 239
+    },
+    "diff": 4.3,
+    "diff_lo": -0.1,
+    "diff_hi": 8.7
+   },
+   "chief_complaint_chest": {
+    "women": {
+     "est": 37.9,
+     "lo": 26.4,
+     "hi": 49.4,
+     "n": 138
+    },
+    "men": {
+     "est": 46.0,
+     "lo": 36.4,
+     "hi": 55.7,
+     "n": 239
+    },
+    "diff": -8.1,
+    "diff_lo": -23.1,
+    "diff_hi": 6.9
+   },
+   "any_chest": {
+    "women": {
+     "est": 49.7,
+     "lo": 36.5,
+     "hi": 63.0,
+     "n": 138
+    },
+    "men": {
+     "est": 58.0,
+     "lo": 48.8,
+     "hi": 67.2,
+     "n": 239
+    },
+    "diff": -8.3,
+    "diff_lo": -24.4,
+    "diff_hi": 7.9
+   },
+   "ems": {
+    "women": {
+     "est": 34.8,
+     "lo": 25.8,
+     "hi": 43.8,
+     "n": 131
+    },
+    "men": {
+     "est": 47.7,
+     "lo": 38.9,
+     "hi": 56.4,
+     "n": 234
+    },
+    "diff": -12.9,
+    "diff_lo": -25.4,
+    "diff_hi": -0.4
+   },
+   "urgent": {
+    "women": {
+     "est": 48.1,
+     "lo": 32.4,
+     "hi": 63.9,
+     "n": 98
+    },
+    "men": {
+     "est": 62.7,
+     "lo": 52.7,
+     "hi": 72.7,
+     "n": 177
+    },
+    "diff": -14.5,
+    "diff_lo": -33.2,
+    "diff_hi": 4.1
+   },
+   "esi1": {
+    "women": {
+     "est": 4.8,
+     "lo": -2.0,
+     "hi": 11.5,
+     "n": 98
+    },
+    "men": {
+     "est": 13.8,
+     "lo": 5.3,
+     "hi": 22.2,
+     "n": 177
+    },
+    "diff": -9.0,
+    "diff_lo": -19.8,
+    "diff_hi": 1.8
+   },
+   "wait_mean": {
+    "women": {
+     "est": 17.3,
+     "lo": 12.3,
+     "hi": 22.2,
+     "n": 113
+    },
+    "men": {
+     "est": 19.3,
+     "lo": 13.7,
+     "hi": 24.8,
+     "n": 203
+    },
+    "diff": -2.0,
+    "diff_lo": -9.4,
+    "diff_hi": 5.4
+   },
+   "ekg": {
+    "women": {
+     "est": 78.1,
+     "lo": 70.2,
+     "hi": 86.1,
+     "n": 138
+    },
+    "men": {
+     "est": 79.9,
+     "lo": 72.9,
+     "hi": 86.9,
+     "n": 239
+    },
+    "diff": -1.8,
+    "diff_lo": -12.4,
+    "diff_hi": 8.8
+   },
+   "cardenz": {
+    "women": {
+     "est": 27.9,
+     "lo": 16.4,
+     "hi": 39.4,
+     "n": 138
+    },
+    "men": {
+     "est": 43.4,
+     "lo": 33.7,
+     "hi": 53.0,
+     "n": 239
+    },
+    "diff": -15.4,
+    "diff_lo": -30.5,
+    "diff_hi": -0.4
+   },
+   "admitted": {
+    "women": {
+     "est": 13.3,
+     "lo": 4.9,
+     "hi": 21.7,
+     "n": 138
+    },
+    "men": {
+     "est": 15.8,
+     "lo": 8.9,
+     "hi": 22.6,
+     "n": 239
+    },
+    "diff": -2.5,
+    "diff_lo": -13.3,
+    "diff_hi": 8.3
+   },
+   "lov_mean": {
+    "women": {
+     "est": 307.0,
+     "lo": 239.0,
+     "hi": 376.0,
+     "n": 128
+    },
+    "men": {
+     "est": 393.0,
+     "lo": 316.0,
+     "hi": 469.0,
+     "n": 223
+    },
+    "diff": -85.0,
+    "diff_lo": -188.0,
+    "diff_hi": 18.0
+   }
+  },
+  "under_65": {
+   "chief_complaint_chest": {
+    "women": {
+     "est": 50.4,
+     "lo": 32.1,
+     "hi": 68.7,
+     "n": 50
+    },
+    "men": {
+     "est": 60.6,
+     "lo": 47.6,
+     "hi": 73.7,
+     "n": 118
+    },
+    "diff": -10.2,
+    "diff_lo": -32.7,
+    "diff_hi": 12.3
+   },
+   "urgent": {
+    "women": {
+     "est": 59.3,
+     "lo": 39.1,
+     "hi": 79.5,
+     "n": 43
+    },
+    "men": {
+     "est": 70.5,
+     "lo": 57.8,
+     "hi": 83.2,
+     "n": 84
+    },
+    "diff": -11.2,
+    "diff_lo": -35.0,
+    "diff_hi": 12.6
+   },
+   "cardenz": {
+    "women": {
+     "est": 26.4,
+     "lo": 10.2,
+     "hi": 42.5,
+     "n": 50
+    },
+    "men": {
+     "est": 33.6,
+     "lo": 22.0,
+     "hi": 45.3,
+     "n": 118
+    },
+    "diff": -7.2,
+    "diff_lo": -27.1,
+    "diff_hi": 12.7
+   }
+  }
+ },
  "n_adult_visits": 68504,
  "weighted_adult_visits_per_year_m": 111.9,
  "groups": [
@@ -11,224 +259,292 @@
    "id": "abdominal",
    "label": "Abdominal pain",
    "n": 6123,
-   "n_women": 2251,
-   "n_men": 3872,
+   "n_women": 3872,
+   "n_men": 2251,
    "weighted_visits_per_year": 10.32,
    "metrics": {
     "opioid_ed": {
      "women": {
-      "est": 35.5,
-      "lo": 32.0,
-      "hi": 38.9,
-      "n": 2251
-     },
-     "men": {
       "est": 32.8,
       "lo": 30.1,
       "hi": 35.5,
       "n": 3872
      },
-     "diff": 2.6,
-     "diff_lo": -1.7,
-     "diff_hi": 7.0
+     "men": {
+      "est": 35.5,
+      "lo": 32.0,
+      "hi": 38.9,
+      "n": 2251
+     },
+     "diff": -2.6,
+     "diff_lo": -7.0,
+     "diff_hi": 1.7
     },
     "opioid_any": {
      "women": {
-      "est": 40.6,
-      "lo": 37.0,
-      "hi": 44.1,
-      "n": 2251
-     },
-     "men": {
       "est": 37.3,
       "lo": 34.5,
       "hi": 40.1,
       "n": 3872
      },
-     "diff": 3.3,
-     "diff_lo": -1.2,
-     "diff_hi": 7.8
+     "men": {
+      "est": 40.6,
+      "lo": 37.0,
+      "hi": 44.1,
+      "n": 2251
+     },
+     "diff": -3.3,
+     "diff_lo": -7.8,
+     "diff_hi": 1.2
     },
     "analgesic_ed": {
      "women": {
-      "est": 50.1,
-      "lo": 46.6,
-      "hi": 53.6,
-      "n": 2251
-     },
-     "men": {
       "est": 51.5,
       "lo": 48.3,
       "hi": 54.6,
       "n": 3872
      },
-     "diff": -1.4,
-     "diff_lo": -6.1,
-     "diff_hi": 3.3
+     "men": {
+      "est": 50.1,
+      "lo": 46.6,
+      "hi": 53.6,
+      "n": 2251
+     },
+     "diff": 1.4,
+     "diff_lo": -3.3,
+     "diff_hi": 6.1
     },
     "wait_mean": {
      "women": {
-      "est": 37.8,
-      "lo": 32.8,
-      "hi": 42.7,
-      "n": 1916
-     },
-     "men": {
       "est": 41.2,
       "lo": 35.9,
       "hi": 46.5,
       "n": 3389
      },
-     "diff": -3.5,
-     "diff_lo": -10.7,
-     "diff_hi": 3.8
+     "men": {
+      "est": 37.8,
+      "lo": 32.8,
+      "hi": 42.7,
+      "n": 1916
+     },
+     "diff": 3.5,
+     "diff_lo": -3.8,
+     "diff_hi": 10.7
     },
     "severe_share": {
      "women": {
-      "est": 58.1,
-      "lo": 53.9,
-      "hi": 62.4,
-      "n": 1615
-     },
-     "men": {
       "est": 62.9,
       "lo": 60.3,
       "hi": 65.6,
       "n": 2756
      },
-     "diff": -4.8,
-     "diff_lo": -9.8,
-     "diff_hi": 0.2
+     "men": {
+      "est": 58.1,
+      "lo": 53.9,
+      "hi": 62.4,
+      "n": 1615
+     },
+     "diff": 4.8,
+     "diff_lo": -0.2,
+     "diff_hi": 9.8
     },
     "urgent": {
      "women": {
-      "est": 9.0,
-      "lo": 6.5,
-      "hi": 11.5,
-      "n": 1642
-     },
-     "men": {
       "est": 8.3,
       "lo": 6.3,
       "hi": 10.4,
       "n": 2837
      },
-     "diff": 0.7,
-     "diff_lo": -2.5,
-     "diff_hi": 4.0
+     "men": {
+      "est": 9.0,
+      "lo": 6.5,
+      "hi": 11.5,
+      "n": 1642
+     },
+     "diff": -0.7,
+     "diff_lo": -4.0,
+     "diff_hi": 2.5
     },
     "admitted": {
      "women": {
-      "est": 1.5,
-      "lo": 0.8,
-      "hi": 2.3,
-      "n": 2251
-     },
-     "men": {
       "est": 1.9,
       "lo": 0.9,
       "hi": 2.8,
       "n": 3872
      },
-     "diff": -0.3,
-     "diff_lo": -1.6,
-     "diff_hi": 0.9
+     "men": {
+      "est": 1.5,
+      "lo": 0.8,
+      "hi": 2.3,
+      "n": 2251
+     },
+     "diff": 0.3,
+     "diff_lo": -0.9,
+     "diff_hi": 1.6
     },
     "opioid_ed_severe": {
      "women": {
-      "est": 48.4,
-      "lo": 43.3,
-      "hi": 53.5,
-      "n": 936
-     },
-     "men": {
       "est": 40.8,
       "lo": 37.1,
       "hi": 44.5,
       "n": 1726
      },
-     "diff": 7.6,
-     "diff_lo": 1.3,
-     "diff_hi": 13.9
+     "men": {
+      "est": 48.4,
+      "lo": 43.3,
+      "hi": 53.5,
+      "n": 936
+     },
+     "diff": -7.6,
+     "diff_lo": -13.9,
+     "diff_hi": -1.3
     },
     "analgesic_ed_severe": {
      "women": {
-      "est": 62.9,
-      "lo": 57.9,
-      "hi": 67.8,
-      "n": 936
-     },
-     "men": {
       "est": 61.1,
       "lo": 57.4,
       "hi": 64.8,
       "n": 1726
      },
-     "diff": 1.8,
-     "diff_lo": -4.4,
-     "diff_hi": 7.9
+     "men": {
+      "est": 62.9,
+      "lo": 57.9,
+      "hi": 67.8,
+      "n": 936
+     },
+     "diff": -1.8,
+     "diff_lo": -7.9,
+     "diff_hi": 4.4
     },
     "wait_mean_severe": {
      "women": {
-      "est": 35.0,
-      "lo": 29.4,
-      "hi": 40.6,
-      "n": 808
-     },
-     "men": {
       "est": 38.7,
       "lo": 32.7,
       "hi": 44.7,
       "n": 1551
      },
-     "diff": -3.7,
-     "diff_lo": -11.9,
-     "diff_hi": 4.5
+     "men": {
+      "est": 35.0,
+      "lo": 29.4,
+      "hi": 40.6,
+      "n": 808
+     },
+     "diff": 3.7,
+     "diff_lo": -4.5,
+     "diff_hi": 11.9
+    },
+    "psych_dx": {
+     "women": {
+      "est": 1.1,
+      "lo": 0.4,
+      "hi": 1.8,
+      "n": 3872
+     },
+     "men": {
+      "est": 1.1,
+      "lo": 0.6,
+      "hi": 1.6,
+      "n": 2251
+     },
+     "diff": 0.0,
+     "diff_lo": -0.9,
+     "diff_hi": 0.9
+    },
+    "symptom_dx": {
+     "women": {
+      "est": 46.0,
+      "lo": 43.1,
+      "hi": 48.9,
+      "n": 3872
+     },
+     "men": {
+      "est": 43.4,
+      "lo": 40.4,
+      "hi": 46.4,
+      "n": 2251
+     },
+     "diff": 2.6,
+     "diff_lo": -1.5,
+     "diff_hi": 6.8
+    },
+    "tests_count": {
+     "women": {
+      "est": 5.9,
+      "lo": 5.7,
+      "hi": 6.1,
+      "n": 3843
+     },
+     "men": {
+      "est": 5.4,
+      "lo": 5.1,
+      "hi": 5.7,
+      "n": 2224
+     },
+     "diff": 0.5,
+     "diff_lo": 0.2,
+     "diff_hi": 0.8
+    },
+    "ems": {
+     "women": {
+      "est": 12.1,
+      "lo": 10.5,
+      "hi": 13.8,
+      "n": 3757
+     },
+     "men": {
+      "est": 16.8,
+      "lo": 13.7,
+      "hi": 19.8,
+      "n": 2182
+     },
+     "diff": -4.6,
+     "diff_lo": -8.1,
+     "diff_hi": -1.1
     },
     "ctab": {
      "women": {
-      "est": 54.4,
-      "lo": 50.9,
-      "hi": 57.9,
-      "n": 2251
-     },
-     "men": {
       "est": 46.2,
       "lo": 43.2,
       "hi": 49.3,
       "n": 3872
      },
-     "diff": 8.2,
-     "diff_lo": 3.5,
-     "diff_hi": 12.8
+     "men": {
+      "est": 54.4,
+      "lo": 50.9,
+      "hi": 57.9,
+      "n": 2251
+     },
+     "diff": -8.2,
+     "diff_lo": -12.8,
+     "diff_hi": -3.5
     }
    },
    "age_adjusted": {
     "opioid_ed": {
      "women": {
-      "est": 34.6,
-      "lo": 31.6,
-      "hi": 37.7
-     },
-     "men": {
       "est": 33.5,
       "lo": 31.2,
       "hi": 35.8
      },
-     "diff": 1.1
+     "men": {
+      "est": 34.6,
+      "lo": 31.6,
+      "hi": 37.7
+     },
+     "diff": -1.1
     },
     "analgesic_ed": {
      "women": {
-      "est": 49.6,
-      "lo": 46.3,
-      "hi": 52.8
-     },
-     "men": {
       "est": 51.8,
       "lo": 49.1,
       "hi": 54.5
      },
-     "diff": -2.2
+     "men": {
+      "est": 49.6,
+      "lo": 46.3,
+      "hi": 52.8
+     },
+     "diff": 2.2
     }
    }
   },
@@ -236,258 +552,602 @@
    "id": "chest",
    "label": "Chest pain",
    "n": 4180,
-   "n_women": 1990,
-   "n_men": 2190,
+   "n_women": 2190,
+   "n_men": 1990,
    "weighted_visits_per_year": 7.31,
    "metrics": {
     "opioid_ed": {
      "women": {
-      "est": 15.3,
-      "lo": 12.5,
-      "hi": 18.0,
-      "n": 1990
-     },
-     "men": {
       "est": 15.8,
       "lo": 13.3,
       "hi": 18.2,
       "n": 2190
      },
-     "diff": -0.5,
-     "diff_lo": -4.2,
-     "diff_hi": 3.2
+     "men": {
+      "est": 15.3,
+      "lo": 12.5,
+      "hi": 18.0,
+      "n": 1990
+     },
+     "diff": 0.5,
+     "diff_lo": -3.2,
+     "diff_hi": 4.2
     },
     "opioid_any": {
      "women": {
-      "est": 17.1,
-      "lo": 14.4,
-      "hi": 19.9,
-      "n": 1990
-     },
-     "men": {
       "est": 18.4,
       "lo": 15.6,
       "hi": 21.1,
       "n": 2190
      },
-     "diff": -1.2,
-     "diff_lo": -5.1,
-     "diff_hi": 2.7
+     "men": {
+      "est": 17.1,
+      "lo": 14.4,
+      "hi": 19.9,
+      "n": 1990
+     },
+     "diff": 1.2,
+     "diff_lo": -2.7,
+     "diff_hi": 5.1
     },
     "analgesic_ed": {
      "women": {
-      "est": 49.5,
-      "lo": 45.6,
-      "hi": 53.5,
-      "n": 1990
-     },
-     "men": {
       "est": 50.1,
       "lo": 46.1,
       "hi": 54.1,
       "n": 2190
      },
-     "diff": -0.6,
-     "diff_lo": -6.2,
-     "diff_hi": 5.0
+     "men": {
+      "est": 49.5,
+      "lo": 45.6,
+      "hi": 53.5,
+      "n": 1990
+     },
+     "diff": 0.6,
+     "diff_lo": -5.0,
+     "diff_hi": 6.2
     },
     "wait_mean": {
      "women": {
-      "est": 32.7,
-      "lo": 27.4,
-      "hi": 37.9,
-      "n": 1726
-     },
-     "men": {
       "est": 28.8,
       "lo": 25.7,
       "hi": 31.9,
       "n": 1917
      },
-     "diff": 3.9,
-     "diff_lo": -2.2,
-     "diff_hi": 10.0
+     "men": {
+      "est": 32.7,
+      "lo": 27.4,
+      "hi": 37.9,
+      "n": 1726
+     },
+     "diff": -3.9,
+     "diff_lo": -10.0,
+     "diff_hi": 2.2
     },
     "severe_share": {
      "women": {
-      "est": 37.9,
-      "lo": 33.6,
-      "hi": 42.2,
-      "n": 1338
-     },
-     "men": {
       "est": 47.8,
       "lo": 44.4,
       "hi": 51.3,
       "n": 1446
      },
-     "diff": -9.9,
-     "diff_lo": -15.4,
-     "diff_hi": -4.4
+     "men": {
+      "est": 37.9,
+      "lo": 33.6,
+      "hi": 42.2,
+      "n": 1338
+     },
+     "diff": 9.9,
+     "diff_lo": 4.4,
+     "diff_hi": 15.4
     },
     "urgent": {
      "women": {
-      "est": 44.6,
-      "lo": 39.1,
-      "hi": 50.1,
-      "n": 1453
-     },
-     "men": {
       "est": 39.3,
       "lo": 34.0,
       "hi": 44.6,
       "n": 1599
      },
-     "diff": 5.3,
-     "diff_lo": -2.3,
-     "diff_hi": 12.9
+     "men": {
+      "est": 44.6,
+      "lo": 39.1,
+      "hi": 50.1,
+      "n": 1453
+     },
+     "diff": -5.3,
+     "diff_lo": -12.9,
+     "diff_hi": 2.3
     },
     "admitted": {
      "women": {
-      "est": 3.4,
-      "lo": 2.0,
-      "hi": 4.8,
-      "n": 1990
-     },
-     "men": {
       "est": 2.1,
       "lo": 1.2,
       "hi": 3.1,
       "n": 2190
      },
-     "diff": 1.3,
-     "diff_lo": -0.4,
-     "diff_hi": 3.0
+     "men": {
+      "est": 3.4,
+      "lo": 2.0,
+      "hi": 4.8,
+      "n": 1990
+     },
+     "diff": -1.3,
+     "diff_lo": -3.0,
+     "diff_hi": 0.4
     },
     "opioid_ed_severe": {
      "women": {
-      "est": 28.4,
-      "lo": 21.4,
-      "hi": 35.4,
-      "n": 502
-     },
-     "men": {
       "est": 26.6,
       "lo": 21.0,
       "hi": 32.3,
       "n": 652
      },
-     "diff": 1.8,
-     "diff_lo": -7.2,
-     "diff_hi": 10.8
+     "men": {
+      "est": 28.4,
+      "lo": 21.4,
+      "hi": 35.4,
+      "n": 502
+     },
+     "diff": -1.8,
+     "diff_lo": -10.8,
+     "diff_hi": 7.2
     },
     "analgesic_ed_severe": {
      "women": {
-      "est": 64.7,
-      "lo": 58.7,
-      "hi": 70.7,
-      "n": 502
-     },
-     "men": {
       "est": 63.8,
       "lo": 57.9,
       "hi": 69.6,
       "n": 652
      },
-     "diff": 0.9,
-     "diff_lo": -7.5,
-     "diff_hi": 9.3
+     "men": {
+      "est": 64.7,
+      "lo": 58.7,
+      "hi": 70.7,
+      "n": 502
+     },
+     "diff": -0.9,
+     "diff_lo": -9.3,
+     "diff_hi": 7.5
     },
     "wait_mean_severe": {
      "women": {
-      "est": 31.6,
-      "lo": 22.2,
-      "hi": 41.1,
-      "n": 440
-     },
-     "men": {
       "est": 28.3,
       "lo": 23.7,
       "hi": 33.0,
       "n": 584
      },
-     "diff": 3.3,
-     "diff_lo": -7.3,
-     "diff_hi": 13.9
+     "men": {
+      "est": 31.6,
+      "lo": 22.2,
+      "hi": 41.1,
+      "n": 440
+     },
+     "diff": -3.3,
+     "diff_lo": -13.9,
+     "diff_hi": 7.3
+    },
+    "psych_dx": {
+     "women": {
+      "est": 2.4,
+      "lo": 1.4,
+      "hi": 3.4,
+      "n": 2190
+     },
+     "men": {
+      "est": 3.5,
+      "lo": 2.2,
+      "hi": 4.8,
+      "n": 1990
+     },
+     "diff": -1.1,
+     "diff_lo": -2.7,
+     "diff_hi": 0.5
+    },
+    "symptom_dx": {
+     "women": {
+      "est": 67.2,
+      "lo": 64.1,
+      "hi": 70.3,
+      "n": 2190
+     },
+     "men": {
+      "est": 65.8,
+      "lo": 62.9,
+      "hi": 68.6,
+      "n": 1990
+     },
+     "diff": 1.4,
+     "diff_lo": -2.8,
+     "diff_hi": 5.7
+    },
+    "tests_count": {
+     "women": {
+      "est": 6.4,
+      "lo": 6.2,
+      "hi": 6.7,
+      "n": 2171
+     },
+     "men": {
+      "est": 6.2,
+      "lo": 5.9,
+      "hi": 6.4,
+      "n": 1970
+     },
+     "diff": 0.3,
+     "diff_lo": -0.1,
+     "diff_hi": 0.7
+    },
+    "ems": {
+     "women": {
+      "est": 19.8,
+      "lo": 17.5,
+      "hi": 22.2,
+      "n": 2116
+     },
+     "men": {
+      "est": 24.4,
+      "lo": 21.2,
+      "hi": 27.5,
+      "n": 1916
+     },
+     "diff": -4.6,
+     "diff_lo": -8.5,
+     "diff_hi": -0.6
     },
     "ekg": {
      "women": {
-      "est": 85.2,
-      "lo": 82.2,
-      "hi": 88.1,
-      "n": 1990
-     },
-     "men": {
       "est": 84.8,
       "lo": 81.9,
       "hi": 87.7,
       "n": 2190
      },
-     "diff": 0.4,
-     "diff_lo": -3.7,
-     "diff_hi": 4.5
+     "men": {
+      "est": 85.2,
+      "lo": 82.2,
+      "hi": 88.1,
+      "n": 1990
+     },
+     "diff": -0.4,
+     "diff_lo": -4.5,
+     "diff_hi": 3.7
     },
     "cardmon": {
      "women": {
-      "est": 30.6,
-      "lo": 25.3,
-      "hi": 35.9,
-      "n": 1990
-     },
-     "men": {
       "est": 30.7,
       "lo": 25.8,
       "hi": 35.6,
       "n": 2190
      },
-     "diff": -0.1,
-     "diff_lo": -7.3,
-     "diff_hi": 7.1
+     "men": {
+      "est": 30.6,
+      "lo": 25.3,
+      "hi": 35.9,
+      "n": 1990
+     },
+     "diff": 0.1,
+     "diff_lo": -7.1,
+     "diff_hi": 7.3
     },
     "ekg_severe": {
      "women": {
-      "est": 85.0,
-      "lo": 79.5,
-      "hi": 90.6,
-      "n": 502
-     },
-     "men": {
       "est": 83.5,
       "lo": 79.1,
       "hi": 87.9,
       "n": 652
      },
-     "diff": 1.5,
-     "diff_lo": -5.6,
-     "diff_hi": 8.6
+     "men": {
+      "est": 85.0,
+      "lo": 79.5,
+      "hi": 90.6,
+      "n": 502
+     },
+     "diff": -1.5,
+     "diff_lo": -8.6,
+     "diff_hi": 5.6
+    },
+    "cardenz": {
+     "women": {
+      "est": 26.0,
+      "lo": 21.3,
+      "hi": 30.8,
+      "n": 2190
+     },
+     "men": {
+      "est": 30.4,
+      "lo": 25.7,
+      "hi": 35.1,
+      "n": 1990
+     },
+     "diff": -4.4,
+     "diff_lo": -11.1,
+     "diff_hi": 2.3
+    },
+    "ddimer": {
+     "women": {
+      "est": 19.6,
+      "lo": 16.6,
+      "hi": 22.7,
+      "n": 2190
+     },
+     "men": {
+      "est": 14.4,
+      "lo": 11.9,
+      "hi": 17.0,
+      "n": 1990
+     },
+     "diff": 5.2,
+     "diff_lo": 1.2,
+     "diff_hi": 9.1
+    },
+    "xray": {
+     "women": {
+      "est": 81.3,
+      "lo": 79.1,
+      "hi": 83.6,
+      "n": 2190
+     },
+     "men": {
+      "est": 79.2,
+      "lo": 76.0,
+      "hi": 82.5,
+      "n": 1990
+     },
+     "diff": 2.1,
+     "diff_lo": -1.9,
+     "diff_hi": 6.1
+    },
+    "ihd_dx": {
+     "women": {
+      "est": 2.7,
+      "lo": 1.7,
+      "hi": 3.6,
+      "n": 2190
+     },
+     "men": {
+      "est": 6.5,
+      "lo": 5.1,
+      "hi": 7.9,
+      "n": 1990
+     },
+     "diff": -3.8,
+     "diff_lo": -5.5,
+     "diff_hi": -2.2
     }
    },
    "age_adjusted": {
     "opioid_ed": {
      "women": {
-      "est": 15.0,
-      "lo": 12.5,
-      "hi": 17.6
-     },
-     "men": {
       "est": 15.9,
       "lo": 13.6,
       "hi": 18.2
      },
-     "diff": -0.9
+     "men": {
+      "est": 15.0,
+      "lo": 12.5,
+      "hi": 17.6
+     },
+     "diff": 0.9
     },
     "analgesic_ed": {
      "women": {
-      "est": 49.3,
-      "lo": 46.0,
-      "hi": 52.5
-     },
-     "men": {
       "est": 50.3,
       "lo": 47.0,
       "hi": 53.7
      },
-     "diff": -1.0
+     "men": {
+      "est": 49.3,
+      "lo": 46.0,
+      "hi": 52.5
+     },
+     "diff": 1.0
+    }
+   },
+   "dx_mix": {
+    "Ischaemic heart disease": {
+     "women": {
+      "est": 2.7,
+      "lo": 1.7,
+      "hi": 3.6,
+      "n": 2190
+     },
+     "men": {
+      "est": 6.5,
+      "lo": 5.1,
+      "hi": 7.9,
+      "n": 1990
+     },
+     "diff": -3.8,
+     "diff_lo": -5.5,
+     "diff_hi": -2.2
+    },
+    "Other circulatory": {
+     "women": {
+      "est": 6.3,
+      "lo": 4.8,
+      "hi": 7.8,
+      "n": 2190
+     },
+     "men": {
+      "est": 5.9,
+      "lo": 4.4,
+      "hi": 7.3,
+      "n": 1990
+     },
+     "diff": 0.4,
+     "diff_lo": -1.7,
+     "diff_hi": 2.5
+    },
+    "Digestive": {
+     "women": {
+      "est": 2.5,
+      "lo": 1.6,
+      "hi": 3.4,
+      "n": 2190
+     },
+     "men": {
+      "est": 2.5,
+      "lo": 1.6,
+      "hi": 3.4,
+      "n": 1990
+     },
+     "diff": -0.0,
+     "diff_lo": -1.3,
+     "diff_hi": 1.3
+    },
+    "Musculoskeletal": {
+     "women": {
+      "est": 3.2,
+      "lo": 2.2,
+      "hi": 4.2,
+      "n": 2190
+     },
+     "men": {
+      "est": 2.0,
+      "lo": 1.2,
+      "hi": 2.7,
+      "n": 1990
+     },
+     "diff": 1.2,
+     "diff_lo": -0.0,
+     "diff_hi": 2.5
+    },
+    "Respiratory": {
+     "women": {
+      "est": 4.5,
+      "lo": 3.4,
+      "hi": 5.7,
+      "n": 2190
+     },
+     "men": {
+      "est": 4.4,
+      "lo": 3.3,
+      "hi": 5.5,
+      "n": 1990
+     },
+     "diff": 0.1,
+     "diff_lo": -1.5,
+     "diff_hi": 1.7
+    },
+    "Psychiatric": {
+     "women": {
+      "est": 2.4,
+      "lo": 1.4,
+      "hi": 3.4,
+      "n": 2190
+     },
+     "men": {
+      "est": 3.5,
+      "lo": 2.2,
+      "hi": 4.8,
+      "n": 1990
+     },
+     "diff": -1.1,
+     "diff_lo": -2.7,
+     "diff_hi": 0.5
+    },
+    "Chest pain, unspecified": {
+     "women": {
+      "est": 58.0,
+      "lo": 54.6,
+      "hi": 61.3,
+      "n": 2190
+     },
+     "men": {
+      "est": 57.6,
+      "lo": 54.4,
+      "hi": 60.8,
+      "n": 1990
+     },
+     "diff": 0.3,
+     "diff_lo": -4.3,
+     "diff_hi": 5.0
+    },
+    "Other symptom code": {
+     "women": {
+      "est": 9.2,
+      "lo": 7.7,
+      "hi": 10.8,
+      "n": 2190
+     },
+     "men": {
+      "est": 8.2,
+      "lo": 6.6,
+      "hi": 9.7,
+      "n": 1990
+     },
+     "diff": 1.1,
+     "diff_lo": -1.1,
+     "diff_hi": 3.3
+    },
+    "Other": {
+     "women": {
+      "est": 11.3,
+      "lo": 9.5,
+      "hi": 13.1,
+      "n": 2190
+     },
+     "men": {
+      "est": 9.5,
+      "lo": 7.9,
+      "hi": 11.1,
+      "n": 1990
+     },
+     "diff": 1.8,
+     "diff_lo": -0.6,
+     "diff_hi": 4.2
+    }
+   },
+   "ihd_dx_by_age": {
+    "18-44": {
+     "women": {
+      "est": 0.3,
+      "lo": -0.1,
+      "hi": 0.7,
+      "n": 885
+     },
+     "men": {
+      "est": 3.1,
+      "lo": 0.9,
+      "hi": 5.3,
+      "n": 732
+     },
+     "diff": -2.8,
+     "diff_lo": -5.0,
+     "diff_hi": -0.5
+    },
+    "45-64": {
+     "women": {
+      "est": 3.5,
+      "lo": 1.6,
+      "hi": 5.4,
+      "n": 765
+     },
+     "men": {
+      "est": 7.4,
+      "lo": 5.0,
+      "hi": 9.9,
+      "n": 771
+     },
+     "diff": -3.9,
+     "diff_lo": -7.0,
+     "diff_hi": -0.9
+    },
+    "65-+": {
+     "women": {
+      "est": 5.3,
+      "lo": 2.5,
+      "hi": 8.2,
+      "n": 540
+     },
+     "men": {
+      "est": 10.1,
+      "lo": 7.0,
+      "hi": 13.3,
+      "n": 487
+     },
+     "diff": -4.8,
+     "diff_lo": -9.1,
+     "diff_hi": -0.5
     }
    }
   },
@@ -495,207 +1155,275 @@
    "id": "back",
    "label": "Back pain",
    "n": 2426,
-   "n_women": 1058,
-   "n_men": 1368,
+   "n_women": 1368,
+   "n_men": 1058,
    "weighted_visits_per_year": 4.07,
    "metrics": {
     "opioid_ed": {
      "women": {
-      "est": 27.4,
-      "lo": 23.1,
-      "hi": 31.7,
-      "n": 1058
-     },
-     "men": {
       "est": 28.6,
       "lo": 25.2,
       "hi": 32.1,
       "n": 1368
      },
-     "diff": -1.2,
-     "diff_lo": -6.7,
-     "diff_hi": 4.3
+     "men": {
+      "est": 27.4,
+      "lo": 23.1,
+      "hi": 31.7,
+      "n": 1058
+     },
+     "diff": 1.2,
+     "diff_lo": -4.3,
+     "diff_hi": 6.7
     },
     "opioid_any": {
      "women": {
-      "est": 36.5,
-      "lo": 32.0,
-      "hi": 41.0,
-      "n": 1058
-     },
-     "men": {
       "est": 35.5,
       "lo": 31.4,
       "hi": 39.6,
       "n": 1368
      },
-     "diff": 1.0,
-     "diff_lo": -5.1,
-     "diff_hi": 7.0
+     "men": {
+      "est": 36.5,
+      "lo": 32.0,
+      "hi": 41.0,
+      "n": 1058
+     },
+     "diff": -1.0,
+     "diff_lo": -7.0,
+     "diff_hi": 5.1
     },
     "analgesic_ed": {
      "women": {
-      "est": 62.9,
-      "lo": 58.4,
-      "hi": 67.3,
-      "n": 1058
-     },
-     "men": {
       "est": 64.0,
       "lo": 60.4,
       "hi": 67.6,
       "n": 1368
      },
-     "diff": -1.1,
-     "diff_lo": -6.8,
-     "diff_hi": 4.6
+     "men": {
+      "est": 62.9,
+      "lo": 58.4,
+      "hi": 67.3,
+      "n": 1058
+     },
+     "diff": 1.1,
+     "diff_lo": -4.6,
+     "diff_hi": 6.8
     },
     "wait_mean": {
      "women": {
-      "est": 33.5,
-      "lo": 28.9,
-      "hi": 38.2,
-      "n": 918
-     },
-     "men": {
       "est": 42.0,
       "lo": 34.1,
       "hi": 50.0,
       "n": 1187
      },
-     "diff": -8.5,
-     "diff_lo": -17.7,
-     "diff_hi": 0.7
+     "men": {
+      "est": 33.5,
+      "lo": 28.9,
+      "hi": 38.2,
+      "n": 918
+     },
+     "diff": 8.5,
+     "diff_lo": -0.7,
+     "diff_hi": 17.7
     },
     "severe_share": {
      "women": {
-      "est": 73.2,
-      "lo": 68.3,
-      "hi": 78.0,
-      "n": 765
-     },
-     "men": {
       "est": 73.3,
       "lo": 69.0,
       "hi": 77.6,
       "n": 988
      },
-     "diff": -0.2,
-     "diff_lo": -6.7,
-     "diff_hi": 6.3
+     "men": {
+      "est": 73.2,
+      "lo": 68.3,
+      "hi": 78.0,
+      "n": 765
+     },
+     "diff": 0.2,
+     "diff_lo": -6.3,
+     "diff_hi": 6.7
     },
     "urgent": {
      "women": {
-      "est": 6.4,
-      "lo": 3.3,
-      "hi": 9.6,
-      "n": 771
-     },
-     "men": {
       "est": 6.6,
       "lo": 3.3,
       "hi": 9.8,
       "n": 1020
      },
-     "diff": -0.2,
-     "diff_lo": -4.7,
-     "diff_hi": 4.4
+     "men": {
+      "est": 6.4,
+      "lo": 3.3,
+      "hi": 9.6,
+      "n": 771
+     },
+     "diff": 0.2,
+     "diff_lo": -4.4,
+     "diff_hi": 4.7
     },
     "admitted": {
      "women": {
-      "est": 1.0,
-      "lo": 0.2,
-      "hi": 1.7,
-      "n": 1058
-     },
-     "men": {
       "est": 0.4,
       "lo": 0.1,
       "hi": 0.7,
       "n": 1368
      },
-     "diff": 0.5,
-     "diff_lo": -0.2,
-     "diff_hi": 1.3
+     "men": {
+      "est": 1.0,
+      "lo": 0.2,
+      "hi": 1.7,
+      "n": 1058
+     },
+     "diff": -0.5,
+     "diff_lo": -1.3,
+     "diff_hi": 0.2
     },
     "opioid_ed_severe": {
      "women": {
-      "est": 33.1,
-      "lo": 27.0,
-      "hi": 39.3,
-      "n": 555
-     },
-     "men": {
       "est": 35.2,
       "lo": 30.3,
       "hi": 40.1,
       "n": 736
      },
-     "diff": -2.1,
-     "diff_lo": -9.9,
-     "diff_hi": 5.8
+     "men": {
+      "est": 33.1,
+      "lo": 27.0,
+      "hi": 39.3,
+      "n": 555
+     },
+     "diff": 2.1,
+     "diff_lo": -5.8,
+     "diff_hi": 9.9
     },
     "analgesic_ed_severe": {
      "women": {
-      "est": 68.2,
-      "lo": 61.6,
-      "hi": 74.7,
-      "n": 555
-     },
-     "men": {
       "est": 73.6,
       "lo": 70.0,
       "hi": 77.1,
       "n": 736
      },
-     "diff": -5.4,
-     "diff_lo": -12.8,
-     "diff_hi": 2.1
+     "men": {
+      "est": 68.2,
+      "lo": 61.6,
+      "hi": 74.7,
+      "n": 555
+     },
+     "diff": 5.4,
+     "diff_lo": -2.1,
+     "diff_hi": 12.8
     },
     "wait_mean_severe": {
      "women": {
-      "est": 33.1,
-      "lo": 26.4,
-      "hi": 39.8,
-      "n": 490
-     },
-     "men": {
       "est": 37.9,
       "lo": 30.1,
       "hi": 45.7,
       "n": 657
      },
-     "diff": -4.8,
-     "diff_lo": -15.1,
-     "diff_hi": 5.4
+     "men": {
+      "est": 33.1,
+      "lo": 26.4,
+      "hi": 39.8,
+      "n": 490
+     },
+     "diff": 4.8,
+     "diff_lo": -5.4,
+     "diff_hi": 15.1
+    },
+    "psych_dx": {
+     "women": {
+      "est": 0.4,
+      "lo": 0.1,
+      "hi": 0.7,
+      "n": 1368
+     },
+     "men": {
+      "est": 1.0,
+      "lo": 0.1,
+      "hi": 2.0,
+      "n": 1058
+     },
+     "diff": -0.6,
+     "diff_lo": -1.7,
+     "diff_hi": 0.4
+    },
+    "symptom_dx": {
+     "women": {
+      "est": 8.0,
+      "lo": 6.1,
+      "hi": 9.9,
+      "n": 1368
+     },
+     "men": {
+      "est": 4.4,
+      "lo": 3.1,
+      "hi": 5.7,
+      "n": 1058
+     },
+     "diff": 3.6,
+     "diff_lo": 1.3,
+     "diff_hi": 5.9
+    },
+    "tests_count": {
+     "women": {
+      "est": 3.0,
+      "lo": 2.7,
+      "hi": 3.2,
+      "n": 1344
+     },
+     "men": {
+      "est": 2.5,
+      "lo": 2.2,
+      "hi": 2.8,
+      "n": 1034
+     },
+     "diff": 0.5,
+     "diff_lo": 0.1,
+     "diff_hi": 0.8
+    },
+    "ems": {
+     "women": {
+      "est": 11.9,
+      "lo": 9.4,
+      "hi": 14.4,
+      "n": 1335
+     },
+     "men": {
+      "est": 15.3,
+      "lo": 11.8,
+      "hi": 18.8,
+      "n": 1024
+     },
+     "diff": -3.4,
+     "diff_lo": -7.7,
+     "diff_hi": 0.9
     }
    },
    "age_adjusted": {
     "opioid_ed": {
      "women": {
-      "est": 27.7,
-      "lo": 23.9,
-      "hi": 31.4
-     },
-     "men": {
       "est": 28.6,
       "lo": 25.5,
       "hi": 31.6
      },
-     "diff": -0.9
+     "men": {
+      "est": 27.7,
+      "lo": 23.9,
+      "hi": 31.4
+     },
+     "diff": 0.9
     },
     "analgesic_ed": {
      "women": {
-      "est": 62.9,
-      "lo": 58.8,
-      "hi": 67.0
-     },
-     "men": {
       "est": 64.1,
       "lo": 60.7,
       "hi": 67.5
      },
-     "diff": -1.2
+     "men": {
+      "est": 62.9,
+      "lo": 58.8,
+      "hi": 67.0
+     },
+     "diff": 1.2
     }
    }
   },
@@ -703,224 +1431,292 @@
    "id": "headache",
    "label": "Headache or migraine",
    "n": 2096,
-   "n_women": 705,
-   "n_men": 1391,
+   "n_women": 1391,
+   "n_men": 705,
    "weighted_visits_per_year": 3.42,
    "metrics": {
     "opioid_ed": {
      "women": {
-      "est": 12.2,
-      "lo": 8.7,
-      "hi": 15.7,
-      "n": 705
-     },
-     "men": {
       "est": 12.4,
       "lo": 9.3,
       "hi": 15.4,
       "n": 1391
      },
-     "diff": -0.1,
-     "diff_lo": -4.7,
-     "diff_hi": 4.5
+     "men": {
+      "est": 12.2,
+      "lo": 8.7,
+      "hi": 15.7,
+      "n": 705
+     },
+     "diff": 0.1,
+     "diff_lo": -4.5,
+     "diff_hi": 4.7
     },
     "opioid_any": {
      "women": {
-      "est": 15.6,
-      "lo": 11.1,
-      "hi": 20.0,
-      "n": 705
-     },
-     "men": {
       "est": 16.0,
       "lo": 12.9,
       "hi": 19.1,
       "n": 1391
      },
-     "diff": -0.4,
-     "diff_lo": -5.9,
-     "diff_hi": 5.0
+     "men": {
+      "est": 15.6,
+      "lo": 11.1,
+      "hi": 20.0,
+      "n": 705
+     },
+     "diff": 0.4,
+     "diff_lo": -5.0,
+     "diff_hi": 5.9
     },
     "analgesic_ed": {
      "women": {
-      "est": 51.8,
-      "lo": 46.6,
-      "hi": 57.0,
-      "n": 705
-     },
-     "men": {
       "est": 59.1,
       "lo": 55.1,
       "hi": 63.1,
       "n": 1391
      },
-     "diff": -7.3,
-     "diff_lo": -13.8,
-     "diff_hi": -0.7
+     "men": {
+      "est": 51.8,
+      "lo": 46.6,
+      "hi": 57.0,
+      "n": 705
+     },
+     "diff": 7.3,
+     "diff_lo": 0.7,
+     "diff_hi": 13.8
     },
     "wait_mean": {
      "women": {
-      "est": 44.2,
-      "lo": 36.4,
-      "hi": 52.1,
-      "n": 598
-     },
-     "men": {
       "est": 47.9,
       "lo": 32.6,
       "hi": 63.1,
       "n": 1213
      },
-     "diff": -3.6,
-     "diff_lo": -20.8,
-     "diff_hi": 13.5
+     "men": {
+      "est": 44.2,
+      "lo": 36.4,
+      "hi": 52.1,
+      "n": 598
+     },
+     "diff": 3.6,
+     "diff_lo": -13.5,
+     "diff_hi": 20.8
     },
     "severe_share": {
      "women": {
-      "est": 49.8,
-      "lo": 42.2,
-      "hi": 57.4,
-      "n": 479
-     },
-     "men": {
       "est": 61.5,
       "lo": 57.4,
       "hi": 65.5,
       "n": 994
      },
-     "diff": -11.7,
-     "diff_lo": -20.3,
-     "diff_hi": -3.0
+     "men": {
+      "est": 49.8,
+      "lo": 42.2,
+      "hi": 57.4,
+      "n": 479
+     },
+     "diff": 11.7,
+     "diff_lo": 3.0,
+     "diff_hi": 20.3
     },
     "urgent": {
      "women": {
-      "est": 8.3,
-      "lo": 5.3,
-      "hi": 11.4,
-      "n": 500
-     },
-     "men": {
       "est": 11.3,
       "lo": 8.7,
       "hi": 13.9,
       "n": 1037
      },
-     "diff": -3.0,
-     "diff_lo": -7.0,
-     "diff_hi": 1.0
+     "men": {
+      "est": 8.3,
+      "lo": 5.3,
+      "hi": 11.4,
+      "n": 500
+     },
+     "diff": 3.0,
+     "diff_lo": -1.0,
+     "diff_hi": 7.0
     },
     "admitted": {
      "women": {
-      "est": 1.1,
-      "lo": 0.1,
-      "hi": 2.0,
-      "n": 705
-     },
-     "men": {
       "est": 0.8,
       "lo": 0.2,
       "hi": 1.3,
       "n": 1391
      },
-     "diff": 0.3,
-     "diff_lo": -0.8,
-     "diff_hi": 1.4
+     "men": {
+      "est": 1.1,
+      "lo": 0.1,
+      "hi": 2.0,
+      "n": 705
+     },
+     "diff": -0.3,
+     "diff_lo": -1.4,
+     "diff_hi": 0.8
     },
     "opioid_ed_severe": {
      "women": {
-      "est": 16.2,
-      "lo": 10.4,
-      "hi": 22.0,
-      "n": 258
-     },
-     "men": {
       "est": 16.8,
       "lo": 12.1,
       "hi": 21.6,
       "n": 633
      },
-     "diff": -0.6,
-     "diff_lo": -8.2,
-     "diff_hi": 6.9
+     "men": {
+      "est": 16.2,
+      "lo": 10.4,
+      "hi": 22.0,
+      "n": 258
+     },
+     "diff": 0.6,
+     "diff_lo": -6.9,
+     "diff_hi": 8.2
     },
     "analgesic_ed_severe": {
      "women": {
-      "est": 60.8,
-      "lo": 53.7,
-      "hi": 67.9,
-      "n": 258
-     },
-     "men": {
       "est": 69.1,
       "lo": 63.7,
       "hi": 74.6,
       "n": 633
      },
-     "diff": -8.4,
-     "diff_lo": -17.3,
-     "diff_hi": 0.6
+     "men": {
+      "est": 60.8,
+      "lo": 53.7,
+      "hi": 67.9,
+      "n": 258
+     },
+     "diff": 8.4,
+     "diff_lo": -0.6,
+     "diff_hi": 17.3
     },
     "wait_mean_severe": {
      "women": {
-      "est": 40.3,
-      "lo": 30.7,
-      "hi": 49.9,
-      "n": 222
-     },
-     "men": {
       "est": 48.6,
       "lo": 33.7,
       "hi": 63.4,
       "n": 548
      },
-     "diff": -8.3,
-     "diff_lo": -25.9,
-     "diff_hi": 9.4
+     "men": {
+      "est": 40.3,
+      "lo": 30.7,
+      "hi": 49.9,
+      "n": 222
+     },
+     "diff": 8.3,
+     "diff_lo": -9.4,
+     "diff_hi": 25.9
+    },
+    "psych_dx": {
+     "women": {
+      "est": 0.9,
+      "lo": 0.4,
+      "hi": 1.5,
+      "n": 1391
+     },
+     "men": {
+      "est": 4.0,
+      "lo": 2.0,
+      "hi": 6.0,
+      "n": 705
+     },
+     "diff": -3.1,
+     "diff_lo": -5.2,
+     "diff_hi": -1.0
+    },
+    "symptom_dx": {
+     "women": {
+      "est": 41.8,
+      "lo": 37.9,
+      "hi": 45.7,
+      "n": 1391
+     },
+     "men": {
+      "est": 40.3,
+      "lo": 34.9,
+      "hi": 45.7,
+      "n": 705
+     },
+     "diff": 1.5,
+     "diff_lo": -5.2,
+     "diff_hi": 8.2
+    },
+    "tests_count": {
+     "women": {
+      "est": 3.3,
+      "lo": 3.1,
+      "hi": 3.6,
+      "n": 1369
+     },
+     "men": {
+      "est": 3.4,
+      "lo": 3.0,
+      "hi": 3.8,
+      "n": 686
+     },
+     "diff": -0.1,
+     "diff_lo": -0.5,
+     "diff_hi": 0.4
+    },
+    "ems": {
+     "women": {
+      "est": 10.5,
+      "lo": 8.3,
+      "hi": 12.7,
+      "n": 1348
+     },
+     "men": {
+      "est": 14.1,
+      "lo": 10.3,
+      "hi": 18.0,
+      "n": 681
+     },
+     "diff": -3.7,
+     "diff_lo": -8.1,
+     "diff_hi": 0.8
     },
     "cthead": {
      "women": {
-      "est": 44.8,
-      "lo": 38.9,
-      "hi": 50.7,
-      "n": 705
-     },
-     "men": {
       "est": 37.9,
       "lo": 34.3,
       "hi": 41.5,
       "n": 1391
      },
-     "diff": 6.9,
-     "diff_lo": -0.0,
-     "diff_hi": 13.8
+     "men": {
+      "est": 44.8,
+      "lo": 38.9,
+      "hi": 50.7,
+      "n": 705
+     },
+     "diff": -6.9,
+     "diff_lo": -13.8,
+     "diff_hi": 0.0
     }
    },
    "age_adjusted": {
     "opioid_ed": {
      "women": {
-      "est": 12.1,
-      "lo": 8.7,
-      "hi": 15.4
-     },
-     "men": {
       "est": 12.4,
       "lo": 9.8,
       "hi": 15.0
      },
-     "diff": -0.3
+     "men": {
+      "est": 12.1,
+      "lo": 8.7,
+      "hi": 15.4
+     },
+     "diff": 0.3
     },
     "analgesic_ed": {
      "women": {
-      "est": 51.9,
-      "lo": 46.2,
-      "hi": 57.5
-     },
-     "men": {
       "est": 59.1,
       "lo": 55.5,
       "hi": 62.7
      },
-     "diff": -7.2
+     "men": {
+      "est": 51.9,
+      "lo": 46.2,
+      "hi": 57.5
+     },
+     "diff": 7.2
     }
    }
   },
@@ -928,207 +1724,275 @@
    "id": "limb",
    "label": "Neck, hip, leg or joint pain",
    "n": 4051,
-   "n_women": 1806,
-   "n_men": 2245,
+   "n_women": 2245,
+   "n_men": 1806,
    "weighted_visits_per_year": 6.5,
    "metrics": {
     "opioid_ed": {
      "women": {
-      "est": 23.1,
-      "lo": 20.6,
-      "hi": 25.6,
-      "n": 1806
-     },
-     "men": {
       "est": 24.4,
       "lo": 22.0,
       "hi": 26.7,
       "n": 2245
      },
-     "diff": -1.3,
-     "diff_lo": -4.7,
-     "diff_hi": 2.2
+     "men": {
+      "est": 23.1,
+      "lo": 20.6,
+      "hi": 25.6,
+      "n": 1806
+     },
+     "diff": 1.3,
+     "diff_lo": -2.2,
+     "diff_hi": 4.7
     },
     "opioid_any": {
      "women": {
-      "est": 31.0,
-      "lo": 28.0,
-      "hi": 34.0,
-      "n": 1806
-     },
-     "men": {
       "est": 32.7,
       "lo": 29.5,
       "hi": 36.0,
       "n": 2245
      },
-     "diff": -1.7,
-     "diff_lo": -6.1,
-     "diff_hi": 2.7
+     "men": {
+      "est": 31.0,
+      "lo": 28.0,
+      "hi": 34.0,
+      "n": 1806
+     },
+     "diff": 1.7,
+     "diff_lo": -2.7,
+     "diff_hi": 6.1
     },
     "analgesic_ed": {
      "women": {
-      "est": 48.4,
-      "lo": 44.4,
-      "hi": 52.4,
-      "n": 1806
-     },
-     "men": {
       "est": 52.3,
       "lo": 48.9,
       "hi": 55.7,
       "n": 2245
      },
-     "diff": -3.9,
-     "diff_lo": -9.1,
-     "diff_hi": 1.4
+     "men": {
+      "est": 48.4,
+      "lo": 44.4,
+      "hi": 52.4,
+      "n": 1806
+     },
+     "diff": 3.9,
+     "diff_lo": -1.4,
+     "diff_hi": 9.1
     },
     "wait_mean": {
      "women": {
-      "est": 38.6,
-      "lo": 32.5,
-      "hi": 44.7,
-      "n": 1559
-     },
-     "men": {
       "est": 34.6,
       "lo": 28.7,
       "hi": 40.6,
       "n": 1942
      },
-     "diff": 4.0,
-     "diff_lo": -4.6,
-     "diff_hi": 12.5
+     "men": {
+      "est": 38.6,
+      "lo": 32.5,
+      "hi": 44.7,
+      "n": 1559
+     },
+     "diff": -4.0,
+     "diff_lo": -12.5,
+     "diff_hi": 4.6
     },
     "severe_share": {
      "women": {
-      "est": 62.1,
-      "lo": 57.4,
-      "hi": 66.8,
-      "n": 1244
-     },
-     "men": {
       "est": 67.8,
       "lo": 64.6,
       "hi": 70.9,
       "n": 1577
      },
-     "diff": -5.7,
-     "diff_lo": -11.3,
-     "diff_hi": -0.1
+     "men": {
+      "est": 62.1,
+      "lo": 57.4,
+      "hi": 66.8,
+      "n": 1244
+     },
+     "diff": 5.7,
+     "diff_lo": 0.1,
+     "diff_hi": 11.3
     },
     "urgent": {
      "women": {
-      "est": 6.5,
-      "lo": 3.8,
-      "hi": 9.1,
-      "n": 1350
-     },
-     "men": {
       "est": 5.3,
       "lo": 3.5,
       "hi": 7.2,
       "n": 1661
      },
-     "diff": 1.1,
-     "diff_lo": -2.1,
-     "diff_hi": 4.3
+     "men": {
+      "est": 6.5,
+      "lo": 3.8,
+      "hi": 9.1,
+      "n": 1350
+     },
+     "diff": -1.1,
+     "diff_lo": -4.3,
+     "diff_hi": 2.1
     },
     "admitted": {
      "women": {
-      "est": 1.1,
-      "lo": 0.3,
-      "hi": 1.9,
-      "n": 1806
-     },
-     "men": {
       "est": 0.8,
       "lo": 0.3,
       "hi": 1.3,
       "n": 2245
      },
-     "diff": 0.3,
-     "diff_lo": -0.7,
-     "diff_hi": 1.3
+     "men": {
+      "est": 1.1,
+      "lo": 0.3,
+      "hi": 1.9,
+      "n": 1806
+     },
+     "diff": -0.3,
+     "diff_lo": -1.3,
+     "diff_hi": 0.7
     },
     "opioid_ed_severe": {
      "women": {
-      "est": 26.0,
-      "lo": 22.1,
-      "hi": 30.0,
-      "n": 763
-     },
-     "men": {
       "est": 30.9,
       "lo": 27.6,
       "hi": 34.1,
       "n": 1064
      },
-     "diff": -4.8,
-     "diff_lo": -10.0,
-     "diff_hi": 0.4
+     "men": {
+      "est": 26.0,
+      "lo": 22.1,
+      "hi": 30.0,
+      "n": 763
+     },
+     "diff": 4.8,
+     "diff_lo": -0.4,
+     "diff_hi": 10.0
     },
     "analgesic_ed_severe": {
      "women": {
-      "est": 56.1,
-      "lo": 50.1,
-      "hi": 62.2,
-      "n": 763
-     },
-     "men": {
       "est": 62.4,
       "lo": 58.1,
       "hi": 66.8,
       "n": 1064
      },
-     "diff": -6.3,
-     "diff_lo": -13.7,
-     "diff_hi": 1.1
+     "men": {
+      "est": 56.1,
+      "lo": 50.1,
+      "hi": 62.2,
+      "n": 763
+     },
+     "diff": 6.3,
+     "diff_lo": -1.1,
+     "diff_hi": 13.7
     },
     "wait_mean_severe": {
      "women": {
-      "est": 37.5,
-      "lo": 30.4,
-      "hi": 44.5,
-      "n": 685
-     },
-     "men": {
       "est": 32.8,
       "lo": 26.2,
       "hi": 39.5,
       "n": 937
      },
-     "diff": 4.6,
-     "diff_lo": -5.1,
-     "diff_hi": 14.3
+     "men": {
+      "est": 37.5,
+      "lo": 30.4,
+      "hi": 44.5,
+      "n": 685
+     },
+     "diff": -4.6,
+     "diff_lo": -14.3,
+     "diff_hi": 5.1
+    },
+    "psych_dx": {
+     "women": {
+      "est": 0.5,
+      "lo": 0.1,
+      "hi": 1.0,
+      "n": 2245
+     },
+     "men": {
+      "est": 1.0,
+      "lo": 0.4,
+      "hi": 1.5,
+      "n": 1806
+     },
+     "diff": -0.4,
+     "diff_lo": -1.1,
+     "diff_hi": 0.3
+    },
+    "symptom_dx": {
+     "women": {
+      "est": 4.9,
+      "lo": 3.5,
+      "hi": 6.3,
+      "n": 2245
+     },
+     "men": {
+      "est": 4.0,
+      "lo": 2.6,
+      "hi": 5.5,
+      "n": 1806
+     },
+     "diff": 0.8,
+     "diff_lo": -1.2,
+     "diff_hi": 2.8
+    },
+    "tests_count": {
+     "women": {
+      "est": 2.4,
+      "lo": 2.2,
+      "hi": 2.6,
+      "n": 2206
+     },
+     "men": {
+      "est": 2.4,
+      "lo": 2.2,
+      "hi": 2.6,
+      "n": 1773
+     },
+     "diff": 0.0,
+     "diff_lo": -0.2,
+     "diff_hi": 0.3
+    },
+    "ems": {
+     "women": {
+      "est": 18.8,
+      "lo": 16.3,
+      "hi": 21.3,
+      "n": 2184
+     },
+     "men": {
+      "est": 16.8,
+      "lo": 14.4,
+      "hi": 19.1,
+      "n": 1753
+     },
+     "diff": 2.0,
+     "diff_lo": -1.4,
+     "diff_hi": 5.4
     }
    },
    "age_adjusted": {
     "opioid_ed": {
      "women": {
-      "est": 23.3,
-      "lo": 20.6,
-      "hi": 26.0
-     },
-     "men": {
       "est": 24.1,
       "lo": 21.8,
       "hi": 26.5
      },
-     "diff": -0.8
+     "men": {
+      "est": 23.3,
+      "lo": 20.6,
+      "hi": 26.0
+     },
+     "diff": 0.8
     },
     "analgesic_ed": {
      "women": {
-      "est": 48.3,
-      "lo": 44.7,
-      "hi": 52.0
-     },
-     "men": {
       "est": 52.2,
       "lo": 49.2,
       "hi": 55.2
      },
-     "diff": -3.9
+     "men": {
+      "est": 48.3,
+      "lo": 44.7,
+      "hi": 52.0
+     },
+     "diff": 3.9
     }
    }
   },
@@ -1136,479 +2000,598 @@
    "id": "flank",
    "label": "Flank, rib or groin pain",
    "n": 1525,
-   "n_women": 711,
-   "n_men": 814,
+   "n_women": 814,
+   "n_men": 711,
    "weighted_visits_per_year": 2.54,
    "metrics": {
     "opioid_ed": {
      "women": {
-      "est": 41.4,
-      "lo": 35.5,
-      "hi": 47.4,
-      "n": 711
-     },
-     "men": {
       "est": 36.0,
       "lo": 30.7,
       "hi": 41.3,
       "n": 814
      },
-     "diff": 5.4,
-     "diff_lo": -2.5,
-     "diff_hi": 13.4
+     "men": {
+      "est": 41.4,
+      "lo": 35.5,
+      "hi": 47.4,
+      "n": 711
+     },
+     "diff": -5.4,
+     "diff_lo": -13.4,
+     "diff_hi": 2.5
     },
     "opioid_any": {
      "women": {
-      "est": 51.1,
-      "lo": 45.6,
-      "hi": 56.6,
-      "n": 711
-     },
-     "men": {
       "est": 43.4,
       "lo": 37.7,
       "hi": 49.1,
       "n": 814
      },
-     "diff": 7.7,
-     "diff_lo": -0.2,
-     "diff_hi": 15.7
+     "men": {
+      "est": 51.1,
+      "lo": 45.6,
+      "hi": 56.6,
+      "n": 711
+     },
+     "diff": -7.7,
+     "diff_lo": -15.7,
+     "diff_hi": 0.2
     },
     "analgesic_ed": {
      "women": {
-      "est": 69.4,
-      "lo": 63.2,
-      "hi": 75.5,
-      "n": 711
-     },
-     "men": {
       "est": 62.9,
       "lo": 57.8,
       "hi": 68.1,
       "n": 814
      },
-     "diff": 6.4,
-     "diff_lo": -1.6,
-     "diff_hi": 14.4
+     "men": {
+      "est": 69.4,
+      "lo": 63.2,
+      "hi": 75.5,
+      "n": 711
+     },
+     "diff": -6.4,
+     "diff_lo": -14.4,
+     "diff_hi": 1.6
     },
     "wait_mean": {
      "women": {
-      "est": 33.5,
-      "lo": 27.2,
-      "hi": 39.8,
-      "n": 634
-     },
-     "men": {
       "est": 41.0,
       "lo": 33.8,
       "hi": 48.3,
       "n": 684
      },
-     "diff": -7.5,
-     "diff_lo": -17.1,
-     "diff_hi": 2.0
+     "men": {
+      "est": 33.5,
+      "lo": 27.2,
+      "hi": 39.8,
+      "n": 634
+     },
+     "diff": 7.5,
+     "diff_lo": -2.0,
+     "diff_hi": 17.1
     },
     "severe_share": {
      "women": {
-      "est": 71.2,
-      "lo": 66.3,
-      "hi": 76.1,
-      "n": 523
-     },
-     "men": {
       "est": 68.0,
       "lo": 61.8,
       "hi": 74.1,
       "n": 576
      },
-     "diff": 3.2,
-     "diff_lo": -4.6,
-     "diff_hi": 11.1
+     "men": {
+      "est": 71.2,
+      "lo": 66.3,
+      "hi": 76.1,
+      "n": 523
+     },
+     "diff": -3.2,
+     "diff_lo": -11.1,
+     "diff_hi": 4.6
     },
     "urgent": {
      "women": {
-      "est": 12.8,
-      "lo": 7.9,
-      "hi": 17.6,
-      "n": 542
-     },
-     "men": {
       "est": 9.1,
       "lo": 5.6,
       "hi": 12.6,
       "n": 590
      },
-     "diff": 3.7,
-     "diff_lo": -2.3,
-     "diff_hi": 9.7
+     "men": {
+      "est": 12.8,
+      "lo": 7.9,
+      "hi": 17.6,
+      "n": 542
+     },
+     "diff": -3.7,
+     "diff_lo": -9.7,
+     "diff_hi": 2.3
     },
     "admitted": {
      "women": {
-      "est": 0.8,
-      "lo": 0.2,
-      "hi": 1.5,
-      "n": 711
-     },
-     "men": {
       "est": 0.6,
       "lo": 0.0,
       "hi": 1.2,
       "n": 814
      },
-     "diff": 0.2,
-     "diff_lo": -0.7,
-     "diff_hi": 1.1
+     "men": {
+      "est": 0.8,
+      "lo": 0.2,
+      "hi": 1.5,
+      "n": 711
+     },
+     "diff": -0.2,
+     "diff_lo": -1.1,
+     "diff_hi": 0.7
     },
     "opioid_ed_severe": {
      "women": {
-      "est": 55.5,
-      "lo": 47.9,
-      "hi": 63.1,
-      "n": 346
-     },
-     "men": {
       "est": 47.4,
       "lo": 39.7,
       "hi": 55.1,
       "n": 391
      },
-     "diff": 8.1,
-     "diff_lo": -2.8,
-     "diff_hi": 18.9
+     "men": {
+      "est": 55.5,
+      "lo": 47.9,
+      "hi": 63.1,
+      "n": 346
+     },
+     "diff": -8.1,
+     "diff_lo": -18.9,
+     "diff_hi": 2.8
     },
     "analgesic_ed_severe": {
      "women": {
-      "est": 85.3,
-      "lo": 80.9,
-      "hi": 89.7,
-      "n": 346
-     },
-     "men": {
       "est": 77.9,
       "lo": 72.4,
       "hi": 83.5,
       "n": 391
      },
-     "diff": 7.4,
-     "diff_lo": 0.3,
-     "diff_hi": 14.4
+     "men": {
+      "est": 85.3,
+      "lo": 80.9,
+      "hi": 89.7,
+      "n": 346
+     },
+     "diff": -7.4,
+     "diff_lo": -14.4,
+     "diff_hi": -0.3
     },
     "wait_mean_severe": {
      "women": {
-      "est": 28.9,
-      "lo": 23.1,
-      "hi": 34.8,
-      "n": 313
-     },
-     "men": {
       "est": 43.7,
       "lo": 31.7,
       "hi": 55.7,
       "n": 339
      },
-     "diff": -14.8,
-     "diff_lo": -28.1,
-     "diff_hi": -1.4
+     "men": {
+      "est": 28.9,
+      "lo": 23.1,
+      "hi": 34.8,
+      "n": 313
+     },
+     "diff": 14.8,
+     "diff_lo": 1.4,
+     "diff_hi": 28.1
+    },
+    "psych_dx": {
+     "women": {
+      "est": 0.2,
+      "lo": -0.0,
+      "hi": 0.3,
+      "n": 814
+     },
+     "men": {
+      "est": 0.1,
+      "lo": -0.1,
+      "hi": 0.3,
+      "n": 711
+     },
+     "diff": 0.0,
+     "diff_lo": -0.3,
+     "diff_hi": 0.3
+    },
+    "symptom_dx": {
+     "women": {
+      "est": 31.3,
+      "lo": 27.0,
+      "hi": 35.6,
+      "n": 814
+     },
+     "men": {
+      "est": 26.7,
+      "lo": 22.2,
+      "hi": 31.2,
+      "n": 711
+     },
+     "diff": 4.6,
+     "diff_lo": -1.6,
+     "diff_hi": 10.8
+    },
+    "tests_count": {
+     "women": {
+      "est": 4.7,
+      "lo": 4.4,
+      "hi": 5.0,
+      "n": 798
+     },
+     "men": {
+      "est": 4.5,
+      "lo": 4.1,
+      "hi": 4.9,
+      "n": 704
+     },
+     "diff": 0.2,
+     "diff_lo": -0.2,
+     "diff_hi": 0.7
+    },
+    "ems": {
+     "women": {
+      "est": 10.8,
+      "lo": 7.9,
+      "hi": 13.8,
+      "n": 785
+     },
+     "men": {
+      "est": 12.6,
+      "lo": 8.8,
+      "hi": 16.4,
+      "n": 698
+     },
+     "diff": -1.8,
+     "diff_lo": -6.6,
+     "diff_hi": 3.1
     }
    },
    "age_adjusted": {
     "opioid_ed": {
      "women": {
-      "est": 41.2,
-      "lo": 35.9,
-      "hi": 46.6
-     },
-     "men": {
       "est": 36.5,
       "lo": 31.8,
       "hi": 41.3
      },
-     "diff": 4.7
+     "men": {
+      "est": 41.2,
+      "lo": 35.9,
+      "hi": 46.6
+     },
+     "diff": -4.7
     },
     "analgesic_ed": {
      "women": {
-      "est": 69.0,
-      "lo": 63.9,
-      "hi": 74.1
-     },
-     "men": {
       "est": 63.3,
       "lo": 58.6,
       "hi": 68.0
      },
-     "diff": 5.7
+     "men": {
+      "est": 69.0,
+      "lo": 63.9,
+      "hi": 74.1
+     },
+     "diff": -5.7
     }
    }
   }
  ],
  "all_pain": {
   "n": 20401,
-  "n_women": 8521,
-  "n_men": 11880,
+  "n_women": 11880,
+  "n_men": 8521,
   "metrics": {
    "opioid_ed": {
     "women": {
-     "est": 25.6,
-     "lo": 23.8,
-     "hi": 27.4,
-     "n": 8521
-    },
-    "men": {
      "est": 25.4,
      "lo": 23.6,
      "hi": 27.3,
      "n": 11880
     },
-    "diff": 0.2,
-    "diff_lo": -2.4,
-    "diff_hi": 2.8
+    "men": {
+     "est": 25.6,
+     "lo": 23.8,
+     "hi": 27.4,
+     "n": 8521
+    },
+    "diff": -0.2,
+    "diff_lo": -2.8,
+    "diff_hi": 2.4
    },
    "opioid_any": {
     "women": {
-     "est": 31.2,
-     "lo": 29.2,
-     "hi": 33.2,
-     "n": 8521
-    },
-    "men": {
      "est": 30.6,
      "lo": 28.6,
      "hi": 32.6,
      "n": 11880
     },
-    "diff": 0.6,
-    "diff_lo": -2.3,
-    "diff_hi": 3.4
+    "men": {
+     "est": 31.2,
+     "lo": 29.2,
+     "hi": 33.2,
+     "n": 8521
+    },
+    "diff": -0.6,
+    "diff_lo": -3.4,
+    "diff_hi": 2.3
    },
    "analgesic_ed": {
     "women": {
-     "est": 52.9,
-     "lo": 50.4,
-     "hi": 55.4,
-     "n": 8521
-    },
-    "men": {
      "est": 54.5,
      "lo": 52.2,
      "hi": 56.7,
      "n": 11880
     },
-    "diff": -1.6,
-    "diff_lo": -5.0,
-    "diff_hi": 1.8
+    "men": {
+     "est": 52.9,
+     "lo": 50.4,
+     "hi": 55.4,
+     "n": 8521
+    },
+    "diff": 1.6,
+    "diff_lo": -1.8,
+    "diff_hi": 5.0
    },
    "wait_mean": {
     "women": {
-     "est": 36.3,
-     "lo": 32.6,
-     "hi": 40.1,
-     "n": 7351
-    },
-    "men": {
      "est": 38.4,
      "lo": 34.2,
      "hi": 42.7,
      "n": 10332
     },
-    "diff": -2.1,
-    "diff_lo": -7.8,
-    "diff_hi": 3.6
+    "men": {
+     "est": 36.3,
+     "lo": 32.6,
+     "hi": 40.1,
+     "n": 7351
+    },
+    "diff": 2.1,
+    "diff_lo": -3.6,
+    "diff_hi": 7.8
    },
    "severe_share": {
     "women": {
-     "est": 56.5,
-     "lo": 54.1,
-     "hi": 58.9,
-     "n": 5964
-    },
-    "men": {
      "est": 62.5,
      "lo": 60.9,
      "hi": 64.1,
      "n": 8337
     },
-    "diff": -6.0,
-    "diff_lo": -8.9,
-    "diff_hi": -3.1
+    "men": {
+     "est": 56.5,
+     "lo": 54.1,
+     "hi": 58.9,
+     "n": 5964
+    },
+    "diff": 6.0,
+    "diff_lo": 3.1,
+    "diff_hi": 8.9
    },
    "opioid_ed_severe": {
     "women": {
-     "est": 36.3,
-     "lo": 33.2,
-     "hi": 39.3,
-     "n": 3360
-    },
-    "men": {
      "est": 33.9,
      "lo": 31.5,
      "hi": 36.2,
      "n": 5202
     },
-    "diff": 2.4,
-    "diff_lo": -1.4,
-    "diff_hi": 6.2
+    "men": {
+     "est": 36.3,
+     "lo": 33.2,
+     "hi": 39.3,
+     "n": 3360
+    },
+    "diff": -2.4,
+    "diff_lo": -6.2,
+    "diff_hi": 1.4
    },
    "analgesic_ed_severe": {
     "women": {
-     "est": 64.7,
-     "lo": 61.5,
-     "hi": 67.8,
-     "n": 3360
-    },
-    "men": {
      "est": 65.6,
      "lo": 63.1,
      "hi": 68.1,
      "n": 5202
     },
-    "diff": -0.9,
-    "diff_lo": -4.9,
-    "diff_hi": 3.1
+    "men": {
+     "est": 64.7,
+     "lo": 61.5,
+     "hi": 67.8,
+     "n": 3360
+    },
+    "diff": 0.9,
+    "diff_lo": -3.1,
+    "diff_hi": 4.9
    },
    "wait_mean_severe": {
     "women": {
-     "est": 34.5,
-     "lo": 30.2,
-     "hi": 38.8,
-     "n": 2958
-    },
-    "men": {
      "est": 37.4,
      "lo": 33.0,
      "hi": 41.9,
      "n": 4616
     },
-    "diff": -3.0,
-    "diff_lo": -9.2,
-    "diff_hi": 3.2
+    "men": {
+     "est": 34.5,
+     "lo": 30.2,
+     "hi": 38.8,
+     "n": 2958
+    },
+    "diff": 3.0,
+    "diff_lo": -3.2,
+    "diff_hi": 9.2
    },
    "urgent": {
     "women": {
-     "est": 17.0,
-     "lo": 14.6,
-     "hi": 19.5,
-     "n": 6258
-    },
-    "men": {
      "est": 13.8,
      "lo": 11.9,
      "hi": 15.7,
      "n": 8744
     },
-    "diff": 3.3,
-    "diff_lo": 0.1,
-    "diff_hi": 6.4
+    "men": {
+     "est": 17.0,
+     "lo": 14.6,
+     "hi": 19.5,
+     "n": 6258
+    },
+    "diff": -3.3,
+    "diff_lo": -6.4,
+    "diff_hi": -0.1
    },
    "ems": {
     "women": {
-     "est": 17.9,
-     "lo": 16.2,
-     "hi": 19.6,
-     "n": 8254
-    },
-    "men": {
      "est": 14.5,
      "lo": 13.4,
      "hi": 15.6,
      "n": 11525
     },
-    "diff": 3.4,
-    "diff_lo": 1.4,
-    "diff_hi": 5.4
+    "men": {
+     "est": 17.9,
+     "lo": 16.2,
+     "hi": 19.6,
+     "n": 8254
+    },
+    "diff": -3.4,
+    "diff_lo": -5.4,
+    "diff_hi": -1.4
+   },
+   "psych_dx": {
+    "women": {
+     "est": 1.1,
+     "lo": 0.7,
+     "hi": 1.4,
+     "n": 11880
+    },
+    "men": {
+     "est": 1.8,
+     "lo": 1.3,
+     "hi": 2.3,
+     "n": 8521
+    },
+    "diff": -0.7,
+    "diff_lo": -1.3,
+    "diff_hi": -0.1
+   },
+   "symptom_dx": {
+    "women": {
+     "est": 36.8,
+     "lo": 34.8,
+     "hi": 38.7,
+     "n": 11880
+    },
+    "men": {
+     "est": 34.4,
+     "lo": 32.4,
+     "hi": 36.4,
+     "n": 8521
+    },
+    "diff": 2.4,
+    "diff_lo": -0.4,
+    "diff_hi": 5.1
+   },
+   "tests_count": {
+    "women": {
+     "est": 4.7,
+     "lo": 4.5,
+     "hi": 4.8,
+     "n": 11731
+    },
+    "men": {
+     "est": 4.4,
+     "lo": 4.2,
+     "hi": 4.6,
+     "n": 8391
+    },
+    "diff": 0.3,
+    "diff_lo": 0.0,
+    "diff_hi": 0.6
    }
   },
   "age_adjusted": {
    "opioid_ed": {
     "women": {
-     "est": 25.2,
-     "lo": 23.8,
-     "hi": 26.7
-    },
-    "men": {
      "est": 25.7,
      "lo": 24.3,
      "hi": 27.1
     },
-    "diff": -0.5
+    "men": {
+     "est": 25.2,
+     "lo": 23.8,
+     "hi": 26.7
+    },
+    "diff": 0.5
    },
    "analgesic_ed": {
     "women": {
-     "est": 52.6,
-     "lo": 50.7,
-     "hi": 54.6
-    },
-    "men": {
      "est": 54.7,
      "lo": 52.9,
      "hi": 56.5
     },
-    "diff": -2.1
+    "men": {
+     "est": 52.6,
+     "lo": 50.7,
+     "hi": 54.6
+    },
+    "diff": 2.1
    },
    "opioid_ed_severe": {
     "women": {
-     "est": 35.9,
-     "lo": 33.5,
-     "hi": 38.3
-    },
-    "men": {
      "est": 34.1,
      "lo": 32.0,
      "hi": 36.2
     },
-    "diff": 1.8
+    "men": {
+     "est": 35.9,
+     "lo": 33.5,
+     "hi": 38.3
+    },
+    "diff": -1.8
    }
   },
   "within_triage": {
    "2": {
     "women": {
-     "est": 28.6,
-     "lo": 24.8,
-     "hi": 32.5,
-     "n": 863
-    },
-    "men": {
      "est": 30.7,
      "lo": 26.9,
      "hi": 34.4,
      "n": 986
     },
-    "diff": -2.0,
-    "diff_lo": -7.4,
-    "diff_hi": 3.4
+    "men": {
+     "est": 28.6,
+     "lo": 24.8,
+     "hi": 32.5,
+     "n": 863
+    },
+    "diff": 2.0,
+    "diff_lo": -3.4,
+    "diff_hi": 7.4
    },
    "3": {
     "women": {
-     "est": 29.7,
-     "lo": 27.4,
-     "hi": 32.1,
-     "n": 3583
-    },
-    "men": {
      "est": 28.7,
      "lo": 26.6,
      "hi": 30.9,
      "n": 5353
     },
-    "diff": 1.0,
-    "diff_lo": -2.2,
-    "diff_hi": 4.2
+    "men": {
+     "est": 29.7,
+     "lo": 27.4,
+     "hi": 32.1,
+     "n": 3583
+    },
+    "diff": -1.0,
+    "diff_lo": -4.2,
+    "diff_hi": 2.2
    },
    "4": {
     "women": {
-     "est": 20.7,
-     "lo": 17.4,
-     "hi": 24.0,
-     "n": 1274
-    },
-    "men": {
      "est": 19.9,
      "lo": 17.2,
      "hi": 22.6,
      "n": 1677
     },
-    "diff": 0.8,
-    "diff_lo": -3.4,
-    "diff_hi": 5.1
+    "men": {
+     "est": 20.7,
+     "lo": 17.4,
+     "hi": 24.0,
+     "n": 1274
+    },
+    "diff": -0.8,
+    "diff_lo": -5.1,
+    "diff_hi": 3.4
    }
   }
  },
@@ -1617,444 +2600,444 @@
    "score": 0,
    "opioid_ed": {
     "women": {
-     "est": 12.8,
-     "lo": 7.4,
-     "hi": 18.3,
-     "n": 460
-    },
-    "men": {
      "est": 13.4,
      "lo": 9.0,
      "hi": 17.9,
      "n": 530
     },
-    "diff": -0.6,
-    "diff_lo": -7.6,
-    "diff_hi": 6.4
+    "men": {
+     "est": 12.8,
+     "lo": 7.4,
+     "hi": 18.3,
+     "n": 460
+    },
+    "diff": 0.6,
+    "diff_lo": -6.4,
+    "diff_hi": 7.6
    },
    "analgesic_ed": {
     "women": {
-     "est": 33.2,
-     "lo": 26.5,
-     "hi": 40.0,
-     "n": 460
-    },
-    "men": {
      "est": 37.3,
      "lo": 32.1,
      "hi": 42.4,
      "n": 530
     },
-    "diff": -4.1,
-    "diff_lo": -12.5,
-    "diff_hi": 4.4
+    "men": {
+     "est": 33.2,
+     "lo": 26.5,
+     "hi": 40.0,
+     "n": 460
+    },
+    "diff": 4.1,
+    "diff_lo": -4.4,
+    "diff_hi": 12.5
    }
   },
   {
    "score": 1,
    "opioid_ed": {
     "women": {
-     "est": 10.2,
-     "lo": 1.6,
-     "hi": 18.9,
-     "n": 70
-    },
-    "men": {
      "est": 3.3,
      "lo": -0.2,
      "hi": 6.9,
      "n": 51
     },
-    "diff": 6.9,
-    "diff_lo": -2.4,
-    "diff_hi": 16.2
+    "men": {
+     "est": 10.2,
+     "lo": 1.6,
+     "hi": 18.9,
+     "n": 70
+    },
+    "diff": -6.9,
+    "diff_lo": -16.2,
+    "diff_hi": 2.4
    },
    "analgesic_ed": {
     "women": {
-     "est": 38.7,
-     "lo": 24.0,
-     "hi": 53.4,
-     "n": 70
-    },
-    "men": {
      "est": 42.7,
      "lo": 27.5,
      "hi": 57.8,
      "n": 51
     },
-    "diff": -4.0,
-    "diff_lo": -25.1,
-    "diff_hi": 17.1
+    "men": {
+     "est": 38.7,
+     "lo": 24.0,
+     "hi": 53.4,
+     "n": 70
+    },
+    "diff": 4.0,
+    "diff_lo": -17.1,
+    "diff_hi": 25.1
    }
   },
   {
    "score": 2,
    "opioid_ed": {
     "women": {
-     "est": 10.6,
-     "lo": 5.8,
-     "hi": 15.5,
-     "n": 233
-    },
-    "men": {
      "est": 16.3,
      "lo": 9.9,
      "hi": 22.7,
      "n": 243
     },
-    "diff": -5.7,
-    "diff_lo": -13.7,
-    "diff_hi": 2.3
+    "men": {
+     "est": 10.6,
+     "lo": 5.8,
+     "hi": 15.5,
+     "n": 233
+    },
+    "diff": 5.7,
+    "diff_lo": -2.3,
+    "diff_hi": 13.7
    },
    "analgesic_ed": {
     "women": {
-     "est": 38.9,
-     "lo": 30.2,
-     "hi": 47.6,
-     "n": 233
-    },
-    "men": {
      "est": 45.3,
      "lo": 36.1,
      "hi": 54.5,
      "n": 243
     },
-    "diff": -6.4,
-    "diff_lo": -19.0,
-    "diff_hi": 6.3
+    "men": {
+     "est": 38.9,
+     "lo": 30.2,
+     "hi": 47.6,
+     "n": 233
+    },
+    "diff": 6.4,
+    "diff_lo": -6.3,
+    "diff_hi": 19.0
    }
   },
   {
    "score": 3,
    "opioid_ed": {
     "women": {
-     "est": 9.7,
-     "lo": 5.3,
-     "hi": 14.1,
-     "n": 286
-    },
-    "men": {
      "est": 10.5,
      "lo": 6.5,
      "hi": 14.4,
      "n": 288
     },
-    "diff": -0.8,
-    "diff_lo": -6.7,
-    "diff_hi": 5.1
+    "men": {
+     "est": 9.7,
+     "lo": 5.3,
+     "hi": 14.1,
+     "n": 286
+    },
+    "diff": 0.8,
+    "diff_lo": -5.1,
+    "diff_hi": 6.7
    },
    "analgesic_ed": {
     "women": {
-     "est": 41.7,
-     "lo": 32.6,
-     "hi": 50.7,
-     "n": 286
-    },
-    "men": {
      "est": 39.1,
      "lo": 32.2,
      "hi": 45.9,
      "n": 288
     },
-    "diff": 2.6,
-    "diff_lo": -8.8,
-    "diff_hi": 14.0
+    "men": {
+     "est": 41.7,
+     "lo": 32.6,
+     "hi": 50.7,
+     "n": 286
+    },
+    "diff": -2.6,
+    "diff_lo": -14.0,
+    "diff_hi": 8.8
    }
   },
   {
    "score": 4,
    "opioid_ed": {
     "women": {
-     "est": 15.6,
-     "lo": 10.3,
-     "hi": 20.8,
-     "n": 370
-    },
-    "men": {
      "est": 17.1,
      "lo": 12.3,
      "hi": 21.8,
      "n": 471
     },
-    "diff": -1.5,
-    "diff_lo": -8.6,
-    "diff_hi": 5.6
+    "men": {
+     "est": 15.6,
+     "lo": 10.3,
+     "hi": 20.8,
+     "n": 370
+    },
+    "diff": 1.5,
+    "diff_lo": -5.6,
+    "diff_hi": 8.6
    },
    "analgesic_ed": {
     "women": {
-     "est": 48.1,
-     "lo": 41.1,
-     "hi": 55.0,
-     "n": 370
-    },
-    "men": {
      "est": 44.7,
      "lo": 38.3,
      "hi": 51.0,
      "n": 471
     },
-    "diff": 3.4,
-    "diff_lo": -6.0,
-    "diff_hi": 12.8
+    "men": {
+     "est": 48.1,
+     "lo": 41.1,
+     "hi": 55.0,
+     "n": 370
+    },
+    "diff": -3.4,
+    "diff_lo": -12.8,
+    "diff_hi": 6.0
    }
   },
   {
    "score": 5,
    "opioid_ed": {
     "women": {
-     "est": 18.6,
-     "lo": 13.5,
-     "hi": 23.7,
-     "n": 631
-    },
-    "men": {
      "est": 19.1,
      "lo": 14.8,
      "hi": 23.5,
      "n": 741
     },
-    "diff": -0.6,
-    "diff_lo": -7.3,
-    "diff_hi": 6.1
+    "men": {
+     "est": 18.6,
+     "lo": 13.5,
+     "hi": 23.7,
+     "n": 631
+    },
+    "diff": 0.6,
+    "diff_lo": -6.1,
+    "diff_hi": 7.3
    },
    "analgesic_ed": {
     "women": {
-     "est": 53.4,
-     "lo": 46.5,
-     "hi": 60.4,
-     "n": 631
-    },
-    "men": {
      "est": 50.0,
      "lo": 44.6,
      "hi": 55.3,
      "n": 741
     },
-    "diff": 3.5,
-    "diff_lo": -5.3,
-    "diff_hi": 12.3
+    "men": {
+     "est": 53.4,
+     "lo": 46.5,
+     "hi": 60.4,
+     "n": 631
+    },
+    "diff": -3.5,
+    "diff_lo": -12.3,
+    "diff_hi": 5.3
    }
   },
   {
    "score": 6,
    "opioid_ed": {
     "women": {
-     "est": 19.7,
-     "lo": 13.9,
-     "hi": 25.5,
-     "n": 554
-    },
-    "men": {
      "est": 20.4,
      "lo": 17.1,
      "hi": 23.6,
      "n": 811
     },
-    "diff": -0.7,
-    "diff_lo": -7.3,
-    "diff_hi": 6.0
+    "men": {
+     "est": 19.7,
+     "lo": 13.9,
+     "hi": 25.5,
+     "n": 554
+    },
+    "diff": 0.7,
+    "diff_lo": -6.0,
+    "diff_hi": 7.3
    },
    "analgesic_ed": {
     "women": {
-     "est": 47.6,
-     "lo": 41.0,
-     "hi": 54.2,
-     "n": 554
-    },
-    "men": {
      "est": 52.7,
      "lo": 48.2,
      "hi": 57.2,
      "n": 811
     },
-    "diff": -5.1,
-    "diff_lo": -13.1,
-    "diff_hi": 2.9
+    "men": {
+     "est": 47.6,
+     "lo": 41.0,
+     "hi": 54.2,
+     "n": 554
+    },
+    "diff": 5.1,
+    "diff_lo": -2.9,
+    "diff_hi": 13.1
    }
   },
   {
    "score": 7,
    "opioid_ed": {
     "women": {
-     "est": 30.9,
-     "lo": 26.6,
-     "hi": 35.3,
-     "n": 730
-    },
-    "men": {
      "est": 23.4,
      "lo": 19.9,
      "hi": 26.8,
      "n": 1159
     },
-    "diff": 7.6,
-    "diff_lo": 2.0,
-    "diff_hi": 13.1
+    "men": {
+     "est": 30.9,
+     "lo": 26.6,
+     "hi": 35.3,
+     "n": 730
+    },
+    "diff": -7.6,
+    "diff_lo": -13.1,
+    "diff_hi": -2.0
    },
    "analgesic_ed": {
     "women": {
-     "est": 61.0,
-     "lo": 56.5,
-     "hi": 65.4,
-     "n": 730
-    },
-    "men": {
      "est": 60.1,
      "lo": 56.0,
      "hi": 64.2,
      "n": 1159
     },
-    "diff": 0.9,
-    "diff_lo": -5.2,
-    "diff_hi": 6.9
+    "men": {
+     "est": 61.0,
+     "lo": 56.5,
+     "hi": 65.4,
+     "n": 730
+    },
+    "diff": -0.9,
+    "diff_lo": -6.9,
+    "diff_hi": 5.2
    }
   },
   {
    "score": 8,
    "opioid_ed": {
     "women": {
-     "est": 31.3,
-     "lo": 26.4,
-     "hi": 36.3,
-     "n": 1008
-    },
-    "men": {
      "est": 31.8,
      "lo": 28.2,
      "hi": 35.4,
      "n": 1589
     },
-    "diff": -0.5,
-    "diff_lo": -6.6,
-    "diff_hi": 5.7
+    "men": {
+     "est": 31.3,
+     "lo": 26.4,
+     "hi": 36.3,
+     "n": 1008
+    },
+    "diff": 0.5,
+    "diff_lo": -5.7,
+    "diff_hi": 6.6
    },
    "analgesic_ed": {
     "women": {
-     "est": 63.2,
-     "lo": 57.3,
-     "hi": 69.1,
-     "n": 1008
-    },
-    "men": {
      "est": 63.2,
      "lo": 59.9,
      "hi": 66.5,
      "n": 1589
     },
-    "diff": 0.0,
-    "diff_lo": -6.7,
-    "diff_hi": 6.8
+    "men": {
+     "est": 63.2,
+     "lo": 57.3,
+     "hi": 69.1,
+     "n": 1008
+    },
+    "diff": -0.0,
+    "diff_lo": -6.8,
+    "diff_hi": 6.7
    }
   },
   {
    "score": 9,
    "opioid_ed": {
     "women": {
-     "est": 35.1,
-     "lo": 27.8,
-     "hi": 42.4,
-     "n": 508
-    },
-    "men": {
      "est": 33.7,
      "lo": 28.8,
      "hi": 38.6,
      "n": 828
     },
-    "diff": 1.4,
-    "diff_lo": -7.4,
-    "diff_hi": 10.1
+    "men": {
+     "est": 35.1,
+     "lo": 27.8,
+     "hi": 42.4,
+     "n": 508
+    },
+    "diff": -1.4,
+    "diff_lo": -10.1,
+    "diff_hi": 7.4
    },
    "analgesic_ed": {
     "women": {
-     "est": 63.4,
-     "lo": 57.2,
-     "hi": 69.5,
-     "n": 508
-    },
-    "men": {
      "est": 64.9,
      "lo": 59.5,
      "hi": 70.2,
      "n": 828
     },
-    "diff": -1.5,
-    "diff_lo": -9.6,
-    "diff_hi": 6.7
+    "men": {
+     "est": 63.4,
+     "lo": 57.2,
+     "hi": 69.5,
+     "n": 508
+    },
+    "diff": 1.5,
+    "diff_lo": -6.7,
+    "diff_hi": 9.6
    }
   },
   {
    "score": 10,
    "opioid_ed": {
     "women": {
-     "est": 45.4,
-     "lo": 40.2,
-     "hi": 50.6,
-     "n": 1114
-    },
-    "men": {
      "est": 43.4,
      "lo": 39.7,
      "hi": 47.2,
      "n": 1626
     },
-    "diff": 2.0,
-    "diff_lo": -4.4,
-    "diff_hi": 8.4
+    "men": {
+     "est": 45.4,
+     "lo": 40.2,
+     "hi": 50.6,
+     "n": 1114
+    },
+    "diff": -2.0,
+    "diff_lo": -8.4,
+    "diff_hi": 4.4
    },
    "analgesic_ed": {
     "women": {
-     "est": 69.3,
-     "lo": 65.0,
-     "hi": 73.6,
-     "n": 1114
-    },
-    "men": {
      "est": 72.2,
      "lo": 68.7,
      "hi": 75.7,
      "n": 1626
     },
-    "diff": -2.9,
-    "diff_lo": -8.5,
-    "diff_hi": 2.6
+    "men": {
+     "est": 69.3,
+     "lo": 65.0,
+     "hi": 73.6,
+     "n": 1114
+    },
+    "diff": 2.9,
+    "diff_lo": -2.6,
+    "diff_hi": 8.5
    }
   }
  ],
  "all_visits": {
   "opioid_ed": {
    "women": {
-    "est": 14.3,
-    "lo": 13.4,
-    "hi": 15.3,
-    "n": 31002
-   },
-   "men": {
     "est": 15.3,
     "lo": 14.2,
     "hi": 16.4,
     "n": 37502
    },
-   "diff": -1.0,
-   "diff_lo": -2.4,
-   "diff_hi": 0.5
+   "men": {
+    "est": 14.3,
+    "lo": 13.4,
+    "hi": 15.3,
+    "n": 31002
+   },
+   "diff": 1.0,
+   "diff_lo": -0.5,
+   "diff_hi": 2.4
   },
   "wait_mean": {
    "women": {
-    "est": 33.7,
-    "lo": 30.7,
-    "hi": 36.7,
-    "n": 26116
-   },
-   "men": {
     "est": 36.2,
     "lo": 32.7,
     "hi": 39.7,
     "n": 31954
    },
-   "diff": -2.5,
-   "diff_lo": -7.1,
-   "diff_hi": 2.1
+   "men": {
+    "est": 33.7,
+    "lo": 30.7,
+    "hi": 36.7,
+    "n": 26116
+   },
+   "diff": 2.5,
+   "diff_lo": -2.1,
+   "diff_hi": 7.1
   }
  }
 }

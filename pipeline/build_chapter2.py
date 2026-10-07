@@ -51,7 +51,14 @@ def load():
             given = df[gcol].isin([1, 3]).values
             op_any |= is_op; op_ed |= is_op & given
             an_any |= is_an; an_ed |= is_an & given
+        dx = df[["DIAG1", "DIAG2", "DIAG3", "DIAG4", "DIAG5"]].astype(str)
+        d1 = dx["DIAG1"]
         out = pd.DataFrame({
+            "mi": dx.apply(lambda r: r.str.match(r"I2[12]").any(), axis=1).values,
+            "ihd1": d1.str.match(r"I2[0-5]").values, "psych1": d1.str.startswith("F").values, "sym1": d1.str.startswith("R").values,
+            "dxcat": np.select([d1.str.match(r"I2[0-5]"), d1.str.startswith("I"), d1.str.startswith("K"), d1.str.startswith("M"), d1.str.startswith("J"), d1.str.startswith("F"), d1.str.match(r"R07"), d1.str.startswith("R")],
+                               ["Ischaemic heart disease", "Other circulatory", "Digestive", "Musculoskeletal", "Respiratory", "Psychiatric", "Chest pain, unspecified", "Other symptom code"], "Other"),
+            "cardenz": df["CARDENZ"], "ddimer": df["DDIMER"], "xray": df["XRAY"], "totdiag": df["TOTDIAG"], "lov": df["LOV"], "rfv2": df["RFV2"], "rfv3": df["RFV3"],
             "year": year, "sex": df["SEX"], "age": df["AGE"], "w": df["PATWT"], "strat": df["CSTRATM"], "psu": df["CPSUM"],
             "wait": df["WAITTIME"], "pain": df["PAINSCALE"], "rfv1": df["RFV1"], "triage": df["IMMEDR"], "ems": df["ARREMS"],
             "ekg": df["EKG"], "cardmon": df["CARDMON"], "ctab": df["CTAB"], "cthead": df["CTHEAD"], "anyimage": df["ANYIMAGE"],
@@ -62,7 +69,7 @@ def load():
         print(f"  {year}: {len(df):,} visits")
     d = pd.concat(frames, ignore_index=True)
     d = d[(d["age"] >= 18) & (d["w"] > 0)].copy()
-    d["female"] = d["sex"] == 2
+    d["female"] = d["sex"] == 1  # NHAMCS codes SEX 1 = female, 2 = male
     d["severe"] = d["pain"].between(7, 10)
     d["urgent"] = d["triage"].isin([1, 2])
     d["admitted"] = d["admit"] == 1
@@ -71,6 +78,13 @@ def load():
     d["ctab_done"] = d["ctab"] == 1
     d["cthead_done"] = d["cthead"] == 1
     d["wait_ok"] = d["wait"] >= 0
+    d["cardenz_done"] = d["cardenz"] == 1
+    d["ddimer_done"] = d["ddimer"] == 1
+    d["xray_done"] = d["xray"] == 1
+    d["ems_yes"] = d["ems"] == 1
+    d["esi1"] = d["triage"] == 1
+    d["totdiag_ok"] = d["totdiag"].where(d["totdiag"] >= 0)
+    d["lov_ok"] = d["lov"].where(d["lov"] >= 0)
     return d
 
 
@@ -150,9 +164,17 @@ def main():
                  "wait_mean_severe": compare(d, dom & d["severe"].values & d["wait_ok"].values, d["wait"], scale=1.0, nd=1),
              },
              "age_adjusted": {"opioid_ed": age_adjusted(d, dom, d["op_ed"]), "analgesic_ed": age_adjusted(d, dom, d["an_ed"])}}
+        g["metrics"]["psych_dx"] = compare(d, dom, d["psych1"])
+        g["metrics"]["symptom_dx"] = compare(d, dom, d["sym1"])
+        g["metrics"]["tests_count"] = compare(d, dom, d["totdiag_ok"], scale=1.0, nd=1)
+        g["metrics"]["ems"] = compare(d, dom & (d["ems"] >= 1).values, d["ems_yes"])
         if gid == "chest":
             g["metrics"]["ekg"] = compare(d, dom, d["ekg_done"]); g["metrics"]["cardmon"] = compare(d, dom, d["cardmon_done"])
             g["metrics"]["ekg_severe"] = compare(d, dom & d["severe"].values, d["ekg_done"])
+            g["metrics"]["cardenz"] = compare(d, dom, d["cardenz_done"]); g["metrics"]["ddimer"] = compare(d, dom, d["ddimer_done"]); g["metrics"]["xray"] = compare(d, dom, d["xray_done"])
+            g["metrics"]["ihd_dx"] = compare(d, dom, d["ihd1"])
+            g["dx_mix"] = {c: compare(d, dom, d["dxcat"] == c) for c in ["Ischaemic heart disease", "Other circulatory", "Digestive", "Musculoskeletal", "Respiratory", "Psychiatric", "Chest pain, unspecified", "Other symptom code", "Other"]}
+            g["ihd_dx_by_age"] = {f"{lo}-{hi if hi < 120 else '+'}": compare(d, dom & d["age"].between(lo, hi).values, d["ihd1"]) for lo, hi in AGE_BANDS}
         if gid == "abdominal":
             g["metrics"]["ctab"] = compare(d, dom, d["ctab_done"])
         if gid == "headache":
@@ -176,14 +198,34 @@ def main():
             "analgesic_ed_severe": compare(d, pain_any & d["severe"].values, d["an_ed"]),
             "wait_mean_severe": compare(d, pain_any & d["severe"].values & d["wait_ok"].values, d["wait"], scale=1.0, nd=1),
             "urgent": compare(d, pain_any & (d["triage"] >= 1).values, d["urgent"]),
-            "ems": compare(d, pain_any & (d["ems"] >= 1).values, d["ems"] == 1),
+            "ems": compare(d, pain_any & (d["ems"] >= 1).values, d["ems_yes"]),
+            "psych_dx": compare(d, pain_any, d["psych1"]), "symptom_dx": compare(d, pain_any, d["sym1"]), "tests_count": compare(d, pain_any, d["totdiag_ok"], scale=1.0, nd=1),
         },
         "age_adjusted": {"opioid_ed": age_adjusted(d, pain_any, d["op_ed"]), "analgesic_ed": age_adjusted(d, pain_any, d["an_ed"]),
                          "opioid_ed_severe": age_adjusted(d, pain_any & d["severe"].values, d["op_ed"])},
         "within_triage": {str(t): compare(d, pain_any & (d["triage"] == t).values, d["op_ed"]) for t in (2, 3, 4)},
     }
+    chest_codes = {10500, 10501, 10502, 10503}
+    mi = d["mi"].values
+    cc_chest = d["rfv1"].isin(chest_codes)
+    any_chest = cc_chest | d["rfv2"].isin(chest_codes) | d["rfv3"].isin(chest_codes)
+    heart = {
+        "n": int(mi.sum()), "n_women": int((mi & d["female"].values).sum()), "n_men": int((mi & ~d["female"].values).sum()),
+        "weighted_per_year_k": round((d["w"] * mi).sum() / d["year"].nunique() / 1e3),
+        "metrics": {
+            "age_mean": compare(d, mi, d["age"], scale=1.0, nd=1),
+            "chief_complaint_chest": compare(d, mi, cc_chest), "any_chest": compare(d, mi, any_chest),
+            "ems": compare(d, mi & (d["ems"] >= 1).values, d["ems_yes"]),
+            "urgent": compare(d, mi & (d["triage"] >= 1).values, d["urgent"]), "esi1": compare(d, mi & (d["triage"] >= 1).values, d["esi1"]),
+            "wait_mean": compare(d, mi & d["wait_ok"].values, d["wait"], scale=1.0, nd=1),
+            "ekg": compare(d, mi, d["ekg_done"]), "cardenz": compare(d, mi, d["cardenz_done"]), "admitted": compare(d, mi, d["admitted"]),
+            "lov_mean": compare(d, mi, d["lov_ok"], scale=1.0, nd=0),
+        },
+        "under_65": {"chief_complaint_chest": compare(d, mi & (d["age"] < 65).values, cc_chest), "urgent": compare(d, mi & (d["age"] < 65).values & (d["triage"] >= 1).values, d["urgent"]), "cardenz": compare(d, mi & (d["age"] < 65).values, d["cardenz_done"])},
+    }
     out = {
         "generated": date.today().isoformat(), "years": [int(d["year"].min()), int(d["year"].max())],
+        "heart_attack": heart,
         "n_adult_visits": int(len(d)), "weighted_adult_visits_per_year_m": round(d["w"].sum() / d["year"].nunique() / 1e6, 1),
         "groups": groups, "all_pain": allpain, "by_score": by_score,
         "all_visits": {"opioid_ed": compare(d, np.ones(len(d), bool), d["op_ed"]), "wait_mean": compare(d, d["wait_ok"].values, d["wait"], scale=1.0, nd=1)},
@@ -206,6 +248,8 @@ def main():
     with open(f"{SITE_DATA}/chapter2.json", "w", encoding="utf-8") as f:
         json.dump(out, f, indent=1, default=lambda o: float(o) if isinstance(o, (np.floating, np.integer)) else str(o))
     m = allpain["metrics"]
+    h = heart["metrics"]
+    print(f"heart attack n={heart['n']} (W {heart['n_women']} / M {heart['n_men']}): chest complaint W {h['chief_complaint_chest']['women']['est']} M {h['chief_complaint_chest']['men']['est']}; urgent W {h['urgent']['women']['est']} M {h['urgent']['men']['est']}; enzymes W {h['cardenz']['women']['est']} M {h['cardenz']['men']['est']}; EMS W {h['ems']['women']['est']} M {h['ems']['men']['est']}")
     print(f"all pain visits n={allpain['n']}: opioid in ED W {m['opioid_ed']['women']['est']}% M {m['opioid_ed']['men']['est']}% (diff {m['opioid_ed']['diff']} [{m['opioid_ed']['diff_lo']}, {m['opioid_ed']['diff_hi']}]); severe-pain opioid W {m['opioid_ed_severe']['women']['est']} M {m['opioid_ed_severe']['men']['est']}; wait W {m['wait_mean']['women']['est']} M {m['wait_mean']['men']['est']}")
     print("age-adjusted opioid_ed:", allpain["age_adjusted"]["opioid_ed"])
     print("by score:", [(b["score"], b["opioid_ed"]["women"]["est"], b["opioid_ed"]["men"]["est"]) for b in by_score])
