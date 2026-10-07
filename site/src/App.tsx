@@ -36,6 +36,7 @@ export default function App() {
           <Route path="/methods" element={<Methods />} />
           <Route path="/about" element={<About />} />
           <Route path="/chapters/tested-on-men" element={<Chapter1 />} />
+          <Route path="/chapters/pain-gap" element={<Chapter2 />} />
           {CHAPTERS.filter(c => c.status !== 'live').map(c => (
             <Route key={c.slug} path={`/chapters/${c.slug}`} element={<ComingSoon chapter={c} />} />
           ))}

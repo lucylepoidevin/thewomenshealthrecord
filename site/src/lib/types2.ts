@@ -10,6 +10,8 @@ export type Group = {
   weighted_visits_per_year: number
   metrics: Record<string, Cmp | null>
   age_adjusted: Record<string, AgeAdj>
+  dx_mix?: Record<string, Cmp | null>
+  ihd_dx_by_age?: Record<string, Cmp | null>
 }
 export type Chapter2Data = {
   generated: string
@@ -17,6 +19,7 @@ export type Chapter2Data = {
   n_adult_visits: number
   weighted_adult_visits_per_year_m: number
   groups: Group[]
+  heart_attack: { n: number; n_women: number; n_men: number; weighted_per_year_k: number; metrics: Record<string, Cmp | null>; under_65: Record<string, Cmp | null> }
   all_pain: { n: number; n_women: number; n_men: number; metrics: Record<string, Cmp | null>; age_adjusted: Record<string, AgeAdj>; within_triage: Record<string, Cmp | null> }
   by_score: { score: number; opioid_ed: Cmp; analgesic_ed: Cmp }[]
   all_visits: { opioid_ed: Cmp; wait_mean: Cmp }

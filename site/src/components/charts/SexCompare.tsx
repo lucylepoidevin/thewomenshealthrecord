@@ -45,11 +45,11 @@ export default function SexCompare({ rows, title, subtitle, source, unit = '%', 
                     {i > 0 && <line x1={0} x2={iw} y1={i * rowH} y2={i * rowH} stroke="var(--c-grid)" />}
                     {pts.map(p => (
                       <g key={p.k} transform={`translate(0,${p.dy})`}>
-                        <line x1={x(p.e.lo)} x2={x(p.e.hi)} y1={cy} y2={cy} stroke={p.c} strokeWidth={1.5} opacity={0.6} />
-                        <line x1={x(p.e.lo)} x2={x(p.e.lo)} y1={cy - 4} y2={cy + 4} stroke={p.c} opacity={0.6} />
+                        <line x1={x(Math.max(0, p.e.lo))} x2={x(p.e.hi)} y1={cy} y2={cy} stroke={p.c} strokeWidth={1.5} opacity={0.6} />
+                        <line x1={x(Math.max(0, p.e.lo))} x2={x(Math.max(0, p.e.lo))} y1={cy - 4} y2={cy + 4} stroke={p.c} opacity={0.6} />
                         <line x1={x(p.e.hi)} x2={x(p.e.hi)} y1={cy - 4} y2={cy + 4} stroke={p.c} opacity={0.6} />
                         <circle cx={x(p.e.est)} cy={cy} r={6} fill={p.c} stroke="var(--c-surface)" strokeWidth={1.5}
-                          onMouseEnter={() => setTip({ x: x(p.e.est) + m.left, y: cy + m.top + p.dy, content: <><b>{p.who}</b>, {r.label.toLowerCase()}<br />{fmt(p.e.est)} (95% CI {fmt(p.e.lo)} to {fmt(p.e.hi)})<br />{p.e.n.toLocaleString()} sampled visits</> })}
+                          onMouseEnter={() => setTip({ x: x(p.e.est) + m.left, y: cy + m.top + p.dy, content: <><b>{p.who}</b>, {r.label.toLowerCase()}<br />{fmt(p.e.est)} (95% CI {fmt(Math.max(0, p.e.lo))} to {fmt(p.e.hi)})<br />{p.e.n.toLocaleString()} sampled visits</> })}
                           onMouseLeave={() => setTip(null)} />
                       </g>
                     ))}
