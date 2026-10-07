@@ -223,9 +223,46 @@ def main():
         },
         "under_65": {"chief_complaint_chest": compare(d, mi & (d["age"] < 65).values, cc_chest), "urgent": compare(d, mi & (d["age"] < 65).values & (d["triage"] >= 1).values, d["urgent"]), "cardenz": compare(d, mi & (d["age"] < 65).values, d["cardenz_done"])},
     }
+    # ---- explorer: complaint x age band x sex
+    d["anyimage_done"] = d["anyimage"] == 1
+    explorer = []
+    for gid, label, codes in GROUPS + [("all", "Any pain complaint", None)]:
+        gdom = pain_any if codes is None else d["rfv1"].isin(codes).values
+        for lo, hi in AGE_BANDS + [(18, 120)]:
+            dom = gdom & d["age"].between(lo, hi).values
+            cell = {"complaint": gid, "age": f"{lo}-{hi}" if hi < 120 else (f"{lo}+" if lo > 18 else "all"), "n_women": int((dom & d["female"].values).sum()), "n_men": int((dom & ~d["female"].values).sum()),
+                    "metrics": {
+                        "severe_share": compare(d, dom & (d["pain"] >= 0).values, d["severe"]),
+                        "urgent": compare(d, dom & (d["triage"] >= 1).values, d["urgent"]),
+                        "ems": compare(d, dom & (d["ems"] >= 1).values, d["ems_yes"]),
+                        "wait_mean": compare(d, dom & d["wait_ok"].values, d["wait"], scale=1.0, nd=0),
+                        "analgesic_ed": compare(d, dom, d["an_ed"]),
+                        "opioid_ed": compare(d, dom, d["op_ed"]),
+                        "anyimage": compare(d, dom, d["anyimage_done"]),
+                        "tests_count": compare(d, dom, d["totdiag_ok"], scale=1.0, nd=1),
+                        "admitted": compare(d, dom, d["admitted"]),
+                        "symptom_dx": compare(d, dom, d["sym1"]),
+                        "lov_mean": compare(d, dom, d["lov_ok"], scale=1.0, nd=0),
+                    }}
+            explorer.append(cell)
+    # ---- levers: what moves the urgency rating
+    by_score_urgent = []
+    for s_ in range(0, 11):
+        dom = pain_any & (d["pain"] == s_).values & (d["triage"] >= 1).values
+        c = compare(d, dom, d["urgent"])
+        if c:
+            by_score_urgent.append({"score": s_, "urgent": c})
+    tri = pain_any & (d["triage"] >= 1).values
+    levers = {
+        "urgent_by_ambulance": {"ambulance": compare(d, tri & d["ems_yes"].values, d["urgent"]), "walk_in": compare(d, tri & (d["ems"] == 2).values, d["urgent"])},
+        "urgent_severe_by_ambulance": {"ambulance": compare(d, tri & d["ems_yes"].values & d["severe"].values, d["urgent"]), "walk_in": compare(d, tri & (d["ems"] == 2).values & d["severe"].values, d["urgent"])},
+        "wait_by_ambulance": {"ambulance": compare(d, pain_any & d["wait_ok"].values & d["ems_yes"].values, d["wait"], scale=1.0, nd=0), "walk_in": compare(d, pain_any & d["wait_ok"].values & (d["ems"] == 2).values, d["wait"], scale=1.0, nd=0)},
+        "mi_urgent_by_complaint": {"said_chest_pain": compare(d, mi & cc_chest.values & (d["triage"] >= 1).values, d["urgent"]), "other_complaint": compare(d, mi & ~cc_chest.values & (d["triage"] >= 1).values, d["urgent"])},
+        "mi_cardenz_by_complaint": {"said_chest_pain": compare(d, mi & cc_chest.values, d["cardenz_done"]), "other_complaint": compare(d, mi & ~cc_chest.values, d["cardenz_done"])},
+    }
     out = {
         "generated": date.today().isoformat(), "years": [int(d["year"].min()), int(d["year"].max())],
-        "heart_attack": heart,
+        "heart_attack": heart, "explorer": explorer, "by_score_urgent": by_score_urgent, "levers": levers,
         "n_adult_visits": int(len(d)), "weighted_adult_visits_per_year_m": round(d["w"].sum() / d["year"].nunique() / 1e6, 1),
         "groups": groups, "all_pain": allpain, "by_score": by_score,
         "all_visits": {"opioid_ed": compare(d, np.ones(len(d), bool), d["op_ed"]), "wait_mean": compare(d, d["wait_ok"].values, d["wait"], scale=1.0, nd=1)},
@@ -250,6 +287,8 @@ def main():
     m = allpain["metrics"]
     h = heart["metrics"]
     print(f"heart attack n={heart['n']} (W {heart['n_women']} / M {heart['n_men']}): chest complaint W {h['chief_complaint_chest']['women']['est']} M {h['chief_complaint_chest']['men']['est']}; urgent W {h['urgent']['women']['est']} M {h['urgent']['men']['est']}; enzymes W {h['cardenz']['women']['est']} M {h['cardenz']['men']['est']}; EMS W {h['ems']['women']['est']} M {h['ems']['men']['est']}")
+    print("levers:", {k: {kk: (vv["women"]["est"], vv["men"]["est"]) if vv else None for kk, vv in v.items()} for k, v in levers.items()})
+    print("urgent by score:", [(b["score"], b["urgent"]["women"]["est"], b["urgent"]["men"]["est"]) for b in by_score_urgent])
     print(f"all pain visits n={allpain['n']}: opioid in ED W {m['opioid_ed']['women']['est']}% M {m['opioid_ed']['men']['est']}% (diff {m['opioid_ed']['diff']} [{m['opioid_ed']['diff_lo']}, {m['opioid_ed']['diff_hi']}]); severe-pain opioid W {m['opioid_ed_severe']['women']['est']} M {m['opioid_ed_severe']['men']['est']}; wait W {m['wait_mean']['women']['est']} M {m['wait_mean']['men']['est']}")
     print("age-adjusted opioid_ed:", allpain["age_adjusted"]["opioid_ed"])
     print("by score:", [(b["score"], b["opioid_ed"]["women"]["est"], b["opioid_ed"]["men"]["est"]) for b in by_score])

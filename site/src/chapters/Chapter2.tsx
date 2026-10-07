@@ -6,6 +6,7 @@ import SourceList from '../components/SourceList'
 import SexCompare from '../components/charts/SexCompare'
 import ScoreLines from '../components/charts/ScoreLines'
 import Summary from '../components/charts/Summary'
+import Explorer from '../components/Explorer'
 import type { Chapter2Data, Cmp } from '../lib/types2'
 
 const p = (c: Cmp | null | undefined, who: 'women' | 'men') => (c ? c[who].est.toFixed(0) : '–')
@@ -19,6 +20,8 @@ export default function Chapter2() {
   const A = data.all_pain.metrics
   const abd = G.abdominal.metrics, chest = G.chest.metrics, head = G.headache.metrics, back = G.back.metrics, flank = G.flank.metrics
   const H = data.heart_attack.metrics
+  const L = data.levers
+  const chestByAge = (k: string) => data.explorer.filter(c => c.complaint === 'chest' && c.age !== 'all').map(c => ({ label: `Chest pain, age ${c.age}`, sub: `${c.n_women.toLocaleString()} women, ${c.n_men.toLocaleString()} men sampled`, cmp: c.metrics[k]! }))
   const yrs = `${data.years[0]}–${data.years[1]}`
   const src = `Source: NHAMCS emergency department public-use files ${yrs} (NCHS), adults 18+, survey-weighted; analysis by Lucca Labs.`
   const perYear = data.groups.reduce((a, g) => a + g.weighted_visits_per_year, 0).toFixed(0)
@@ -81,6 +84,33 @@ export default function Chapter2() {
     T('heart-text', <>
       <p>Part of this is the known problem that women's heart attacks present differently: fewer of the women arrived saying "chest pain" ({p(H.chief_complaint_chest, 'women')}% against {p(H.chief_complaint_chest, 'men')}%), and they were older on average. A triage nurse cannot rate as urgent a symptom the patient does not describe as urgent. But the enzyme gap is the department's own decision, and it is the one that would have found the heart attack sooner.</p>
     </>),
+    T('words', <>
+      <p>What the patient says changes the picture, and it changes it differently by sex. Among heart attacks where the patient's first complaint was chest pain, women and men were triaged urgent at similar rates, {p(L.mi_urgent_by_complaint.said_chest_pain, 'women')}% and {p(L.mi_urgent_by_complaint.said_chest_pain, 'men')}%. Among heart attacks that arrived as something else, shortness of breath, weakness, nausea, pain elsewhere, men were still triaged urgent {p(L.mi_urgent_by_complaint.other_complaint, 'men')}% of the time. Women were triaged urgent {p(L.mi_urgent_by_complaint.other_complaint, 'women')}% of the time, a {Math.abs(L.mi_urgent_by_complaint.other_complaint!.diff).toFixed(0)}-point gap that is statistically clear even in this small group.</p>
+      <p>Read that again. When a man having a heart attack describes it in some other way, the system still catches it. When a woman does, it does not.</p>
+    </>),
+    F('words-fig', <SexCompare rows={[
+      { label: 'Said "chest pain"', sub: 'triaged urgent', cmp: L.mi_urgent_by_complaint.said_chest_pain! },
+      { label: 'Said something else', sub: 'triaged urgent', cmp: L.mi_urgent_by_complaint.other_complaint! },
+      { label: 'Said "chest pain"', sub: 'cardiac enzymes ordered', cmp: L.mi_cardenz_by_complaint.said_chest_pain! },
+      { label: 'Said something else', sub: 'cardiac enzymes ordered', cmp: L.mi_cardenz_by_complaint.other_complaint! },
+    ]} title="During a heart attack, what you say" subtitle={`${data.heart_attack.n} sampled heart attacks, split by whether the first-listed reason for the visit was chest pain`} source={`${src} Small samples; read the whiskers.`} axisLabel="share of heart-attack visits" />),
+    T('age', <>
+      <p>Age matters too, and not in the direction most people expect. The under-triage of women's chest pain is a young women's problem. Between 18 and 44, {p(chestByAge('urgent')[0].cmp, 'women')}% of women with chest pain were triaged urgent against {p(chestByAge('urgent')[0].cmp, 'men')}% of men. By 65 the gap has gone, and women are if anything rated higher.</p>
+    </>),
+    F('age-fig', <SexCompare rows={chestByAge('urgent')} title="Chest pain, triaged urgent, by age" subtitle="The gap is largest for the youngest women and closes with age" source={src} axisLabel="share triaged urgent (ESI 1–2)" />),
+    T('levers', <>
+      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">The two levers a patient holds.</p>
+      <p>A patient controls almost nothing in an emergency department, but they control two things: the pain score they give, and how they arrive. The data shows what each one buys.</p>
+      <p>The pain score buys painkillers, not urgency. Across all pain visits, the share given any analgesic climbs steadily with the score, from about a third at a reported 0 to about seven in ten at a reported 10, for women and men alike. The share triaged urgent barely moves with the score at all: around {p(data.by_score_urgent.find(b => b.score === 5)?.urgent, 'women')}% at a 5 and {p(data.by_score_urgent.find(b => b.score === 10)?.urgent, 'women')}% at a 10 for women. Triage nurses rate urgency on vital signs and the story, not the number.</p>
+      <p>The ambulance buys urgency. Women in pain who walked in were triaged urgent {p(L.urgent_by_ambulance.walk_in, 'women')}% of the time; women who arrived by ambulance, {p(L.urgent_by_ambulance.ambulance, 'women')}%. Among patients in severe pain, the sex gap exists only for walk-ins ({p(L.urgent_severe_by_ambulance.walk_in, 'women')}% against {p(L.urgent_severe_by_ambulance.walk_in, 'men')}%); for ambulance arrivals it is gone ({p(L.urgent_severe_by_ambulance.ambulance, 'women')}% against {p(L.urgent_severe_by_ambulance.ambulance, 'men')}%). Ambulance patients also waited less: {p(L.wait_by_ambulance.ambulance, 'women')} minutes against {p(L.wait_by_ambulance.walk_in, 'women')} for women who walked in. Part of that is that sicker people call ambulances. Part of it is that arriving on a stretcher is a statement the triage system cannot discount.</p>
+    </>),
+    F('levers-fig', <SexCompare rows={[
+      { label: 'Walked in', sub: 'triaged urgent, all pain', cmp: L.urgent_by_ambulance.walk_in! },
+      { label: 'Arrived by ambulance', sub: 'triaged urgent, all pain', cmp: L.urgent_by_ambulance.ambulance! },
+      { label: 'Walked in', sub: 'triaged urgent, pain 7–10', cmp: L.urgent_severe_by_ambulance.walk_in! },
+      { label: 'Arrived by ambulance', sub: 'triaged urgent, pain 7–10', cmp: L.urgent_severe_by_ambulance.ambulance! },
+    ]} title="How you arrive" subtitle="Share triaged urgent, by arrival mode, for all pain visits and for severe pain" source={src} axisLabel="share triaged urgent (ESI 1–2)" />),
+    F('score-urgent', <ScoreLines points={data.by_score_urgent.filter(b => b.score >= 4).map(b => ({ score: b.score, cmp: b.urgent }))} title="The pain score barely moves triage" subtitle="Share triaged urgent, by the pain score the patient reported, 4 to 10" source={`${src} Scores 0 to 3 are omitted: too few pain visits report them for a stable estimate.`} yLabel="share triaged urgent" />, 'chart'),
     T('caveats', <>
       <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">What this does not settle.</p>
       <p>The survey records what the chart says was done, not the clinician's reasoning, the dose, or the time between an order and the drug arriving. The 2008 study measured time to analgesia; the survey measures time to a clinician. Men and women with the same complaint do not have the same mix of underlying conditions, and some of the triage difference may be real differences in how sick people were.</p>
@@ -88,8 +118,12 @@ export default function Chapter2() {
     </>),
     T('for-you', <>
       <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">What this means for you.</p>
-      <p>The number you give at triage is used. Women arrive reporting more severe pain and are rated less urgent; the gap opens at the front desk, not in the treatment room. Give the score honestly and say what you cannot do because of the pain.</p>
-      <p>If the problem might be your heart, use the words. "Chest pain" or "chest pressure" is what the triage system is built to hear; "I feel off" is not. Ask whether a troponin, the cardiac enzyme test, has been sent. And if it might be your heart, call the ambulance rather than driving: the data shows women do this less, and arrival by ambulance is the surest route to an urgent rating.</p>
+      <p>First, see what the data says about people like you. Pick an age band and a complaint.</p>
+    </>),
+    F('explorer', <Explorer cells={data.explorer} source={src} />),
+    T('for-you-2', <>
+      <p>Then the practical part. The gap opens at the front desk, not in the treatment room. Give your pain score honestly, but know that it mainly decides whether you get a painkiller; what decides urgency is the story you tell and how you arrive.</p>
+      <p>If the problem might be your heart, use the words. "Chest pain" or "chest pressure" is what the triage system is built to hear, and the heart-attack data shows it is women, not men, who pay for describing it any other way. Ask whether a troponin, the cardiac enzyme test, has been sent; in the data it was ordered for barely a quarter of women having a heart attack. And if it might be your heart, call the ambulance rather than driving. Women do this less, and arrival by ambulance is the one thing in this data that closes the urgency gap.</p>
       <p>None of this is medical advice. Bring the numbers to your doctor, not a conclusion.</p>
     </>),
     F('summary', <Summary title="Chapter 2 in four numbers" source={src} items={[

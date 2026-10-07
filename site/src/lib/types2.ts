@@ -22,5 +22,8 @@ export type Chapter2Data = {
   heart_attack: { n: number; n_women: number; n_men: number; weighted_per_year_k: number; metrics: Record<string, Cmp | null>; under_65: Record<string, Cmp | null> }
   all_pain: { n: number; n_women: number; n_men: number; metrics: Record<string, Cmp | null>; age_adjusted: Record<string, AgeAdj>; within_triage: Record<string, Cmp | null> }
   by_score: { score: number; opioid_ed: Cmp; analgesic_ed: Cmp }[]
+  by_score_urgent: { score: number; urgent: Cmp }[]
+  explorer: { complaint: string; age: string; n_women: number; n_men: number; metrics: Record<string, Cmp | null> }[]
+  levers: Record<string, Record<string, Cmp | null>>
   all_visits: { opioid_ed: Cmp; wait_mean: Cmp }
 }

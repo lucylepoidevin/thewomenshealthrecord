@@ -15,7 +15,7 @@ export default function ScoreLines({ points, title, subtitle, source, yLabel }: 
   const m = { top: 16, right: 20, bottom: 40, left: 44 }
   const iw = Math.max(0, width - m.left - m.right)
   const ih = Math.max(0, height - m.top - m.bottom)
-  const x = scaleLinear().domain([0, 10]).range([0, iw])
+  const x = scaleLinear().domain([Math.min(...points.map(p => p.score)), 10]).range([0, iw])
   const yMax = Math.ceil(Math.max(...points.map(p => Math.max(p.cmp.women.hi, p.cmp.men.hi))) / 10) * 10
   const y = scaleLinear().domain([0, yMax]).range([ih, 0])
   const F = 'var(--c-female)', M = 'var(--c-male)'
@@ -35,7 +35,7 @@ export default function ScoreLines({ points, title, subtitle, source, yLabel }: 
                   <text x={-8} y={y(t) + 4} textAnchor="end" fontSize={11} fill="var(--c-text-2)">{t}%</text>
                 </g>
               ))}
-              {x.ticks(10).map(t => <text key={t} x={x(t)} y={ih + 18} textAnchor="middle" fontSize={11} fill="var(--c-text-2)">{t}</text>)}
+              {points.map(p => p.score).map(t => <text key={t} x={x(t)} y={ih + 18} textAnchor="middle" fontSize={11} fill="var(--c-text-2)">{t}</text>)}
               {series.map(s => <path key={s.k + 'b'} d={band(s.k)} fill={s.c} opacity={0.12} />)}
               {series.map(s => <path key={s.k} d={ln(s.k)} fill="none" stroke={s.c} strokeWidth={2.5} />)}
               {series.map(s => points.map(p => (

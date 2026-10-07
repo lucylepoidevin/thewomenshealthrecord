@@ -49,7 +49,7 @@ await browser.close()
   await p2.addStyleTag({ content: '.reveal{opacity:1!important;transform:none!important;transition:none!important} .fade-up{animation:none!important} .progress-bar{display:none!important}' })
   for (let y = 0; y < await p2.evaluate(() => document.body.scrollHeight); y += 700) { await p2.evaluate(v => window.scrollTo(0, v), y); await p2.waitForTimeout(80) }
   await p2.waitForTimeout(600)
-  const names2 = ['ch2-01-severe-pain', 'ch2-02-triage-ambulance', 'ch2-03-analgesic-by-score', 'ch2-04-where-treatment-differs', 'ch2-05-wait-minutes', 'ch2-06-heart-attack', 'ch2-07-summary']
+  const names2 = ['ch2-01-severe-pain', 'ch2-02-triage-ambulance', 'ch2-03-analgesic-by-score', 'ch2-04-where-treatment-differs', 'ch2-05-wait-minutes', 'ch2-06-heart-attack', 'ch2-07-what-you-say', 'ch2-08-chest-pain-by-age', 'ch2-09-how-you-arrive', 'ch2-10-urgency-by-score', 'ch2-11-explorer', 'ch2-12-summary']
   const cards2 = p2.locator('.graphic-card')
   const n2 = await cards2.count()
   for (let i = 0; i < Math.min(n2, names2.length); i++) {
