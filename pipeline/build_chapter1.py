@@ -198,8 +198,13 @@ def main():
         {"id": "meps", "title": "Medical Expenditure Panel Survey, Household Component: Prescribed Medicines files (HC-206A, 213A, 220A, 229A, 239A, 248A, 254A) and Full Year Consolidated files (HC-209, 216, 224, 233, 243, 251, 256), 2018–2024", "publisher": "Agency for Healthcare Research and Quality", "url": "https://meps.ahrq.gov/mepsweb/data_stats/download_data_files.jsp", "retrieved": today, "note": f"Persons with at least one fill, by sex, pooled 2018–2024 and weighted with the person weight; published only for drugs with at least {MIN_USERS} unweighted person-years."},
         {"id": "carmeli-2023", "title": "FDA Drug Trials Snapshots Data Explorer (dataset, 2015–2021)", "publisher": "Carmeli A. et al., Patterns (2023); GitHub / Zenodo record 7373942", "url": "https://github.com/arielcarmeli/FDA-Drug-Trial-Snapshots-Data-Explorer", "retrieved": today, "note": f"Used to cross-check our parsed figures, and as the enrollment source for {n_fallback} 2015–2021 drugs whose archived FDA page could not be retrieved or parsed (flagged per drug in the data file)."},
     ]
+    try:  # keep other chapters' entries
+        with open(f"{SITE_DATA}/sources.json", encoding="utf-8") as f:
+            others = [s_ for s_ in json.load(f) if s_["id"] not in {x["id"] for x in sources}]
+    except FileNotFoundError:
+        others = []
     with open(f"{SITE_DATA}/sources.json", "w", encoding="utf-8") as f:
-        json.dump(sources, f, indent=1)
+        json.dump(sources + others, f, indent=1)
 
     print(f"enrollment from Carmeli fallback: {n_fallback}")
     print(f"with MEPS rate ratio: {len(with_rate)}; " + ", ".join(f"{d['brand']} {d['rate_ratio']}" for d in with_rate[:10]))

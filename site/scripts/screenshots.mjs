@@ -39,3 +39,24 @@ await page.addStyleTag({ content: '.fade-up{animation:none!important}' })
 await page.locator('main > div > section').first().screenshot({ path: `${out}00-home-hero.png` })
 console.log('saved headers')
 await browser.close()
+
+// ---- Chapter 2
+{
+  const b2 = await chromium.launch()
+  const p2 = await b2.newPage({ viewport: { width: 1200, height: 900 }, deviceScaleFactor: 2 })
+  await p2.goto(base + '#/chapters/pain-gap', { waitUntil: 'networkidle' })
+  await p2.waitForSelector('.graphic-card')
+  await p2.addStyleTag({ content: '.reveal{opacity:1!important;transform:none!important;transition:none!important} .fade-up{animation:none!important} .progress-bar{display:none!important}' })
+  for (let y = 0; y < await p2.evaluate(() => document.body.scrollHeight); y += 700) { await p2.evaluate(v => window.scrollTo(0, v), y); await p2.waitForTimeout(80) }
+  await p2.waitForTimeout(600)
+  const names2 = ['ch2-01-opioid-by-complaint', 'ch2-02-opioid-by-pain-score', 'ch2-03-any-analgesic', 'ch2-04-wait-minutes', 'ch2-05-workup', 'ch2-06-summary']
+  const cards2 = p2.locator('.graphic-card')
+  const n2 = await cards2.count()
+  for (let i = 0; i < Math.min(n2, names2.length); i++) {
+    await cards2.nth(i).scrollIntoViewIfNeeded(); await p2.waitForTimeout(250)
+    await cards2.nth(i).screenshot({ path: `${out}${names2[i]}.png` }); console.log('saved', names2[i])
+  }
+  await p2.evaluate(() => window.scrollTo(0, 0))
+  await p2.locator('article > header').screenshot({ path: `${out}ch2-00-header.png` })
+  await b2.close()
+}

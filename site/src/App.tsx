@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Methods from './pages/Methods'
 import About from './pages/About'
 import Chapter1 from './chapters/Chapter1'
+import Chapter2 from './chapters/Chapter2'
 import ComingSoon from './chapters/ComingSoon'
 import { CHAPTERS } from './lib/chapters'
 
@@ -35,6 +36,7 @@ export default function App() {
           <Route path="/methods" element={<Methods />} />
           <Route path="/about" element={<About />} />
           <Route path="/chapters/tested-on-men" element={<Chapter1 />} />
+          <Route path="/chapters/pain-gap" element={<Chapter2 />} />
           {CHAPTERS.filter(c => c.status !== 'live').map(c => (
             <Route key={c.slug} path={`/chapters/${c.slug}`} element={<ComingSoon chapter={c} />} />
           ))}

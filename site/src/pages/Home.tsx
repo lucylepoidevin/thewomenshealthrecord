@@ -22,7 +22,7 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-4 pb-20">
         <div className="flex items-baseline justify-between mb-6">
           <h2 className="display text-2xl font-medium">Chapters</h2>
-          <span className="text-xs tracking-wide text-ink-3">One published · five in progress</span>
+          <span className="text-xs tracking-wide text-ink-3">Two published · four in progress</span>
         </div>
         <ol className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {CHAPTERS.map(c => (
