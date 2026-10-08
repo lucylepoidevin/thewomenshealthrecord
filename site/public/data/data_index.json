@@ -106,6 +106,15 @@
    }
   },
   {
+   "file": "chapter5_cancer_stage.csv",
+   "rows": 24,
+   "description": "Chapter 5: SEER stage at diagnosis (2013-2022) and median age at diagnosis (2018-2022) by sex for cancers both sexes get.",
+   "columns": {
+    "distant_*_pct": "Share of new cases diagnosed at distant stage",
+    "distant_age_adj_*": "Same, standardised to the site's pooled age distribution in three bands"
+   }
+  },
+  {
    "file": "chapter5_models.csv",
    "rows": 28,
    "description": "Chapter 5: adjusted odds ratios for women relative to men from survey-weighted logistic regressions.",

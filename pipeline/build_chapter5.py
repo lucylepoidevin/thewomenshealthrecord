@@ -20,6 +20,70 @@ import statsmodels.api as sm
 import statsmodels.formula.api as smf
 
 from build_chapter2 import AGE_BANDS, age_adjusted, compare, svy_ratio
+
+# SEER sites both sexes get, with display names; subtypes and sex-specific sites left out
+SEER_SITES = {
+    "Lung and Bronchus": "Lung", "Colon and Rectum (including Appendix)": "Colon and rectum", "Urinary Bladder (Invasive & In Situ)": "Bladder", "Melanoma of the Skin": "Melanoma", "Non-Hodgkin Lymphoma": "Non-Hodgkin lymphoma",
+    "Kidney and Renal Pelvis": "Kidney", "Pancreas": "Pancreas", "Thyroid": "Thyroid", "Oral Cavity and Pharynx": "Mouth and throat", "Stomach": "Stomach", "Liver and Intrahepatic Bile Duct": "Liver", "Esophagus": "Oesophagus",
+    "Brain and Other Nervous System": "Brain", "Myeloma": "Myeloma", "Hodgkin Lymphoma": "Hodgkin lymphoma", "Larynx": "Larynx", "Soft Tissue including Heart": "Soft tissue", "Small Intestine": "Small intestine", "Anus, Anal Canal & Anorectum": "Anus",
+    "Gallbladder": "Gallbladder", "Salivary Gland": "Salivary gland", "Mesothelioma": "Mesothelioma", "Bones and Joints": "Bone", "Eye and Orbit": "Eye",
+}
+
+
+def seer_table(path):
+    rows = []
+    x = pd.ExcelFile(path)
+    for sh in x.sheet_names:
+        df = pd.read_excel(x, sheet_name=sh, header=None)
+        hdr = [i for i in range(len(df)) if str(df.iat[i, 0]).strip() == "Cancer Site"]
+        if hdr:
+            d = df.iloc[hdr[0] + 1:].copy(); d.columns = list(df.iloc[hdr[0]]); rows.append(d)
+    t = pd.concat(rows)
+    return t[t["Race/Ethnicity"] == "All Races / Ethnicities"]
+
+
+def cancer():
+    """Stage at diagnosis and median age at diagnosis by sex, SEER, for cancers both sexes get."""
+    S = seer_table(f"{CACHE}/ch5/Stage_Distribution.xlsx"); M = seer_table(f"{CACHE}/ch5/Median_Age_at_Diagnosis.xlsx")
+    out = []
+    for site, label in SEER_SITES.items():
+        g = S[S["Cancer Site"] == site]; ga = g[g["Age at Diagnosis"] == "All Ages"]
+        f = ga[ga.Sex == "Female"]; m = ga[ga.Sex == "Male"]
+        if f.empty or m.empty:
+            continue
+        def st(s, stage):
+            r = s[s["Stage at Diagnosis"] == stage]; return float(r["Percent of Cases"].iloc[0]) if len(r) else None
+        nf, nm = int(f["Number of Cases"].sum()), int(m["Number of Cases"].sum())
+        fd, md, fl, ml = st(f, "Distant"), st(m, "Distant"), st(f, "Localized"), st(m, "Localized")
+        if fd is None or md is None or min(nf, nm) < 2000:
+            continue
+        se = math.sqrt(fd * (100 - fd) / nf + md * (100 - md) / nm)
+        sef, sem = math.sqrt(fd * (100 - fd) / nf), math.sqrt(md * (100 - md) / nm)
+        # age-standardised to the pooled age distribution of the site (three bands)
+        tot = 0; ws = {"Female": 0.0, "Male": 0.0}; ok = True
+        for b in ("Ages < 50", "Ages 50-64", "Ages 65+"):
+            gb = g[g["Age at Diagnosis"] == b]; nb = 0; d = {}
+            for sex in ("Female", "Male"):
+                s_ = gb[gb.Sex == sex]; dist = s_[s_["Stage at Diagnosis"] == "Distant"]
+                if dist.empty:
+                    ok = False; break
+                d[sex] = float(dist["Percent of Cases"].iloc[0]); nb += int(s_["Number of Cases"].sum())
+            if not ok:
+                break
+            tot += nb
+            for sex in d:
+                ws[sex] += d[sex] * nb
+        adj = {"women": round(ws["Female"] / tot, 1), "men": round(ws["Male"] / tot, 1), "diff": round((ws["Female"] - ws["Male"]) / tot, 1)} if ok and tot else None
+        mg = M[M["Cancer Site"] == site]; mf = mg[mg.Sex == "Female"]; mm = mg[mg.Sex == "Male"]
+        med = {"women": float(mf["Median Age at Diagnosis"].iloc[0]), "men": float(mm["Median Age at Diagnosis"].iloc[0])} if len(mf) and len(mm) else None
+        out.append({"site": site, "label": label, "cases_women": nf, "cases_men": nm,
+                    "distant": {"women": {"est": round(fd, 1), "lo": round(fd - 1.96 * sef, 1), "hi": round(fd + 1.96 * sef, 1), "n": nf}, "men": {"est": round(md, 1), "lo": round(md - 1.96 * sem, 1), "hi": round(md + 1.96 * sem, 1), "n": nm}, "diff": round(fd - md, 1), "diff_lo": round(fd - md - 1.96 * se, 1), "diff_hi": round(fd - md + 1.96 * se, 1)},
+                    "localized": {"women": round(fl, 1), "men": round(ml, 1)}, "distant_age_adjusted": adj, "median_age": med})
+    out.sort(key=lambda r: -r["distant"]["diff"])
+    later = [r for r in out if r["distant"]["diff_lo"] > 0]; earlier = [r for r in out if r["distant"]["diff_hi"] < 0]
+    older = sum(1 for r in out if r["median_age"] and r["median_age"]["women"] > r["median_age"]["men"]); younger = sum(1 for r in out if r["median_age"] and r["median_age"]["women"] < r["median_age"]["men"])
+    return {"sites": out, "n_sites": len(out), "n_women_later_stage": len(later), "n_women_earlier_stage": len(earlier), "n_women_older_at_dx": older, "n_women_younger_at_dx": younger,
+            "years_stage": "2013–2022", "years_age": "2018–2022", "cases_total": int(sum(r["cases_women"] + r["cases_men"] for r in out))}
 from common import CACHE, SITE_DATA
 
 GROUPS = [
@@ -242,7 +306,9 @@ def main():
         if sub["sym_i"].sum() > 30:
             models[f"symptom_adj_{gid}"] = fit(sub, "sym_i ~ femalei + C(age_band) + yearf + tests + img_i + tri + ems_i", f"Symptom code, {label.lower()}: adjusted for age, year, workup")
 
-    out = {"generated": date.today().isoformat(), "years": [int(d["year"].min()), int(d["year"].max())], "n_adult_visits": int(len(d)), "overall": overall, "symptoms": symptoms, "anxiety": anxiety, "groups": groups, "explorer": explorer,
+    ca = cancer()
+    print("cancer:", {k: v for k, v in ca.items() if k != "sites"}); print("  later stage for women:", [(r["label"], r["distant"]["diff"]) for r in ca["sites"] if r["distant"]["diff_lo"] > 0]); print("  earliest:", [(r["label"], r["distant"]["diff"]) for r in ca["sites"][-5:]])
+    out = {"generated": date.today().isoformat(), "years": [int(d["year"].min()), int(d["year"].max())], "n_adult_visits": int(len(d)), "overall": overall, "cancer": ca, "symptoms": symptoms, "anxiety": anxiety, "groups": groups, "explorer": explorer,
            "models": models, "models_note": "Survey-weighted logistic regressions (weights normalised to mean 1); standard errors clustered on stratum x PSU. Odds ratio for female patients relative to male."}
     with open(f"{SITE_DATA}/chapter5.json", "w", encoding="utf-8") as f:
         json.dump(out, f, indent=1, default=lambda o: float(o) if isinstance(o, (np.floating, np.integer)) else str(o))
@@ -250,6 +316,9 @@ def main():
     new_sources = [
         {"id": "nimh-anxiety", "title": "Any anxiety disorder: prevalence of any anxiety disorder among U.S. adults", "publisher": "National Institute of Mental Health, from the National Comorbidity Survey Replication (2001–2003)", "url": "https://www.nimh.nih.gov/health/statistics/any-anxiety-disorder", "retrieved": today, "note": "Past-year prevalence 23.4% of women, 14.3% of men."},
         {"id": "westergaard-2019", "title": "Population-wide analysis of differences in disease progression patterns in men and women", "publisher": "Westergaard D., Moseley P., Sørup F.K.H., Baldi P., Brunak S., Nature Communications 10, 666 (2019). doi:10.1038/s41467-019-08475-9", "url": "https://doi.org/10.1038/s41467-019-08475-9", "retrieved": today, "note": "Danish registries, 6.9 million people, 1994–2015; women diagnosed later than men for the majority of 770 diseases, about four years on average."},
+        {"id": "seer-stage", "title": "SEER*Explorer data archive: stage distribution of SEER incidence cases by sex, 2013–2022 (November 2024 submission)", "publisher": "Surveillance, Epidemiology, and End Results Program, National Cancer Institute", "url": "https://seer.cancer.gov/statistics-network/explorer/archive.html", "retrieved": today, "note": "SEER summary stage (localized, regional, distant, unstaged); All Races, by sex and age band; 22 registries."},
+        {"id": "seer-age", "title": "SEER*Explorer data archive: median age at diagnosis by sex, 2018–2022 (November 2024 submission)", "publisher": "Surveillance, Epidemiology, and End Results Program, National Cancer Institute", "url": "https://seer.cancer.gov/statistics-network/explorer/archive.html", "retrieved": today},
+        {"id": "cohn-2014", "title": "Sex disparities in diagnosis of bladder cancer after initial presentation with hematuria: a nationwide claims-based investigation", "publisher": "Cohn J.A., Vekhter B., Lyttle C., Steinberg G.D., Large M.C., Cancer 120(4), 2014. doi:10.1002/cncr.28416", "url": "https://doi.org/10.1002/cncr.28416", "retrieved": today, "note": "7,649 insured adults with haematuria later diagnosed with bladder cancer, 2004–2010: mean 85.4 days to diagnosis for women against 73.6 for men; women 2.3 times as likely to be diagnosed with a urinary infection first."},
         {"id": "nhamcs-icd", "title": "ICD-10-CM chapter XVIII: symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified (R00–R99)", "publisher": "National Center for Health Statistics, CDC", "url": "https://www.cdc.gov/nchs/icd/icd-10-cm/index.html", "retrieved": today, "note": "A visit 'ends with a symptom code' when its first-listed diagnosis is in this chapter."},
     ]
     sources = json.load(open(f"{SITE_DATA}/sources.json", encoding="utf-8"))

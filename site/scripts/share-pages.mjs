@@ -9,7 +9,7 @@ const pages = [
   { slug: 'pain-gap', title: 'The urgency gap', desc: 'Twenty thousand emergency visits for pain and 377 heart attacks, 2018–2022: where women are rated lower, and where they are not.', img: 'pain-gap.png' },
   { slug: 'funding-vs-burden', title: 'The research dollar', desc: '67 diseases, their NIH budgets and the healthy years they cost Americans: where the money follows the burden and which conditions are never measured.', img: 'funding-vs-burden.png' },
   { slug: 'who-gets-studied', title: 'Who gets studied', desc: '56,591 trials and 22 million people: the share of women in each disease\'s trials against the share of women in the disease, and how few trials ever report what they found in women.', img: 'who-gets-studied.png' },
-  { slug: 'sent-home-with-a-label', title: 'Sent home with a label', desc: 'The story says she leaves the ED without a diagnosis, under-tested, told it is anxiety, and comes straight back. We tested each part in 20,808 visits. One part is true.', img: 'sent-home-with-a-label.png' },
+  { slug: 'sent-home-with-a-label', title: 'Sent home with a label', desc: 'The story says she leaves the ED without a diagnosis, under-tested, told it is anxiety, and comes straight back. We tested each part in 20,808 visits and 4.3 million cancer cases. One part is true, and it is more specific than the story.', img: 'sent-home-with-a-label.png' },
   { slug: 'male-default', title: 'The male default body', desc: 'Three decades of mouse studies by sex, and what the label of every new drug since 2015 says about women\'s bodies.', img: 'male-default.png' },
 ]
 const html = p => `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>${p.title} · The Women's Health Record</title>
