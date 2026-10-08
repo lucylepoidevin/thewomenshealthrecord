@@ -12,7 +12,7 @@ export default function Home() {
         </h1>
         <p className="mx-auto mt-7 max-w-2xl text-lg text-ink-2 leading-relaxed">
           Each chapter is an original analysis of public data: FDA trial records, adverse-event reports,
-          emergency-room logs, research funding. Every number links to its source. Every method is published.
+          emergency-room logs, research funding, trial registries, drug labels, the research literature itself. Every number links to its source. Every method is published.
         </p>
         <div className="mt-9 flex flex-wrap justify-center gap-3">
           <Link to="/chapters/tested-on-men" className="inline-flex items-center gap-2 rounded-full bg-berry px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_30px_-12px_rgba(139,30,75,0.6)] transition hover:bg-rose">Start with Chapter 1 <span aria-hidden>→</span></Link>
@@ -23,7 +23,7 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-4 pb-20">
         <div className="flex items-baseline justify-between mb-6">
           <h2 className="display text-2xl font-medium">Chapters</h2>
-          <span className="text-xs tracking-wide text-ink-3">Three published · three in progress</span>
+          <span className="text-xs tracking-wide text-ink-3">Six chapters, each an original analysis</span>
         </div>
         <ol className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {CHAPTERS.map(c => (

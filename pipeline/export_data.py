@@ -48,5 +48,33 @@ write("chapter3_diseases.csv", [{**d, "nih_categories": "; ".join(d["nih_categor
 hist = [{"disease": d["disease"], "fy": h["fy"], "funding_m": h["funding_m"]} for d in c3["diseases"] for h in d["history"]]
 write("chapter3_funding_history.csv", hist, ["disease", "fy", "funding_m"], "Chapter 3: NIH funding by fiscal year 2008-2025 for each matched disease, $ millions (0 means the category was not yet reported).", {})
 write("chapter3_uncounted.csv", c3["uncounted"], ["category", "label", "funding_m"], "Chapter 3: NIH-funded conditions with no WHO burden estimate, FY2024 funding in $ millions.", {})
+
+c4 = json.load(open(f"{SITE_DATA}/chapter4.json"))
+rows = []
+for d in c4["diseases"] + c4["sex_specific"]:
+    rows.append({**{k: d.get(k) for k in ("disease", "sex_specific", "trials", "participants", "female_pct", "female_pct_open", "burden_female_pct", "dalys_k", "skew", "ratio", "gap_pts", "trials_per_100k_dalys", "excl_preg_pct", "excl_lact_pct", "contra_pct", "wocbp_pct", "max_age_pct", "max_age_le75_pct", "outcome_by_sex")},
+                 "industry_female_pct": d["by_sponsor"]["Industry"]["female_pct"], "industry_trials": d["by_sponsor"]["Industry"]["trials"], "nih_female_pct": d["by_sponsor"]["NIH"]["female_pct"], "nih_trials": d["by_sponsor"]["NIH"]["trials"], "academic_female_pct": d["by_sponsor"]["Universities, hospitals, other"]["female_pct"], "academic_trials": d["by_sponsor"]["Universities, hospitals, other"]["trials"]})
+write("chapter4_diseases.csv", rows, list(rows[0].keys()), "Chapter 4: for each disease, US interventional trials with posted results on ClinicalTrials.gov, women's share of participants against women's share of US burden (WHO 2021), by sponsor, and what the eligibility text excludes.",
+      {"female_pct": "Women as a share of participants with a recorded sex, all trials", "female_pct_open": "Same, trials open to both sexes only", "burden_female_pct": "Women's share of US DALYs", "ratio": "female_pct / burden_female_pct", "excl_preg_pct": "Share of trials whose criteria exclude pregnant women", "contra_pct": "Share requiring contraception", "wocbp_pct": "Share with a childbearing-potential clause", "max_age_pct": "Share with an upper age limit", "outcome_by_sex": "Trials reporting any outcome in sex-named groups"})
+write("chapter4_trend.csv", c4["trend"], list(c4["trend"][0].keys()), "Chapter 4: by trial start year, women's share of participants (trials open to both sexes, non sex-specific conditions) and the share of all US trials with each exclusion.", {})
+
+c5 = json.load(open(f"{SITE_DATA}/chapter5.json"))
+rows = []
+for g in c5["groups"] + [{"id": "all_symptom_complaints", "metrics": c5["symptoms"]["metrics"]}, {"id": "all_noninjury", "metrics": c5["overall"]["metrics"]}]:
+    for k, v in g["metrics"].items():
+        if v:
+            rows.append({"complaint": g["id"], "measure": k, "women_est": v["women"]["est"], "women_lo": v["women"]["lo"], "women_hi": v["women"]["hi"], "women_n": v["women"]["n"], "men_est": v["men"]["est"], "men_lo": v["men"]["lo"], "men_hi": v["men"]["hi"], "men_n": v["men"]["n"], "diff": v["diff"], "diff_lo": v["diff_lo"], "diff_hi": v["diff_hi"]})
+write("chapter5_ed_estimates.csv", rows, ["complaint", "measure", "women_est", "women_lo", "women_hi", "women_n", "men_est", "men_lo", "men_hi", "men_n", "diff", "diff_lo", "diff_hi"],
+      "Chapter 5: survey-weighted estimates by patient sex for NHAMCS ED visits 2018-2022, adults 18+, non-injury, by symptom complaint: symptom-code diagnoses, anxiety codes, tests, imaging, admission and 72-hour returns.", {"measure": "See the Methods page; shares are percentages, tests_count a count, lov_mean minutes"})
+write("chapter5_models.csv", [{"model": k, **v} for k, v in c5["models"].items()], ["model", "label", "note", "n", "or", "lo", "hi", "p", "formula"], "Chapter 5: adjusted odds ratios for women relative to men from survey-weighted logistic regressions.", {})
+exp = [{"complaint": c["complaint"], "age": c["age"], "measure": k, "women_est": v["women"]["est"], "women_lo": v["women"]["lo"], "women_hi": v["women"]["hi"], "men_est": v["men"]["est"], "men_lo": v["men"]["lo"], "men_hi": v["men"]["hi"], "diff": v["diff"], "n_women": c["n_women"], "n_men": c["n_men"]} for c in c5["explorer"] for k, v in c["metrics"].items() if v]
+write("chapter5_explorer.csv", exp, ["complaint", "age", "measure", "women_est", "women_lo", "women_hi", "men_est", "men_lo", "men_hi", "diff", "n_women", "n_men"], "Chapter 5: the same estimates by complaint and age band.", {})
+
+c6 = json.load(open(f"{SITE_DATA}/chapter6.json"))
+write("chapter6_labels.csv", c6["labels"]["drugs"], ["slug", "brand", "year", "category", "trial_female_pct", "label_date", "sex_statement", "male_only_pk", "quantified", "difference", "no_difference", "not_evaluated", "no_preg_data", "no_lact_data", "sex_dose", "example"],
+      "Chapter 6: what the current FDA label of each chapter-1 drug says about sex, pregnancy and breastfeeding, classified by the published rules.", {"sex_statement": "Classification of the pharmacology section's statement about sex", "male_only_pk": "Pharmacokinetics reported from healthy male subjects", "no_preg_data": "Label says human pregnancy data are absent, limited or insufficient", "example": "The sentence the classification matched"})
+pm = [{"series": name, **p} for name, s in list(c6["pubmed"]["fields"].items()) + [("NIH-funded rodent studies", c6["pubmed"]["nih"])] + list(c6["pubmed"]["human"].items()) for p in s]
+write("chapter6_pubmed.csv", pm, ["series", "year", "n", "n_sexed", "male_only_pct", "female_only_pct", "both_pct", "includes_female_pct", "sexed_pct"], "Chapter 6: PubMed record counts by year and sex check tag for rodent studies (overall, by field, NIH-funded) and human trial reports.", {"n": "Records in the series that year", "n_sexed": "Records carrying a Male or Female tag", "male_only_pct": "Male and not Female, as a share of n_sexed"})
+
 json.dump({"generated": c3["generated"], "files": files}, open(f"{SITE_DATA}/data_index.json", "w"), indent=1)
 print("index written")

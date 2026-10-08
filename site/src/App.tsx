@@ -9,6 +9,9 @@ import Corrections from './pages/Corrections'
 import Chapter1 from './chapters/Chapter1'
 import Chapter2 from './chapters/Chapter2'
 import Chapter3 from './chapters/Chapter3'
+import Chapter4 from './chapters/Chapter4'
+import Chapter5 from './chapters/Chapter5'
+import Chapter6 from './chapters/Chapter6'
 import ComingSoon from './chapters/ComingSoon'
 import { CHAPTERS } from './lib/chapters'
 
@@ -47,6 +50,9 @@ export default function App() {
           <Route path="/chapters/tested-on-men" element={<Chapter1 />} />
           <Route path="/chapters/pain-gap" element={<Chapter2 />} />
           <Route path="/chapters/funding-vs-burden" element={<Chapter3 />} />
+          <Route path="/chapters/who-gets-studied" element={<Chapter4 />} />
+          <Route path="/chapters/sent-home-with-a-label" element={<Chapter5 />} />
+          <Route path="/chapters/male-default" element={<Chapter6 />} />
           {CHAPTERS.filter(c => c.status !== 'live').map(c => (
             <Route key={c.slug} path={`/chapters/${c.slug}`} element={<ComingSoon chapter={c} />} />
           ))}

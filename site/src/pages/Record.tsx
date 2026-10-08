@@ -8,14 +8,16 @@ type Cond = {
   funding: { funding_m: number; dalys_k?: number; female_share?: number; dollars_per_daly?: number; ratio_to_expected?: number; rank_by_ratio?: number; n_ranked?: number; skew?: string; uncounted?: boolean }
   drugs: Drug[]
   ed: { complaint: string; n: number; metrics: Record<string, Cmp | null> } | null
+  trials: { trials: number; participants: number; female_pct: number | null; burden_female_pct?: number | null; ratio?: number | null; rank?: number | null; excl_preg_pct?: number; contra_pct?: number; max_age_pct?: number; outcome_by_sex?: number; sex_specific?: boolean; industry_female_pct?: number | null; academic_female_pct?: number | null; n_ranked?: number; uncounted?: boolean } | null
+  ed_label: { complaint: string; n: number; metrics: Record<string, Cmp | null> } | null
 }
 const money = (m: number) => m >= 1000 ? `$${(m / 1000).toFixed(2)} billion` : `$${m.toFixed(0)} million`
 const Tile = ({ v, l, c = 'text-berry' }: { v: string; l: string; c?: string }) => <div className="rounded-2xl bg-blush-2/60 p-4"><div className={`display text-3xl font-light leading-none ${c}`}>{v}</div><p className="mt-2 text-xs text-ink-2 leading-snug">{l}</p></div>
 const Row = ({ label, c, unit = '%' }: { label: string; c: Cmp | null | undefined; unit?: string }) => {
   if (!c) return null
   const clear = c.diff_lo > 0 || c.diff_hi < 0
-  const f = (v: number) => unit === '%' ? `${v.toFixed(0)}%` : `${v.toFixed(0)}${unit}`
-  return <tr className="border-t border-hairline/60"><td className="py-2 pr-3 text-ink">{label}</td><td className="py-2 pr-3 text-right tabular-nums font-semibold">{f(c.women.est)}</td><td className="py-2 pr-3 text-right tabular-nums font-semibold">{f(c.men.est)}</td><td className={`py-2 text-right tabular-nums ${clear ? 'font-bold text-berry' : 'text-ink-3'}`}>{c.diff > 0 ? '+' : ''}{c.diff.toFixed(0)}{unit === '%' ? ' pts' : unit}</td></tr>
+  const f = (v: number) => unit === '%' ? `${v.toFixed(0)}%` : unit === '' ? v.toFixed(1) : `${v.toFixed(0)}${unit}`
+  return <tr className="border-t border-hairline/60"><td className="py-2 pr-3 text-ink">{label}</td><td className="py-2 pr-3 text-right tabular-nums font-semibold">{f(c.women.est)}</td><td className="py-2 pr-3 text-right tabular-nums font-semibold">{f(c.men.est)}</td><td className={`py-2 text-right tabular-nums ${clear ? 'font-bold text-berry' : 'text-ink-3'}`}>{c.diff > 0 ? '+' : ''}{unit === '' ? c.diff.toFixed(1) : c.diff.toFixed(0)}{unit === '%' ? ' pts' : unit}</td></tr>
 }
 
 /** One condition, everything the chapters know about it. */
@@ -31,7 +33,7 @@ export default function Record() {
       <header className="text-center pb-10">
         <p className="eyebrow">The record</p>
         <h1 className="display mt-4 text-4xl sm:text-6xl font-light leading-[1.05]">One condition, every chapter</h1>
-        <p className="mx-auto mt-6 max-w-xl text-lg text-ink-2 leading-relaxed">Pick a condition. This pulls together what the three chapters know about it: who it burdens, what research it gets, who its drugs were tested on, and how its patients fare in the emergency department.</p>
+        <p className="mx-auto mt-6 max-w-xl text-lg text-ink-2 leading-relaxed">Pick a condition. This pulls together what the chapters know about it: who it burdens, what research it gets, who is in its trials, who its drugs were tested on, and how its patients fare in the emergency department.</p>
         <p className="mt-6 text-[15px] text-ink-2">Show me{' '}
           <select value={c.disease} onChange={e => setPick(e.target.value)} className="rounded-full border border-hairline bg-white px-4 py-2 text-[15px] outline-none focus:border-rose focus:ring-4 focus:ring-rose/10" aria-label="Condition">
             {data.conditions.map(x => <option key={x.disease} value={x.disease}>{x.disease}</option>)}
@@ -49,6 +51,20 @@ export default function Record() {
             <Tile v={F.dalys_k! >= 1000 ? `${(F.dalys_k! / 1000).toFixed(1)}M` : `${F.dalys_k!.toFixed(0)}k`} l="healthy years lost in the US a year" />
             <Tile v={money(F.funding_m)} l="NIH funding, fiscal 2024" />
             <Tile v={`$${F.dollars_per_daly!.toLocaleString()}`} l={`per year lost; ${F.ratio_to_expected!.toFixed(2)}× what the burden predicts, rank ${F.rank_by_ratio} of ${F.n_ranked} (1 = most underfunded)`} />
+          </div>
+        )}
+      </section>
+
+      <section className="graphic-card p-5 sm:p-7 mt-6">
+        <div className="flex items-baseline justify-between gap-4"><h2 className="display text-xl font-medium">Who is in its trials</h2><Link to="/chapters/who-gets-studied" className="text-xs text-berry underline underline-offset-2">Chapter 4</Link></div>
+        {!c.trials ? <p className="mt-3 text-[15px] text-ink-2">Fewer than ten US trials with posted results could be matched to this condition.</p> : c.trials.uncounted || c.trials.sex_specific || c.trials.ratio == null ? (
+          <p className="mt-3 text-[15px] leading-relaxed text-ink">ClinicalTrials.gov holds <b>{c.trials.trials.toLocaleString()}</b> US trials with posted results for this condition, enrolling {c.trials.participants.toLocaleString()} people, <b>{c.trials.female_pct?.toFixed(0)}%</b> of them women.{c.trials.uncounted ? ' There is no WHO burden estimate to compare that with.' : ''}</p>
+        ) : (
+          <div className="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <Tile v={c.trials.trials.toLocaleString()} l={`US trials with results, ${c.trials.participants.toLocaleString()} participants`} />
+            <Tile v={`${c.trials.female_pct?.toFixed(0)}%`} l={`women in the trials, against ${c.trials.burden_female_pct?.toFixed(0)}% of the burden: ${c.trials.ratio?.toFixed(2)}× parity, rank ${c.trials.rank} of ${c.trials.n_ranked} (1 = most under-enrolled)`} />
+            <Tile v={`${c.trials.industry_female_pct != null ? c.trials.industry_female_pct.toFixed(0) + '%' : '–'} / ${c.trials.academic_female_pct != null ? c.trials.academic_female_pct.toFixed(0) + '%' : '–'}`} l="women in industry / academic trials" />
+            <Tile v={`${c.trials.outcome_by_sex}`} l={`trials reporting any result by sex; ${c.trials.excl_preg_pct?.toFixed(0)}% exclude pregnant women, ${c.trials.max_age_pct?.toFixed(0)}% cap age`} />
           </div>
         )}
       </section>
@@ -83,6 +99,20 @@ export default function Record() {
           </div>
         )}
       </section>
+      {c.ed_label && (
+        <section className="graphic-card p-5 sm:p-7 mt-6">
+          <div className="flex items-baseline justify-between gap-4"><h2 className="display text-xl font-medium">What the visit was called</h2><Link to="/chapters/sent-home-with-a-label" className="text-xs text-berry underline underline-offset-2">Chapter 5</Link></div>
+          <div className="mt-3 overflow-x-auto">
+            <p className="text-[13px] text-ink-2 mb-2">Adult non-injury visits where the main complaint was <b>{c.ed_label.complaint.toLowerCase()}</b>, 2018–2022, {c.ed_label.n.toLocaleString()} sampled visits.</p>
+            <table className="w-full border-collapse text-[13px] sm:text-[14px]">
+              <thead><tr className="text-[11px] font-bold uppercase tracking-[0.12em] text-ink-3"><th className="py-2 pr-3 text-left font-bold">Of those visits…</th><th className="py-2 pr-3 text-right font-bold text-rose">Women</th><th className="py-2 pr-3 text-right font-bold text-bronze">Men</th><th className="py-2 text-right font-bold">Gap</th></tr></thead>
+              <tbody>
+                <Row label="tests ordered, on average" c={c.ed_label.metrics.tests_count} unit="" /><Row label="got any imaging" c={c.ed_label.metrics.anyimage} /><Row label="left with a symptom code, not a diagnosis" c={c.ed_label.metrics.symptom_dx} /><Row label="had an anxiety or stress code attached" c={c.ed_label.metrics.anxiety_any} /><Row label="were admitted" c={c.ed_label.metrics.admitted} /><Row label="had been in the same ED in the last 72 hours" c={c.ed_label.metrics.seen72} />
+              </tbody>
+            </table>
+          </div>
+        </section>
+      )}
       <p className="mt-8 text-sm text-ink-2 text-center">Every figure here links to its chapter and its source. Download the full tables on the <Link to="/data" className="text-berry underline underline-offset-2">data page</Link>.</p>
     </div>
   )

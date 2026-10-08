@@ -8,6 +8,26 @@ from common import SITE_DATA
 c1 = json.load(open(f"{SITE_DATA}/chapter1.json"))
 c2 = json.load(open(f"{SITE_DATA}/chapter2.json"))
 c3 = json.load(open(f"{SITE_DATA}/chapter3.json"))
+c4 = json.load(open(f"{SITE_DATA}/chapter4.json"))
+c5 = json.load(open(f"{SITE_DATA}/chapter5.json"))
+TRIALS = {d["disease"]: d for d in c4["diseases"] + c4["sex_specific"]}
+TRIALS_UNC = {u["condition"]: u for u in c4["uncounted"]}
+ED5 = {g["id"]: g for g in c5["groups"]}
+UNC_NAMES = {"Fibromyalgia": "Fibromyalgia", "Chronic Fatigue Syndrome": "ME/CFS", "Lupus": "Lupus", "Interstitial Cystitis": "Interstitial cystitis", "Temporomandibular Muscle/Joint Disorder": "TMJD", "Sjogren's Disease": "Sjögren's disease", "Scleroderma": "Scleroderma", "Postural Orthostatic Tachycardia Syndrome": "POTS", "Osteoporosis": "Osteoporosis", "Endometriosis": "Endometriosis", "Vulvodynia": "Vulvodynia", "Polycystic Ovary Syndrome": "PCOS"}
+
+
+def trial_rec(t):
+    if not t:
+        return None
+    return {k: t.get(k) for k in ("trials", "participants", "female_pct", "burden_female_pct", "ratio", "rank", "excl_preg_pct", "contra_pct", "max_age_pct", "outcome_by_sex", "sex_specific")} | {"industry_female_pct": t["by_sponsor"]["Industry"]["female_pct"] if "by_sponsor" in t else None, "academic_female_pct": t["by_sponsor"]["Universities, hospitals, other"]["female_pct"] if "by_sponsor" in t else None, "n_ranked": len(c4["diseases"])}
+
+
+def ed5_rec(cid):
+    g = ED5.get(cid)
+    if not g:
+        return None
+    return {"complaint": g["label"], "n": g["n"], "metrics": {k: g["metrics"].get(k) for k in ("symptom_dx", "anxiety_any", "tests_count", "anyimage", "admitted", "seen72")}}
+
 
 # disease -> (keywords matched against chapter-1 indication text, chapter-2 complaint id)
 LINKS = {
@@ -42,7 +62,7 @@ for d in c3["diseases"]:
         if g:
             ed = {"complaint": g["label"], "n": g["n"], "metrics": {k: g["metrics"].get(k) for k in ("severe_share", "urgent", "ems", "wait_mean", "analgesic_ed", "opioid_ed", "opioid_ed_severe", "admitted")}}
     recs.append({"disease": d["disease"], "funding": {"funding_m": d["funding_m"], "dalys_k": d["dalys_k"], "female_share": d["female_share"], "dollars_per_daly": d["dollars_per_daly"], "ratio_to_expected": d["ratio_to_expected"], "rank_by_ratio": d["rank_by_ratio"], "n_ranked": c3["summary"]["n"], "skew": d["skew"]},
-                 "drugs": drugs, "ed": ed})
+                 "drugs": drugs, "ed": ed, "trials": trial_rec(TRIALS.get(d["disease"])), "ed_label": ed5_rec({"headache": "headache", "chest": "chest", "abdominal": "abdominal", "limb": "limb", "back": "back"}.get(cid or "", None))})
 for u in c3["uncounted"]:
     name = re.sub(r"\s*\(.*?\)", "", u["category"])
     label = u.get("label", name)
@@ -52,8 +72,9 @@ for u in c3["uncounted"]:
         for x in c1["drugs"]:
             if re.search(kw, (x["indication"] or ""), re.I):
                 drugs.append({"brand": x["brand"], "year": x["year"], "trial_female_pct": x["trial_female_pct"], "faers_female_pct": x["faers_female_pct"], "gap": x["gap"], "rate_ratio": x["rate_ratio"], "snapshot_url": x["snapshot_url"]})
-    recs.append({"disease": label, "funding": {"funding_m": u["funding_m"], "uncounted": True}, "drugs": drugs, "ed": None})
+    tu = TRIALS_UNC.get(UNC_NAMES.get(name, label))
+    recs.append({"disease": label, "funding": {"funding_m": u["funding_m"], "uncounted": True}, "drugs": drugs, "ed": None, "trials": {"trials": tu["trials"], "participants": tu["participants"], "female_pct": tu["female_pct"], "sex_specific": tu["sex_specific"], "uncounted": True} if tu else None, "ed_label": None})
 recs.sort(key=lambda r: r["disease"])
 json.dump({"generated": c3["generated"], "conditions": recs}, open(f"{SITE_DATA}/record.json", "w"), indent=1)
-print(f"{len(recs)} conditions;", "with drugs:", sum(1 for r in recs if r["drugs"]), "| with ED data:", sum(1 for r in recs if r["ed"]))
+print(f"{len(recs)} conditions;", "with drugs:", sum(1 for r in recs if r["drugs"]), "| with ED data:", sum(1 for r in recs if r["ed"]), "| with trials:", sum(1 for r in recs if r["trials"]))
 print("drug matches sample:", [(r["disease"], len(r["drugs"])) for r in recs if r["drugs"]][:20])

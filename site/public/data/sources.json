@@ -98,5 +98,98 @@
   "url": "https://www.who.int/data/gho/data/themes/mortality-and-global-health-estimates/global-health-estimates-leading-causes-of-dalys",
   "retrieved": "2026-10-07",
   "note": "DALYs in thousands; All ages sheet; Males and Females rows."
+ },
+ {
+  "id": "ctgov",
+  "title": "ClinicalTrials.gov API v2: interventional studies with posted results",
+  "publisher": "National Library of Medicine",
+  "url": "https://clinicaltrials.gov/data-api/api",
+  "retrieved": "2026-10-07",
+  "note": "75,716 studies retrieved; baseline participant counts by sex, eligibility criteria, sponsor, phase, conditions with MeSH terms."
+ },
+ {
+  "id": "steinberg-2021",
+  "title": "Analysis of female enrollment and participant sex by burden of disease in US clinical trials between 2000 and 2020",
+  "publisher": "Steinberg J.R., Turner B.E., Weeks B.T. et al., JAMA Network Open 4(6), 2021. doi:10.1001/jamanetworkopen.2021.13749",
+  "url": "https://doi.org/10.1001/jamanetworkopen.2021.13749",
+  "retrieved": "2026-10-07"
+ },
+ {
+  "id": "fda-1993",
+  "title": "Guideline for the study and evaluation of gender differences in the clinical evaluation of drugs",
+  "publisher": "U.S. Food and Drug Administration, Federal Register 58(139), July 1993",
+  "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/study-and-evaluation-gender-differences-clinical-evaluation-drugs",
+  "retrieved": "2026-10-07",
+  "note": "Lifted the 1977 exclusion of women of childbearing potential from early-phase trials."
+ },
+ {
+  "id": "nimh-anxiety",
+  "title": "Any anxiety disorder: prevalence of any anxiety disorder among U.S. adults",
+  "publisher": "National Institute of Mental Health, from the National Comorbidity Survey Replication (2001\u20132003)",
+  "url": "https://www.nimh.nih.gov/health/statistics/any-anxiety-disorder",
+  "retrieved": "2026-10-07",
+  "note": "Past-year prevalence 23.4% of women, 14.3% of men."
+ },
+ {
+  "id": "westergaard-2019",
+  "title": "Population-wide analysis of differences in disease progression patterns in men and women",
+  "publisher": "Westergaard D., Moseley P., S\u00f8rup F.K.H., Baldi P., Brunak S., Nature Communications 10, 666 (2019). doi:10.1038/s41467-019-08475-9",
+  "url": "https://doi.org/10.1038/s41467-019-08475-9",
+  "retrieved": "2026-10-07",
+  "note": "Danish registries, 6.9 million people, 1994\u20132015; women diagnosed later than men for the majority of 770 diseases, about four years on average."
+ },
+ {
+  "id": "nhamcs-icd",
+  "title": "ICD-10-CM chapter XVIII: symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified (R00\u2013R99)",
+  "publisher": "National Center for Health Statistics, CDC",
+  "url": "https://www.cdc.gov/nchs/icd/icd-10-cm/index.html",
+  "retrieved": "2026-10-07",
+  "note": "A visit 'ends with a symptom code' when its first-listed diagnosis is in this chapter."
+ },
+ {
+  "id": "pubmed",
+  "title": "PubMed E-utilities: record counts by year for MeSH-indexed rodent and human studies by sex",
+  "publisher": "National Library of Medicine",
+  "url": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+  "retrieved": "2026-10-07",
+  "note": "Queries combine Mice/Rats MeSH headings with the Male and Female check tags; field subsets use MeSH headings listed on the methods page. Years after 2020 are excluded: NLM's move to automated MeSH indexing changed how the sex check tags are applied."
+ },
+ {
+  "id": "openfda-label",
+  "title": "openFDA Drug Labeling API (Structured Product Labeling)",
+  "publisher": "U.S. Food and Drug Administration",
+  "url": "https://open.fda.gov/apis/drug/label/",
+  "retrieved": "2026-10-07",
+  "note": "Current prescribing information for each chapter-1 drug, matched by brand name; sections 8 and 12.3 text-mined with the rules in the pipeline."
+ },
+ {
+  "id": "beery-2011",
+  "title": "Sex bias in neuroscience and biomedical research",
+  "publisher": "Beery A.K., Zucker I., Neuroscience & Biobehavioral Reviews 35(3), 2011. doi:10.1016/j.neubiorev.2010.07.002",
+  "url": "https://doi.org/10.1016/j.neubiorev.2010.07.002",
+  "retrieved": "2026-10-07",
+  "note": "Hand survey of 2009 papers in ten fields: male bias in eight."
+ },
+ {
+  "id": "nih-sabv",
+  "title": "NIH policy on sex as a biological variable (NOT-OD-15-102)",
+  "publisher": "National Institutes of Health, 2015; in effect for applications from 25 January 2016",
+  "url": "https://grants.nih.gov/grants/guide/notice-files/NOT-OD-15-102.html",
+  "retrieved": "2026-10-07"
+ },
+ {
+  "id": "science-2026-pain",
+  "title": "Sex-specific mechanisms of chronic pain",
+  "publisher": "Venkataraman A., Midavaine \u00c9., Ingraham H.A., Science, 1 October 2026. doi:10.1126/science.aeh4468",
+  "url": "https://doi.org/10.1126/science.aeh4468",
+  "retrieved": "2026-10-07",
+  "note": "Review; the microglia-versus-T-cell finding it summarises is from Sorge et al., Nature Neuroscience 2015."
+ },
+ {
+  "id": "sorge-2015",
+  "title": "Different immune cells mediate mechanical pain hypersensitivity in male and female mice",
+  "publisher": "Sorge R.E., Mapplebeck J.C.S., Rosen S. et al., Nature Neuroscience 18, 2015. doi:10.1038/nn.4053",
+  "url": "https://doi.org/10.1038/nn.4053",
+  "retrieved": "2026-10-07"
  }
 ]

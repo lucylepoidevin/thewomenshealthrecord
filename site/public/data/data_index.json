@@ -70,6 +70,69 @@
    "rows": 11,
    "description": "Chapter 3: NIH-funded conditions with no WHO burden estimate, FY2024 funding in $ millions.",
    "columns": {}
+  },
+  {
+   "file": "chapter4_diseases.csv",
+   "rows": 64,
+   "description": "Chapter 4: for each disease, US interventional trials with posted results on ClinicalTrials.gov, women's share of participants against women's share of US burden (WHO 2021), by sponsor, and what the eligibility text excludes.",
+   "columns": {
+    "female_pct": "Women as a share of participants with a recorded sex, all trials",
+    "female_pct_open": "Same, trials open to both sexes only",
+    "burden_female_pct": "Women's share of US DALYs",
+    "ratio": "female_pct / burden_female_pct",
+    "excl_preg_pct": "Share of trials whose criteria exclude pregnant women",
+    "contra_pct": "Share requiring contraception",
+    "wocbp_pct": "Share with a childbearing-potential clause",
+    "max_age_pct": "Share with an upper age limit",
+    "outcome_by_sex": "Trials reporting any outcome in sex-named groups"
+   }
+  },
+  {
+   "file": "chapter4_trend.csv",
+   "rows": 25,
+   "description": "Chapter 4: by trial start year, women's share of participants (trials open to both sexes, non sex-specific conditions) and the share of all US trials with each exclusion.",
+   "columns": {}
+  },
+  {
+   "file": "chapter5_ed_estimates.csv",
+   "rows": 349,
+   "description": "Chapter 5: survey-weighted estimates by patient sex for NHAMCS ED visits 2018-2022, adults 18+, non-injury, by symptom complaint: symptom-code diagnoses, anxiety codes, tests, imaging, admission and 72-hour returns.",
+   "columns": {
+    "measure": "See the Methods page; shares are percentages, tests_count a count, lov_mean minutes"
+   }
+  },
+  {
+   "file": "chapter5_models.csv",
+   "rows": 28,
+   "description": "Chapter 5: adjusted odds ratios for women relative to men from survey-weighted logistic regressions.",
+   "columns": {}
+  },
+  {
+   "file": "chapter5_explorer.csv",
+   "rows": 572,
+   "description": "Chapter 5: the same estimates by complaint and age band.",
+   "columns": {}
+  },
+  {
+   "file": "chapter6_labels.csv",
+   "rows": 390,
+   "description": "Chapter 6: what the current FDA label of each chapter-1 drug says about sex, pregnancy and breastfeeding, classified by the published rules.",
+   "columns": {
+    "sex_statement": "Classification of the pharmacology section's statement about sex",
+    "male_only_pk": "Pharmacokinetics reported from healthy male subjects",
+    "no_preg_data": "Label says human pregnancy data are absent, limited or insufficient",
+    "example": "The sentence the classification matched"
+   }
+  },
+  {
+   "file": "chapter6_pubmed.csv",
+   "rows": 300,
+   "description": "Chapter 6: PubMed record counts by year and sex check tag for rodent studies (overall, by field, NIH-funded) and human trial reports.",
+   "columns": {
+    "n": "Records in the series that year",
+    "n_sexed": "Records carrying a Male or Female tag",
+    "male_only_pct": "Male and not Female, as a share of n_sexed"
+   }
   }
  ]
 }

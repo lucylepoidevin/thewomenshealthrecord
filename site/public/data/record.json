@@ -14,7 +14,24 @@
     "skew": "male"
    },
    "drugs": [],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 293,
+    "participants": 38862,
+    "female_pct": 36.6,
+    "burden_female_pct": 26.8,
+    "ratio": 1.37,
+    "rank": 48,
+    "excl_preg_pct": 38.6,
+    "contra_pct": 30.7,
+    "max_age_pct": 96.2,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 36.8,
+    "academic_female_pct": 36.4,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Alcohol use disorders",
@@ -39,7 +56,24 @@
      "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-rezdiffra"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 428,
+    "participants": 42546,
+    "female_pct": 41.8,
+    "burden_female_pct": 29.9,
+    "ratio": 1.4,
+    "rank": 50,
+    "excl_preg_pct": 45.6,
+    "contra_pct": 53.0,
+    "max_age_pct": 70.3,
+    "outcome_by_sex": 3,
+    "sex_specific": false,
+    "industry_female_pct": 40.9,
+    "academic_female_pct": 46.1,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Alzheimer's and other dementias",
@@ -82,7 +116,24 @@
      "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-kisunla"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 772,
+    "participants": 410045,
+    "female_pct": 58.3,
+    "burden_female_pct": 64.0,
+    "ratio": 0.91,
+    "rank": 9,
+    "excl_preg_pct": 18.8,
+    "contra_pct": 15.3,
+    "max_age_pct": 43.3,
+    "outcome_by_sex": 3,
+    "sex_specific": false,
+    "industry_female_pct": 54.1,
+    "academic_female_pct": 61.3,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Amphetamine use disorders",
@@ -97,7 +148,9 @@
     "skew": "male"
    },
    "drugs": [],
-   "ed": null
+   "ed": null,
+   "trials": null,
+   "ed_label": null
   },
   {
    "disease": "Anxiety disorders",
@@ -112,7 +165,24 @@
     "skew": "female"
    },
    "drugs": [],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 654,
+    "participants": 82806,
+    "female_pct": 54.7,
+    "burden_female_pct": 63.7,
+    "ratio": 0.86,
+    "rank": 4,
+    "excl_preg_pct": 33.2,
+    "contra_pct": 21.1,
+    "max_age_pct": 61.2,
+    "outcome_by_sex": 2,
+    "sex_specific": false,
+    "industry_female_pct": 64.2,
+    "academic_female_pct": 53.9,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Asthma",
@@ -164,7 +234,24 @@
      "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-exdensur"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 568,
+    "participants": 233839,
+    "female_pct": 57.9,
+    "burden_female_pct": 54.8,
+    "ratio": 1.06,
+    "rank": 29,
+    "excl_preg_pct": 45.4,
+    "contra_pct": 34.2,
+    "max_age_pct": 69.2,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 59.9,
+    "academic_female_pct": 54.3,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Autism",
@@ -179,7 +266,24 @@
     "skew": "male"
    },
    "drugs": [],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 242,
+    "participants": 15349,
+    "female_pct": 29.0,
+    "burden_female_pct": 27.6,
+    "ratio": 1.05,
+    "rank": 26,
+    "excl_preg_pct": 25.2,
+    "contra_pct": 19.0,
+    "max_age_pct": 91.7,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 22.2,
+    "academic_female_pct": 32.8,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Back and neck pain",
@@ -335,6 +439,130 @@
       "diff_hi": 0.2
      }
     }
+   },
+   "trials": {
+    "trials": 256,
+    "participants": 302676,
+    "female_pct": 56.4,
+    "burden_female_pct": 54.8,
+    "ratio": 1.03,
+    "rank": 23,
+    "excl_preg_pct": 49.2,
+    "contra_pct": 19.9,
+    "max_age_pct": 44.9,
+    "outcome_by_sex": 1,
+    "sex_specific": false,
+    "industry_female_pct": 56.6,
+    "academic_female_pct": 57.0,
+    "n_ranked": 53
+   },
+   "ed_label": {
+    "complaint": "Back pain",
+    "n": 1247,
+    "metrics": {
+     "symptom_dx": {
+      "women": {
+       "est": 11.7,
+       "lo": 8.6,
+       "hi": 14.8,
+       "n": 755
+      },
+      "men": {
+       "est": 5.0,
+       "lo": 3.0,
+       "hi": 7.1,
+       "n": 492
+      },
+      "diff": 6.7,
+      "diff_lo": 3.0,
+      "diff_hi": 10.4
+     },
+     "anxiety_any": {
+      "women": {
+       "est": 1.2,
+       "lo": 0.2,
+       "hi": 2.2,
+       "n": 755
+      },
+      "men": {
+       "est": 0.3,
+       "lo": -0.0,
+       "hi": 0.6,
+       "n": 492
+      },
+      "diff": 0.9,
+      "diff_lo": -0.2,
+      "diff_hi": 2.0
+     },
+     "tests_count": {
+      "women": {
+       "est": 3.24,
+       "lo": 2.91,
+       "hi": 3.56,
+       "n": 747
+      },
+      "men": {
+       "est": 2.86,
+       "lo": 2.51,
+       "hi": 3.2,
+       "n": 484
+      },
+      "diff": 0.38,
+      "diff_lo": -0.09,
+      "diff_hi": 0.86
+     },
+     "anyimage": {
+      "women": {
+       "est": 53.1,
+       "lo": 48.1,
+       "hi": 58.0,
+       "n": 755
+      },
+      "men": {
+       "est": 50.0,
+       "lo": 44.4,
+       "hi": 55.6,
+       "n": 492
+      },
+      "diff": 3.1,
+      "diff_lo": -4.4,
+      "diff_hi": 10.5
+     },
+     "admitted": {
+      "women": {
+       "est": 0.4,
+       "lo": -0.0,
+       "hi": 0.7,
+       "n": 755
+      },
+      "men": {
+       "est": 1.2,
+       "lo": 0.2,
+       "hi": 2.2,
+       "n": 492
+      },
+      "diff": -0.8,
+      "diff_lo": -1.9,
+      "diff_hi": 0.3
+     },
+     "seen72": {
+      "women": {
+       "est": 4.4,
+       "lo": 1.9,
+       "hi": 6.9,
+       "n": 701
+      },
+      "men": {
+       "est": 5.9,
+       "lo": 3.1,
+       "hi": 8.7,
+       "n": 459
+      },
+      "diff": -1.5,
+      "diff_lo": -5.2,
+      "diff_hi": 2.3
+     }
+    }
    }
   },
   {
@@ -360,7 +588,24 @@
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-vraylar-treatment-bipolar-disorder-manicmixed-episode"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 298,
+    "participants": 45761,
+    "female_pct": 52.5,
+    "burden_female_pct": 50.2,
+    "ratio": 1.05,
+    "rank": 27,
+    "excl_preg_pct": 53.4,
+    "contra_pct": 37.9,
+    "max_age_pct": 80.5,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 53.5,
+    "academic_female_pct": 54.4,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Brain cancer",
@@ -403,7 +648,24 @@
      "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-modeyso"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 729,
+    "participants": 52824,
+    "female_pct": 46.0,
+    "burden_female_pct": 42.4,
+    "ratio": 1.08,
+    "rank": 31,
+    "excl_preg_pct": 74.9,
+    "contra_pct": 72.6,
+    "max_age_pct": 26.2,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 50.1,
+    "academic_female_pct": 43.5,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Breast cancer",
@@ -536,7 +798,24 @@
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-verzenio"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 1712,
+    "participants": 411490,
+    "female_pct": 96.0,
+    "burden_female_pct": 98.8,
+    "ratio": null,
+    "rank": null,
+    "excl_preg_pct": 59.8,
+    "contra_pct": 46.6,
+    "max_age_pct": 12.6,
+    "outcome_by_sex": 1,
+    "sex_specific": true,
+    "industry_female_pct": 95.1,
+    "academic_female_pct": 96.5,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "COPD",
@@ -579,7 +858,24 @@
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-yupelri"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 464,
+    "participants": 384260,
+    "female_pct": 43.8,
+    "burden_female_pct": 51.7,
+    "ratio": 0.85,
+    "rank": 3,
+    "excl_preg_pct": 45.3,
+    "contra_pct": 35.6,
+    "max_age_pct": 33.6,
+    "outcome_by_sex": 1,
+    "sex_specific": false,
+    "industry_female_pct": 35.1,
+    "academic_female_pct": 57.1,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Cervical cancer",
@@ -594,7 +890,24 @@
     "skew": "female"
    },
    "drugs": [],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 190,
+    "participants": 127714,
+    "female_pct": 97.8,
+    "burden_female_pct": 100.0,
+    "ratio": null,
+    "rank": null,
+    "excl_preg_pct": 59.5,
+    "contra_pct": 42.6,
+    "max_age_pct": 19.5,
+    "outcome_by_sex": 1,
+    "sex_specific": true,
+    "industry_female_pct": 96.9,
+    "academic_female_pct": 98.5,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Chronic fatigue syndrome (ME/CFS)",
@@ -603,7 +916,15 @@
     "uncounted": true
    },
    "drugs": [],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 15,
+    "participants": 878,
+    "female_pct": 72.1,
+    "sex_specific": false,
+    "uncounted": true
+   },
+   "ed_label": null
   },
   {
    "disease": "Cirrhosis and chronic liver disease",
@@ -682,7 +1003,24 @@
      "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-iqirvo"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 306,
+    "participants": 39202,
+    "female_pct": 55.2,
+    "burden_female_pct": 36.3,
+    "ratio": 1.52,
+    "rank": 51,
+    "excl_preg_pct": 47.7,
+    "contra_pct": 45.1,
+    "max_age_pct": 67.6,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 58.5,
+    "academic_female_pct": 49.1,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Cocaine use disorders",
@@ -697,7 +1035,24 @@
     "skew": "male"
    },
    "drugs": [],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 117,
+    "participants": 10051,
+    "female_pct": 29.4,
+    "burden_female_pct": 25.7,
+    "ratio": 1.14,
+    "rank": 39,
+    "excl_preg_pct": 66.7,
+    "contra_pct": 65.8,
+    "max_age_pct": 88.0,
+    "outcome_by_sex": 2,
+    "sex_specific": false,
+    "industry_female_pct": 31.5,
+    "academic_female_pct": 29.9,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Colorectal cancer",
@@ -758,7 +1113,24 @@
      "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshot-romvimza"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 769,
+    "participants": 430299,
+    "female_pct": 49.4,
+    "burden_female_pct": 43.9,
+    "ratio": 1.13,
+    "rank": 36,
+    "excl_preg_pct": 57.6,
+    "contra_pct": 47.3,
+    "max_age_pct": 18.6,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 44.1,
+    "academic_female_pct": 53.6,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Congenital heart disease",
@@ -773,7 +1145,24 @@
     "skew": "balanced"
    },
    "drugs": [],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 153,
+    "participants": 16848,
+    "female_pct": 50.0,
+    "burden_female_pct": 42.6,
+    "ratio": 1.17,
+    "rank": 41,
+    "excl_preg_pct": 31.4,
+    "contra_pct": 14.4,
+    "max_age_pct": 64.1,
+    "outcome_by_sex": 1,
+    "sex_specific": false,
+    "industry_female_pct": 51.7,
+    "academic_female_pct": 48.2,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Coronary heart disease",
@@ -984,6 +1373,130 @@
       "diff_hi": 0.4
      }
     }
+   },
+   "trials": {
+    "trials": 582,
+    "participants": 694112,
+    "female_pct": 31.3,
+    "burden_female_pct": 35.7,
+    "ratio": 0.88,
+    "rank": 6,
+    "excl_preg_pct": 46.7,
+    "contra_pct": 21.1,
+    "max_age_pct": 32.1,
+    "outcome_by_sex": 1,
+    "sex_specific": false,
+    "industry_female_pct": 30.1,
+    "academic_female_pct": 39.8,
+    "n_ranked": 53
+   },
+   "ed_label": {
+    "complaint": "Chest pain",
+    "n": 3537,
+    "metrics": {
+     "symptom_dx": {
+      "women": {
+       "est": 70.4,
+       "lo": 67.1,
+       "hi": 73.6,
+       "n": 1850
+      },
+      "men": {
+       "est": 69.9,
+       "lo": 67.0,
+       "hi": 72.8,
+       "n": 1687
+      },
+      "diff": 0.5,
+      "diff_lo": -3.9,
+      "diff_hi": 4.8
+     },
+     "anxiety_any": {
+      "women": {
+       "est": 6.4,
+       "lo": 4.6,
+       "hi": 8.3,
+       "n": 1850
+      },
+      "men": {
+       "est": 5.5,
+       "lo": 3.7,
+       "hi": 7.4,
+       "n": 1687
+      },
+      "diff": 0.9,
+      "diff_lo": -1.7,
+      "diff_hi": 3.5
+     },
+     "tests_count": {
+      "women": {
+       "est": 6.54,
+       "lo": 6.24,
+       "hi": 6.84,
+       "n": 1842
+      },
+      "men": {
+       "est": 6.29,
+       "lo": 6.0,
+       "hi": 6.59,
+       "n": 1681
+      },
+      "diff": 0.24,
+      "diff_lo": -0.18,
+      "diff_hi": 0.66
+     },
+     "anyimage": {
+      "women": {
+       "est": 88.7,
+       "lo": 86.6,
+       "hi": 90.8,
+       "n": 1850
+      },
+      "men": {
+       "est": 86.6,
+       "lo": 84.3,
+       "hi": 89.0,
+       "n": 1687
+      },
+      "diff": 2.1,
+      "diff_lo": -1.1,
+      "diff_hi": 5.2
+     },
+     "admitted": {
+      "women": {
+       "est": 2.4,
+       "lo": 1.4,
+       "hi": 3.3,
+       "n": 1850
+      },
+      "men": {
+       "est": 3.6,
+       "lo": 1.9,
+       "hi": 5.2,
+       "n": 1687
+      },
+      "diff": -1.2,
+      "diff_lo": -3.1,
+      "diff_hi": 0.7
+     },
+     "seen72": {
+      "women": {
+       "est": 2.9,
+       "lo": 1.8,
+       "hi": 4.0,
+       "n": 1726
+      },
+      "men": {
+       "est": 5.8,
+       "lo": 2.9,
+       "hi": 8.6,
+       "n": 1572
+      },
+      "diff": -2.8,
+      "diff_lo": -5.9,
+      "diff_hi": 0.2
+     }
+    }
    }
   },
   {
@@ -1045,7 +1558,24 @@
      "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-zurzuvae"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 1407,
+    "participants": 332574,
+    "female_pct": 56.6,
+    "burden_female_pct": 62.9,
+    "ratio": 0.9,
+    "rank": 8,
+    "excl_preg_pct": 37.8,
+    "contra_pct": 26.3,
+    "max_age_pct": 67.0,
+    "outcome_by_sex": 9,
+    "sex_specific": false,
+    "industry_female_pct": 65.8,
+    "academic_female_pct": 57.3,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Diabetes",
@@ -1133,7 +1663,24 @@
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-steglatro"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 2383,
+    "participants": 1112182,
+    "female_pct": 46.7,
+    "burden_female_pct": 42.7,
+    "ratio": 1.09,
+    "rank": 32,
+    "excl_preg_pct": 46.2,
+    "contra_pct": 28.8,
+    "max_age_pct": 57.4,
+    "outcome_by_sex": 6,
+    "sex_specific": false,
+    "industry_female_pct": 43.9,
+    "academic_female_pct": 52.5,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Down syndrome",
@@ -1148,7 +1695,24 @@
     "skew": "balanced"
    },
    "drugs": [],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 39,
+    "participants": 11509,
+    "female_pct": 47.7,
+    "burden_female_pct": 46.0,
+    "ratio": 1.04,
+    "rank": 25,
+    "excl_preg_pct": 33.3,
+    "contra_pct": 15.4,
+    "max_age_pct": 82.1,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 49.9,
+    "academic_female_pct": 47.6,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Drug use disorders",
@@ -1163,7 +1727,24 @@
     "skew": "male"
    },
    "drugs": [],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 1579,
+    "participants": 333777,
+    "female_pct": 47.5,
+    "burden_female_pct": 35.1,
+    "ratio": 1.35,
+    "rank": 46,
+    "excl_preg_pct": 48.0,
+    "contra_pct": 40.3,
+    "max_age_pct": 64.9,
+    "outcome_by_sex": 13,
+    "sex_specific": false,
+    "industry_female_pct": 50.9,
+    "academic_female_pct": 48.7,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Eating disorders",
@@ -1178,7 +1759,24 @@
     "skew": "female"
    },
    "drugs": [],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 101,
+    "participants": 13383,
+    "female_pct": 75.7,
+    "burden_female_pct": 71.8,
+    "ratio": 1.05,
+    "rank": 28,
+    "excl_preg_pct": 52.5,
+    "contra_pct": 25.7,
+    "max_age_pct": 82.2,
+    "outcome_by_sex": 1,
+    "sex_specific": false,
+    "industry_female_pct": 84.7,
+    "academic_female_pct": 73.7,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Endometriosis",
@@ -1197,7 +1795,15 @@
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-orilissa"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 46,
+    "participants": 5676,
+    "female_pct": 99.6,
+    "sex_specific": true,
+    "uncounted": true
+   },
+   "ed_label": null
   },
   {
    "disease": "Epilepsy",
@@ -1258,7 +1864,24 @@
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-givlaari"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 285,
+    "participants": 42969,
+    "female_pct": 52.4,
+    "burden_female_pct": 45.7,
+    "ratio": 1.15,
+    "rank": 40,
+    "excl_preg_pct": 32.3,
+    "contra_pct": 36.8,
+    "max_age_pct": 74.4,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 52.0,
+    "academic_female_pct": 56.2,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Esophageal cancer",
@@ -1319,7 +1942,24 @@
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-lutathera"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 186,
+    "participants": 17850,
+    "female_pct": 33.6,
+    "burden_female_pct": 18.9,
+    "ratio": 1.78,
+    "rank": 52,
+    "excl_preg_pct": 71.5,
+    "contra_pct": 61.3,
+    "max_age_pct": 8.1,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 33.9,
+    "academic_female_pct": 34.2,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Fibromyalgia",
@@ -1328,7 +1968,15 @@
     "uncounted": true
    },
    "drugs": [],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 114,
+    "participants": 21693,
+    "female_pct": 90.4,
+    "sex_specific": false,
+    "uncounted": true
+   },
+   "ed_label": null
   },
   {
    "disease": "Gallbladder disease",
@@ -1521,6 +2169,130 @@
       "diff_hi": 1.6
      }
     }
+   },
+   "trials": {
+    "trials": 62,
+    "participants": 6770,
+    "female_pct": 54.0,
+    "burden_female_pct": 56.8,
+    "ratio": 0.95,
+    "rank": 14,
+    "excl_preg_pct": 77.4,
+    "contra_pct": 56.5,
+    "max_age_pct": 9.7,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 53.0,
+    "academic_female_pct": 55.0,
+    "n_ranked": 53
+   },
+   "ed_label": {
+    "complaint": "Abdominal pain",
+    "n": 5295,
+    "metrics": {
+     "symptom_dx": {
+      "women": {
+       "est": 47.0,
+       "lo": 43.8,
+       "hi": 50.2,
+       "n": 3374
+      },
+      "men": {
+       "est": 45.3,
+       "lo": 42.1,
+       "hi": 48.5,
+       "n": 1921
+      },
+      "diff": 1.8,
+      "diff_lo": -2.8,
+      "diff_hi": 6.3
+     },
+     "anxiety_any": {
+      "women": {
+       "est": 2.0,
+       "lo": 1.0,
+       "hi": 3.1,
+       "n": 3374
+      },
+      "men": {
+       "est": 1.2,
+       "lo": 0.6,
+       "hi": 1.9,
+       "n": 1921
+      },
+      "diff": 0.8,
+      "diff_lo": -0.4,
+      "diff_hi": 2.0
+     },
+     "tests_count": {
+      "women": {
+       "est": 5.93,
+       "lo": 5.73,
+       "hi": 6.14,
+       "n": 3358
+      },
+      "men": {
+       "est": 5.46,
+       "lo": 5.14,
+       "hi": 5.78,
+       "n": 1907
+      },
+      "diff": 0.47,
+      "diff_lo": 0.09,
+      "diff_hi": 0.86
+     },
+     "anyimage": {
+      "women": {
+       "est": 72.2,
+       "lo": 69.9,
+       "hi": 74.4,
+       "n": 3374
+      },
+      "men": {
+       "est": 73.0,
+       "lo": 70.0,
+       "hi": 75.9,
+       "n": 1921
+      },
+      "diff": -0.8,
+      "diff_lo": -4.5,
+      "diff_hi": 3.0
+     },
+     "admitted": {
+      "women": {
+       "est": 1.9,
+       "lo": 0.8,
+       "hi": 3.0,
+       "n": 3374
+      },
+      "men": {
+       "est": 1.5,
+       "lo": 0.7,
+       "hi": 2.3,
+       "n": 1921
+      },
+      "diff": 0.4,
+      "diff_lo": -0.9,
+      "diff_hi": 1.8
+     },
+     "seen72": {
+      "women": {
+       "est": 4.0,
+       "lo": 2.8,
+       "hi": 5.3,
+       "n": 3166
+      },
+      "men": {
+       "est": 5.0,
+       "lo": 3.4,
+       "hi": 6.6,
+       "n": 1791
+      },
+      "diff": -1.0,
+      "diff_lo": -3.0,
+      "diff_hi": 1.0
+     }
+    }
    }
   },
   {
@@ -1546,7 +2318,24 @@
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-orilissa"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 236,
+    "participants": 28117,
+    "female_pct": 99.7,
+    "burden_female_pct": 100.0,
+    "ratio": null,
+    "rank": null,
+    "excl_preg_pct": 53.4,
+    "contra_pct": 46.2,
+    "max_age_pct": 80.1,
+    "outcome_by_sex": 5,
+    "sex_specific": true,
+    "industry_female_pct": 100.0,
+    "academic_female_pct": 99.2,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "HIV/AIDS",
@@ -1625,7 +2414,24 @@
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-cabenuva"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 797,
+    "participants": 160851,
+    "female_pct": 31.4,
+    "burden_female_pct": 25.6,
+    "ratio": 1.23,
+    "rank": 43,
+    "excl_preg_pct": 51.9,
+    "contra_pct": 46.5,
+    "max_age_pct": 43.5,
+    "outcome_by_sex": 8,
+    "sex_specific": false,
+    "industry_female_pct": 24.7,
+    "academic_female_pct": 33.3,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Hearing loss",
@@ -1668,7 +2474,24 @@
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-aristada"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 168,
+    "participants": 10501,
+    "female_pct": 43.1,
+    "burden_female_pct": 46.0,
+    "ratio": 0.94,
+    "rank": 12,
+    "excl_preg_pct": 14.9,
+    "contra_pct": 7.7,
+    "max_age_pct": 56.5,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 45.0,
+    "academic_female_pct": 55.6,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Hepatitis B",
@@ -1683,7 +2506,24 @@
     "skew": "male"
    },
    "drugs": [],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 91,
+    "participants": 33216,
+    "female_pct": 44.7,
+    "burden_female_pct": 32.3,
+    "ratio": 1.38,
+    "rank": 49,
+    "excl_preg_pct": 59.3,
+    "contra_pct": 49.5,
+    "max_age_pct": 63.7,
+    "outcome_by_sex": 1,
+    "sex_specific": false,
+    "industry_female_pct": 44.0,
+    "academic_female_pct": 51.0,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Hepatitis C",
@@ -1735,7 +2575,24 @@
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-daklinza"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 335,
+    "participants": 68304,
+    "female_pct": 36.3,
+    "burden_female_pct": 36.6,
+    "ratio": 0.99,
+    "rank": 17,
+    "excl_preg_pct": 48.1,
+    "contra_pct": 49.9,
+    "max_age_pct": 39.1,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 38.0,
+    "academic_female_pct": 42.7,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Hodgkin lymphoma",
@@ -1769,7 +2626,24 @@
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-brukinsa"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 341,
+    "participants": 26633,
+    "female_pct": 44.9,
+    "burden_female_pct": 39.3,
+    "ratio": 1.14,
+    "rank": 37,
+    "excl_preg_pct": 73.9,
+    "contra_pct": 61.9,
+    "max_age_pct": 44.0,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 43.1,
+    "academic_female_pct": 46.0,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Infertility",
@@ -1803,7 +2677,24 @@
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-exem-foam"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 71,
+    "participants": 11212,
+    "female_pct": 89.6,
+    "burden_female_pct": 42.8,
+    "ratio": null,
+    "rank": null,
+    "excl_preg_pct": 31.0,
+    "contra_pct": 23.9,
+    "max_age_pct": 91.5,
+    "outcome_by_sex": 0,
+    "sex_specific": true,
+    "industry_female_pct": 95.2,
+    "academic_female_pct": 84.3,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Inflammatory bowel disease",
@@ -1969,6 +2860,130 @@
       "diff_hi": 1.6
      }
     }
+   },
+   "trials": {
+    "trials": 382,
+    "participants": 94712,
+    "female_pct": 46.8,
+    "burden_female_pct": 51.2,
+    "ratio": 0.91,
+    "rank": 10,
+    "excl_preg_pct": 39.3,
+    "contra_pct": 34.6,
+    "max_age_pct": 65.2,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 46.2,
+    "academic_female_pct": 56.0,
+    "n_ranked": 53
+   },
+   "ed_label": {
+    "complaint": "Abdominal pain",
+    "n": 5295,
+    "metrics": {
+     "symptom_dx": {
+      "women": {
+       "est": 47.0,
+       "lo": 43.8,
+       "hi": 50.2,
+       "n": 3374
+      },
+      "men": {
+       "est": 45.3,
+       "lo": 42.1,
+       "hi": 48.5,
+       "n": 1921
+      },
+      "diff": 1.8,
+      "diff_lo": -2.8,
+      "diff_hi": 6.3
+     },
+     "anxiety_any": {
+      "women": {
+       "est": 2.0,
+       "lo": 1.0,
+       "hi": 3.1,
+       "n": 3374
+      },
+      "men": {
+       "est": 1.2,
+       "lo": 0.6,
+       "hi": 1.9,
+       "n": 1921
+      },
+      "diff": 0.8,
+      "diff_lo": -0.4,
+      "diff_hi": 2.0
+     },
+     "tests_count": {
+      "women": {
+       "est": 5.93,
+       "lo": 5.73,
+       "hi": 6.14,
+       "n": 3358
+      },
+      "men": {
+       "est": 5.46,
+       "lo": 5.14,
+       "hi": 5.78,
+       "n": 1907
+      },
+      "diff": 0.47,
+      "diff_lo": 0.09,
+      "diff_hi": 0.86
+     },
+     "anyimage": {
+      "women": {
+       "est": 72.2,
+       "lo": 69.9,
+       "hi": 74.4,
+       "n": 3374
+      },
+      "men": {
+       "est": 73.0,
+       "lo": 70.0,
+       "hi": 75.9,
+       "n": 1921
+      },
+      "diff": -0.8,
+      "diff_lo": -4.5,
+      "diff_hi": 3.0
+     },
+     "admitted": {
+      "women": {
+       "est": 1.9,
+       "lo": 0.8,
+       "hi": 3.0,
+       "n": 3374
+      },
+      "men": {
+       "est": 1.5,
+       "lo": 0.7,
+       "hi": 2.3,
+       "n": 1921
+      },
+      "diff": 0.4,
+      "diff_lo": -0.9,
+      "diff_hi": 1.8
+     },
+     "seen72": {
+      "women": {
+       "est": 4.0,
+       "lo": 2.8,
+       "hi": 5.3,
+       "n": 3166
+      },
+      "men": {
+       "est": 5.0,
+       "lo": 3.4,
+       "hi": 6.6,
+       "n": 1791
+      },
+      "diff": -1.0,
+      "diff_lo": -3.0,
+      "diff_hi": 1.0
+     }
+    }
    }
   },
   {
@@ -1984,7 +2999,9 @@
     "skew": "male"
    },
    "drugs": [],
-   "ed": null
+   "ed": null,
+   "trials": null,
+   "ed_label": null
   },
   {
    "disease": "Interstitial cystitis",
@@ -1993,7 +3010,15 @@
     "uncounted": true
    },
    "drugs": [],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 45,
+    "participants": 3303,
+    "female_pct": 90.2,
+    "sex_specific": false,
+    "uncounted": true
+   },
+   "ed_label": null
   },
   {
    "disease": "Kidney disease",
@@ -2108,7 +3133,24 @@
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-isturisa"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 562,
+    "participants": 262328,
+    "female_pct": 42.7,
+    "burden_female_pct": 46.4,
+    "ratio": 0.92,
+    "rank": 11,
+    "excl_preg_pct": 40.2,
+    "contra_pct": 32.2,
+    "max_age_pct": 39.1,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 41.0,
+    "academic_female_pct": 46.8,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Liver cancer",
@@ -2142,7 +3184,24 @@
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-vosevi"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 324,
+    "participants": 38129,
+    "female_pct": 28.0,
+    "burden_female_pct": 32.7,
+    "ratio": 0.86,
+    "rank": 5,
+    "excl_preg_pct": 67.9,
+    "contra_pct": 53.4,
+    "max_age_pct": 8.6,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 24.3,
+    "academic_female_pct": 38.9,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Lung cancer",
@@ -2356,7 +3415,24 @@
      "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-hernexeos"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 1497,
+    "participants": 466260,
+    "female_pct": 45.8,
+    "burden_female_pct": 46.2,
+    "ratio": 0.99,
+    "rank": 18,
+    "excl_preg_pct": 63.5,
+    "contra_pct": 57.4,
+    "max_age_pct": 6.9,
+    "outcome_by_sex": 1,
+    "sex_specific": false,
+    "industry_female_pct": 39.8,
+    "academic_female_pct": 50.5,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Lupus",
@@ -2375,7 +3451,15 @@
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-lupkynis"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 168,
+    "participants": 40455,
+    "female_pct": 91.7,
+    "sex_specific": false,
+    "uncounted": true
+   },
+   "ed_label": null
   },
   {
    "disease": "Lymphoma",
@@ -2535,7 +3619,24 @@
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-lorbrena"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 1492,
+    "participants": 138197,
+    "female_pct": 44.4,
+    "burden_female_pct": 40.1,
+    "ratio": 1.11,
+    "rank": 34,
+    "excl_preg_pct": 67.2,
+    "contra_pct": 61.6,
+    "max_age_pct": 29.0,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 45.2,
+    "academic_female_pct": 43.8,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Maternal conditions",
@@ -2587,7 +3688,24 @@
      "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-zurzuvae"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 412,
+    "participants": 148316,
+    "female_pct": 92.4,
+    "burden_female_pct": 100.0,
+    "ratio": null,
+    "rank": null,
+    "excl_preg_pct": 26.0,
+    "contra_pct": 4.6,
+    "max_age_pct": 58.0,
+    "outcome_by_sex": 2,
+    "sex_specific": true,
+    "industry_female_pct": 88.2,
+    "academic_female_pct": 94.0,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Migraine",
@@ -2816,6 +3934,130 @@
       "diff_hi": 0.8
      }
     }
+   },
+   "trials": {
+    "trials": 266,
+    "participants": 78307,
+    "female_pct": 83.3,
+    "burden_female_pct": 73.2,
+    "ratio": 1.14,
+    "rank": 38,
+    "excl_preg_pct": 48.5,
+    "contra_pct": 31.2,
+    "max_age_pct": 77.1,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 83.5,
+    "academic_female_pct": 81.3,
+    "n_ranked": 53
+   },
+   "ed_label": {
+    "complaint": "Headache or migraine",
+    "n": 1506,
+    "metrics": {
+     "symptom_dx": {
+      "women": {
+       "est": 45.7,
+       "lo": 41.3,
+       "hi": 50.2,
+       "n": 1023
+      },
+      "men": {
+       "est": 45.7,
+       "lo": 38.5,
+       "hi": 52.9,
+       "n": 483
+      },
+      "diff": 0.1,
+      "diff_lo": -8.4,
+      "diff_hi": 8.5
+     },
+     "anxiety_any": {
+      "women": {
+       "est": 4.1,
+       "lo": 2.6,
+       "hi": 5.7,
+       "n": 1023
+      },
+      "men": {
+       "est": 5.2,
+       "lo": 2.6,
+       "hi": 7.8,
+       "n": 483
+      },
+      "diff": -1.1,
+      "diff_lo": -4.1,
+      "diff_hi": 2.0
+     },
+     "tests_count": {
+      "women": {
+       "est": 3.46,
+       "lo": 3.19,
+       "hi": 3.74,
+       "n": 1012
+      },
+      "men": {
+       "est": 3.42,
+       "lo": 2.98,
+       "hi": 3.85,
+       "n": 475
+      },
+      "diff": 0.05,
+      "diff_lo": -0.47,
+      "diff_hi": 0.56
+     },
+     "anyimage": {
+      "women": {
+       "est": 47.7,
+       "lo": 42.6,
+       "hi": 52.8,
+       "n": 1023
+      },
+      "men": {
+       "est": 54.7,
+       "lo": 48.4,
+       "hi": 61.0,
+       "n": 483
+      },
+      "diff": -7.0,
+      "diff_lo": -15.1,
+      "diff_hi": 1.1
+     },
+     "admitted": {
+      "women": {
+       "est": 0.7,
+       "lo": 0.2,
+       "hi": 1.2,
+       "n": 1023
+      },
+      "men": {
+       "est": 1.0,
+       "lo": -0.1,
+       "hi": 2.2,
+       "n": 483
+      },
+      "diff": -0.4,
+      "diff_lo": -1.6,
+      "diff_hi": 0.9
+     },
+     "seen72": {
+      "women": {
+       "est": 3.2,
+       "lo": 1.4,
+       "hi": 5.1,
+       "n": 946
+      },
+      "men": {
+       "est": 4.4,
+       "lo": 1.2,
+       "hi": 7.6,
+       "n": 456
+      },
+      "diff": -1.1,
+      "diff_lo": -4.8,
+      "diff_hi": 2.5
+     }
+    }
    }
   },
   {
@@ -2877,7 +4119,24 @@
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-zinbryta"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 346,
+    "participants": 86393,
+    "female_pct": 67.7,
+    "burden_female_pct": 67.1,
+    "ratio": 1.01,
+    "rank": 19,
+    "excl_preg_pct": 52.0,
+    "contra_pct": 41.6,
+    "max_age_pct": 79.8,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 66.9,
+    "academic_female_pct": 74.9,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Neural tube defects",
@@ -2892,7 +4151,9 @@
     "skew": "balanced"
    },
    "drugs": [],
-   "ed": null
+   "ed": null,
+   "trials": null,
+   "ed_label": null
   },
   {
    "disease": "Opioid use disorders",
@@ -2907,7 +4168,24 @@
     "skew": "male"
    },
    "drugs": [],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 333,
+    "participants": 126098,
+    "female_pct": 49.8,
+    "burden_female_pct": 36.7,
+    "ratio": 1.36,
+    "rank": 47,
+    "excl_preg_pct": 46.8,
+    "contra_pct": 32.1,
+    "max_age_pct": 57.1,
+    "outcome_by_sex": 1,
+    "sex_specific": false,
+    "industry_female_pct": 35.9,
+    "academic_female_pct": 50.9,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Oral and dental disease",
@@ -2941,7 +4219,24 @@
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-mulpleta"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 435,
+    "participants": 93818,
+    "female_pct": 58.7,
+    "burden_female_pct": 52.8,
+    "ratio": 1.11,
+    "rank": 35,
+    "excl_preg_pct": 57.5,
+    "contra_pct": 35.4,
+    "max_age_pct": 44.6,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 54.7,
+    "academic_female_pct": 63.5,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Osteoarthritis",
@@ -3097,6 +4392,130 @@
       "diff_hi": 0.7
      }
     }
+   },
+   "trials": {
+    "trials": 467,
+    "participants": 115089,
+    "female_pct": 59.8,
+    "burden_female_pct": 58.8,
+    "ratio": 1.02,
+    "rank": 21,
+    "excl_preg_pct": 37.7,
+    "contra_pct": 17.1,
+    "max_age_pct": 56.1,
+    "outcome_by_sex": 3,
+    "sex_specific": false,
+    "industry_female_pct": 62.5,
+    "academic_female_pct": 59.2,
+    "n_ranked": 53
+   },
+   "ed_label": {
+    "complaint": "Neck, hip, leg or joint pain",
+    "n": 1515,
+    "metrics": {
+     "symptom_dx": {
+      "women": {
+       "est": 7.9,
+       "lo": 5.2,
+       "hi": 10.6,
+       "n": 794
+      },
+      "men": {
+       "est": 5.2,
+       "lo": 3.0,
+       "hi": 7.3,
+       "n": 721
+      },
+      "diff": 2.7,
+      "diff_lo": -0.8,
+      "diff_hi": 6.2
+     },
+     "anxiety_any": {
+      "women": {
+       "est": 1.0,
+       "lo": 0.2,
+       "hi": 1.9,
+       "n": 794
+      },
+      "men": {
+       "est": 0.8,
+       "lo": 0.1,
+       "hi": 1.4,
+       "n": 721
+      },
+      "diff": 0.3,
+      "diff_lo": -0.7,
+      "diff_hi": 1.3
+     },
+     "tests_count": {
+      "women": {
+       "est": 2.54,
+       "lo": 2.25,
+       "hi": 2.84,
+       "n": 780
+      },
+      "men": {
+       "est": 2.51,
+       "lo": 2.19,
+       "hi": 2.84,
+       "n": 712
+      },
+      "diff": 0.03,
+      "diff_lo": -0.41,
+      "diff_hi": 0.47
+     },
+     "anyimage": {
+      "women": {
+       "est": 65.3,
+       "lo": 60.3,
+       "hi": 70.3,
+       "n": 794
+      },
+      "men": {
+       "est": 59.4,
+       "lo": 54.2,
+       "hi": 64.6,
+       "n": 721
+      },
+      "diff": 5.9,
+      "diff_lo": -1.3,
+      "diff_hi": 13.1
+     },
+     "admitted": {
+      "women": {
+       "est": 0.8,
+       "lo": 0.0,
+       "hi": 1.5,
+       "n": 794
+      },
+      "men": {
+       "est": 2.2,
+       "lo": 0.5,
+       "hi": 3.9,
+       "n": 721
+      },
+      "diff": -1.4,
+      "diff_lo": -3.3,
+      "diff_hi": 0.4
+     },
+     "seen72": {
+      "women": {
+       "est": 3.5,
+       "lo": 1.4,
+       "hi": 5.7,
+       "n": 743
+      },
+      "men": {
+       "est": 3.6,
+       "lo": 1.7,
+       "hi": 5.4,
+       "n": 674
+      },
+      "diff": -0.0,
+      "diff_lo": -2.9,
+      "diff_hi": 2.8
+     }
+    }
    }
   },
   {
@@ -3125,7 +4544,15 @@
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-evenity"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 172,
+    "participants": 73173,
+    "female_pct": 89.5,
+    "sex_specific": false,
+    "uncounted": true
+   },
+   "ed_label": null
   },
   {
    "disease": "Otitis media",
@@ -3140,7 +4567,24 @@
     "skew": "balanced"
    },
    "drugs": [],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 38,
+    "participants": 57049,
+    "female_pct": 51.9,
+    "burden_female_pct": 47.0,
+    "ratio": 1.1,
+    "rank": 33,
+    "excl_preg_pct": 13.2,
+    "contra_pct": 2.6,
+    "max_age_pct": 65.8,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 43.8,
+    "academic_female_pct": 52.2,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Ovarian cancer",
@@ -3192,7 +4636,24 @@
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-zejula"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 542,
+    "participants": 148034,
+    "female_pct": 95.2,
+    "burden_female_pct": 100.0,
+    "ratio": null,
+    "rank": null,
+    "excl_preg_pct": 61.8,
+    "contra_pct": 58.7,
+    "max_age_pct": 6.6,
+    "outcome_by_sex": 0,
+    "sex_specific": true,
+    "industry_female_pct": 86.8,
+    "academic_female_pct": 91.7,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Pancreatic cancer",
@@ -3217,7 +4678,24 @@
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-lutathera"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 496,
+    "participants": 38474,
+    "female_pct": 47.0,
+    "burden_female_pct": 45.9,
+    "ratio": 1.02,
+    "rank": 22,
+    "excl_preg_pct": 73.0,
+    "contra_pct": 59.1,
+    "max_age_pct": 8.7,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 46.2,
+    "academic_female_pct": 48.1,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Parkinson's disease",
@@ -3278,7 +4756,24 @@
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-nourianz"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 393,
+    "participants": 42912,
+    "female_pct": 35.9,
+    "burden_female_pct": 37.7,
+    "ratio": 0.95,
+    "rank": 15,
+    "excl_preg_pct": 35.1,
+    "contra_pct": 28.5,
+    "max_age_pct": 53.9,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 36.3,
+    "academic_female_pct": 38.8,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Peptic ulcer",
@@ -3453,6 +4948,130 @@
       "diff_hi": 1.6
      }
     }
+   },
+   "trials": {
+    "trials": 21,
+    "participants": 10451,
+    "female_pct": 46.0,
+    "burden_female_pct": 44.3,
+    "ratio": 1.04,
+    "rank": 24,
+    "excl_preg_pct": 28.6,
+    "contra_pct": 47.6,
+    "max_age_pct": 9.5,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 46.1,
+    "academic_female_pct": 44.5,
+    "n_ranked": 53
+   },
+   "ed_label": {
+    "complaint": "Abdominal pain",
+    "n": 5295,
+    "metrics": {
+     "symptom_dx": {
+      "women": {
+       "est": 47.0,
+       "lo": 43.8,
+       "hi": 50.2,
+       "n": 3374
+      },
+      "men": {
+       "est": 45.3,
+       "lo": 42.1,
+       "hi": 48.5,
+       "n": 1921
+      },
+      "diff": 1.8,
+      "diff_lo": -2.8,
+      "diff_hi": 6.3
+     },
+     "anxiety_any": {
+      "women": {
+       "est": 2.0,
+       "lo": 1.0,
+       "hi": 3.1,
+       "n": 3374
+      },
+      "men": {
+       "est": 1.2,
+       "lo": 0.6,
+       "hi": 1.9,
+       "n": 1921
+      },
+      "diff": 0.8,
+      "diff_lo": -0.4,
+      "diff_hi": 2.0
+     },
+     "tests_count": {
+      "women": {
+       "est": 5.93,
+       "lo": 5.73,
+       "hi": 6.14,
+       "n": 3358
+      },
+      "men": {
+       "est": 5.46,
+       "lo": 5.14,
+       "hi": 5.78,
+       "n": 1907
+      },
+      "diff": 0.47,
+      "diff_lo": 0.09,
+      "diff_hi": 0.86
+     },
+     "anyimage": {
+      "women": {
+       "est": 72.2,
+       "lo": 69.9,
+       "hi": 74.4,
+       "n": 3374
+      },
+      "men": {
+       "est": 73.0,
+       "lo": 70.0,
+       "hi": 75.9,
+       "n": 1921
+      },
+      "diff": -0.8,
+      "diff_lo": -4.5,
+      "diff_hi": 3.0
+     },
+     "admitted": {
+      "women": {
+       "est": 1.9,
+       "lo": 0.8,
+       "hi": 3.0,
+       "n": 3374
+      },
+      "men": {
+       "est": 1.5,
+       "lo": 0.7,
+       "hi": 2.3,
+       "n": 1921
+      },
+      "diff": 0.4,
+      "diff_lo": -0.9,
+      "diff_hi": 1.8
+     },
+     "seen72": {
+      "women": {
+       "est": 4.0,
+       "lo": 2.8,
+       "hi": 5.3,
+       "n": 3166
+      },
+      "men": {
+       "est": 5.0,
+       "lo": 3.4,
+       "hi": 6.6,
+       "n": 1791
+      },
+      "diff": -1.0,
+      "diff_lo": -3.0,
+      "diff_hi": 1.0
+     }
+    }
    }
   },
   {
@@ -3523,7 +5142,24 @@
      "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-orlynvah"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 1177,
+    "participants": 2256106,
+    "female_pct": 55.3,
+    "burden_female_pct": 43.8,
+    "ratio": 1.26,
+    "rank": 44,
+    "excl_preg_pct": 45.1,
+    "contra_pct": 35.3,
+    "max_age_pct": 37.4,
+    "outcome_by_sex": 6,
+    "sex_specific": false,
+    "industry_female_pct": 52.9,
+    "academic_female_pct": 56.9,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Polycystic ovary syndrome (PCOS)",
@@ -3532,7 +5168,15 @@
     "uncounted": true
    },
    "drugs": [],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 55,
+    "participants": 3143,
+    "female_pct": 98.9,
+    "sex_specific": true,
+    "uncounted": true
+   },
+   "ed_label": null
   },
   {
    "disease": "Postural orthostatic tachycardia syndrome (POTS)",
@@ -3541,7 +5185,15 @@
     "uncounted": true
    },
    "drugs": [],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 16,
+    "participants": 516,
+    "female_pct": 93.2,
+    "sex_specific": false,
+    "uncounted": true
+   },
+   "ed_label": null
   },
   {
    "disease": "Preterm birth",
@@ -3556,7 +5208,24 @@
     "skew": "balanced"
    },
    "drugs": [],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 144,
+    "participants": 97924,
+    "female_pct": 91.9,
+    "burden_female_pct": 47.5,
+    "ratio": null,
+    "rank": null,
+    "excl_preg_pct": 11.8,
+    "contra_pct": 2.8,
+    "max_age_pct": 72.9,
+    "outcome_by_sex": 0,
+    "sex_specific": true,
+    "industry_female_pct": 84.5,
+    "academic_female_pct": 92.2,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Prostate cancer",
@@ -3626,7 +5295,24 @@
      "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-pluvicto"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 983,
+    "participants": 260187,
+    "female_pct": 2.5,
+    "burden_female_pct": 0.0,
+    "ratio": null,
+    "rank": null,
+    "excl_preg_pct": 6.9,
+    "contra_pct": 39.2,
+    "max_age_pct": 11.5,
+    "outcome_by_sex": 4,
+    "sex_specific": true,
+    "industry_female_pct": 2.0,
+    "academic_female_pct": 4.7,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Rheumatoid arthritis",
@@ -3669,7 +5355,24 @@
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-kevzara"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 424,
+    "participants": 173952,
+    "female_pct": 77.3,
+    "burden_female_pct": 72.9,
+    "ratio": 1.06,
+    "rank": 30,
+    "excl_preg_pct": 38.7,
+    "contra_pct": 25.7,
+    "max_age_pct": 34.0,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 77.3,
+    "academic_female_pct": 78.1,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Schizophrenia",
@@ -3721,7 +5424,24 @@
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-aristada"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 584,
+    "participants": 98993,
+    "female_pct": 37.0,
+    "burden_female_pct": 47.1,
+    "ratio": 0.79,
+    "rank": 2,
+    "excl_preg_pct": 52.4,
+    "contra_pct": 36.0,
+    "max_age_pct": 89.9,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 34.5,
+    "academic_female_pct": 45.3,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Scleroderma",
@@ -3730,7 +5450,15 @@
     "uncounted": true
    },
    "drugs": [],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 72,
+    "participants": 4265,
+    "female_pct": 79.3,
+    "sex_specific": false,
+    "uncounted": true
+   },
+   "ed_label": null
   },
   {
    "disease": "Sexually transmitted infections",
@@ -3755,7 +5483,24 @@
      "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshot-nuzolvence"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 128,
+    "participants": 142082,
+    "female_pct": 79.7,
+    "burden_female_pct": 79.2,
+    "ratio": 1.01,
+    "rank": 20,
+    "excl_preg_pct": 58.6,
+    "contra_pct": 45.3,
+    "max_age_pct": 43.8,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 92.6,
+    "academic_female_pct": 72.2,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Sickle cell disease",
@@ -3789,7 +5534,24 @@
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-oxbryta"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 208,
+    "participants": 15861,
+    "female_pct": 52.4,
+    "burden_female_pct": 58.6,
+    "ratio": 0.89,
+    "rank": 7,
+    "excl_preg_pct": 59.1,
+    "contra_pct": 31.7,
+    "max_age_pct": 65.4,
+    "outcome_by_sex": 1,
+    "sex_specific": false,
+    "industry_female_pct": 51.6,
+    "academic_female_pct": 53.1,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Skin cancer",
@@ -3904,7 +5666,24 @@
      "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-kimmtrak"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 679,
+    "participants": 78011,
+    "female_pct": 44.0,
+    "burden_female_pct": 34.7,
+    "ratio": 1.27,
+    "rank": 45,
+    "excl_preg_pct": 66.6,
+    "contra_pct": 64.4,
+    "max_age_pct": 10.0,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 42.7,
+    "academic_female_pct": 54.2,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Stomach cancer",
@@ -3929,7 +5708,24 @@
      "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-vyloy"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 195,
+    "participants": 29909,
+    "female_pct": 36.1,
+    "burden_female_pct": 38.6,
+    "ratio": 0.94,
+    "rank": 13,
+    "excl_preg_pct": 71.3,
+    "contra_pct": 59.0,
+    "max_age_pct": 4.1,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 34.9,
+    "academic_female_pct": 40.0,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Stroke",
@@ -3972,7 +5768,24 @@
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-repatha"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 583,
+    "participants": 400011,
+    "female_pct": 36.5,
+    "burden_female_pct": 51.0,
+    "ratio": 0.72,
+    "rank": 1,
+    "excl_preg_pct": 39.6,
+    "contra_pct": 5.8,
+    "max_age_pct": 48.2,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 31.6,
+    "academic_female_pct": 46.7,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Sudden infant death syndrome",
@@ -3987,7 +5800,9 @@
     "skew": "balanced"
    },
    "drugs": [],
-   "ed": null
+   "ed": null,
+   "trials": null,
+   "ed_label": null
   },
   {
    "disease": "Suicide and self-harm",
@@ -4002,7 +5817,24 @@
     "skew": "male"
    },
    "drugs": [],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 176,
+    "participants": 135973,
+    "female_pct": 41.9,
+    "burden_female_pct": 22.4,
+    "ratio": 1.87,
+    "rank": 53,
+    "excl_preg_pct": 27.3,
+    "contra_pct": 14.8,
+    "max_age_pct": 67.6,
+    "outcome_by_sex": 1,
+    "sex_specific": false,
+    "industry_female_pct": 52.8,
+    "academic_female_pct": 45.4,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Temporomandibular joint disorder (TMJD)",
@@ -4011,7 +5843,15 @@
     "uncounted": true
    },
    "drugs": [],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 19,
+    "participants": 1528,
+    "female_pct": 83.4,
+    "sex_specific": false,
+    "uncounted": true
+   },
+   "ed_label": null
   },
   {
    "disease": "Tuberculosis",
@@ -4036,7 +5876,24 @@
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-pretomanid"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 41,
+    "participants": 16226,
+    "female_pct": 42.7,
+    "burden_female_pct": 35.4,
+    "ratio": 1.21,
+    "rank": 42,
+    "excl_preg_pct": 48.8,
+    "contra_pct": 53.7,
+    "max_age_pct": 53.7,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 32.9,
+    "academic_female_pct": 47.9,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Unintentional injuries",
@@ -4051,7 +5908,9 @@
     "skew": "balanced"
    },
    "drugs": [],
-   "ed": null
+   "ed": null,
+   "trials": null,
+   "ed_label": null
   },
   {
    "disease": "Uterine cancer",
@@ -4066,7 +5925,24 @@
     "skew": "female"
    },
    "drugs": [],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 321,
+    "participants": 139378,
+    "female_pct": 97.3,
+    "burden_female_pct": 100.0,
+    "ratio": null,
+    "rank": null,
+    "excl_preg_pct": 57.0,
+    "contra_pct": 42.4,
+    "max_age_pct": 15.3,
+    "outcome_by_sex": 2,
+    "sex_specific": true,
+    "industry_female_pct": 96.1,
+    "academic_female_pct": 98.2,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Vision loss",
@@ -4172,7 +6048,24 @@
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-xiidra"
     }
    ],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 698,
+    "participants": 133306,
+    "female_pct": 51.8,
+    "burden_female_pct": 53.0,
+    "ratio": 0.98,
+    "rank": 16,
+    "excl_preg_pct": 29.8,
+    "contra_pct": 11.0,
+    "max_age_pct": 33.4,
+    "outcome_by_sex": 0,
+    "sex_specific": false,
+    "industry_female_pct": 59.2,
+    "academic_female_pct": 28.3,
+    "n_ranked": 53
+   },
+   "ed_label": null
   },
   {
    "disease": "Vulvodynia",
@@ -4181,7 +6074,15 @@
     "uncounted": true
    },
    "drugs": [],
-   "ed": null
+   "ed": null,
+   "trials": {
+    "trials": 13,
+    "participants": 641,
+    "female_pct": 100.0,
+    "sex_specific": true,
+    "uncounted": true
+   },
+   "ed_label": null
   }
  ]
 }
