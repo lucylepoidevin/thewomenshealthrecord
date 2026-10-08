@@ -60,3 +60,22 @@ await browser.close()
   await p2.locator('article > header').screenshot({ path: `${out}ch2-00-header.png` })
   await b2.close()
 }
+
+// ---- Chapter 3
+{
+  const b3 = await chromium.launch()
+  const p3 = await b3.newPage({ viewport: { width: 1200, height: 900 }, deviceScaleFactor: 2 })
+  await p3.goto(base + '#/chapters/funding-vs-burden', { waitUntil: 'networkidle' })
+  await p3.waitForSelector('.graphic-card')
+  await p3.addStyleTag({ content: '.reveal{opacity:1!important;transform:none!important;transition:none!important} .fade-up{animation:none!important} .progress-bar{display:none!important}' })
+  for (let y = 0; y < await p3.evaluate(() => document.body.scrollHeight); y += 700) { await p3.evaluate(v => window.scrollTo(0, v), y); await p3.waitForTimeout(80) }
+  await p3.waitForTimeout(600)
+  const names3 = ['ch3-01-funding-vs-burden', 'ch3-02-ratio-ranked', 'ch3-03-same-burden', 'ch3-04-uncounted', 'ch3-05-trend', 'ch3-06-explorer', 'ch3-07-summary']
+  const cards3 = p3.locator('.graphic-card')
+  const n3 = await cards3.count()
+  for (let i = 0; i < Math.min(n3, names3.length); i++) {
+    await cards3.nth(i).scrollIntoViewIfNeeded(); await p3.waitForTimeout(250)
+    await cards3.nth(i).screenshot({ path: `${out}${names3[i]}.png` }); console.log('saved', names3[i])
+  }
+  await b3.close()
+}

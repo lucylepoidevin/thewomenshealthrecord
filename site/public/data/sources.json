@@ -75,5 +75,28 @@
   "publisher": "National Center for Health Statistics, CDC",
   "url": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Dataset_Documentation/NHAMCS/doc22-ed-508.pdf",
   "retrieved": "2026-10-06"
+ },
+ {
+  "id": "mirin-2021",
+  "title": "Gender disparity in the funding of diseases by the U.S. National Institutes of Health",
+  "publisher": "Mirin A.A., Journal of Women's Health 30(7), 2021. doi:10.1089/jwh.2020.8682",
+  "url": "https://doi.org/10.1089/jwh.2020.8682",
+  "retrieved": "2026-10-07"
+ },
+ {
+  "id": "nih-rcdc",
+  "title": "Estimates of funding for various research, condition, and disease categories (RCDC), FY2008\u2013FY2025",
+  "publisher": "National Institutes of Health, RePORT",
+  "url": "https://report.nih.gov/funding/categorical-spending",
+  "retrieved": "2026-10-07",
+  "note": "Pulled from the page's JSON API; amounts in millions of dollars. Categories overlap and are not additive."
+ },
+ {
+  "id": "who-ghe",
+  "title": "Global Health Estimates: DALYs by cause, age and sex, by country, 2010\u20132023 (United States)",
+  "publisher": "World Health Organization",
+  "url": "https://www.who.int/data/gho/data/themes/mortality-and-global-health-estimates/global-health-estimates-leading-causes-of-dalys",
+  "retrieved": "2026-10-07",
+  "note": "DALYs in thousands; All ages sheet; Males and Females rows."
  }
 ]

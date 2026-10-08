@@ -1,0 +1,6714 @@
+{
+ "generated": "2026-10-07",
+ "funding_fy": 2024,
+ "burden_year": 2021,
+ "fit": {
+  "a": 1.23,
+  "b": 0.376
+ },
+ "min_dalys_k": 15,
+ "diseases": [
+  {
+   "disease": "Unintentional injuries",
+   "nih_categories": [
+    "Physical Injury - Accidents and Adverse Effects"
+   ],
+   "who_codes": [
+    1520
+   ],
+   "note": "both definitions are broad",
+   "funding_m": 892.0,
+   "dalys_k": 11293.6,
+   "female_share": 44.8,
+   "dollars_per_daly": 79.0,
+   "expected_m": 565.7,
+   "ratio_to_expected": 1.58,
+   "skew": "balanced",
+   "disability_share": 61.1,
+   "rank_by_ratio": 47,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 298.9
+    },
+    {
+     "fy": 2009,
+     "funding_m": 339.5
+    },
+    {
+     "fy": 2010,
+     "funding_m": 372.2
+    },
+    {
+     "fy": 2011,
+     "funding_m": 355.8
+    },
+    {
+     "fy": 2012,
+     "funding_m": 366.3
+    },
+    {
+     "fy": 2013,
+     "funding_m": 366.7
+    },
+    {
+     "fy": 2014,
+     "funding_m": 403.7
+    },
+    {
+     "fy": 2015,
+     "funding_m": 399.1
+    },
+    {
+     "fy": 2016,
+     "funding_m": 446.7
+    },
+    {
+     "fy": 2017,
+     "funding_m": 496.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 639.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 897.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 843.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 880.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 896.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 894.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 892.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 834.0
+    }
+   ]
+  },
+  {
+   "disease": "Coronary heart disease",
+   "nih_categories": [
+    "Heart Disease - Coronary Heart Disease"
+   ],
+   "who_codes": [
+    1130
+   ],
+   "note": "",
+   "funding_m": 383.0,
+   "dalys_k": 10101.9,
+   "female_share": 35.7,
+   "dollars_per_daly": 38.0,
+   "expected_m": 542.5,
+   "ratio_to_expected": 0.71,
+   "skew": "male",
+   "disability_share": 7.5,
+   "rank_by_ratio": 25,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 366.9
+    },
+    {
+     "fy": 2009,
+     "funding_m": 426.2
+    },
+    {
+     "fy": 2010,
+     "funding_m": 457.5
+    },
+    {
+     "fy": 2011,
+     "funding_m": 436.6
+    },
+    {
+     "fy": 2012,
+     "funding_m": 467.8
+    },
+    {
+     "fy": 2013,
+     "funding_m": 404.1
+    },
+    {
+     "fy": 2014,
+     "funding_m": 421.3
+    },
+    {
+     "fy": 2015,
+     "funding_m": 425.8
+    },
+    {
+     "fy": 2016,
+     "funding_m": 419.4
+    },
+    {
+     "fy": 2017,
+     "funding_m": 444.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 444.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 421.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 408.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 380.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 408.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 426.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 383.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 404.0
+    }
+   ]
+  },
+  {
+   "disease": "Drug use disorders",
+   "nih_categories": [
+    "Drug Abuse (NIDA only)"
+   ],
+   "who_codes": [
+    870
+   ],
+   "note": "",
+   "funding_m": 1663.0,
+   "dalys_k": 8934.8,
+   "female_share": 35.1,
+   "dollars_per_daly": 186.0,
+   "expected_m": 518.0,
+   "ratio_to_expected": 3.21,
+   "skew": "male",
+   "disability_share": 38.1,
+   "rank_by_ratio": 60,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 1007.3
+    },
+    {
+     "fy": 2009,
+     "funding_m": 1039.6
+    },
+    {
+     "fy": 2010,
+     "funding_m": 1066.9
+    },
+    {
+     "fy": 2011,
+     "funding_m": 1050.5
+    },
+    {
+     "fy": 2012,
+     "funding_m": 1052.4
+    },
+    {
+     "fy": 2013,
+     "funding_m": 993.4
+    },
+    {
+     "fy": 2014,
+     "funding_m": 1018.0
+    },
+    {
+     "fy": 2015,
+     "funding_m": 1015.7
+    },
+    {
+     "fy": 2016,
+     "funding_m": 1049.0
+    },
+    {
+     "fy": 2017,
+     "funding_m": 1071.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 1161.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 1621.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 1458.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 1476.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 1596.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 1663.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 1663.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 1663.0
+    }
+   ]
+  },
+  {
+   "disease": "Opioid use disorders",
+   "nih_categories": [
+    "Opioid Misuse and Addiction"
+   ],
+   "who_codes": [
+    871
+   ],
+   "note": "",
+   "funding_m": 747.0,
+   "dalys_k": 7156.7,
+   "female_share": 36.7,
+   "dollars_per_daly": 104.0,
+   "expected_m": 476.6,
+   "ratio_to_expected": 1.57,
+   "skew": "male",
+   "disability_share": 40.5,
+   "rank_by_ratio": 45,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 0
+    },
+    {
+     "fy": 2009,
+     "funding_m": 0
+    },
+    {
+     "fy": 2010,
+     "funding_m": 0
+    },
+    {
+     "fy": 2011,
+     "funding_m": 0
+    },
+    {
+     "fy": 2012,
+     "funding_m": 0
+    },
+    {
+     "fy": 2013,
+     "funding_m": 0
+    },
+    {
+     "fy": 2014,
+     "funding_m": 0
+    },
+    {
+     "fy": 2015,
+     "funding_m": 0
+    },
+    {
+     "fy": 2016,
+     "funding_m": 0
+    },
+    {
+     "fy": 2017,
+     "funding_m": 0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 231.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 811.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 655.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 746.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 798.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 812.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 747.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 662.0
+    }
+   ]
+  },
+  {
+   "disease": "Back and neck pain",
+   "nih_categories": [
+    "Back Pain",
+    "Neck Pain"
+   ],
+   "who_codes": [
+    1380
+   ],
+   "note": "two NIH categories summed",
+   "funding_m": 76.0,
+   "dalys_k": 5951.5,
+   "female_share": 54.8,
+   "dollars_per_daly": 13.0,
+   "expected_m": 444.7,
+   "ratio_to_expected": 0.17,
+   "skew": "balanced",
+   "disability_share": 99.5,
+   "rank_by_ratio": 7,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 0
+    },
+    {
+     "fy": 2009,
+     "funding_m": 0
+    },
+    {
+     "fy": 2010,
+     "funding_m": 0
+    },
+    {
+     "fy": 2011,
+     "funding_m": 0
+    },
+    {
+     "fy": 2012,
+     "funding_m": 0
+    },
+    {
+     "fy": 2013,
+     "funding_m": 0
+    },
+    {
+     "fy": 2014,
+     "funding_m": 0
+    },
+    {
+     "fy": 2015,
+     "funding_m": 0
+    },
+    {
+     "fy": 2016,
+     "funding_m": 24.4
+    },
+    {
+     "fy": 2017,
+     "funding_m": 32.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 30.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 172.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 56.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 83.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 74.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 71.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 76.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 84.0
+    }
+   ]
+  },
+  {
+   "disease": "Diabetes",
+   "nih_categories": [
+    "Diabetes"
+   ],
+   "who_codes": [
+    800
+   ],
+   "note": "",
+   "funding_m": 1151.0,
+   "dalys_k": 4446.7,
+   "female_share": 42.7,
+   "dollars_per_daly": 259.0,
+   "expected_m": 398.5,
+   "ratio_to_expected": 2.89,
+   "skew": "balanced",
+   "disability_share": 64.3,
+   "rank_by_ratio": 57,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 1079.9
+    },
+    {
+     "fy": 2009,
+     "funding_m": 1030.1
+    },
+    {
+     "fy": 2010,
+     "funding_m": 1045.8
+    },
+    {
+     "fy": 2011,
+     "funding_m": 1075.9
+    },
+    {
+     "fy": 2012,
+     "funding_m": 1060.6
+    },
+    {
+     "fy": 2013,
+     "funding_m": 1007.4
+    },
+    {
+     "fy": 2014,
+     "funding_m": 1011.0
+    },
+    {
+     "fy": 2015,
+     "funding_m": 1009.7
+    },
+    {
+     "fy": 2016,
+     "funding_m": 1084.3
+    },
+    {
+     "fy": 2017,
+     "funding_m": 1108.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 1039.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 1099.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 1156.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 1124.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 1169.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 1187.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 1151.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 1102.0
+    }
+   ]
+  },
+  {
+   "disease": "COPD",
+   "nih_categories": [
+    "Chronic Obstructive Pulmonary Disease"
+   ],
+   "who_codes": [
+    1180
+   ],
+   "note": "",
+   "funding_m": 160.0,
+   "dalys_k": 4297.2,
+   "female_share": 51.7,
+   "dollars_per_daly": 37.0,
+   "expected_m": 393.5,
+   "ratio_to_expected": 0.41,
+   "skew": "balanced",
+   "disability_share": 29.1,
+   "rank_by_ratio": 15,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 75.5
+    },
+    {
+     "fy": 2009,
+     "funding_m": 95.5
+    },
+    {
+     "fy": 2010,
+     "funding_m": 118.3
+    },
+    {
+     "fy": 2011,
+     "funding_m": 107.9
+    },
+    {
+     "fy": 2012,
+     "funding_m": 101.3
+    },
+    {
+     "fy": 2013,
+     "funding_m": 101.7
+    },
+    {
+     "fy": 2014,
+     "funding_m": 107.4
+    },
+    {
+     "fy": 2015,
+     "funding_m": 96.6
+    },
+    {
+     "fy": 2016,
+     "funding_m": 97.4
+    },
+    {
+     "fy": 2017,
+     "funding_m": 100.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 111.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 112.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 121.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 144.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 143.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 148.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 160.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 158.0
+    }
+   ]
+  },
+  {
+   "disease": "Alzheimer's and other dementias",
+   "nih_categories": [
+    "Alzheimer's Disease including Alzheimer's Disease Related Dementias (AD/ADRD)"
+   ],
+   "who_codes": [
+    950
+   ],
+   "note": "",
+   "funding_m": 3859.0,
+   "dalys_k": 4043.7,
+   "female_share": 64.0,
+   "dollars_per_daly": 954.0,
+   "expected_m": 384.6,
+   "ratio_to_expected": 10.03,
+   "skew": "female",
+   "disability_share": 22.6,
+   "rank_by_ratio": 65,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 0
+    },
+    {
+     "fy": 2009,
+     "funding_m": 0
+    },
+    {
+     "fy": 2010,
+     "funding_m": 0
+    },
+    {
+     "fy": 2011,
+     "funding_m": 0
+    },
+    {
+     "fy": 2012,
+     "funding_m": 0
+    },
+    {
+     "fy": 2013,
+     "funding_m": 0
+    },
+    {
+     "fy": 2014,
+     "funding_m": 0
+    },
+    {
+     "fy": 2015,
+     "funding_m": 630.9
+    },
+    {
+     "fy": 2016,
+     "funding_m": 986.2
+    },
+    {
+     "fy": 2017,
+     "funding_m": 1423.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 1911.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 2398.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 2869.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 3251.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 3514.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 3761.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 3859.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 3882.0
+    }
+   ]
+  },
+  {
+   "disease": "Stroke",
+   "nih_categories": [
+    "Stroke"
+   ],
+   "who_codes": [
+    1140
+   ],
+   "note": "",
+   "funding_m": 491.0,
+   "dalys_k": 3960.7,
+   "female_share": 51.0,
+   "dollars_per_daly": 124.0,
+   "expected_m": 381.6,
+   "ratio_to_expected": 1.29,
+   "skew": "balanced",
+   "disability_share": 26.3,
+   "rank_by_ratio": 38,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 296.3
+    },
+    {
+     "fy": 2009,
+     "funding_m": 329.0
+    },
+    {
+     "fy": 2010,
+     "funding_m": 337.4
+    },
+    {
+     "fy": 2011,
+     "funding_m": 317.4
+    },
+    {
+     "fy": 2012,
+     "funding_m": 310.5
+    },
+    {
+     "fy": 2013,
+     "funding_m": 281.7
+    },
+    {
+     "fy": 2014,
+     "funding_m": 299.6
+    },
+    {
+     "fy": 2015,
+     "funding_m": 288.0
+    },
+    {
+     "fy": 2016,
+     "funding_m": 308.0
+    },
+    {
+     "fy": 2017,
+     "funding_m": 331.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 348.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 350.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 441.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 447.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 415.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 443.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 491.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 422.0
+    }
+   ]
+  },
+  {
+   "disease": "Depression",
+   "nih_categories": [
+    "Depression"
+   ],
+   "who_codes": [
+    830
+   ],
+   "note": "",
+   "funding_m": 700.0,
+   "dalys_k": 2920.2,
+   "female_share": 62.9,
+   "dollars_per_daly": 240.0,
+   "expected_m": 340.3,
+   "ratio_to_expected": 2.06,
+   "skew": "female",
+   "disability_share": 100.0,
+   "rank_by_ratio": 52,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 401.7
+    },
+    {
+     "fy": 2009,
+     "funding_m": 402.0
+    },
+    {
+     "fy": 2010,
+     "funding_m": 420.4
+    },
+    {
+     "fy": 2011,
+     "funding_m": 426.1
+    },
+    {
+     "fy": 2012,
+     "funding_m": 429.1
+    },
+    {
+     "fy": 2013,
+     "funding_m": 414.6
+    },
+    {
+     "fy": 2014,
+     "funding_m": 395.7
+    },
+    {
+     "fy": 2015,
+     "funding_m": 390.5
+    },
+    {
+     "fy": 2016,
+     "funding_m": 410.0
+    },
+    {
+     "fy": 2017,
+     "funding_m": 438.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 500.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 578.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 602.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 610.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 655.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 675.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 700.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 694.0
+    }
+   ]
+  },
+  {
+   "disease": "Lung cancer",
+   "nih_categories": [
+    "Lung Cancer"
+   ],
+   "who_codes": [
+    680
+   ],
+   "note": "",
+   "funding_m": 492.0,
+   "dalys_k": 2858.0,
+   "female_share": 46.2,
+   "dollars_per_daly": 172.0,
+   "expected_m": 337.5,
+   "ratio_to_expected": 1.46,
+   "skew": "balanced",
+   "disability_share": 1.7,
+   "rank_by_ratio": 41,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 169.2
+    },
+    {
+     "fy": 2009,
+     "funding_m": 177.8
+    },
+    {
+     "fy": 2010,
+     "funding_m": 201.3
+    },
+    {
+     "fy": 2011,
+     "funding_m": 220.6
+    },
+    {
+     "fy": 2012,
+     "funding_m": 232.8
+    },
+    {
+     "fy": 2013,
+     "funding_m": 207.8
+    },
+    {
+     "fy": 2014,
+     "funding_m": 254.0
+    },
+    {
+     "fy": 2015,
+     "funding_m": 348.8
+    },
+    {
+     "fy": 2016,
+     "funding_m": 331.4
+    },
+    {
+     "fy": 2017,
+     "funding_m": 352.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 403.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 419.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 447.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 451.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 479.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 504.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 492.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 439.0
+    }
+   ]
+  },
+  {
+   "disease": "Kidney disease",
+   "nih_categories": [
+    "Kidney Disease"
+   ],
+   "who_codes": [
+    1270
+   ],
+   "note": "",
+   "funding_m": 717.0,
+   "dalys_k": 2801.6,
+   "female_share": 46.4,
+   "dollars_per_daly": 256.0,
+   "expected_m": 335.0,
+   "ratio_to_expected": 2.14,
+   "skew": "balanced",
+   "disability_share": 27.3,
+   "rank_by_ratio": 53,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 522.6
+    },
+    {
+     "fy": 2009,
+     "funding_m": 570.3
+    },
+    {
+     "fy": 2010,
+     "funding_m": 551.7
+    },
+    {
+     "fy": 2011,
+     "funding_m": 556.6
+    },
+    {
+     "fy": 2012,
+     "funding_m": 555.9
+    },
+    {
+     "fy": 2013,
+     "funding_m": 551.2
+    },
+    {
+     "fy": 2014,
+     "funding_m": 549.0
+    },
+    {
+     "fy": 2015,
+     "funding_m": 563.9
+    },
+    {
+     "fy": 2016,
+     "funding_m": 574.4
+    },
+    {
+     "fy": 2017,
+     "funding_m": 592.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 598.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 649.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 651.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 661.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 673.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 703.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 717.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 745.0
+    }
+   ]
+  },
+  {
+   "disease": "Anxiety disorders",
+   "nih_categories": [
+    "Anxiety Disorders"
+   ],
+   "who_codes": [
+    880
+   ],
+   "note": "",
+   "funding_m": 271.0,
+   "dalys_k": 2494.1,
+   "female_share": 63.7,
+   "dollars_per_daly": 109.0,
+   "expected_m": 320.7,
+   "ratio_to_expected": 0.85,
+   "skew": "female",
+   "disability_share": 99.9,
+   "rank_by_ratio": 27,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 0
+    },
+    {
+     "fy": 2009,
+     "funding_m": 0
+    },
+    {
+     "fy": 2010,
+     "funding_m": 0
+    },
+    {
+     "fy": 2011,
+     "funding_m": 0
+    },
+    {
+     "fy": 2012,
+     "funding_m": 0
+    },
+    {
+     "fy": 2013,
+     "funding_m": 0
+    },
+    {
+     "fy": 2014,
+     "funding_m": 0
+    },
+    {
+     "fy": 2015,
+     "funding_m": 156.2
+    },
+    {
+     "fy": 2016,
+     "funding_m": 174.2
+    },
+    {
+     "fy": 2017,
+     "funding_m": 190.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 213.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 233.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 236.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 243.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 246.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 267.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 271.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 253.0
+    }
+   ]
+  },
+  {
+   "disease": "Hearing loss",
+   "nih_categories": [
+    "Hearing Loss"
+   ],
+   "who_codes": [
+    1080
+   ],
+   "note": "",
+   "funding_m": 191.0,
+   "dalys_k": 2348.0,
+   "female_share": 46.0,
+   "dollars_per_daly": 81.0,
+   "expected_m": 313.5,
+   "ratio_to_expected": 0.61,
+   "skew": "balanced",
+   "disability_share": 100.0,
+   "rank_by_ratio": 22,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 0
+    },
+    {
+     "fy": 2009,
+     "funding_m": 0
+    },
+    {
+     "fy": 2010,
+     "funding_m": 0
+    },
+    {
+     "fy": 2011,
+     "funding_m": 0
+    },
+    {
+     "fy": 2012,
+     "funding_m": 0
+    },
+    {
+     "fy": 2013,
+     "funding_m": 0
+    },
+    {
+     "fy": 2014,
+     "funding_m": 0
+    },
+    {
+     "fy": 2015,
+     "funding_m": 0
+    },
+    {
+     "fy": 2016,
+     "funding_m": 0
+    },
+    {
+     "fy": 2017,
+     "funding_m": 0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 163.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 173.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 162.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 179.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 200.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 191.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 197.0
+    }
+   ]
+  },
+  {
+   "disease": "Migraine",
+   "nih_categories": [
+    "Migraine"
+   ],
+   "who_codes": [
+    990
+   ],
+   "note": "",
+   "funding_m": 41.0,
+   "dalys_k": 2043.6,
+   "female_share": 73.2,
+   "dollars_per_daly": 20.0,
+   "expected_m": 297.6,
+   "ratio_to_expected": 0.14,
+   "skew": "female",
+   "disability_share": 100.0,
+   "rank_by_ratio": 5,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 0
+    },
+    {
+     "fy": 2009,
+     "funding_m": 0
+    },
+    {
+     "fy": 2010,
+     "funding_m": 15.1
+    },
+    {
+     "fy": 2011,
+     "funding_m": 16.2
+    },
+    {
+     "fy": 2012,
+     "funding_m": 18.1
+    },
+    {
+     "fy": 2013,
+     "funding_m": 19.5
+    },
+    {
+     "fy": 2014,
+     "funding_m": 20.1
+    },
+    {
+     "fy": 2015,
+     "funding_m": 19.6
+    },
+    {
+     "fy": 2016,
+     "funding_m": 18.0
+    },
+    {
+     "fy": 2017,
+     "funding_m": 22.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 21.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 28.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 28.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 40.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 46.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 49.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 41.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 43.0
+    }
+   ]
+  },
+  {
+   "disease": "Suicide and self-harm",
+   "nih_categories": [
+    "Suicide"
+   ],
+   "who_codes": [
+    1610
+   ],
+   "note": "",
+   "funding_m": 190.0,
+   "dalys_k": 2003.4,
+   "female_share": 22.4,
+   "dollars_per_daly": 95.0,
+   "expected_m": 295.4,
+   "ratio_to_expected": 0.64,
+   "skew": "male",
+   "disability_share": 2.3,
+   "rank_by_ratio": 23,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 39.4
+    },
+    {
+     "fy": 2009,
+     "funding_m": 36.3
+    },
+    {
+     "fy": 2010,
+     "funding_m": 36.5
+    },
+    {
+     "fy": 2011,
+     "funding_m": 48.6
+    },
+    {
+     "fy": 2012,
+     "funding_m": 44.3
+    },
+    {
+     "fy": 2013,
+     "funding_m": 37.0
+    },
+    {
+     "fy": 2014,
+     "funding_m": 38.9
+    },
+    {
+     "fy": 2015,
+     "funding_m": 46.0
+    },
+    {
+     "fy": 2016,
+     "funding_m": 52.5
+    },
+    {
+     "fy": 2017,
+     "funding_m": 68.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 96.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 117.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 139.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 140.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 153.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 187.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 190.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 217.0
+    }
+   ]
+  },
+  {
+   "disease": "Cirrhosis and chronic liver disease",
+   "nih_categories": [
+    "Chronic Liver Disease and Cirrhosis"
+   ],
+   "who_codes": [
+    1230
+   ],
+   "note": "",
+   "funding_m": 444.0,
+   "dalys_k": 1986.2,
+   "female_share": 36.3,
+   "dollars_per_daly": 224.0,
+   "expected_m": 294.4,
+   "ratio_to_expected": 1.51,
+   "skew": "male",
+   "disability_share": 2.7,
+   "rank_by_ratio": 43,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 241.2
+    },
+    {
+     "fy": 2009,
+     "funding_m": 273.7
+    },
+    {
+     "fy": 2010,
+     "funding_m": 284.3
+    },
+    {
+     "fy": 2011,
+     "funding_m": 302.5
+    },
+    {
+     "fy": 2012,
+     "funding_m": 288.0
+    },
+    {
+     "fy": 2013,
+     "funding_m": 282.1
+    },
+    {
+     "fy": 2014,
+     "funding_m": 293.3
+    },
+    {
+     "fy": 2015,
+     "funding_m": 294.6
+    },
+    {
+     "fy": 2016,
+     "funding_m": 292.7
+    },
+    {
+     "fy": 2017,
+     "funding_m": 285.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 324.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 351.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 368.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 374.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 426.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 447.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 444.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 470.0
+    }
+   ]
+  },
+  {
+   "disease": "Osteoarthritis",
+   "nih_categories": [
+    "Osteoarthritis"
+   ],
+   "who_codes": [
+    1360
+   ],
+   "note": "",
+   "funding_m": 134.0,
+   "dalys_k": 1685.8,
+   "female_share": 58.8,
+   "dollars_per_daly": 79.0,
+   "expected_m": 276.8,
+   "ratio_to_expected": 0.48,
+   "skew": "balanced",
+   "disability_share": 99.7,
+   "rank_by_ratio": 17,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 0
+    },
+    {
+     "fy": 2009,
+     "funding_m": 0
+    },
+    {
+     "fy": 2010,
+     "funding_m": 0
+    },
+    {
+     "fy": 2011,
+     "funding_m": 0
+    },
+    {
+     "fy": 2012,
+     "funding_m": 0
+    },
+    {
+     "fy": 2013,
+     "funding_m": 0
+    },
+    {
+     "fy": 2014,
+     "funding_m": 0
+    },
+    {
+     "fy": 2015,
+     "funding_m": 75.8
+    },
+    {
+     "fy": 2016,
+     "funding_m": 76.4
+    },
+    {
+     "fy": 2017,
+     "funding_m": 78.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 77.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 85.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 108.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 125.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 125.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 133.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 134.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 147.0
+    }
+   ]
+  },
+  {
+   "disease": "Alcohol use disorders",
+   "nih_categories": [
+    "Alcoholism, Alcohol Use and Health"
+   ],
+   "who_codes": [
+    860
+   ],
+   "note": "",
+   "funding_m": 639.0,
+   "dalys_k": 1647.3,
+   "female_share": 29.9,
+   "dollars_per_daly": 388.0,
+   "expected_m": 274.4,
+   "ratio_to_expected": 2.33,
+   "skew": "male",
+   "disability_share": 53.0,
+   "rank_by_ratio": 54,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 451.9
+    },
+    {
+     "fy": 2009,
+     "funding_m": 440.8
+    },
+    {
+     "fy": 2010,
+     "funding_m": 454.2
+    },
+    {
+     "fy": 2011,
+     "funding_m": 452.2
+    },
+    {
+     "fy": 2012,
+     "funding_m": 455.4
+    },
+    {
+     "fy": 2013,
+     "funding_m": 436.8
+    },
+    {
+     "fy": 2014,
+     "funding_m": 474.9
+    },
+    {
+     "fy": 2015,
+     "funding_m": 473.3
+    },
+    {
+     "fy": 2016,
+     "funding_m": 486.2
+    },
+    {
+     "fy": 2017,
+     "funding_m": 500.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 534.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 556.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 579.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 568.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 613.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 647.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 639.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 613.0
+    }
+   ]
+  },
+  {
+   "disease": "Interpersonal violence",
+   "nih_categories": [
+    "Homicide and Legal Interventions"
+   ],
+   "who_codes": [
+    1620
+   ],
+   "note": "",
+   "funding_m": 12.0,
+   "dalys_k": 1467.0,
+   "female_share": 21.0,
+   "dollars_per_daly": 8.0,
+   "expected_m": 262.7,
+   "ratio_to_expected": 0.05,
+   "skew": "male",
+   "disability_share": 11.5,
+   "rank_by_ratio": 1,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 0.3
+    },
+    {
+     "fy": 2009,
+     "funding_m": 2.1
+    },
+    {
+     "fy": 2010,
+     "funding_m": 1.2
+    },
+    {
+     "fy": 2011,
+     "funding_m": 1.0
+    },
+    {
+     "fy": 2012,
+     "funding_m": 0.7
+    },
+    {
+     "fy": 2013,
+     "funding_m": 0.3
+    },
+    {
+     "fy": 2014,
+     "funding_m": 0.2
+    },
+    {
+     "fy": 2015,
+     "funding_m": 0.7
+    },
+    {
+     "fy": 2016,
+     "funding_m": 0.8
+    },
+    {
+     "fy": 2017,
+     "funding_m": 1.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 2.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 3.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 6.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 13.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 10.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 8.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 12.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 10.0
+    }
+   ]
+  },
+  {
+   "disease": "Colorectal cancer",
+   "nih_categories": [
+    "Colorectal Cancer"
+   ],
+   "who_codes": [
+    650
+   ],
+   "note": "",
+   "funding_m": 338.0,
+   "dalys_k": 1462.4,
+   "female_share": 43.9,
+   "dollars_per_daly": 231.0,
+   "expected_m": 262.4,
+   "ratio_to_expected": 1.29,
+   "skew": "balanced",
+   "disability_share": 7.6,
+   "rank_by_ratio": 37,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 273.6
+    },
+    {
+     "fy": 2009,
+     "funding_m": 280.8
+    },
+    {
+     "fy": 2010,
+     "funding_m": 291.3
+    },
+    {
+     "fy": 2011,
+     "funding_m": 312.8
+    },
+    {
+     "fy": 2012,
+     "funding_m": 301.7
+    },
+    {
+     "fy": 2013,
+     "funding_m": 280.7
+    },
+    {
+     "fy": 2014,
+     "funding_m": 270.7
+    },
+    {
+     "fy": 2015,
+     "funding_m": 308.5
+    },
+    {
+     "fy": 2016,
+     "funding_m": 274.0
+    },
+    {
+     "fy": 2017,
+     "funding_m": 270.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 314.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 294.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 319.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 335.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 346.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 360.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 338.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 361.0
+    }
+   ]
+  },
+  {
+   "disease": "Asthma",
+   "nih_categories": [
+    "Asthma"
+   ],
+   "who_codes": [
+    1190
+   ],
+   "note": "",
+   "funding_m": 270.0,
+   "dalys_k": 1428.7,
+   "female_share": 54.8,
+   "dollars_per_daly": 189.0,
+   "expected_m": 260.1,
+   "ratio_to_expected": 1.04,
+   "skew": "balanced",
+   "disability_share": 90.9,
+   "rank_by_ratio": 29,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 245.7
+    },
+    {
+     "fy": 2009,
+     "funding_m": 284.5
+    },
+    {
+     "fy": 2010,
+     "funding_m": 243.7
+    },
+    {
+     "fy": 2011,
+     "funding_m": 220.9
+    },
+    {
+     "fy": 2012,
+     "funding_m": 228.9
+    },
+    {
+     "fy": 2013,
+     "funding_m": 207.4
+    },
+    {
+     "fy": 2014,
+     "funding_m": 240.9
+    },
+    {
+     "fy": 2015,
+     "funding_m": 281.2
+    },
+    {
+     "fy": 2016,
+     "funding_m": 266.4
+    },
+    {
+     "fy": 2017,
+     "funding_m": 286.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 304.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 313.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 338.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 310.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 285.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 274.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 270.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 242.0
+    }
+   ]
+  },
+  {
+   "disease": "Breast cancer",
+   "nih_categories": [
+    "Breast Cancer"
+   ],
+   "who_codes": [
+    700
+   ],
+   "note": "",
+   "funding_m": 740.0,
+   "dalys_k": 1298.1,
+   "female_share": 98.8,
+   "dollars_per_daly": 570.0,
+   "expected_m": 250.9,
+   "ratio_to_expected": 2.95,
+   "skew": "female",
+   "disability_share": 15.1,
+   "rank_by_ratio": 58,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 725.9
+    },
+    {
+     "fy": 2009,
+     "funding_m": 721.8
+    },
+    {
+     "fy": 2010,
+     "funding_m": 763.4
+    },
+    {
+     "fy": 2011,
+     "funding_m": 715.3
+    },
+    {
+     "fy": 2012,
+     "funding_m": 800.0
+    },
+    {
+     "fy": 2013,
+     "funding_m": 656.8
+    },
+    {
+     "fy": 2014,
+     "funding_m": 681.6
+    },
+    {
+     "fy": 2015,
+     "funding_m": 673.6
+    },
+    {
+     "fy": 2016,
+     "funding_m": 656.4
+    },
+    {
+     "fy": 2017,
+     "funding_m": 689.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 721.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 709.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 788.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 731.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 738.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 777.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 740.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 757.0
+    }
+   ]
+  },
+  {
+   "disease": "Oral and dental disease",
+   "nih_categories": [
+    "Dental, Oral, and Craniofacial Disease"
+   ],
+   "who_codes": [
+    1470
+   ],
+   "note": "NIH category also covers craniofacial research",
+   "funding_m": 742.0,
+   "dalys_k": 1297.8,
+   "female_share": 52.8,
+   "dollars_per_daly": 572.0,
+   "expected_m": 250.9,
+   "ratio_to_expected": 2.96,
+   "skew": "balanced",
+   "disability_share": 99.5,
+   "rank_by_ratio": 59,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 463.3
+    },
+    {
+     "fy": 2009,
+     "funding_m": 489.7
+    },
+    {
+     "fy": 2010,
+     "funding_m": 496.7
+    },
+    {
+     "fy": 2011,
+     "funding_m": 500.6
+    },
+    {
+     "fy": 2012,
+     "funding_m": 516.5
+    },
+    {
+     "fy": 2013,
+     "funding_m": 480.4
+    },
+    {
+     "fy": 2014,
+     "funding_m": 483.3
+    },
+    {
+     "fy": 2015,
+     "funding_m": 492.7
+    },
+    {
+     "fy": 2016,
+     "funding_m": 518.3
+    },
+    {
+     "fy": 2017,
+     "funding_m": 541.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 575.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 613.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 628.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 638.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 712.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 730.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 742.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 788.0
+    }
+   ]
+  },
+  {
+   "disease": "Hepatitis C",
+   "nih_categories": [
+    "Hepatitis - C"
+   ],
+   "who_codes": [
+    200,
+    1232,
+    662
+   ],
+   "note": "burden includes cirrhosis and liver cancer due to hepatitis C",
+   "funding_m": 84.0,
+   "dalys_k": 1164.2,
+   "female_share": 36.6,
+   "dollars_per_daly": 72.0,
+   "expected_m": 240.9,
+   "ratio_to_expected": 0.35,
+   "skew": "male",
+   "disability_share": 1.9,
+   "rank_by_ratio": 12,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 92.6
+    },
+    {
+     "fy": 2009,
+     "funding_m": 97.5
+    },
+    {
+     "fy": 2010,
+     "funding_m": 100.3
+    },
+    {
+     "fy": 2011,
+     "funding_m": 113.6
+    },
+    {
+     "fy": 2012,
+     "funding_m": 112.3
+    },
+    {
+     "fy": 2013,
+     "funding_m": 101.1
+    },
+    {
+     "fy": 2014,
+     "funding_m": 110.5
+    },
+    {
+     "fy": 2015,
+     "funding_m": 95.7
+    },
+    {
+     "fy": 2016,
+     "funding_m": 107.3
+    },
+    {
+     "fy": 2017,
+     "funding_m": 114.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 129.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 150.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 120.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 115.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 107.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 99.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 84.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 86.0
+    }
+   ]
+  },
+  {
+   "disease": "Pancreatic cancer",
+   "nih_categories": [
+    "Pancreatic Cancer"
+   ],
+   "who_codes": [
+    670
+   ],
+   "note": "",
+   "funding_m": 292.0,
+   "dalys_k": 1019.4,
+   "female_share": 45.9,
+   "dollars_per_daly": 286.0,
+   "expected_m": 229.1,
+   "ratio_to_expected": 1.27,
+   "skew": "balanced",
+   "disability_share": 1.2,
+   "rank_by_ratio": 35,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 0
+    },
+    {
+     "fy": 2009,
+     "funding_m": 0
+    },
+    {
+     "fy": 2010,
+     "funding_m": 0
+    },
+    {
+     "fy": 2011,
+     "funding_m": 112.2
+    },
+    {
+     "fy": 2012,
+     "funding_m": 127.2
+    },
+    {
+     "fy": 2013,
+     "funding_m": 125.1
+    },
+    {
+     "fy": 2014,
+     "funding_m": 122.9
+    },
+    {
+     "fy": 2015,
+     "funding_m": 173.9
+    },
+    {
+     "fy": 2016,
+     "funding_m": 168.2
+    },
+    {
+     "fy": 2017,
+     "funding_m": 199.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 215.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 219.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 230.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 242.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 265.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 280.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 292.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 288.0
+    }
+   ]
+  },
+  {
+   "disease": "Schizophrenia",
+   "nih_categories": [
+    "Schizophrenia"
+   ],
+   "who_codes": [
+    850
+   ],
+   "note": "",
+   "funding_m": 254.0,
+   "dalys_k": 1010.6,
+   "female_share": 47.1,
+   "dollars_per_daly": 251.0,
+   "expected_m": 228.4,
+   "ratio_to_expected": 1.11,
+   "skew": "balanced",
+   "disability_share": 98.1,
+   "rank_by_ratio": 31,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 249.4
+    },
+    {
+     "fy": 2009,
+     "funding_m": 265.2
+    },
+    {
+     "fy": 2010,
+     "funding_m": 276.4
+    },
+    {
+     "fy": 2011,
+     "funding_m": 263.9
+    },
+    {
+     "fy": 2012,
+     "funding_m": 268.1
+    },
+    {
+     "fy": 2013,
+     "funding_m": 232.1
+    },
+    {
+     "fy": 2014,
+     "funding_m": 253.3
+    },
+    {
+     "fy": 2015,
+     "funding_m": 241.3
+    },
+    {
+     "fy": 2016,
+     "funding_m": 254.1
+    },
+    {
+     "fy": 2017,
+     "funding_m": 243.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 248.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 263.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 256.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 242.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 273.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 239.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 254.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 262.0
+    }
+   ]
+  },
+  {
+   "disease": "Preterm birth",
+   "nih_categories": [
+    "Preterm, Low Birth Weight and Health of the Newborn"
+   ],
+   "who_codes": [
+    500
+   ],
+   "note": "",
+   "funding_m": 433.0,
+   "dalys_k": 1005.1,
+   "female_share": 47.5,
+   "dollars_per_daly": 431.0,
+   "expected_m": 227.9,
+   "ratio_to_expected": 1.9,
+   "skew": "balanced",
+   "disability_share": 46.1,
+   "rank_by_ratio": 50,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 197.2
+    },
+    {
+     "fy": 2009,
+     "funding_m": 176.7
+    },
+    {
+     "fy": 2010,
+     "funding_m": 182.9
+    },
+    {
+     "fy": 2011,
+     "funding_m": 214.1
+    },
+    {
+     "fy": 2012,
+     "funding_m": 217.5
+    },
+    {
+     "fy": 2013,
+     "funding_m": 198.3
+    },
+    {
+     "fy": 2014,
+     "funding_m": 205.7
+    },
+    {
+     "fy": 2015,
+     "funding_m": 223.5
+    },
+    {
+     "fy": 2016,
+     "funding_m": 239.6
+    },
+    {
+     "fy": 2017,
+     "funding_m": 291.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 295.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 374.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 444.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 455.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 435.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 499.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 433.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 461.0
+    }
+   ]
+  },
+  {
+   "disease": "Gynaecological diseases",
+   "nih_categories": [
+    "Endometriosis",
+    "Fibroid Tumors (Uterine)",
+    "Polycystic Ovary Syndrome (PCOS)",
+    "Vulvodynia",
+    "Pelvic Inflammatory Disease"
+   ],
+   "who_codes": [
+    1320
+   ],
+   "note": "five NIH categories summed against WHO's single gynaecological-diseases cause",
+   "funding_m": 58.0,
+   "dalys_k": 896.6,
+   "female_share": 100.0,
+   "dollars_per_daly": 65.0,
+   "expected_m": 218.3,
+   "ratio_to_expected": 0.27,
+   "skew": "female",
+   "disability_share": 100.0,
+   "rank_by_ratio": 9,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 34.0
+    },
+    {
+     "fy": 2009,
+     "funding_m": 37.2
+    },
+    {
+     "fy": 2010,
+     "funding_m": 31.7
+    },
+    {
+     "fy": 2011,
+     "funding_m": 32.0
+    },
+    {
+     "fy": 2012,
+     "funding_m": 29.9
+    },
+    {
+     "fy": 2013,
+     "funding_m": 23.7
+    },
+    {
+     "fy": 2014,
+     "funding_m": 21.2
+    },
+    {
+     "fy": 2015,
+     "funding_m": 26.8
+    },
+    {
+     "fy": 2016,
+     "funding_m": 27.0
+    },
+    {
+     "fy": 2017,
+     "funding_m": 20.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 29.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 37.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 39.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 43.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 59.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 61.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 58.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 75.0
+    }
+   ]
+  },
+  {
+   "disease": "Pneumonia and influenza",
+   "nih_categories": [
+    "Pneumonia and Influenza"
+   ],
+   "who_codes": [
+    390
+   ],
+   "note": "WHO cause is lower respiratory infections",
+   "funding_m": 619.0,
+   "dalys_k": 886.9,
+   "female_share": 43.8,
+   "dollars_per_daly": 698.0,
+   "expected_m": 217.5,
+   "ratio_to_expected": 2.85,
+   "skew": "balanced",
+   "disability_share": 0.6,
+   "rank_by_ratio": 56,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 295.4
+    },
+    {
+     "fy": 2009,
+     "funding_m": 392.4
+    },
+    {
+     "fy": 2010,
+     "funding_m": 396.5
+    },
+    {
+     "fy": 2011,
+     "funding_m": 381.7
+    },
+    {
+     "fy": 2012,
+     "funding_m": 358.3
+    },
+    {
+     "fy": 2013,
+     "funding_m": 406.8
+    },
+    {
+     "fy": 2014,
+     "funding_m": 362.1
+    },
+    {
+     "fy": 2015,
+     "funding_m": 384.0
+    },
+    {
+     "fy": 2016,
+     "funding_m": 380.0
+    },
+    {
+     "fy": 2017,
+     "funding_m": 408.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 467.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 521.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 660.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 592.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 578.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 654.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 619.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 562.0
+    }
+   ]
+  },
+  {
+   "disease": "Cocaine use disorders",
+   "nih_categories": [
+    "Cocaine"
+   ],
+   "who_codes": [
+    872
+   ],
+   "note": "",
+   "funding_m": 142.0,
+   "dalys_k": 828.3,
+   "female_share": 25.7,
+   "dollars_per_daly": 171.0,
+   "expected_m": 211.9,
+   "ratio_to_expected": 0.67,
+   "skew": "male",
+   "disability_share": 31.0,
+   "rank_by_ratio": 24,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 0
+    },
+    {
+     "fy": 2009,
+     "funding_m": 0
+    },
+    {
+     "fy": 2010,
+     "funding_m": 0
+    },
+    {
+     "fy": 2011,
+     "funding_m": 0
+    },
+    {
+     "fy": 2012,
+     "funding_m": 0
+    },
+    {
+     "fy": 2013,
+     "funding_m": 0
+    },
+    {
+     "fy": 2014,
+     "funding_m": 0
+    },
+    {
+     "fy": 2015,
+     "funding_m": 0
+    },
+    {
+     "fy": 2016,
+     "funding_m": 0
+    },
+    {
+     "fy": 2017,
+     "funding_m": 0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 155.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 153.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 142.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 147.0
+    }
+   ]
+  },
+  {
+   "disease": "Prostate cancer",
+   "nih_categories": [
+    "Prostate Cancer"
+   ],
+   "who_codes": [
+    740
+   ],
+   "note": "",
+   "funding_m": 311.0,
+   "dalys_k": 802.0,
+   "female_share": 0.0,
+   "dollars_per_daly": 388.0,
+   "expected_m": 209.4,
+   "ratio_to_expected": 1.49,
+   "skew": "male",
+   "disability_share": 24.9,
+   "rank_by_ratio": 42,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 289.6
+    },
+    {
+     "fy": 2009,
+     "funding_m": 310.4
+    },
+    {
+     "fy": 2010,
+     "funding_m": 330.9
+    },
+    {
+     "fy": 2011,
+     "funding_m": 284.5
+    },
+    {
+     "fy": 2012,
+     "funding_m": 256.6
+    },
+    {
+     "fy": 2013,
+     "funding_m": 286.2
+    },
+    {
+     "fy": 2014,
+     "funding_m": 253.7
+    },
+    {
+     "fy": 2015,
+     "funding_m": 287.7
+    },
+    {
+     "fy": 2016,
+     "funding_m": 252.7
+    },
+    {
+     "fy": 2017,
+     "funding_m": 239.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 261.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 263.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 264.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 284.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 278.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 305.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 311.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 314.0
+    }
+   ]
+  },
+  {
+   "disease": "Parkinson's disease",
+   "nih_categories": [
+    "Parkinson's Disease"
+   ],
+   "who_codes": [
+    960
+   ],
+   "note": "",
+   "funding_m": 250.0,
+   "dalys_k": 668.9,
+   "female_share": 37.7,
+   "dollars_per_daly": 374.0,
+   "expected_m": 195.6,
+   "ratio_to_expected": 1.28,
+   "skew": "male",
+   "disability_share": 18.8,
+   "rank_by_ratio": 36,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 151.7
+    },
+    {
+     "fy": 2009,
+     "funding_m": 162.2
+    },
+    {
+     "fy": 2010,
+     "funding_m": 154.3
+    },
+    {
+     "fy": 2011,
+     "funding_m": 151.0
+    },
+    {
+     "fy": 2012,
+     "funding_m": 154.2
+    },
+    {
+     "fy": 2013,
+     "funding_m": 135.0
+    },
+    {
+     "fy": 2014,
+     "funding_m": 139.2
+    },
+    {
+     "fy": 2015,
+     "funding_m": 146.2
+    },
+    {
+     "fy": 2016,
+     "funding_m": 161.1
+    },
+    {
+     "fy": 2017,
+     "funding_m": 168.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 193.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 224.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 242.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 254.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 259.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 253.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 250.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 255.0
+    }
+   ]
+  },
+  {
+   "disease": "Liver cancer",
+   "nih_categories": [
+    "Liver Cancer"
+   ],
+   "who_codes": [
+    660
+   ],
+   "note": "",
+   "funding_m": 183.0,
+   "dalys_k": 656.2,
+   "female_share": 32.7,
+   "dollars_per_daly": 279.0,
+   "expected_m": 194.2,
+   "ratio_to_expected": 0.94,
+   "skew": "male",
+   "disability_share": 1.3,
+   "rank_by_ratio": 28,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 88.6
+    },
+    {
+     "fy": 2009,
+     "funding_m": 93.8
+    },
+    {
+     "fy": 2010,
+     "funding_m": 102.4
+    },
+    {
+     "fy": 2011,
+     "funding_m": 74.0
+    },
+    {
+     "fy": 2012,
+     "funding_m": 73.2
+    },
+    {
+     "fy": 2013,
+     "funding_m": 71.3
+    },
+    {
+     "fy": 2014,
+     "funding_m": 73.8
+    },
+    {
+     "fy": 2015,
+     "funding_m": 85.1
+    },
+    {
+     "fy": 2016,
+     "funding_m": 83.0
+    },
+    {
+     "fy": 2017,
+     "funding_m": 90.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 113.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 127.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 130.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 128.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 178.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 189.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 183.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 195.0
+    }
+   ]
+  },
+  {
+   "disease": "Autism",
+   "nih_categories": [
+    "Autism"
+   ],
+   "who_codes": [
+    900
+   ],
+   "note": "",
+   "funding_m": 305.0,
+   "dalys_k": 606.7,
+   "female_share": 27.6,
+   "dollars_per_daly": 503.0,
+   "expected_m": 188.5,
+   "ratio_to_expected": 1.62,
+   "skew": "male",
+   "disability_share": 100.0,
+   "rank_by_ratio": 48,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 118.1
+    },
+    {
+     "fy": 2009,
+     "funding_m": 132.4
+    },
+    {
+     "fy": 2010,
+     "funding_m": 159.6
+    },
+    {
+     "fy": 2011,
+     "funding_m": 168.7
+    },
+    {
+     "fy": 2012,
+     "funding_m": 192.2
+    },
+    {
+     "fy": 2013,
+     "funding_m": 185.9
+    },
+    {
+     "fy": 2014,
+     "funding_m": 188.1
+    },
+    {
+     "fy": 2015,
+     "funding_m": 207.7
+    },
+    {
+     "fy": 2016,
+     "funding_m": 231.7
+    },
+    {
+     "fy": 2017,
+     "funding_m": 245.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 281.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 290.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 294.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 288.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 306.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 306.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 305.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 339.0
+    }
+   ]
+  },
+  {
+   "disease": "Brain cancer",
+   "nih_categories": [
+    "Brain Cancer"
+   ],
+   "who_codes": [
+    751
+   ],
+   "note": "",
+   "funding_m": 429.0,
+   "dalys_k": 558.7,
+   "female_share": 42.4,
+   "dollars_per_daly": 768.0,
+   "expected_m": 182.8,
+   "ratio_to_expected": 2.35,
+   "skew": "balanced",
+   "disability_share": 2.2,
+   "rank_by_ratio": 55,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 193.9
+    },
+    {
+     "fy": 2009,
+     "funding_m": 233.8
+    },
+    {
+     "fy": 2010,
+     "funding_m": 273.6
+    },
+    {
+     "fy": 2011,
+     "funding_m": 280.3
+    },
+    {
+     "fy": 2012,
+     "funding_m": 281.4
+    },
+    {
+     "fy": 2013,
+     "funding_m": 279.6
+    },
+    {
+     "fy": 2014,
+     "funding_m": 288.5
+    },
+    {
+     "fy": 2015,
+     "funding_m": 297.7
+    },
+    {
+     "fy": 2016,
+     "funding_m": 310.2
+    },
+    {
+     "fy": 2017,
+     "funding_m": 332.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 360.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 359.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 384.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 415.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 401.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 427.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 429.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 434.0
+    }
+   ]
+  },
+  {
+   "disease": "Amphetamine use disorders",
+   "nih_categories": [
+    "Methamphetamine"
+   ],
+   "who_codes": [
+    873
+   ],
+   "note": "",
+   "funding_m": 99.0,
+   "dalys_k": 512.0,
+   "female_share": 29.1,
+   "dollars_per_daly": 193.0,
+   "expected_m": 176.9,
+   "ratio_to_expected": 0.56,
+   "skew": "male",
+   "disability_share": 27.2,
+   "rank_by_ratio": 20,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 67.4
+    },
+    {
+     "fy": 2009,
+     "funding_m": 68.5
+    },
+    {
+     "fy": 2010,
+     "funding_m": 72.9
+    },
+    {
+     "fy": 2011,
+     "funding_m": 70.0
+    },
+    {
+     "fy": 2012,
+     "funding_m": 68.8
+    },
+    {
+     "fy": 2013,
+     "funding_m": 68.3
+    },
+    {
+     "fy": 2014,
+     "funding_m": 62.7
+    },
+    {
+     "fy": 2015,
+     "funding_m": 57.9
+    },
+    {
+     "fy": 2016,
+     "funding_m": 50.2
+    },
+    {
+     "fy": 2017,
+     "funding_m": 48.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 49.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 47.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 92.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 87.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 106.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 93.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 99.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 85.0
+    }
+   ]
+  },
+  {
+   "disease": "Lymphoma",
+   "nih_categories": [
+    "Lymphoma"
+   ],
+   "who_codes": [
+    761,
+    762
+   ],
+   "note": "",
+   "funding_m": 287.0,
+   "dalys_k": 504.8,
+   "female_share": 40.1,
+   "dollars_per_daly": 569.0,
+   "expected_m": 176.0,
+   "ratio_to_expected": 1.63,
+   "skew": "balanced",
+   "disability_share": 7.9,
+   "rank_by_ratio": 49,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 193.2
+    },
+    {
+     "fy": 2009,
+     "funding_m": 183.6
+    },
+    {
+     "fy": 2010,
+     "funding_m": 195.1
+    },
+    {
+     "fy": 2011,
+     "funding_m": 198.6
+    },
+    {
+     "fy": 2012,
+     "funding_m": 212.9
+    },
+    {
+     "fy": 2013,
+     "funding_m": 233.0
+    },
+    {
+     "fy": 2014,
+     "funding_m": 251.2
+    },
+    {
+     "fy": 2015,
+     "funding_m": 269.8
+    },
+    {
+     "fy": 2016,
+     "funding_m": 263.7
+    },
+    {
+     "fy": 2017,
+     "funding_m": 266.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 298.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 248.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 265.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 281.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 302.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 323.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 287.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 281.0
+    }
+   ]
+  },
+  {
+   "disease": "Bipolar disorder",
+   "nih_categories": [
+    "Bipolar Disorder"
+   ],
+   "who_codes": [
+    840
+   ],
+   "note": "",
+   "funding_m": 84.0,
+   "dalys_k": 474.9,
+   "female_share": 50.2,
+   "dollars_per_daly": 177.0,
+   "expected_m": 172.0,
+   "ratio_to_expected": 0.49,
+   "skew": "balanced",
+   "disability_share": 99.0,
+   "rank_by_ratio": 19,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 0
+    },
+    {
+     "fy": 2009,
+     "funding_m": 0
+    },
+    {
+     "fy": 2010,
+     "funding_m": 0
+    },
+    {
+     "fy": 2011,
+     "funding_m": 0
+    },
+    {
+     "fy": 2012,
+     "funding_m": 0
+    },
+    {
+     "fy": 2013,
+     "funding_m": 0
+    },
+    {
+     "fy": 2014,
+     "funding_m": 0
+    },
+    {
+     "fy": 2015,
+     "funding_m": 80.1
+    },
+    {
+     "fy": 2016,
+     "funding_m": 90.2
+    },
+    {
+     "fy": 2017,
+     "funding_m": 88.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 92.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 89.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 100.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 104.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 90.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 101.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 84.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 72.0
+    }
+   ]
+  },
+  {
+   "disease": "Epilepsy",
+   "nih_categories": [
+    "Epilepsy"
+   ],
+   "who_codes": [
+    970
+   ],
+   "note": "",
+   "funding_m": 230.0,
+   "dalys_k": 442.1,
+   "female_share": 45.7,
+   "dollars_per_daly": 520.0,
+   "expected_m": 167.4,
+   "ratio_to_expected": 1.37,
+   "skew": "balanced",
+   "disability_share": 64.3,
+   "rank_by_ratio": 40,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 145.1
+    },
+    {
+     "fy": 2009,
+     "funding_m": 128.1
+    },
+    {
+     "fy": 2010,
+     "funding_m": 134.2
+    },
+    {
+     "fy": 2011,
+     "funding_m": 152.3
+    },
+    {
+     "fy": 2012,
+     "funding_m": 156.4
+    },
+    {
+     "fy": 2013,
+     "funding_m": 128.7
+    },
+    {
+     "fy": 2014,
+     "funding_m": 153.6
+    },
+    {
+     "fy": 2015,
+     "funding_m": 138.4
+    },
+    {
+     "fy": 2016,
+     "funding_m": 153.3
+    },
+    {
+     "fy": 2017,
+     "funding_m": 154.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 184.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 188.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 198.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 218.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 226.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 245.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 230.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 216.0
+    }
+   ]
+  },
+  {
+   "disease": "Esophageal cancer",
+   "nih_categories": [
+    "Esophageal Cancer"
+   ],
+   "who_codes": [
+    630
+   ],
+   "note": "",
+   "funding_m": 59.0,
+   "dalys_k": 412.5,
+   "female_share": 18.9,
+   "dollars_per_daly": 143.0,
+   "expected_m": 163.1,
+   "ratio_to_expected": 0.36,
+   "skew": "male",
+   "disability_share": 1.7,
+   "rank_by_ratio": 13,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 0
+    },
+    {
+     "fy": 2009,
+     "funding_m": 0
+    },
+    {
+     "fy": 2010,
+     "funding_m": 0
+    },
+    {
+     "fy": 2011,
+     "funding_m": 0
+    },
+    {
+     "fy": 2012,
+     "funding_m": 0
+    },
+    {
+     "fy": 2013,
+     "funding_m": 0
+    },
+    {
+     "fy": 2014,
+     "funding_m": 0
+    },
+    {
+     "fy": 2015,
+     "funding_m": 0
+    },
+    {
+     "fy": 2016,
+     "funding_m": 0
+    },
+    {
+     "fy": 2017,
+     "funding_m": 0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 37.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 45.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 54.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 61.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 59.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 61.0
+    }
+   ]
+  },
+  {
+   "disease": "Skin cancer",
+   "nih_categories": [
+    "Skin Cancer"
+   ],
+   "who_codes": [
+    690
+   ],
+   "note": "",
+   "funding_m": 256.0,
+   "dalys_k": 405.4,
+   "female_share": 34.7,
+   "dollars_per_daly": 631.0,
+   "expected_m": 162.0,
+   "ratio_to_expected": 1.58,
+   "skew": "male",
+   "disability_share": 27.5,
+   "rank_by_ratio": 46,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 0
+    },
+    {
+     "fy": 2009,
+     "funding_m": 0
+    },
+    {
+     "fy": 2010,
+     "funding_m": 0
+    },
+    {
+     "fy": 2011,
+     "funding_m": 0
+    },
+    {
+     "fy": 2012,
+     "funding_m": 0
+    },
+    {
+     "fy": 2013,
+     "funding_m": 0
+    },
+    {
+     "fy": 2014,
+     "funding_m": 0
+    },
+    {
+     "fy": 2015,
+     "funding_m": 0
+    },
+    {
+     "fy": 2016,
+     "funding_m": 0
+    },
+    {
+     "fy": 2017,
+     "funding_m": 0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 256.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 285.0
+    }
+   ]
+  },
+  {
+   "disease": "Gallbladder disease",
+   "nih_categories": [
+    "Digestive Diseases - (Gallbladder)"
+   ],
+   "who_codes": [
+    1246
+   ],
+   "note": "",
+   "funding_m": 17.0,
+   "dalys_k": 385.8,
+   "female_share": 56.8,
+   "dollars_per_daly": 44.0,
+   "expected_m": 159.0,
+   "ratio_to_expected": 0.11,
+   "skew": "balanced",
+   "disability_share": 71.2,
+   "rank_by_ratio": 3,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 6.8
+    },
+    {
+     "fy": 2009,
+     "funding_m": 7.0
+    },
+    {
+     "fy": 2010,
+     "funding_m": 5.0
+    },
+    {
+     "fy": 2011,
+     "funding_m": 4.5
+    },
+    {
+     "fy": 2012,
+     "funding_m": 11.0
+    },
+    {
+     "fy": 2013,
+     "funding_m": 9.6
+    },
+    {
+     "fy": 2014,
+     "funding_m": 9.4
+    },
+    {
+     "fy": 2015,
+     "funding_m": 8.0
+    },
+    {
+     "fy": 2016,
+     "funding_m": 10.9
+    },
+    {
+     "fy": 2017,
+     "funding_m": 12.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 17.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 16.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 13.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 20.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 19.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 16.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 17.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 17.0
+    }
+   ]
+  },
+  {
+   "disease": "Ovarian cancer",
+   "nih_categories": [
+    "Ovarian Cancer"
+   ],
+   "who_codes": [
+    730
+   ],
+   "note": "",
+   "funding_m": 178.0,
+   "dalys_k": 319.0,
+   "female_share": 100.0,
+   "dollars_per_daly": 558.0,
+   "expected_m": 148.1,
+   "ratio_to_expected": 1.2,
+   "skew": "female",
+   "disability_share": 4.2,
+   "rank_by_ratio": 34,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 96.2
+    },
+    {
+     "fy": 2009,
+     "funding_m": 101.8
+    },
+    {
+     "fy": 2010,
+     "funding_m": 122.2
+    },
+    {
+     "fy": 2011,
+     "funding_m": 138.1
+    },
+    {
+     "fy": 2012,
+     "funding_m": 147.4
+    },
+    {
+     "fy": 2013,
+     "funding_m": 133.3
+    },
+    {
+     "fy": 2014,
+     "funding_m": 130.7
+    },
+    {
+     "fy": 2015,
+     "funding_m": 118.2
+    },
+    {
+     "fy": 2016,
+     "funding_m": 143.6
+    },
+    {
+     "fy": 2017,
+     "funding_m": 151.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 159.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 168.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 188.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 178.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 178.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 171.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 178.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 177.0
+    }
+   ]
+  },
+  {
+   "disease": "HIV/AIDS",
+   "nih_categories": [
+    "HIV/AIDS"
+   ],
+   "who_codes": [
+    100
+   ],
+   "note": "",
+   "funding_m": 3293.0,
+   "dalys_k": 312.7,
+   "female_share": 25.6,
+   "dollars_per_daly": 10531.0,
+   "expected_m": 147.0,
+   "ratio_to_expected": 22.41,
+   "skew": "male",
+   "disability_share": 44.3,
+   "rank_by_ratio": 67,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 2928.3
+    },
+    {
+     "fy": 2009,
+     "funding_m": 3019.3
+    },
+    {
+     "fy": 2010,
+     "funding_m": 3085.3
+    },
+    {
+     "fy": 2011,
+     "funding_m": 3059.2
+    },
+    {
+     "fy": 2012,
+     "funding_m": 3074.0
+    },
+    {
+     "fy": 2013,
+     "funding_m": 2897.5
+    },
+    {
+     "fy": 2014,
+     "funding_m": 2977.5
+    },
+    {
+     "fy": 2015,
+     "funding_m": 3000.0
+    },
+    {
+     "fy": 2016,
+     "funding_m": 3000.0
+    },
+    {
+     "fy": 2017,
+     "funding_m": 3000.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 2995.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 3037.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 3076.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 3082.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 3194.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 3294.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 3293.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 3294.0
+    }
+   ]
+  },
+  {
+   "disease": "Uterine cancer",
+   "nih_categories": [
+    "Uterine Cancer"
+   ],
+   "who_codes": [
+    720
+   ],
+   "note": "",
+   "funding_m": 44.0,
+   "dalys_k": 312.1,
+   "female_share": 100.0,
+   "dollars_per_daly": 141.0,
+   "expected_m": 146.9,
+   "ratio_to_expected": 0.3,
+   "skew": "female",
+   "disability_share": 15.5,
+   "rank_by_ratio": 10,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 15.8
+    },
+    {
+     "fy": 2009,
+     "funding_m": 25.0
+    },
+    {
+     "fy": 2010,
+     "funding_m": 25.7
+    },
+    {
+     "fy": 2011,
+     "funding_m": 40.1
+    },
+    {
+     "fy": 2012,
+     "funding_m": 41.7
+    },
+    {
+     "fy": 2013,
+     "funding_m": 39.1
+    },
+    {
+     "fy": 2014,
+     "funding_m": 56.9
+    },
+    {
+     "fy": 2015,
+     "funding_m": 52.2
+    },
+    {
+     "fy": 2016,
+     "funding_m": 49.5
+    },
+    {
+     "fy": 2017,
+     "funding_m": 45.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 47.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 36.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 32.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 29.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 37.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 42.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 44.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 49.0
+    }
+   ]
+  },
+  {
+   "disease": "Congenital heart disease",
+   "nih_categories": [
+    "Congenital Heart Disease"
+   ],
+   "who_codes": [
+    1440
+   ],
+   "note": "",
+   "funding_m": 154.0,
+   "dalys_k": 299.5,
+   "female_share": 42.6,
+   "dollars_per_daly": 514.0,
+   "expected_m": 144.6,
+   "ratio_to_expected": 1.06,
+   "skew": "balanced",
+   "disability_share": 12.9,
+   "rank_by_ratio": 30,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 0
+    },
+    {
+     "fy": 2009,
+     "funding_m": 0
+    },
+    {
+     "fy": 2010,
+     "funding_m": 0
+    },
+    {
+     "fy": 2011,
+     "funding_m": 0
+    },
+    {
+     "fy": 2012,
+     "funding_m": 0
+    },
+    {
+     "fy": 2013,
+     "funding_m": 0
+    },
+    {
+     "fy": 2014,
+     "funding_m": 0
+    },
+    {
+     "fy": 2015,
+     "funding_m": 0
+    },
+    {
+     "fy": 2016,
+     "funding_m": 110.9
+    },
+    {
+     "fy": 2017,
+     "funding_m": 119.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 117.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 131.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 135.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 136.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 137.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 157.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 154.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 139.0
+    }
+   ]
+  },
+  {
+   "disease": "Stomach cancer",
+   "nih_categories": [
+    "Stomach Cancer"
+   ],
+   "who_codes": [
+    640
+   ],
+   "note": "",
+   "funding_m": 52.0,
+   "dalys_k": 288.8,
+   "female_share": 38.6,
+   "dollars_per_daly": 180.0,
+   "expected_m": 142.6,
+   "ratio_to_expected": 0.36,
+   "skew": "male",
+   "disability_share": 3.0,
+   "rank_by_ratio": 14,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 0
+    },
+    {
+     "fy": 2009,
+     "funding_m": 0
+    },
+    {
+     "fy": 2010,
+     "funding_m": 0
+    },
+    {
+     "fy": 2011,
+     "funding_m": 0
+    },
+    {
+     "fy": 2012,
+     "funding_m": 0
+    },
+    {
+     "fy": 2013,
+     "funding_m": 0
+    },
+    {
+     "fy": 2014,
+     "funding_m": 0
+    },
+    {
+     "fy": 2015,
+     "funding_m": 0
+    },
+    {
+     "fy": 2016,
+     "funding_m": 0
+    },
+    {
+     "fy": 2017,
+     "funding_m": 0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 24.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 38.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 44.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 50.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 52.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 56.0
+    }
+   ]
+  },
+  {
+   "disease": "Multiple sclerosis",
+   "nih_categories": [
+    "Multiple Sclerosis"
+   ],
+   "who_codes": [
+    980
+   ],
+   "note": "",
+   "funding_m": 108.0,
+   "dalys_k": 234.0,
+   "female_share": 67.1,
+   "dollars_per_daly": 462.0,
+   "expected_m": 131.8,
+   "ratio_to_expected": 0.82,
+   "skew": "female",
+   "disability_share": 47.8,
+   "rank_by_ratio": 26,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 168.6
+    },
+    {
+     "fy": 2009,
+     "funding_m": 136.7
+    },
+    {
+     "fy": 2010,
+     "funding_m": 132.7
+    },
+    {
+     "fy": 2011,
+     "funding_m": 121.6
+    },
+    {
+     "fy": 2012,
+     "funding_m": 115.4
+    },
+    {
+     "fy": 2013,
+     "funding_m": 111.5
+    },
+    {
+     "fy": 2014,
+     "funding_m": 102.2
+    },
+    {
+     "fy": 2015,
+     "funding_m": 93.8
+    },
+    {
+     "fy": 2016,
+     "funding_m": 97.1
+    },
+    {
+     "fy": 2017,
+     "funding_m": 111.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 112.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 111.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 124.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 126.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 121.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 110.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 108.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 112.0
+    }
+   ]
+  },
+  {
+   "disease": "Vision loss",
+   "nih_categories": [
+    "Eye Disease and Disorders of Vision"
+   ],
+   "who_codes": [
+    1030,
+    1040,
+    1050,
+    1060,
+    1070
+   ],
+   "note": "",
+   "funding_m": 1133.0,
+   "dalys_k": 232.2,
+   "female_share": 53.0,
+   "dollars_per_daly": 4880.0,
+   "expected_m": 131.4,
+   "ratio_to_expected": 8.62,
+   "skew": "balanced",
+   "disability_share": 100.0,
+   "rank_by_ratio": 64,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 796.4
+    },
+    {
+     "fy": 2009,
+     "funding_m": 862.2
+    },
+    {
+     "fy": 2010,
+     "funding_m": 817.4
+    },
+    {
+     "fy": 2011,
+     "funding_m": 831.3
+    },
+    {
+     "fy": 2012,
+     "funding_m": 841.1
+    },
+    {
+     "fy": 2013,
+     "funding_m": 773.8
+    },
+    {
+     "fy": 2014,
+     "funding_m": 823.8
+    },
+    {
+     "fy": 2015,
+     "funding_m": 778.6
+    },
+    {
+     "fy": 2016,
+     "funding_m": 846.6
+    },
+    {
+     "fy": 2017,
+     "funding_m": 882.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 963.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 985.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 1012.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 1070.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 1097.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 1146.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 1133.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 1069.0
+    }
+   ]
+  },
+  {
+   "disease": "Rheumatoid arthritis",
+   "nih_categories": [
+    "Rheumatoid Arthritis"
+   ],
+   "who_codes": [
+    1350
+   ],
+   "note": "",
+   "funding_m": 62.0,
+   "dalys_k": 219.9,
+   "female_share": 72.9,
+   "dollars_per_daly": 282.0,
+   "expected_m": 128.8,
+   "ratio_to_expected": 0.48,
+   "skew": "female",
+   "disability_share": 83.7,
+   "rank_by_ratio": 18,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 0
+    },
+    {
+     "fy": 2009,
+     "funding_m": 0
+    },
+    {
+     "fy": 2010,
+     "funding_m": 0
+    },
+    {
+     "fy": 2011,
+     "funding_m": 0
+    },
+    {
+     "fy": 2012,
+     "funding_m": 0
+    },
+    {
+     "fy": 2013,
+     "funding_m": 0
+    },
+    {
+     "fy": 2014,
+     "funding_m": 0
+    },
+    {
+     "fy": 2015,
+     "funding_m": 59.4
+    },
+    {
+     "fy": 2016,
+     "funding_m": 91.0
+    },
+    {
+     "fy": 2017,
+     "funding_m": 93.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 92.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 94.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 87.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 93.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 92.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 90.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 62.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 66.0
+    }
+   ]
+  },
+  {
+   "disease": "Cervical cancer",
+   "nih_categories": [
+    "Cervical Cancer"
+   ],
+   "who_codes": [
+    710
+   ],
+   "note": "",
+   "funding_m": 149.0,
+   "dalys_k": 213.5,
+   "female_share": 100.0,
+   "dollars_per_daly": 698.0,
+   "expected_m": 127.3,
+   "ratio_to_expected": 1.17,
+   "skew": "female",
+   "disability_share": 8.3,
+   "rank_by_ratio": 32,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 68.9
+    },
+    {
+     "fy": 2009,
+     "funding_m": 83.8
+    },
+    {
+     "fy": 2010,
+     "funding_m": 93.2
+    },
+    {
+     "fy": 2011,
+     "funding_m": 119.3
+    },
+    {
+     "fy": 2012,
+     "funding_m": 112.1
+    },
+    {
+     "fy": 2013,
+     "funding_m": 97.9
+    },
+    {
+     "fy": 2014,
+     "funding_m": 115.8
+    },
+    {
+     "fy": 2015,
+     "funding_m": 98.9
+    },
+    {
+     "fy": 2016,
+     "funding_m": 98.7
+    },
+    {
+     "fy": 2017,
+     "funding_m": 114.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 112.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 106.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 113.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 120.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 147.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 164.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 149.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 135.0
+    }
+   ]
+  },
+  {
+   "disease": "ADHD",
+   "nih_categories": [
+    "Attention Deficit Hyperactivity Disorder (ADHD)"
+   ],
+   "who_codes": [
+    911
+   ],
+   "note": "",
+   "funding_m": 75.0,
+   "dalys_k": 192.8,
+   "female_share": 26.8,
+   "dollars_per_daly": 389.0,
+   "expected_m": 122.6,
+   "ratio_to_expected": 0.61,
+   "skew": "male",
+   "disability_share": 100.0,
+   "rank_by_ratio": 21,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 60.4
+    },
+    {
+     "fy": 2009,
+     "funding_m": 70.9
+    },
+    {
+     "fy": 2010,
+     "funding_m": 66.4
+    },
+    {
+     "fy": 2011,
+     "funding_m": 55.3
+    },
+    {
+     "fy": 2012,
+     "funding_m": 59.7
+    },
+    {
+     "fy": 2013,
+     "funding_m": 49.4
+    },
+    {
+     "fy": 2014,
+     "funding_m": 44.5
+    },
+    {
+     "fy": 2015,
+     "funding_m": 41.4
+    },
+    {
+     "fy": 2016,
+     "funding_m": 47.4
+    },
+    {
+     "fy": 2017,
+     "funding_m": 54.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 58.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 64.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 72.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 72.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 78.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 72.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 75.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 73.0
+    }
+   ]
+  },
+  {
+   "disease": "Eating disorders",
+   "nih_categories": [
+    "Eating Disorders"
+   ],
+   "who_codes": [
+    890
+   ],
+   "note": "",
+   "funding_m": 55.0,
+   "dalys_k": 191.0,
+   "female_share": 71.8,
+   "dollars_per_daly": 288.0,
+   "expected_m": 122.1,
+   "ratio_to_expected": 0.45,
+   "skew": "female",
+   "disability_share": 100.0,
+   "rank_by_ratio": 16,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 0
+    },
+    {
+     "fy": 2009,
+     "funding_m": 26.0
+    },
+    {
+     "fy": 2010,
+     "funding_m": 28.3
+    },
+    {
+     "fy": 2011,
+     "funding_m": 27.1
+    },
+    {
+     "fy": 2012,
+     "funding_m": 33.9
+    },
+    {
+     "fy": 2013,
+     "funding_m": 30.9
+    },
+    {
+     "fy": 2014,
+     "funding_m": 29.8
+    },
+    {
+     "fy": 2015,
+     "funding_m": 31.2
+    },
+    {
+     "fy": 2016,
+     "funding_m": 28.4
+    },
+    {
+     "fy": 2017,
+     "funding_m": 32.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 38.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 44.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 49.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 51.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 55.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 55.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 55.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 53.0
+    }
+   ]
+  },
+  {
+   "disease": "Hepatitis B",
+   "nih_categories": [
+    "Hepatitis - B"
+   ],
+   "who_codes": [
+    190,
+    1231,
+    661
+   ],
+   "note": "burden includes cirrhosis and liver cancer due to hepatitis B",
+   "funding_m": 136.0,
+   "dalys_k": 157.1,
+   "female_share": 32.3,
+   "dollars_per_daly": 866.0,
+   "expected_m": 113.5,
+   "ratio_to_expected": 1.2,
+   "skew": "male",
+   "disability_share": 2.0,
+   "rank_by_ratio": 33,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 52.9
+    },
+    {
+     "fy": 2009,
+     "funding_m": 51.3
+    },
+    {
+     "fy": 2010,
+     "funding_m": 65.9
+    },
+    {
+     "fy": 2011,
+     "funding_m": 58.2
+    },
+    {
+     "fy": 2012,
+     "funding_m": 50.9
+    },
+    {
+     "fy": 2013,
+     "funding_m": 48.1
+    },
+    {
+     "fy": 2014,
+     "funding_m": 48.0
+    },
+    {
+     "fy": 2015,
+     "funding_m": 41.7
+    },
+    {
+     "fy": 2016,
+     "funding_m": 46.6
+    },
+    {
+     "fy": 2017,
+     "funding_m": 42.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 55.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 67.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 70.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 149.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 132.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 138.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 136.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 173.0
+    }
+   ]
+  },
+  {
+   "disease": "Inflammatory bowel disease",
+   "nih_categories": [
+    "Inflammatory Bowel Disease"
+   ],
+   "who_codes": [
+    1244
+   ],
+   "note": "",
+   "funding_m": 170.0,
+   "dalys_k": 155.0,
+   "female_share": 51.2,
+   "dollars_per_daly": 1097.0,
+   "expected_m": 112.9,
+   "ratio_to_expected": 1.51,
+   "skew": "balanced",
+   "disability_share": 76.3,
+   "rank_by_ratio": 44,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 80.8
+    },
+    {
+     "fy": 2009,
+     "funding_m": 90.5
+    },
+    {
+     "fy": 2010,
+     "funding_m": 106.0
+    },
+    {
+     "fy": 2011,
+     "funding_m": 112.9
+    },
+    {
+     "fy": 2012,
+     "funding_m": 121.2
+    },
+    {
+     "fy": 2013,
+     "funding_m": 113.8
+    },
+    {
+     "fy": 2014,
+     "funding_m": 125.2
+    },
+    {
+     "fy": 2015,
+     "funding_m": 128.3
+    },
+    {
+     "fy": 2016,
+     "funding_m": 125.8
+    },
+    {
+     "fy": 2017,
+     "funding_m": 134.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 144.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 163.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 177.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 182.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 195.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 199.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 170.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 186.0
+    }
+   ]
+  },
+  {
+   "disease": "Sudden infant death syndrome",
+   "nih_categories": [
+    "Sudden Infant Death Syndrome"
+   ],
+   "who_codes": [
+    1505
+   ],
+   "note": "",
+   "funding_m": 13.0,
+   "dalys_k": 121.7,
+   "female_share": 42.8,
+   "dollars_per_daly": 107.0,
+   "expected_m": 103.1,
+   "ratio_to_expected": 0.13,
+   "skew": "balanced",
+   "disability_share": 0.0,
+   "rank_by_ratio": 4,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 28.9
+    },
+    {
+     "fy": 2009,
+     "funding_m": 21.6
+    },
+    {
+     "fy": 2010,
+     "funding_m": 25.3
+    },
+    {
+     "fy": 2011,
+     "funding_m": 22.7
+    },
+    {
+     "fy": 2012,
+     "funding_m": 23.8
+    },
+    {
+     "fy": 2013,
+     "funding_m": 19.9
+    },
+    {
+     "fy": 2014,
+     "funding_m": 20.5
+    },
+    {
+     "fy": 2015,
+     "funding_m": 17.5
+    },
+    {
+     "fy": 2016,
+     "funding_m": 16.3
+    },
+    {
+     "fy": 2017,
+     "funding_m": 13.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 7.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 11.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 13.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 15.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 15.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 12.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 13.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 12.0
+    }
+   ]
+  },
+  {
+   "disease": "Peptic ulcer",
+   "nih_categories": [
+    "Digestive Diseases - (Peptic Ulcer)"
+   ],
+   "who_codes": [
+    1220
+   ],
+   "note": "",
+   "funding_m": 7.0,
+   "dalys_k": 111.0,
+   "female_share": 44.3,
+   "dollars_per_daly": 63.0,
+   "expected_m": 99.6,
+   "ratio_to_expected": 0.07,
+   "skew": "balanced",
+   "disability_share": 19.8,
+   "rank_by_ratio": 2,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 14.0
+    },
+    {
+     "fy": 2009,
+     "funding_m": 17.4
+    },
+    {
+     "fy": 2010,
+     "funding_m": 29.7
+    },
+    {
+     "fy": 2011,
+     "funding_m": 18.3
+    },
+    {
+     "fy": 2012,
+     "funding_m": 19.9
+    },
+    {
+     "fy": 2013,
+     "funding_m": 18.8
+    },
+    {
+     "fy": 2014,
+     "funding_m": 14.7
+    },
+    {
+     "fy": 2015,
+     "funding_m": 15.5
+    },
+    {
+     "fy": 2016,
+     "funding_m": 9.4
+    },
+    {
+     "fy": 2017,
+     "funding_m": 8.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 8.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 8.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 8.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 9.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 9.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 7.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 7.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 7.0
+    }
+   ]
+  },
+  {
+   "disease": "Down syndrome",
+   "nih_categories": [
+    "Down Syndrome"
+   ],
+   "who_codes": [
+    1430
+   ],
+   "note": "",
+   "funding_m": 115.0,
+   "dalys_k": 77.1,
+   "female_share": 46.0,
+   "dollars_per_daly": 1491.0,
+   "expected_m": 86.8,
+   "ratio_to_expected": 1.32,
+   "skew": "balanced",
+   "disability_share": 16.1,
+   "rank_by_ratio": 39,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 17.0
+    },
+    {
+     "fy": 2009,
+     "funding_m": 18.4
+    },
+    {
+     "fy": 2010,
+     "funding_m": 21.6
+    },
+    {
+     "fy": 2011,
+     "funding_m": 19.7
+    },
+    {
+     "fy": 2012,
+     "funding_m": 20.3
+    },
+    {
+     "fy": 2013,
+     "funding_m": 18.0
+    },
+    {
+     "fy": 2014,
+     "funding_m": 18.3
+    },
+    {
+     "fy": 2015,
+     "funding_m": 24.3
+    },
+    {
+     "fy": 2016,
+     "funding_m": 26.9
+    },
+    {
+     "fy": 2017,
+     "funding_m": 35.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 60.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 86.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 111.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 109.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 113.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 133.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 115.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 124.0
+    }
+   ]
+  },
+  {
+   "disease": "Maternal conditions",
+   "nih_categories": [
+    "Maternal Morbidity and Mortality"
+   ],
+   "who_codes": [
+    420
+   ],
+   "note": "",
+   "funding_m": 382.0,
+   "dalys_k": 67.8,
+   "female_share": 100.0,
+   "dollars_per_daly": 5636.0,
+   "expected_m": 82.7,
+   "ratio_to_expected": 4.62,
+   "skew": "female",
+   "disability_share": 26.3,
+   "rank_by_ratio": 62,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 0
+    },
+    {
+     "fy": 2009,
+     "funding_m": 0
+    },
+    {
+     "fy": 2010,
+     "funding_m": 0
+    },
+    {
+     "fy": 2011,
+     "funding_m": 0
+    },
+    {
+     "fy": 2012,
+     "funding_m": 0
+    },
+    {
+     "fy": 2013,
+     "funding_m": 0
+    },
+    {
+     "fy": 2014,
+     "funding_m": 0
+    },
+    {
+     "fy": 2015,
+     "funding_m": 0
+    },
+    {
+     "fy": 2016,
+     "funding_m": 0
+    },
+    {
+     "fy": 2017,
+     "funding_m": 0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 224.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 240.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 346.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 429.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 382.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 425.0
+    }
+   ]
+  },
+  {
+   "disease": "Sickle cell disease",
+   "nih_categories": [
+    "Sickle Cell Disease"
+   ],
+   "who_codes": [
+    812
+   ],
+   "note": "",
+   "funding_m": 153.0,
+   "dalys_k": 59.5,
+   "female_share": 58.6,
+   "dollars_per_daly": 2571.0,
+   "expected_m": 78.8,
+   "ratio_to_expected": 1.94,
+   "skew": "balanced",
+   "disability_share": 37.5,
+   "rank_by_ratio": 51,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 80.4
+    },
+    {
+     "fy": 2009,
+     "funding_m": 62.6
+    },
+    {
+     "fy": 2010,
+     "funding_m": 73.2
+    },
+    {
+     "fy": 2011,
+     "funding_m": 65.1
+    },
+    {
+     "fy": 2012,
+     "funding_m": 65.5
+    },
+    {
+     "fy": 2013,
+     "funding_m": 69.7
+    },
+    {
+     "fy": 2014,
+     "funding_m": 74.9
+    },
+    {
+     "fy": 2015,
+     "funding_m": 74.7
+    },
+    {
+     "fy": 2016,
+     "funding_m": 92.0
+    },
+    {
+     "fy": 2017,
+     "funding_m": 109.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 104.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 139.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 145.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 146.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 153.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 184.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 153.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 155.0
+    }
+   ]
+  },
+  {
+   "disease": "Neural tube defects",
+   "nih_categories": [
+    "Spina Bifida"
+   ],
+   "who_codes": [
+    1410
+   ],
+   "note": "",
+   "funding_m": 16.0,
+   "dalys_k": 55.3,
+   "female_share": 52.8,
+   "dollars_per_daly": 289.0,
+   "expected_m": 76.6,
+   "ratio_to_expected": 0.21,
+   "skew": "balanced",
+   "disability_share": 14.9,
+   "rank_by_ratio": 8,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 15.4
+    },
+    {
+     "fy": 2009,
+     "funding_m": 13.5
+    },
+    {
+     "fy": 2010,
+     "funding_m": 12.2
+    },
+    {
+     "fy": 2011,
+     "funding_m": 10.8
+    },
+    {
+     "fy": 2012,
+     "funding_m": 12.3
+    },
+    {
+     "fy": 2013,
+     "funding_m": 10.1
+    },
+    {
+     "fy": 2014,
+     "funding_m": 9.8
+    },
+    {
+     "fy": 2015,
+     "funding_m": 9.6
+    },
+    {
+     "fy": 2016,
+     "funding_m": 11.9
+    },
+    {
+     "fy": 2017,
+     "funding_m": 13.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 14.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 16.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 18.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 16.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 17.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 16.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 16.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 10.0
+    }
+   ]
+  },
+  {
+   "disease": "Otitis media",
+   "nih_categories": [
+    "Otitis Media"
+   ],
+   "who_codes": [
+    410
+   ],
+   "note": "",
+   "funding_m": 12.0,
+   "dalys_k": 52.6,
+   "female_share": 47.0,
+   "dollars_per_daly": 228.0,
+   "expected_m": 75.2,
+   "ratio_to_expected": 0.16,
+   "skew": "balanced",
+   "disability_share": 98.3,
+   "rank_by_ratio": 6,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 18.1
+    },
+    {
+     "fy": 2009,
+     "funding_m": 15.2
+    },
+    {
+     "fy": 2010,
+     "funding_m": 19.2
+    },
+    {
+     "fy": 2011,
+     "funding_m": 15.2
+    },
+    {
+     "fy": 2012,
+     "funding_m": 17.3
+    },
+    {
+     "fy": 2013,
+     "funding_m": 14.4
+    },
+    {
+     "fy": 2014,
+     "funding_m": 15.9
+    },
+    {
+     "fy": 2015,
+     "funding_m": 15.3
+    },
+    {
+     "fy": 2016,
+     "funding_m": 15.8
+    },
+    {
+     "fy": 2017,
+     "funding_m": 9.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 10.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 13.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 10.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 8.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 10.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 12.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 12.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 15.0
+    }
+   ]
+  },
+  {
+   "disease": "Sexually transmitted infections",
+   "nih_categories": [
+    "Sexually Transmitted Infections"
+   ],
+   "who_codes": [
+    40
+   ],
+   "note": "excludes HIV",
+   "funding_m": 448.0,
+   "dalys_k": 43.8,
+   "female_share": 79.2,
+   "dollars_per_daly": 10237.0,
+   "expected_m": 70.2,
+   "ratio_to_expected": 6.38,
+   "skew": "female",
+   "disability_share": 88.1,
+   "rank_by_ratio": 63,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 244.8
+    },
+    {
+     "fy": 2009,
+     "funding_m": 249.5
+    },
+    {
+     "fy": 2010,
+     "funding_m": 250.2
+    },
+    {
+     "fy": 2011,
+     "funding_m": 259.1
+    },
+    {
+     "fy": 2012,
+     "funding_m": 275.1
+    },
+    {
+     "fy": 2013,
+     "funding_m": 241.8
+    },
+    {
+     "fy": 2014,
+     "funding_m": 262.5
+    },
+    {
+     "fy": 2015,
+     "funding_m": 249.9
+    },
+    {
+     "fy": 2016,
+     "funding_m": 260.5
+    },
+    {
+     "fy": 2017,
+     "funding_m": 322.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 354.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 354.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 394.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 362.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 366.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 388.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 448.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 452.0
+    }
+   ]
+  },
+  {
+   "disease": "Hodgkin lymphoma",
+   "nih_categories": [
+    "Hodgkin's Disease"
+   ],
+   "who_codes": [
+    761
+   ],
+   "note": "",
+   "funding_m": 20.0,
+   "dalys_k": 31.0,
+   "female_share": 39.3,
+   "dollars_per_daly": 645.0,
+   "expected_m": 61.7,
+   "ratio_to_expected": 0.32,
+   "skew": "male",
+   "disability_share": 13.1,
+   "rank_by_ratio": 11,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 16.2
+    },
+    {
+     "fy": 2009,
+     "funding_m": 26.0
+    },
+    {
+     "fy": 2010,
+     "funding_m": 24.4
+    },
+    {
+     "fy": 2011,
+     "funding_m": 20.2
+    },
+    {
+     "fy": 2012,
+     "funding_m": 20.9
+    },
+    {
+     "fy": 2013,
+     "funding_m": 13.2
+    },
+    {
+     "fy": 2014,
+     "funding_m": 13.8
+    },
+    {
+     "fy": 2015,
+     "funding_m": 15.6
+    },
+    {
+     "fy": 2016,
+     "funding_m": 14.6
+    },
+    {
+     "fy": 2017,
+     "funding_m": 12.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 14.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 12.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 18.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 21.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 19.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 24.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 20.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 24.0
+    }
+   ]
+  },
+  {
+   "disease": "Tuberculosis",
+   "nih_categories": [
+    "Tuberculosis"
+   ],
+   "who_codes": [
+    30
+   ],
+   "note": "NIH funding is largely for global disease; US burden is small",
+   "funding_m": 578.0,
+   "dalys_k": 19.8,
+   "female_share": 35.4,
+   "dollars_per_daly": 29180.0,
+   "expected_m": 52.1,
+   "ratio_to_expected": 11.09,
+   "skew": "male",
+   "disability_share": 22.9,
+   "rank_by_ratio": 66,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 141.6
+    },
+    {
+     "fy": 2009,
+     "funding_m": 189.1
+    },
+    {
+     "fy": 2010,
+     "funding_m": 188.7
+    },
+    {
+     "fy": 2011,
+     "funding_m": 209.1
+    },
+    {
+     "fy": 2012,
+     "funding_m": 217.9
+    },
+    {
+     "fy": 2013,
+     "funding_m": 240.2
+    },
+    {
+     "fy": 2014,
+     "funding_m": 278.8
+    },
+    {
+     "fy": 2015,
+     "funding_m": 272.2
+    },
+    {
+     "fy": 2016,
+     "funding_m": 290.0
+    },
+    {
+     "fy": 2017,
+     "funding_m": 347.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 403.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 488.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 477.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 594.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 611.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 595.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 578.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 588.0
+    }
+   ]
+  },
+  {
+   "disease": "Infertility",
+   "nih_categories": [
+    "Infertility"
+   ],
+   "who_codes": [
+    1310
+   ],
+   "note": "",
+   "funding_m": 221.0,
+   "dalys_k": 19.0,
+   "female_share": 42.8,
+   "dollars_per_daly": 11636.0,
+   "expected_m": 51.3,
+   "ratio_to_expected": 4.31,
+   "skew": "balanced",
+   "disability_share": 100.0,
+   "rank_by_ratio": 61,
+   "history": [
+    {
+     "fy": 2008,
+     "funding_m": 73.0
+    },
+    {
+     "fy": 2009,
+     "funding_m": 74.6
+    },
+    {
+     "fy": 2010,
+     "funding_m": 75.6
+    },
+    {
+     "fy": 2011,
+     "funding_m": 73.9
+    },
+    {
+     "fy": 2012,
+     "funding_m": 73.6
+    },
+    {
+     "fy": 2013,
+     "funding_m": 78.2
+    },
+    {
+     "fy": 2014,
+     "funding_m": 76.4
+    },
+    {
+     "fy": 2015,
+     "funding_m": 71.8
+    },
+    {
+     "fy": 2016,
+     "funding_m": 86.3
+    },
+    {
+     "fy": 2017,
+     "funding_m": 94.0
+    },
+    {
+     "fy": 2018,
+     "funding_m": 120.0
+    },
+    {
+     "fy": 2019,
+     "funding_m": 151.0
+    },
+    {
+     "fy": 2020,
+     "funding_m": 161.0
+    },
+    {
+     "fy": 2021,
+     "funding_m": 192.0
+    },
+    {
+     "fy": 2022,
+     "funding_m": 189.0
+    },
+    {
+     "fy": 2023,
+     "funding_m": 216.0
+    },
+    {
+     "fy": 2024,
+     "funding_m": 221.0
+    },
+    {
+     "fy": 2025,
+     "funding_m": 242.0
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "n": 67,
+  "n_female": 14,
+  "n_male": 22,
+  "n_balanced": 31,
+  "median_dollars_per_daly": {
+   "female": 375.0,
+   "male": 251.5,
+   "balanced": 256.0
+  },
+  "median_ratio_to_expected": {
+   "female": 1.01,
+   "male": 1.07,
+   "balanced": 1.29
+  },
+  "share_underfunded": {
+   "female": 50,
+   "male": 50
+  },
+  "female_shortfall_m": 727,
+  "total_funding_m": 27309
+ },
+ "trend": [
+  {
+   "year": 2010,
+   "fy": "FY2010",
+   "n": 50,
+   "median_dollars_per_daly": {
+    "female": 257.5,
+    "male": 354.5,
+    "balanced": 334.0
+   },
+   "median_ratio_to_expected": {
+    "female": 1.05,
+    "male": 0.99,
+    "balanced": 1.31
+   },
+   "share_underfunded": {
+    "female": 40,
+    "male": 50
+   },
+   "female_shortfall_m": 420
+  },
+  {
+   "year": 2015,
+   "fy": "FY2015",
+   "n": 57,
+   "median_dollars_per_daly": {
+    "female": 250.0,
+    "male": 250.0,
+    "balanced": 227.5
+   },
+   "median_ratio_to_expected": {
+    "female": 1.08,
+    "male": 1.04,
+    "balanced": 1.31
+   },
+   "share_underfunded": {
+    "female": 43,
+    "male": 47
+   },
+   "female_shortfall_m": 474
+  },
+  {
+   "year": 2019,
+   "fy": "FY2019",
+   "n": 61,
+   "median_dollars_per_daly": {
+    "female": 469.0,
+    "male": 286.0,
+    "balanced": 251.0
+   },
+   "median_ratio_to_expected": {
+    "female": 1.0,
+    "male": 1.06,
+    "balanced": 1.23
+   },
+   "share_underfunded": {
+    "female": 46,
+    "male": 50
+   },
+   "female_shortfall_m": 470
+  },
+  {
+   "year": 2021,
+   "fy": "FY2021",
+   "n": 64,
+   "median_dollars_per_daly": {
+    "female": 539.0,
+    "male": 191.5,
+    "balanced": 237.0
+   },
+   "median_ratio_to_expected": {
+    "female": 1.0,
+    "male": 1.01,
+    "balanced": 1.32
+   },
+   "share_underfunded": {
+    "female": 46,
+    "male": 50
+   },
+   "female_shortfall_m": 528
+  },
+  {
+   "year": 2023,
+   "fy": "FY2023",
+   "n": 66,
+   "median_dollars_per_daly": {
+    "female": 431.5,
+    "male": 260.5,
+    "balanced": 244.5
+   },
+   "median_ratio_to_expected": {
+    "female": 0.97,
+    "male": 1.06,
+    "balanced": 1.26
+   },
+   "share_underfunded": {
+    "female": 50,
+    "male": 50
+   },
+   "female_shortfall_m": 739
+  }
+ ],
+ "uncounted": [
+  {
+   "category": "Fibromyalgia",
+   "funding_m": 16.0
+  },
+  {
+   "category": "Chronic Fatigue Syndrome (ME/CFS)",
+   "funding_m": 13.0
+  },
+  {
+   "category": "Lupus",
+   "funding_m": 138.0
+  },
+  {
+   "category": "Interstitial Cystitis",
+   "funding_m": 22.0
+  },
+  {
+   "category": "Temporomandibular Muscle/Joint Disorder (TMJD)",
+   "funding_m": 22.0
+  },
+  {
+   "category": "Scleroderma",
+   "funding_m": 27.0
+  },
+  {
+   "category": "Postural Orthostatic Tachycardia Syndrome",
+   "funding_m": 5.0
+  },
+  {
+   "category": "Osteoporosis",
+   "funding_m": 143.0
+  },
+  {
+   "category": "Endometriosis",
+   "funding_m": 28.0
+  },
+  {
+   "category": "Vulvodynia",
+   "funding_m": 2.0
+  },
+  {
+   "category": "Polycystic Ovary Syndrome (PCOS)",
+   "funding_m": 9.0
+  }
+ ],
+ "comparators": [
+  {
+   "disease": "Migraine",
+   "dalys_k": 2043.6,
+   "funding_m": 41.0,
+   "per_daly": 20.0,
+   "female_share": 73.2,
+   "others": [
+    {
+     "disease": "Oral and dental disease",
+     "dalys_k": 1297.8,
+     "funding_m": 742.0,
+     "per_daly": 572.0,
+     "female_share": 52.8,
+     "skew": "balanced"
+    },
+    {
+     "disease": "Breast cancer",
+     "dalys_k": 1298.1,
+     "funding_m": 740.0,
+     "per_daly": 570.0,
+     "female_share": 98.8,
+     "skew": "female"
+    },
+    {
+     "disease": "Alcohol use disorders",
+     "dalys_k": 1647.3,
+     "funding_m": 639.0,
+     "per_daly": 388.0,
+     "female_share": 29.9,
+     "skew": "male"
+    },
+    {
+     "disease": "Kidney disease",
+     "dalys_k": 2801.6,
+     "funding_m": 717.0,
+     "per_daly": 256.0,
+     "female_share": 46.4,
+     "skew": "balanced"
+    },
+    {
+     "disease": "Depression",
+     "dalys_k": 2920.2,
+     "funding_m": 700.0,
+     "per_daly": 240.0,
+     "female_share": 62.9,
+     "skew": "female"
+    },
+    {
+     "disease": "Colorectal cancer",
+     "dalys_k": 1462.4,
+     "funding_m": 338.0,
+     "per_daly": 231.0,
+     "female_share": 43.9,
+     "skew": "balanced"
+    }
+   ]
+  },
+  {
+   "disease": "Gynaecological diseases",
+   "dalys_k": 896.6,
+   "funding_m": 58.0,
+   "per_daly": 65.0,
+   "female_share": 100.0,
+   "others": [
+    {
+     "disease": "Pneumonia and influenza",
+     "dalys_k": 886.9,
+     "funding_m": 619.0,
+     "per_daly": 698.0,
+     "female_share": 43.8,
+     "skew": "balanced"
+    },
+    {
+     "disease": "Oral and dental disease",
+     "dalys_k": 1297.8,
+     "funding_m": 742.0,
+     "per_daly": 572.0,
+     "female_share": 52.8,
+     "skew": "balanced"
+    },
+    {
+     "disease": "Breast cancer",
+     "dalys_k": 1298.1,
+     "funding_m": 740.0,
+     "per_daly": 570.0,
+     "female_share": 98.8,
+     "skew": "female"
+    },
+    {
+     "disease": "Autism",
+     "dalys_k": 606.7,
+     "funding_m": 305.0,
+     "per_daly": 503.0,
+     "female_share": 27.6,
+     "skew": "male"
+    },
+    {
+     "disease": "Preterm birth",
+     "dalys_k": 1005.1,
+     "funding_m": 433.0,
+     "per_daly": 431.0,
+     "female_share": 47.5,
+     "skew": "balanced"
+    },
+    {
+     "disease": "Prostate cancer",
+     "dalys_k": 802.0,
+     "funding_m": 311.0,
+     "per_daly": 388.0,
+     "female_share": 0.0,
+     "skew": "male"
+    }
+   ]
+  },
+  {
+   "disease": "Uterine cancer",
+   "dalys_k": 312.1,
+   "funding_m": 44.0,
+   "per_daly": 141.0,
+   "female_share": 100.0,
+   "others": [
+    {
+     "disease": "HIV/AIDS",
+     "dalys_k": 312.7,
+     "funding_m": 3293.0,
+     "per_daly": 10531.0,
+     "female_share": 25.6,
+     "skew": "male"
+    },
+    {
+     "disease": "Vision loss",
+     "dalys_k": 232.2,
+     "funding_m": 1133.0,
+     "per_daly": 4880.0,
+     "female_share": 53.0,
+     "skew": "balanced"
+    },
+    {
+     "disease": "Cervical cancer",
+     "dalys_k": 213.5,
+     "funding_m": 149.0,
+     "per_daly": 698.0,
+     "female_share": 100.0,
+     "skew": "female"
+    },
+    {
+     "disease": "Skin cancer",
+     "dalys_k": 405.4,
+     "funding_m": 256.0,
+     "per_daly": 631.0,
+     "female_share": 34.7,
+     "skew": "male"
+    },
+    {
+     "disease": "Ovarian cancer",
+     "dalys_k": 319.0,
+     "funding_m": 178.0,
+     "per_daly": 558.0,
+     "female_share": 100.0,
+     "skew": "female"
+    },
+    {
+     "disease": "Epilepsy",
+     "dalys_k": 442.1,
+     "funding_m": 230.0,
+     "per_daly": 520.0,
+     "female_share": 45.7,
+     "skew": "balanced"
+    }
+   ]
+  },
+  {
+   "disease": "Eating disorders",
+   "dalys_k": 191.0,
+   "funding_m": 55.0,
+   "per_daly": 288.0,
+   "female_share": 71.8,
+   "others": [
+    {
+     "disease": "Vision loss",
+     "dalys_k": 232.2,
+     "funding_m": 1133.0,
+     "per_daly": 4880.0,
+     "female_share": 53.0,
+     "skew": "balanced"
+    },
+    {
+     "disease": "Inflammatory bowel disease",
+     "dalys_k": 155.0,
+     "funding_m": 170.0,
+     "per_daly": 1097.0,
+     "female_share": 51.2,
+     "skew": "balanced"
+    },
+    {
+     "disease": "Hepatitis B",
+     "dalys_k": 157.1,
+     "funding_m": 136.0,
+     "per_daly": 866.0,
+     "female_share": 32.3,
+     "skew": "male"
+    },
+    {
+     "disease": "Cervical cancer",
+     "dalys_k": 213.5,
+     "funding_m": 149.0,
+     "per_daly": 698.0,
+     "female_share": 100.0,
+     "skew": "female"
+    },
+    {
+     "disease": "Congenital heart disease",
+     "dalys_k": 299.5,
+     "funding_m": 154.0,
+     "per_daly": 514.0,
+     "female_share": 42.6,
+     "skew": "balanced"
+    },
+    {
+     "disease": "Multiple sclerosis",
+     "dalys_k": 234.0,
+     "funding_m": 108.0,
+     "per_daly": 462.0,
+     "female_share": 67.1,
+     "skew": "female"
+    }
+   ]
+  },
+  {
+   "disease": "Rheumatoid arthritis",
+   "dalys_k": 219.9,
+   "funding_m": 62.0,
+   "per_daly": 282.0,
+   "female_share": 72.9,
+   "others": [
+    {
+     "disease": "HIV/AIDS",
+     "dalys_k": 312.7,
+     "funding_m": 3293.0,
+     "per_daly": 10531.0,
+     "female_share": 25.6,
+     "skew": "male"
+    },
+    {
+     "disease": "Vision loss",
+     "dalys_k": 232.2,
+     "funding_m": 1133.0,
+     "per_daly": 4880.0,
+     "female_share": 53.0,
+     "skew": "balanced"
+    },
+    {
+     "disease": "Inflammatory bowel disease",
+     "dalys_k": 155.0,
+     "funding_m": 170.0,
+     "per_daly": 1097.0,
+     "female_share": 51.2,
+     "skew": "balanced"
+    },
+    {
+     "disease": "Hepatitis B",
+     "dalys_k": 157.1,
+     "funding_m": 136.0,
+     "per_daly": 866.0,
+     "female_share": 32.3,
+     "skew": "male"
+    },
+    {
+     "disease": "Cervical cancer",
+     "dalys_k": 213.5,
+     "funding_m": 149.0,
+     "per_daly": 698.0,
+     "female_share": 100.0,
+     "skew": "female"
+    },
+    {
+     "disease": "Ovarian cancer",
+     "dalys_k": 319.0,
+     "funding_m": 178.0,
+     "per_daly": 558.0,
+     "female_share": 100.0,
+     "skew": "female"
+    }
+   ]
+  }
+ ]
+}
