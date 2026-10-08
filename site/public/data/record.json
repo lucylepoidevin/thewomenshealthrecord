@@ -597,7 +597,7 @@
    "ed": null
   },
   {
-   "disease": "Chronic Fatigue Syndrome",
+   "disease": "Chronic fatigue syndrome (ME/CFS)",
    "funding": {
     "funding_m": 13.0,
     "uncounted": true
@@ -1987,7 +1987,7 @@
    "ed": null
   },
   {
-   "disease": "Interstitial Cystitis",
+   "disease": "Interstitial cystitis",
    "funding": {
     "funding_m": 22.0,
     "uncounted": true
@@ -3526,7 +3526,7 @@
    "ed": null
   },
   {
-   "disease": "Polycystic Ovary Syndrome",
+   "disease": "Polycystic ovary syndrome (PCOS)",
    "funding": {
     "funding_m": 9.0,
     "uncounted": true
@@ -3535,7 +3535,7 @@
    "ed": null
   },
   {
-   "disease": "Postural Orthostatic Tachycardia Syndrome",
+   "disease": "Postural orthostatic tachycardia syndrome (POTS)",
    "funding": {
     "funding_m": 5.0,
     "uncounted": true
@@ -4005,7 +4005,7 @@
    "ed": null
   },
   {
-   "disease": "Temporomandibular Muscle/Joint Disorder",
+   "disease": "Temporomandibular joint disorder (TMJD)",
    "funding": {
     "funding_m": 22.0,
     "uncounted": true

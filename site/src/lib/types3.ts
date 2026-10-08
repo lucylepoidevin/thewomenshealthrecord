@@ -30,6 +30,6 @@ export type Chapter3Data = {
     total_funding_m: number
   }
   trend: { year: number; fy: string; n: number; median_dollars_per_daly: Record<string, number | null>; median_ratio_to_expected: Record<string, number | null>; share_underfunded: Record<string, number | null>; female_shortfall_m: number }[]
-  uncounted: { category: string; funding_m: number }[]
+  uncounted: { category: string; label: string; funding_m: number }[]
   comparators: { disease: string; dalys_k: number; funding_m: number; per_daly: number; female_share: number; others: { disease: string; dalys_k: number; funding_m: number; per_daly: number; female_share: number; skew: string }[] }[]
 }

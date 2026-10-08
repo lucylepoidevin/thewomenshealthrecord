@@ -45,13 +45,14 @@ for d in c3["diseases"]:
                  "drugs": drugs, "ed": ed})
 for u in c3["uncounted"]:
     name = re.sub(r"\s*\(.*?\)", "", u["category"])
+    label = u.get("label", name)
     kw = {"Fibromyalgia": r"fibromyalgia", "Chronic Fatigue Syndrome": r"fatigue syndrome", "Lupus": r"lupus", "Interstitial Cystitis": r"interstitial cystitis|bladder pain", "Temporomandibular Muscle/Joint Disorder": r"temporomandibular", "Scleroderma": r"sclerod|systemic sclerosis", "Postural Orthostatic Tachycardia Syndrome": r"tachycardia syndrome", "Osteoporosis": r"osteoporosis", "Endometriosis": r"endometriosis", "Vulvodynia": r"vulvodynia", "Polycystic Ovary Syndrome": r"polycystic"}.get(name)
     drugs = []
     if kw:
         for x in c1["drugs"]:
             if re.search(kw, (x["indication"] or ""), re.I):
                 drugs.append({"brand": x["brand"], "year": x["year"], "trial_female_pct": x["trial_female_pct"], "faers_female_pct": x["faers_female_pct"], "gap": x["gap"], "rate_ratio": x["rate_ratio"], "snapshot_url": x["snapshot_url"]})
-    recs.append({"disease": name, "funding": {"funding_m": u["funding_m"], "uncounted": True}, "drugs": drugs, "ed": None})
+    recs.append({"disease": label, "funding": {"funding_m": u["funding_m"], "uncounted": True}, "drugs": drugs, "ed": None})
 recs.sort(key=lambda r: r["disease"])
 json.dump({"generated": c3["generated"], "conditions": recs}, open(f"{SITE_DATA}/record.json", "w"), indent=1)
 print(f"{len(recs)} conditions;", "with drugs:", sum(1 for r in recs if r["drugs"]), "| with ED data:", sum(1 for r in recs if r["ed"]))

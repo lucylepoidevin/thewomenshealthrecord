@@ -47,6 +47,6 @@ write("chapter3_diseases.csv", [{**d, "nih_categories": "; ".join(d["nih_categor
       {"nih_categories": "RCDC categories summed", "who_codes": "WHO GHE cause codes summed", "funding_m": "NIH FY2024 funding, $ millions", "dalys_k": "US DALYs 2021, thousands, both sexes", "female_share": "Share of DALYs falling on women", "disability_share": "YLD as a share of DALYs", "dollars_per_daly": "funding_m*1e6 / (dalys_k*1e3)", "expected_m": "Fitted funding from the power law of funding on burden", "ratio_to_expected": "funding_m / expected_m", "rank_by_ratio": "1 = most underfunded", "skew": "female (>=60% women), male (>=60% men) or balanced"})
 hist = [{"disease": d["disease"], "fy": h["fy"], "funding_m": h["funding_m"]} for d in c3["diseases"] for h in d["history"]]
 write("chapter3_funding_history.csv", hist, ["disease", "fy", "funding_m"], "Chapter 3: NIH funding by fiscal year 2008-2025 for each matched disease, $ millions (0 means the category was not yet reported).", {})
-write("chapter3_uncounted.csv", c3["uncounted"], ["category", "funding_m"], "Chapter 3: NIH-funded conditions with no WHO burden estimate, FY2024 funding in $ millions.", {})
+write("chapter3_uncounted.csv", c3["uncounted"], ["category", "label", "funding_m"], "Chapter 3: NIH-funded conditions with no WHO burden estimate, FY2024 funding in $ millions.", {})
 json.dump({"generated": c3["generated"], "files": files}, open(f"{SITE_DATA}/data_index.json", "w"), indent=1)
 print("index written")

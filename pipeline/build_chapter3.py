@@ -212,7 +212,11 @@ def main():
     hist_keys = ["Y2008", "Y2009NA", "Y2010NA", "Y2011", "Y2012", "Y2013", "Y2014", "Y2015", "Y2016", "Y2017", "Y2018", "Y2019", "Y2020", "Y2021", "Y2022", "Y2023", "Y2024", "Y2025"]
     for r in rows:
         r["history"] = [{"fy": int(k[1:5]), "funding_m": round(sum(rcdc.get(c, {}).get(k, 0) for c in r["nih_categories"]), 1)} for k in hist_keys]
-    uncounted = [{"category": c, "funding_m": round(rcdc.get(c, {}).get(LATEST_FY, 0), 1)} for c in UNCOUNTED if rcdc.get(c, {}).get(LATEST_FY)]
+    LABELS = {"Fibromyalgia": "Fibromyalgia", "Chronic Fatigue Syndrome (ME/CFS)": "Chronic fatigue syndrome (ME/CFS)", "Lupus": "Lupus", "Interstitial Cystitis": "Interstitial cystitis",
+              "Temporomandibular Muscle/Joint Disorder (TMJD)": "Temporomandibular joint disorder (TMJD)", "Sjogren's Disease": "Sjögren's disease", "Scleroderma": "Scleroderma",
+              "Postural Orthostatic Tachycardia Syndrome": "Postural orthostatic tachycardia syndrome (POTS)", "Osteoporosis": "Osteoporosis", "Endometriosis": "Endometriosis", "Vulvodynia": "Vulvodynia",
+              "Polycystic Ovary Syndrome (PCOS)": "Polycystic ovary syndrome (PCOS)"}
+    uncounted = [{"category": c, "label": LABELS.get(c, c), "funding_m": round(rcdc.get(c, {}).get(LATEST_FY, 0), 1)} for c in UNCOUNTED if rcdc.get(c, {}).get(LATEST_FY)]
     out = {"generated": date.today().isoformat(), "funding_fy": 2024, "burden_year": 2021, "fit": fit, "min_dalys_k": MIN_DALYS_K,
            "diseases": sorted(rows, key=lambda r: -r["dalys_k"]), "summary": summary, "trend": trend, "uncounted": uncounted, "comparators": comparators}
     with open(f"{SITE_DATA}/chapter3.json", "w", encoding="utf-8") as f:

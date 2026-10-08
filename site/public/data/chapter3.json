@@ -6381,46 +6381,57 @@
  "uncounted": [
   {
    "category": "Fibromyalgia",
+   "label": "Fibromyalgia",
    "funding_m": 16.0
   },
   {
    "category": "Chronic Fatigue Syndrome (ME/CFS)",
+   "label": "Chronic fatigue syndrome (ME/CFS)",
    "funding_m": 13.0
   },
   {
    "category": "Lupus",
+   "label": "Lupus",
    "funding_m": 138.0
   },
   {
    "category": "Interstitial Cystitis",
+   "label": "Interstitial cystitis",
    "funding_m": 22.0
   },
   {
    "category": "Temporomandibular Muscle/Joint Disorder (TMJD)",
+   "label": "Temporomandibular joint disorder (TMJD)",
    "funding_m": 22.0
   },
   {
    "category": "Scleroderma",
+   "label": "Scleroderma",
    "funding_m": 27.0
   },
   {
    "category": "Postural Orthostatic Tachycardia Syndrome",
+   "label": "Postural orthostatic tachycardia syndrome (POTS)",
    "funding_m": 5.0
   },
   {
    "category": "Osteoporosis",
+   "label": "Osteoporosis",
    "funding_m": 143.0
   },
   {
    "category": "Endometriosis",
+   "label": "Endometriosis",
    "funding_m": 28.0
   },
   {
    "category": "Vulvodynia",
+   "label": "Vulvodynia",
    "funding_m": 2.0
   },
   {
    "category": "Polycystic Ovary Syndrome (PCOS)",
+   "label": "Polycystic ovary syndrome (PCOS)",
    "funding_m": 9.0
   }
  ],

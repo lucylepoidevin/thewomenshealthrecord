@@ -1,12 +1,12 @@
-category,funding_m
-Fibromyalgia,16.0
-Chronic Fatigue Syndrome (ME/CFS),13.0
-Lupus,138.0
-Interstitial Cystitis,22.0
-Temporomandibular Muscle/Joint Disorder (TMJD),22.0
-Scleroderma,27.0
-Postural Orthostatic Tachycardia Syndrome,5.0
-Osteoporosis,143.0
-Endometriosis,28.0
-Vulvodynia,2.0
-Polycystic Ovary Syndrome (PCOS),9.0
+category,label,funding_m
+Fibromyalgia,Fibromyalgia,16.0
+Chronic Fatigue Syndrome (ME/CFS),Chronic fatigue syndrome (ME/CFS),13.0
+Lupus,Lupus,138.0
+Interstitial Cystitis,Interstitial cystitis,22.0
+Temporomandibular Muscle/Joint Disorder (TMJD),Temporomandibular joint disorder (TMJD),22.0
+Scleroderma,Scleroderma,27.0
+Postural Orthostatic Tachycardia Syndrome,Postural orthostatic tachycardia syndrome (POTS),5.0
+Osteoporosis,Osteoporosis,143.0
+Endometriosis,Endometriosis,28.0
+Vulvodynia,Vulvodynia,2.0
+Polycystic Ovary Syndrome (PCOS),Polycystic ovary syndrome (PCOS),9.0
