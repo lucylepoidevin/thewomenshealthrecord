@@ -152,10 +152,10 @@ export default function Chapter2() {
       <p>None of this is medical advice. Bring the numbers to your doctor, not a conclusion.</p>
     </>),
     F('summary', <Summary title="Chapter 2 in four numbers" source={src} items={[
-      { women: `${p(A.severe_share, 'women')}%`, men: `${p(A.severe_share, 'men')}%`, label: 'arrived with pain rated 7 to 10' },
+      { women: `${p(H.cardenz, 'women')}%`, men: `${p(H.cardenz, 'men')}%`, label: 'had cardiac enzymes ordered during a heart attack' },
+      { women: `${p(L.mi_urgent_by_complaint.other_complaint, 'women')}%`, men: `${p(L.mi_urgent_by_complaint.other_complaint, 'men')}%`, label: 'triaged urgent during a heart attack that was not described as chest pain' },
       { women: `${p(chestByAge('urgent')[0].cmp, 'women')}%`, men: `${p(chestByAge('urgent')[0].cmp, 'men')}%`, label: 'under-45s with chest pain triaged urgent' },
       { women: `${p(abd.opioid_ed_severe, 'women')}%`, men: `${p(abd.opioid_ed_severe, 'men')}%`, label: 'given an opioid for severe abdominal pain' },
-      { women: `${p(H.cardenz, 'women')}%`, men: `${p(H.cardenz, 'men')}%`, label: 'had cardiac enzymes ordered during a heart attack' },
     ]} />, 'flow', false),
   ]
 

@@ -53,9 +53,11 @@ await browser.close()
   const cards2 = p2.locator('.graphic-card')
   const n2 = await cards2.count()
   for (let i = 0; i < Math.min(n2, names2.length); i++) {
-    await cards2.nth(i).scrollIntoViewIfNeeded(); await p2.waitForTimeout(250)
-    await cards2.nth(i).screenshot({ path: `${out}${names2[i]}.png` }); console.log('saved', names2[i])
+    const idx = i === names2.length - 1 ? n2 - 1 : i
+    await cards2.nth(idx).scrollIntoViewIfNeeded(); await p2.waitForTimeout(250)
+    await cards2.nth(idx).screenshot({ path: `${out}${names2[i]}.png` }); console.log('saved', names2[i])
   }
+  console.log('chapter 2 cards:', n2)
   await p2.evaluate(() => window.scrollTo(0, 0))
   await p2.locator('article > header').screenshot({ path: `${out}ch2-00-header.png` })
   await b2.close()
@@ -74,9 +76,11 @@ await browser.close()
   const cards3 = p3.locator('.graphic-card')
   const n3 = await cards3.count()
   for (let i = 0; i < Math.min(n3, names3.length); i++) {
-    await cards3.nth(i).scrollIntoViewIfNeeded(); await p3.waitForTimeout(250)
-    await cards3.nth(i).screenshot({ path: `${out}${names3[i]}.png` }); console.log('saved', names3[i])
+    const idx = i === names3.length - 1 ? n3 - 1 : i
+    await cards3.nth(idx).scrollIntoViewIfNeeded(); await p3.waitForTimeout(250)
+    await cards3.nth(idx).screenshot({ path: `${out}${names3[i]}.png` }); console.log('saved', names3[i])
   }
+  console.log('chapter 3 cards:', n3)
   await b3.close()
 }
 

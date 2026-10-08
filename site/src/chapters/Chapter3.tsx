@@ -102,9 +102,9 @@ export default function Chapter3() {
       <p>And if your condition is one of the uncounted, the first ask is not money. It is a burden estimate. A condition without one cannot be shown to be underfunded, and so it never is.</p>
     </>),
     F('summary', <Summary title="Chapter 3 in four numbers" source={src} items={[
-      { value: String(S.n), label: `diseases with both an NIH budget and a measured US burden` },
-      { value: `$${mig.dollars_per_daly.toFixed(0)}`, label: `per healthy year lost to migraine, against $${bre.dollars_per_daly.toFixed(0)} for breast cancer at the same burden` },
-      { value: money(S.female_shortfall_m), label: 'a year to bring every mostly-women disease up to the funding line' },
+      { value: `$${mig.dollars_per_daly.toFixed(0)} vs $${bre.dollars_per_daly.toFixed(0)}`, label: 'NIH dollars per healthy year lost: migraine vs breast cancer, two diseases of similar size' },
+      { value: `${Math.round(gyn.ratio_to_expected * 100)}%`, label: 'of expected funding for gynaecological diseases, endometriosis and fibroids among them' },
+      { value: `${data.trend[0].share_underfunded.female}% → ${data.trend[data.trend.length - 1].share_underfunded.female}%`, label: `share of mostly-women diseases funded below their burden, ${data.trend[0].year} to ${data.trend[data.trend.length - 1].year}` },
       { value: String(data.uncounted.length), label: 'funded conditions, nearly all women\'s, with no burden estimate at all' },
     ]} />, 'flow', false),
   ]
