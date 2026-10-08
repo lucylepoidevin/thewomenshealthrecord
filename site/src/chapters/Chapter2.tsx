@@ -5,7 +5,6 @@ import Cite from '../components/Cite'
 import SourceList from '../components/SourceList'
 import SexCompare from '../components/charts/SexCompare'
 import ScoreLines from '../components/charts/ScoreLines'
-import Summary from '../components/charts/Summary'
 import Lollipop from '../components/charts/Lollipop'
 import Explorer from '../components/Explorer'
 import type { Chapter2Data, Cmp } from '../lib/types2'
@@ -151,12 +150,6 @@ export default function Chapter2() {
       <p>If the problem might be your heart, use the words. "Chest pain" or "chest pressure" is what the triage system is built to hear, and the heart-attack data shows it is women, not men, who pay for describing it any other way. Ask whether a troponin, the cardiac enzyme test, has been sent; in the data it was ordered for barely a quarter of women having a heart attack. And if it might be your heart, call the ambulance rather than driving. Women do this less, and arrival by ambulance is the one thing in this data that closes the urgency gap.</p>
       <p>None of this is medical advice. Bring the numbers to your doctor, not a conclusion.</p>
     </>),
-    F('summary', <Summary title="Chapter 2 in four numbers" source={src} items={[
-      { women: `${p(H.cardenz, 'women')}%`, men: `${p(H.cardenz, 'men')}%`, label: 'had cardiac enzymes ordered during a heart attack' },
-      { women: `${p(L.mi_urgent_by_complaint.other_complaint, 'women')}%`, men: `${p(L.mi_urgent_by_complaint.other_complaint, 'men')}%`, label: 'triaged urgent during a heart attack that was not described as chest pain' },
-      { women: `${p(chestByAge('urgent')[0].cmp, 'women')}%`, men: `${p(chestByAge('urgent')[0].cmp, 'men')}%`, label: 'under-45s with chest pain triaged urgent' },
-      { women: `${p(abd.opioid_ed_severe, 'women')}%`, men: `${p(abd.opioid_ed_severe, 'men')}%`, label: 'given an opioid for severe abdominal pain' },
-    ]} />, 'flow', false),
   ]
 
   return (

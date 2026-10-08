@@ -7,7 +7,6 @@ import Dumbbell from '../components/charts/Dumbbell'
 import Beeswarm from '../components/charts/Beeswarm'
 import Scatter, { inGapQuadrant } from '../components/charts/Scatter'
 import DataTable from '../components/charts/DataTable'
-import Summary from '../components/charts/Summary'
 import ChartFrame from '../components/charts/ChartFrame'
 import DrugLookup from '../components/DrugLookup'
 import RateRatio from '../components/charts/RateRatio'
@@ -102,12 +101,6 @@ export default function Chapter1() {
       <p>So read the gap as a flag, not a verdict. The flag says: this drug was approved with little evidence about women, and the post-market signal is tilted toward them. That is where someone should look.</p>
       <p>Every number on this page is reproducible from public FDA data with the code in our repository. The <Link to="/methods">methods page</Link> explains each step, including the choices we made and what would change them.</p>
     </>),
-    F('summary', <Summary title="Chapter 1 in four numbers" source={faersSrc} items={[
-      { women: `${data.pk[0].female}%`, men: `${data.pk[0].male}%`, label: 'still impaired eight hours after a standard 10 mg dose of zolpidem, the finding that halved the dose for women' },
-      { value: `${s.n_under_30} of ${s.n_drugs}`, label: 'new drugs since 2015 approved on trials where fewer than 30% of participants were women' },
-      { value: String(quadrant.length), label: 'drugs in the Ambien corner: under half women in the trial, women over-represented in harm reports' },
-      { value: `${(data.drugs.find(d => d.brand === 'Ozempic')?.rate_ratio ?? 1.7).toFixed(1)}×`, label: `adverse-event reports per user from women vs men on Ozempic, once prescription share is accounted for; zolpidem itself is ${data.zolpidem_meps ? data.zolpidem_meps.rate_ratio.toFixed(1) : '1.0'}×` },
-    ]} />, 'flow'),
     T('for-you', <>
       <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">What this means for you.</p>
       <p>Start with the drugs you actually take. If one was approved since 2015, it is in the box below: how many women were in the trials that approved it, and what the post-market reports look like. Any other drug can be checked live against the FDA's adverse-event reports.</p>
