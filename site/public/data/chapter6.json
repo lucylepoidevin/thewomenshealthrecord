@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-07",
+ "generated": "2026-10-08",
  "labels": {
   "n": 390,
   "statements": {
@@ -9,6 +9,170 @@
    "not evaluated": 2,
    "mentioned, unclear": 76,
    "silent": 114
+  },
+  "dosing": {
+   "n": 390,
+   "weight_based_n": 132,
+   "flat_n": 258,
+   "flat_pct": 66.2,
+   "flat_weight_affects_n": 23,
+   "flat_weight_no_n": 27,
+   "flat_weight_affects_no_sex_diff_n": 7,
+   "flat_weight_affects_brands": [
+    {
+     "brand": "Trogarzo",
+     "trial_female_pct": 15.0,
+     "no_difference": false,
+     "example": "The result suggests that ibalizumab-uiyk concentration decreases as body weight increases;"
+    },
+    {
+     "brand": "Cobenfy",
+     "trial_female_pct": 24.6,
+     "no_difference": false,
+     "example": "Body Weight Compared to subjects weighing 70 kg, xanomeline exposures were 30 to 35% lower and trospium exposures were 20 to 35% lower in subjects weighing 120 kg."
+    },
+    {
+     "brand": "Tremfya",
+     "trial_female_pct": 28.9,
+     "no_difference": false,
+     "example": "Clearance and volume of distribution of guselkumab increases as body weight increases, however, observed clinical trial data indicate that dose adjustment for body weight is not warranted."
+    },
+    {
+     "brand": "Inqovi",
+     "trial_female_pct": 30.5,
+     "no_difference": false,
+     "example": "Decitabine exposure (AUC) increased with decreasing body surface area or body weight, and cedazuridine exposure increased with decreasing CLcr;"
+    },
+    {
+     "brand": "Siliq",
+     "trial_female_pct": 30.8,
+     "no_difference": false,
+     "example": "Weight Brodalumab trough concentrations were lower in subjects with higher body weight."
+    },
+    {
+     "brand": "Taltz",
+     "trial_female_pct": 32.3,
+     "no_difference": false,
+     "example": "Weight Ixekizumab clearance and volume of distribution increase as body weight increases."
+    },
+    {
+     "brand": "Doptelet",
+     "trial_female_pct": 34.5,
+     "no_difference": false,
+     "example": "Lower body weight was associated with higher avatrombopag C max and AUC following the proposed starting dose in patients aged 6 years and older weighing 16.3 to 175 kg."
+    },
+    {
+     "brand": "Savaysa",
+     "trial_female_pct": 38.1,
+     "no_difference": false,
+     "example": "Weight In a population pharmacokinetic analysis, total exposure in patients with median low body weight (55 kg) was increased by 13% as compared with patients with median high body weight (84 kg)."
+    },
+    {
+     "brand": "Rezzayo",
+     "trial_female_pct": 39.1,
+     "no_difference": true,
+     "example": "At the recommended dosage for pediatric patients 12 years of age and older, population pharmacokinetic modeling and simulation analyses demonstrate that rezafungin exposures are expected to be higher than mean adult exposures across the evaluated age (17 to 81 years) and weight (27.6 to 254.3 kg) ra"
+    },
+    {
+     "brand": "Terlivaz",
+     "trial_female_pct": 40.3,
+     "no_difference": false,
+     "example": "Clearance of terlipressin in HRS-1 patients increased with body weight, while body weight had no effect on the clearance of lysine-vasopressin."
+    },
+    {
+     "brand": "Myqorzo",
+     "trial_female_pct": 40.8,
+     "no_difference": false,
+     "example": "The highest body weight quartile of patients (median: 105 kg) demonstrated a 34% lower aficamten mean exposure (AUC) than the lowest body weight quartile of patients (median: 64 kg)."
+    },
+    {
+     "brand": "Mulpleta",
+     "trial_female_pct": 41.1,
+     "no_difference": false,
+     "example": "Though lusutrombopag exposure tends to decrease with increasing body weight, differences in exposure are not considered clinically relevant."
+    },
+    {
+     "brand": "Ozempic",
+     "trial_female_pct": 41.5,
+     "no_difference": true,
+     "example": "The exposure of semaglutide decreases with an increase in body weight."
+    },
+    {
+     "brand": "Mounjaro",
+     "trial_female_pct": 42.2,
+     "no_difference": true,
+     "example": "12.2 Pharmacodynamics Tirzepatide lowers fasting and postprandial glucose concentration, decreases food intake, and reduces body weight in patients with type 2 diabetes mellitus."
+    },
+    {
+     "brand": "Dupixent",
+     "trial_female_pct": 42.3,
+     "no_difference": false,
+     "example": "Weight Dupilumab trough concentrations were lower in subjects with higher body weight."
+    },
+    {
+     "brand": "Repatha",
+     "trial_female_pct": 48.0,
+     "no_difference": false,
+     "example": "The exposure of evolocumab decreased with increasing body weight."
+    },
+    {
+     "brand": "Sarclisa",
+     "trial_female_pct": 48.2,
+     "no_difference": true,
+     "example": "Body weight In patients who received the recommended SARCLISA ESCENA subcutaneous dosage, the steady state C trough and AUC 2weeks were 44% and 41% lower in the higher body weight (BW) group (>100 kg), and 24% and 26% higher in the lower BW group (\u226450 kg), compared to the patients with BW of 51 kg\u20131"
+    },
+    {
+     "brand": "Rezdiffra",
+     "trial_female_pct": 56.0,
+     "no_difference": true,
+     "example": "However, resmetirom CL/F and Vd/F increase with increasing body weight, resulting in lower resmetirom exposure in patients with higher body weight receiving the same dosage as lower weight patients [see Dosage and Administration (2.1) ] ."
+    },
+    {
+     "brand": "Xolremdi",
+     "trial_female_pct": 58.1,
+     "no_difference": true,
+     "example": "Lower body weight was associated with lower mavorixafor clearance."
+    },
+    {
+     "brand": "Nemluvio",
+     "trial_female_pct": 59.6,
+     "no_difference": false,
+     "example": "Body Weight The exposure of nemolizumab-ilto decreases with increasing body weight."
+    },
+    {
+     "brand": "Firdapse",
+     "trial_female_pct": 60.9,
+     "no_difference": false,
+     "example": "clearance increased with an increase in body weight."
+    },
+    {
+     "brand": "Spevigo",
+     "trial_female_pct": 67.9,
+     "no_difference": false,
+     "example": "Body Weight Spesolimab-sbzo concentrations were increased in subjects with lower body weight and decreased in subjects with higher body weight."
+    },
+    {
+     "brand": "Evenity",
+     "trial_female_pct": 100.0,
+     "no_difference": true,
+     "example": "Body Weight The exposure of romosozumab-aqqg decreases with increasing body weight."
+    }
+   ],
+   "by_category_flat_pct": {
+    "Cardiovascular": 64.3,
+    "Gastroenterology": 72.7,
+    "Hematology": 41.2,
+    "Imaging & diagnostics": 100.0,
+    "Immunology & dermatology": 80.6,
+    "Infectious disease": 54.0,
+    "Metabolic & endocrine": 52.4,
+    "Neurology": 63.6,
+    "Oncology": 58.7,
+    "Ophthalmology": 100.0,
+    "Other": 69.2,
+    "Psychiatry": 100.0,
+    "Urology & nephrology": 88.9
+   }
   },
   "male_only_pk_pct": 5.9,
   "male_only_pk_n": 23,
@@ -451,6 +615,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -473,6 +640,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -495,6 +665,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -517,6 +690,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "affects exposure",
+    "weight_example": "Body weight The exposure of concizumab-mtci increased with increasing body weight (27 kg to 130.7 kg) [see Use in Specific Populations ( 8.6 )] .",
     "sex_statement": "silent",
     "example": null
    },
@@ -539,6 +715,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -561,6 +740,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -583,6 +765,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of vamorolone were observed based on race and sex."
    },
@@ -605,6 +790,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -627,6 +815,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -649,6 +840,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "not evaluated",
     "example": "Sex: Sex effects have not been evaluated;"
    },
@@ -671,6 +865,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -693,6 +890,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "affects exposure",
+    "weight_example": "Body weight : The apparent clearance and volume of distribution of emicizumab-kxwh increased with increasing body weight (9 kg to 156 kg).",
     "sex_statement": "silent",
     "example": null
    },
@@ -715,6 +915,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "affects exposure",
+    "weight_example": "Body Weight Body weight was a significant covariate impacting the pharmacokinetics of marstacimab\u2011hncq.",
     "sex_statement": "silent",
     "example": null
    },
@@ -737,6 +940,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -759,6 +965,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -781,6 +990,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -803,6 +1015,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "not evaluated",
     "example": "Sex : Sex effects have not been evaluated;"
    },
@@ -825,6 +1040,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -847,6 +1065,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of zoliflodacin were observed based on age (18 to 55 years old), sex, and race (White 61%, Black 28%, Asian 8%)."
    },
@@ -869,6 +1090,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -891,6 +1115,9 @@
     "sex_dose": false,
     "has_lactation_section": true,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -913,6 +1140,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "NA=Not Applicable C max (microgram per mL) 9.15 (44.8) 3.85 (34.7) 0.414 (31.0) AUC tau (microgram\u2219h per mL) 126 (42.4) 15.0 (21.9) 0.305 (42.6) C trough (microgram per mL) 2.43 (40.1) 0.210 (243) NA Race and Gender No clinically relevant changes in the pharmacokinetics of BIC, FTC, and TAF were obs"
    },
@@ -935,6 +1165,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -957,6 +1190,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "NA = Not Applicable C max (microgram per mL) 3.1 (38.7) 2.1 (46.7) 3.4 (27.0) 0.31 (61.2) 0.03 (20.8) AUC tau (microgram\u2219hour per mL) 33.8 N=22 (57.8) 15.9 N=20 (51.7) 20.6 (18.9) 0.33 (44.8) 0.44 (20.9) C trough (microgram per mL) 0.37 (118.5) 0.1 (168.7) 0.11 (24.1) NA 0.02 (24.9) Race, Gender No "
    },
@@ -979,6 +1215,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "affects exposure",
+    "weight_example": "The result suggests that ibalizumab-uiyk concentration decreases as body weight increases;",
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -1001,6 +1240,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations There were no clinically significant differences in the pharmacokinetics of tremelimumab-actl based on body weight (34 to149 kg), age (18 to 87 years), sex, race (White, Black, Asian, Native Hawaiian, Pacific Islander, or American Indian), serum albumin levels (0.3 to 396 g/L), "
    },
@@ -1023,6 +1265,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -1045,6 +1290,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -1067,6 +1315,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -1089,6 +1340,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "difference noted",
     "example": "Higher pivekimab sunirine-pvzy exposure and lower FGN849 exposure were observed in female patients compared to those in male patients."
    },
@@ -1111,6 +1365,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": false,
+    "weight_based": true,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -1133,6 +1390,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations There were no clinically significant differences in the pharmacokinetics of acalabrutinib and its active metabolite, ACP\u20115862, based on age (32 to 90 years), sex, race (Caucasian, African American), body weight (40 to 149 kg), or mild to moderate renal impairment (estimated glom"
    },
@@ -1155,6 +1415,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations There were no clinically significant differences in the pharmacokinetics of pirtobrutinib based on age (range 22 \u2013 95 years), sex, race/ethnicity (White 84%, Asian 8%), body weight (range 35.7 \u2013 152 kg), mild (total bilirubin \u2264 upper limit of normal (ULN) and aspartate aminotran"
    },
@@ -1177,6 +1440,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically meaningful effects on erdafitinib exposure were observed based on age (21\u201392 years), sex, race (White, Hispanic or Asian), body weight (36\u2013166 kg), mild (Child-Pugh A) or moderate (Child-Pugh B) hepatic impairment, or mild to moderate renal impairment (eGFR 30 to 8"
    },
@@ -1199,6 +1465,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -1221,6 +1490,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations The following factors had no clinically significant effect on the systemic exposure of atezolizumab: age (2 to 89 years), body weight, sex, albumin levels, tumor burden, region or race, mild or moderate renal impairment [estimated glomerular filtration rate (eGFR) 30 to 89 mL/mi"
    },
@@ -1243,6 +1515,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Race and Gender: Population pharmacokinetics analysis in HCV-infected subjects indicated that race and gender had no clinically relevant effect on the exposure of sofosbuvir, GS-331007, velpatasvir, or voxilaprevir."
    },
@@ -1265,6 +1540,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Population No clinically significant differences in the pharmacokinetics of tagraxofusp-erzs were observed based on age (22 to 84 years), sex, mild to moderate renal impairment (eGFR 30 to 89 mL/min/1.73 m 2 , estimated by MDRD), mild (total bilirubin \u2264 ULN and AST >ULN, or total bilirubin "
    },
@@ -1287,6 +1565,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -1309,6 +1590,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "No clinically significant differences in the pharmacokinetics of vericiguat were observed based on age, sex, race/ethnicity (Black, White, Asian, Hispanic, Latino), body weight, or baseline NT-proBNP."
    },
@@ -1331,6 +1615,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of lumateperone were observed based on age, sex, or race."
    },
@@ -1353,6 +1640,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "affects exposure",
+    "weight_example": "Body Weight Compared to subjects weighing 70 kg, xanomeline exposures were 30 to 35% lower and trospium exposures were 20 to 35% lower in subjects weighing 120 kg.",
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -1375,6 +1665,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -1397,6 +1690,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations There were no clinically significant differences in the pharmacokinetics of lenacapavir based on age (18 to 78 years), sex, ethnicity (hispanic or non-hispanic), race (white, black, asian or other), body weight (41.4 to 164 kg), severe renal impairment (creatinine clearance of 1"
    },
@@ -1419,6 +1715,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -1441,6 +1740,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "quantified difference",
     "example": "Gender Following single-dose administration of 0.5 grams avibactam as a 30-minute infusion, healthy male subjects (n = 17) had 18% lower avibactam C max values than healthy female subjects (n = 16)."
    },
@@ -1463,6 +1765,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Caucasian), sex, and prior liver transplantation had no impact on the steady state pharmacokinetics of patisiran or TTR reduction."
    },
@@ -1485,6 +1790,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Parameter Mean (CV%) Temsavir a C max (ng/mL) 1,770 (39.9) AUC tau (ng.h/mL) 12,900 (46.4) C trough or C 12 (ng/mL) 478 (81.5) Specific Populations No clinically significant differences in the pharmacokinetics of temsavir were observed based on age, sex, race/ethnicity (White, Black/African American"
    },
@@ -1507,6 +1815,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -1529,6 +1840,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -1551,6 +1865,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "221,783) 138 (80.6, 228) 68.9 (38.0, 119) Specific Populations No clinically significant differences in the pharmacokinetics of cabotegravir or rilpivirine were observed based on age, sex, race/ethnicity, BMI, or UGT1A1 polymorphisms."
    },
@@ -1573,6 +1890,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -1595,6 +1915,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations There were no clinically significant differences in the pharmacokinetics of durvalumab based on body weight (31 to 175 kg), age (18 to 96 years), sex, race (White, Black, Asian, Native Hawaiian, Pacific Islander, or Native American), albumin levels (4 to 57 g/L), lactate dehydro"
    },
@@ -1617,6 +1940,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "affects exposure",
+    "weight_example": "Weight Although weight was a significant covariate for PK with higher clearance in heavier patients, the impact of weight on drug exposure is accounted by the use of weight-based dosing.",
     "sex_statement": "no difference asserted",
     "example": "Specific Populations KENGREAL pharmacokinetics are not affected by sex, age, renal status or hepatic function."
    },
@@ -1639,6 +1965,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -1661,6 +1990,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "affects exposure",
+    "weight_example": "The exposure of somatrogon-ghla decreases with an increase in body weight.",
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Based on population PK analyses, age, sex, race, and ethnicity do not have a clinically meaningful effect on the pharmacokinetics of somatrogon-ghla in pediatric patients with GHD."
    },
@@ -1683,6 +2015,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -1705,6 +2040,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Age , Sex, Race Age, sex, or race does not have clinically relevant effect on pharmacokinetics of cariprazine, DCAR, or DDCAR in adult population."
    },
@@ -1727,6 +2065,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of the ADC or unconjugated MMAE were observed based on age (30 to 87 years), sex, race (65% White, 32% Asian, and 3% Black), body weight (34 to 144 kg), mild or moderate renal impairment (CLcr 30 to 89 mL/min, estimat"
    },
@@ -1749,6 +2090,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "affects exposure",
+    "weight_example": "Clearance and volume of distribution of guselkumab increases as body weight increases, however, observed clinical trial data indicate that dose adjustment for body weight is not warranted.",
     "sex_statement": "silent",
     "example": null
    },
@@ -1771,6 +2115,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of bempedoic acid were observed based on age, gender, race, weight, renal impairment (mild, moderate, and severe renal impairment or renal failure), or mild (Child-Pugh Class A) and moderate (Child-Pugh Class B) hepat"
    },
@@ -1793,6 +2140,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of the ADC or unconjugated MMAE were identified based on age (24 to 90 years), sex, race (White, Asian, or Black), renal impairment, and mild hepatic impairment (total bilirubin of 1 to 1.5 \u00d7 ULN and any AST, or total"
    },
@@ -1815,6 +2165,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "affects exposure",
+    "weight_example": "Body Weight Risankizumab-rzaa clearance and volume of distribution increase and plasma concentrations decrease as body weight increases;",
     "sex_statement": "silent",
     "example": null
    },
@@ -1837,6 +2190,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "affects exposure",
+    "weight_example": "Weight Secukinumab clearance and volume of distribution increase as body weight increases.",
     "sex_statement": "silent",
     "example": null
    },
@@ -1859,6 +2215,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "affects exposure",
+    "weight_example": "Decitabine exposure (AUC) increased with decreasing body surface area or body weight, and cedazuridine exposure increased with decreasing CLcr;",
     "sex_statement": "silent",
     "example": null
    },
@@ -1881,6 +2240,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Population pharmacokinetic and pharmacodynamic analysis showed no clinically meaningful differences in the pharmacokinetics or pharmacodynamics of eplontersen based on age, body weight, sex, race, Val30Met variant status, mild and moderate renal impairment (eGFR\u226530 to <90 mL/min"
    },
@@ -1903,6 +2265,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "affects exposure",
+    "weight_example": "Weight Brodalumab trough concentrations were lower in subjects with higher body weight.",
     "sex_statement": "silent",
     "example": null
    },
@@ -1925,6 +2290,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of sparsentan were observed based on age (8 \u2013 75 years), sex, race, mild to moderate renal impairment (eGFR 30 to 89 mL/min/1.73 m 2 ), or mild to moderate hepatic impairment (Child-Pugh class A or B)."
    },
@@ -1947,6 +2315,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "The mean renal clearance of vutrisiran ranged from 4.5 to 5.7 L/hour After single subcutaneous vutrisiran dose from 5 to 300 mg (i.e., 0.2 to 12 times the recommended dose) in healthy subjects Specific Populations No clinically significant differences in the pharmacokinetics of vutrisiran were obser"
    },
@@ -1969,6 +2340,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -1991,6 +2365,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of venetoclax were observed based on age (19 to 93 years), sex, weight, mild to severe renal impairment (CLcr 15 to 89 mL/min, calculated by Cockcroft-Gault), or mild to moderate hepatic impairment (normal total bilir"
    },
@@ -2013,6 +2390,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Figure 3: The Effects of Oral Aripiprazole on Pharmacokinetics of Other Drugs Figure 1 Figure 2 Figure 3 Specific Population Studies A population pharmacokinetic analysis showed no effect of sex, race or smoking on ARISTADA pharmacokinetics [see Use in Specific Populations ( 8.8 )] ."
    },
@@ -2035,6 +2415,9 @@
     "sex_dose": false,
     "has_lactation_section": true,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "difference noted",
     "example": "Special Populations Gender: Significant gender differences were found in the pharmacokinetics of phenylbutyrate and phenylacetate, but not for phenylacetylglutamine."
    },
@@ -2057,6 +2440,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "affects exposure",
+    "weight_example": "Weight Ixekizumab clearance and volume of distribution increase as body weight increases.",
     "sex_statement": "silent",
     "example": null
    },
@@ -2079,6 +2465,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Body Weight, Gender, Race, and Age Body weight, gender, race, and age did not have a clinically significant effect on deucravacitinib exposure."
    },
@@ -2101,6 +2490,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -2123,6 +2515,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of trilaciclib were observed based on age (range: 19 to 80 years), sex, race, mild to moderate renal impairment (30 to 89 mL/min/1.73 m 2 measured by estimated glomerular filtration rate [eGFR]), or mild hepatic impai"
    },
@@ -2145,6 +2540,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of acMMAE or unconjugated MMAE were observed based on age (19 to 89 years), sex (males versus females), race (White 69%, Asian 11%), or mild to moderate renal impairment (CLcr 30 to 89 mL/min)."
    },
@@ -2167,6 +2565,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "There is no clinical experience in patients with Child-Pugh class C (severe) hepatic impairment [see Use in Specific Populations ( 8.7 ) Effects of Age, Body Weight, Sex, and Race Based on a population pharmacokinetic analysis, age, body weight, sex and race do not have a clinically relevant effect "
    },
@@ -2189,6 +2590,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -2211,6 +2615,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "affects exposure",
+    "weight_example": "Lower body weight was associated with higher avatrombopag C max and AUC following the proposed starting dose in patients aged 6 years and older weighing 16.3 to 175 kg.",
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -2233,6 +2640,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant changes in the pharmacokinetics of glofitamab-gxbm were observed based on age (21 to 90 years), body weight (31 to 148 kg), sex, mild to moderate renal impairment (CLcr 30 to < 90 mL/min as estimated by Cockcroft-Gault formula) and mild hepatic impairme"
    },
@@ -2255,6 +2665,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "quantified difference",
     "example": "Despite higher relative bioavailability in females compared to males, the mg/kg dosing strategy and generally lower body weights in females result in only 10% higher exposures (AUC 0-24h and C max ) in females versus males for a weight-based dose and therefore is not considered clinically meaningful"
    },
@@ -2277,6 +2690,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -2299,6 +2715,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations In clinical studies, no clinically significant differences in the pharmacokinetics of moxidectin were observed based on age (18 to 60 years), sex, weight (42.7 to 107.2 kg), or renal impairment (creatinine clearance (CrCL) 47 to 89 mL/min, estimated by Cockcroft-Gault)."
    },
@@ -2321,6 +2740,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -2343,6 +2765,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Population PK analysis indicated that age, sex, ethnicity, and weight do not have clinically relevant effect on the pharmacokinetics of pimavanserin."
    },
@@ -2365,6 +2790,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "quantified difference",
     "example": "Results from a population pharmacokinetic analysis showed that females have a 24% lower AUC than males."
    },
@@ -2387,6 +2815,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Sex and race did not affect the pharmacokinetics of remdesivir and its metabolites (GS-441524 and GS-704277)."
    },
@@ -2409,6 +2840,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -2431,6 +2865,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -2453,6 +2890,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Age, body weight, hepatic impairment (Child-Pugh A, B and C), mild to moderate renal impairment (creatinine clearance 30 to 89 mL/min) and sex had no clinically meaningful effect on sonidegib steady-state exposure."
    },
@@ -2475,6 +2915,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -2497,6 +2940,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific populations No clinically significant differences in the pharmacokinetics of imetelstat were observed based on age (21 to 87 years), sex, race (81% White, 4% Asian, 7% Black, 8% other/unknown), mild to moderate renal impairment (CL cr 30 to < 90 mL/min), mild hepatic impairment (total bilir"
    },
@@ -2519,6 +2965,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations The following factors had no clinically important effect on the clearance of zolbetuximab-clzb: age (range: 22 to 83 years), sex, race including White (50%), Asian (42%), Black (0.8%), mild to moderate (CL cr \u226530 to <90 mL/min) renal impairment and mild hepatic impairment (total"
    },
@@ -2541,6 +2990,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "affects exposure",
+    "weight_example": "Weight In a population pharmacokinetic analysis, total exposure in patients with median low body weight (55 kg) was increased by 13% as compared with patients with median high body weight (84 kg).",
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -2563,6 +3015,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Gender: Population pharmacokinetics analysis in HCV-infected subjects indicated that gender had no clinically relevant effect on the exposure of sofosbuvir, GS-331007, or velpatasvir."
    },
@@ -2585,6 +3040,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -2607,6 +3065,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Based on the population pharmacokinetic analysis, there is no clinically relevant effect of age, sex, or race (White or Asian) on the pharmacokinetics of trifluridine or tipiracil."
    },
@@ -2629,6 +3090,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "quantified difference",
     "example": "Gender In population pharmacokinetic analyses, elbasvir and grazoprevir AUCs are estimated to be 50% and 30% higher, respectively, in females compared to males."
    },
@@ -2651,6 +3115,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -2673,6 +3140,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": false,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of treosulfan based on sex, mild renal impairment (CLcr 60\u201189 mL/min), or mild hepatic impairment (total bilirubin less than or equal to ULN with AST greater than ULN or total bilirubin greater than 1 to 1.5 times ULN"
    },
@@ -2695,6 +3165,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "affects exposure",
+    "weight_example": "At the recommended dosage for pediatric patients 12 years of age and older, population pharmacokinetic modeling and simulation analyses demonstrate that rezafungin exposures are expected to be higher than mean adult exposures across the evaluated age (17 to 81 years) and weight (27.6 to 254.3 kg) ra",
     "sex_statement": "no difference asserted",
     "example": "AUC 0\u2013168h = area under the plasma concentration-time curve from time zero to 168 hours post dose Specific Populations No clinically relevant effects on the pharmacokinetics of rezafungin were observed based on age (range: 20 to 89 years), sex (60.6% male), race (~10% Asian, 10% Black, 77% White), w"
    },
@@ -2717,6 +3190,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -2739,6 +3215,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -2761,6 +3240,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Effects of Body Weight, Gender, Race, and Age Results of population pharmacokinetic analyses indicate that body weight (29 to 163 kg), gender, race, and age (20 to 93 years of age) do not influence the pharmacokinetics of etelcalcetide."
    },
@@ -2783,6 +3265,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -2805,6 +3290,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "quantified difference",
     "example": "Male and Female Patients In a pooled analysis of data following AKYNZEO capsules, the C max for netupitant was 35% higher in females than in males while the AUC inf was similar between males and females."
    },
@@ -2827,6 +3315,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -2849,6 +3340,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -2871,6 +3365,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -2893,6 +3390,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "C max (\u00b5g/mL) 33.0 (4.83) AUC 0-8h (\u00b5g\u2022h/mL) 102 (11.9) Distribution % Bound to human plasma protein 16 % ELF/unbound plasma 15-19 V ss (L) 18 Metabolism (Minimally Metabolized) t 1/2 (h) 3.3 (0.3) CL (L/h) 4.98 (0.582) Excretion Major route of elimination Renal % excreted unchanged in urine 83 Spec"
    },
@@ -2915,6 +3415,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -2937,6 +3440,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -2959,6 +3465,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -2981,6 +3490,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "quantified difference",
     "example": "Elderly female AUC estimates were 38% and 47% greater than AUC estimates obtained in elderly males and younger females, respectively."
    },
@@ -3003,6 +3515,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "quantified difference",
     "example": "Elderly female AUC estimates were 38% and 47% greater than AUC estimates obtained in elderly males and younger females, respectively."
    },
@@ -3025,6 +3540,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "affects exposure",
+    "weight_example": "Clearance of terlipressin in HRS-1 patients increased with body weight, while body weight had no effect on the clearance of lysine-vasopressin.",
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -3047,6 +3565,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "affects exposure",
+    "weight_example": "The clearance of elotuzumab increased with increasing body weight supporting a weight-based dose.",
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -3069,6 +3590,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Age (18 to 92 years of age), sex, and race (Asian versus non-Asian [Caucasian, Black, and Unspecified]) had no clinically significant effect on the pharmacokinetics of inotuzumab ozogamicin."
    },
@@ -3091,6 +3615,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of mavacamten were observed based on age (range: 18-82 years), sex, race, ethnicity, or mild (eGFR: 60 to 89 mL/min/1.73 m 2 ) to moderate (eGFR: 30 to 59 mL/min/1.73 m 2 ) renal impairment."
    },
@@ -3113,6 +3640,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Age , Sex, Race Age, sex, or race does not have clinically relevant effect on pharmacokinetics of cariprazine, DCAR, or DDCAR in adult population."
    },
@@ -3135,6 +3665,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "affects exposure",
+    "weight_example": "The highest body weight quartile of patients (median: 105 kg) demonstrated a 34% lower aficamten mean exposure (AUC) than the lowest body weight quartile of patients (median: 64 kg).",
     "sex_statement": "quantified difference",
     "example": "Female patients demonstrated a 31% higher mean exposure (AUC) compared to male patients."
    },
@@ -3157,6 +3690,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -3179,6 +3715,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of encorafenib were observed based on age (19 to 94 years), sex, body weight (34 to 168 kg), mild hepatic impairment (Child-Pugh Class A), and mild or moderate renal impairment (CLcr 30 to <90 mL/min)."
    },
@@ -3201,6 +3740,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Age (20 to 94 years), sex, or body weight do not have a clinically important effect on the systemic exposure of binimetinib."
    },
@@ -3223,6 +3765,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -3245,6 +3790,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "affects exposure",
+    "weight_example": "Though lusutrombopag exposure tends to decrease with increasing body weight, differences in exposure are not considered clinically relevant.",
     "sex_statement": "silent",
     "example": null
    },
@@ -3267,6 +3815,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "affects exposure",
+    "weight_example": "The exposure of semaglutide decreases with an increase in body weight.",
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Based on a population pharmacokinetic analysis, age, sex, race, and ethnicity, and renal impairment do not have a clinically meaningful effect on the pharmacokinetics of semaglutide."
    },
@@ -3289,6 +3840,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations The following factors had no clinically important effect on the clearance of nivolumab and relatlimab: age (17 to 92 years), sex, race (White, Asian, and Black/African American), mild or moderate renal impairment (eGFR 30 to 89 mL/min/1.73 m 2 ), mild hepatic impairment (total b"
    },
@@ -3311,6 +3865,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -3333,6 +3890,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -3355,6 +3915,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -3377,6 +3940,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "40 mg 42,800 (23,800, 79,200) 40 mg 46,400 (26,300, 86,500) Age, Gender, Race, and Weight Age (18 to 82 years), gender, race, and body weight (up to 100 kg) did not have a clinically significant effect on the pharmacokinetics of letermovir in adult subjects."
    },
@@ -3399,6 +3965,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -3421,6 +3990,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Age, Sex, and Race/Ethnicity: Based on the population pharmacokinetic analysis, age (19\u201388 years), sex, or race/ethnicity does not have a clinically important effect on the systemic exposure of cobimetinib."
    },
@@ -3443,6 +4015,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "affects exposure",
+    "weight_example": "12.2 Pharmacodynamics Tirzepatide lowers fasting and postprandial glucose concentration, decreases food intake, and reduces body weight in patients with type 2 diabetes mellitus.",
     "sex_statement": "no difference asserted",
     "example": "Specific Populations The intrinsic factors of age, gender, race, ethnicity, or body weight do not have a clinically relevant effect on the PK of tirzepatide."
    },
@@ -3465,6 +4040,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "affects exposure",
+    "weight_example": "Weight Dupilumab trough concentrations were lower in subjects with higher body weight.",
     "sex_statement": "silent",
     "example": null
    },
@@ -3487,6 +4065,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "affects exposure",
+    "weight_example": "Body Weight The volume of distribution and clearance of teclistamab-cqyv increase with increasing body weight (37.6 kg to 164 kg), supporting a weight-based dose.",
     "sex_statement": "no difference asserted",
     "example": "Specific Populations There were no clinically significant differences in the exposure of teclistamab-cqyv based on age (24 to 84 years), sex, race (White, Black or African American), ethnicity (Hispanic/Latino, not Hispanic/Latino), mild or moderate renal impairment (estimated glomerular filtration "
    },
@@ -3509,6 +4090,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -3531,6 +4115,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "affects exposure",
+    "weight_example": "Specific Populations Body weight was a significant covariate affecting the PK of narsoplimab-wuug.",
     "sex_statement": "no difference asserted",
     "example": "No clinically significant differences in PK of narsoplimab-wuug were observed based on race or sex."
    },
@@ -3553,6 +4140,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -3575,6 +4165,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -3597,6 +4190,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of imipenem, cilastatin, or relebactam were observed based on age, gender, or race/ethnicity."
    },
@@ -3619,6 +4215,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -3641,6 +4240,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -3663,6 +4265,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "There were no clinically significant differences in the pharmacokinetics of talquetamab-tgvs based on age (33 to 86 years), sex, race (White, Black or African American), ethnicity (Not Hispanic/Latino, Hispanic/Latino), mild or moderate renal impairment (creatinine clearance [CLcr] by Cockcroft-Gaul"
    },
@@ -3685,6 +4290,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -3707,6 +4315,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations There was no clinically meaningful effect of age (range 23-91 years), sex, body surface area (range 1.2-2.7 m 2 ), or race on the clearance of ixazomib based on population PK analysis."
    },
@@ -3729,6 +4340,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "affects exposure",
+    "weight_example": "Body weight was a significant covariate affecting the clearance of TRESIBA.",
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -3751,6 +4365,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations There were no clinically significant differences in the pharmacokinetics of vadadustat based on age, sex, race/ethnicity, or moderate hepatic impairment (Child-Pugh Class B)."
    },
@@ -3773,6 +4390,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of etrasimod were observed based on age (>65 years), sex, body weight, race, ethnicity, disease (healthy subjects vs."
    },
@@ -3795,6 +4415,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Sex Pharmacokinetics analyses showed that sex did not have a significant effect on uridine pharmacokinetics."
    },
@@ -3817,6 +4440,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Effects of Age, Sex, Race, and Body Weight on Pharmacokinetics Based on population PK analysis, age, body weight, sex and race (non-white versus primarily whites) do not have a clinically meaningful effect on the PK of sotagliflozin."
    },
@@ -3839,6 +4465,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -3861,6 +4490,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -3883,6 +4515,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of eravacycline were observed based on age (18-86 years), sex, and race."
    },
@@ -3905,6 +4540,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of fruquintinib were observed based on age (18 to 82 years), sex, race (Asian, Black, and White), ethnicity (Hispanic/Latino vs."
    },
@@ -3927,6 +4565,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Male and Female Patients There is no apparent effect of gender on the pharmacokinetics of \u03b1-HTBZ and \u03b2\u2011HTBZ of deutetrabenazine."
    },
@@ -3949,6 +4590,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of pacritinib were observed based on age, sex, body weight, or race."
    },
@@ -3971,6 +4615,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of XENLETA were observed based on age, sex, race, weight, or renal impairment including patients receiving hemodialysis."
    },
@@ -3993,6 +4640,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of teplizumab-mzwv were observed based on age (1 to 35 years old), sex, or racial groups (White, Asians)."
    },
@@ -4015,6 +4665,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -4037,6 +4690,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Figure 1: Mean (\u00b1 SD) Concentrations of Omadacycline in Alveolar Cells, Epithelial Lining, and Plasma Following Multiple 100 mg IV Doses of NUZYRA to Healthy Subjects During Bronchoscopy Sampling Times Figure 1 Specific Populations No clinically significant differences in the pharmacokinetics of oma"
    },
@@ -4059,6 +4715,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -4081,6 +4740,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -4103,6 +4765,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Body weight, sex, race, and age did not have a clinically meaningful effect on CIBINQO exposure."
    },
@@ -4125,6 +4790,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Feces 91.6% (primarily metabolites) 72% (unchanged or M2-TEZ) [0.79% as unchanged drug] Not available Urine 0.50% 13.7% Not available Specific Populations No clinically significant differences in the pharmacokinetics of vanzacaftor, tezacaftor, or deutivacaftor were observed based on age, sex, race,"
    },
@@ -4147,6 +4815,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "affects exposure",
+    "weight_example": "Specific Populations Bodyweight (40 to 163 kg) has a significant effect on the pharmacokinetics of tafasitamab-cxix, with higher clearance and volume of distribution expected with higher body weight.",
     "sex_statement": "no difference asserted",
     "example": "No clinically meaningful differences in the pharmacokinetics of tafasitamab-cxix were observed based on age (16 to 90 years), sex, mild to moderate renal impairment (CLcr 30-89 mL/min estimated by the Cockcroft-Gault equation), and mild hepatic impairment (total bilirubin \u2264 ULN and AST > ULN, or tot"
    },
@@ -4169,6 +4840,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -4191,6 +4865,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -4213,6 +4890,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -4235,6 +4915,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of selinexor were observed based on age (18 to 94 years old), sex, body weight (36 to 168 kg), ethnicity, mild to severe renal impairment (CL CR : 15 to 89 mL/min, estimated by the Cockcroft-Gault equation), and disea"
    },
@@ -4257,6 +4940,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations There were no clinically significant differences in the pharmacokinetics of omaveloxolone based on age (16 to 71 years of age), sex, race, or body weight (41 to 128 kg)."
    },
@@ -4279,6 +4965,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -4301,6 +4990,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": false,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -4323,6 +5015,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Age, Sex, Race and Body Weight Age, sex, race (Caucasian vs Asian) and body weight had no clinically important effect on systemic exposure of idarucizumab based on population pharmacokinetic analyses which included data from 220 volunteers and 486 patients."
    },
@@ -4345,6 +5040,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -4367,6 +5065,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences of tovorafenib were observed based on age (range: 1 to 94 years), sex, race (White, Black, Asian), mild hepatic impairment [bilirubin \u2264 upper limit of normal (ULN) and AST > ULN or bilirubin > 1 to 1.5\u00d7 ULN and any AST], and mild-to-moderate"
    },
@@ -4389,6 +5090,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "quantified difference",
     "example": "Male and Female Patients Following a single oral dose of 100 mg lonafarnib in healthy subjects, the plasma lonafarnib AUC and C max were 44% and 26% higher in female subjects, respectively, compared to male subjects."
    },
@@ -4411,6 +5115,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -4433,6 +5140,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of pretomanid were observed based on sex, body weight, race (Black, White, or other), pulmonary TB status (resistant to isoniazid, rifamycins, a fluoroquinolone and a second line injectable antibacterial drug OR resis"
    },
@@ -4455,6 +5165,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -4477,6 +5190,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "affects exposure",
+    "weight_example": "The exposure of evolocumab decreased with increasing body weight.",
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -4499,6 +5215,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Effects of Age, Body Weight, Gender, and Race Based on a population pharmacokinetic analysis, age, body weight, gender, and race do not have a clinically meaningful effect on the pharmacokinetics of ertugliflozin."
    },
@@ -4521,6 +5240,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of elranatamab-bcmm were observed based on age (36 to 89 years), sex, race (White, Asian, or Black), body weight (37 to 160 kg), mild or moderate renal impairment (estimated glomerular filtration rate [eGFR] by Modifi"
    },
@@ -4543,6 +5265,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -4565,6 +5290,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "affects exposure",
+    "weight_example": "Body weight In patients who received the recommended SARCLISA ESCENA subcutaneous dosage, the steady state C trough and AUC 2weeks were 44% and 41% lower in the higher body weight (BW) group (>100 kg), and 24% and 26% higher in the lower BW group (\u226450 kg), compared to the patients with BW of 51 kg\u20131",
     "sex_statement": "quantified difference",
     "example": "Specific Populations The following factors have no clinically meaningful effect on the exposure of isatuximab-irfc: age (31 to 86 years, 18% patients were \u226575 years old), sex, race (White 66%, Asian 15%), renal impairment including patients with End-Stage Renal Disease (ESRD) or on dialysis (eGFR <9"
    },
@@ -4587,6 +5315,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of olutasidenib were observed based on age (28 to 90 years), sex, body weight (36 to 145 kg), mild to moderate renal impairment (creatinine clearance [CLcr] 30 to <90mL/min as estimated by Cockcroft-Gault), or mild (t"
    },
@@ -4609,6 +5340,9 @@
     "sex_dose": false,
     "has_lactation_section": true,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of ensartinib were observed based on age (20 to 86 years), sex, race (Asian vs White), body weight (38 to 148 kg), mild to moderate renal impairment (eGFR 30 to 89 mL/min) and mild hepatic impairment (total bilirubin "
    },
@@ -4631,6 +5365,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Sex There were no differences observed in the pharmacokinetics of brivaracetam between male and female subjects."
    },
@@ -4653,6 +5390,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Male and Female Patients Based on population PK analysis, the exposures of elexacaftor, tezacaftor and ivacaftor are similar in males and females."
    },
@@ -4675,6 +5415,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -4697,6 +5440,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -4719,6 +5465,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -4741,6 +5490,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Population PK analysis indicated that age, gender, and race do not have clinically relevant effects on the pharmacokinetics of solriamfetol."
    },
@@ -4763,6 +5515,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of cenobamate were observed based on age based on data from subjects age 18 years to 77 years, sex, or race/ethnicity based on data from subjects categorized as Asian, Black, Caucasian, Hispanic, or Other."
    },
@@ -4785,6 +5540,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -4807,6 +5565,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -4829,6 +5590,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Based on population pharmacokinetic analyses, no clinically relevant changes in the pharmacokinetics of istradefylline were observed based on age, sex, weight, or race."
    },
@@ -4851,6 +5615,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of pitolisant were observed based on age (18 to 82 years old), sex, race/ethnicity (Caucasians or Blacks), or body weight (48 to 103 kg)."
    },
@@ -4873,6 +5640,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant difference in the pharmacokinetics of tebentafusp-tebn were identified based on weight (43 to 163 kg), sex (48% female), age (23 to 91 years), or mild to moderate renal impairment based on creatinine clearance (CL cr ) estimated by C-G formula (CL cr 30"
    },
@@ -4895,6 +5665,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": ">92% of total radioactivity as ivosidenib Metabolic pathways Major CYP3A4 Minor N-dealkylation and hydrolytic pathways Excretion Urine 17% (10% as unchanged ivosidenib) Feces 77% (67% as unchanged ivosidenib) Specific Populations No clinically significant effects on the pharmacokinetics of ivosideni"
    },
@@ -4917,6 +5690,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "affects exposure",
+    "weight_example": "patients not receiving the recommended dose (n=3) were excluded XOFLUZA Dose for Subjects Weighing < 20 kg XOFLUZA Dose for Subjects Weighing \u2265 20 kg (n=8) (n=55) 2 mg/kg 40 mg AUC inf (ng.h/mL) 5830 (48.5) 4360 (48.9) C max (ng/mL) 148 (48.7) 81.1 (44.0) T max (h) Median (range) 3.5 (2-5.5) 4.5 (2-",
     "sex_statement": "no difference asserted",
     "example": "3.3 (baloxavir) Feces: 80.1 (total radioactivity) No clinically significant differences in the pharmacokinetics of baloxavir were observed based on age, sex, presence of risk factors for complicated influenza, creatinine clearance (CrCl: 50 mL/min and above), or moderate hepatic impairment (Child-Pu"
    },
@@ -4939,6 +5715,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Male and Female Patients The pharmacokinetic parameters of tezacaftor and ivacaftor are similar in males and females."
    },
@@ -4961,6 +5740,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Age and Sex Population pharmacokinetic analysis indicated that age (18 to 83 years) and sex do not affect the pharmacokinetics of telotristat."
    },
@@ -4983,6 +5765,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -5005,6 +5790,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations There were no clinically significant differences in the pharmacokinetics of nirmatrelvir based on age (18 to 86 years), sex, or race/ethnicity."
    },
@@ -5027,6 +5815,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in plozasiran pharmacokinetics based on age, sex, race, mild and moderate renal impairment (eGFR \u226530 to <90 mL/min), or mild hepatic impairment (total bilirubin \u22641 times ULN and AST >1 times ULN, or total bilirubin >1.0 to 1.5 times ULN and "
    },
@@ -5049,6 +5840,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -5071,6 +5865,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -5093,6 +5890,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of dordaviprone were observed based on age (3 to 90 years), sex, race (74% White, 9% Black or African American, or 5% Asian) or mild hepatic impairment (total bilirubin \u2264ULN with AST >ULN or total bilirubin >1 to 1.5 "
    },
@@ -5115,6 +5915,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the PK of pralsetinib were observed based on age (19 to 87 years), sex, race (White, Black, or Asian), and body weight (32 to 128 kg)."
    },
@@ -5137,6 +5940,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -5159,6 +5965,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "affects exposure",
+    "weight_example": "Specific Populations Body weight : Adults with GHD \u2013 The exposure of somapacitan-beco decreases with increasing body weight.",
     "sex_statement": "difference noted",
     "example": "Pediatric patients with GHD : Based on pharmacokinetic analysis, gender and race do not have a clinically meaningful effect on the pharmacokinetics."
    },
@@ -5181,6 +5990,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -5203,6 +6015,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -5225,6 +6040,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of setmelanotide were observed based on sex or disease."
    },
@@ -5247,6 +6065,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -5269,6 +6090,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -5291,6 +6115,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of LEROCHOL were observed based on age (21 to 78 years), body weight, sex, race, mild (eGFR 60 to 89 mL/min) or moderate (eGFR 30 to 59 mL/min) renal impairment, or mild (total bilirubin 1.0 to 1.5 upper limit of norm"
    },
@@ -5313,6 +6140,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -5335,6 +6165,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -5357,6 +6190,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Other Specific Populations Age, sex, race, and weight had no clinically relevant effect on BYFAVO pharmacokinetics."
    },
@@ -5379,6 +6215,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of plazomicin were observed based on age (18 to 90 years of age), sex, or race/ethnicity."
    },
@@ -5401,6 +6240,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -5423,6 +6265,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "affects exposure",
+    "weight_example": "Specific Populations Body weight (3 to 80 kg) was a significant covariate of emapalumab-lzsg pharmacokinetics, supporting body weight-based dosing.",
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -5445,6 +6290,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -5467,6 +6315,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Sex does not have a clinically significant effect on the pharmacokinetics of DIACOMIT."
    },
@@ -5489,6 +6340,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -5511,6 +6365,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Age (18 to 74 years) and sex did not have clinically meaningful effects on the pharmacokinetics of cipaglucosidase alfa-atga."
    },
@@ -5533,6 +6390,9 @@
     "sex_dose": false,
     "has_lactation_section": true,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -5555,6 +6415,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -5577,6 +6440,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -5599,6 +6465,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Age (21 to 83 years), body weight (38 to 128 kg), mild hepatic impairment (total bilirubin \u2264 ULN and AST > ULN or total bilirubin 1 to \u2264 1.5 \u00d7 ULN and AST any value), mild to moderate renal impairment (creatinine clearance 30 to 89 mL/min), race (White, Asian, and Other), and se"
    },
@@ -5621,6 +6490,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations There were no clinically significant differences in the exposure of quizartinib and AC886 based on age (range 18 to 91 years), sex, race (White 65%, Asian 18%, Black 9%), or body weight (range 37 to 153 kg)."
    },
@@ -5643,6 +6515,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of gadopiclenol were observed based on sex."
    },
@@ -5665,6 +6540,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of cefiderocol were observed based on age (18 to 93 years of age), sex, or race."
    },
@@ -5687,6 +6565,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -5709,6 +6590,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -5731,6 +6615,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics or pharmacodynamics of nedosiran were observed based on age (2 to 73 years old), sex, race/ethnicity, mild-to-moderate renal impairment (eGFR 30 to 89 mL/min/1.73 m 2 ) [see Use in Specific Populations ( \u200e 8.7 ) ] or "
    },
@@ -5753,6 +6640,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -5775,6 +6665,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of entrectinib were observed based on sex, race (White, Asian and Black), mild to moderate renal impairment (CLcr 30 to < 90 mL/min) and mild hepatic impairment (total bilirubin \u2264 ULN with aspartate aminotransferase >"
    },
@@ -5797,6 +6690,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of adagrasib based on age (19 to 89 years), sex, race (White, Black or African American, or Asian), body weight (36 to 146 kg), ECOG PS (0, 1), tumor type (NSCLC or CRC), or tumor burden."
    },
@@ -5819,6 +6715,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -5841,6 +6740,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -5863,6 +6765,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically meaningful differences in the pharmacokinetics of zanidatamab-hrii were observed based on age (22 to 87 years), sex, body weight (35 to 142 kg), race (White 39%, Asian 56%, or Black 0.7%), cancer type, creatinine clearance 30 to 89 mL/min (estimated by the Cockcrof"
    },
@@ -5885,6 +6790,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": false,
+    "weight_based": false,
+    "weight_effect": "affects exposure",
+    "weight_example": "However, resmetirom CL/F and Vd/F increase with increasing body weight, resulting in lower resmetirom exposure in patients with higher body weight receiving the same dosage as lower weight patients [see Dosage and Administration (2.1) ] .",
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of resmetirom were observed based on age (18 to 83 years), sex, race (White, Black, or Asian), or ABCG2 genotype (BCRP p.Gln141Lys, p.Val12Met)."
    },
@@ -5907,6 +6815,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -5929,6 +6840,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of entrectinib were observed based on sex, race (White, Asian and Black), mild to moderate renal impairment (CLcr 30 to < 90 mL/min) and mild hepatic impairment (total bilirubin \u2264 ULN with aspartate aminotransferase >"
    },
@@ -5951,6 +6865,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of futibatinib were observed based on age (18 to 82 years), sex, race (White, Asian, and African American), body weight (36 to 152 kg), or creatinine clearance (CLcr) 30 to 89 mL/min (estimated by Cockcroft-Gault)."
    },
@@ -5973,6 +6890,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Following repeat intravitreal dose administration of BEOVU in the HAWK and HARRIER clinical studies, no differences in the systemic pharmacokinetics of brolucizumab were observed based on age (50 years and above), sex, or mild to moderate renal impairment (glomerular filtration "
    },
@@ -5995,6 +6915,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -6017,6 +6940,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -6039,6 +6965,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Age, race, sex, body weight, and albumin concentration have no clinically meaningful effect on the pharmacokinetics of brigatinib."
    },
@@ -6061,6 +6990,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -6083,6 +7015,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "affects exposure",
+    "weight_example": "The clearance of bezlotoxumab increased with increasing body weight;",
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Gender, Race, Ethnicity, and Co-Morbid Conditions The following factors had no clinically meaningful effect on the exposure of bezlotoxumab in adults: gender, race, ethnicity, and presence of co-morbid conditions."
    },
@@ -6105,6 +7040,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of sarecycline were observed based on age (11 to 73 years), weight (42 to 133 kg), sex, renal impairment, or mild to moderate hepatic impairment (Child Pugh A to B)."
    },
@@ -6127,6 +7065,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of zenocutuzumab-zbco were observed based on age (22 to 88 years), sex, race [White or Asian], body weight (38 to 126 kg), albumin level (20 to 49 g/L), mild or moderate renal impairment (creatinine clearance (CLcr) 3"
    },
@@ -6149,6 +7090,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -6171,6 +7115,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the systemic exposure of pemigatinib were observed based on age (21 \u2011 79 years), sex, race/ethnicity (White 68.2%, Asian 16%, Black 6.3%, Hispanic 6%, other 3.5%) or body weight (39.8 \u2011 156 kg)."
    },
@@ -6193,6 +7140,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -6215,6 +7165,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in lorlatinib pharmacokinetics were observed based on age (19 to 85 years), sex, race/ethnicity (52% White, 8% Black, 27% Asian), body weight (32-156 kg), CL cr 30 to 89 mL/min (estimated by Cockcroft Gault), mild (total bilirubin \u2264 ULN and "
    },
@@ -6237,6 +7190,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -6259,6 +7215,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the luspatercept-aamt PK were observed based on age (18 to 95 years), sex, race/ethnicity (Asian, White), mild to severe hepatic impairment (total bilirubin \u2264 ULN and AST or ALT > ULN, or total bilirubin > ULN and any AST or ALT), mild to"
    },
@@ -6281,6 +7240,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "affects exposure",
+    "weight_example": "Lower body weight was associated with lower mavorixafor clearance.",
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of mavorixafor were observed based on age (12 to 58 years), sex, or mild to moderate renal impairment (CLcr 30 to <90 mL/min as estimated by the Cockcroft-Gault formula)."
    },
@@ -6303,6 +7265,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -6325,6 +7290,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -6347,6 +7315,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of danicopan were observed based on sex, age (16.9 to 82 years), or race (Caucasians and Asians) based on population pharmacokinetic (PK) assessment."
    },
@@ -6369,6 +7340,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of atrasentan were observed based on age (19 to 77 years), sex, race, mild to severe renal impairment (eGFR 15 to 90 mL/min/1.73 m 2 , estimated by CKD-EPI), or mild to moderate hepatic impairment (Child-Pugh class A "
    },
@@ -6391,6 +7365,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of tecovirimat were observed based on age, sex, ethnicity, renal impairment (based on estimated GFR), or hepatic impairment (Child Pugh Scores A, B or C)."
    },
@@ -6413,6 +7390,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -6435,6 +7415,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of vimseltinib were observed based on age (20 to 91 years), sex, race (Asian, Black or African American, White), body weight (43 to 150 kg), tumor (TGCT or other malignant solid tumors), and mild to moderate renal imp"
    },
@@ -6457,6 +7440,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of voxelotor were observed based on age (12 to 59 years), sex, body weight (28 to 135 kg), or mild to severe renal impairment (creatinine clearance [CLcr] 15-89 mL/min)."
    },
@@ -6479,6 +7465,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -6501,6 +7490,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Racial Groups and Male and Female Patients: Population pharmacokinetics analyses indicated there was no significant effect of race and gender on mepolizumab clearance."
    },
@@ -6523,6 +7515,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "affects exposure",
+    "weight_example": "Body Weight The exposure of nemolizumab-ilto decreases with increasing body weight.",
     "sex_statement": "silent",
     "example": null
    },
@@ -6545,6 +7540,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "affects exposure",
+    "weight_example": "Body Weight Clearance and volume of distribution of burosumab-twza increases with body weight.",
     "sex_statement": "silent",
     "example": null
    },
@@ -6567,6 +7565,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Male and Female Patients Gender has no influence on siponimod pharmacokinetics (PK)."
    },
@@ -6589,6 +7590,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -6611,6 +7615,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically relevant differences in the pharmacokinetics of sebetralstat were observed based on body weight (45-135 kg), age (19-68 years), sex, race (71% White, 17% Black, 11% Asian), and mild renal impairment (eGFR 60-89 mL/min/1.73 m 2 )."
    },
@@ -6633,6 +7640,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "There were no significant effects of age or gender (25 male vs."
    },
@@ -6655,6 +7665,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Age, Male and Female Patients and Racial or Ethnic Groups Population pharmacokinetic analyses indicated that age, sex and race had no significant impact on the pharmacokinetics of rolapitant."
    },
@@ -6677,6 +7690,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "affects exposure",
+    "weight_example": "Specific Populations Body Weight Body weight was a significant covariate on the pharmacokinetics of pozelimab-bbfg.",
     "sex_statement": "silent",
     "example": null
    },
@@ -6699,6 +7715,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Age, Sex, and Race The pharmacokinetics of nipocalimab-aahu were not affected by age, sex, or race based on a population pharmacokinetics analysis."
    },
@@ -6721,6 +7740,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Age, Sex, and Race The pharmacokinetics of rozanolixizumab-noli were not affected by age, sex, or race based on a population pharmacokinetics analysis."
    },
@@ -6743,6 +7765,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -6765,6 +7790,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "affects exposure",
+    "weight_example": "clearance increased with an increase in body weight.",
     "sex_statement": "silent",
     "example": null
    },
@@ -6787,6 +7815,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -6809,6 +7840,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -6831,6 +7865,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -6853,6 +7890,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -6875,6 +7915,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Age, Race, and Gender Population PK analyses demonstrated that there was no significant effect of age, race, or gender on the PK of reslizumab."
    },
@@ -6897,6 +7940,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -6919,6 +7965,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Sex, Race or Ethnicity: There were no clinically significant differences in the pharmacokinetics of vonoprazan based on sex or race/ethnicity."
    },
@@ -6941,6 +7990,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -6963,6 +8015,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of sutimlimab-jome were observed based on sex, age (19 to 88 years of age), ethnicity (Japanese, non-Japanese), and mild to moderate renal impairment (30 to 89 mL/min/1.73 m 2 measured by estimated glomerular filtrati"
    },
@@ -6985,6 +8040,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Gender, Race A population pharmacokinetics analysis indicated that there was no significant effect of gender and race on benralizumab clearance."
    },
@@ -7007,6 +8065,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Special Populations No clinically significant differences in the pharmacokinetics of rilzabrutinib were observed based on age (12 to 80 years), sex, race, mild to moderate renal impairment (CL CR 46 to 89 mL/min), or mild hepatic impairment (Child-Pugh class A)."
    },
@@ -7029,6 +8090,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -7051,6 +8115,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -7073,6 +8140,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of depemokimab\u2011ulaa were observed based on age (12 to 93 years), sex, race (73% White, 7% Black, 19% Asian), body weight (34.6 to 161 kg), renal impairment (eGFR \u226590 mL/min/1.73 m 2 [normal, N = 548];"
    },
@@ -7095,6 +8165,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically meaningful effects on the pharmacokinetics of mitapivat were observed based on age, sex, race, or body weight."
    },
@@ -7117,6 +8190,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of repotrectinib were observed based on age (12 to 93 years), sex, race (White 50%, Asian 38%, Black 7%), mild to moderate renal impairment (eGFR 30 to < 90 mL/min), or mild hepatic impairment (total bilirubin >1 to 1"
    },
@@ -7139,6 +8215,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations There were no clinically meaningful differences in the pharmacokinetics of ublituximab-xiiy based on age, sex, body weight, anti-drug antibodies (ADAs) presence, mild renal impairment, or mild hepatic impairment."
    },
@@ -7161,6 +8240,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -7183,6 +8265,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -7205,6 +8290,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "affects exposure",
+    "weight_example": "Body weight (6-151 kg) has a significant effect on the pharmacokinetics of revumenib, with higher revumenib exposures in patients with lower body weight (less than 40 kg).",
     "sex_statement": "silent",
     "example": null
    },
@@ -7227,6 +8315,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of brensocatib were observed based on age (12 to 85 years), sex, race (72% White, 6% Black, and 12% Asian), or body weight (32 to 155 kg)."
    },
@@ -7249,6 +8340,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "GMR = geometric mean ratio Specific Populations No clinically significant differences in the pharmacokinetics of nirogacestat were observed based on age (18 to 80 years), sex, race (Asian 2.1%, Black or African American 26%, and White 66%), or mild or moderate renal impairment (eGFR \u2265 41 mL/min/1.73"
    },
@@ -7271,6 +8365,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -7293,6 +8390,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of remibrutinib were observed based on age (range: 18 to 80 years), sex (63.5% females and 36.5% males), race/ethnicity (59.3% Non-Asian [White, Black, and Others], 8.8% Mainland Chinese, 12.2% Japanese, and 19.7% oth"
    },
@@ -7315,6 +8415,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -7337,6 +8440,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations In adults and pediatric patients 12 to <18 years of age, no clinically significant differences in the pharmacokinetics of ORLADEYO were observed based on age (12 to 74 years), sex, race, and body weight."
    },
@@ -7359,6 +8465,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Male and Female Patients Meropenem and vaborbactam C max and AUC were similar between males and females using a population pharmacokinetic analysis."
    },
@@ -7381,6 +8490,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -7403,6 +8515,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -7425,6 +8540,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Male and Female Patients No clinically significant differences in the pharmacokinetics of ozanimod and CC112273 were observed based on sex or weight."
    },
@@ -7447,6 +8565,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of caplacizumab-yhdp were observed based on age (18 to 79 years), sex (66% females), race (White [83%] and Black [17%]), blood group (O [41%] and other groups [59%]), or renal impairment (mild [CrCl: 60 to 90 mL/min],"
    },
@@ -7469,6 +8590,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": false,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -7491,6 +8615,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "affects exposure",
+    "weight_example": "Body Weight Spesolimab-sbzo concentrations were increased in subjects with lower body weight and decreased in subjects with higher body weight.",
     "sex_statement": "difference noted",
     "example": "the percentage of subjects with ADA titer greater than 4000 was 30% in females, and 12% in males, respectively."
    },
@@ -7513,6 +8640,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -7535,6 +8665,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "affects exposure",
+    "weight_example": "Specific Populations The apparent volume of distribution and clearance of zongertinib increase with increasing body weight (34 to 122 kg).",
     "sex_statement": "no difference asserted",
     "example": "No clinically significant differences in the pharmacokinetics of zongertinib were observed based on age (30 to 88 years), sex, race (36% White, 49% Asian, 1.3% Black/African American), eGFR 60 to < 90 mL/min, or mild (defined as Child-Pugh A;"
    },
@@ -7557,6 +8690,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -7579,6 +8715,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -7601,6 +8740,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -7623,6 +8765,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "quantified difference",
     "example": "Gender Following single-dose administration of 0.5 grams avibactam as a 30-minute infusion, healthy male subjects (n = 17) had 18% lower avibactam C max values than healthy female subjects (n = 16)."
    },
@@ -7645,6 +8790,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -7667,6 +8815,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -7689,6 +8840,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Use in Specific Populations Population pharmacokinetic analysis of a combined study population of 1,343 subjects indicated that there were no clinically significant differences in the pharmacokinetics of prucalopride based on age (17-95 years), sex, race (89% white, 7% black, 4% other), or body weig"
    },
@@ -7711,6 +8865,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of lemborexant were observed based on age, sex, race/ethnicity, or body mass index."
    },
@@ -7733,6 +8890,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -7755,6 +8915,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Age and gender have no significant impact on osilodrostat exposure in adults."
    },
@@ -7777,6 +8940,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations There are no clinically significant differences in the pharmacokinetics of palopegteriparatide based on age, sex, or body weight."
    },
@@ -7799,6 +8965,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Renal Impairment In a study comparing subjects with end stage renal disease (N=8) to healthy age and sex\u2212matched healthy subjects (N=8), no significant difference in oliceridine clearance was observed."
    },
@@ -7821,6 +8990,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -7843,6 +9015,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "affects exposure",
+    "weight_example": "Pediatric Patients In pediatric patients with JIA with active polyarthritis, upadacitinib clearance increased with increasing body weight.",
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Body Weight, Gender, and Race Body weight, gender, race, and ethnicity did not have a clinically meaningful effect on upadacitinib exposure in adult patient populations."
    },
@@ -7865,6 +9040,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically relevant effects of sex, race, age or body weight on the pharmacokinetics of selexipag and its active metabolite have been observed in healthy subjects or PAH patients."
    },
@@ -7887,6 +9065,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Effects of Body Weight, Gender, Race, and Age Body weight, gender, race, ethnicity, and age did not have a clinically relevant effect on the PK (AUC and C max ) of baricitinib (Figure 1)."
    },
@@ -7909,6 +9090,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -7931,6 +9115,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -7953,6 +9140,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -7975,6 +9165,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Age, Sex, Race/Ethnicity, and Body Weight Based on a population pharmacokinetic (PK) analysis, age, sex, race/ethnicity, and body weight did not have a significant effect on the PK (C max and AUC) of lasmiditan."
    },
@@ -7997,6 +9190,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -8019,6 +9215,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Other Specific Populations No clinically significant differences in the pharmacokinetics of rimegepant were observed based on age, sex, race/ethnicity, body weight, or CYP2C9 genotype [see Clinical Pharmacology (12.5) ]."
    },
@@ -8041,6 +9240,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of vibegron were observed based on age (18 to 93 years), sex, race/ethnicity (Japanese vs."
    },
@@ -8063,6 +9265,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Age, Sex, Weight, Race, Ethnicity The pharmacokinetics of galcanezumab-gnlm were not affected by age, sex, race, subtypes of migraine spectrum (episodic or chronic migraine), or headache diagnosis (migraine vs."
    },
@@ -8085,6 +9290,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations There were no clinically significant differences in the pharmacokinetics of voclosporin based on age (18 to 66 years), sex, race (Caucasian, Black, Asian, other), or body weight (37 to 133 kg)."
    },
@@ -8107,6 +9315,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -8129,6 +9340,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in fremanezumab-vfrm pharmacokinetics were predicted based on race (White, Black, Asian, and other races), sex, mild hepatic impairment (Child-Pugh Class A), and moderate hepatic impairment (Child-Pugh Class B)."
    },
@@ -8151,6 +9365,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -8173,6 +9390,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Age, Sex, and Racial Groups No clinically significant effect on the pharmacokinetics of amisulpride was observed based on age (18 to 90 years), sex, or race."
    },
@@ -8195,6 +9415,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in pharmacokinetics of suzetrigine and M6-SUZ were observed based on age (18-75 years), sex, body weight (44-126 kg), race, and renal impairment (eGFR \u2265 15 mL/min by CKD-EPI equation with adjustment for the body surface area)."
    },
@@ -8217,6 +9440,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -8239,6 +9465,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -8261,6 +9490,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -8283,6 +9515,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -8305,6 +9540,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -8327,6 +9565,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -8349,6 +9590,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -8371,6 +9615,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations There were no clinically significant differences in the pharmacokinetics of elacestrant based on age (24 to 89 years), sex, and body weight (41 to 143 kg)."
    },
@@ -8393,6 +9640,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "affects exposure",
+    "weight_example": "Specific Populations The mean volume of distribution and clearance of datopotamab deruxtecan-dlnk and DXd increase with increasing body weight (36 kg to 156 kg).",
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -8415,6 +9665,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -8437,6 +9690,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "CLcr 30 to 59 mL/min (n = 6)), body weight (41 to 146 kg), sex (male (n = 170), female (n = 113)) and race (White (n = 205), Black (n = 37), or Asian (n = 25)) did not have a clinically meaningful effect on tucatinib exposure."
    },
@@ -8459,6 +9715,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -8481,6 +9740,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -8503,6 +9765,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -8525,6 +9790,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of alpelisib were predicted based on age (21 to 87 years), sex, race/ethnicity (Japanese or Caucasian), body weight (37 to 181 kg), mild to moderate renal impairment (CLcr 30 to < 90 mL/min based on the Cockcroft-Gaul"
    },
@@ -8547,6 +9815,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -8569,6 +9840,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "quantified difference",
     "example": "The increase in geometric mean sCTX levels in postmenopausal women peaked at Month 3 at 26% above baseline then decreased to baseline levels by Month 18."
    },
@@ -8591,6 +9865,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -8613,6 +9890,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of avutometinib were observed based on age (21 to 87 years), sex, race (84% White, 3% Black and 2% Asian), body weight (40 to 169 kg), mild and moderate renal impairment (CLcr 30 to 89 mL/min, estimated by Cockcroft-G"
    },
@@ -8635,6 +9915,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "affects exposure",
+    "weight_example": "Body Weight The exposure of romosozumab-aqqg decreases with increasing body weight.",
     "sex_statement": "no difference asserted",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of romosozumab-aqqg were observed based on age (20-89 years), sex, race, disease state (low bone mass or osteoporosis), prior exposure to alendronate, or renal impairment including end-stage renal disease (ESRD) requi"
    },
@@ -8657,6 +9940,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Age, Gender, and Body Weight Based on a population pharmacokinetic analysis in 183 patients with cancer (50 male and 133 female patients, age range from 22 to 89 years, and body weight range from 37.9 to 123 kg), gender had no effect on the exposure of palbociclib, and age and b"
    },
@@ -8679,6 +9965,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Effect of Age, Weight, Gender, and Race No clinically relevant effects of age, body weight, gender, or race on the systemic exposure of ribociclib were identified."
    },
@@ -8701,6 +9990,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": true,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Age, sex, race, and renal function do not have a clinically significant effect on neratinib pharmacokinetics."
    },
@@ -8723,6 +10015,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -8745,6 +10040,9 @@
     "sex_dose": true,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -8767,6 +10065,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "quantified difference",
     "example": "Race/Ethnicity A cross-study comparison between healthy Japanese women and Caucasian women with HSDD showed that flibanserin exposure was approximately 1.4-fold higher in Japanese women."
    },
@@ -8789,6 +10090,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "major route of elimination for absorbed gepotidacin) Specific Populations Modelling and simulation analyses of gepotidacin showed that age, sex, and race have no clinically relevant effect on gepotidacin exposure."
    },
@@ -8811,6 +10115,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -8833,6 +10140,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -8855,6 +10165,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -8877,6 +10190,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -8899,6 +10215,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "no effect stated",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -8921,6 +10240,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations There were no clinically significant differences in the pharmacokinetics of oteseconazole based on sex, race/ethnicity or mild to moderate renal impairment."
    },
@@ -8943,6 +10265,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
    },
@@ -8965,6 +10290,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -8987,6 +10315,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "silent",
     "example": null
    },
@@ -9009,6 +10340,9 @@
     "sex_dose": false,
     "has_lactation_section": false,
     "has_pregnancy_section": true,
+    "weight_based": false,
+    "weight_effect": "silent",
+    "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Specific Populations Male and Female, Racial or Ethnic Groups, and Age No clinically meaningful differences in pharmacokinetics of zuranolone were observed based on age (18-81 years), sex, or race."
    }
@@ -11943,6 +13277,158 @@
     }
    ]
   },
+  "sexfactors": [
+   {
+    "year": 1996,
+    "rct_both_sexes": 6023,
+    "sex_factors": 113,
+    "pct": 1.88
+   },
+   {
+    "year": 1997,
+    "rct_both_sexes": 6262,
+    "sex_factors": 93,
+    "pct": 1.49
+   },
+   {
+    "year": 1998,
+    "rct_both_sexes": 6735,
+    "sex_factors": 114,
+    "pct": 1.69
+   },
+   {
+    "year": 1999,
+    "rct_both_sexes": 7140,
+    "sex_factors": 115,
+    "pct": 1.61
+   },
+   {
+    "year": 2000,
+    "rct_both_sexes": 7027,
+    "sex_factors": 132,
+    "pct": 1.88
+   },
+   {
+    "year": 2001,
+    "rct_both_sexes": 7705,
+    "sex_factors": 121,
+    "pct": 1.57
+   },
+   {
+    "year": 2002,
+    "rct_both_sexes": 7858,
+    "sex_factors": 137,
+    "pct": 1.74
+   },
+   {
+    "year": 2003,
+    "rct_both_sexes": 8655,
+    "sex_factors": 147,
+    "pct": 1.7
+   },
+   {
+    "year": 2004,
+    "rct_both_sexes": 9755,
+    "sex_factors": 206,
+    "pct": 2.11
+   },
+   {
+    "year": 2005,
+    "rct_both_sexes": 10685,
+    "sex_factors": 219,
+    "pct": 2.05
+   },
+   {
+    "year": 2006,
+    "rct_both_sexes": 11369,
+    "sex_factors": 193,
+    "pct": 1.7
+   },
+   {
+    "year": 2007,
+    "rct_both_sexes": 12591,
+    "sex_factors": 260,
+    "pct": 2.06
+   },
+   {
+    "year": 2008,
+    "rct_both_sexes": 13278,
+    "sex_factors": 254,
+    "pct": 1.91
+   },
+   {
+    "year": 2009,
+    "rct_both_sexes": 13981,
+    "sex_factors": 293,
+    "pct": 2.1
+   },
+   {
+    "year": 2010,
+    "rct_both_sexes": 15209,
+    "sex_factors": 326,
+    "pct": 2.14
+   },
+   {
+    "year": 2011,
+    "rct_both_sexes": 17163,
+    "sex_factors": 318,
+    "pct": 1.85
+   },
+   {
+    "year": 2012,
+    "rct_both_sexes": 18824,
+    "sex_factors": 341,
+    "pct": 1.81
+   },
+   {
+    "year": 2013,
+    "rct_both_sexes": 20678,
+    "sex_factors": 362,
+    "pct": 1.75
+   },
+   {
+    "year": 2014,
+    "rct_both_sexes": 21025,
+    "sex_factors": 369,
+    "pct": 1.76
+   },
+   {
+    "year": 2015,
+    "rct_both_sexes": 20936,
+    "sex_factors": 367,
+    "pct": 1.75
+   },
+   {
+    "year": 2016,
+    "rct_both_sexes": 20104,
+    "sex_factors": 251,
+    "pct": 1.25
+   },
+   {
+    "year": 2017,
+    "rct_both_sexes": 20182,
+    "sex_factors": 252,
+    "pct": 1.25
+   },
+   {
+    "year": 2018,
+    "rct_both_sexes": 19517,
+    "sex_factors": 228,
+    "pct": 1.17
+   },
+   {
+    "year": 2019,
+    "rct_both_sexes": 18634,
+    "sex_factors": 241,
+    "pct": 1.29
+   },
+   {
+    "year": 2020,
+    "rct_both_sexes": 15305,
+    "sex_factors": 176,
+    "pct": 1.15
+   }
+  ],
   "latest": {
    "All rodent studies": {
     "year": 2020,

@@ -8,12 +8,12 @@ import MultiLine from '../components/charts/MultiLine'
 import ChartFrame from '../components/charts/ChartFrame'
 
 type Pt = { year: number; n: number; n_sexed: number; male_only_pct: number; female_only_pct: number; both_pct: number; includes_female_pct?: number; sexed_pct?: number }
-type Drug = { slug: string; brand: string; year: number | null; category: string; trial_female_pct: number; faers_female_pct: number | null; label_date: string | null; male_only_pk: boolean; quantified: boolean; difference: boolean; no_difference: boolean; not_evaluated: boolean; mentions_sex: boolean; no_preg_data: boolean; no_lact_data: boolean; sex_dose: boolean; sex_statement: string; example: string | null }
+type Drug = { weight_based: boolean; weight_effect: string; weight_example: string | null; slug: string; brand: string; year: number | null; category: string; trial_female_pct: number; faers_female_pct: number | null; label_date: string | null; male_only_pk: boolean; quantified: boolean; difference: boolean; no_difference: boolean; not_evaluated: boolean; mentions_sex: boolean; no_preg_data: boolean; no_lact_data: boolean; sex_dose: boolean; sex_statement: string; example: string | null }
 type Cat = { n: number; no_preg_data_pct: number; no_lact_data_pct: number; no_difference_pct: number; quantified_pct: number; male_only_pk_pct: number; trial_female_pct_median: number }
 type Data = {
   generated: string
-  labels: { n: number; statements: Record<string, number>; male_only_pk_pct: number; male_only_pk_n: number; quantified_pct: number; difference_pct: number; no_difference_pct: number; not_evaluated_pct: number; no_preg_data_pct: number; no_lact_data_pct: number; sex_dose_pct: number; sex_dose_n: number; sex_dose_brands: string[]; quantified_brands: { brand: string; example: string | null; trial_female_pct: number }[]; male_only_brands: { brand: string; trial_female_pct: number; category: string }[]; by_trial_share: Record<string, { n: number; no_difference_pct: number; quantified_pct: number; not_evaluated_pct: number; silent_pct: number }>; by_category: Record<string, Cat>; by_year: { year: number; n: number; no_preg_data_pct: number; no_lact_data_pct: number; no_difference_pct: number; quantified_pct: number }[]; drugs: Drug[] }
-  pubmed: { fields: Record<string, Pt[]>; nih: Pt[]; human: Record<string, Pt[]>; latest: Record<string, Pt>; years: [number, number] }
+  labels: { dosing: { n: number; weight_based_n: number; flat_n: number; flat_pct: number; flat_weight_affects_n: number; flat_weight_no_n: number; flat_weight_affects_no_sex_diff_n: number; flat_weight_affects_brands: { brand: string; trial_female_pct: number; no_difference: boolean; example: string | null }[]; by_category_flat_pct: Record<string, number> }; n: number; statements: Record<string, number>; male_only_pk_pct: number; male_only_pk_n: number; quantified_pct: number; difference_pct: number; no_difference_pct: number; not_evaluated_pct: number; no_preg_data_pct: number; no_lact_data_pct: number; sex_dose_pct: number; sex_dose_n: number; sex_dose_brands: string[]; quantified_brands: { brand: string; example: string | null; trial_female_pct: number }[]; male_only_brands: { brand: string; trial_female_pct: number; category: string }[]; by_trial_share: Record<string, { n: number; no_difference_pct: number; quantified_pct: number; not_evaluated_pct: number; silent_pct: number }>; by_category: Record<string, Cat>; by_year: { year: number; n: number; no_preg_data_pct: number; no_lact_data_pct: number; no_difference_pct: number; quantified_pct: number }[]; drugs: Drug[] }
+  pubmed: { sexfactors: { year: number; rct_both_sexes: number; sex_factors: number; pct: number }[]; fields: Record<string, Pt[]>; nih: Pt[]; human: Record<string, Pt[]>; latest: Record<string, Pt>; years: [number, number] }
 }
 const FIELD_COLORS: Record<string, string> = { 'All rodent studies': 'var(--c-ink, #2A1F26)', Pain: 'var(--c-female)', Cardiovascular: '#C2567E', Neuroscience: 'var(--c-male)', Pharmacology: '#B08A4A', 'Behaviour and psychiatry': '#6B5B95', Immunology: '#5A8F7B', 'Metabolism and endocrine': '#D08C60', 'Reproduction and urogenital': 'var(--c-muted)' }
 
@@ -59,6 +59,9 @@ export default function Chapter6() {
   const cats = Object.entries(L.by_category).sort((a, b) => b[1].no_preg_data_pct - a[1].no_preg_data_pct)
   const bothSexDrugs = L.drugs.filter(d => d.trial_female_pct > 0 && d.trial_female_pct < 100)
   const sexDoseBoth = bothSexDrugs.filter(d => d.sex_dose).map(d => d.brand)
+  const DS = L.dosing, SF = P.sexfactors ?? []
+  const KG = { men: 90.3, women: 77.9 } // NCHS, adults 20 and over, August 2021–August 2023
+  const perKg = Math.round((KG.men / KG.women - 1) * 100)
 
   const blocks: Block[] = [
     T('open', <>
@@ -84,6 +87,10 @@ export default function Chapter6() {
       <p>The same tags exist for human trials. Among published randomised trials indexed with participants' sex, {pct(lastFull(human)?.male_only_pct, 1)} in {lastFull(human)?.year} enrolled men only and {pct(lastFull(human)?.female_only_pct, 1)} women only. The single-sex trial is now mostly a women's trial, in obstetrics, gynaecology and breast cancer. That is progress at the door. Chapter 4 showed what happens inside: women are counted in, and then almost never reported on.</p>
     </>),
     F('human-fig', <MultiLine series={[{ label: 'Men only', color: 'var(--c-male)', points: human.filter(p => p.year >= y0 && p.year <= y1).map(p => ({ x: p.year, y: p.male_only_pct })) }, { label: 'Women only', color: 'var(--c-female)', points: human.filter(p => p.year >= y0 && p.year <= y1).map(p => ({ x: p.year, y: p.female_only_pct })) }]} title="Single-sex human trials" subtitle="Share of indexed randomised controlled trial reports tagged with one sex only, by publication year" source={srcP.replace('Mice or Rats heading', 'Randomized Controlled Trial publication type, Humans heading')} yLabel="share of sexed trial reports" fmt={v => `${v.toFixed(0)}%`} />, 'chart'),
+    T('sexfactors', <>
+      <p>Counted in is not the same as looked at. The index also records when a trial report analysed sex as a factor in its results. Among published randomised trials that enrolled both sexes, {SF.length ? SF[SF.length - 1].pct.toFixed(1) : '…'}% were indexed that way in {SF.length ? SF[SF.length - 1].year : ''}, down from {SF.length ? Math.max(...SF.map(x => x.pct)).toFixed(1) : '…'}% at the peak. The trials got bigger and more mixed. The share that asked whether the answer differed for women got smaller.</p>
+    </>),
+    F('sexfactors-fig', <MultiLine series={[{ label: 'Trials with both sexes, indexed as analysing sex', color: 'var(--c-female)', points: SF.map(x => ({ x: x.year, y: x.pct })) }]} title="Published trials that analysed sex as a factor" subtitle="Share of indexed randomised controlled trial reports tagged with both Male and Female that also carry the Sex Factors or Sex Characteristics heading" source={srcP.replace('Mice or Rats heading', 'Randomized Controlled Trial publication type, Humans heading')} yLabel="share of mixed-sex trial reports" fmt={v => `${v.toFixed(1)}%`} />, 'chart'),
     T('label', <>
       <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">What the label says about her.</p>
       <p>Every prescription drug carries a label written to an FDA template. Section 12.3 describes how the drug moves through the body and is required to say whether that differs by sex. Section 8 covers pregnancy and breastfeeding. For the {L.n} drugs of Chapter 1, new medicines approved since 2015 whose trials we have already scored, we pulled the current label and read those sections.<Cite id="openfda-label" /></p>
@@ -107,9 +114,26 @@ export default function Chapter6() {
         </div>
       </ChartFrame>
     )),
+    T('dose', <>
+      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">The same pill, a smaller body.</p>
+      <p>Here is the mechanism the labels describe without naming it. The average American man weighs {KG.men} kilograms; the average woman {KG.women}.<Cite id="nchs-anthro" /> {DS.flat_pct}% of these {DS.n} drugs are given as a flat dose, the same tablet or injection for everyone, so the same prescription is {perKg}% more drug per kilogram for the average woman before any difference in how her body handles it. {DS.flat_weight_affects_n} of the flat-dosed labels say, in their own pharmacology section, that exposure rises as body weight falls. {DS.flat_weight_affects_no_sex_diff_n} of those same labels also state that sex makes no clinically significant difference. Both statements can be true at once, because "sex" in a population model is what is left after weight has been accounted for. For the woman taking the pill, weight is not accounted for. She gets the man's dose.</p>
+      <p>This is zolpidem's story generalised. The 2013 dose change was made because women's blood levels the next morning were higher at the same dose; the label had said nothing about it for twenty years. The labels below say it now, in the sentence the rule matched, and then set a single dose anyway.</p>
+    </>),
+    F('dose-fig', (
+      <ChartFrame title="Flat-dosed drugs whose label says exposure rises as weight falls" subtitle={`${DS.flat_weight_affects_n} new drugs. Bold: the label also asserts no clinically significant difference by sex.`} source={srcL}>
+        <div className="overflow-x-auto max-h-[32rem] overflow-y-auto">
+          <table className="w-full border-collapse text-[13px]">
+            <thead><tr className="text-[11px] font-bold uppercase tracking-[0.12em] text-ink-3"><th className="py-2 pr-3 text-left font-bold">Drug</th><th className="py-2 pr-3 text-right font-bold">Women in trials</th><th className="py-2 text-left font-bold">What the label says</th></tr></thead>
+            <tbody>{DS.flat_weight_affects_brands.map(b => (
+              <tr key={b.brand} className={`border-t border-hairline/60 align-top ${b.no_difference ? 'font-semibold' : ''}`}><td className="py-2 pr-3 text-ink whitespace-nowrap">{b.brand}</td><td className="py-2 pr-3 text-right tabular-nums">{b.trial_female_pct.toFixed(0)}%</td><td className="py-2 text-ink-2 text-[12px] font-normal">{b.example}</td></tr>
+            ))}</tbody>
+          </table>
+        </div>
+      </ChartFrame>
+    )),
     T('caveats', <>
       <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">What this does not settle.</p>
-      <p>The PubMed count depends on indexers tagging the sex of the animals, which they do when the paper states it; roughly half of rodent papers carry no sex tag at all, and the share that do is itself rising. Our lines describe the tagged half. Field subsets are defined by subject headings and overlap. The series stop at 2020 because the National Library of Medicine moved to automated indexing after that, and the sex tags it assigns are not comparable with the human-indexed years; the raw counts for 2021 to 2025 are in the data file so the break can be seen. The label reading is done with rules over text that was written to a template but not to ours; the rules are published, every match is in the data file, and the lookup above shows the sentence it matched so you can judge it. "No clinically significant difference" is a regulatory phrase with a definition; we report that it was asserted, not that it was wrong.</p>
+      <p>The PubMed count depends on indexers tagging the sex of the animals, which they do when the paper states it; roughly half of rodent papers carry no sex tag at all, and the share that do is itself rising. Our lines describe the tagged half. Field subsets are defined by subject headings and overlap. The series stop at 2020 because the National Library of Medicine moved to automated indexing after that, and the sex tags it assigns are not comparable with the human-indexed years; the raw counts for 2021 to 2025 are in the data file so the break can be seen. The dosing basis is read from the dosage section (weight-based when it doses by kilogram or body surface area) and the weight effect from the pharmacology section; a label can be flat-dosed for adults and weight-based for children, and we count the adult rule. The label reading is done with rules over text that was written to a template but not to ours; the rules are published, every match is in the data file, and the lookup above shows the sentence it matched so you can judge it. "No clinically significant difference" is a regulatory phrase with a definition; we report that it was asserted, not that it was wrong.</p>
     </>),
     T('for-you', <>
       <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">What this means for you.</p>
@@ -129,7 +153,7 @@ export default function Chapter6() {
       <Story blocks={blocks} />
       <section className="mx-auto max-w-3xl px-4 pt-16">
         <h2 className="display text-2xl font-medium mb-4">Sources</h2>
-        <SourceList only={['pubmed', 'beery-2011', 'nih-sabv', 'sorge-2015', 'science-2026-pain', 'openfda-label', 'fda-snapshots']} />
+        <SourceList only={['pubmed', 'beery-2011', 'nih-sabv', 'sorge-2015', 'science-2026-pain', 'openfda-label', 'fda-snapshots', 'nchs-anthro']} />
       </section>
     </article>
   )

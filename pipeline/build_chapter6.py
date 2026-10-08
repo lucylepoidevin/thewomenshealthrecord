@@ -31,6 +31,9 @@ R = {
     "no_lact_data": re.compile(r"\b(no|insufficient|limited|not sufficient)\b (available |adequate )?(human |clinical )?(data|information|studies)[^.]{0,120}(breast ?milk|lactat|breastfe|nursing|milk production)|(breast ?milk|lactat|breastfe)[^.]{0,120}\b(no|insufficient|limited|not sufficient) (available |adequate )?(data|information)|(presence|excretion|levels?) of [^.]{0,80} in (human|breast) milk[^.]{0,60}(unknown|not known|no (data|information)|have not been|has not been)|(there is|there are) no (data|information)[^.]{0,80}(milk|lactat)|it is not known whether[^.]{0,80}(milk|lactat|nursing)", re.I),
     "sex_dose": re.compile(r"\b(recommended|starting|initial|maximum|total) (daily )?(dose|dosage)\b[^.]{0,80}\b(for|in) (women|females|female patients|adult females)\b|\b(women|females|female patients)\b[^.]{0,60}\b(recommended|starting|initial) (dose|dosage)\b|\bdose (adjustment|reduction|modification)\b[^.]{0,60}\b(based on|according to|by|for) (sex|gender|women|females)\b|\b(women|females)\b[^.]{0,40}\b(should|must) (receive|take|be started on|be given)\b[^.]{0,40}\b(lower|reduced|\d+ ?mg)\b|\bmg (for|in) (women|females)\b", re.I),
 }
+R["weight_based"] = re.compile(r"\bmg\s?/\s?kg\b|\bmcg\s?/\s?kg\b|\bunits?\s?/\s?kg\b|\bper kg\b|\bper kilogram\b|\bmg/m\s?2\b|\bmg/m²\b|body surface area|based on (body )?weight|weight[- ]based", re.I)
+R["wt_affects"] = re.compile(r"\b(body )?weight\b[^.]{0,100}\b(higher|lower|increase|decrease|greater|smaller)[^.]{0,60}\b(exposure|AUC|Cmax|clearance|concentration)|\b(exposure|AUC|Cmax|clearance|concentration)[^.]{0,100}\b(higher|lower|increase|decrease|greater|smaller)[^.]{0,80}\b(body )?weight\b|\bweight\b[^.]{0,40}\b(was|is) (a )?(significant|important|clinically relevant)? ?(covariate|predictor)|\bclearance (increased|increases|decreased|decreases) with (body )?weight|inversely (related|proportional) to (body )?weight", re.I)
+R["wt_no"] = re.compile(r"\b(no|not) (clinically )?(significant|meaningful|relevant)? ?(effect|impact|influence|difference)s?[^.]{0,80}\b(body )?weight\b|\b(body )?weight\b[^.]{0,80}\b(no|not|did not|does not) (have )?(a )?(clinically )?(significant|meaningful|relevant)? ?(effect|impact|influence)", re.I)
 TRIAL_PCT = {d["slug"]: d for d in json.load(open(f"{SITE_DATA}/chapter1.json"))["drugs"]}
 
 
@@ -43,6 +46,10 @@ def classify(rec):
            "no_difference": any(R["no_difference"].search(s) for s in sex_sents), "not_evaluated": any(R["not_evaluated"].search(s) for s in sex_sents),
            "mentions_sex": bool(sex_sents), "no_preg_data": bool(R["no_preg_data"].search(pop)), "no_lact_data": bool(R["no_lact_data"].search(pop)), "sex_dose": bool(R["sex_dose"].search(dose)),
            "has_lactation_section": bool(rec.get("lactation") or rec.get("nursing_mothers")), "has_pregnancy_section": bool(rec.get("pregnancy"))}
+    out["weight_based"] = bool(R["weight_based"].search(dose))
+    wy = bool(R["wt_affects"].search(pk)); wn = bool(R["wt_no"].search(pk)) and not wy
+    out["weight_effect"] = "affects exposure" if wy else "no effect stated" if wn else "silent"
+    out["weight_example"] = next((s.strip()[:300] for s in SENT.split(pk) if R["wt_affects"].search(s) and len(s) < 600), None) if wy else None
     out["sex_statement"] = ("quantified difference" if out["quantified"] else "difference noted" if out["difference"] else "no difference asserted" if out["no_difference"] else "not evaluated" if out["not_evaluated"] else "mentioned, unclear" if out["mentions_sex"] else "silent")
     out["example"] = next((s.strip()[:300] for s in sex_sents if (R["quantified"].search(s) or R["difference"].search(s) or R["no_difference"].search(s) or R["not_evaluated"].search(s))), None)
     return out
@@ -70,7 +77,13 @@ def labels():
         if len(rs) >= 8:
             cats[cat] = {"n": len(rs), "no_preg_data_pct": pct("no_preg_data", rs), "no_lact_data_pct": pct("no_lact_data", rs), "no_difference_pct": pct("no_difference", rs), "quantified_pct": pct("quantified", rs), "male_only_pk_pct": pct("male_only_pk", rs), "trial_female_pct_median": round(sorted(r["trial_female_pct"] for r in rs)[len(rs) // 2], 1)}
     by_year = [{"year": y, "n": len(rs), "no_preg_data_pct": pct("no_preg_data", rs), "no_lact_data_pct": pct("no_lact_data", rs), "no_difference_pct": pct("no_difference", rs), "quantified_pct": pct("quantified", rs)} for y in range(2015, 2027) for rs in [[r for r in rows if r["year"] == y]] if len(rs) >= 10]
-    return {"n": n, "statements": stmt, "male_only_pk_pct": pct("male_only_pk"), "male_only_pk_n": sum(1 for r in rows if r["male_only_pk"]), "quantified_pct": pct("quantified"), "difference_pct": pct("difference"), "no_difference_pct": pct("no_difference"), "not_evaluated_pct": pct("not_evaluated"),
+    flat = [r for r in rows if not r["weight_based"]]
+    dosing = {"n": n, "weight_based_n": n - len(flat), "flat_n": len(flat), "flat_pct": round(100 * len(flat) / n, 1),
+              "flat_weight_affects_n": sum(1 for r in flat if r["weight_effect"] == "affects exposure"), "flat_weight_no_n": sum(1 for r in flat if r["weight_effect"] == "no effect stated"),
+              "flat_weight_affects_no_sex_diff_n": sum(1 for r in flat if r["weight_effect"] == "affects exposure" and r["no_difference"]),
+              "flat_weight_affects_brands": [{"brand": r["brand"], "trial_female_pct": r["trial_female_pct"], "no_difference": r["no_difference"], "example": r["weight_example"]} for r in flat if r["weight_effect"] == "affects exposure"],
+              "by_category_flat_pct": {cat: round(100 * sum(1 for r in rs if not r["weight_based"]) / len(rs), 1) for cat in sorted({r["category"] for r in rows}) for rs in [[r for r in rows if r["category"] == cat]] if len(rs) >= 8}}
+    return {"n": n, "statements": stmt, "dosing": dosing, "male_only_pk_pct": pct("male_only_pk"), "male_only_pk_n": sum(1 for r in rows if r["male_only_pk"]), "quantified_pct": pct("quantified"), "difference_pct": pct("difference"), "no_difference_pct": pct("no_difference"), "not_evaluated_pct": pct("not_evaluated"),
             "no_preg_data_pct": pct("no_preg_data"), "no_lact_data_pct": pct("no_lact_data"), "sex_dose_pct": pct("sex_dose"), "sex_dose_n": sum(1 for r in rows if r["sex_dose"]), "sex_dose_brands": [r["brand"] for r in rows if r["sex_dose"]],
             "quantified_brands": [{"brand": r["brand"], "example": r["example"], "trial_female_pct": r["trial_female_pct"]} for r in rows if r["quantified"]], "male_only_brands": [{"brand": r["brand"], "trial_female_pct": r["trial_female_pct"], "category": r["category"]} for r in rows if r["male_only_pk"]],
             "by_trial_share": by_trial, "by_category": cats, "by_year": by_year, "drugs": rows}
@@ -112,8 +125,14 @@ def pubmed():
                 continue
             out.append({"year": y, "n": vals["all"], "n_sexed": vals["any"], "male_only_pct": round(100 * vals["male_only"] / vals["any"], 1), "female_only_pct": round(100 * vals["female_only"] / vals["any"], 1), "both_pct": round(100 * vals["both"] / vals["any"], 1)})
         human[hname] = out
+    sf = json.load(open(f"{CACHE}/ch6/pubmed_sexfactors.json"))
+    sexfactors = []
+    for y in range(1996, LAST_COMPARABLE + 1):
+        both = sf.get(f'"randomized controlled trial"[pt] AND humans[MeSH] AND male[MeSH] AND female[MeSH] AND {y}[dp]'); s_ = sf.get(f'"randomized controlled trial"[pt] AND humans[MeSH] AND male[MeSH] AND female[MeSH] AND ("sex factors"[MeSH] OR "sex characteristics"[MeSH]) AND {y}[dp]')
+        if both and s_ is not None:
+            sexfactors.append({"year": y, "rct_both_sexes": both, "sex_factors": s_, "pct": round(100 * s_ / both, 2)})
     latest = {name: s[-1] for name, s in fields.items() if s}
-    return {"fields": fields, "nih": nih, "human": human, "latest": latest, "years": [YEARS[0], LAST_COMPARABLE], "last_comparable": LAST_COMPARABLE}
+    return {"fields": fields, "nih": nih, "human": human, "sexfactors": sexfactors, "latest": latest, "years": [YEARS[0], LAST_COMPARABLE], "last_comparable": LAST_COMPARABLE}
 
 
 def main():
@@ -126,6 +145,7 @@ def main():
         {"id": "beery-2011", "title": "Sex bias in neuroscience and biomedical research", "publisher": "Beery A.K., Zucker I., Neuroscience & Biobehavioral Reviews 35(3), 2011. doi:10.1016/j.neubiorev.2010.07.002", "url": "https://doi.org/10.1016/j.neubiorev.2010.07.002", "retrieved": today, "note": "Hand survey of 2009 papers in ten fields: male bias in eight."},
         {"id": "nih-sabv", "title": "NIH policy on sex as a biological variable (NOT-OD-15-102)", "publisher": "National Institutes of Health, 2015; in effect for applications from 25 January 2016", "url": "https://grants.nih.gov/grants/guide/notice-files/NOT-OD-15-102.html", "retrieved": today},
         {"id": "science-2026-pain", "title": "Sex-specific mechanisms of chronic pain", "publisher": "Venkataraman A., Midavaine É., Ingraham H.A., Science, 1 October 2026. doi:10.1126/science.aeh4468", "url": "https://doi.org/10.1126/science.aeh4468", "retrieved": today, "note": "Review; the microglia-versus-T-cell finding it summarises is from Sorge et al., Nature Neuroscience 2015."},
+        {"id": "nchs-anthro", "title": "Anthropometric reference data for children and adults: United States, August 2021–August 2023 (Vital and Health Statistics, Series 3, Number 50)", "publisher": "National Center for Health Statistics, CDC, 2025", "url": "https://stacks.cdc.gov/view/cdc/174595", "retrieved": today, "note": "Mean weight, adults 20 and over: men 90.3 kg (n = 2,688), women 77.9 kg (n = 3,254); tables 3 and 4."},
         {"id": "sorge-2015", "title": "Different immune cells mediate mechanical pain hypersensitivity in male and female mice", "publisher": "Sorge R.E., Mapplebeck J.C.S., Rosen S. et al., Nature Neuroscience 18, 2015. doi:10.1038/nn.4053", "url": "https://doi.org/10.1038/nn.4053", "retrieved": today},
     ]
     sources = json.load(open(f"{SITE_DATA}/sources.json"))

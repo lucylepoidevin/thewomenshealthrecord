@@ -100,52 +100,6 @@
   "note": "DALYs in thousands; All ages sheet; Males and Females rows."
  },
  {
-  "id": "pubmed",
-  "title": "PubMed E-utilities: record counts by year for MeSH-indexed rodent and human studies by sex",
-  "publisher": "National Library of Medicine",
-  "url": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
-  "retrieved": "2026-10-07",
-  "note": "Queries combine Mice/Rats MeSH headings with the Male and Female check tags; field subsets use MeSH headings listed on the methods page. Years after 2020 are excluded: NLM's move to automated MeSH indexing changed how the sex check tags are applied."
- },
- {
-  "id": "openfda-label",
-  "title": "openFDA Drug Labeling API (Structured Product Labeling)",
-  "publisher": "U.S. Food and Drug Administration",
-  "url": "https://open.fda.gov/apis/drug/label/",
-  "retrieved": "2026-10-07",
-  "note": "Current prescribing information for each chapter-1 drug, matched by brand name; sections 8 and 12.3 text-mined with the rules in the pipeline."
- },
- {
-  "id": "beery-2011",
-  "title": "Sex bias in neuroscience and biomedical research",
-  "publisher": "Beery A.K., Zucker I., Neuroscience & Biobehavioral Reviews 35(3), 2011. doi:10.1016/j.neubiorev.2010.07.002",
-  "url": "https://doi.org/10.1016/j.neubiorev.2010.07.002",
-  "retrieved": "2026-10-07",
-  "note": "Hand survey of 2009 papers in ten fields: male bias in eight."
- },
- {
-  "id": "nih-sabv",
-  "title": "NIH policy on sex as a biological variable (NOT-OD-15-102)",
-  "publisher": "National Institutes of Health, 2015; in effect for applications from 25 January 2016",
-  "url": "https://grants.nih.gov/grants/guide/notice-files/NOT-OD-15-102.html",
-  "retrieved": "2026-10-07"
- },
- {
-  "id": "science-2026-pain",
-  "title": "Sex-specific mechanisms of chronic pain",
-  "publisher": "Venkataraman A., Midavaine \u00c9., Ingraham H.A., Science, 1 October 2026. doi:10.1126/science.aeh4468",
-  "url": "https://doi.org/10.1126/science.aeh4468",
-  "retrieved": "2026-10-07",
-  "note": "Review; the microglia-versus-T-cell finding it summarises is from Sorge et al., Nature Neuroscience 2015."
- },
- {
-  "id": "sorge-2015",
-  "title": "Different immune cells mediate mechanical pain hypersensitivity in male and female mice",
-  "publisher": "Sorge R.E., Mapplebeck J.C.S., Rosen S. et al., Nature Neuroscience 18, 2015. doi:10.1038/nn.4053",
-  "url": "https://doi.org/10.1038/nn.4053",
-  "retrieved": "2026-10-07"
- },
- {
   "id": "ctgov",
   "title": "ClinicalTrials.gov API v2: interventional studies with posted results",
   "publisher": "National Library of Medicine",
@@ -214,5 +168,59 @@
   "url": "https://www.cdc.gov/nchs/icd/icd-10-cm/index.html",
   "retrieved": "2026-10-08",
   "note": "A visit 'ends with a symptom code' when its first-listed diagnosis is in this chapter."
+ },
+ {
+  "id": "pubmed",
+  "title": "PubMed E-utilities: record counts by year for MeSH-indexed rodent and human studies by sex",
+  "publisher": "National Library of Medicine",
+  "url": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+  "retrieved": "2026-10-08",
+  "note": "Queries combine Mice/Rats MeSH headings with the Male and Female check tags; field subsets use MeSH headings listed on the methods page. Years after 2020 are excluded: NLM's move to automated MeSH indexing changed how the sex check tags are applied."
+ },
+ {
+  "id": "openfda-label",
+  "title": "openFDA Drug Labeling API (Structured Product Labeling)",
+  "publisher": "U.S. Food and Drug Administration",
+  "url": "https://open.fda.gov/apis/drug/label/",
+  "retrieved": "2026-10-08",
+  "note": "Current prescribing information for each chapter-1 drug, matched by brand name; sections 8 and 12.3 text-mined with the rules in the pipeline."
+ },
+ {
+  "id": "beery-2011",
+  "title": "Sex bias in neuroscience and biomedical research",
+  "publisher": "Beery A.K., Zucker I., Neuroscience & Biobehavioral Reviews 35(3), 2011. doi:10.1016/j.neubiorev.2010.07.002",
+  "url": "https://doi.org/10.1016/j.neubiorev.2010.07.002",
+  "retrieved": "2026-10-08",
+  "note": "Hand survey of 2009 papers in ten fields: male bias in eight."
+ },
+ {
+  "id": "nih-sabv",
+  "title": "NIH policy on sex as a biological variable (NOT-OD-15-102)",
+  "publisher": "National Institutes of Health, 2015; in effect for applications from 25 January 2016",
+  "url": "https://grants.nih.gov/grants/guide/notice-files/NOT-OD-15-102.html",
+  "retrieved": "2026-10-08"
+ },
+ {
+  "id": "science-2026-pain",
+  "title": "Sex-specific mechanisms of chronic pain",
+  "publisher": "Venkataraman A., Midavaine \u00c9., Ingraham H.A., Science, 1 October 2026. doi:10.1126/science.aeh4468",
+  "url": "https://doi.org/10.1126/science.aeh4468",
+  "retrieved": "2026-10-08",
+  "note": "Review; the microglia-versus-T-cell finding it summarises is from Sorge et al., Nature Neuroscience 2015."
+ },
+ {
+  "id": "nchs-anthro",
+  "title": "Anthropometric reference data for children and adults: United States, August 2021\u2013August 2023 (Vital and Health Statistics, Series 3, Number 50)",
+  "publisher": "National Center for Health Statistics, CDC, 2025",
+  "url": "https://stacks.cdc.gov/view/cdc/174595",
+  "retrieved": "2026-10-08",
+  "note": "Mean weight, adults 20 and over: men 90.3 kg (n = 2,688), women 77.9 kg (n = 3,254); tables 3 and 4."
+ },
+ {
+  "id": "sorge-2015",
+  "title": "Different immune cells mediate mechanical pain hypersensitivity in male and female mice",
+  "publisher": "Sorge R.E., Mapplebeck J.C.S., Rosen S. et al., Nature Neuroscience 18, 2015. doi:10.1038/nn.4053",
+  "url": "https://doi.org/10.1038/nn.4053",
+  "retrieved": "2026-10-08"
  }
 ]
