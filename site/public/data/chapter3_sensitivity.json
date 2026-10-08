@@ -1,0 +1,146 @@
+[
+ {
+  "label": "Main analysis (60% threshold, all 67 diseases)",
+  "n": 67,
+  "n_female": 14,
+  "n_male": 22,
+  "median_ratio": {
+   "female": 1.01,
+   "male": 1.07,
+   "balanced": 1.29
+  },
+  "share_underfunded": {
+   "female": 50,
+   "male": 50
+  },
+  "female_shortfall_m": 727,
+  "slope": 0.376,
+  "migraine_ratio": 0.14
+ },
+ {
+  "label": "Without HIV and tuberculosis (global-mission funding)",
+  "n": 65,
+  "n_female": 14,
+  "n_male": 20,
+  "median_ratio": {
+   "female": 1.17,
+   "male": 0.88,
+   "balanced": 1.34
+  },
+  "share_underfunded": {
+   "female": 50,
+   "male": 50
+  },
+  "female_shortfall_m": 642,
+  "slope": 0.449,
+  "migraine_ratio": 0.14
+ },
+ {
+  "label": "Without Alzheimer's",
+  "n": 66,
+  "n_female": 13,
+  "n_male": 22,
+  "median_ratio": {
+   "female": 0.91,
+   "male": 1.09,
+   "balanced": 1.37
+  },
+  "share_underfunded": {
+   "female": 54,
+   "male": 50
+  },
+  "female_shortfall_m": 668,
+  "slope": 0.347,
+  "migraine_ratio": 0.15
+ },
+ {
+  "label": "Without HIV, tuberculosis and Alzheimer's",
+  "n": 64,
+  "n_female": 13,
+  "n_male": 20,
+  "median_ratio": {
+   "female": 0.97,
+   "male": 0.91,
+   "balanced": 1.41
+  },
+  "share_underfunded": {
+   "female": 54,
+   "male": 50
+  },
+  "female_shortfall_m": 585,
+  "slope": 0.42,
+  "migraine_ratio": 0.15
+ },
+ {
+  "label": "Threshold 55% instead of 60%",
+  "n": 67,
+  "n_female": 17,
+  "n_male": 32,
+  "median_ratio": {
+   "female": 0.85,
+   "male": 1.28,
+   "balanced": 1.28
+  },
+  "share_underfunded": {
+   "female": 53,
+   "male": 41
+  },
+  "female_shortfall_m": 1012,
+  "slope": 0.376,
+  "migraine_ratio": 0.14
+ },
+ {
+  "label": "Threshold 70% instead of 60%",
+  "n": 67,
+  "n_female": 10,
+  "n_male": 10,
+  "median_ratio": {
+   "female": 0.83,
+   "male": 0.66,
+   "balanced": 1.29
+  },
+  "share_underfunded": {
+   "female": 50,
+   "male": 60
+  },
+  "female_shortfall_m": 654,
+  "slope": 0.376,
+  "migraine_ratio": 0.14
+ },
+ {
+  "label": "FY2025 funding instead of FY2024",
+  "n": 68,
+  "n_female": 14,
+  "n_male": 23,
+  "median_ratio": {
+   "female": 0.99,
+   "male": 1.02,
+   "balanced": 1.28
+  },
+  "share_underfunded": {
+   "female": 50,
+   "male": 48
+  },
+  "female_shortfall_m": 703,
+  "slope": 0.397,
+  "migraine_ratio": 0.14
+ },
+ {
+  "label": "2023 burden with FY2023 funding",
+  "n": 66,
+  "n_female": 14,
+  "n_male": 22,
+  "median_ratio": {
+   "female": 0.98,
+   "male": 1.06,
+   "balanced": 1.26
+  },
+  "share_underfunded": {
+   "female": 50,
+   "male": 50
+  },
+  "female_shortfall_m": 739,
+  "slope": 0.364,
+  "migraine_ratio": 0.16
+ }
+]

@@ -6,6 +6,7 @@ import SourceList from '../components/SourceList'
 import SexCompare from '../components/charts/SexCompare'
 import ScoreLines from '../components/charts/ScoreLines'
 import Summary from '../components/charts/Summary'
+import Lollipop from '../components/charts/Lollipop'
 import Explorer from '../components/Explorer'
 import type { Chapter2Data, Cmp } from '../lib/types2'
 
@@ -13,8 +14,14 @@ const p = (c: Cmp | null | undefined, who: 'women' | 'men') => (c ? c[who].est.t
 
 export default function Chapter2() {
   const [data, setData] = useState<Chapter2Data | null>(null)
-  useEffect(() => { fetch(`${import.meta.env.BASE_URL}data/chapter2.json`).then(r => r.json()).then(setData) }, [])
-  if (!data) return <div className="mx-auto max-w-6xl px-4 py-24 text-ink-3">Loading data…</div>
+  const [models, setModels] = useState<Record<string, { label: string; note: string; n: number; or: number; lo: number; hi: number; p: number }> | null>(null)
+  useEffect(() => {
+    fetch(`${import.meta.env.BASE_URL}data/chapter2.json`).then(r => r.json()).then(setData)
+    fetch(`${import.meta.env.BASE_URL}data/chapter2_models.json`).then(r => r.json()).then(j => setModels(j.models))
+  }, [])
+  if (!data || !models) return <div className="mx-auto max-w-6xl px-4 py-24 text-ink-3">Loading data…</div>
+  const M = models
+  const orf = (k: string) => `${M[k].or.toFixed(2)} (95% interval ${M[k].lo.toFixed(2)} to ${M[k].hi.toFixed(2)})`
 
   const G = Object.fromEntries(data.groups.map(g => [g.id, g]))
   const A = data.all_pain.metrics
@@ -51,7 +58,8 @@ export default function Chapter2() {
     T('door', <>
       <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">What the system does at the door.</p>
       <p>Two things happen before any doctor is involved. Someone decides whether to call an ambulance, and a triage nurse assigns an urgency level. On both, women in pain are rated lower. They arrived by ambulance in {p(A.ems, 'women')}% of pain visits against {p(A.ems, 'men')}% for men, and were triaged as urgent, the top two of five levels, in {p(A.urgent, 'women')}% against {p(A.urgent, 'men')}%. Both gaps are statistically clear, and both run opposite to what the patients themselves reported.</p>
-      <p>The ambulance decision is mostly the patient's and their family's; the triage decision is the department's. Neither is a diagnosis, and more severe illness in men could explain part of it. But it is the first point where a woman's account of her pain and the system's rating of it diverge, and the direction is consistent.</p>
+      <p>The ambulance decision is mostly the patient's and their family's; the triage decision is the department's. Neither is a diagnosis, and part of the raw gap is what men and women come in with: chest pain, which is triaged urgent more than anything else, is a larger share of men's pain visits. So we fitted a model that holds the complaint, the age band and the year constant, then added the reported pain score, then arrival by ambulance. The raw gap, women's odds of an urgent rating {M.urgent_raw.or.toFixed(2)} times men's, shrinks to {M.urgent_adj.or.toFixed(2)} once complaint and age are held constant, and to {M.urgent_adj_full.or.toFixed(2)} with pain score and ambulance in the model, where the interval includes 1. Most of the overall urgency gap is mix; what remains is a tilt of about a tenth that the data cannot pin down.</p>
+      <p>That is the honest reading of the headline number. The gaps that survive adjustment are specific, and they are below.</p>
     </>),
     F('triage', <SexCompare rows={[...rows('urgent', false).map(r => ({ ...r, label: `${r.label}` })), { label: 'All pain complaints', sub: 'triaged urgent (ESI 1–2)', cmp: A.urgent! }, { label: 'All pain complaints', sub: 'arrived by ambulance', cmp: A.ems! }]} title="Rated urgent, and brought by ambulance" subtitle="Share of visits triaged at the two most urgent levels, by complaint; and the ambulance share overall" source={src} axisLabel="share of visits" />),
     T('treat', <>
@@ -95,7 +103,7 @@ export default function Chapter2() {
       { label: 'Said something else', sub: 'cardiac enzymes ordered', cmp: L.mi_cardenz_by_complaint.other_complaint! },
     ]} title="During a heart attack, what you say" subtitle={`${data.heart_attack.n} sampled heart attacks, split by whether the first-listed reason for the visit was chest pain`} source={`${src} Small samples; read the whiskers.`} axisLabel="share of heart-attack visits" />),
     T('age', <>
-      <p>Age matters too, and not in the direction most people expect. The under-triage of women's chest pain is a young women's problem. Between 18 and 44, {p(chestByAge('urgent')[0].cmp, 'women')}% of women with chest pain were triaged urgent against {p(chestByAge('urgent')[0].cmp, 'men')}% of men. By 65 the gap has gone, and women are if anything rated higher.</p>
+      <p>Age matters too, and not in the direction most people expect. The under-triage of women's chest pain is a young women's problem. Between 18 and 44, {p(chestByAge('urgent')[0].cmp, 'women')}% of women with chest pain were triaged urgent against {p(chestByAge('urgent')[0].cmp, 'men')}% of men. By 65 the gap has gone, and women are if anything rated higher. Holding pain score and arrival mode constant, a woman under 45 with chest pain had {orf('chest_young_urgent_adj')} times a man's odds of an urgent rating.</p>
     </>),
     F('age-fig', <SexCompare rows={chestByAge('urgent')} title="Chest pain, triaged urgent, by age" subtitle="The gap is largest for the youngest women and closes with age" source={src} axisLabel="share triaged urgent (ESI 1–2)" />),
     T('levers', <>
@@ -111,6 +119,23 @@ export default function Chapter2() {
       { label: 'Arrived by ambulance', sub: 'triaged urgent, pain 7–10', cmp: L.urgent_severe_by_ambulance.ambulance! },
     ]} title="How you arrive" subtitle="Share triaged urgent, by arrival mode, for all pain visits and for severe pain" source={src} axisLabel="share triaged urgent (ESI 1–2)" />),
     F('score-urgent', <ScoreLines points={data.by_score_urgent.filter(b => b.score >= 4).map(b => ({ score: b.score, cmp: b.urgent }))} title="The pain score barely moves triage" subtitle="Share triaged urgent, by the pain score the patient reported, 4 to 10" source={`${src} Scores 0 to 3 are omitted: too few pain visits report them for a stable estimate.`} yLabel="share triaged urgent" />, 'chart'),
+    T('adjusted', <>
+      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">What survives adjustment.</p>
+      <p>Every comparison above holds one thing constant at a time. A model can hold several at once. For each gap in this chapter we fitted a survey-weighted logistic regression with the sex of the patient alongside age band, complaint, year and, where it applies, the reported pain score, arrival mode and whether the chief complaint was chest pain. The figure shows women's odds relative to men's: below 1 means women less likely.</p>
+    </>),
+    F('adjusted-fig', <Lollipop rows={[
+      { label: 'Triaged urgent, pain visits', sub: 'unadjusted', value: M.urgent_raw.or, lo: M.urgent_raw.lo, hi: M.urgent_raw.hi, color: 'var(--c-muted)' },
+      { label: 'Triaged urgent, pain visits', sub: 'age, complaint, pain score, ambulance, year', value: M.urgent_adj_full.or, lo: M.urgent_adj_full.lo, hi: M.urgent_adj_full.hi, color: 'var(--c-female)' },
+      { label: 'Triaged urgent, chest pain', sub: 'age, pain score, ambulance, year', value: M.chest_urgent_adj.or, lo: M.chest_urgent_adj.lo, hi: M.chest_urgent_adj.hi, color: 'var(--c-female)' },
+      { label: 'Triaged urgent, chest pain under 45', sub: 'pain score, ambulance, year', value: M.chest_young_urgent_adj.or, lo: M.chest_young_urgent_adj.lo, hi: M.chest_young_urgent_adj.hi, color: 'var(--c-emphasis)' },
+      { label: 'Opioid, severe abdominal pain', sub: 'age, year', value: M.opioid_severe_abd_adj.or, lo: M.opioid_severe_abd_adj.lo, hi: M.opioid_severe_abd_adj.hi, color: 'var(--c-emphasis)' },
+      { label: 'Any painkiller, headache', sub: 'age, year', value: M.headache_analgesic_adj.or, lo: M.headache_analgesic_adj.lo, hi: M.headache_analgesic_adj.hi, color: 'var(--c-emphasis)' },
+      { label: 'Cardiac enzymes, heart attack', sub: 'age, chest-pain complaint, year', value: M.mi_cardenz_adj.or, lo: M.mi_cardenz_adj.lo, hi: M.mi_cardenz_adj.hi, color: 'var(--c-emphasis)' },
+      { label: 'Triaged urgent, heart attack', sub: 'age, complaint, ambulance, year', value: M.mi_urgent_adj.or, lo: M.mi_urgent_adj.lo, hi: M.mi_urgent_adj.hi, color: 'var(--c-female)' },
+    ]} title="Women's odds relative to men's, adjusted" subtitle="Survey-weighted logistic regressions; whiskers are 95% intervals. Berry: gaps the interval does not reach across." source={`${src} Standard errors clustered on survey strata and primary sampling units.`} axisLabel="odds ratio, women vs men (log scale)" fmt={v => `${v}×`} log reference={{ value: 1, label: 'equal' }} />),
+    T('adjusted-text', <>
+      <p>Four findings hold with everything held constant: women with severe abdominal pain are less likely to get an opioid ({orf('opioid_severe_abd_adj')}), women under 45 with chest pain are less likely to be rated urgent ({orf('chest_young_urgent_adj')}), women with a headache are more likely to be given a painkiller ({orf('headache_analgesic_adj')}), and women having a heart attack are about half as likely to have cardiac enzymes ordered ({orf('mi_cardenz_adj')}), even after age and whether they said "chest pain". The overall urgency gap does not: it is mostly what people come in with.</p>
+    </>),
     T('caveats', <>
       <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">What this does not settle.</p>
       <p>The survey records what the chart says was done, not the clinician's reasoning, the dose, or the time between an order and the drug arriving. The 2008 study measured time to analgesia; the survey measures time to a clinician. Men and women with the same complaint do not have the same mix of underlying conditions, and some of the triage difference may be real differences in how sick people were.</p>
@@ -128,7 +153,7 @@ export default function Chapter2() {
     </>),
     F('summary', <Summary title="Chapter 2 in four numbers" source={src} items={[
       { women: `${p(A.severe_share, 'women')}%`, men: `${p(A.severe_share, 'men')}%`, label: 'arrived with pain rated 7 to 10' },
-      { women: `${p(A.urgent, 'women')}%`, men: `${p(A.urgent, 'men')}%`, label: 'triaged urgent on arrival' },
+      { women: `${p(chestByAge('urgent')[0].cmp, 'women')}%`, men: `${p(chestByAge('urgent')[0].cmp, 'men')}%`, label: 'under-45s with chest pain triaged urgent' },
       { women: `${p(abd.opioid_ed_severe, 'women')}%`, men: `${p(abd.opioid_ed_severe, 'men')}%`, label: 'given an opioid for severe abdominal pain' },
       { women: `${p(H.cardenz, 'women')}%`, men: `${p(H.cardenz, 'men')}%`, label: 'had cardiac enzymes ordered during a heart attack' },
     ]} />, 'flow', false),
@@ -139,7 +164,7 @@ export default function Chapter2() {
       <header className="mx-auto max-w-3xl px-4 pt-20 pb-14 text-center fade-up">
         <p className="eyebrow">Chapter 2</p>
         <h1 className="display mt-4 text-4xl sm:text-6xl font-light leading-[1.05]">The <span className="italic font-medium text-berry">urgency</span> gap</h1>
-        <p className="mx-auto mt-6 max-w-xl text-lg text-ink-2 leading-relaxed">Twenty thousand emergency visits for pain and {data.heart_attack.n} heart attacks, {yrs}: women arrive reporting more pain and are rated less urgent, from the ambulance to the blood test.</p>
+        <p className="mx-auto mt-6 max-w-xl text-lg text-ink-2 leading-relaxed">Twenty thousand emergency visits for pain and {data.heart_attack.n} heart attacks, {yrs}: women arrive reporting more pain, and where the system rates them lower it is in specific places: severe abdominal pain, young women's chest pain, and the heart attack.</p>
         <p className="mt-5 text-xs tracking-wide text-ink-3">Lucca Labs · data {yrs} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>
       </header>
       <Story blocks={blocks} />

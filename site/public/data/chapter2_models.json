@@ -1,0 +1,115 @@
+{
+ "models": {
+  "urgent_raw": {
+   "label": "Triaged urgent, pain visits: unadjusted",
+   "note": "",
+   "n": 15002,
+   "or": 0.78,
+   "lo": 0.69,
+   "hi": 0.88,
+   "p": 0.0,
+   "formula": "urgent_i ~ femalei"
+  },
+  "urgent_adj": {
+   "label": "\u2026 adjusted for age band, complaint, year",
+   "note": "",
+   "n": 15002,
+   "or": 0.88,
+   "lo": 0.77,
+   "hi": 1.01,
+   "p": 0.08,
+   "formula": "urgent_i ~ femalei + C(age_band) + C(complaint) + yearf"
+  },
+  "urgent_adj_pain": {
+   "label": "\u2026 plus reported pain score",
+   "note": "visits with a recorded pain score",
+   "n": 12190,
+   "or": 0.88,
+   "lo": 0.76,
+   "hi": 1.02,
+   "p": 0.093,
+   "formula": "urgent_i ~ femalei + C(age_band) + C(complaint) + pain_rec + yearf"
+  },
+  "urgent_adj_full": {
+   "label": "\u2026 plus arrival by ambulance",
+   "note": "visits with a recorded pain score",
+   "n": 12190,
+   "or": 0.9,
+   "lo": 0.78,
+   "hi": 1.04,
+   "p": 0.153,
+   "formula": "urgent_i ~ femalei + C(age_band) + C(complaint) + pain_rec + ems_bin + yearf"
+  },
+  "chest_urgent_adj": {
+   "label": "Triaged urgent, chest pain: adjusted for age, pain score, ambulance, year",
+   "note": "visits with a recorded pain score",
+   "n": 2396,
+   "or": 0.82,
+   "lo": 0.67,
+   "hi": 1.0,
+   "p": 0.054,
+   "formula": "urgent_i ~ femalei + C(age_band) + pain_rec + ems_bin + yearf"
+  },
+  "chest_young_urgent_adj": {
+   "label": "Triaged urgent, chest pain under 45: adjusted for pain score, ambulance, year",
+   "note": "visits with a recorded pain score",
+   "n": 959,
+   "or": 0.68,
+   "lo": 0.46,
+   "hi": 1.0,
+   "p": 0.048,
+   "formula": "urgent_i ~ femalei + pain_rec + ems_bin + yearf"
+  },
+  "headache_analgesic_adj": {
+   "label": "Any painkiller, headache: adjusted for age, year",
+   "note": "",
+   "n": 2096,
+   "or": 1.33,
+   "lo": 1.06,
+   "hi": 1.68,
+   "p": 0.014,
+   "formula": "an_i ~ femalei + C(age_band) + yearf"
+  },
+  "opioid_severe_abd_adj": {
+   "label": "Opioid in ED, severe abdominal pain: adjusted for age, year",
+   "note": "",
+   "n": 2662,
+   "or": 0.77,
+   "lo": 0.63,
+   "hi": 0.95,
+   "p": 0.015,
+   "formula": "op_i ~ femalei + C(age_band) + yearf"
+  },
+  "mi_cardenz_raw": {
+   "label": "Cardiac enzymes ordered, heart attack: unadjusted",
+   "note": "",
+   "n": 377,
+   "or": 0.51,
+   "lo": 0.28,
+   "hi": 0.9,
+   "p": 0.02,
+   "formula": "cardenz_i ~ femalei"
+  },
+  "mi_cardenz_adj": {
+   "label": "\u2026 adjusted for age band, chest-pain complaint, year",
+   "note": "",
+   "n": 377,
+   "or": 0.51,
+   "lo": 0.28,
+   "hi": 0.92,
+   "p": 0.025,
+   "formula": "cardenz_i ~ femalei + C(age_band) + chest_i + yearf"
+  },
+  "mi_urgent_adj": {
+   "label": "Triaged urgent, heart attack: adjusted for age, complaint, ambulance, year",
+   "note": "",
+   "n": 275,
+   "or": 0.65,
+   "lo": 0.33,
+   "hi": 1.27,
+   "p": 0.206,
+   "formula": "urgent_i ~ femalei + C(age_band) + chest_i + ems_bin + yearf"
+  }
+ },
+ "note": "Survey-weighted logistic regressions (weights normalised to mean 1); standard errors clustered on stratum x PSU. Odds ratio for female patients relative to male."
+}

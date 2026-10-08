@@ -49,7 +49,7 @@ await browser.close()
   await p2.addStyleTag({ content: '.reveal{opacity:1!important;transform:none!important;transition:none!important} .fade-up{animation:none!important} .progress-bar{display:none!important}' })
   for (let y = 0; y < await p2.evaluate(() => document.body.scrollHeight); y += 700) { await p2.evaluate(v => window.scrollTo(0, v), y); await p2.waitForTimeout(80) }
   await p2.waitForTimeout(600)
-  const names2 = ['ch2-01-severe-pain', 'ch2-02-triage-ambulance', 'ch2-03-analgesic-by-score', 'ch2-04-where-treatment-differs', 'ch2-05-wait-minutes', 'ch2-06-heart-attack', 'ch2-07-what-you-say', 'ch2-08-chest-pain-by-age', 'ch2-09-how-you-arrive', 'ch2-10-urgency-by-score', 'ch2-11-explorer', 'ch2-12-summary']
+  const names2 = ['ch2-01-severe-pain', 'ch2-02-triage-ambulance', 'ch2-03-analgesic-by-score', 'ch2-04-where-treatment-differs', 'ch2-05-wait-minutes', 'ch2-06-heart-attack', 'ch2-07-what-you-say', 'ch2-08-chest-pain-by-age', 'ch2-09-how-you-arrive', 'ch2-10-urgency-by-score', 'ch2-11-adjusted-odds', 'ch2-12-explorer', 'ch2-13-summary']
   const cards2 = p2.locator('.graphic-card')
   const n2 = await cards2.count()
   for (let i = 0; i < Math.min(n2, names2.length); i++) {
@@ -78,4 +78,17 @@ await browser.close()
     await cards3.nth(i).screenshot({ path: `${out}${names3[i]}.png` }); console.log('saved', names3[i])
   }
   await b3.close()
+}
+
+// ---- Record and Data pages
+{
+  const b4 = await chromium.launch()
+  const p4 = await b4.newPage({ viewport: { width: 1200, height: 900 }, deviceScaleFactor: 2 })
+  for (const [route, name] of [['record', 'site-record'], ['data', 'site-data'], ['corrections', 'site-corrections']]) {
+    await p4.goto(base + '#/' + route, { waitUntil: 'networkidle' })
+    await p4.addStyleTag({ content: '.fade-up{animation:none!important}' })
+    await p4.waitForTimeout(500)
+    await p4.screenshot({ path: `${out}${name}.png`, fullPage: true }); console.log('saved', name)
+  }
+  await b4.close()
 }

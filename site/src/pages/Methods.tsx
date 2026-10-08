@@ -1,7 +1,25 @@
 import SourceList from '../components/SourceList'
+import { useEffect, useState } from 'react'
 
 const H = ({ children }: { children: string }) => <h2 className="display text-3xl font-medium mt-14 mb-4 pt-8 border-t border-hairline/70">{children}</h2>
 const P = ({ children }: { children: React.ReactNode }) => <p className="text-[17px] text-ink leading-[1.75] mt-3">{children}</p>
+
+type Variant = { label: string; n: number; n_female: number; n_male: number; median_ratio: Record<string, number | null>; share_underfunded: Record<string, number | null>; female_shortfall_m: number; migraine_ratio: number | null }
+function Sensitivity() {
+  const [rows, setRows] = useState<Variant[]>([])
+  useEffect(() => { fetch(`${import.meta.env.BASE_URL}data/chapter3_sensitivity.json`).then(r => r.json()).then(setRows) }, [])
+  if (!rows.length) return null
+  return (
+    <div className="mt-4 overflow-x-auto">
+      <table className="w-full border-collapse text-[13px]">
+        <thead><tr className="text-[11px] font-bold uppercase tracking-[0.12em] text-ink-3"><th className="py-2 pr-3 text-left font-bold">Variant</th><th className="py-2 pr-3 text-right font-bold">Diseases</th><th className="py-2 pr-3 text-right font-bold">Median ratio, women / men</th><th className="py-2 pr-3 text-right font-bold">Below line, women / men</th><th className="py-2 pr-3 text-right font-bold">Shortfall</th><th className="py-2 text-right font-bold">Migraine</th></tr></thead>
+        <tbody>{rows.map(v => (
+          <tr key={v.label} className="border-t border-hairline/60"><td className="py-2 pr-3 text-ink">{v.label}</td><td className="py-2 pr-3 text-right tabular-nums">{v.n}</td><td className="py-2 pr-3 text-right tabular-nums">{v.median_ratio.female?.toFixed(2)} / {v.median_ratio.male?.toFixed(2)}</td><td className="py-2 pr-3 text-right tabular-nums">{v.share_underfunded.female}% / {v.share_underfunded.male}%</td><td className="py-2 pr-3 text-right tabular-nums">${v.female_shortfall_m}M</td><td className="py-2 text-right tabular-nums">{v.migraine_ratio?.toFixed(2)}×</td></tr>
+        ))}</tbody>
+      </table>
+    </div>
+  )
+}
 
 export default function Methods() {
   return (
@@ -35,6 +53,8 @@ export default function Methods() {
       <P>Pain complaints are defined by the first-listed reason for visit: abdominal pain (codes 1545.0–1545.3), chest pain (1050.0–1050.3), back pain (1905.0, 1905.1, 1910.0, 1910.1), headache or migraine (1210.0, 2365.0), neck, hip, leg or joint pain (1900.1, 1915.1, 1920.1, 1925.1, 1930.1, 1935.1) and flank, rib or groin pain (1055.0–1055.3). An opioid is any medication whose therapeutic class is narcotic analgesics (Multum 060) or narcotic analgesic combinations (191); any analgesic is Multum 058 through 063 or 191. "Given in the ED" uses the survey's given-or-prescribed item. Severe pain is a reported score of 7 to 10. Urgent triage is emergency severity index 1 or 2, and immediate is level 1. A heart attack visit is any visit with ICD-10 code I21 or I22 in any of the five diagnosis fields; its chief complaint is the first-listed reason for visit. Cardiac enzymes, D-dimer, EKG, imaging and CT are the survey's own test checkboxes. Arrival mode is the survey's arrival-by-ambulance item (walk-in means any other arrival). The explorer's age bands are 18–44, 45–64 and 65 and over; its cells with fewer than a few hundred sampled visits carry wide intervals, which are shown. Sex is the survey's SEX item, coded 1 for female and 2 for male; our first build of this chapter read it the other way round and was withdrawn the same day, and every figure here is from the corrected run.</P>
       <h3 className="eyebrow mt-8">Estimation</h3>
       <P>All shares and means are weighted with the visit weight and their standard errors come from Taylor linearization over the survey's masked strata and primary sampling units, following NCHS guidance for pooling years. Differences between women and men treat the two domains as independent. Age adjustment is direct standardization of each sex's rate to the pooled age distribution of that complaint in three bands (18–44, 45–64, 65+). Wait time excludes visits where it was not recorded; the pain-score analysis uses only the three-fifths of visits with a recorded score. We report means for wait time because the survey design does not give a clean standard error for the median; medians are in the data file.</P>
+      <h3 className="eyebrow mt-8">Adjusted models</h3>
+      <P>For each gap we fit a logistic regression of the outcome on patient sex with age band (18–44, 45–64, 65+), complaint group, survey year and, where stated, the reported pain score, arrival by ambulance and whether the chief complaint was chest pain. Visits are weighted by the visit weight normalised to a mean of one, and standard errors are clustered on stratum by primary sampling unit, which approximates the survey design. Odds ratios are for women relative to men. The full specifications and results are in the chapter's models file.</P>
       <h3 className="eyebrow mt-8">What it cannot see</h3>
       <P>The survey records what was documented, not dose, time from order to administration, or the clinician's reasoning. Sex is recorded as male or female. The 2008 comparison study measured time to analgesia in one department; the survey measures time to a clinician nationally, so the two are compared in direction, not in minutes.</P>
 
@@ -44,6 +64,9 @@ export default function Methods() {
       <P>Each NIH category was matched by hand to one or more WHO causes with the same definition. Most matches are one to one. Documented exceptions: hepatitis B and C include the cirrhosis and liver cancer WHO attributes to each virus; lymphoma pairs with Hodgkin plus non-Hodgkin; back and neck pain sums two NIH categories; five gynaecological NIH categories (endometriosis, fibroids, PCOS, vulvodynia, pelvic inflammatory disease) are summed against WHO's single gynaecological-diseases cause; vision loss sums five WHO causes. Diseases with fewer than 15,000 US DALYs are excluded because a dollars-per-DALY figure is unstable for them. Every match is listed in the chapter's data file.</P>
       <h3 className="eyebrow mt-8">Expected funding</h3>
       <P>Following the 2021 study, we fit a power law of funding on burden across all matched diseases (log funding = a + b log DALYs, ordinary least squares) and call the fitted value "expected" funding for that burden. A disease's ratio to expected is its actual funding divided by that. A disease is "mostly women" when at least 60% of its DALYs fall on women, "mostly men" at 60% or more on men. The shortfall is the sum, over mostly-women diseases below the line, of expected minus actual funding. The trend repeats the fit for each burden year with that fiscal year's funding.</P>
+      <h3 className="eyebrow mt-8">Sensitivity</h3>
+      <P>The table shows how the headline numbers move under other reasonable choices. The aggregate medians are fragile: dropping the two globally funded diseases, or moving the threshold, changes which sex's median sits higher. The disease-level findings are not: migraine's ratio stays between 0.14 and 0.16 in every variant, and the share of mostly-women diseases below the line stays at half or more.</P>
+      <Sensitivity />
       <h3 className="eyebrow mt-8">What it cannot see</h3>
       <P>NIH categories overlap, so dollars are not additive across diseases, and some categories are broader than the WHO cause they are matched to. NIH funds some diseases for their global burden, which the US DALY figure does not capture; HIV and tuberculosis are the clearest cases and are shown rather than dropped. Conditions with no WHO cause cannot be placed on the chart; the chapter lists them separately with their funding.</P>
 

@@ -1,0 +1,4187 @@
+{
+ "generated": "2026-10-07",
+ "conditions": [
+  {
+   "disease": "ADHD",
+   "funding": {
+    "funding_m": 75.0,
+    "dalys_k": 192.8,
+    "female_share": 26.8,
+    "dollars_per_daly": 389.0,
+    "ratio_to_expected": 0.61,
+    "rank_by_ratio": 21,
+    "n_ranked": 67,
+    "skew": "male"
+   },
+   "drugs": [],
+   "ed": null
+  },
+  {
+   "disease": "Alcohol use disorders",
+   "funding": {
+    "funding_m": 639.0,
+    "dalys_k": 1647.3,
+    "female_share": 29.9,
+    "dollars_per_daly": 388.0,
+    "ratio_to_expected": 2.33,
+    "rank_by_ratio": 54,
+    "n_ranked": 67,
+    "skew": "male"
+   },
+   "drugs": [
+    {
+     "brand": "Rezdiffra",
+     "year": 2024,
+     "trial_female_pct": 56.0,
+     "faers_female_pct": 66.2,
+     "gap": 10.2,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-rezdiffra"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Alzheimer's and other dementias",
+   "funding": {
+    "funding_m": 3859.0,
+    "dalys_k": 4043.7,
+    "female_share": 64.0,
+    "dollars_per_daly": 954.0,
+    "ratio_to_expected": 10.03,
+    "rank_by_ratio": 65,
+    "n_ranked": 67,
+    "skew": "female"
+   },
+   "drugs": [
+    {
+     "brand": "Tauvid",
+     "year": 2020,
+     "trial_female_pct": 49.5,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-tauvid"
+    },
+    {
+     "brand": "Leqembi",
+     "year": 2023,
+     "trial_female_pct": 52.3,
+     "faers_female_pct": 58.5,
+     "gap": 6.3,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-leqembi"
+    },
+    {
+     "brand": "Kisunla",
+     "year": 2024,
+     "trial_female_pct": 57.4,
+     "faers_female_pct": 61.7,
+     "gap": 4.3,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-kisunla"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Amphetamine use disorders",
+   "funding": {
+    "funding_m": 99.0,
+    "dalys_k": 512.0,
+    "female_share": 29.1,
+    "dollars_per_daly": 193.0,
+    "ratio_to_expected": 0.56,
+    "rank_by_ratio": 20,
+    "n_ranked": 67,
+    "skew": "male"
+   },
+   "drugs": [],
+   "ed": null
+  },
+  {
+   "disease": "Anxiety disorders",
+   "funding": {
+    "funding_m": 271.0,
+    "dalys_k": 2494.1,
+    "female_share": 63.7,
+    "dollars_per_daly": 109.0,
+    "ratio_to_expected": 0.85,
+    "rank_by_ratio": 27,
+    "n_ranked": 67,
+    "skew": "female"
+   },
+   "drugs": [],
+   "ed": null
+  },
+  {
+   "disease": "Asthma",
+   "funding": {
+    "funding_m": 270.0,
+    "dalys_k": 1428.7,
+    "female_share": 54.8,
+    "dollars_per_daly": 189.0,
+    "ratio_to_expected": 1.04,
+    "rank_by_ratio": 29,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [
+    {
+     "brand": "Nucala",
+     "year": 2015,
+     "trial_female_pct": 59.5,
+     "faers_female_pct": 67.8,
+     "gap": 8.3,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-nucala"
+    },
+    {
+     "brand": "Cinqair",
+     "year": 2016,
+     "trial_female_pct": 62.2,
+     "faers_female_pct": 62.5,
+     "gap": 0.2,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-cinqair"
+    },
+    {
+     "brand": "Fasenra",
+     "year": 2017,
+     "trial_female_pct": 62.9,
+     "faers_female_pct": 69.7,
+     "gap": 6.8,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-fasenra"
+    },
+    {
+     "brand": "Exdensur",
+     "year": 2025,
+     "trial_female_pct": 63.4,
+     "faers_female_pct": 21.7,
+     "gap": -41.7,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-exdensur"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Autism",
+   "funding": {
+    "funding_m": 305.0,
+    "dalys_k": 606.7,
+    "female_share": 27.6,
+    "dollars_per_daly": 503.0,
+    "ratio_to_expected": 1.62,
+    "rank_by_ratio": 48,
+    "n_ranked": 67,
+    "skew": "male"
+   },
+   "drugs": [],
+   "ed": null
+  },
+  {
+   "disease": "Back and neck pain",
+   "funding": {
+    "funding_m": 76.0,
+    "dalys_k": 5951.5,
+    "female_share": 54.8,
+    "dollars_per_daly": 13.0,
+    "ratio_to_expected": 0.17,
+    "rank_by_ratio": 7,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [],
+   "ed": {
+    "complaint": "Back pain",
+    "n": 2426,
+    "metrics": {
+     "severe_share": {
+      "women": {
+       "est": 73.3,
+       "lo": 69.0,
+       "hi": 77.6,
+       "n": 988
+      },
+      "men": {
+       "est": 73.2,
+       "lo": 68.3,
+       "hi": 78.0,
+       "n": 765
+      },
+      "diff": 0.2,
+      "diff_lo": -6.3,
+      "diff_hi": 6.7
+     },
+     "urgent": {
+      "women": {
+       "est": 6.6,
+       "lo": 3.3,
+       "hi": 9.8,
+       "n": 1020
+      },
+      "men": {
+       "est": 6.4,
+       "lo": 3.3,
+       "hi": 9.6,
+       "n": 771
+      },
+      "diff": 0.2,
+      "diff_lo": -4.4,
+      "diff_hi": 4.7
+     },
+     "ems": {
+      "women": {
+       "est": 11.9,
+       "lo": 9.4,
+       "hi": 14.4,
+       "n": 1335
+      },
+      "men": {
+       "est": 15.3,
+       "lo": 11.8,
+       "hi": 18.8,
+       "n": 1024
+      },
+      "diff": -3.4,
+      "diff_lo": -7.7,
+      "diff_hi": 0.9
+     },
+     "wait_mean": {
+      "women": {
+       "est": 42.0,
+       "lo": 34.1,
+       "hi": 50.0,
+       "n": 1187
+      },
+      "men": {
+       "est": 33.5,
+       "lo": 28.9,
+       "hi": 38.2,
+       "n": 918
+      },
+      "diff": 8.5,
+      "diff_lo": -0.7,
+      "diff_hi": 17.7
+     },
+     "analgesic_ed": {
+      "women": {
+       "est": 64.0,
+       "lo": 60.4,
+       "hi": 67.6,
+       "n": 1368
+      },
+      "men": {
+       "est": 62.9,
+       "lo": 58.4,
+       "hi": 67.3,
+       "n": 1058
+      },
+      "diff": 1.1,
+      "diff_lo": -4.6,
+      "diff_hi": 6.8
+     },
+     "opioid_ed": {
+      "women": {
+       "est": 28.6,
+       "lo": 25.2,
+       "hi": 32.1,
+       "n": 1368
+      },
+      "men": {
+       "est": 27.4,
+       "lo": 23.1,
+       "hi": 31.7,
+       "n": 1058
+      },
+      "diff": 1.2,
+      "diff_lo": -4.3,
+      "diff_hi": 6.7
+     },
+     "opioid_ed_severe": {
+      "women": {
+       "est": 35.2,
+       "lo": 30.3,
+       "hi": 40.1,
+       "n": 736
+      },
+      "men": {
+       "est": 33.1,
+       "lo": 27.0,
+       "hi": 39.3,
+       "n": 555
+      },
+      "diff": 2.1,
+      "diff_lo": -5.8,
+      "diff_hi": 9.9
+     },
+     "admitted": {
+      "women": {
+       "est": 0.4,
+       "lo": 0.1,
+       "hi": 0.7,
+       "n": 1368
+      },
+      "men": {
+       "est": 1.0,
+       "lo": 0.2,
+       "hi": 1.7,
+       "n": 1058
+      },
+      "diff": -0.5,
+      "diff_lo": -1.3,
+      "diff_hi": 0.2
+     }
+    }
+   }
+  },
+  {
+   "disease": "Bipolar disorder",
+   "funding": {
+    "funding_m": 84.0,
+    "dalys_k": 474.9,
+    "female_share": 50.2,
+    "dollars_per_daly": 177.0,
+    "ratio_to_expected": 0.49,
+    "rank_by_ratio": 19,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [
+    {
+     "brand": "Vraylar",
+     "year": 2015,
+     "trial_female_pct": 40.6,
+     "faers_female_pct": 67.4,
+     "gap": 26.8,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-vraylar-treatment-bipolar-disorder-manicmixed-episode"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Brain cancer",
+   "funding": {
+    "funding_m": 429.0,
+    "dalys_k": 558.7,
+    "female_share": 42.4,
+    "dollars_per_daly": 768.0,
+    "ratio_to_expected": 2.35,
+    "rank_by_ratio": 55,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [
+    {
+     "brand": "Voranigo",
+     "year": 2024,
+     "trial_female_pct": 43.5,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-voranigo"
+    },
+    {
+     "brand": "Ojemda",
+     "year": 2024,
+     "trial_female_pct": 47.4,
+     "faers_female_pct": 58.1,
+     "gap": 10.7,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-ojemda"
+    },
+    {
+     "brand": "Modeyso",
+     "year": 2025,
+     "trial_female_pct": 51.2,
+     "faers_female_pct": 32.4,
+     "gap": -18.7,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-modeyso"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Breast cancer",
+   "funding": {
+    "funding_m": 740.0,
+    "dalys_k": 1298.1,
+    "female_share": 98.8,
+    "dollars_per_daly": 570.0,
+    "ratio_to_expected": 2.95,
+    "rank_by_ratio": 58,
+    "n_ranked": 67,
+    "skew": "female"
+   },
+   "drugs": [
+    {
+     "brand": "Talzenna",
+     "year": 2018,
+     "trial_female_pct": 98.4,
+     "faers_female_pct": 49.2,
+     "gap": -49.2,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/resources-information-approved-drugs/drug-trial-snapshot-talzenna"
+    },
+    {
+     "brand": "Orserdu",
+     "year": 2023,
+     "trial_female_pct": 98.5,
+     "faers_female_pct": 99.0,
+     "gap": 0.5,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-orserdu"
+    },
+    {
+     "brand": "Trodelvy",
+     "year": 2020,
+     "trial_female_pct": 99.1,
+     "faers_female_pct": 93.6,
+     "gap": -5.5,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-trodelvy"
+    },
+    {
+     "brand": "Tukysa",
+     "year": 2020,
+     "trial_female_pct": 99.2,
+     "faers_female_pct": 94.6,
+     "gap": -4.6,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-tukysa"
+    },
+    {
+     "brand": "Margenza",
+     "year": 2020,
+     "trial_female_pct": 99.4,
+     "faers_female_pct": 100.0,
+     "gap": 0.6,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-margenza"
+    },
+    {
+     "brand": "Inluriyo",
+     "year": 2025,
+     "trial_female_pct": 99.4,
+     "faers_female_pct": 100.0,
+     "gap": 0.6,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-inluriyo"
+    },
+    {
+     "brand": "Enhertu",
+     "year": 2019,
+     "trial_female_pct": 99.6,
+     "faers_female_pct": 87.7,
+     "gap": -11.9,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-enhertu"
+    },
+    {
+     "brand": "Piqray",
+     "year": 2019,
+     "trial_female_pct": 99.8,
+     "faers_female_pct": 95.5,
+     "gap": -4.3,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-piqray"
+    },
+    {
+     "brand": "Cerianna",
+     "year": 2020,
+     "trial_female_pct": 100.0,
+     "faers_female_pct": 100.0,
+     "gap": 0.0,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-cerianna"
+    },
+    {
+     "brand": "Ibrance",
+     "year": 2015,
+     "trial_female_pct": 100.0,
+     "faers_female_pct": 97.5,
+     "gap": -2.5,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-ibrance-palbociclib"
+    },
+    {
+     "brand": "Kisqali",
+     "year": 2017,
+     "trial_female_pct": 100.0,
+     "faers_female_pct": 98.5,
+     "gap": -1.5,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-kisqali"
+    },
+    {
+     "brand": "Nerlynx",
+     "year": 2017,
+     "trial_female_pct": 100.0,
+     "faers_female_pct": 96.0,
+     "gap": -4.0,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-nerlynx"
+    },
+    {
+     "brand": "Verzenio",
+     "year": 2017,
+     "trial_female_pct": 100.0,
+     "faers_female_pct": 97.5,
+     "gap": -2.5,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-verzenio"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "COPD",
+   "funding": {
+    "funding_m": 160.0,
+    "dalys_k": 4297.2,
+    "female_share": 51.7,
+    "dollars_per_daly": 37.0,
+    "ratio_to_expected": 0.41,
+    "rank_by_ratio": 15,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [
+    {
+     "brand": "Stiolto Respimat",
+     "year": 2015,
+     "trial_female_pct": 27.4,
+     "faers_female_pct": 59.5,
+     "gap": 32.2,
+     "rate_ratio": 2.71,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-stiolto-respimat"
+    },
+    {
+     "brand": "Ohtuvayre",
+     "year": 2024,
+     "trial_female_pct": 46.9,
+     "faers_female_pct": 55.9,
+     "gap": 9.0,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-ohtuvayre"
+    },
+    {
+     "brand": "Yupelri",
+     "year": 2018,
+     "trial_female_pct": 50.7,
+     "faers_female_pct": 61.7,
+     "gap": 11.0,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-yupelri"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Cervical cancer",
+   "funding": {
+    "funding_m": 149.0,
+    "dalys_k": 213.5,
+    "female_share": 100.0,
+    "dollars_per_daly": 698.0,
+    "ratio_to_expected": 1.17,
+    "rank_by_ratio": 32,
+    "n_ranked": 67,
+    "skew": "female"
+   },
+   "drugs": [],
+   "ed": null
+  },
+  {
+   "disease": "Chronic Fatigue Syndrome",
+   "funding": {
+    "funding_m": 13.0,
+    "uncounted": true
+   },
+   "drugs": [],
+   "ed": null
+  },
+  {
+   "disease": "Cirrhosis and chronic liver disease",
+   "funding": {
+    "funding_m": 444.0,
+    "dalys_k": 1986.2,
+    "female_share": 36.3,
+    "dollars_per_daly": 224.0,
+    "ratio_to_expected": 1.51,
+    "rank_by_ratio": 43,
+    "n_ranked": 67,
+    "skew": "male"
+   },
+   "drugs": [
+    {
+     "brand": "Vosevi",
+     "year": 2017,
+     "trial_female_pct": 22.7,
+     "faers_female_pct": 29.4,
+     "gap": 6.7,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-vosevi"
+    },
+    {
+     "brand": "Doptelet",
+     "year": 2018,
+     "trial_female_pct": 34.5,
+     "faers_female_pct": 59.0,
+     "gap": 24.5,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-doptelet"
+    },
+    {
+     "brand": "Mulpleta",
+     "year": 2018,
+     "trial_female_pct": 41.1,
+     "faers_female_pct": 52.8,
+     "gap": 11.7,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-mulpleta"
+    },
+    {
+     "brand": "Rezdiffra",
+     "year": 2024,
+     "trial_female_pct": 56.0,
+     "faers_female_pct": 66.2,
+     "gap": 10.2,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-rezdiffra"
+    },
+    {
+     "brand": "Ocaliva",
+     "year": 2016,
+     "trial_female_pct": 90.7,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-ocaliva"
+    },
+    {
+     "brand": "Livdelzi",
+     "year": 2024,
+     "trial_female_pct": 94.8,
+     "faers_female_pct": 89.0,
+     "gap": -5.8,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-livdelzi"
+    },
+    {
+     "brand": "Iqirvo",
+     "year": 2024,
+     "trial_female_pct": 95.7,
+     "faers_female_pct": 93.9,
+     "gap": -1.7,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-iqirvo"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Cocaine use disorders",
+   "funding": {
+    "funding_m": 142.0,
+    "dalys_k": 828.3,
+    "female_share": 25.7,
+    "dollars_per_daly": 171.0,
+    "ratio_to_expected": 0.67,
+    "rank_by_ratio": 24,
+    "n_ranked": 67,
+    "skew": "male"
+   },
+   "drugs": [],
+   "ed": null
+  },
+  {
+   "disease": "Colorectal cancer",
+   "funding": {
+    "funding_m": 338.0,
+    "dalys_k": 1462.4,
+    "female_share": 43.9,
+    "dollars_per_daly": 231.0,
+    "ratio_to_expected": 1.29,
+    "rank_by_ratio": 37,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [
+    {
+     "brand": "Aphexda",
+     "year": 2023,
+     "trial_female_pct": 35.2,
+     "faers_female_pct": 51.9,
+     "gap": 16.6,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-aphexda"
+    },
+    {
+     "brand": "Lonsurf",
+     "year": 2015,
+     "trial_female_pct": 38.6,
+     "faers_female_pct": 42.0,
+     "gap": 3.4,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-lonsurf"
+    },
+    {
+     "brand": "Fruzaqla",
+     "year": 2023,
+     "trial_female_pct": 44.3,
+     "faers_female_pct": 43.4,
+     "gap": -0.9,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-fruzaqla"
+    },
+    {
+     "brand": "Zinplava",
+     "year": 2016,
+     "trial_female_pct": 57.3,
+     "faers_female_pct": 68.3,
+     "gap": 11.0,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-zinplava"
+    },
+    {
+     "brand": "Romvimza",
+     "year": 2025,
+     "trial_female_pct": 59.3,
+     "faers_female_pct": 63.2,
+     "gap": 3.9,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshot-romvimza"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Congenital heart disease",
+   "funding": {
+    "funding_m": 154.0,
+    "dalys_k": 299.5,
+    "female_share": 42.6,
+    "dollars_per_daly": 514.0,
+    "ratio_to_expected": 1.06,
+    "rank_by_ratio": 30,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [],
+   "ed": null
+  },
+  {
+   "disease": "Coronary heart disease",
+   "funding": {
+    "funding_m": 383.0,
+    "dalys_k": 10101.9,
+    "female_share": 35.7,
+    "dollars_per_daly": 38.0,
+    "ratio_to_expected": 0.71,
+    "rank_by_ratio": 25,
+    "n_ranked": 67,
+    "skew": "male"
+   },
+   "drugs": [
+    {
+     "brand": "Attruby",
+     "year": 2024,
+     "trial_female_pct": 9.2,
+     "faers_female_pct": 24.1,
+     "gap": 15.0,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshot-attruby"
+    },
+    {
+     "brand": "Kengreal",
+     "year": 2015,
+     "trial_female_pct": 28.0,
+     "faers_female_pct": 35.1,
+     "gap": 7.1,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-kengreal"
+    },
+    {
+     "brand": "Flyrcado",
+     "year": 2024,
+     "trial_female_pct": 31.1,
+     "faers_female_pct": 0.0,
+     "gap": -31.1,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-flyrcado"
+    },
+    {
+     "brand": "Praluent",
+     "year": 2015,
+     "trial_female_pct": 40.2,
+     "faers_female_pct": 59.3,
+     "gap": 19.1,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-praluent"
+    },
+    {
+     "brand": "Inpefa",
+     "year": 2023,
+     "trial_female_pct": 43.8,
+     "faers_female_pct": 48.7,
+     "gap": 4.9,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-inpefa"
+    },
+    {
+     "brand": "Repatha",
+     "year": 2015,
+     "trial_female_pct": 48.0,
+     "faers_female_pct": 58.3,
+     "gap": 10.4,
+     "rate_ratio": 1.29,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-repatha"
+    }
+   ],
+   "ed": {
+    "complaint": "Chest pain",
+    "n": 4180,
+    "metrics": {
+     "severe_share": {
+      "women": {
+       "est": 47.8,
+       "lo": 44.4,
+       "hi": 51.3,
+       "n": 1446
+      },
+      "men": {
+       "est": 37.9,
+       "lo": 33.6,
+       "hi": 42.2,
+       "n": 1338
+      },
+      "diff": 9.9,
+      "diff_lo": 4.4,
+      "diff_hi": 15.4
+     },
+     "urgent": {
+      "women": {
+       "est": 39.3,
+       "lo": 34.0,
+       "hi": 44.6,
+       "n": 1599
+      },
+      "men": {
+       "est": 44.6,
+       "lo": 39.1,
+       "hi": 50.1,
+       "n": 1453
+      },
+      "diff": -5.3,
+      "diff_lo": -12.9,
+      "diff_hi": 2.3
+     },
+     "ems": {
+      "women": {
+       "est": 19.8,
+       "lo": 17.5,
+       "hi": 22.2,
+       "n": 2116
+      },
+      "men": {
+       "est": 24.4,
+       "lo": 21.2,
+       "hi": 27.5,
+       "n": 1916
+      },
+      "diff": -4.6,
+      "diff_lo": -8.5,
+      "diff_hi": -0.6
+     },
+     "wait_mean": {
+      "women": {
+       "est": 28.8,
+       "lo": 25.7,
+       "hi": 31.9,
+       "n": 1917
+      },
+      "men": {
+       "est": 32.7,
+       "lo": 27.4,
+       "hi": 37.9,
+       "n": 1726
+      },
+      "diff": -3.9,
+      "diff_lo": -10.0,
+      "diff_hi": 2.2
+     },
+     "analgesic_ed": {
+      "women": {
+       "est": 50.1,
+       "lo": 46.1,
+       "hi": 54.1,
+       "n": 2190
+      },
+      "men": {
+       "est": 49.5,
+       "lo": 45.6,
+       "hi": 53.5,
+       "n": 1990
+      },
+      "diff": 0.6,
+      "diff_lo": -5.0,
+      "diff_hi": 6.2
+     },
+     "opioid_ed": {
+      "women": {
+       "est": 15.8,
+       "lo": 13.3,
+       "hi": 18.2,
+       "n": 2190
+      },
+      "men": {
+       "est": 15.3,
+       "lo": 12.5,
+       "hi": 18.0,
+       "n": 1990
+      },
+      "diff": 0.5,
+      "diff_lo": -3.2,
+      "diff_hi": 4.2
+     },
+     "opioid_ed_severe": {
+      "women": {
+       "est": 26.6,
+       "lo": 21.0,
+       "hi": 32.3,
+       "n": 652
+      },
+      "men": {
+       "est": 28.4,
+       "lo": 21.4,
+       "hi": 35.4,
+       "n": 502
+      },
+      "diff": -1.8,
+      "diff_lo": -10.8,
+      "diff_hi": 7.2
+     },
+     "admitted": {
+      "women": {
+       "est": 2.1,
+       "lo": 1.2,
+       "hi": 3.1,
+       "n": 2190
+      },
+      "men": {
+       "est": 3.4,
+       "lo": 2.0,
+       "hi": 4.8,
+       "n": 1990
+      },
+      "diff": -1.3,
+      "diff_lo": -3.0,
+      "diff_hi": 0.4
+     }
+    }
+   }
+  },
+  {
+   "disease": "Depression",
+   "funding": {
+    "funding_m": 700.0,
+    "dalys_k": 2920.2,
+    "female_share": 62.9,
+    "dollars_per_daly": 240.0,
+    "ratio_to_expected": 2.06,
+    "rank_by_ratio": 52,
+    "n_ranked": 67,
+    "skew": "female"
+   },
+   "drugs": [
+    {
+     "brand": "Vraylar",
+     "year": 2015,
+     "trial_female_pct": 40.6,
+     "faers_female_pct": 67.4,
+     "gap": 26.8,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-vraylar-treatment-bipolar-disorder-manicmixed-episode"
+    },
+    {
+     "brand": "Exxua",
+     "year": 2023,
+     "trial_female_pct": 64.9,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-exxua"
+    },
+    {
+     "brand": "Rexulti",
+     "year": 2015,
+     "trial_female_pct": 68.9,
+     "faers_female_pct": 68.6,
+     "gap": -0.3,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-rexulti-treatment-major-depressive-disorder"
+    },
+    {
+     "brand": "Zulresso",
+     "year": 2019,
+     "trial_female_pct": 100.0,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-zulresso"
+    },
+    {
+     "brand": "Zurzuvae",
+     "year": 2023,
+     "trial_female_pct": 100.0,
+     "faers_female_pct": 98.7,
+     "gap": -1.3,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-zurzuvae"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Diabetes",
+   "funding": {
+    "funding_m": 1151.0,
+    "dalys_k": 4446.7,
+    "female_share": 42.7,
+    "dollars_per_daly": 259.0,
+    "ratio_to_expected": 2.89,
+    "rank_by_ratio": 57,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [
+    {
+     "brand": "Brenzavvy",
+     "year": 2023,
+     "trial_female_pct": 34.0,
+     "faers_female_pct": 40.0,
+     "gap": 6.0,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-brenzavvy"
+    },
+    {
+     "brand": "Adlyxin",
+     "year": 2016,
+     "trial_female_pct": 39.7,
+     "faers_female_pct": 56.4,
+     "gap": 16.8,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-adlyxin"
+    },
+    {
+     "brand": "Ozempic",
+     "year": 2017,
+     "trial_female_pct": 41.5,
+     "faers_female_pct": 64.7,
+     "gap": 23.2,
+     "rate_ratio": 1.66,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-ozempic"
+    },
+    {
+     "brand": "Mounjaro",
+     "year": 2022,
+     "trial_female_pct": 42.2,
+     "faers_female_pct": 72.5,
+     "gap": 30.4,
+     "rate_ratio": 1.68,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-mounjaro"
+    },
+    {
+     "brand": "Tresiba",
+     "year": 2015,
+     "trial_female_pct": 43.6,
+     "faers_female_pct": 56.6,
+     "gap": 13.1,
+     "rate_ratio": 1.48,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-tresiba"
+    },
+    {
+     "brand": "Inpefa",
+     "year": 2023,
+     "trial_female_pct": 43.8,
+     "faers_female_pct": 48.7,
+     "gap": 4.9,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-inpefa"
+    },
+    {
+     "brand": "Tzield",
+     "year": 2022,
+     "trial_female_pct": 44.7,
+     "faers_female_pct": 59.8,
+     "gap": 15.1,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-tzield"
+    },
+    {
+     "brand": "Steglatro",
+     "year": 2017,
+     "trial_female_pct": 48.0,
+     "faers_female_pct": 55.0,
+     "gap": 7.0,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-steglatro"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Down syndrome",
+   "funding": {
+    "funding_m": 115.0,
+    "dalys_k": 77.1,
+    "female_share": 46.0,
+    "dollars_per_daly": 1491.0,
+    "ratio_to_expected": 1.32,
+    "rank_by_ratio": 39,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [],
+   "ed": null
+  },
+  {
+   "disease": "Drug use disorders",
+   "funding": {
+    "funding_m": 1663.0,
+    "dalys_k": 8934.8,
+    "female_share": 35.1,
+    "dollars_per_daly": 186.0,
+    "ratio_to_expected": 3.21,
+    "rank_by_ratio": 60,
+    "n_ranked": 67,
+    "skew": "male"
+   },
+   "drugs": [],
+   "ed": null
+  },
+  {
+   "disease": "Eating disorders",
+   "funding": {
+    "funding_m": 55.0,
+    "dalys_k": 191.0,
+    "female_share": 71.8,
+    "dollars_per_daly": 288.0,
+    "ratio_to_expected": 0.45,
+    "rank_by_ratio": 16,
+    "n_ranked": 67,
+    "skew": "female"
+   },
+   "drugs": [],
+   "ed": null
+  },
+  {
+   "disease": "Endometriosis",
+   "funding": {
+    "funding_m": 28.0,
+    "uncounted": true
+   },
+   "drugs": [
+    {
+     "brand": "Orilissa",
+     "year": 2018,
+     "trial_female_pct": 100.0,
+     "faers_female_pct": 99.7,
+     "gap": -0.3,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-orilissa"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Epilepsy",
+   "funding": {
+    "funding_m": 230.0,
+    "dalys_k": 442.1,
+    "female_share": 45.7,
+    "dollars_per_daly": 520.0,
+    "ratio_to_expected": 1.37,
+    "rank_by_ratio": 40,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [
+    {
+     "brand": "Epidiolex",
+     "year": 2018,
+     "trial_female_pct": 46.4,
+     "faers_female_pct": 49.2,
+     "gap": 2.8,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-epidiolex"
+    },
+    {
+     "brand": "Briviact",
+     "year": 2016,
+     "trial_female_pct": 49.0,
+     "faers_female_pct": 54.0,
+     "gap": 5.0,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-briviact"
+    },
+    {
+     "brand": "Xcopri",
+     "year": 2019,
+     "trial_female_pct": 49.3,
+     "faers_female_pct": 55.7,
+     "gap": 6.4,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-xcopri"
+    },
+    {
+     "brand": "Diacomit",
+     "year": 2018,
+     "trial_female_pct": 53.1,
+     "faers_female_pct": 51.1,
+     "gap": -2.0,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-diacomit"
+    },
+    {
+     "brand": "Givlaari",
+     "year": 2019,
+     "trial_female_pct": 89.4,
+     "faers_female_pct": 87.5,
+     "gap": -1.9,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-givlaari"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Esophageal cancer",
+   "funding": {
+    "funding_m": 59.0,
+    "dalys_k": 412.5,
+    "female_share": 18.9,
+    "dollars_per_daly": 143.0,
+    "ratio_to_expected": 0.36,
+    "rank_by_ratio": 13,
+    "n_ranked": 67,
+    "skew": "male"
+   },
+   "drugs": [
+    {
+     "brand": "Tevimbra",
+     "year": 2024,
+     "trial_female_pct": 15.6,
+     "faers_female_pct": 21.7,
+     "gap": 6.1,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-tevimbra"
+    },
+    {
+     "brand": "Vyloy",
+     "year": 2024,
+     "trial_female_pct": 37.9,
+     "faers_female_pct": 33.2,
+     "gap": -4.7,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-vyloy"
+    },
+    {
+     "brand": "Ayvakit",
+     "year": 2020,
+     "trial_female_pct": 39.2,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-ayvakit"
+    },
+    {
+     "brand": "Qinlock",
+     "year": 2020,
+     "trial_female_pct": 43.4,
+     "faers_female_pct": 43.8,
+     "gap": 0.4,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-qinlock"
+    },
+    {
+     "brand": "Lutathera",
+     "year": 2018,
+     "trial_female_pct": 46.4,
+     "faers_female_pct": 48.3,
+     "gap": 1.9,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-lutathera"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Fibromyalgia",
+   "funding": {
+    "funding_m": 16.0,
+    "uncounted": true
+   },
+   "drugs": [],
+   "ed": null
+  },
+  {
+   "disease": "Gallbladder disease",
+   "funding": {
+    "funding_m": 17.0,
+    "dalys_k": 385.8,
+    "female_share": 56.8,
+    "dollars_per_daly": 44.0,
+    "ratio_to_expected": 0.11,
+    "rank_by_ratio": 3,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [
+    {
+     "brand": "Ziihera",
+     "year": 2024,
+     "trial_female_pct": 55.6,
+     "faers_female_pct": 60.5,
+     "gap": 4.9,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-ziihera"
+    },
+    {
+     "brand": "Ocaliva",
+     "year": 2016,
+     "trial_female_pct": 90.7,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-ocaliva"
+    },
+    {
+     "brand": "Livdelzi",
+     "year": 2024,
+     "trial_female_pct": 94.8,
+     "faers_female_pct": 89.0,
+     "gap": -5.8,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-livdelzi"
+    },
+    {
+     "brand": "Iqirvo",
+     "year": 2024,
+     "trial_female_pct": 95.7,
+     "faers_female_pct": 93.9,
+     "gap": -1.7,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-iqirvo"
+    }
+   ],
+   "ed": {
+    "complaint": "Abdominal pain",
+    "n": 6123,
+    "metrics": {
+     "severe_share": {
+      "women": {
+       "est": 62.9,
+       "lo": 60.3,
+       "hi": 65.6,
+       "n": 2756
+      },
+      "men": {
+       "est": 58.1,
+       "lo": 53.9,
+       "hi": 62.4,
+       "n": 1615
+      },
+      "diff": 4.8,
+      "diff_lo": -0.2,
+      "diff_hi": 9.8
+     },
+     "urgent": {
+      "women": {
+       "est": 8.3,
+       "lo": 6.3,
+       "hi": 10.4,
+       "n": 2837
+      },
+      "men": {
+       "est": 9.0,
+       "lo": 6.5,
+       "hi": 11.5,
+       "n": 1642
+      },
+      "diff": -0.7,
+      "diff_lo": -4.0,
+      "diff_hi": 2.5
+     },
+     "ems": {
+      "women": {
+       "est": 12.1,
+       "lo": 10.5,
+       "hi": 13.8,
+       "n": 3757
+      },
+      "men": {
+       "est": 16.8,
+       "lo": 13.7,
+       "hi": 19.8,
+       "n": 2182
+      },
+      "diff": -4.6,
+      "diff_lo": -8.1,
+      "diff_hi": -1.1
+     },
+     "wait_mean": {
+      "women": {
+       "est": 41.2,
+       "lo": 35.9,
+       "hi": 46.5,
+       "n": 3389
+      },
+      "men": {
+       "est": 37.8,
+       "lo": 32.8,
+       "hi": 42.7,
+       "n": 1916
+      },
+      "diff": 3.5,
+      "diff_lo": -3.8,
+      "diff_hi": 10.7
+     },
+     "analgesic_ed": {
+      "women": {
+       "est": 51.5,
+       "lo": 48.3,
+       "hi": 54.6,
+       "n": 3872
+      },
+      "men": {
+       "est": 50.1,
+       "lo": 46.6,
+       "hi": 53.6,
+       "n": 2251
+      },
+      "diff": 1.4,
+      "diff_lo": -3.3,
+      "diff_hi": 6.1
+     },
+     "opioid_ed": {
+      "women": {
+       "est": 32.8,
+       "lo": 30.1,
+       "hi": 35.5,
+       "n": 3872
+      },
+      "men": {
+       "est": 35.5,
+       "lo": 32.0,
+       "hi": 38.9,
+       "n": 2251
+      },
+      "diff": -2.6,
+      "diff_lo": -7.0,
+      "diff_hi": 1.7
+     },
+     "opioid_ed_severe": {
+      "women": {
+       "est": 40.8,
+       "lo": 37.1,
+       "hi": 44.5,
+       "n": 1726
+      },
+      "men": {
+       "est": 48.4,
+       "lo": 43.3,
+       "hi": 53.5,
+       "n": 936
+      },
+      "diff": -7.6,
+      "diff_lo": -13.9,
+      "diff_hi": -1.3
+     },
+     "admitted": {
+      "women": {
+       "est": 1.9,
+       "lo": 0.9,
+       "hi": 2.8,
+       "n": 3872
+      },
+      "men": {
+       "est": 1.5,
+       "lo": 0.8,
+       "hi": 2.3,
+       "n": 2251
+      },
+      "diff": 0.3,
+      "diff_lo": -0.9,
+      "diff_hi": 1.6
+     }
+    }
+   }
+  },
+  {
+   "disease": "Gynaecological diseases",
+   "funding": {
+    "funding_m": 58.0,
+    "dalys_k": 896.6,
+    "female_share": 100.0,
+    "dollars_per_daly": 65.0,
+    "ratio_to_expected": 0.27,
+    "rank_by_ratio": 9,
+    "n_ranked": 67,
+    "skew": "female"
+   },
+   "drugs": [
+    {
+     "brand": "Orilissa",
+     "year": 2018,
+     "trial_female_pct": 100.0,
+     "faers_female_pct": 99.7,
+     "gap": -0.3,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-orilissa"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "HIV/AIDS",
+   "funding": {
+    "funding_m": 3293.0,
+    "dalys_k": 312.7,
+    "female_share": 25.6,
+    "dollars_per_daly": 10531.0,
+    "ratio_to_expected": 22.41,
+    "rank_by_ratio": 67,
+    "n_ranked": 67,
+    "skew": "male"
+   },
+   "drugs": [
+    {
+     "brand": "Biktarvy",
+     "year": 2018,
+     "trial_female_pct": 12.6,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-biktarvy"
+    },
+    {
+     "brand": "Genvoya",
+     "year": 2015,
+     "trial_female_pct": 13.7,
+     "faers_female_pct": 25.0,
+     "gap": 11.4,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-genvoya"
+    },
+    {
+     "brand": "Trogarzo",
+     "year": 2018,
+     "trial_female_pct": 15.0,
+     "faers_female_pct": 23.9,
+     "gap": 8.9,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-trogarzo"
+    },
+    {
+     "brand": "Pifeltro",
+     "year": 2018,
+     "trial_female_pct": 15.6,
+     "faers_female_pct": 24.1,
+     "gap": 8.5,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-pifeltro"
+    },
+    {
+     "brand": "Sunlenca",
+     "year": 2022,
+     "trial_female_pct": 25.0,
+     "faers_female_pct": 0.0,
+     "gap": -25.0,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-sunlenca"
+    },
+    {
+     "brand": "Rukobia",
+     "year": 2020,
+     "trial_female_pct": 26.5,
+     "faers_female_pct": 19.6,
+     "gap": -6.9,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-rukobia"
+    },
+    {
+     "brand": "Cabenuva",
+     "year": 2021,
+     "trial_female_pct": 27.9,
+     "faers_female_pct": 29.5,
+     "gap": 1.6,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-cabenuva"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Hearing loss",
+   "funding": {
+    "funding_m": 191.0,
+    "dalys_k": 2348.0,
+    "female_share": 46.0,
+    "dollars_per_daly": 81.0,
+    "ratio_to_expected": 0.61,
+    "rank_by_ratio": 22,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [
+    {
+     "brand": "Caplyta",
+     "year": 2019,
+     "trial_female_pct": 24.3,
+     "faers_female_pct": 69.1,
+     "gap": 44.7,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-caplyta"
+    },
+    {
+     "brand": "Vraylar",
+     "year": 2015,
+     "trial_female_pct": 28.5,
+     "faers_female_pct": 67.4,
+     "gap": 38.9,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-vraylar-treatment-schizophrenia"
+    },
+    {
+     "brand": "Aristada",
+     "year": 2015,
+     "trial_female_pct": 32.1,
+     "faers_female_pct": 48.5,
+     "gap": 16.4,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-aristada"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Hepatitis B",
+   "funding": {
+    "funding_m": 136.0,
+    "dalys_k": 157.1,
+    "female_share": 32.3,
+    "dollars_per_daly": 866.0,
+    "ratio_to_expected": 1.2,
+    "rank_by_ratio": 33,
+    "n_ranked": 67,
+    "skew": "male"
+   },
+   "drugs": [],
+   "ed": null
+  },
+  {
+   "disease": "Hepatitis C",
+   "funding": {
+    "funding_m": 84.0,
+    "dalys_k": 1164.2,
+    "female_share": 36.6,
+    "dollars_per_daly": 72.0,
+    "ratio_to_expected": 0.35,
+    "rank_by_ratio": 12,
+    "n_ranked": 67,
+    "skew": "male"
+   },
+   "drugs": [
+    {
+     "brand": "Vosevi",
+     "year": 2017,
+     "trial_female_pct": 22.7,
+     "faers_female_pct": 29.4,
+     "gap": 6.7,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-vosevi"
+    },
+    {
+     "brand": "Epclusa",
+     "year": 2016,
+     "trial_female_pct": 38.1,
+     "faers_female_pct": 42.9,
+     "gap": 4.8,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-epclusa"
+    },
+    {
+     "brand": "Zepatier",
+     "year": 2016,
+     "trial_female_pct": 38.7,
+     "faers_female_pct": 46.8,
+     "gap": 8.1,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-zepatier"
+    },
+    {
+     "brand": "Daklinza",
+     "year": 2015,
+     "trial_female_pct": 40.8,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-daklinza"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Hodgkin lymphoma",
+   "funding": {
+    "funding_m": 20.0,
+    "dalys_k": 31.0,
+    "female_share": 39.3,
+    "dollars_per_daly": 645.0,
+    "ratio_to_expected": 0.32,
+    "rank_by_ratio": 11,
+    "n_ranked": 67,
+    "skew": "male"
+   },
+   "drugs": [
+    {
+     "brand": "Calquence",
+     "year": 2017,
+     "trial_female_pct": 20.2,
+     "faers_female_pct": 37.4,
+     "gap": 17.2,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-calquence"
+    },
+    {
+     "brand": "Brukinsa",
+     "year": 2019,
+     "trial_female_pct": 24.6,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-brukinsa"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Infertility",
+   "funding": {
+    "funding_m": 221.0,
+    "dalys_k": 19.0,
+    "female_share": 42.8,
+    "dollars_per_daly": 11636.0,
+    "ratio_to_expected": 4.31,
+    "rank_by_ratio": 61,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [
+    {
+     "brand": "Rivfloza",
+     "year": 2023,
+     "trial_female_pct": 55.2,
+     "faers_female_pct": 71.4,
+     "gap": 16.3,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-rivfloza"
+    },
+    {
+     "brand": "Exem Foam",
+     "year": 2019,
+     "trial_female_pct": 100.0,
+     "faers_female_pct": 100.0,
+     "gap": 0.0,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-exem-foam"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Inflammatory bowel disease",
+   "funding": {
+    "funding_m": 170.0,
+    "dalys_k": 155.0,
+    "female_share": 51.2,
+    "dollars_per_daly": 1097.0,
+    "ratio_to_expected": 1.51,
+    "rank_by_ratio": 44,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [
+    {
+     "brand": "Velsipity",
+     "year": 2023,
+     "trial_female_pct": 43.6,
+     "faers_female_pct": 53.2,
+     "gap": 9.6,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-velsipity"
+    }
+   ],
+   "ed": {
+    "complaint": "Abdominal pain",
+    "n": 6123,
+    "metrics": {
+     "severe_share": {
+      "women": {
+       "est": 62.9,
+       "lo": 60.3,
+       "hi": 65.6,
+       "n": 2756
+      },
+      "men": {
+       "est": 58.1,
+       "lo": 53.9,
+       "hi": 62.4,
+       "n": 1615
+      },
+      "diff": 4.8,
+      "diff_lo": -0.2,
+      "diff_hi": 9.8
+     },
+     "urgent": {
+      "women": {
+       "est": 8.3,
+       "lo": 6.3,
+       "hi": 10.4,
+       "n": 2837
+      },
+      "men": {
+       "est": 9.0,
+       "lo": 6.5,
+       "hi": 11.5,
+       "n": 1642
+      },
+      "diff": -0.7,
+      "diff_lo": -4.0,
+      "diff_hi": 2.5
+     },
+     "ems": {
+      "women": {
+       "est": 12.1,
+       "lo": 10.5,
+       "hi": 13.8,
+       "n": 3757
+      },
+      "men": {
+       "est": 16.8,
+       "lo": 13.7,
+       "hi": 19.8,
+       "n": 2182
+      },
+      "diff": -4.6,
+      "diff_lo": -8.1,
+      "diff_hi": -1.1
+     },
+     "wait_mean": {
+      "women": {
+       "est": 41.2,
+       "lo": 35.9,
+       "hi": 46.5,
+       "n": 3389
+      },
+      "men": {
+       "est": 37.8,
+       "lo": 32.8,
+       "hi": 42.7,
+       "n": 1916
+      },
+      "diff": 3.5,
+      "diff_lo": -3.8,
+      "diff_hi": 10.7
+     },
+     "analgesic_ed": {
+      "women": {
+       "est": 51.5,
+       "lo": 48.3,
+       "hi": 54.6,
+       "n": 3872
+      },
+      "men": {
+       "est": 50.1,
+       "lo": 46.6,
+       "hi": 53.6,
+       "n": 2251
+      },
+      "diff": 1.4,
+      "diff_lo": -3.3,
+      "diff_hi": 6.1
+     },
+     "opioid_ed": {
+      "women": {
+       "est": 32.8,
+       "lo": 30.1,
+       "hi": 35.5,
+       "n": 3872
+      },
+      "men": {
+       "est": 35.5,
+       "lo": 32.0,
+       "hi": 38.9,
+       "n": 2251
+      },
+      "diff": -2.6,
+      "diff_lo": -7.0,
+      "diff_hi": 1.7
+     },
+     "opioid_ed_severe": {
+      "women": {
+       "est": 40.8,
+       "lo": 37.1,
+       "hi": 44.5,
+       "n": 1726
+      },
+      "men": {
+       "est": 48.4,
+       "lo": 43.3,
+       "hi": 53.5,
+       "n": 936
+      },
+      "diff": -7.6,
+      "diff_lo": -13.9,
+      "diff_hi": -1.3
+     },
+     "admitted": {
+      "women": {
+       "est": 1.9,
+       "lo": 0.9,
+       "hi": 2.8,
+       "n": 3872
+      },
+      "men": {
+       "est": 1.5,
+       "lo": 0.8,
+       "hi": 2.3,
+       "n": 2251
+      },
+      "diff": 0.3,
+      "diff_lo": -0.9,
+      "diff_hi": 1.6
+     }
+    }
+   }
+  },
+  {
+   "disease": "Interpersonal violence",
+   "funding": {
+    "funding_m": 12.0,
+    "dalys_k": 1467.0,
+    "female_share": 21.0,
+    "dollars_per_daly": 8.0,
+    "ratio_to_expected": 0.05,
+    "rank_by_ratio": 1,
+    "n_ranked": 67,
+    "skew": "male"
+   },
+   "drugs": [],
+   "ed": null
+  },
+  {
+   "disease": "Interstitial Cystitis",
+   "funding": {
+    "funding_m": 22.0,
+    "uncounted": true
+   },
+   "drugs": [],
+   "ed": null
+  },
+  {
+   "disease": "Kidney disease",
+   "funding": {
+    "funding_m": 717.0,
+    "dalys_k": 2801.6,
+    "female_share": 46.4,
+    "dollars_per_daly": 256.0,
+    "ratio_to_expected": 2.14,
+    "rank_by_ratio": 53,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [
+    {
+     "brand": "Filspari",
+     "year": 2023,
+     "trial_female_pct": 31.0,
+     "faers_female_pct": 43.8,
+     "gap": 12.8,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-filspari"
+    },
+    {
+     "brand": "Voyxact",
+     "year": 2025,
+     "trial_female_pct": 37.5,
+     "faers_female_pct": 53.7,
+     "gap": 16.2,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-voyxact"
+    },
+    {
+     "brand": "Parsabiv",
+     "year": 2017,
+     "trial_female_pct": 39.6,
+     "faers_female_pct": 46.7,
+     "gap": 7.1,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-parsabiv"
+    },
+    {
+     "brand": "Terlivaz",
+     "year": 2022,
+     "trial_female_pct": 40.3,
+     "faers_female_pct": 36.0,
+     "gap": -4.3,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-terlivaz"
+    },
+    {
+     "brand": "Defencath",
+     "year": 2023,
+     "trial_female_pct": 41.9,
+     "faers_female_pct": 0.0,
+     "gap": -41.9,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-defencath"
+    },
+    {
+     "brand": "Jesduvroq",
+     "year": 2023,
+     "trial_female_pct": 42.7,
+     "faers_female_pct": 46.7,
+     "gap": 3.9,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-jesduvroq"
+    },
+    {
+     "brand": "Vafseo",
+     "year": null,
+     "trial_female_pct": 43.6,
+     "faers_female_pct": 43.6,
+     "gap": 0.0,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-vafseo"
+    },
+    {
+     "brand": "Inpefa",
+     "year": 2023,
+     "trial_female_pct": 43.8,
+     "faers_female_pct": 48.7,
+     "gap": 4.9,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-inpefa"
+    },
+    {
+     "brand": "Crenessity",
+     "year": 2024,
+     "trial_female_pct": 49.1,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshot-crenessity"
+    },
+    {
+     "brand": "Vanrafia",
+     "year": 2025,
+     "trial_female_pct": 58.9,
+     "faers_female_pct": 36.6,
+     "gap": -22.3,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshot-vanrafia"
+    },
+    {
+     "brand": "Isturisa",
+     "year": 2020,
+     "trial_female_pct": 77.4,
+     "faers_female_pct": 72.7,
+     "gap": -4.7,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-isturisa"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Liver cancer",
+   "funding": {
+    "funding_m": 183.0,
+    "dalys_k": 656.2,
+    "female_share": 32.7,
+    "dollars_per_daly": 279.0,
+    "ratio_to_expected": 0.94,
+    "rank_by_ratio": 28,
+    "n_ranked": 67,
+    "skew": "male"
+   },
+   "drugs": [
+    {
+     "brand": "Imjudo",
+     "year": 2022,
+     "trial_female_pct": 15.1,
+     "faers_female_pct": 26.9,
+     "gap": 11.8,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-imjudo"
+    },
+    {
+     "brand": "Vosevi",
+     "year": 2017,
+     "trial_female_pct": 22.7,
+     "faers_female_pct": 29.4,
+     "gap": 6.7,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-vosevi"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Lung cancer",
+   "funding": {
+    "funding_m": 492.0,
+    "dalys_k": 2858.0,
+    "female_share": 46.2,
+    "dollars_per_daly": 172.0,
+    "ratio_to_expected": 1.46,
+    "rank_by_ratio": 41,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [
+    {
+     "brand": "Portrazza",
+     "year": 2015,
+     "trial_female_pct": 16.9,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-portrazza"
+    },
+    {
+     "brand": "Emrelis",
+     "year": 2025,
+     "trial_female_pct": 28.6,
+     "faers_female_pct": 59.5,
+     "gap": 31.0,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-emrelis"
+    },
+    {
+     "brand": "Cosela",
+     "year": 2021,
+     "trial_female_pct": 33.5,
+     "faers_female_pct": 42.4,
+     "gap": 9.0,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-cosela"
+    },
+    {
+     "brand": "Zepzelca",
+     "year": 2020,
+     "trial_female_pct": 40.0,
+     "faers_female_pct": 41.9,
+     "gap": 1.9,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-zepzelca"
+    },
+    {
+     "brand": "Tabrecta",
+     "year": 2020,
+     "trial_female_pct": 41.0,
+     "faers_female_pct": 54.8,
+     "gap": 13.8,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-tabrecta"
+    },
+    {
+     "brand": "Retevmo",
+     "year": 2020,
+     "trial_female_pct": 47.2,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/development-approval-process-drugs/drug-trials-snapshots-retevmo"
+    },
+    {
+     "brand": "Ensacove",
+     "year": 2024,
+     "trial_female_pct": 48.6,
+     "faers_female_pct": 47.8,
+     "gap": -0.8,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshot-ensacove"
+    },
+    {
+     "brand": "Gavreto",
+     "year": 2020,
+     "trial_female_pct": 51.5,
+     "faers_female_pct": 56.5,
+     "gap": 5.0,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-gavreto"
+    },
+    {
+     "brand": "Tepmetko",
+     "year": 2021,
+     "trial_female_pct": 51.8,
+     "faers_female_pct": 54.2,
+     "gap": 2.5,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-tepmetko"
+    },
+    {
+     "brand": "Alecensa",
+     "year": 2015,
+     "trial_female_pct": 54.5,
+     "faers_female_pct": 60.3,
+     "gap": 5.7,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-alecensa"
+    },
+    {
+     "brand": "Krazati",
+     "year": null,
+     "trial_female_pct": 55.4,
+     "faers_female_pct": 58.6,
+     "gap": 3.2,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-krazati"
+    },
+    {
+     "brand": "Rozlytrek",
+     "year": 2019,
+     "trial_female_pct": 56.2,
+     "faers_female_pct": 56.1,
+     "gap": -0.1,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-rozlytrek-0"
+    },
+    {
+     "brand": "Alunbrig",
+     "year": 2017,
+     "trial_female_pct": 56.8,
+     "faers_female_pct": 55.0,
+     "gap": -1.8,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-alunbrig"
+    },
+    {
+     "brand": "Ibtrozi",
+     "year": 2025,
+     "trial_female_pct": 57.0,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-ibtrozi"
+    },
+    {
+     "brand": "Lorbrena",
+     "year": 2018,
+     "trial_female_pct": 57.6,
+     "faers_female_pct": 52.7,
+     "gap": -5.0,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-lorbrena"
+    },
+    {
+     "brand": "Vizimpro",
+     "year": 2018,
+     "trial_female_pct": 60.0,
+     "faers_female_pct": 53.7,
+     "gap": -6.3,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-vizimpro"
+    },
+    {
+     "brand": "Lazcluze",
+     "year": 2024,
+     "trial_female_pct": 61.3,
+     "faers_female_pct": 62.2,
+     "gap": 0.9,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-lazcluze"
+    },
+    {
+     "brand": "Augtyro",
+     "year": 2023,
+     "trial_female_pct": 63.8,
+     "faers_female_pct": 64.1,
+     "gap": 0.3,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-augtyro"
+    },
+    {
+     "brand": "Zegfrovy",
+     "year": 2025,
+     "trial_female_pct": 67.0,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-zegfrovy"
+    },
+    {
+     "brand": "Hyrnuo",
+     "year": 2025,
+     "trial_female_pct": 67.2,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshot-hyrnuo"
+    },
+    {
+     "brand": "Tagrisso",
+     "year": 2015,
+     "trial_female_pct": 67.9,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-tagrisso"
+    },
+    {
+     "brand": "Hernexeos",
+     "year": 2025,
+     "trial_female_pct": 68.6,
+     "faers_female_pct": 64.9,
+     "gap": -3.7,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-hernexeos"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Lupus",
+   "funding": {
+    "funding_m": 138.0,
+    "uncounted": true
+   },
+   "drugs": [
+    {
+     "brand": "Lupkynis",
+     "year": 2021,
+     "trial_female_pct": 86.5,
+     "faers_female_pct": 84.3,
+     "gap": -2.2,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-lupkynis"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Lymphoma",
+   "funding": {
+    "funding_m": 287.0,
+    "dalys_k": 504.8,
+    "female_share": 40.1,
+    "dollars_per_daly": 569.0,
+    "ratio_to_expected": 1.63,
+    "rank_by_ratio": 49,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [
+    {
+     "brand": "Calquence",
+     "year": 2017,
+     "trial_female_pct": 20.2,
+     "faers_female_pct": 37.4,
+     "gap": 17.2,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-calquence"
+    },
+    {
+     "brand": "Jaypirca",
+     "year": 2023,
+     "trial_female_pct": 20.6,
+     "faers_female_pct": 34.3,
+     "gap": 13.7,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-jaypirca"
+    },
+    {
+     "brand": "Brukinsa",
+     "year": 2019,
+     "trial_female_pct": 24.6,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-brukinsa"
+    },
+    {
+     "brand": "Polivy",
+     "year": 2019,
+     "trial_female_pct": 33.8,
+     "faers_female_pct": 41.5,
+     "gap": 7.7,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-polivy"
+    },
+    {
+     "brand": "Columvi",
+     "year": 2023,
+     "trial_female_pct": 34.5,
+     "faers_female_pct": 39.6,
+     "gap": 5.1,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-columvi"
+    },
+    {
+     "brand": "Copiktra",
+     "year": 2018,
+     "trial_female_pct": 36.2,
+     "faers_female_pct": 38.2,
+     "gap": 2.0,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-copiktra"
+    },
+    {
+     "brand": "Lunsumio",
+     "year": 2022,
+     "trial_female_pct": 38.9,
+     "faers_female_pct": 48.7,
+     "gap": 9.8,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshot-lunsumio"
+    },
+    {
+     "brand": "Poteligeo",
+     "year": 2018,
+     "trial_female_pct": 41.9,
+     "faers_female_pct": 22.2,
+     "gap": -19.7,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-poteligeo"
+    },
+    {
+     "brand": "Ukoniq",
+     "year": 2021,
+     "trial_female_pct": 43.4,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-ukoniq"
+    },
+    {
+     "brand": "Ukoniq",
+     "year": 2021,
+     "trial_female_pct": 43.4,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-ukoniq-0"
+    },
+    {
+     "brand": "Monjuvi",
+     "year": 2020,
+     "trial_female_pct": 45.7,
+     "faers_female_pct": 44.7,
+     "gap": -0.9,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshots-monjuvi"
+    },
+    {
+     "brand": "Ensacove",
+     "year": 2024,
+     "trial_female_pct": 48.6,
+     "faers_female_pct": 47.8,
+     "gap": -0.8,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshot-ensacove"
+    },
+    {
+     "brand": "Aliqopa",
+     "year": 2017,
+     "trial_female_pct": 53.6,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-aliqopa"
+    },
+    {
+     "brand": "Alecensa",
+     "year": 2015,
+     "trial_female_pct": 54.5,
+     "faers_female_pct": 60.3,
+     "gap": 5.7,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-alecensa"
+    },
+    {
+     "brand": "Alunbrig",
+     "year": 2017,
+     "trial_female_pct": 56.8,
+     "faers_female_pct": 55.0,
+     "gap": -1.8,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-alunbrig"
+    },
+    {
+     "brand": "Lorbrena",
+     "year": 2018,
+     "trial_female_pct": 57.6,
+     "faers_female_pct": 52.7,
+     "gap": -5.0,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-lorbrena"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Maternal conditions",
+   "funding": {
+    "funding_m": 382.0,
+    "dalys_k": 67.8,
+    "female_share": 100.0,
+    "dollars_per_daly": 5636.0,
+    "ratio_to_expected": 4.62,
+    "rank_by_ratio": 62,
+    "n_ranked": 67,
+    "skew": "female"
+   },
+   "drugs": [
+    {
+     "brand": "Annovera",
+     "year": 2018,
+     "trial_female_pct": 100.0,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-annovera"
+    },
+    {
+     "brand": "Exem Foam",
+     "year": 2019,
+     "trial_female_pct": 100.0,
+     "faers_female_pct": 100.0,
+     "gap": 0.0,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-exem-foam"
+    },
+    {
+     "brand": "Zulresso",
+     "year": 2019,
+     "trial_female_pct": 100.0,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-zulresso"
+    },
+    {
+     "brand": "Zurzuvae",
+     "year": 2023,
+     "trial_female_pct": 100.0,
+     "faers_female_pct": 98.7,
+     "gap": -1.3,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-zurzuvae"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Migraine",
+   "funding": {
+    "funding_m": 41.0,
+    "dalys_k": 2043.6,
+    "female_share": 73.2,
+    "dollars_per_daly": 20.0,
+    "ratio_to_expected": 0.14,
+    "rank_by_ratio": 5,
+    "n_ranked": 67,
+    "skew": "female"
+   },
+   "drugs": [
+    {
+     "brand": "Aimovig",
+     "year": 2018,
+     "trial_female_pct": 81.6,
+     "faers_female_pct": 86.0,
+     "gap": 4.5,
+     "rate_ratio": 0.37,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-aimovig"
+    },
+    {
+     "brand": "Reyvow",
+     "year": 2019,
+     "trial_female_pct": 84.1,
+     "faers_female_pct": 86.2,
+     "gap": 2.1,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-reyvow"
+    },
+    {
+     "brand": "Zavzpret",
+     "year": 2023,
+     "trial_female_pct": 84.2,
+     "faers_female_pct": 89.5,
+     "gap": 5.2,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-zavzpret"
+    },
+    {
+     "brand": "Nurtec Odt",
+     "year": 2020,
+     "trial_female_pct": 84.9,
+     "faers_female_pct": 86.5,
+     "gap": 1.6,
+     "rate_ratio": 0.66,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/development-approval-process-drugs/drug-trials-snapshots-nurtec-odt"
+    },
+    {
+     "brand": "Emgality",
+     "year": 2018,
+     "trial_female_pct": 85.2,
+     "faers_female_pct": 87.1,
+     "gap": 1.9,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-emgality"
+    },
+    {
+     "brand": "Vyepti",
+     "year": 2020,
+     "trial_female_pct": 86.7,
+     "faers_female_pct": 85.9,
+     "gap": -0.8,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-vyepti"
+    },
+    {
+     "brand": "Ajovy",
+     "year": 2018,
+     "trial_female_pct": 87.0,
+     "faers_female_pct": 88.7,
+     "gap": 1.7,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-ajovy"
+    },
+    {
+     "brand": "Ubrelvy",
+     "year": 2019,
+     "trial_female_pct": 88.8,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-ubrelvy"
+    }
+   ],
+   "ed": {
+    "complaint": "Headache or migraine",
+    "n": 2096,
+    "metrics": {
+     "severe_share": {
+      "women": {
+       "est": 61.5,
+       "lo": 57.4,
+       "hi": 65.5,
+       "n": 994
+      },
+      "men": {
+       "est": 49.8,
+       "lo": 42.2,
+       "hi": 57.4,
+       "n": 479
+      },
+      "diff": 11.7,
+      "diff_lo": 3.0,
+      "diff_hi": 20.3
+     },
+     "urgent": {
+      "women": {
+       "est": 11.3,
+       "lo": 8.7,
+       "hi": 13.9,
+       "n": 1037
+      },
+      "men": {
+       "est": 8.3,
+       "lo": 5.3,
+       "hi": 11.4,
+       "n": 500
+      },
+      "diff": 3.0,
+      "diff_lo": -1.0,
+      "diff_hi": 7.0
+     },
+     "ems": {
+      "women": {
+       "est": 10.5,
+       "lo": 8.3,
+       "hi": 12.7,
+       "n": 1348
+      },
+      "men": {
+       "est": 14.1,
+       "lo": 10.3,
+       "hi": 18.0,
+       "n": 681
+      },
+      "diff": -3.7,
+      "diff_lo": -8.1,
+      "diff_hi": 0.8
+     },
+     "wait_mean": {
+      "women": {
+       "est": 47.9,
+       "lo": 32.6,
+       "hi": 63.1,
+       "n": 1213
+      },
+      "men": {
+       "est": 44.2,
+       "lo": 36.4,
+       "hi": 52.1,
+       "n": 598
+      },
+      "diff": 3.6,
+      "diff_lo": -13.5,
+      "diff_hi": 20.8
+     },
+     "analgesic_ed": {
+      "women": {
+       "est": 59.1,
+       "lo": 55.1,
+       "hi": 63.1,
+       "n": 1391
+      },
+      "men": {
+       "est": 51.8,
+       "lo": 46.6,
+       "hi": 57.0,
+       "n": 705
+      },
+      "diff": 7.3,
+      "diff_lo": 0.7,
+      "diff_hi": 13.8
+     },
+     "opioid_ed": {
+      "women": {
+       "est": 12.4,
+       "lo": 9.3,
+       "hi": 15.4,
+       "n": 1391
+      },
+      "men": {
+       "est": 12.2,
+       "lo": 8.7,
+       "hi": 15.7,
+       "n": 705
+      },
+      "diff": 0.1,
+      "diff_lo": -4.5,
+      "diff_hi": 4.7
+     },
+     "opioid_ed_severe": {
+      "women": {
+       "est": 16.8,
+       "lo": 12.1,
+       "hi": 21.6,
+       "n": 633
+      },
+      "men": {
+       "est": 16.2,
+       "lo": 10.4,
+       "hi": 22.0,
+       "n": 258
+      },
+      "diff": 0.6,
+      "diff_lo": -6.9,
+      "diff_hi": 8.2
+     },
+     "admitted": {
+      "women": {
+       "est": 0.8,
+       "lo": 0.2,
+       "hi": 1.3,
+       "n": 1391
+      },
+      "men": {
+       "est": 1.1,
+       "lo": 0.1,
+       "hi": 2.0,
+       "n": 705
+      },
+      "diff": -0.3,
+      "diff_lo": -1.4,
+      "diff_hi": 0.8
+     }
+    }
+   }
+  },
+  {
+   "disease": "Multiple sclerosis",
+   "funding": {
+    "funding_m": 108.0,
+    "dalys_k": 234.0,
+    "female_share": 67.1,
+    "dollars_per_daly": 462.0,
+    "ratio_to_expected": 0.82,
+    "rank_by_ratio": 26,
+    "n_ranked": 67,
+    "skew": "female"
+   },
+   "drugs": [
+    {
+     "brand": "Mayzent",
+     "year": 2019,
+     "trial_female_pct": 59.9,
+     "faers_female_pct": 74.9,
+     "gap": 15.0,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-mayzent"
+    },
+    {
+     "brand": "Ocrevus",
+     "year": 2017,
+     "trial_female_pct": 60.9,
+     "faers_female_pct": 72.8,
+     "gap": 11.9,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-ocrevus"
+    },
+    {
+     "brand": "Briumvi",
+     "year": 2022,
+     "trial_female_pct": 64.1,
+     "faers_female_pct": 74.1,
+     "gap": 9.9,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-briumvi"
+    },
+    {
+     "brand": "Zeposia",
+     "year": 2020,
+     "trial_female_pct": 66.7,
+     "faers_female_pct": 71.3,
+     "gap": 4.6,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/development-approval-process-drugs/drug-trials-snapshots-zeposia"
+    },
+    {
+     "brand": "Zinbryta",
+     "year": 2016,
+     "trial_female_pct": 67.5,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-zinbryta"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Neural tube defects",
+   "funding": {
+    "funding_m": 16.0,
+    "dalys_k": 55.3,
+    "female_share": 52.8,
+    "dollars_per_daly": 289.0,
+    "ratio_to_expected": 0.21,
+    "rank_by_ratio": 8,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [],
+   "ed": null
+  },
+  {
+   "disease": "Opioid use disorders",
+   "funding": {
+    "funding_m": 747.0,
+    "dalys_k": 7156.7,
+    "female_share": 36.7,
+    "dollars_per_daly": 104.0,
+    "ratio_to_expected": 1.57,
+    "rank_by_ratio": 45,
+    "n_ranked": 67,
+    "skew": "male"
+   },
+   "drugs": [],
+   "ed": null
+  },
+  {
+   "disease": "Oral and dental disease",
+   "funding": {
+    "funding_m": 742.0,
+    "dalys_k": 1297.8,
+    "female_share": 52.8,
+    "dollars_per_daly": 572.0,
+    "ratio_to_expected": 2.96,
+    "rank_by_ratio": 59,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [
+    {
+     "brand": "Doptelet",
+     "year": 2018,
+     "trial_female_pct": 34.5,
+     "faers_female_pct": 59.0,
+     "gap": 24.5,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-doptelet"
+    },
+    {
+     "brand": "Mulpleta",
+     "year": 2018,
+     "trial_female_pct": 41.1,
+     "faers_female_pct": 52.8,
+     "gap": 11.7,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-mulpleta"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Osteoarthritis",
+   "funding": {
+    "funding_m": 134.0,
+    "dalys_k": 1685.8,
+    "female_share": 58.8,
+    "dollars_per_daly": 79.0,
+    "ratio_to_expected": 0.48,
+    "rank_by_ratio": 17,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [],
+   "ed": {
+    "complaint": "Neck, hip, leg or joint pain",
+    "n": 4051,
+    "metrics": {
+     "severe_share": {
+      "women": {
+       "est": 67.8,
+       "lo": 64.6,
+       "hi": 70.9,
+       "n": 1577
+      },
+      "men": {
+       "est": 62.1,
+       "lo": 57.4,
+       "hi": 66.8,
+       "n": 1244
+      },
+      "diff": 5.7,
+      "diff_lo": 0.1,
+      "diff_hi": 11.3
+     },
+     "urgent": {
+      "women": {
+       "est": 5.3,
+       "lo": 3.5,
+       "hi": 7.2,
+       "n": 1661
+      },
+      "men": {
+       "est": 6.5,
+       "lo": 3.8,
+       "hi": 9.1,
+       "n": 1350
+      },
+      "diff": -1.1,
+      "diff_lo": -4.3,
+      "diff_hi": 2.1
+     },
+     "ems": {
+      "women": {
+       "est": 18.8,
+       "lo": 16.3,
+       "hi": 21.3,
+       "n": 2184
+      },
+      "men": {
+       "est": 16.8,
+       "lo": 14.4,
+       "hi": 19.1,
+       "n": 1753
+      },
+      "diff": 2.0,
+      "diff_lo": -1.4,
+      "diff_hi": 5.4
+     },
+     "wait_mean": {
+      "women": {
+       "est": 34.6,
+       "lo": 28.7,
+       "hi": 40.6,
+       "n": 1942
+      },
+      "men": {
+       "est": 38.6,
+       "lo": 32.5,
+       "hi": 44.7,
+       "n": 1559
+      },
+      "diff": -4.0,
+      "diff_lo": -12.5,
+      "diff_hi": 4.6
+     },
+     "analgesic_ed": {
+      "women": {
+       "est": 52.3,
+       "lo": 48.9,
+       "hi": 55.7,
+       "n": 2245
+      },
+      "men": {
+       "est": 48.4,
+       "lo": 44.4,
+       "hi": 52.4,
+       "n": 1806
+      },
+      "diff": 3.9,
+      "diff_lo": -1.4,
+      "diff_hi": 9.1
+     },
+     "opioid_ed": {
+      "women": {
+       "est": 24.4,
+       "lo": 22.0,
+       "hi": 26.7,
+       "n": 2245
+      },
+      "men": {
+       "est": 23.1,
+       "lo": 20.6,
+       "hi": 25.6,
+       "n": 1806
+      },
+      "diff": 1.3,
+      "diff_lo": -2.2,
+      "diff_hi": 4.7
+     },
+     "opioid_ed_severe": {
+      "women": {
+       "est": 30.9,
+       "lo": 27.6,
+       "hi": 34.1,
+       "n": 1064
+      },
+      "men": {
+       "est": 26.0,
+       "lo": 22.1,
+       "hi": 30.0,
+       "n": 763
+      },
+      "diff": 4.8,
+      "diff_lo": -0.4,
+      "diff_hi": 10.0
+     },
+     "admitted": {
+      "women": {
+       "est": 0.8,
+       "lo": 0.3,
+       "hi": 1.3,
+       "n": 2245
+      },
+      "men": {
+       "est": 1.1,
+       "lo": 0.3,
+       "hi": 1.9,
+       "n": 1806
+      },
+      "diff": -0.3,
+      "diff_lo": -1.3,
+      "diff_hi": 0.7
+     }
+    }
+   }
+  },
+  {
+   "disease": "Osteoporosis",
+   "funding": {
+    "funding_m": 143.0,
+    "uncounted": true
+   },
+   "drugs": [
+    {
+     "brand": "Tymlos",
+     "year": 2017,
+     "trial_female_pct": 100.0,
+     "faers_female_pct": 94.5,
+     "gap": -5.5,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-tymlos"
+    },
+    {
+     "brand": "Evenity",
+     "year": 2019,
+     "trial_female_pct": 100.0,
+     "faers_female_pct": 93.0,
+     "gap": -7.0,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-evenity"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Otitis media",
+   "funding": {
+    "funding_m": 12.0,
+    "dalys_k": 52.6,
+    "female_share": 47.0,
+    "dollars_per_daly": 228.0,
+    "ratio_to_expected": 0.16,
+    "rank_by_ratio": 6,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [],
+   "ed": null
+  },
+  {
+   "disease": "Ovarian cancer",
+   "funding": {
+    "funding_m": 178.0,
+    "dalys_k": 319.0,
+    "female_share": 100.0,
+    "dollars_per_daly": 558.0,
+    "ratio_to_expected": 1.2,
+    "rank_by_ratio": 34,
+    "n_ranked": 67,
+    "skew": "female"
+   },
+   "drugs": [
+    {
+     "brand": "Elahere",
+     "year": null,
+     "trial_female_pct": 100.0,
+     "faers_female_pct": 99.7,
+     "gap": -0.3,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trial-snapshots-elahere"
+    },
+    {
+     "brand": "Avmapki Fakzynja Co-Pack",
+     "year": 2025,
+     "trial_female_pct": 100.0,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshot-avmapki-fakzynja-co-pack"
+    },
+    {
+     "brand": "Rubraca",
+     "year": 2016,
+     "trial_female_pct": 100.0,
+     "faers_female_pct": 92.8,
+     "gap": -7.2,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-rubraca"
+    },
+    {
+     "brand": "Zejula",
+     "year": 2017,
+     "trial_female_pct": 100.0,
+     "faers_female_pct": 97.6,
+     "gap": -2.4,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-zejula"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Pancreatic cancer",
+   "funding": {
+    "funding_m": 292.0,
+    "dalys_k": 1019.4,
+    "female_share": 45.9,
+    "dollars_per_daly": 286.0,
+    "ratio_to_expected": 1.27,
+    "rank_by_ratio": 35,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [
+    {
+     "brand": "Lutathera",
+     "year": 2018,
+     "trial_female_pct": 46.4,
+     "faers_female_pct": 48.3,
+     "gap": 1.9,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-lutathera"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Parkinson's disease",
+   "funding": {
+    "funding_m": 250.0,
+    "dalys_k": 668.9,
+    "female_share": 37.7,
+    "dollars_per_daly": 374.0,
+    "ratio_to_expected": 1.28,
+    "rank_by_ratio": 36,
+    "n_ranked": 67,
+    "skew": "male"
+   },
+   "drugs": [
+    {
+     "brand": "Fluorodopa F 18",
+     "year": 2019,
+     "trial_female_pct": 32.1,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-fluorodopa-f-18"
+    },
+    {
+     "brand": "Xadago",
+     "year": 2017,
+     "trial_female_pct": 33.2,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-xadago"
+    },
+    {
+     "brand": "Nuplazid",
+     "year": 2016,
+     "trial_female_pct": 36.2,
+     "faers_female_pct": 38.8,
+     "gap": 2.5,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-nuplazid"
+    },
+    {
+     "brand": "Ongentys",
+     "year": 2020,
+     "trial_female_pct": 42.1,
+     "faers_female_pct": 39.1,
+     "gap": -3.1,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-ongentys"
+    },
+    {
+     "brand": "Nourianz",
+     "year": 2019,
+     "trial_female_pct": 49.5,
+     "faers_female_pct": 39.6,
+     "gap": -9.9,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-nourianz"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Peptic ulcer",
+   "funding": {
+    "funding_m": 7.0,
+    "dalys_k": 111.0,
+    "female_share": 44.3,
+    "dollars_per_daly": 63.0,
+    "ratio_to_expected": 0.07,
+    "rank_by_ratio": 2,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [
+    {
+     "brand": "Velsipity",
+     "year": 2023,
+     "trial_female_pct": 43.6,
+     "faers_female_pct": 53.2,
+     "gap": 9.6,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-velsipity"
+    },
+    {
+     "brand": "Voquezna",
+     "year": 2022,
+     "trial_female_pct": 62.3,
+     "faers_female_pct": 55.6,
+     "gap": -6.7,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-voquezna-triple-pak-voquezna-dual-pak"
+    }
+   ],
+   "ed": {
+    "complaint": "Abdominal pain",
+    "n": 6123,
+    "metrics": {
+     "severe_share": {
+      "women": {
+       "est": 62.9,
+       "lo": 60.3,
+       "hi": 65.6,
+       "n": 2756
+      },
+      "men": {
+       "est": 58.1,
+       "lo": 53.9,
+       "hi": 62.4,
+       "n": 1615
+      },
+      "diff": 4.8,
+      "diff_lo": -0.2,
+      "diff_hi": 9.8
+     },
+     "urgent": {
+      "women": {
+       "est": 8.3,
+       "lo": 6.3,
+       "hi": 10.4,
+       "n": 2837
+      },
+      "men": {
+       "est": 9.0,
+       "lo": 6.5,
+       "hi": 11.5,
+       "n": 1642
+      },
+      "diff": -0.7,
+      "diff_lo": -4.0,
+      "diff_hi": 2.5
+     },
+     "ems": {
+      "women": {
+       "est": 12.1,
+       "lo": 10.5,
+       "hi": 13.8,
+       "n": 3757
+      },
+      "men": {
+       "est": 16.8,
+       "lo": 13.7,
+       "hi": 19.8,
+       "n": 2182
+      },
+      "diff": -4.6,
+      "diff_lo": -8.1,
+      "diff_hi": -1.1
+     },
+     "wait_mean": {
+      "women": {
+       "est": 41.2,
+       "lo": 35.9,
+       "hi": 46.5,
+       "n": 3389
+      },
+      "men": {
+       "est": 37.8,
+       "lo": 32.8,
+       "hi": 42.7,
+       "n": 1916
+      },
+      "diff": 3.5,
+      "diff_lo": -3.8,
+      "diff_hi": 10.7
+     },
+     "analgesic_ed": {
+      "women": {
+       "est": 51.5,
+       "lo": 48.3,
+       "hi": 54.6,
+       "n": 3872
+      },
+      "men": {
+       "est": 50.1,
+       "lo": 46.6,
+       "hi": 53.6,
+       "n": 2251
+      },
+      "diff": 1.4,
+      "diff_lo": -3.3,
+      "diff_hi": 6.1
+     },
+     "opioid_ed": {
+      "women": {
+       "est": 32.8,
+       "lo": 30.1,
+       "hi": 35.5,
+       "n": 3872
+      },
+      "men": {
+       "est": 35.5,
+       "lo": 32.0,
+       "hi": 38.9,
+       "n": 2251
+      },
+      "diff": -2.6,
+      "diff_lo": -7.0,
+      "diff_hi": 1.7
+     },
+     "opioid_ed_severe": {
+      "women": {
+       "est": 40.8,
+       "lo": 37.1,
+       "hi": 44.5,
+       "n": 1726
+      },
+      "men": {
+       "est": 48.4,
+       "lo": 43.3,
+       "hi": 53.5,
+       "n": 936
+      },
+      "diff": -7.6,
+      "diff_lo": -13.9,
+      "diff_hi": -1.3
+     },
+     "admitted": {
+      "women": {
+       "est": 1.9,
+       "lo": 0.9,
+       "hi": 2.8,
+       "n": 3872
+      },
+      "men": {
+       "est": 1.5,
+       "lo": 0.8,
+       "hi": 2.3,
+       "n": 2251
+      },
+      "diff": 0.3,
+      "diff_lo": -0.9,
+      "diff_hi": 1.6
+     }
+    }
+   }
+  },
+  {
+   "disease": "Pneumonia and influenza",
+   "funding": {
+    "funding_m": 619.0,
+    "dalys_k": 886.9,
+    "female_share": 43.8,
+    "dollars_per_daly": 698.0,
+    "ratio_to_expected": 2.85,
+    "rank_by_ratio": 56,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [
+    {
+     "brand": "Xacduro",
+     "year": 2023,
+     "trial_female_pct": 25.8,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-xacduro"
+    },
+    {
+     "brand": "Zevtera",
+     "year": 2024,
+     "trial_female_pct": 39.9,
+     "faers_female_pct": 46.7,
+     "gap": 6.8,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-zevtera"
+    },
+    {
+     "brand": "Xenleta",
+     "year": 2019,
+     "trial_female_pct": 44.4,
+     "faers_female_pct": 40.0,
+     "gap": -4.4,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-xenleta"
+    },
+    {
+     "brand": "Nuzyra",
+     "year": 2018,
+     "trial_female_pct": 44.9,
+     "faers_female_pct": 55.6,
+     "gap": 10.7,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-nuzyra"
+    },
+    {
+     "brand": "Xofluza",
+     "year": 2018,
+     "trial_female_pct": 49.8,
+     "faers_female_pct": 53.9,
+     "gap": 4.1,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-xofluza"
+    },
+    {
+     "brand": "Orlynvah",
+     "year": 2024,
+     "trial_female_pct": 100.0,
+     "faers_female_pct": 100.0,
+     "gap": 0.0,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-orlynvah"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Polycystic Ovary Syndrome",
+   "funding": {
+    "funding_m": 9.0,
+    "uncounted": true
+   },
+   "drugs": [],
+   "ed": null
+  },
+  {
+   "disease": "Postural Orthostatic Tachycardia Syndrome",
+   "funding": {
+    "funding_m": 5.0,
+    "uncounted": true
+   },
+   "drugs": [],
+   "ed": null
+  },
+  {
+   "disease": "Preterm birth",
+   "funding": {
+    "funding_m": 433.0,
+    "dalys_k": 1005.1,
+    "female_share": 47.5,
+    "dollars_per_daly": 431.0,
+    "ratio_to_expected": 1.9,
+    "rank_by_ratio": 50,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [],
+   "ed": null
+  },
+  {
+   "disease": "Prostate cancer",
+   "funding": {
+    "funding_m": 311.0,
+    "dalys_k": 802.0,
+    "female_share": 0.0,
+    "dollars_per_daly": 388.0,
+    "ratio_to_expected": 1.49,
+    "rank_by_ratio": 42,
+    "n_ranked": 67,
+    "skew": "male"
+   },
+   "drugs": [
+    {
+     "brand": "Erleada",
+     "year": 2018,
+     "trial_female_pct": 0.0,
+     "faers_female_pct": 0.4,
+     "gap": 0.4,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-erleada"
+    },
+    {
+     "brand": "Orgovyx",
+     "year": 2020,
+     "trial_female_pct": 0.0,
+     "faers_female_pct": 1.3,
+     "gap": 1.3,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-orgovyx"
+    },
+    {
+     "brand": "Ga",
+     "year": 2020,
+     "trial_female_pct": 0.0,
+     "faers_female_pct": 5.4,
+     "gap": 5.4,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-ga-68-psma-11"
+    },
+    {
+     "brand": "Posluma",
+     "year": 2023,
+     "trial_female_pct": 0.0,
+     "faers_female_pct": 2.7,
+     "gap": 2.7,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshot-posluma"
+    },
+    {
+     "brand": "Nubeqa",
+     "year": 2019,
+     "trial_female_pct": 0.0,
+     "faers_female_pct": 0.4,
+     "gap": 0.4,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-nubeqa"
+    },
+    {
+     "brand": "Pluvicto",
+     "year": 2022,
+     "trial_female_pct": 0.0,
+     "faers_female_pct": 1.0,
+     "gap": 1.0,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-pluvicto"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Rheumatoid arthritis",
+   "funding": {
+    "funding_m": 62.0,
+    "dalys_k": 219.9,
+    "female_share": 72.9,
+    "dollars_per_daly": 282.0,
+    "ratio_to_expected": 0.48,
+    "rank_by_ratio": 18,
+    "n_ranked": 67,
+    "skew": "female"
+   },
+   "drugs": [
+    {
+     "brand": "Rinvoq",
+     "year": 2019,
+     "trial_female_pct": 79.6,
+     "faers_female_pct": 69.9,
+     "gap": -9.7,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-rinvoq"
+    },
+    {
+     "brand": "Olumiant",
+     "year": 2018,
+     "trial_female_pct": 80.7,
+     "faers_female_pct": 67.3,
+     "gap": -13.5,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-olumiant"
+    },
+    {
+     "brand": "Kevzara",
+     "year": 2017,
+     "trial_female_pct": 81.7,
+     "faers_female_pct": 83.1,
+     "gap": 1.5,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-kevzara"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Schizophrenia",
+   "funding": {
+    "funding_m": 254.0,
+    "dalys_k": 1010.6,
+    "female_share": 47.1,
+    "dollars_per_daly": 251.0,
+    "ratio_to_expected": 1.11,
+    "rank_by_ratio": 31,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [
+    {
+     "brand": "Caplyta",
+     "year": 2019,
+     "trial_female_pct": 24.3,
+     "faers_female_pct": 69.1,
+     "gap": 44.7,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-caplyta"
+    },
+    {
+     "brand": "Cobenfy",
+     "year": 2024,
+     "trial_female_pct": 24.6,
+     "faers_female_pct": 41.3,
+     "gap": 16.7,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshot-cobenfy"
+    },
+    {
+     "brand": "Vraylar",
+     "year": 2015,
+     "trial_female_pct": 28.5,
+     "faers_female_pct": 67.4,
+     "gap": 38.9,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-vraylar-treatment-schizophrenia"
+    },
+    {
+     "brand": "Aristada",
+     "year": 2015,
+     "trial_female_pct": 32.1,
+     "faers_female_pct": 48.5,
+     "gap": 16.4,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-aristada"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Scleroderma",
+   "funding": {
+    "funding_m": 27.0,
+    "uncounted": true
+   },
+   "drugs": [],
+   "ed": null
+  },
+  {
+   "disease": "Sexually transmitted infections",
+   "funding": {
+    "funding_m": 448.0,
+    "dalys_k": 43.8,
+    "female_share": 79.2,
+    "dollars_per_daly": 10237.0,
+    "ratio_to_expected": 6.38,
+    "rank_by_ratio": 63,
+    "n_ranked": 67,
+    "skew": "female"
+   },
+   "drugs": [
+    {
+     "brand": "Nuzolvence",
+     "year": 2025,
+     "trial_female_pct": 9.1,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshot-nuzolvence"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Sickle cell disease",
+   "funding": {
+    "funding_m": 153.0,
+    "dalys_k": 59.5,
+    "female_share": 58.6,
+    "dollars_per_daly": 2571.0,
+    "ratio_to_expected": 1.94,
+    "rank_by_ratio": 51,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [
+    {
+     "brand": "Adakveo",
+     "year": 2019,
+     "trial_female_pct": 55.3,
+     "faers_female_pct": 61.9,
+     "gap": 6.6,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-adakveo"
+    },
+    {
+     "brand": "Oxbryta",
+     "year": 2019,
+     "trial_female_pct": 59.3,
+     "faers_female_pct": 60.1,
+     "gap": 0.8,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-oxbryta"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Skin cancer",
+   "funding": {
+    "funding_m": 256.0,
+    "dalys_k": 405.4,
+    "female_share": 34.7,
+    "dollars_per_daly": 631.0,
+    "ratio_to_expected": 1.58,
+    "rank_by_ratio": 46,
+    "n_ranked": 67,
+    "skew": "male"
+   },
+   "drugs": [
+    {
+     "brand": "Klisyri",
+     "year": 2020,
+     "trial_female_pct": 13.2,
+     "faers_female_pct": 58.1,
+     "gap": 44.9,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-klisyri"
+    },
+    {
+     "brand": "Libtayo",
+     "year": 2018,
+     "trial_female_pct": 15.3,
+     "faers_female_pct": 40.7,
+     "gap": 25.3,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-libtayo"
+    },
+    {
+     "brand": "Tevimbra",
+     "year": 2024,
+     "trial_female_pct": 15.6,
+     "faers_female_pct": 21.7,
+     "gap": 6.1,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-tevimbra"
+    },
+    {
+     "brand": "Unloxcyt",
+     "year": 2024,
+     "trial_female_pct": 25.5,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshot-unloxcyt"
+    },
+    {
+     "brand": "Bavencio",
+     "year": 2017,
+     "trial_female_pct": 26.1,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-bavencio"
+    },
+    {
+     "brand": "Odomzo",
+     "year": 2015,
+     "trial_female_pct": 37.4,
+     "faers_female_pct": 38.0,
+     "gap": 0.6,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-odomzo"
+    },
+    {
+     "brand": "Braftovi",
+     "year": 2018,
+     "trial_female_pct": 41.0,
+     "faers_female_pct": 49.2,
+     "gap": 8.2,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-braftovi"
+    },
+    {
+     "brand": "Mektovi",
+     "year": 2018,
+     "trial_female_pct": 41.0,
+     "faers_female_pct": 47.0,
+     "gap": 6.0,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-mektovi"
+    },
+    {
+     "brand": "Opdualag",
+     "year": 2022,
+     "trial_female_pct": 41.7,
+     "faers_female_pct": 40.7,
+     "gap": -1.1,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshot-opdualag"
+    },
+    {
+     "brand": "Cotellic",
+     "year": 2015,
+     "trial_female_pct": 42.2,
+     "faers_female_pct": 48.6,
+     "gap": 6.4,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-cotellic"
+    },
+    {
+     "brand": "Kimmtrak",
+     "year": 2022,
+     "trial_female_pct": 49.7,
+     "faers_female_pct": 51.3,
+     "gap": 1.6,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-kimmtrak"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Stomach cancer",
+   "funding": {
+    "funding_m": 52.0,
+    "dalys_k": 288.8,
+    "female_share": 38.6,
+    "dollars_per_daly": 180.0,
+    "ratio_to_expected": 0.36,
+    "rank_by_ratio": 14,
+    "n_ranked": 67,
+    "skew": "male"
+   },
+   "drugs": [
+    {
+     "brand": "Vyloy",
+     "year": 2024,
+     "trial_female_pct": 37.9,
+     "faers_female_pct": 33.2,
+     "gap": -4.7,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-vyloy"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Stroke",
+   "funding": {
+    "funding_m": 491.0,
+    "dalys_k": 3960.7,
+    "female_share": 51.0,
+    "dollars_per_daly": 124.0,
+    "ratio_to_expected": 1.29,
+    "rank_by_ratio": 38,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [
+    {
+     "brand": "Savaysa",
+     "year": 2015,
+     "trial_female_pct": 38.1,
+     "faers_female_pct": 47.7,
+     "gap": 9.6,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-savaysa-edoxaban-prevention-stroke-atrial-fibrillation"
+    },
+    {
+     "brand": "Praluent",
+     "year": 2015,
+     "trial_female_pct": 40.2,
+     "faers_female_pct": 59.3,
+     "gap": 19.1,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-praluent"
+    },
+    {
+     "brand": "Repatha",
+     "year": 2015,
+     "trial_female_pct": 48.0,
+     "faers_female_pct": 58.3,
+     "gap": 10.4,
+     "rate_ratio": 1.29,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-repatha"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Sudden infant death syndrome",
+   "funding": {
+    "funding_m": 13.0,
+    "dalys_k": 121.7,
+    "female_share": 42.8,
+    "dollars_per_daly": 107.0,
+    "ratio_to_expected": 0.13,
+    "rank_by_ratio": 4,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [],
+   "ed": null
+  },
+  {
+   "disease": "Suicide and self-harm",
+   "funding": {
+    "funding_m": 190.0,
+    "dalys_k": 2003.4,
+    "female_share": 22.4,
+    "dollars_per_daly": 95.0,
+    "ratio_to_expected": 0.64,
+    "rank_by_ratio": 23,
+    "n_ranked": 67,
+    "skew": "male"
+   },
+   "drugs": [],
+   "ed": null
+  },
+  {
+   "disease": "Temporomandibular Muscle/Joint Disorder",
+   "funding": {
+    "funding_m": 22.0,
+    "uncounted": true
+   },
+   "drugs": [],
+   "ed": null
+  },
+  {
+   "disease": "Tuberculosis",
+   "funding": {
+    "funding_m": 578.0,
+    "dalys_k": 19.8,
+    "female_share": 35.4,
+    "dollars_per_daly": 29180.0,
+    "ratio_to_expected": 11.09,
+    "rank_by_ratio": 66,
+    "n_ranked": 67,
+    "skew": "male"
+   },
+   "drugs": [
+    {
+     "brand": "Pretomanid",
+     "year": 2019,
+     "trial_female_pct": 47.7,
+     "faers_female_pct": 38.2,
+     "gap": -9.5,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-pretomanid"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Unintentional injuries",
+   "funding": {
+    "funding_m": 892.0,
+    "dalys_k": 11293.6,
+    "female_share": 44.8,
+    "dollars_per_daly": 79.0,
+    "ratio_to_expected": 1.58,
+    "rank_by_ratio": 47,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [],
+   "ed": null
+  },
+  {
+   "disease": "Uterine cancer",
+   "funding": {
+    "funding_m": 44.0,
+    "dalys_k": 312.1,
+    "female_share": 100.0,
+    "dollars_per_daly": 141.0,
+    "ratio_to_expected": 0.3,
+    "rank_by_ratio": 10,
+    "n_ranked": 67,
+    "skew": "female"
+   },
+   "drugs": [],
+   "ed": null
+  },
+  {
+   "disease": "Vision loss",
+   "funding": {
+    "funding_m": 1133.0,
+    "dalys_k": 232.2,
+    "female_share": 53.0,
+    "dollars_per_daly": 4880.0,
+    "ratio_to_expected": 8.62,
+    "rank_by_ratio": 64,
+    "n_ranked": 67,
+    "skew": "balanced"
+   },
+   "drugs": [
+    {
+     "brand": "Attruby",
+     "year": 2024,
+     "trial_female_pct": 9.2,
+     "faers_female_pct": 24.1,
+     "gap": 15.0,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshot-attruby"
+    },
+    {
+     "brand": "Vyndaqel/Vyndamax",
+     "year": 2019,
+     "trial_female_pct": 9.8,
+     "faers_female_pct": 17.4,
+     "gap": 7.7,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/resources-information-approved-drugs/drug-trial-snapshots-vyndaqelvyndamax"
+    },
+    {
+     "brand": "Onpattro",
+     "year": 2018,
+     "trial_female_pct": 25.8,
+     "faers_female_pct": 34.4,
+     "gap": 8.6,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-onpattro"
+    },
+    {
+     "brand": "Wainua",
+     "year": 2023,
+     "trial_female_pct": 30.7,
+     "faers_female_pct": 48.9,
+     "gap": 18.2,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-wainua"
+    },
+    {
+     "brand": "Amvuttra",
+     "year": 2022,
+     "trial_female_pct": 31.2,
+     "faers_female_pct": 38.1,
+     "gap": 6.9,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trial-snapshots-amvuttra"
+    },
+    {
+     "brand": "Tegsedi",
+     "year": 2018,
+     "trial_female_pct": 31.4,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-tegsedi"
+    },
+    {
+     "brand": "Beovu",
+     "year": 2019,
+     "trial_female_pct": 56.3,
+     "faers_female_pct": 58.5,
+     "gap": 2.2,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-beovu"
+    },
+    {
+     "brand": "Tryptyr",
+     "year": 2025,
+     "trial_female_pct": 74.8,
+     "faers_female_pct": 88.3,
+     "gap": 13.6,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshot-tryptyr"
+    },
+    {
+     "brand": "Miebo",
+     "year": 2023,
+     "trial_female_pct": 75.7,
+     "faers_female_pct": 82.6,
+     "gap": 6.9,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshot-miebo"
+    },
+    {
+     "brand": "Xiidra",
+     "year": 2016,
+     "trial_female_pct": 76.2,
+     "faers_female_pct": 82.9,
+     "gap": 6.7,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-xiidra"
+    }
+   ],
+   "ed": null
+  },
+  {
+   "disease": "Vulvodynia",
+   "funding": {
+    "funding_m": 2.0,
+    "uncounted": true
+   },
+   "drugs": [],
+   "ed": null
+  }
+ ]
+}

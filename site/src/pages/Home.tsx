@@ -14,9 +14,10 @@ export default function Home() {
           Each chapter is an original analysis of public data: FDA trial records, adverse-event reports,
           emergency-room logs, research funding. Every number links to its source. Every method is published.
         </p>
-        <Link to="/chapters/tested-on-men" className="mt-9 inline-flex items-center gap-2 rounded-full bg-berry px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_30px_-12px_rgba(139,30,75,0.6)] transition hover:bg-rose">
-          Start with Chapter 1 <span aria-hidden>→</span>
-        </Link>
+        <div className="mt-9 flex flex-wrap justify-center gap-3">
+          <Link to="/chapters/tested-on-men" className="inline-flex items-center gap-2 rounded-full bg-berry px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_30px_-12px_rgba(139,30,75,0.6)] transition hover:bg-rose">Start with Chapter 1 <span aria-hidden>→</span></Link>
+          <Link to="/record" className="inline-flex items-center gap-2 rounded-full border border-berry/30 bg-white/60 px-6 py-3 text-sm font-semibold text-berry transition hover:bg-white">Look up a condition</Link>
+        </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-4 pb-20">
