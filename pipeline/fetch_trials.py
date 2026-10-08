@@ -104,6 +104,39 @@ def parse_study(s):
         else:
             female = sum(f.values()); male = sum(ml.values())
         break
+    # age: >=65 share from the standard categorical measure; mean age from the continuous one (total group preferred)
+    age65 = age_tot = None; age_mean = None
+    for m in bm.get("measures", []):
+        t = m.get("title", "").lower()
+        if not t.startswith("age"):
+            continue
+        if m.get("paramType") == "COUNT_OF_PARTICIPANTS":
+            f65 = {}; ftot = {}
+            for c in m.get("classes", []):
+                for cat in c.get("categories", []):
+                    ct = (cat.get("title") or "").strip().lower()
+                    for x in cat.get("measurements", []):
+                        try:
+                            v = float(x.get("value"))
+                        except (TypeError, ValueError):
+                            continue
+                        ftot[x["groupId"]] = ftot.get(x["groupId"], 0) + v
+                        if ct.startswith(">=65") or ct.startswith("≥65") or ct.startswith("65") or "65 and over" in ct or ct.startswith("> 84") or ct.startswith(">84") or ct.startswith("85"):
+                            f65[x["groupId"]] = f65.get(x["groupId"], 0) + v
+            if ftot and any(("65" in (cat.get("title") or "")) for c in m.get("classes", []) for cat in c.get("categories", [])):
+                gid = total_ids[0] if total_ids and total_ids[0] in ftot else None
+                age65 = f65.get(gid, 0.0) if gid else sum(f65.values()); age_tot = ftot[gid] if gid else sum(ftot.values())
+        elif m.get("paramType") in ("MEAN", "MEDIAN") and age_mean is None and "year" in (m.get("unitOfMeasure") or "years").lower():
+            vals = {}
+            for c in m.get("classes", []):
+                for cat in c.get("categories", []):
+                    for x in cat.get("measurements", []):
+                        try:
+                            vals[x["groupId"]] = float(x.get("value"))
+                        except (TypeError, ValueError):
+                            pass
+            if vals:
+                age_mean = vals.get(total_ids[0]) if total_ids and total_ids[0] in vals else sum(vals.values()) / len(vals)
     # was any outcome reported in groups named by sex?
     by_sex = False
     for om in r.get("outcomeMeasuresModule", {}).get("outcomeMeasures", []):
@@ -120,7 +153,7 @@ def parse_study(s):
         "conditions": cm.get("conditions", []), "mesh": [m["term"] for m in cb.get("meshes", [])], "ancestors": [a["term"] for a in cb.get("ancestors", [])],
         "sex": el.get("sex"), "min_age": el.get("minimumAge"), "max_age": el.get("maximumAge"), "std_ages": el.get("stdAges", []), "criteria": el.get("eligibilityCriteria", ""),
         "countries": countries, "us": "United States" in countries,
-        "female": female, "male": male, "sex_param": param, "outcome_by_sex": by_sex,
+        "female": female, "male": male, "sex_param": param, "outcome_by_sex": by_sex, "age65": age65, "age_tot": age_tot, "age_mean": age_mean,
     }
 
 

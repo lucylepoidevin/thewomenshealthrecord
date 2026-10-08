@@ -84,7 +84,11 @@
     "contra_pct": "Share requiring contraception",
     "wocbp_pct": "Share with a childbearing-potential clause",
     "max_age_pct": "Share with an upper age limit",
-    "outcome_by_sex": "Trials reporting any outcome in sex-named groups"
+    "outcome_by_sex": "Trials reporting any outcome in sex-named groups",
+    "over65_trial_pct": "Share of participants aged 65+ in trials reporting age categories",
+    "burden_65plus_pct": "Share of US DALYs after 65 (70+ band plus half of 60-69)",
+    "women_share_70plus": "Women's share of the 70+ burden",
+    "age_gap_pts": "burden_65plus_pct minus over65_trial_pct"
    }
   },
   {

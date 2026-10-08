@@ -18,8 +18,40 @@ import numpy as np
 
 from common import OUT, SITE_DATA
 
+import pandas as pd
+from build_chapter3 import MAPPING as C3MAP
+from common import CACHE
+
 c3 = json.load(open(f"{SITE_DATA}/chapter3.json"))
 BURDEN = {d["disease"]: d for d in c3["diseases"]}
+
+
+def load_who_sheet(sheet):
+    df = pd.read_excel(f"{CACHE}/ch3/who_daly_2021.xlsx", sheet_name=sheet, header=None)
+    col = [i for i in range(df.shape[1]) if str(df.iat[7, i]).strip() == "USA"][0]
+    out = {}
+    for i in range(9, df.shape[0]):
+        sex, code, v = str(df.iat[i, 0]).strip(), df.iat[i, 1], df.iat[i, col]
+        try:
+            code = int(float(code)); v = float(v)
+        except (TypeError, ValueError):
+            continue
+        out.setdefault(code, {})[sex] = v
+    return out
+
+
+WHO70 = load_who_sheet("70+"); WHO60 = load_who_sheet("60-69"); WHOALL = load_who_sheet("All ages")
+
+
+def burden_age(dz):
+    """Approximate share of the disease's US DALYs falling at 65+, and women's share of the 70+ burden."""
+    codes = C3MAP.get(dz, (None, [], None))[1]
+    tot = sum(WHOALL.get(c, {}).get("Persons", 0) for c in codes)
+    d70 = sum(WHO70.get(c, {}).get("Persons", 0) for c in codes); d60 = sum(WHO60.get(c, {}).get("Persons", 0) for c in codes)
+    f70 = sum(WHO70.get(c, {}).get("Females", 0) for c in codes); m70 = sum(WHO70.get(c, {}).get("Males", 0) for c in codes)
+    if tot <= 0:
+        return None
+    return {"burden_65plus_pct": round(100 * (d70 + 0.5 * d60) / tot, 1), "burden_70plus_pct": round(100 * d70 / tot, 1), "women_share_70plus": round(100 * f70 / (f70 + m70), 1) if f70 + m70 > 0 else None}
 
 # disease label (as in chapter 3) -> MeSH terms matched against a trial's terms and ancestors
 MESH = {
@@ -118,6 +150,16 @@ def main():
                  "max_age_pct": round(100 * sum(1 for r in rows if r["max_age_y"] is not None and r["max_age_y"] < 100) / len(rows), 1), "max_age_le75_pct": round(100 * sum(1 for r in rows if r["max_age_y"] is not None and r["max_age_y"] <= 75) / len(rows), 1),
                  "max_age_le65_pct": round(100 * sum(1 for r in rows if r["max_age_y"] is not None and r["max_age_y"] <= 65) / len(rows), 1),
                  "outcome_by_sex": sum(1 for r in rows if r["outcome_by_sex"]), "sample_nct": [r["nct"] for r in sorted(rows, key=lambda r: -r["n_sex"])[:3]]}
+        aged = [r for r in rows if r.get("age_tot")]
+        entry["age_trials"] = len(aged)
+        entry["over65_trial_pct"] = round(100 * sum(r["age65"] for r in aged) / sum(r["age_tot"] for r in aged), 1) if aged and sum(r["age_tot"] for r in aged) > 0 else None
+        meanrows = [r for r in rows if r.get("age_mean") is not None and r["n_sex"] > 0]
+        entry["mean_age"] = round(sum(r["age_mean"] * r["n_sex"] for r in meanrows) / sum(r["n_sex"] for r in meanrows), 1) if meanrows else None
+        ba = burden_age(dz)
+        if ba:
+            entry.update(ba)
+            if entry["over65_trial_pct"] is not None and len(aged) >= 10:
+                entry["age_gap_pts"] = round(ba["burden_65plus_pct"] - entry["over65_trial_pct"], 1)
         if b and dz not in SEX_SPECIFIC and allsex["female_pct"] is not None:
             entry["ratio"] = round(allsex["female_pct"] / b["female_share"], 2)  # participation-to-burden ratio
             entry["ratio_open"] = round(openrows["female_pct"] / b["female_share"], 2) if openrows["female_pct"] is not None else None
@@ -171,6 +213,12 @@ def main():
                         "by_sponsor": {s: {"trials": len(rs), "n": sum(1 for r in rs if r["outcome_by_sex"]), "pct": round(100 * sum(1 for r in rs if r["outcome_by_sex"]) / len(rs), 2)} for s in ("Industry", "NIH", "Other US government", "Universities, hospitals, other") for rs in [[r for r in US if r["sponsor_group"] == s]]},
                         "nih_since_2016": {"trials": len(rs), "n": sum(1 for r in rs if r["outcome_by_sex"]), "pct": round(100 * sum(1 for r in rs if r["outcome_by_sex"]) / len(rs), 2)} if (rs := [r for r in US if r["sponsor_group"] == "NIH" and (r["year"] or 0) >= 2016]) else None,
                         "phase3_drug": {"trials": len(rs), "n": sum(1 for r in rs if r["outcome_by_sex"]), "pct": round(100 * sum(1 for r in rs if r["outcome_by_sex"]) / len(rs), 2)} if (rs := [r for r in US if r["phase_group"] == "Phase 3" and r["drug"]]) else None}
+    aged_all = [r for r in US if r.get("age_tot")]
+    age_overall = {"trials_with_age": len(aged_all), "over65_trial_pct": round(100 * sum(r["age65"] for r in aged_all) / sum(r["age_tot"] for r in aged_all), 1),
+                   "over65_drug_phase3_pct": round(100 * sum(r["age65"] for r in rs) / sum(r["age_tot"] for r in rs), 1) if (rs := [r for r in aged_all if r["drug"] and r["phase_group"] == "Phase 3"]) else None,
+                   "diseases_with_age": sum(1 for e in ranked if e.get("age_gap_pts") is not None),
+                   "diseases_under_by_10": sum(1 for e in ranked if (e.get("age_gap_pts") or 0) >= 10),
+                   "old_diseases": sorted([{"disease": e["disease"], "over65_trial_pct": e["over65_trial_pct"], "burden_65plus_pct": e["burden_65plus_pct"], "women_share_70plus": e["women_share_70plus"], "age_gap_pts": e["age_gap_pts"], "max_age_pct": e["max_age_pct"], "female_pct": e["female_pct"], "burden_female_pct": e["burden_female_pct"]} for e in ranked if e.get("age_gap_pts") is not None and e["burden_65plus_pct"] >= 50], key=lambda x: -x["age_gap_pts"])}
     sponsor_overall = {s: share([r for r in gen if r["sponsor_group"] == s]) for s in ("Industry", "NIH", "Other US government", "Universities, hospitals, other")}
     # same disease, different sponsor: diseases with >=10 industry and >=10 NIH/other trials
     sponsor_pairs = [{"disease": e["disease"], "industry": e["by_sponsor"]["Industry"]["female_pct"], "nih": e["by_sponsor"]["NIH"]["female_pct"], "other": e["by_sponsor"]["Universities, hospitals, other"]["female_pct"], "burden": e["burden_female_pct"], "n_industry": e["by_sponsor"]["Industry"]["trials"], "n_nih": e["by_sponsor"]["NIH"]["trials"], "n_other": e["by_sponsor"]["Universities, hospitals, other"]["trials"]}
@@ -182,7 +230,7 @@ def main():
                "female_only_trials_us": sum(1 for r in US if r["sex"] == "FEMALE"), "male_only_trials_us": sum(1 for r in US if r["sex"] == "MALE"),
                "male_only_nonsexspecific_us": sum(1 for r in US if r["sex"] == "MALE" and not set(r["diseases"]) & SEX_SPECIFIC), "female_only_nonsexspecific_us": sum(1 for r in US if r["sex"] == "FEMALE" and not set(r["diseases"]) & SEX_SPECIFIC),
                "share_hist": hist, "trials_fit": {"a": round(a1, 3), "b": round(b1, 3)}}
-    out = {"generated": date.today().isoformat(), "summary": summary, "diseases": ranked, "sex_specific": [e for e in diseases if e.get("ratio") is None], "uncounted": uncounted, "trend": trend, "exclusions": excl, "by_sex_reporting": by_sex_reporting, "sponsor_overall": sponsor_overall, "sponsor_pairs": sponsor_pairs}
+    out = {"generated": date.today().isoformat(), "summary": summary, "diseases": ranked, "sex_specific": [e for e in diseases if e.get("ratio") is None], "uncounted": uncounted, "trend": trend, "exclusions": excl, "by_sex_reporting": by_sex_reporting, "sponsor_overall": sponsor_overall, "sponsor_pairs": sponsor_pairs, "age": age_overall}
     json.dump(out, open(f"{SITE_DATA}/chapter4.json", "w"), indent=1)
     today = date.today().isoformat()
     new_sources = [
@@ -202,6 +250,9 @@ def main():
     print("trend:", [(t["year"], t["female_pct"], t["industry_female_pct"], t["nih_female_pct"], t["excl_preg_pct"], t["wocbp_pct"], t["max_age_pct"]) for t in trend])
     print("uncounted:", uncounted)
     print("sponsor pairs:", sponsor_pairs[:10])
+    print("age:", {k: v for k, v in age_overall.items() if k != "old_diseases"}); print("old diseases:", age_overall["old_diseases"])
+    print("trials per 100k DALYs, lowest:", [(e["disease"], e["trials_per_100k_dalys"], e["skew"]) for e in sorted(ranked, key=lambda e: e["trials_per_100k_dalys"])[:10]])
+    print("period ratios:", [(e["disease"], e["by_period_ratio"]) for e in ranked[:8]])
 
 
 if __name__ == "__main__":
