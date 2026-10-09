@@ -3,12 +3,13 @@
  "labels": {
   "n": 390,
   "statements": {
-   "quantified difference": 13,
+   "quantified difference": 11,
    "difference noted": 4,
-   "no difference asserted": 181,
-   "not evaluated": 2,
-   "mentioned, unclear": 76,
-   "silent": 114
+   "no difference asserted": 169,
+   "not evaluated": 0,
+   "mentioned, unclear": 63,
+   "silent": 93,
+   "one-sex drug": 50
   },
   "dosing": {
    "n": 390,
@@ -17,7 +18,7 @@
    "flat_pct": 66.2,
    "flat_weight_affects_n": 23,
    "flat_weight_no_n": 27,
-   "flat_weight_affects_no_sex_diff_n": 7,
+   "flat_weight_affects_no_sex_diff_n": 6,
    "flat_weight_affects_brands": [
     {
      "brand": "Trogarzo",
@@ -154,32 +155,32 @@
     {
      "brand": "Evenity",
      "trial_female_pct": 100.0,
-     "no_difference": true,
+     "no_difference": false,
      "example": "Body Weight The exposure of romosozumab-aqqg decreases with increasing body weight."
     }
    ],
    "by_category_flat_pct": {
-    "Cardiovascular": 64.3,
+    "Cardiovascular": 66.7,
     "Gastroenterology": 72.7,
-    "Hematology": 41.2,
+    "Hematology": 43.8,
     "Imaging & diagnostics": 100.0,
-    "Immunology & dermatology": 80.6,
-    "Infectious disease": 54.0,
+    "Immunology & dermatology": 80.0,
+    "Infectious disease": 54.9,
     "Metabolic & endocrine": 52.4,
-    "Neurology": 63.6,
-    "Oncology": 58.7,
+    "Neurology": 62.2,
+    "Oncology": 59.3,
     "Ophthalmology": 100.0,
     "Other": 69.2,
     "Psychiatry": 100.0,
     "Urology & nephrology": 88.9
    }
   },
-  "male_only_pk_pct": 5.9,
-  "male_only_pk_n": 23,
-  "quantified_pct": 3.3,
-  "difference_pct": 3.3,
-  "no_difference_pct": 47.2,
-  "not_evaluated_pct": 0.5,
+  "male_only_pk_pct": 4.6,
+  "male_only_pk_n": 18,
+  "quantified_pct": 2.8,
+  "difference_pct": 3.1,
+  "no_difference_pct": 44.1,
+  "not_evaluated_pct": 0.0,
   "no_preg_data_pct": 78.5,
   "no_lact_data_pct": 93.1,
   "sex_dose_pct": 0.3,
@@ -242,34 +243,9 @@
     "brand": "Avycaz",
     "example": "Gender Following single-dose administration of 0.5 grams avibactam as a 30-minute infusion, healthy male subjects (n = 17) had 18% lower avibactam C max values than healthy female subjects (n = 16).",
     "trial_female_pct": 74.1
-   },
-   {
-    "brand": "Tymlos",
-    "example": "The increase in geometric mean sCTX levels in postmenopausal women peaked at Month 3 at 26% above baseline then decreased to baseline levels by Month 18.",
-    "trial_female_pct": 100.0
-   },
-   {
-    "brand": "Addyi",
-    "example": "Race/Ethnicity A cross-study comparison between healthy Japanese women and Caucasian women with HSDD showed that flibanserin exposure was approximately 1.4-fold higher in Japanese women.",
-    "trial_female_pct": 100.0
    }
   ],
   "male_only_brands": [
-   {
-    "brand": "Amondys 45",
-    "trial_female_pct": 0.0,
-    "category": "Neurology"
-   },
-   {
-    "brand": "Exondys 51",
-    "trial_female_pct": 0.0,
-    "category": "Neurology"
-   },
-   {
-    "brand": "Vyondys 53",
-    "trial_female_pct": 0.0,
-    "category": "Neurology"
-   },
    {
     "brand": "Entresto",
     "trial_female_pct": 21.9,
@@ -359,16 +335,6 @@
     "brand": "Nurtec Odt",
     "trial_female_pct": 84.9,
     "category": "Neurology"
-   },
-   {
-    "brand": "Ibrance",
-    "trial_female_pct": 100.0,
-    "category": "Oncology"
-   },
-   {
-    "brand": "Ryzneuta",
-    "trial_female_pct": 100.0,
-    "category": "Infectious disease"
    }
   ],
   "by_trial_share": {
@@ -377,7 +343,7 @@
     "no_difference_pct": 48.9,
     "quantified_pct": 2.1,
     "not_evaluated_pct": 0.0,
-    "silent_pct": 27.7
+    "silent_pct": 25.5
    },
    "30\u201349% women": {
     "n": 140,
@@ -388,20 +354,20 @@
    },
    "50% or more women": {
     "n": 186,
-    "no_difference_pct": 47.8,
-    "quantified_pct": 1.6,
+    "no_difference_pct": 41.9,
+    "quantified_pct": 0.5,
     "not_evaluated_pct": 0.0,
-    "silent_pct": 31.2
+    "silent_pct": 25.8
    }
   },
   "by_category": {
    "Cardiovascular": {
-    "n": 28,
-    "no_preg_data_pct": 82.1,
-    "no_lact_data_pct": 92.9,
-    "no_difference_pct": 53.6,
-    "quantified_pct": 3.6,
-    "male_only_pk_pct": 3.6,
+    "n": 27,
+    "no_preg_data_pct": 81.5,
+    "no_lact_data_pct": 92.6,
+    "no_difference_pct": 51.9,
+    "quantified_pct": 3.7,
+    "male_only_pk_pct": 3.7,
     "trial_female_pct_median": 40.6
    },
    "Gastroenterology": {
@@ -414,40 +380,40 @@
     "trial_female_pct_median": 76.0
    },
    "Hematology": {
-    "n": 17,
-    "no_preg_data_pct": 94.1,
+    "n": 16,
+    "no_preg_data_pct": 93.8,
     "no_lact_data_pct": 100.0,
-    "no_difference_pct": 47.1,
+    "no_difference_pct": 43.8,
     "quantified_pct": 0.0,
     "male_only_pk_pct": 0.0,
-    "trial_female_pct_median": 43.6
+    "trial_female_pct_median": 47.2
    },
    "Imaging & diagnostics": {
-    "n": 13,
-    "no_preg_data_pct": 84.6,
+    "n": 10,
+    "no_preg_data_pct": 80.0,
     "no_lact_data_pct": 100.0,
-    "no_difference_pct": 15.4,
+    "no_difference_pct": 10.0,
     "quantified_pct": 0.0,
     "male_only_pk_pct": 0.0,
-    "trial_female_pct_median": 51.7
+    "trial_female_pct_median": 54.6
    },
    "Immunology & dermatology": {
-    "n": 31,
-    "no_preg_data_pct": 71.0,
-    "no_lact_data_pct": 93.5,
-    "no_difference_pct": 41.9,
+    "n": 30,
+    "no_preg_data_pct": 73.3,
+    "no_lact_data_pct": 93.3,
+    "no_difference_pct": 40.0,
     "quantified_pct": 0.0,
     "male_only_pk_pct": 0.0,
-    "trial_female_pct_median": 54.0
+    "trial_female_pct_median": 55.2
    },
    "Infectious disease": {
-    "n": 50,
-    "no_preg_data_pct": 58.0,
-    "no_lact_data_pct": 86.0,
-    "no_difference_pct": 54.0,
-    "quantified_pct": 12.0,
-    "male_only_pk_pct": 18.0,
-    "trial_female_pct_median": 47.7
+    "n": 51,
+    "no_preg_data_pct": 54.9,
+    "no_lact_data_pct": 86.3,
+    "no_difference_pct": 54.9,
+    "quantified_pct": 11.8,
+    "male_only_pk_pct": 15.7,
+    "trial_female_pct_median": 44.9
    },
    "Metabolic & endocrine": {
     "n": 21,
@@ -459,21 +425,21 @@
     "trial_female_pct_median": 45.1
    },
    "Neurology": {
-    "n": 44,
-    "no_preg_data_pct": 77.3,
-    "no_lact_data_pct": 86.4,
-    "no_difference_pct": 40.9,
+    "n": 45,
+    "no_preg_data_pct": 77.8,
+    "no_lact_data_pct": 86.7,
+    "no_difference_pct": 37.8,
     "quantified_pct": 0.0,
-    "male_only_pk_pct": 13.6,
-    "trial_female_pct_median": 55.4
+    "male_only_pk_pct": 6.7,
+    "trial_female_pct_median": 53.1
    },
    "Oncology": {
-    "n": 109,
-    "no_preg_data_pct": 86.2,
+    "n": 113,
+    "no_preg_data_pct": 87.6,
     "no_lact_data_pct": 99.1,
-    "no_difference_pct": 59.6,
+    "no_difference_pct": 52.2,
     "quantified_pct": 1.8,
-    "male_only_pk_pct": 0.9,
+    "male_only_pk_pct": 0.0,
     "trial_female_pct_median": 46.4
    },
    "Ophthalmology": {
@@ -489,7 +455,7 @@
     "n": 26,
     "no_preg_data_pct": 92.3,
     "no_lact_data_pct": 100.0,
-    "no_difference_pct": 30.8,
+    "no_difference_pct": 26.9,
     "quantified_pct": 3.8,
     "male_only_pk_pct": 3.8,
     "trial_female_pct_median": 53.3
@@ -519,8 +485,8 @@
     "n": 42,
     "no_preg_data_pct": 66.7,
     "no_lact_data_pct": 81.0,
-    "no_difference_pct": 38.1,
-    "quantified_pct": 11.9
+    "no_difference_pct": 35.7,
+    "quantified_pct": 9.5
    },
    {
     "year": 2016,
@@ -535,8 +501,8 @@
     "n": 38,
     "no_preg_data_pct": 78.9,
     "no_lact_data_pct": 97.4,
-    "no_difference_pct": 39.5,
-    "quantified_pct": 5.3
+    "no_difference_pct": 34.2,
+    "quantified_pct": 2.6
    },
    {
     "year": 2018,
@@ -551,7 +517,7 @@
     "n": 41,
     "no_preg_data_pct": 70.7,
     "no_lact_data_pct": 95.1,
-    "no_difference_pct": 58.5,
+    "no_difference_pct": 53.7,
     "quantified_pct": 0.0
    },
    {
@@ -559,7 +525,7 @@
     "n": 41,
     "no_preg_data_pct": 85.4,
     "no_lact_data_pct": 95.1,
-    "no_difference_pct": 43.9,
+    "no_difference_pct": 41.5,
     "quantified_pct": 4.9
    },
    {
@@ -567,7 +533,7 @@
     "n": 30,
     "no_preg_data_pct": 76.7,
     "no_lact_data_pct": 93.3,
-    "no_difference_pct": 63.3,
+    "no_difference_pct": 60.0,
     "quantified_pct": 0.0
    },
    {
@@ -575,7 +541,7 @@
     "n": 43,
     "no_preg_data_pct": 83.7,
     "no_lact_data_pct": 95.3,
-    "no_difference_pct": 53.5,
+    "no_difference_pct": 46.5,
     "quantified_pct": 2.3
    },
    {
@@ -591,7 +557,7 @@
     "n": 35,
     "no_preg_data_pct": 85.7,
     "no_lact_data_pct": 97.1,
-    "no_difference_pct": 54.3,
+    "no_difference_pct": 48.6,
     "quantified_pct": 2.9
    }
   ],
@@ -604,12 +570,12 @@
     "trial_female_pct": 0.0,
     "faers_female_pct": 0.4,
     "label_date": "20260109",
-    "male_only_pk": true,
+    "male_only_pk": false,
     "quantified": false,
     "difference": false,
     "no_difference": false,
     "not_evaluated": false,
-    "mentions_sex": true,
+    "mentions_sex": false,
     "no_preg_data": false,
     "no_lact_data": false,
     "sex_dose": false,
@@ -618,7 +584,7 @@
     "weight_based": true,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "mentioned, unclear",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -643,7 +609,7 @@
     "weight_based": false,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "silent",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -668,7 +634,7 @@
     "weight_based": false,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "silent",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -693,7 +659,7 @@
     "weight_based": true,
     "weight_effect": "affects exposure",
     "weight_example": "Body weight The exposure of concizumab-mtci increased with increasing body weight (27 kg to 130.7 kg) [see Use in Specific Populations ( 8.6 )] .",
-    "sex_statement": "silent",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -718,14 +684,14 @@
     "weight_based": false,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "silent",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
     "slug": "drug-trials-snapshot-posluma",
     "brand": "Posluma",
     "year": 2023,
-    "category": "Imaging & diagnostics",
+    "category": "Oncology",
     "trial_female_pct": 0.0,
     "faers_female_pct": 2.7,
     "label_date": "20260725",
@@ -743,23 +709,23 @@
     "weight_based": false,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "silent",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
     "slug": "drug-trials-snapshots-agamree",
     "brand": "Agamree",
     "year": 2023,
-    "category": "Cardiovascular",
+    "category": "Neurology",
     "trial_female_pct": 0.0,
     "faers_female_pct": 1.1,
     "label_date": "20260122",
     "male_only_pk": false,
     "quantified": false,
     "difference": false,
-    "no_difference": true,
+    "no_difference": false,
     "not_evaluated": false,
-    "mentions_sex": true,
+    "mentions_sex": false,
     "no_preg_data": true,
     "no_lact_data": true,
     "sex_dose": false,
@@ -768,7 +734,7 @@
     "weight_based": true,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "no difference asserted",
+    "sex_statement": "one-sex drug",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of vamorolone were observed based on race and sex."
    },
    {
@@ -793,7 +759,7 @@
     "weight_based": true,
     "weight_effect": "no effect stated",
     "weight_example": null,
-    "sex_statement": "silent",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -809,7 +775,7 @@
     "difference": false,
     "no_difference": false,
     "not_evaluated": false,
-    "mentions_sex": true,
+    "mentions_sex": false,
     "no_preg_data": true,
     "no_lact_data": true,
     "sex_dose": false,
@@ -818,7 +784,7 @@
     "weight_based": true,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "mentioned, unclear",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -829,12 +795,12 @@
     "trial_female_pct": 0.0,
     "faers_female_pct": 1.7,
     "label_date": "20250813",
-    "male_only_pk": true,
+    "male_only_pk": false,
     "quantified": false,
     "difference": false,
     "no_difference": false,
-    "not_evaluated": true,
-    "mentions_sex": true,
+    "not_evaluated": false,
+    "mentions_sex": false,
     "no_preg_data": false,
     "no_lact_data": false,
     "sex_dose": false,
@@ -843,7 +809,7 @@
     "weight_based": true,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "not evaluated",
+    "sex_statement": "one-sex drug",
     "example": "Sex: Sex effects have not been evaluated;"
    },
    {
@@ -868,7 +834,7 @@
     "weight_based": false,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "silent",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -893,7 +859,7 @@
     "weight_based": true,
     "weight_effect": "affects exposure",
     "weight_example": "Body weight : The apparent clearance and volume of distribution of emicizumab-kxwh increased with increasing body weight (9 kg to 156 kg).",
-    "sex_statement": "silent",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -918,7 +884,7 @@
     "weight_based": true,
     "weight_effect": "affects exposure",
     "weight_example": "Body Weight Body weight was a significant covariate impacting the pharmacokinetics of marstacimab\u2011hncq.",
-    "sex_statement": "silent",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -943,7 +909,7 @@
     "weight_based": false,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "silent",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -959,7 +925,7 @@
     "difference": false,
     "no_difference": false,
     "not_evaluated": false,
-    "mentions_sex": true,
+    "mentions_sex": false,
     "no_preg_data": true,
     "no_lact_data": true,
     "sex_dose": false,
@@ -968,7 +934,7 @@
     "weight_based": true,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "mentioned, unclear",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -984,7 +950,7 @@
     "difference": false,
     "no_difference": false,
     "not_evaluated": false,
-    "mentions_sex": true,
+    "mentions_sex": false,
     "no_preg_data": false,
     "no_lact_data": false,
     "sex_dose": false,
@@ -993,7 +959,7 @@
     "weight_based": true,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "mentioned, unclear",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -1004,12 +970,12 @@
     "trial_female_pct": 0.0,
     "faers_female_pct": 0.0,
     "label_date": "20250313",
-    "male_only_pk": true,
+    "male_only_pk": false,
     "quantified": false,
     "difference": false,
     "no_difference": false,
-    "not_evaluated": true,
-    "mentions_sex": true,
+    "not_evaluated": false,
+    "mentions_sex": false,
     "no_preg_data": false,
     "no_lact_data": false,
     "sex_dose": false,
@@ -1018,7 +984,7 @@
     "weight_based": true,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "not evaluated",
+    "sex_statement": "one-sex drug",
     "example": "Sex : Sex effects have not been evaluated;"
    },
    {
@@ -1043,7 +1009,7 @@
     "weight_based": false,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "silent",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -1500,7 +1466,7 @@
     "slug": "drug-trials-snapshots-vosevi",
     "brand": "Vosevi",
     "year": 2017,
-    "category": "Oncology",
+    "category": "Infectious disease",
     "trial_female_pct": 22.7,
     "faers_female_pct": 29.4,
     "label_date": "20250714",
@@ -1875,7 +1841,7 @@
     "slug": "drug-trial-snapshot-daurismo",
     "brand": "Daurismo",
     "year": 2018,
-    "category": "Imaging & diagnostics",
+    "category": "Oncology",
     "trial_female_pct": 28.0,
     "faers_female_pct": 37.2,
     "label_date": "20251212",
@@ -2700,7 +2666,7 @@
     "slug": "drug-trials-snapshots-moxidectin",
     "brand": "Moxidectin",
     "year": 2018,
-    "category": "Immunology & dermatology",
+    "category": "Infectious disease",
     "trial_female_pct": 36.1,
     "faers_female_pct": 66.7,
     "label_date": "20260730",
@@ -2925,7 +2891,7 @@
     "slug": "drug-trials-snapshots-rytelo",
     "brand": "Rytelo",
     "year": 2024,
-    "category": "Hematology",
+    "category": "Oncology",
     "trial_female_pct": 37.6,
     "faers_female_pct": 35.2,
     "label_date": "20260422",
@@ -6475,7 +6441,7 @@
     "slug": "drug-trials-snapshots-vanflyta",
     "brand": "Vanflyta",
     "year": 2023,
-    "category": "Imaging & diagnostics",
+    "category": "Oncology",
     "trial_female_pct": 54.5,
     "faers_female_pct": 52.9,
     "label_date": "20260416",
@@ -9559,7 +9525,7 @@
     "difference": false,
     "no_difference": false,
     "not_evaluated": false,
-    "mentions_sex": true,
+    "mentions_sex": false,
     "no_preg_data": true,
     "no_lact_data": true,
     "sex_dose": false,
@@ -9568,7 +9534,7 @@
     "weight_based": false,
     "weight_effect": "no effect stated",
     "weight_example": null,
-    "sex_statement": "mentioned, unclear",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -9593,7 +9559,7 @@
     "weight_based": false,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "silent",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -9607,9 +9573,9 @@
     "male_only_pk": false,
     "quantified": false,
     "difference": false,
-    "no_difference": true,
+    "no_difference": false,
     "not_evaluated": false,
-    "mentions_sex": true,
+    "mentions_sex": false,
     "no_preg_data": false,
     "no_lact_data": true,
     "sex_dose": false,
@@ -9618,7 +9584,7 @@
     "weight_based": false,
     "weight_effect": "no effect stated",
     "weight_example": null,
-    "sex_statement": "no difference asserted",
+    "sex_statement": "one-sex drug",
     "example": "Specific Populations There were no clinically significant differences in the pharmacokinetics of elacestrant based on age (24 to 89 years), sex, and body weight (41 to 143 kg)."
    },
    {
@@ -9634,7 +9600,7 @@
     "difference": false,
     "no_difference": false,
     "not_evaluated": false,
-    "mentions_sex": true,
+    "mentions_sex": false,
     "no_preg_data": true,
     "no_lact_data": true,
     "sex_dose": false,
@@ -9643,7 +9609,7 @@
     "weight_based": true,
     "weight_effect": "affects exposure",
     "weight_example": "Specific Populations The mean volume of distribution and clearance of datopotamab deruxtecan-dlnk and DXd increase with increasing body weight (36 kg to 156 kg).",
-    "sex_statement": "mentioned, unclear",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -9668,7 +9634,7 @@
     "weight_based": true,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "silent",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -9682,9 +9648,9 @@
     "male_only_pk": false,
     "quantified": false,
     "difference": false,
-    "no_difference": true,
+    "no_difference": false,
     "not_evaluated": false,
-    "mentions_sex": true,
+    "mentions_sex": false,
     "no_preg_data": false,
     "no_lact_data": true,
     "sex_dose": false,
@@ -9693,7 +9659,7 @@
     "weight_based": true,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "no difference asserted",
+    "sex_statement": "one-sex drug",
     "example": "CLcr 30 to 59 mL/min (n = 6)), body weight (41 to 146 kg), sex (male (n = 170), female (n = 113)) and race (White (n = 205), Black (n = 37), or Asian (n = 25)) did not have a clinically meaningful effect on tucatinib exposure."
    },
    {
@@ -9718,7 +9684,7 @@
     "weight_based": true,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "silent",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -9734,7 +9700,7 @@
     "difference": false,
     "no_difference": false,
     "not_evaluated": false,
-    "mentions_sex": true,
+    "mentions_sex": false,
     "no_preg_data": true,
     "no_lact_data": true,
     "sex_dose": false,
@@ -9743,7 +9709,7 @@
     "weight_based": true,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "mentioned, unclear",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -9768,7 +9734,7 @@
     "weight_based": false,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "silent",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -9782,9 +9748,9 @@
     "male_only_pk": false,
     "quantified": false,
     "difference": false,
-    "no_difference": true,
+    "no_difference": false,
     "not_evaluated": false,
-    "mentions_sex": true,
+    "mentions_sex": false,
     "no_preg_data": true,
     "no_lact_data": true,
     "sex_dose": false,
@@ -9793,7 +9759,7 @@
     "weight_based": true,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "no difference asserted",
+    "sex_statement": "one-sex drug",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of alpelisib were predicted based on age (21 to 87 years), sex, race/ethnicity (Japanese or Caucasian), body weight (37 to 181 kg), mild to moderate renal impairment (CLcr 30 to < 90 mL/min based on the Cockcroft-Gaul"
    },
    {
@@ -9818,7 +9784,7 @@
     "weight_based": false,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "silent",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -9830,11 +9796,11 @@
     "faers_female_pct": 94.5,
     "label_date": "20260811",
     "male_only_pk": false,
-    "quantified": true,
+    "quantified": false,
     "difference": false,
     "no_difference": false,
     "not_evaluated": false,
-    "mentions_sex": true,
+    "mentions_sex": false,
     "no_preg_data": true,
     "no_lact_data": true,
     "sex_dose": false,
@@ -9843,7 +9809,7 @@
     "weight_based": false,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "quantified difference",
+    "sex_statement": "one-sex drug",
     "example": "The increase in geometric mean sCTX levels in postmenopausal women peaked at Month 3 at 26% above baseline then decreased to baseline levels by Month 18."
    },
    {
@@ -9868,7 +9834,7 @@
     "weight_based": true,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "silent",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -9882,9 +9848,9 @@
     "male_only_pk": false,
     "quantified": false,
     "difference": false,
-    "no_difference": true,
+    "no_difference": false,
     "not_evaluated": false,
-    "mentions_sex": true,
+    "mentions_sex": false,
     "no_preg_data": true,
     "no_lact_data": true,
     "sex_dose": false,
@@ -9893,7 +9859,7 @@
     "weight_based": false,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "no difference asserted",
+    "sex_statement": "one-sex drug",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of avutometinib were observed based on age (21 to 87 years), sex, race (84% White, 3% Black and 2% Asian), body weight (40 to 169 kg), mild and moderate renal impairment (CLcr 30 to 89 mL/min, estimated by Cockcroft-G"
    },
    {
@@ -9907,9 +9873,9 @@
     "male_only_pk": false,
     "quantified": false,
     "difference": false,
-    "no_difference": true,
+    "no_difference": false,
     "not_evaluated": false,
-    "mentions_sex": true,
+    "mentions_sex": false,
     "no_preg_data": false,
     "no_lact_data": false,
     "sex_dose": false,
@@ -9918,7 +9884,7 @@
     "weight_based": false,
     "weight_effect": "affects exposure",
     "weight_example": "Body Weight The exposure of romosozumab-aqqg decreases with increasing body weight.",
-    "sex_statement": "no difference asserted",
+    "sex_statement": "one-sex drug",
     "example": "Specific Populations No clinically significant differences in the pharmacokinetics of romosozumab-aqqg were observed based on age (20-89 years), sex, race, disease state (low bone mass or osteoporosis), prior exposure to alendronate, or renal impairment including end-stage renal disease (ESRD) requi"
    },
    {
@@ -9929,12 +9895,12 @@
     "trial_female_pct": 100.0,
     "faers_female_pct": 97.5,
     "label_date": "20260706",
-    "male_only_pk": true,
+    "male_only_pk": false,
     "quantified": false,
     "difference": false,
-    "no_difference": true,
+    "no_difference": false,
     "not_evaluated": false,
-    "mentions_sex": true,
+    "mentions_sex": false,
     "no_preg_data": true,
     "no_lact_data": true,
     "sex_dose": false,
@@ -9943,7 +9909,7 @@
     "weight_based": false,
     "weight_effect": "no effect stated",
     "weight_example": null,
-    "sex_statement": "no difference asserted",
+    "sex_statement": "one-sex drug",
     "example": "Specific Populations Age, Gender, and Body Weight Based on a population pharmacokinetic analysis in 183 patients with cancer (50 male and 133 female patients, age range from 22 to 89 years, and body weight range from 37.9 to 123 kg), gender had no effect on the exposure of palbociclib, and age and b"
    },
    {
@@ -9957,9 +9923,9 @@
     "male_only_pk": false,
     "quantified": false,
     "difference": false,
-    "no_difference": true,
+    "no_difference": false,
     "not_evaluated": false,
-    "mentions_sex": true,
+    "mentions_sex": false,
     "no_preg_data": false,
     "no_lact_data": true,
     "sex_dose": false,
@@ -9968,7 +9934,7 @@
     "weight_based": true,
     "weight_effect": "no effect stated",
     "weight_example": null,
-    "sex_statement": "no difference asserted",
+    "sex_statement": "one-sex drug",
     "example": "Effect of Age, Weight, Gender, and Race No clinically relevant effects of age, body weight, gender, or race on the systemic exposure of ribociclib were identified."
    },
    {
@@ -9982,9 +9948,9 @@
     "male_only_pk": false,
     "quantified": false,
     "difference": false,
-    "no_difference": true,
+    "no_difference": false,
     "not_evaluated": false,
-    "mentions_sex": true,
+    "mentions_sex": false,
     "no_preg_data": true,
     "no_lact_data": true,
     "sex_dose": false,
@@ -9993,7 +9959,7 @@
     "weight_based": true,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "no difference asserted",
+    "sex_statement": "one-sex drug",
     "example": "Specific Populations Age, sex, race, and renal function do not have a clinically significant effect on neratinib pharmacokinetics."
    },
    {
@@ -10009,7 +9975,7 @@
     "difference": false,
     "no_difference": false,
     "not_evaluated": false,
-    "mentions_sex": true,
+    "mentions_sex": false,
     "no_preg_data": true,
     "no_lact_data": true,
     "sex_dose": false,
@@ -10018,7 +9984,7 @@
     "weight_based": false,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "mentioned, unclear",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -10034,7 +10000,7 @@
     "difference": false,
     "no_difference": false,
     "not_evaluated": false,
-    "mentions_sex": true,
+    "mentions_sex": false,
     "no_preg_data": true,
     "no_lact_data": true,
     "sex_dose": true,
@@ -10043,7 +10009,7 @@
     "weight_based": false,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "mentioned, unclear",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -10055,11 +10021,11 @@
     "faers_female_pct": 97.0,
     "label_date": "20251222",
     "male_only_pk": false,
-    "quantified": true,
-    "difference": true,
+    "quantified": false,
+    "difference": false,
     "no_difference": false,
     "not_evaluated": false,
-    "mentions_sex": true,
+    "mentions_sex": false,
     "no_preg_data": true,
     "no_lact_data": false,
     "sex_dose": false,
@@ -10068,7 +10034,7 @@
     "weight_based": false,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "quantified difference",
+    "sex_statement": "one-sex drug",
     "example": "Race/Ethnicity A cross-study comparison between healthy Japanese women and Caucasian women with HSDD showed that flibanserin exposure was approximately 1.4-fold higher in Japanese women."
    },
    {
@@ -10082,9 +10048,9 @@
     "male_only_pk": false,
     "quantified": false,
     "difference": false,
-    "no_difference": true,
+    "no_difference": false,
     "not_evaluated": false,
-    "mentions_sex": true,
+    "mentions_sex": false,
     "no_preg_data": true,
     "no_lact_data": true,
     "sex_dose": false,
@@ -10093,7 +10059,7 @@
     "weight_based": false,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "no difference asserted",
+    "sex_statement": "one-sex drug",
     "example": "major route of elimination for absorbed gepotidacin) Specific Populations Modelling and simulation analyses of gepotidacin showed that age, sex, and race have no clinically relevant effect on gepotidacin exposure."
    },
    {
@@ -10118,7 +10084,7 @@
     "weight_based": false,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "silent",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -10134,7 +10100,7 @@
     "difference": false,
     "no_difference": false,
     "not_evaluated": false,
-    "mentions_sex": true,
+    "mentions_sex": false,
     "no_preg_data": true,
     "no_lact_data": true,
     "sex_dose": false,
@@ -10143,7 +10109,7 @@
     "weight_based": false,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "mentioned, unclear",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -10159,7 +10125,7 @@
     "difference": false,
     "no_difference": false,
     "not_evaluated": false,
-    "mentions_sex": true,
+    "mentions_sex": false,
     "no_preg_data": true,
     "no_lact_data": true,
     "sex_dose": false,
@@ -10168,7 +10134,7 @@
     "weight_based": false,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "mentioned, unclear",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -10193,23 +10159,23 @@
     "weight_based": false,
     "weight_effect": "no effect stated",
     "weight_example": null,
-    "sex_statement": "silent",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
     "slug": "drug-trials-snapshots-ryzneuta",
     "brand": "Ryzneuta",
     "year": 2023,
-    "category": "Infectious disease",
+    "category": "Oncology",
     "trial_female_pct": 100.0,
     "faers_female_pct": 71.4,
     "label_date": "20260519",
-    "male_only_pk": true,
+    "male_only_pk": false,
     "quantified": false,
     "difference": false,
     "no_difference": false,
     "not_evaluated": false,
-    "mentions_sex": true,
+    "mentions_sex": false,
     "no_preg_data": true,
     "no_lact_data": true,
     "sex_dose": false,
@@ -10218,7 +10184,7 @@
     "weight_based": false,
     "weight_effect": "no effect stated",
     "weight_example": null,
-    "sex_statement": "mentioned, unclear",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -10232,9 +10198,9 @@
     "male_only_pk": false,
     "quantified": false,
     "difference": false,
-    "no_difference": true,
+    "no_difference": false,
     "not_evaluated": false,
-    "mentions_sex": true,
+    "mentions_sex": false,
     "no_preg_data": true,
     "no_lact_data": true,
     "sex_dose": false,
@@ -10243,7 +10209,7 @@
     "weight_based": false,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "no difference asserted",
+    "sex_statement": "one-sex drug",
     "example": "Specific Populations There were no clinically significant differences in the pharmacokinetics of oteseconazole based on sex, race/ethnicity or mild to moderate renal impairment."
    },
    {
@@ -10259,7 +10225,7 @@
     "difference": false,
     "no_difference": false,
     "not_evaluated": false,
-    "mentions_sex": true,
+    "mentions_sex": false,
     "no_preg_data": false,
     "no_lact_data": true,
     "sex_dose": false,
@@ -10268,7 +10234,7 @@
     "weight_based": false,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "mentioned, unclear",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -10293,7 +10259,7 @@
     "weight_based": false,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "silent",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -10318,7 +10284,7 @@
     "weight_based": false,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "silent",
+    "sex_statement": "one-sex drug",
     "example": null
    },
    {
@@ -10332,9 +10298,9 @@
     "male_only_pk": false,
     "quantified": false,
     "difference": false,
-    "no_difference": true,
+    "no_difference": false,
     "not_evaluated": false,
-    "mentions_sex": true,
+    "mentions_sex": false,
     "no_preg_data": false,
     "no_lact_data": true,
     "sex_dose": false,
@@ -10343,7 +10309,7 @@
     "weight_based": false,
     "weight_effect": "silent",
     "weight_example": null,
-    "sex_statement": "no difference asserted",
+    "sex_statement": "one-sex drug",
     "example": "Specific Populations Male and Female, Racial or Ethnic Groups, and Age No clinically meaningful differences in pharmacokinetics of zuranolone were observed based on age (18-81 years), sex, or race."
    }
   ]

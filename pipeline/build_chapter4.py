@@ -57,7 +57,8 @@ def burden_age(dz):
 MESH = {
     "Alzheimer's and other dementias": ["Alzheimer Disease", "Dementia"], "Anxiety disorders": ["Anxiety Disorders"], "Asthma": ["Asthma"], "ADHD": ["Attention Deficit Disorder with Hyperactivity"],
     "Autism": ["Autism Spectrum Disorder", "Autistic Disorder"], "Bipolar disorder": ["Bipolar Disorder"], "Brain cancer": ["Brain Neoplasms", "Glioma"], "Breast cancer": ["Breast Neoplasms"], "Cervical cancer": ["Uterine Cervical Neoplasms"],
-    "Cirrhosis and chronic liver disease": ["Liver Cirrhosis", "Fatty Liver", "Non-alcoholic Fatty Liver Disease"], "COPD": ["Pulmonary Disease, Chronic Obstructive"], "Colorectal cancer": ["Colorectal Neoplasms"], "Depression": ["Depressive Disorder", "Depression"],
+    "Cirrhosis and chronic liver disease": ["Liver Cirrhosis"],  # NASH/fatty-liver trials are not cirrhosis and skew female
+    "COPD": ["Pulmonary Disease, Chronic Obstructive"], "Colorectal cancer": ["Colorectal Neoplasms"], "Depression": ["Depressive Disorder", "Depression"], "COPD": ["Pulmonary Disease, Chronic Obstructive"], "Colorectal cancer": ["Colorectal Neoplasms"], "Depression": ["Depressive Disorder", "Depression"],
     "Diabetes": ["Diabetes Mellitus"], "Peptic ulcer": ["Peptic Ulcer"], "Gallbladder disease": ["Gallbladder Diseases"], "Down syndrome": ["Down Syndrome"], "Eating disorders": ["Feeding and Eating Disorders"], "Epilepsy": ["Epilepsy"],
     "Esophageal cancer": ["Esophageal Neoplasms"], "Hearing loss": ["Hearing Loss"], "Coronary heart disease": ["Myocardial Ischemia", "Coronary Artery Disease", "Coronary Disease", "Myocardial Infarction", "Acute Coronary Syndrome", "Angina Pectoris"],
     "Hepatitis B": ["Hepatitis B"], "Hepatitis C": ["Hepatitis C"], "HIV/AIDS": ["HIV Infections", "Acquired Immunodeficiency Syndrome"], "Hodgkin lymphoma": ["Hodgkin Disease"], "Inflammatory bowel disease": ["Inflammatory Bowel Diseases"],
@@ -133,6 +134,10 @@ def main():
         r["drug"] = any(x in r["intervention_types"] for x in ("DRUG", "BIOLOGICAL"))
         terms = set(r["mesh"]) | set(r["ancestors"])
         r["diseases"] = [dz for dz, ms in MESH.items() if terms.intersection(ms)]
+        if "Cirrhosis and chronic liver disease" in r["diseases"] and terms & {"Liver Cirrhosis, Biliary", "Cholangitis", "Cholangitis, Sclerosing"}:
+            r["diseases"].remove("Cirrhosis and chronic liver disease")  # primary biliary cholangitis trials are ~70% women and a small part of the WHO cirrhosis burden
+        if "Drug use disorders" in r["diseases"] and terms & {"Tobacco Use Disorder", "Smoking Cessation", "Smoking", "Tobacco Use", "Vaping", "Nicotine"} and not terms & {"Opioid-Related Disorders", "Cocaine-Related Disorders", "Amphetamine-Related Disorders", "Substance Abuse, Intravenous", "Marijuana Abuse"}:
+            r["diseases"].remove("Drug use disorders")  # WHO's drug-use burden excludes tobacco; smoking trials would inflate the women's share
         if "HIV/AIDS" in r["diseases"] and "Sexually transmitted infections" in r["diseases"]:
             r["diseases"].remove("Sexually transmitted infections")
         r["uncounted"] = [dz for dz, ms in UNCOUNTED.items() if terms.intersection(ms)]

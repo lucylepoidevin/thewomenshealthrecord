@@ -1,9 +1,9 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { chapterRef } from '../lib/chapters'
 import Story, { type Block } from '../components/Story'
 import Cite from '../components/Cite'
 import SourceList from '../components/SourceList'
-import Dumbbell from '../components/charts/Dumbbell'
 import Beeswarm from '../components/charts/Beeswarm'
 import Scatter, { inGapQuadrant } from '../components/charts/Scatter'
 import DataTable from '../components/charts/DataTable'
@@ -21,7 +21,7 @@ export default function Chapter1() {
     fetch(`${import.meta.env.BASE_URL}data/chapter1.json`).then(r => r.json()).then(setData)
   }, [])
 
-  const withFaers = useMemo(() => (data?.drugs ?? []).filter(d => d.faers_female_pct != null && (d.faers_n ?? 0) >= MIN_REPORTS), [data])
+  const withFaers = useMemo(() => (data?.drugs ?? []).filter(d => d.faers_female_pct != null && (d.faers_n ?? 0) >= MIN_REPORTS && !d.sex_specific), [data])
   const quadrant = useMemo(() => withFaers.filter(d => inGapQuadrant(d, GAP)), [withFaers])
   const withRate = useMemo(() => (data?.drugs ?? []).filter(d => d.rate_ratio != null), [data])
 
@@ -41,7 +41,6 @@ export default function Chapter1() {
       <p>Zolpidem, sold as Ambien, had been on the market for twenty years; in 2011 alone about nine million Americans filled a prescription for it, and 63% of them were women.<Cite id="fda-dsc-2013" /> The agency told manufacturers to halve the recommended dose for women: 10 mg became 5 mg for the immediate-release pill, 12.5 mg became 6.25 mg for the extended-release one. For men, the label was to say only that prescribers should "consider" the lower dose.<Cite id="fda-dsc-2013" /></p>
       <p>The reason was in the blood. In the FDA's pharmacokinetic trials of the 10 mg dose, about 250 men and 250 women, roughly 15% of the women still had zolpidem levels above 50 ng/mL eight hours after taking it, against about 3% of the men. That is the level the FDA says appears capable of impairing driving.<Cite id="fda-dsc-2013" /></p>
     </>),
-    F('pk', <Dumbbell rows={data.pk} title="Still impaired the next morning" subtitle="Share of patients with blood zolpidem above 50 ng/mL about 8 hours after dosing" source="Source: FDA Drug Safety Communication, 10 January 2013, pharmacokinetic data submitted by manufacturers." note=" above 50 ng/mL" />),
     T('pk-text', <>
       <p>The extended-release form was worse: 33% of women against 25% of men on the 12.5 mg dose still had levels above the threshold eight hours on.<Cite id="fda-qa-2013" /></p>
       <p>None of this required a new discovery. Intermezzo, a lower-dose zolpidem product approved in November 2011, already carried a lower recommended dose for women than for men.<Cite id="fda-dsc-2013" /> For the products most people were actually taking, the label caught up fourteen months later.</p>
@@ -54,12 +53,12 @@ export default function Chapter1() {
     F('beeswarm', <Beeswarm drugs={data.drugs} mode="low" title={`Who was in the trial, for ${s.n_drugs} new drugs`} subtitle={`Each dot is one FDA approval. In berry: the ${s.n_under_30} drugs approved on trials under 30% women. Hover for the drug.`} source={snapSrc} />, 'chart', true),
     T('low', <>
       <p>{s.n_under_30} of those drugs were approved on trials where fewer than 30% of participants were women. {s.n_under_40} were under 40%.</p>
-      <p>Some of that is legitimate: a prostate cancer drug is tested on men. But hover the dots on the left. Many treat conditions that do not spare women at all.</p>
+      <p>Some of that is legitimate: a prostate cancer drug is tested on men, a Duchenne drug on boys, and those drugs are marked as sex-specific in the data and left out of every comparison that follows. But hover the dots on the left. Many treat conditions that do not spare women at all.</p>
     </>),
     T('faers', <>
       <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">The other side of the ledger.</p>
       <p>When a drug harms someone after approval, the report goes to the FDA Adverse Event Reporting System, FAERS.<Cite id="openfda-faers" /> Each report records the patient's sex.</p>
-      <p>For every drug in the snapshots with at least {MIN_REPORTS} reports ({s.n_with_faers} drugs), we pulled the share of adverse-event reports that came from women, and put it against the share of women who were in the trial.</p>
+      <p>For every drug in the snapshots that is not sex-specific and has at least {MIN_REPORTS} reports ({s.n_with_faers} drugs), we pulled the share of adverse-event reports that came from women, and put it against the share of women who were in the trial.</p>
       <p>On the dotted line, the people reporting harm look like the people who were studied. Above it, more of the harm reports come from women than the trials would predict. The shaded corner is the one that matters: drugs tested on populations that were less than half women, where women nonetheless make up at least {GAP} points more of the adverse-event reports than they did of the trial.</p>
     </>),
     F('scatter', <Scatter drugs={withFaers} mode="quadrant" gapThreshold={GAP} title="Who was studied vs. who reports harm" subtitle="One dot per drug. Dotted line: reports match the trial's sex mix. Shaded: the Ambien corner." source={faersSrc} />, 'tall', true),
@@ -121,7 +120,7 @@ export default function Chapter1() {
   return (
     <article>
       <header className="mx-auto max-w-3xl px-4 pt-20 pb-14 text-center fade-up">
-        <p className="eyebrow">Chapter 1</p>
+        <p className="eyebrow">{chapterRef('tested-on-men')}</p>
         <h1 className="display mt-4 text-4xl sm:text-6xl font-light leading-[1.05]">Tested on men, <span className="italic font-medium text-berry">prescribed to women</span></h1>
         <p className="mx-auto mt-6 max-w-xl text-lg text-ink-2 leading-relaxed">Every new drug the FDA has approved since 2015, scored on who was in the trial against who reports the side effects.</p>
         <p className="mt-5 text-xs tracking-wide text-ink-3">data through {data.faers_last_updated ?? data.generated} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>

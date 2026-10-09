@@ -12,8 +12,14 @@ GAP = 15          # percentage points; mirrored in site/src/chapters/Chapter1.ts
 MIN_REPORTS = 100 # minimum sex-recorded FAERS reports for inclusion in scatter/table
 MIN_USERS = 30    # minimum unweighted MEPS person-years to publish a users-by-sex share
 
+# precedence rules: conditions whose words would otherwise be caught by a broader category
+PRE_RULES = [
+    ("Neurology", r"muscular dystrophy|duchenne"),
+    ("Infectious disease", r"onchocerciasis|river blindness|hepatitis|parasit|helminth"),
+    ("Oncology", r"leuk[ae]mia|myeloid|myelodysplastic"),
+]
 CATEGORIES = [
-    ("Imaging & diagnostics", r"imaging|diagnos|contrast agent|radiographic|visuali[sz]e|pet scan|radiopharm|tracer|detect(?:ion)? of"),
+    ("Imaging & diagnostics", r"imaging|diagnostic|contrast agent|radiographic|visuali[sz]e|visual detection|pet scan|radiopharm|tracer|detect(?:ion)? of"),
     ("Immunology & dermatology", r"actinic keratosis|plaque psoriasis|atopic dermatitis|hidradenitis"),
     ("Oncology", r"\bcancer|tumou?r|leuk[ae]mia|lymphoma|myeloma|carcinoma|melanoma|sarcoma|neoplasm|metastatic|myelofibrosis|glioma|mastocytosis"),
     ("Infectious disease", r"infection|hiv\b|hepatitis|covid|sars-cov|bacteri|viral|virus|malaria|tuberculosis|fung|pneumonia|influenza|chagas|smallpox|anthrax|mycobact"),
@@ -33,10 +39,41 @@ CATEGORIES = [
 
 def categorize(ind):
     t = (ind or "").lower()
-    for name, pat in CATEGORIES:
+    for name, pat in PRE_RULES + CATEGORIES:
         if re.search(pat, t):
             return name
     return "Other"
+
+
+GENERIC_FIX = {"artesunate": "artesunate", "tremfya": "guselkumab", "lenvima": "lenvatinib", "datroway": "datopotamab deruxtecan", "penpulimab-kcqx": "penpulimab", "izervay": "avacincaptad pegol",
+               "flyrcado": "flurpiridaz F 18", "defencath": "taurolidine and heparin", "xacduro": "sulbactam and durlobactam", "wainua": "eplontersen"}
+BRAND_FIX = {"drug-trials-snapshot-ga-68-psma-11": "Ga 68 PSMA-11", "drug-trials-snapshots-ga-68-dotatoc": "Ga 68 DOTATOC"}
+MALE_RX = re.compile(r"prostat|duchenne|h(a)?emophilia|\bin men\b|\bmales?\b[^.]{0,30}only|testicular|erectile|hypogonadism|peyronie", re.I)
+FEMALE_RX = re.compile(r"breast cancer|ovarian|postmenopausal|pregnan|vaginal|vaginosis|postpartum|\bwomen\b|endometriosis|contracept|uterine|cervical cancer|fallopian|rett syndrome|hypoactive sexual desire|menopaus|vulv", re.I)
+
+
+def clean_generic(brand, slug, g):
+    g = (g or "").strip()
+    key = (brand or "").lower()
+    if key in GENERIC_FIX:
+        return GENERIC_FIX[key]
+    g = re.sub(r"\s*\((?:pronounced|[a-z]{1,4}-[a-z\-]+)\)?\s*$", "", g, flags=re.I)  # trailing pronunciation guide
+    if not g or re.search(r"^\s*n\s*=|\d+\s?mg|every \w+ weeks?|pronounc|injection$", g, re.I):
+        return None
+    return g
+
+
+def sex_specific(ind, female_pct):
+    t = ind or ""
+    if female_pct is not None and female_pct <= 2 and (MALE_RX.search(t) or "boys" in t.lower() or female_pct == 0):
+        return "male"
+    if female_pct is not None and female_pct >= 98 and (FEMALE_RX.search(t) or female_pct == 100):
+        return "female"
+    if MALE_RX.search(t) and (female_pct or 0) < 10:
+        return "male"
+    if FEMALE_RX.search(t) and (female_pct or 0) > 90:
+        return "female"
+    return None
 
 
 def num(v):
@@ -125,8 +162,9 @@ def main():
         yr = re.search(r"\d{4}", r.get("approval_date") or "")
         drugs.append({
             "slug": r["slug"],
-            "brand": (r.get("brand") or r["slug"]).title() if (r.get("brand") or "").isupper() else (r.get("brand") or r["slug"]),
-            "generic": r.get("generic") or None,
+            "brand": BRAND_FIX.get(r["slug"]) or ((r.get("brand") or r["slug"]).title() if (r.get("brand") or "").isupper() else (r.get("brand") or r["slug"])),
+            "generic": clean_generic(r.get("brand"), r["slug"], r.get("generic")),
+            "sex_specific": sex_specific(r.get("indication"), round(trial_pct, 1)),
             "year": int(yr.group()) if yr else None,
             "indication": r.get("indication") or None,
             "category": categorize(r.get("indication")),
@@ -136,7 +174,7 @@ def main():
             "faers_female_pct": round(faers_pct, 1) if faers_pct is not None else None,
             "faers_serious_n": None,
             "faers_serious_female_pct": None,
-            "gap": round(faers_pct - trial_pct, 1) if faers_pct is not None else None,
+            "gap": round(faers_pct - trial_pct, 1) if faers_pct is not None and faers_n >= MIN_REPORTS else None,  # no gap on tiny counts
             "meps_users_n": mu or None,
             "meps_female_pct": round(mfw / (mfw + mmw) * 100, 1) if mu >= MIN_USERS and mfw + mmw else None,
             "rate_ratio": round(rate_ratio, 2) if rate_ratio else None,
@@ -146,7 +184,7 @@ def main():
             "enrollment_source": src,
         })
 
-    with_faers = [d for d in drugs if d["faers_n"] and d["faers_n"] >= MIN_REPORTS]
+    with_faers = [d for d in drugs if d["faers_n"] and d["faers_n"] >= MIN_REPORTS and not d["sex_specific"]]  # sex-specific drugs cannot have a meaningful gap
     with_rate = sorted([d for d in drugs if d["rate_ratio"]], key=lambda d: -d["rate_ratio"])
     zm = meps.get("zolpidem") or {}
     zmu = (int(zm["female_n"]) + int(zm["male_n"])) if zm else 0

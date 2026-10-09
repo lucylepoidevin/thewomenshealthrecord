@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { chapterRef } from '../lib/chapters'
 import Story, { type Block } from '../components/Story'
 import Cite from '../components/Cite'
 import SourceList from '../components/SourceList'
@@ -40,7 +41,8 @@ function Explorer({ cells, source }: { cells: Cell[]; source: string }) {
   return (
     <ChartFrame title="Look up a visit like yours" subtitle="Pick the complaint and age band. Women and men in that group, side by side, with the 95% interval." source={source}>
       <p className="text-[15px] text-ink leading-relaxed">Adults aged <select value={age} onChange={e => setAge(e.target.value)} className={sel} aria-label="Age band">{AGES.map(([k, l]) => <option key={k} value={k}>{l}</option>)}</select> who come to the emergency department with <select value={complaint} onChange={e => setComplaint(e.target.value)} className={sel} aria-label="Complaint">{COMPLAINTS.map(([k, l]) => <option key={k} value={k}>{l}</option>)}</select></p>
-      {cell && (
+      {cell && (cell.n_women < 30 || cell.n_men < 30) && <p className="mt-4 text-[14px] text-ink-2">Too few sampled visits in this group ({cell.n_women.toLocaleString()} women, {cell.n_men.toLocaleString()} men) for a reliable comparison. Pick a wider age band.</p>}
+      {cell && cell.n_women >= 30 && cell.n_men >= 30 && (
         <div className="mt-4 overflow-x-auto">
           <table className="w-full border-collapse text-[13px] sm:text-[14px]">
             <thead><tr className="text-[11px] font-bold uppercase tracking-[0.12em] text-ink-3"><th className="py-2 pr-3 text-left font-bold">Of those visits…</th><th className="py-2 pr-3 text-right font-bold text-rose">Women</th><th className="py-2 pr-3 text-right font-bold text-bronze">Men</th><th className="py-2 text-right font-bold">Gap</th></tr></thead>
@@ -136,7 +138,7 @@ export default function Chapter5() {
   return (
     <article>
       <header className="mx-auto max-w-3xl px-4 pt-20 pb-14 text-center fade-up">
-        <p className="eyebrow">Chapter 5</p>
+        <p className="eyebrow">{chapterRef('sent-home-with-a-label')}</p>
         <h1 className="display mt-4 text-4xl sm:text-6xl font-light leading-[1.05]">Where the <span className="italic font-medium text-berry">diagnosis gap</span> lives</h1>
         <p className="mx-auto mt-6 max-w-xl text-lg text-ink-2 leading-relaxed">The story says she is sent home undiagnosed, under-tested and told it is anxiety. We looked in {S.n.toLocaleString()} emergency visits and {(C.cases_total / 1e6).toFixed(1)} million cancer cases. The gap is real. It is not where the story puts it.</p>
         <p className="mt-5 text-xs tracking-wide text-ink-3">NHAMCS {data.years[0]}–{data.years[1]} · SEER {C.years_stage} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>

@@ -2,6 +2,7 @@ export type Drug = {
   slug: string
   brand: string
   generic: string | null
+  sex_specific?: 'male' | 'female' | null
   year: number | null
   indication: string | null
   category: string

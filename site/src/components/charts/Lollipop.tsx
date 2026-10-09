@@ -11,8 +11,9 @@ export type LolliRow = { label: string; sub?: string; value: number; lo?: number
 export default function Lollipop({ rows, title, subtitle, source, axisLabel, fmt = v => v.toFixed(0), log = false, reference, legend }: { rows: LolliRow[]; title: string; subtitle?: string; source: string; axisLabel: string; fmt?: (v: number) => string; log?: boolean; reference?: { value: number; label: string }; legend?: { label: string; color: string }[] }) {
   const { ref, width } = useSize<HTMLDivElement>()
   const [tip, setTip] = useState<Tip>(null)
-  const rowH = 28
-  const m = { top: 26, right: 70, bottom: 30, left: Math.min(230, Math.max(width < 480 ? 92 : 120, width * 0.3)) }
+  const narrow = width > 0 && width < 480
+  const rowH = narrow ? 46 : 28
+  const m = { top: 26, right: narrow ? 52 : 70, bottom: 30, left: narrow ? 6 : Math.min(230, Math.max(120, width * 0.3)) }
   const iw = Math.max(0, width - m.left - m.right)
   const ih = rows.length * rowH
   const vals = rows.flatMap(r => [r.value, r.lo ?? r.value, r.hi ?? r.value])
@@ -28,11 +29,12 @@ export default function Lollipop({ rows, title, subtitle, source, axisLabel, fmt
               {(log ? [0.02, 0.05, 0.1, 0.2, 0.5, 1, 2, 5, 10, 20, 50].filter(t => t >= x.domain()[0] && t <= x.domain()[1]) : x.ticks(5)).map(t => <g key={t} transform={`translate(${x(t)},0)`}><line y1={-4} y2={ih} stroke="var(--c-grid)" /><text y={-10} textAnchor="middle" fontSize={11} fill="var(--c-text-2)">{fmt(t)}</text></g>)}
               {reference && <g transform={`translate(${x(reference.value)},0)`}><line y1={-4} y2={ih} stroke="var(--c-text-2)" strokeDasharray="4 3" /><text y={-10} textAnchor="middle" fontSize={11} fill="var(--c-text-2)" fontWeight={600}>{reference.label}</text></g>}
               {rows.map((r, i) => {
-                const cy = i * rowH + rowH / 2
+                const cy = i * rowH + (narrow ? rowH - 12 : rowH / 2)
                 return (
                   <g key={r.label}>
+                    {narrow ? <text x={0} y={i * rowH + 13} fontSize={11.5} fill="var(--c-text)" fontWeight={600}>{r.label}{r.sub && <tspan fill="var(--c-text-2)" fontWeight={400} fontSize={10}> · {r.sub}</tspan>}</text> : <>
                     <text x={-10} y={cy + (r.sub ? 0 : 4)} textAnchor="end" fontSize={12} fill="var(--c-text)" fontWeight={500}>{r.label}</text>
-                    {r.sub && <text x={-10} y={cy + 12} textAnchor="end" fontSize={10} fill="var(--c-text-2)">{r.sub}</text>}
+                    {r.sub && <text x={-10} y={cy + 12} textAnchor="end" fontSize={10} fill="var(--c-text-2)">{r.sub}</text>}</>}
                     {r.lo != null && r.hi != null ? (
                       <g stroke={r.color} strokeWidth={1.5} opacity={0.6}><line x1={x(r.lo)} x2={x(r.hi)} y1={cy} y2={cy} /><line x1={x(r.lo)} x2={x(r.lo)} y1={cy - 5} y2={cy + 5} /><line x1={x(r.hi)} x2={x(r.hi)} y1={cy - 5} y2={cy + 5} /></g>
                     ) : (

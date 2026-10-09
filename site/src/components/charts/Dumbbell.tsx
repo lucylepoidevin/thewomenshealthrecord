@@ -9,19 +9,20 @@ type Row = { label: string; female: number; male: number }
 
 /** Female vs male value per row, joined by a line. Values are percentages. */
 export default function Dumbbell({ rows, title, subtitle, source, max = 40, fmt = v => `${v}%`, note = '' }: { rows: Row[]; title: string; subtitle?: string; source: string; max?: number; fmt?: (v: number) => string; note?: string }) {
-  const { ref, width, height } = useSize<HTMLDivElement>()
+  const { ref, width } = useSize<HTMLDivElement>()
+  const rowH = 58
+  const height = rows.length * rowH + 36
   const [tip, setTip] = useState<Tip>(null)
   const m = { top: 8, right: 24, bottom: 28, left: 10 }
-  const labelH = 20
   const iw = Math.max(0, width - m.left - m.right)
   const ih = Math.max(0, height - m.top - m.bottom)
   const x = scaleLinear().domain([0, max]).range([0, iw])
-  const y = scaleBand<string>().domain(rows.map(r => r.label)).range([0, ih]).paddingInner(0.5)
+  const y = scaleBand<string>().domain(rows.map(r => r.label)).range([0, ih]).paddingInner(0.12)
   const F = 'var(--c-female)', M = 'var(--c-male)'
   return (
     <ChartFrame title={title} subtitle={subtitle} source={source}>
       <Legend items={[{ label: 'Women', color: F }, { label: 'Men', color: M }]} />
-      <div ref={ref} className="relative h-[calc(100%-1.5rem)] w-full">
+      <div ref={ref} className="relative w-full" style={{ height }}>
         {width > 0 && (
           <svg width={width} height={height} role="img" aria-label={title}>
             <g transform={`translate(${m.left},${m.top})`}>
@@ -32,17 +33,17 @@ export default function Dumbbell({ rows, title, subtitle, source, max = 40, fmt 
                 </g>
               ))}
               {rows.map(r => {
-                const cy = (y(r.label) ?? 0) + y.bandwidth() / 2 + labelH / 2
+                const cy = (y(r.label) ?? 0) + y.bandwidth() * 0.8
                 return (
                   <g key={r.label}>
-                    <text x={0} y={(y(r.label) ?? 0) + 10} fontSize={12} fill="var(--c-text)" fontWeight={500}>{r.label}</text>
+                    <text x={0} y={(y(r.label) ?? 0) + 11} fontSize={12} fill="var(--c-text)" fontWeight={500}>{r.label}</text>
                     <line x1={x(r.male)} x2={x(r.female)} y1={cy} y2={cy} stroke="var(--c-muted)" strokeWidth={2} />
                     {[{ v: r.male, c: M, who: 'Men' }, { v: r.female, c: F, who: 'Women' }].map(p => (
                       <g key={p.who}>
                         <circle cx={x(p.v)} cy={cy} r={7} fill={p.c} stroke="var(--c-surface)" strokeWidth={2}
                           onMouseEnter={() => setTip({ x: x(p.v) + m.left, y: cy + m.top, content: <><b>{p.who}</b>: {fmt(p.v)}{note}<br />{r.label}</> })}
                           onMouseLeave={() => setTip(null)} />
-                        <text x={x(p.v)} y={cy - 12} textAnchor="middle" fontSize={11} fill="var(--c-text-2)">{fmt(p.v)}</text>
+                        <text x={x(p.v)} y={cy - 13} textAnchor="middle" fontSize={11} fill="var(--c-text-2)">{fmt(p.v)}</text>
                       </g>
                     ))}
                   </g>

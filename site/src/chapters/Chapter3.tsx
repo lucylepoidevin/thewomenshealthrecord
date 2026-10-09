@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { chapterRef } from '../lib/chapters'
 import Story, { type Block } from '../components/Story'
 import Cite from '../components/Cite'
 import SourceList from '../components/SourceList'
@@ -105,7 +106,7 @@ export default function Chapter3() {
   return (
     <article>
       <header className="mx-auto max-w-3xl px-4 pt-20 pb-14 text-center fade-up">
-        <p className="eyebrow">Chapter 3</p>
+        <p className="eyebrow">{chapterRef('funding-vs-burden')}</p>
         <h1 className="display mt-4 text-4xl sm:text-6xl font-light leading-[1.05]">The <span className="italic font-medium text-berry">research</span> dollar</h1>
         <p className="mx-auto mt-6 max-w-xl text-lg text-ink-2 leading-relaxed">{S.n} diseases, their NIH budgets and the healthy years they cost Americans: where the money follows the burden, where it doesn't, and which conditions are never measured.</p>
         <p className="mt-5 text-xs tracking-wide text-ink-3">NIH FY{data.funding_fy}, WHO {data.burden_year} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>

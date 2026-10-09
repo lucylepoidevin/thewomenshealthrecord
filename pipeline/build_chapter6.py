@@ -37,7 +37,7 @@ R["wt_no"] = re.compile(r"\b(no|not) (clinically )?(significant|meaningful|relev
 TRIAL_PCT = {d["slug"]: d for d in json.load(open(f"{SITE_DATA}/chapter1.json"))["drugs"]}
 
 
-def classify(rec):
+def classify(rec, trial_female_pct=None):
     pk = " ".join(str(rec.get(k, "")) for k in ("pharmacokinetics", "clinical_pharmacology"))
     pop = " ".join(str(rec.get(k, "")) for k in ("use_in_specific_populations", "pregnancy", "lactation", "nursing_mothers", "females_and_males_of_reproductive_potential"))
     dose = str(rec.get("dosage_and_administration", ""))
@@ -50,7 +50,10 @@ def classify(rec):
     wy = bool(R["wt_affects"].search(pk)); wn = bool(R["wt_no"].search(pk)) and not wy
     out["weight_effect"] = "affects exposure" if wy else "no effect stated" if wn else "silent"
     out["weight_example"] = next((s.strip()[:300] for s in SENT.split(pk) if R["wt_affects"].search(s) and len(s) < 600), None) if wy else None
-    out["sex_statement"] = ("quantified difference" if out["quantified"] else "difference noted" if out["difference"] else "no difference asserted" if out["no_difference"] else "not evaluated" if out["not_evaluated"] else "mentioned, unclear" if out["mentions_sex"] else "silent")
+    one_sex = trial_female_pct is not None and (trial_female_pct <= 2 or trial_female_pct >= 98)
+    if one_sex:  # a drug trialled in one sex cannot carry a sex comparison; pregnancy and dosing statements still apply
+        out.update({"quantified": False, "difference": False, "no_difference": False, "not_evaluated": False, "mentions_sex": False, "male_only_pk": False})
+    out["sex_statement"] = ("one-sex drug" if one_sex else"quantified difference" if out["quantified"] else "difference noted" if out["difference"] else "no difference asserted" if out["no_difference"] else "not evaluated" if out["not_evaluated"] else "mentioned, unclear" if out["mentions_sex"] else "silent")
     out["example"] = next((s.strip()[:300] for s in sex_sents if (R["quantified"].search(s) or R["difference"].search(s) or R["no_difference"].search(s) or R["not_evaluated"].search(s))), None)
     return out
 
@@ -62,11 +65,11 @@ def labels():
         d = TRIAL_PCT.get(rec["slug"])
         if not rec["found"] or not d:
             continue
-        c = classify(rec)
+        c = classify(rec, d["trial_female_pct"])
         rows.append({"slug": rec["slug"], "brand": rec["brand"], "year": d["year"], "category": d["category"], "trial_female_pct": d["trial_female_pct"], "faers_female_pct": d["faers_female_pct"], "label_date": rec.get("effective_time"), **c})
     n = len(rows)
     pct = lambda k, rs=rows: round(100 * sum(1 for r in rs if r[k]) / len(rs), 1) if rs else None  # noqa: E731
-    stmt = {s: sum(1 for r in rows if r["sex_statement"] == s) for s in ("quantified difference", "difference noted", "no difference asserted", "not evaluated", "mentioned, unclear", "silent")}
+    stmt = {s: sum(1 for r in rows if r["sex_statement"] == s) for s in ("quantified difference", "difference noted", "no difference asserted", "not evaluated", "mentioned, unclear", "silent", "one-sex drug")}
     low = [r for r in rows if r["trial_female_pct"] < 30 and r["trial_female_pct"] > 0]; mid = [r for r in rows if 30 <= r["trial_female_pct"] < 50]; high = [r for r in rows if r["trial_female_pct"] >= 50]
     by_trial = {"under 30% women": {"n": len(low), "no_difference_pct": pct("no_difference", low), "quantified_pct": pct("quantified", low), "not_evaluated_pct": pct("not_evaluated", low), "silent_pct": round(100 * sum(1 for r in low if r["sex_statement"] == "silent") / len(low), 1) if low else None},
                 "30–49% women": {"n": len(mid), "no_difference_pct": pct("no_difference", mid), "quantified_pct": pct("quantified", mid), "not_evaluated_pct": pct("not_evaluated", mid), "silent_pct": round(100 * sum(1 for r in mid if r["sex_statement"] == "silent") / len(mid), 1) if mid else None},

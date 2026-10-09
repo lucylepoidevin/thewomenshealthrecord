@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import type { Cmp } from '../lib/types2'
+import { chapterRef } from '../lib/chapters'
 
 type Drug = { brand: string; year: number | null; trial_female_pct: number; faers_female_pct: number | null; gap: number | null; rate_ratio: number | null; snapshot_url: string; label_sex?: string | null; label_no_preg?: boolean | null; label_no_lact?: boolean | null; label_flat?: boolean | null }
 type Cond = {
@@ -43,7 +44,7 @@ export default function Record() {
       </header>
 
       <section className="graphic-card p-5 sm:p-7">
-        <div className="flex items-baseline justify-between gap-4"><h2 className="display text-xl font-medium">Who it burdens, what it gets</h2><Link to="/chapters/funding-vs-burden" className="text-xs text-berry underline underline-offset-2">Chapter 3</Link></div>
+        <div className="flex items-baseline justify-between gap-4"><h2 className="display text-xl font-medium">Who it burdens, what it gets</h2><Link to="/chapters/funding-vs-burden" className="text-xs text-berry underline underline-offset-2">{chapterRef('funding-vs-burden')}</Link></div>
         {F.uncounted ? (
           <p className="mt-3 text-[15px] leading-relaxed text-ink">NIH spent <b>{money(F.funding_m)}</b> on this condition in fiscal 2024. The World Health Organization has no burden estimate for it, so it cannot be placed on the funding-to-burden chart at all. It is one of {data.conditions.filter(x => x.funding.uncounted).length} such conditions, nearly all of which fall mostly on women.</p>
         ) : (
@@ -57,7 +58,7 @@ export default function Record() {
       </section>
 
       <section className="graphic-card p-5 sm:p-7 mt-6">
-        <div className="flex items-baseline justify-between gap-4"><h2 className="display text-xl font-medium">Who is in its trials</h2><Link to="/chapters/who-gets-studied" className="text-xs text-berry underline underline-offset-2">Chapter 4</Link></div>
+        <div className="flex items-baseline justify-between gap-4"><h2 className="display text-xl font-medium">Who is in its trials</h2><Link to="/chapters/who-gets-studied" className="text-xs text-berry underline underline-offset-2">{chapterRef('who-gets-studied')}</Link></div>
         {!c.trials ? <p className="mt-3 text-[15px] text-ink-2">Fewer than ten US trials with posted results could be matched to this condition.</p> : c.trials.uncounted || c.trials.sex_specific || c.trials.ratio == null ? (
           <p className="mt-3 text-[15px] leading-relaxed text-ink">ClinicalTrials.gov holds <b>{c.trials.trials.toLocaleString()}</b> US trials with posted results for this condition, enrolling {c.trials.participants.toLocaleString()} people, <b>{c.trials.female_pct?.toFixed(0)}%</b> of them women.{c.trials.uncounted ? ' There is no WHO burden estimate to compare that with.' : ''}</p>
         ) : (
@@ -71,7 +72,7 @@ export default function Record() {
       </section>
 
       <section className="graphic-card p-5 sm:p-7 mt-6">
-        <div className="flex items-baseline justify-between gap-4"><h2 className="display text-xl font-medium">Who its drugs were tested on</h2><Link to="/chapters/tested-on-men" className="text-xs text-berry underline underline-offset-2">Chapter 1</Link></div>
+        <div className="flex items-baseline justify-between gap-4"><h2 className="display text-xl font-medium">Who its drugs were tested on</h2><Link to="/chapters/tested-on-men" className="text-xs text-berry underline underline-offset-2">{chapterRef('tested-on-men')}</Link></div>
         {c.drugs.length === 0 ? <p className="mt-3 text-[15px] text-ink-2">No novel drug approved since 2015 lists this condition in its FDA snapshot indication.</p> : (
           <div className="mt-3 overflow-x-auto">
             <table className="w-full border-collapse text-[13px] sm:text-[14px]">
@@ -80,13 +81,13 @@ export default function Record() {
                 <tr key={d.brand} className="border-t border-hairline/60"><td className="py-2 pr-3"><a href={d.snapshot_url} target="_blank" rel="noreferrer" className="font-medium text-ink hover:text-berry">{d.brand}</a></td><td className="py-2 pr-3 text-right tabular-nums">{d.year ?? ''}</td><td className={`py-2 pr-3 text-right tabular-nums ${d.trial_female_pct < 30 ? 'font-bold text-berry' : ''}`}>{d.trial_female_pct.toFixed(0)}%</td><td className="py-2 pr-3 text-right tabular-nums">{d.faers_female_pct != null ? `${d.faers_female_pct.toFixed(0)}%` : '–'}</td><td className="py-2 pr-3 text-right tabular-nums">{d.rate_ratio != null ? `${d.rate_ratio.toFixed(1)}×` : '–'}</td><td className="py-2 text-[12px] text-ink-2">{d.label_sex ? <>{d.label_sex}{d.label_no_preg != null ? ` · ${d.label_no_preg ? 'none or insufficient' : 'some'}` : ''}</> : '–'}</td></tr>
               ))}</tbody>
             </table>
-            <p className="mt-2 text-[11px] text-ink-3">Drugs whose FDA snapshot indication mentions this condition. Bold: trials under 30% women. Reports per user needs enough surveyed users and is blank for most specialty drugs. The last column is what the current label's pharmacology section says about sex (<Link to="/chapters/male-default" className="underline">Chapter 6</Link>), and whether it reports human pregnancy data.</p>
+            <p className="mt-2 text-[11px] text-ink-3">Drugs whose FDA snapshot indication mentions this condition. Bold: trials under 30% women. Reports per user needs enough surveyed users and is blank for most specialty drugs. The last column is what the current label's pharmacology section says about sex (<Link to="/chapters/male-default" className="underline">{chapterRef('male-default')}</Link>), and whether it reports human pregnancy data.</p>
           </div>
         )}
       </section>
 
       <section className="graphic-card p-5 sm:p-7 mt-6">
-        <div className="flex items-baseline justify-between gap-4"><h2 className="display text-xl font-medium">In the emergency department</h2><Link to="/chapters/pain-gap" className="text-xs text-berry underline underline-offset-2">Chapter 2</Link></div>
+        <div className="flex items-baseline justify-between gap-4"><h2 className="display text-xl font-medium">In the emergency department</h2><Link to="/chapters/pain-gap" className="text-xs text-berry underline underline-offset-2">{chapterRef('pain-gap')}</Link></div>
         {!c.ed ? <p className="mt-3 text-[15px] text-ink-2">The emergency department chapter covers pain complaints; this condition does not map onto one of them.</p> : (
           <div className="mt-3 overflow-x-auto">
             <p className="text-[13px] text-ink-2 mb-2">Adult visits where the main complaint was <b>{c.ed.complaint.toLowerCase()}</b>, 2018–2022, {c.ed.n.toLocaleString()} sampled visits.</p>
@@ -102,7 +103,7 @@ export default function Record() {
       </section>
       {c.drugs.some(d => d.label_sex) && (
         <section className="graphic-card p-5 sm:p-7 mt-6">
-          <div className="flex items-baseline justify-between gap-4"><h2 className="display text-xl font-medium">What their labels say</h2><Link to="/chapters/male-default" className="text-xs text-berry underline underline-offset-2">Chapter 6</Link></div>
+          <div className="flex items-baseline justify-between gap-4"><h2 className="display text-xl font-medium">What their labels say</h2><Link to="/chapters/male-default" className="text-xs text-berry underline underline-offset-2">{chapterRef('male-default')}</Link></div>
           {(() => { const L = c.drugs.filter(d => d.label_sex); const n = L.length; const pc = (k: number) => `${Math.round(100 * k / n)}%`; return (
             <div className="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-3">
               <Tile v={pc(L.filter(d => d.label_sex === 'no difference asserted').length)} l={`of ${n} labels assert no clinically significant sex difference`} />
@@ -115,7 +116,7 @@ export default function Record() {
       )}
       {c.cancer && (
         <section className="graphic-card p-5 sm:p-7 mt-6">
-          <div className="flex items-baseline justify-between gap-4"><h2 className="display text-xl font-medium">When it was found</h2><Link to="/chapters/sent-home-with-a-label" className="text-xs text-berry underline underline-offset-2">Chapter 5</Link></div>
+          <div className="flex items-baseline justify-between gap-4"><h2 className="display text-xl font-medium">When it was found</h2><Link to="/chapters/sent-home-with-a-label" className="text-xs text-berry underline underline-offset-2">{chapterRef('sent-home-with-a-label')}</Link></div>
           <div className="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-3">
             <Tile v={`${c.cancer.distant.women.est.toFixed(0)}%`} l="of women's cases found after the cancer had spread" />
             <Tile v={`${c.cancer.distant.men.est.toFixed(0)}%`} l="of men's cases found after it had spread" c="text-bronze" />
@@ -126,7 +127,7 @@ export default function Record() {
       )}
       {c.ed_label && (
         <section className="graphic-card p-5 sm:p-7 mt-6">
-          <div className="flex items-baseline justify-between gap-4"><h2 className="display text-xl font-medium">What the visit was called</h2><Link to="/chapters/sent-home-with-a-label" className="text-xs text-berry underline underline-offset-2">Chapter 5</Link></div>
+          <div className="flex items-baseline justify-between gap-4"><h2 className="display text-xl font-medium">What the visit was called</h2><Link to="/chapters/sent-home-with-a-label" className="text-xs text-berry underline underline-offset-2">{chapterRef('sent-home-with-a-label')}</Link></div>
           <div className="mt-3 overflow-x-auto">
             <p className="text-[13px] text-ink-2 mb-2">Adult non-injury visits where the main complaint was <b>{c.ed_label.complaint.toLowerCase()}</b>, 2018–2022, {c.ed_label.n.toLocaleString()} sampled visits.</p>
             <table className="w-full border-collapse text-[13px] sm:text-[14px]">

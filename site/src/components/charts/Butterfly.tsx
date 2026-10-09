@@ -16,9 +16,10 @@ export type ButterflyRow = { label: string; sub?: string; cmp: Cmp }
 export default function Butterfly({ rows, title, subtitle, source, axisLabel, fmt = v => `${v.toFixed(0)}%`, max }: { rows: ButterflyRow[]; title: string; subtitle?: string; source: string; axisLabel: string; fmt?: (v: number) => string; max?: number }) {
   const { ref, width } = useSize<HTMLDivElement>()
   const [tip, setTip] = useState<Tip>(null)
-  const rowH = 34
-  const mid = Math.min(150, Math.max(96, width * 0.28))
-  const m = { top: 26, bottom: 30, side: width < 480 ? 30 : 44 }
+  const narrow = width > 0 && width < 480
+  const rowH = narrow ? 50 : 34
+  const mid = narrow ? 10 : Math.min(150, Math.max(96, width * 0.28))
+  const m = { top: narrow ? 30 : 26, bottom: 30, side: narrow ? 34 : 44 }
   const half = Math.max(0, (width - mid - 2 * m.side) / 2)
   const ih = rows.length * rowH
   const hi = max ?? Math.max(...rows.flatMap(r => [r.cmp.women.hi, r.cmp.men.hi])) * 1.08
@@ -31,12 +32,12 @@ export default function Butterfly({ rows, title, subtitle, source, axisLabel, fm
         {width > 0 && (
           <svg width={width} height={ih + m.top + m.bottom} role="img" aria-label={title}>
             <g transform={`translate(0,${m.top})`}>
-              {x.ticks(4).map(t => <g key={t}>
-                <line x1={cxL - x(t)} x2={cxL - x(t)} y1={-4} y2={ih} stroke="var(--c-grid)" /><text x={cxL - x(t)} y={-10} textAnchor="middle" fontSize={11} fill="var(--c-text-2)">{fmt(t)}</text>
-                <line x1={cxR + x(t)} x2={cxR + x(t)} y1={-4} y2={ih} stroke="var(--c-grid)" /><text x={cxR + x(t)} y={-10} textAnchor="middle" fontSize={11} fill="var(--c-text-2)">{fmt(t)}</text>
+              {x.ticks(narrow ? 2 : 4).map(t => <g key={t}>
+                <line x1={cxL - x(t)} x2={cxL - x(t)} y1={-4} y2={ih} stroke="var(--c-grid)" />{!(narrow && t === 0) && <text x={cxL - x(t)} y={-10} textAnchor="middle" fontSize={11} fill="var(--c-text-2)">{fmt(t)}</text>}
+                <line x1={cxR + x(t)} x2={cxR + x(t)} y1={-4} y2={ih} stroke="var(--c-grid)" />{!(narrow && t === 0) && <text x={cxR + x(t)} y={-10} textAnchor="middle" fontSize={11} fill="var(--c-text-2)">{fmt(t)}</text>}
               </g>)}
               {rows.map((r, i) => {
-                const cy = i * rowH + rowH / 2
+                const cy = i * rowH + (narrow ? rowH - 14 : rowH / 2)
                 const w = r.cmp.women, mn = r.cmp.men
                 const clear = r.cmp.diff_lo > 0 || r.cmp.diff_hi < 0
                 return (
@@ -47,8 +48,9 @@ export default function Butterfly({ rows, title, subtitle, source, axisLabel, fm
                     <line x1={cxR + x(mn.lo)} x2={cxR + x(mn.hi)} y1={cy} y2={cy} stroke="var(--c-text)" strokeWidth={1.2} opacity={0.6} />
                     <text x={cxL - x(w.est) - 6} y={cy + 4} textAnchor="end" fontSize={11} fill="var(--c-text-2)">{fmt(w.est)}</text>
                     <text x={cxR + x(mn.est) + 6} y={cy + 4} fontSize={11} fill="var(--c-text-2)">{fmt(mn.est)}</text>
-                    <text x={cxL + mid / 2} y={cy + (r.sub ? 0 : 4)} textAnchor="middle" fontSize={width < 480 ? 10.5 : 12} fontWeight={clear ? 700 : 500} fill={clear ? 'var(--c-emphasis)' : 'var(--c-text)'}>{r.label}</text>
-                    {r.sub && <text x={cxL + mid / 2} y={cy + 12} textAnchor="middle" fontSize={10} fill="var(--c-text-2)">{r.sub}</text>}
+                    {narrow ? <text x={cxL + mid / 2} y={i * rowH + 13} textAnchor="middle" fontSize={11.5} fontWeight={clear ? 700 : 600} fill={clear ? 'var(--c-emphasis)' : 'var(--c-text)'}>{r.label}{r.sub && <tspan fill="var(--c-text-2)" fontWeight={400} fontSize={10}> · {r.sub}</tspan>}</text> : <>
+                    <text x={cxL + mid / 2} y={cy + (r.sub ? 0 : 4)} textAnchor="middle" fontSize={12} fontWeight={clear ? 700 : 500} fill={clear ? 'var(--c-emphasis)' : 'var(--c-text)'}>{r.label}</text>
+                    {r.sub && <text x={cxL + mid / 2} y={cy + 12} textAnchor="middle" fontSize={10} fill="var(--c-text-2)">{r.sub}</text>}</>}
                   </g>
                 )
               })}

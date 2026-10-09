@@ -12,8 +12,9 @@ type Row = { label: string; cmp: Cmp; sub?: string }
 export default function SexCompare({ rows, title, subtitle, source, unit = '%', max, axisLabel }: { rows: Row[]; title: string; subtitle?: string; source: string; unit?: string; max?: number; axisLabel: string }) {
   const { ref, width } = useSize<HTMLDivElement>()
   const [tip, setTip] = useState<Tip>(null)
-  const rowH = 44
-  const m = { top: 26, right: 92, bottom: 30, left: Math.min(190, Math.max(width < 480 ? 88 : 110, width * 0.26)) }
+  const narrow = width > 0 && width < 480
+  const rowH = narrow ? 64 : 44
+  const m = { top: 26, right: narrow ? 64 : 92, bottom: 30, left: narrow ? 6 : Math.min(190, Math.max(110, width * 0.26)) }
   const iw = Math.max(0, width - m.left - m.right)
   const ih = rows.length * rowH
   const hiMax = Math.max(...rows.map(r => Math.max(r.cmp.women.hi, r.cmp.men.hi)))
@@ -35,13 +36,14 @@ export default function SexCompare({ rows, title, subtitle, source, unit = '%', 
                 </g>
               ))}
               {rows.map((r, i) => {
-                const cy = i * rowH + rowH / 2
+                const cy = i * rowH + (narrow ? rowH - 20 : rowH / 2)
                 const pts = [{ k: 'men', e: r.cmp.men, c: M, dy: 7, who: 'Men' }, { k: 'women', e: r.cmp.women, c: F, dy: -7, who: 'Women' }]
                 const sig = r.cmp.diff_lo > 0 || r.cmp.diff_hi < 0
                 return (
                   <g key={`${r.label}|${r.sub ?? ""}`}>
+                    {narrow ? <text x={0} y={i * rowH + 13} fontSize={11.5} fill="var(--c-text)" fontWeight={600}>{r.label}{r.sub && <tspan fill="var(--c-text-2)" fontWeight={400} fontSize={10}> · {r.sub}</tspan>}</text> : <>
                     <text x={-12} y={cy + (r.sub ? -2 : 4)} textAnchor="end" fontSize={12} fill="var(--c-text)" fontWeight={500}>{r.label}</text>
-                    {r.sub && <text x={-12} y={cy + 12} textAnchor="end" fontSize={10} fill="var(--c-text-2)">{r.sub}</text>}
+                    {r.sub && <text x={-12} y={cy + 12} textAnchor="end" fontSize={10} fill="var(--c-text-2)">{r.sub}</text>}</>}
                     {i > 0 && <line x1={0} x2={iw} y1={i * rowH} y2={i * rowH} stroke="var(--c-grid)" />}
                     {pts.map(p => (
                       <g key={p.k} transform={`translate(0,${p.dy})`}>

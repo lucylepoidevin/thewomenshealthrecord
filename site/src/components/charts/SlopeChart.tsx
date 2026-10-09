@@ -17,7 +17,8 @@ export default function SlopeChart({ rows, title, subtitle, source, leftLabel, r
   const [tip, setTip] = useState<Tip>(null)
   const [hover, setHover] = useState<string | null>(null)
   const h = 520
-  const m = { top: 34, right: Math.min(190, Math.max(width < 480 ? 96 : 120, width * 0.24)), bottom: 18, left: Math.min(170, Math.max(width < 480 ? 70 : 100, width * 0.2)) }
+  const narrow = width > 0 && width < 480
+  const m = { top: 34, right: narrow ? 118 : Math.min(190, Math.max(120, width * 0.24)), bottom: 18, left: narrow ? 40 : Math.min(170, Math.max(100, width * 0.2)) }
   const iw = Math.max(0, width - m.left - m.right), ih = h - m.top - m.bottom
   const y = scaleLinear().domain(domain).range([ih, 0])
   const xl = 0, xr = iw
@@ -27,7 +28,7 @@ export default function SlopeChart({ rows, title, subtitle, source, leftLabel, r
     for (let i = 1; i < items.length; i++) if (items[i].y - items[i - 1].y < 13) items[i].y = items[i - 1].y + 13
     return items
   }
-  const L = place('left'), R = place('right')
+  const L = narrow ? [] : place('left'), R = place('right')
   return (
     <ChartFrame title={title} subtitle={subtitle} source={source}>
       {legend && <Legend items={legend} />}
@@ -51,7 +52,7 @@ export default function SlopeChart({ rows, title, subtitle, source, leftLabel, r
                 )
               })}
               {L.map(({ r, y: yy }) => <text key={'l' + r.label} x={xl - 34} y={yy + 4} textAnchor="end" fontSize={11} fill="var(--c-text)" fontWeight={hover === r.label ? 700 : 500}>{r.short ?? r.label}</text>)}
-              {R.map(({ r, y: yy }) => <text key={'r' + r.label} x={xr + 10} y={yy + 4} fontSize={11} fill="var(--c-text)" fontWeight={hover === r.label ? 700 : 500}>{r.short ?? r.label} <tspan fill="var(--c-text-2)">{fmt(r.right)}</tspan></text>)}
+              {R.map(({ r, y: yy }) => <text key={'r' + r.label} x={xr + 10} y={yy + 4} fontSize={narrow ? 10 : 11} fill="var(--c-text)" fontWeight={hover === r.label ? 700 : 500}>{r.short ?? r.label} <tspan fill="var(--c-text-2)">{fmt(r.right)}</tspan></text>)}
             </g>
           </svg>
         )}

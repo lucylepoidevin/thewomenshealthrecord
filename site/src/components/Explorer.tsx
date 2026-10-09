@@ -34,7 +34,8 @@ export default function Explorer({ cells, source }: { cells: Cell[]; source: str
         {' '}who came in with{' '}
         <select value={complaint} onChange={e => setComplaint(e.target.value)} className={sel} aria-label="Complaint">{COMPLAINTS.map(([k, l]) => <option key={k} value={k}>{l}</option>)}</select>
       </p>
-      {cell && (
+      {cell && (cell.n_women < 30 || cell.n_men < 30) && <p className="mt-4 text-[14px] text-ink-2">Too few sampled visits in this group for a reliable comparison. Pick a wider age band.</p>}
+      {cell && cell.n_women >= 30 && cell.n_men >= 30 && (
         <div className="mt-5 overflow-x-auto">
           <table className="w-full border-collapse text-[14px]">
             <thead>

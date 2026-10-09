@@ -4,7 +4,7 @@
   {
    "file": "chapter1_drugs.csv",
    "rows": 459,
-   "description": "Chapter 1: every novel drug approved since 2015 with a parsed FDA Drug Trials Snapshot, its FAERS adverse-event report split by sex, and (where available) MEPS prescription users by sex.",
+   "description": "Tested on men, prescribed to women: every novel drug approved since 2015 with a parsed FDA Drug Trials Snapshot, its FAERS adverse-event report split by sex, and (where available) MEPS prescription users by sex.",
    "columns": {
     "brand": "Brand name as on the FDA snapshot",
     "year": "FDA approval year",
@@ -14,7 +14,8 @@
     "enrollment_source": "fda-snapshot, or carmeli-2023 where the archived page could not be retrieved",
     "faers_n": "FAERS reports with a recorded sex (openFDA, brand-name query)",
     "faers_female_pct": "Share of those reports from women",
-    "gap": "faers_female_pct minus trial_female_pct, percentage points",
+    "gap": "faers_female_pct minus trial_female_pct, percentage points; blank when faers_n is under 100",
+    "sex_specific": "male or female when the indication or the trial population is one sex; such drugs are excluded from gap comparisons",
     "meps_users_n": "Unweighted MEPS person-years with a fill, 2018-2024",
     "meps_female_pct": "Weighted share of users who are women",
     "rate_ratio": "(female:male reports) / (female:male users); lo/hi are a 95% interval from the survey share's sampling error"
@@ -23,7 +24,7 @@
   {
    "file": "chapter2_ed_estimates.csv",
    "rows": 117,
-   "description": "Chapter 2: survey-weighted estimates by patient sex for NHAMCS ED visits 2018-2022, adults 18+, by pain complaint and for heart-attack visits.",
+   "description": "The urgency gap: survey-weighted estimates by patient sex for NHAMCS ED visits 2018-2022, adults 18+, by pain complaint and for heart-attack visits.",
    "columns": {
     "complaint": "Reason-for-visit group (abdominal, chest, back, headache, limb, flank, all) or heart_attack (ICD-10 I21/I22 in any diagnosis)",
     "measure": "See the Methods page: shares are percentages, wait_mean and lov_mean are minutes, tests_count is a count",
@@ -35,7 +36,7 @@
   {
    "file": "chapter2_explorer.csv",
    "rows": 308,
-   "description": "Chapter 2: the same estimates by complaint and age band (18-44, 45-64, 65+, all).",
+   "description": "The urgency gap: the same estimates by complaint and age band (18-44, 45-64, 65+, all).",
    "columns": {
     "age": "Age band",
     "others": "as chapter2_ed_estimates.csv"
@@ -44,7 +45,7 @@
   {
    "file": "chapter3_diseases.csv",
    "rows": 67,
-   "description": "Chapter 3: 67 diseases with NIH FY2024 funding matched to WHO 2021 US burden by sex.",
+   "description": "The research dollar: 67 diseases with NIH FY2024 funding matched to WHO 2021 US burden by sex.",
    "columns": {
     "nih_categories": "RCDC categories summed",
     "who_codes": "WHO GHE cause codes summed",
@@ -62,19 +63,19 @@
   {
    "file": "chapter3_funding_history.csv",
    "rows": 1206,
-   "description": "Chapter 3: NIH funding by fiscal year 2008-2025 for each matched disease, $ millions (0 means the category was not yet reported).",
+   "description": "The research dollar: NIH funding by fiscal year 2008-2025 for each matched disease, $ millions (0 means the category was not yet reported).",
    "columns": {}
   },
   {
    "file": "chapter3_uncounted.csv",
    "rows": 11,
-   "description": "Chapter 3: NIH-funded conditions with no WHO burden estimate, FY2024 funding in $ millions.",
+   "description": "The research dollar: NIH-funded conditions with no WHO burden estimate, FY2024 funding in $ millions.",
    "columns": {}
   },
   {
    "file": "chapter4_diseases.csv",
    "rows": 64,
-   "description": "Chapter 4: for each disease, US interventional trials with posted results on ClinicalTrials.gov, women's share of participants against women's share of US burden (WHO 2021), by sponsor, and what the eligibility text excludes.",
+   "description": "Who gets studied: for each disease, US interventional trials with posted results on ClinicalTrials.gov, women's share of participants against women's share of US burden (WHO 2021), by sponsor, and what the eligibility text excludes.",
    "columns": {
     "female_pct": "Women as a share of participants with a recorded sex, all trials",
     "female_pct_open": "Same, trials open to both sexes only",
@@ -94,13 +95,13 @@
   {
    "file": "chapter4_trend.csv",
    "rows": 25,
-   "description": "Chapter 4: by trial start year, women's share of participants (trials open to both sexes, non sex-specific conditions) and the share of all US trials with each exclusion.",
+   "description": "Who gets studied: by trial start year, women's share of participants (trials open to both sexes, non sex-specific conditions) and the share of all US trials with each exclusion.",
    "columns": {}
   },
   {
    "file": "chapter5_ed_estimates.csv",
    "rows": 349,
-   "description": "Chapter 5: survey-weighted estimates by patient sex for NHAMCS ED visits 2018-2022, adults 18+, non-injury, by symptom complaint: symptom-code diagnoses, anxiety codes, tests, imaging, admission and 72-hour returns.",
+   "description": "Where the diagnosis gap lives: survey-weighted estimates by patient sex for NHAMCS ED visits 2018-2022, adults 18+, non-injury, by symptom complaint: symptom-code diagnoses, anxiety codes, tests, imaging, admission and 72-hour returns.",
    "columns": {
     "measure": "See the Methods page; shares are percentages, tests_count a count, lov_mean minutes"
    }
@@ -108,7 +109,7 @@
   {
    "file": "chapter5_cancer_stage.csv",
    "rows": 24,
-   "description": "Chapter 5: SEER stage at diagnosis (2013-2022) and median age at diagnosis (2018-2022) by sex for cancers both sexes get.",
+   "description": "Where the diagnosis gap lives: SEER stage at diagnosis (2013-2022) and median age at diagnosis (2018-2022) by sex for cancers both sexes get.",
    "columns": {
     "distant_*_pct": "Share of new cases diagnosed at distant stage",
     "distant_age_adj_*": "Same, standardised to the site's pooled age distribution in three bands"
@@ -117,19 +118,19 @@
   {
    "file": "chapter5_models.csv",
    "rows": 28,
-   "description": "Chapter 5: adjusted odds ratios for women relative to men from survey-weighted logistic regressions.",
+   "description": "Where the diagnosis gap lives: adjusted odds ratios for women relative to men from survey-weighted logistic regressions.",
    "columns": {}
   },
   {
    "file": "chapter5_explorer.csv",
    "rows": 572,
-   "description": "Chapter 5: the same estimates by complaint and age band.",
+   "description": "Where the diagnosis gap lives: the same estimates by complaint and age band.",
    "columns": {}
   },
   {
    "file": "chapter6_labels.csv",
    "rows": 390,
-   "description": "Chapter 6: what the current FDA label of each chapter-1 drug says about sex, pregnancy and breastfeeding, classified by the published rules.",
+   "description": "The male default body: what the current FDA label of each chapter-1 drug says about sex, pregnancy and breastfeeding, classified by the published rules.",
    "columns": {
     "sex_statement": "Classification of the pharmacology section's statement about sex",
     "male_only_pk": "Pharmacokinetics reported from healthy male subjects",
@@ -140,7 +141,7 @@
   {
    "file": "chapter6_pubmed.csv",
    "rows": 300,
-   "description": "Chapter 6: PubMed record counts by year and sex check tag for rodent studies (overall, by field, NIH-funded) and human trial reports.",
+   "description": "The male default body: PubMed record counts by year and sex check tag for rodent studies (overall, by field, NIH-funded) and human trial reports.",
    "columns": {
     "n": "Records in the series that year",
     "n_sexed": "Records carrying a Male or Female tag",

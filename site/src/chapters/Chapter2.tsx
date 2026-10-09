@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { chapterRef } from '../lib/chapters'
 import Story, { type Block } from '../components/Story'
 import Cite from '../components/Cite'
 import SourceList from '../components/SourceList'
@@ -65,7 +66,7 @@ export default function Chapter2() {
       <p>The ambulance decision is mostly the patient's and their family's; the triage decision is the department's. Neither is a diagnosis, and part of the raw gap is what men and women come in with: chest pain, which is triaged urgent more than anything else, is a larger share of men's pain visits. So we fitted a model that holds the complaint, the age band and the year constant, then added the reported pain score, then arrival by ambulance. The raw gap, women's odds of an urgent rating {M.urgent_raw.or.toFixed(2)} times men's, shrinks to {M.urgent_adj.or.toFixed(2)} once complaint and age are held constant, and to {M.urgent_adj_full.or.toFixed(2)} with pain score and ambulance in the model, where the interval includes 1. Most of the overall urgency gap is mix; what remains is a tilt of about a tenth that the data cannot pin down.</p>
       <p>That is the honest reading of the headline number. The gaps that survive adjustment are specific, and they are below.</p>
     </>),
-    F('triage', <Dumbbell rows={[...rows('urgent', false).map(r => ({ label: r.label, female: r.cmp.women.est, male: r.cmp.men.est })), { label: 'All pain: triaged urgent', female: A.urgent!.women.est, male: A.urgent!.men.est }, { label: 'All pain: arrived by ambulance', female: A.ems!.women.est, male: A.ems!.men.est }]} title="Rated urgent, and brought by ambulance" subtitle="Share of visits triaged at the two most urgent levels, by complaint; and the ambulance share overall. Each bar joins the women's and men's values." source={`${src} Intervals for every value are in the data file and the explorer below.`} max={45} />, 'chart'),
+    F('triage', <Dumbbell rows={[...rows('urgent', false).map(r => ({ label: r.label, female: r.cmp.women.est, male: r.cmp.men.est })), { label: 'All pain: triaged urgent', female: A.urgent!.women.est, male: A.urgent!.men.est }, { label: 'All pain: arrived by ambulance', female: A.ems!.women.est, male: A.ems!.men.est }]} title="Rated urgent, and brought by ambulance" subtitle="Share of visits triaged at the two most urgent levels, by complaint; and the ambulance share overall. Each bar joins the women's and men's values." source={`${src} Intervals for every value are in the data file and the explorer below.`} max={45} />),
     T('treat', <>
       <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">What they are given.</p>
       <p>Here the 2008 picture mostly dissolves. Across all pain complaints, women and men were given a painkiller of any kind in the department at the same rate, {p(A.analgesic_ed, 'women')}% and {p(A.analgesic_ed, 'men')}%, and an opioid at the same rate, {p(A.opioid_ed, 'women')}% and {p(A.opioid_ed, 'men')}%. Adjusting for age changes nothing. At the same reported pain score, the lines sit on top of each other.</p>
@@ -146,7 +147,7 @@ export default function Chapter2() {
   return (
     <article>
       <header className="mx-auto max-w-3xl px-4 pt-20 pb-14 text-center fade-up">
-        <p className="eyebrow">Chapter 2</p>
+        <p className="eyebrow">{chapterRef('pain-gap')}</p>
         <h1 className="display mt-4 text-4xl sm:text-6xl font-light leading-[1.05]">The <span className="italic font-medium text-berry">urgency</span> gap</h1>
         <p className="mx-auto mt-6 max-w-xl text-lg text-ink-2 leading-relaxed">Twenty thousand emergency visits for pain and {data.heart_attack.n} heart attacks, {yrs}: women arrive reporting more pain, and where the system rates them lower it is in specific places: severe abdominal pain, young women's chest pain, and the heart attack.</p>
         <p className="mt-5 text-xs tracking-wide text-ink-3">data {yrs} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>

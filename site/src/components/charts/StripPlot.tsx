@@ -17,8 +17,9 @@ export type StripSeries = { key: string; label: string; color: string; shape?: '
 export default function StripPlot({ rows, series, title, subtitle, source, axisLabel, tickLabel, fmt = v => `${v.toFixed(0)}%`, domain = [0, 100], arrowColor = 'var(--c-emphasis)', arrowLegend }: { rows: StripRow[]; series: StripSeries[]; title: string; subtitle?: string; source: string; axisLabel: string; tickLabel?: string; fmt?: (v: number) => string; domain?: [number, number]; arrowColor?: string; arrowLegend?: string }) {
   const { ref, width } = useSize<HTMLDivElement>()
   const [tip, setTip] = useState<Tip>(null)
-  const rowH = 30
-  const m = { top: 26, right: 24, bottom: 30, left: Math.min(230, Math.max(width < 480 ? 92 : 120, width * 0.3)) }
+  const narrow = width > 0 && width < 480
+  const rowH = narrow ? 50 : 30
+  const m = { top: 26, right: narrow ? 14 : 24, bottom: 30, left: narrow ? 6 : Math.min(230, Math.max(120, width * 0.3)) }
   const iw = Math.max(0, width - m.left - m.right), ih = rows.length * rowH
   const x = scaleLinear().domain(domain).range([0, iw])
   const shape = (s: StripSeries, cx: number, cy: number, extra: object) => s.shape === 'diamond'
@@ -35,12 +36,13 @@ export default function StripPlot({ rows, series, title, subtitle, source, axisL
             <g transform={`translate(${m.left},${m.top})`}>
               {x.ticks(5).map(t => <g key={t} transform={`translate(${x(t)},0)`}><line y1={-4} y2={ih} stroke="var(--c-grid)" /><text y={-10} textAnchor="middle" fontSize={11} fill="var(--c-text-2)">{fmt(t)}</text></g>)}
               {rows.map((r, i) => {
-                const cy = i * rowH + rowH / 2
+                const cy = i * rowH + (narrow ? rowH - 14 : rowH / 2)
                 return (
                   <g key={r.label}>
                     {i % 2 === 1 && <rect x={-m.left + 4} y={i * rowH} width={iw + m.left - 4} height={rowH} fill="rgba(139,30,75,0.03)" />}
+                    {narrow ? <text x={0} y={i * rowH + 13} fontSize={11.5} fill="var(--c-text)" fontWeight={600}>{r.label}{r.sub && <tspan fill="var(--c-text-2)" fontWeight={400} fontSize={10}> · {r.sub}</tspan>}</text> : <>
                     <text x={-10} y={cy + (r.sub ? 0 : 4)} textAnchor="end" fontSize={12} fill="var(--c-text)" fontWeight={500}>{r.label}</text>
-                    {r.sub && <text x={-10} y={cy + 12} textAnchor="end" fontSize={10} fill="var(--c-text-2)">{r.sub}</text>}
+                    {r.sub && <text x={-10} y={cy + 12} textAnchor="end" fontSize={10} fill="var(--c-text-2)">{r.sub}</text>}</>}
                     {r.arrow && Math.abs(r.arrow[1] - r.arrow[0]) > 0.5 && <line x1={x(r.arrow[0])} x2={x(r.arrow[1])} y1={cy} y2={cy} stroke={arrowColor} strokeWidth={2} markerEnd="url(#strip-arrow)" opacity={0.85} />}
                     {r.tick && <g><line x1={x(r.tick.value)} x2={x(r.tick.value)} y1={cy - 10} y2={cy + 10} stroke="var(--c-text)" strokeWidth={2} /></g>}
                     {r.marks.map(mk => {
