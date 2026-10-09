@@ -17,7 +17,7 @@ export default function SexCompare({ rows, title, subtitle, source, unit = '%', 
   const iw = Math.max(0, width - m.left - m.right)
   const ih = rows.length * rowH
   const hiMax = Math.max(...rows.map(r => Math.max(r.cmp.women.hi, r.cmp.men.hi)))
-  const x = scaleLinear().domain([0, max ?? Math.ceil(hiMax * 1.08)]).range([0, iw])
+  const x = scaleLinear().domain([0, Math.max(max ?? 0, Math.ceil(hiMax * 1.08))]).range([0, iw])
   const F = 'var(--c-female)', M = 'var(--c-male)'
   const fmt = (v: number) => unit === '%' ? `${v.toFixed(0)}%` : `${v.toFixed(0)}${unit}`
   return (
