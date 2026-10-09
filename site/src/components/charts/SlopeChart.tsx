@@ -17,7 +17,7 @@ export default function SlopeChart({ rows, title, subtitle, source, leftLabel, r
   const [tip, setTip] = useState<Tip>(null)
   const [hover, setHover] = useState<string | null>(null)
   const h = 520
-  const m = { top: 34, right: Math.min(190, Math.max(120, width * 0.24)), bottom: 18, left: Math.min(170, Math.max(100, width * 0.2)) }
+  const m = { top: 34, right: Math.min(190, Math.max(width < 480 ? 96 : 120, width * 0.24)), bottom: 18, left: Math.min(170, Math.max(width < 480 ? 70 : 100, width * 0.2)) }
   const iw = Math.max(0, width - m.left - m.right), ih = h - m.top - m.bottom
   const y = scaleLinear().domain(domain).range([ih, 0])
   const xl = 0, xr = iw

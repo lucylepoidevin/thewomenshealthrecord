@@ -18,7 +18,7 @@ export default function StripPlot({ rows, series, title, subtitle, source, axisL
   const { ref, width } = useSize<HTMLDivElement>()
   const [tip, setTip] = useState<Tip>(null)
   const rowH = 30
-  const m = { top: 26, right: 24, bottom: 30, left: Math.min(230, Math.max(120, width * 0.3)) }
+  const m = { top: 26, right: 24, bottom: 30, left: Math.min(230, Math.max(width < 480 ? 92 : 120, width * 0.3)) }
   const iw = Math.max(0, width - m.left - m.right), ih = rows.length * rowH
   const x = scaleLinear().domain(domain).range([0, iw])
   const shape = (s: StripSeries, cx: number, cy: number, extra: object) => s.shape === 'diamond'

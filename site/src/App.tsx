@@ -25,11 +25,11 @@ export default function App() {
     <div className="min-h-screen flex flex-col">
       <ScrollToTop />
       <header className="sticky top-0 z-30 bg-blush/80 backdrop-blur-md">
-        <div className="mx-auto max-w-6xl px-4 h-14 flex items-center justify-between gap-4">
-          <Link to="/" className="display text-lg sm:text-xl font-medium tracking-tight text-berry">
+        <div className="mx-auto max-w-6xl px-4 min-h-14 py-2 flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
+          <Link to="/" className="display text-base sm:text-xl font-medium tracking-tight text-berry whitespace-nowrap">
             The Women's Health Record
           </Link>
-          <nav className="flex items-center gap-5 text-[13px] font-semibold tracking-wide">
+          <nav className="flex flex-wrap items-center gap-x-4 gap-y-1 text-[12px] sm:text-[13px] font-semibold tracking-wide">
             <NavLink to="/" end className={({ isActive }) => isActive ? 'text-berry font-medium' : 'text-ink-2 hover:text-berry'}>Chapters</NavLink>
             <NavLink to="/record" className={({ isActive }) => isActive ? 'text-berry font-medium' : 'text-ink-2 hover:text-berry'}>The record</NavLink>
             <NavLink to="/methods" className={({ isActive }) => isActive ? 'text-berry font-medium' : 'text-ink-2 hover:text-berry'}>Methods</NavLink>

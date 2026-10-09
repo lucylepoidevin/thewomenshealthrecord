@@ -13,7 +13,7 @@ export default function SexCompare({ rows, title, subtitle, source, unit = '%', 
   const { ref, width } = useSize<HTMLDivElement>()
   const [tip, setTip] = useState<Tip>(null)
   const rowH = 44
-  const m = { top: 26, right: 92, bottom: 30, left: Math.min(190, Math.max(110, width * 0.26)) }
+  const m = { top: 26, right: 92, bottom: 30, left: Math.min(190, Math.max(width < 480 ? 88 : 110, width * 0.26)) }
   const iw = Math.max(0, width - m.left - m.right)
   const ih = rows.length * rowH
   const hiMax = Math.max(...rows.map(r => Math.max(r.cmp.women.hi, r.cmp.men.hi)))

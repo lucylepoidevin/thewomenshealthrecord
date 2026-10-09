@@ -13,7 +13,7 @@ export default function StackedBars({ rows, series, title, subtitle, source, axi
   const { ref, width } = useSize<HTMLDivElement>()
   const [tip, setTip] = useState<Tip>(null)
   const rowH = 30
-  const m = { top: 24, right: 16, bottom: 30, left: Math.min(200, Math.max(110, width * 0.26)) }
+  const m = { top: 24, right: 16, bottom: 30, left: Math.min(200, Math.max(width < 480 ? 88 : 110, width * 0.26)) }
   const iw = Math.max(0, width - m.left - m.right), ih = rows.length * rowH
   const x = scaleLinear().domain([0, max]).range([0, iw])
   return (

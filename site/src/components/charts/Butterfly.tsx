@@ -17,8 +17,8 @@ export default function Butterfly({ rows, title, subtitle, source, axisLabel, fm
   const { ref, width } = useSize<HTMLDivElement>()
   const [tip, setTip] = useState<Tip>(null)
   const rowH = 34
-  const mid = 150
-  const m = { top: 26, bottom: 30, side: 44 }
+  const mid = Math.min(150, Math.max(96, width * 0.28))
+  const m = { top: 26, bottom: 30, side: width < 480 ? 30 : 44 }
   const half = Math.max(0, (width - mid - 2 * m.side) / 2)
   const ih = rows.length * rowH
   const hi = max ?? Math.max(...rows.flatMap(r => [r.cmp.women.hi, r.cmp.men.hi])) * 1.08
@@ -47,7 +47,7 @@ export default function Butterfly({ rows, title, subtitle, source, axisLabel, fm
                     <line x1={cxR + x(mn.lo)} x2={cxR + x(mn.hi)} y1={cy} y2={cy} stroke="var(--c-text)" strokeWidth={1.2} opacity={0.6} />
                     <text x={cxL - x(w.est) - 6} y={cy + 4} textAnchor="end" fontSize={11} fill="var(--c-text-2)">{fmt(w.est)}</text>
                     <text x={cxR + x(mn.est) + 6} y={cy + 4} fontSize={11} fill="var(--c-text-2)">{fmt(mn.est)}</text>
-                    <text x={cxL + mid / 2} y={cy + (r.sub ? 0 : 4)} textAnchor="middle" fontSize={12} fontWeight={clear ? 700 : 500} fill={clear ? 'var(--c-emphasis)' : 'var(--c-text)'}>{r.label}</text>
+                    <text x={cxL + mid / 2} y={cy + (r.sub ? 0 : 4)} textAnchor="middle" fontSize={width < 480 ? 10.5 : 12} fontWeight={clear ? 700 : 500} fill={clear ? 'var(--c-emphasis)' : 'var(--c-text)'}>{r.label}</text>
                     {r.sub && <text x={cxL + mid / 2} y={cy + 12} textAnchor="middle" fontSize={10} fill="var(--c-text-2)">{r.sub}</text>}
                   </g>
                 )

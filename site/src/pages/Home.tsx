@@ -34,7 +34,7 @@ export default function Home() {
               >
                 <div className="flex items-center justify-between">
                   <span className={`inline-flex h-7 min-w-7 items-center justify-center rounded-full px-2 text-xs font-bold ${c.status === 'live' ? 'bg-berry text-white' : 'bg-blush-2 text-berry'}`}>{c.n}</span>
-                  {c.status === 'soon' ? <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-ink-3">Coming soon</span> : <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-berry">Read now</span>}
+                  {c.status === 'soon' && <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-ink-3">Coming soon</span>}
                 </div>
                 <h3 className="display mt-4 text-2xl font-medium leading-snug group-hover:text-berry transition">{c.title}</h3>
                 <p className="mt-2 text-sm text-ink-2 leading-relaxed">{c.dek}</p>

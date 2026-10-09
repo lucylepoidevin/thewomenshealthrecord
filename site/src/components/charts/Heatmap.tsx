@@ -11,7 +11,7 @@ export default function Heatmap({ rows, columns, title, subtitle, source, fmt = 
   const { ref, width } = useSize<HTMLDivElement>()
   const [tip, setTip] = useState<Tip>(null)
   const rowH = 26
-  const m = { top: 58, right: 8, bottom: 6, left: Math.min(230, Math.max(120, width * 0.3)) }
+  const m = { top: width < 480 ? 70 : 58, right: 8, bottom: 6, left: Math.min(230, Math.max(width < 480 ? 88 : 120, width * 0.3)) }
   const iw = Math.max(0, width - m.left - m.right), ih = rows.length * rowH
   const cw = iw / columns.length
   const alpha = scaleLinear().domain([0, max]).range([0.04, 0.95]).clamp(true)
@@ -21,7 +21,7 @@ export default function Heatmap({ rows, columns, title, subtitle, source, fmt = 
         {width > 0 && (
           <svg width={width} height={ih + m.top + m.bottom} role="img" aria-label={title}>
             <g transform={`translate(${m.left},${m.top})`}>
-              {columns.map((c, j) => <foreignObject key={c} x={j * cw} y={-56} width={cw} height={52}><div style={{ fontSize: 11, lineHeight: '13px', textAlign: 'center', color: 'var(--c-text)', fontWeight: 600, padding: '0 3px' }}>{c}</div></foreignObject>)}
+              {columns.map((c, j) => <foreignObject key={c} x={j * cw} y={-(m.top - 2)} width={cw} height={m.top - 6}><div style={{ fontSize: width < 480 ? 9.5 : 11, lineHeight: '12px', textAlign: 'center', color: 'var(--c-text)', fontWeight: 600, padding: '0 2px' }}>{c}</div></foreignObject>)}
               {rows.map((r, i) => (
                 <g key={r.label} transform={`translate(0,${i * rowH})`}>
                   <text x={-10} y={rowH / 2 + (r.sub ? 0 : 4)} textAnchor="end" fontSize={12} fill="var(--c-text)" fontWeight={500}>{r.color && <tspan fill={r.color}>● </tspan>}{r.label}</text>

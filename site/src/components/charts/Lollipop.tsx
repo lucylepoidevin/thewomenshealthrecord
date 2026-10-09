@@ -12,7 +12,7 @@ export default function Lollipop({ rows, title, subtitle, source, axisLabel, fmt
   const { ref, width } = useSize<HTMLDivElement>()
   const [tip, setTip] = useState<Tip>(null)
   const rowH = 28
-  const m = { top: 26, right: 70, bottom: 30, left: Math.min(230, Math.max(120, width * 0.3)) }
+  const m = { top: 26, right: 70, bottom: 30, left: Math.min(230, Math.max(width < 480 ? 92 : 120, width * 0.3)) }
   const iw = Math.max(0, width - m.left - m.right)
   const ih = rows.length * rowH
   const vals = rows.flatMap(r => [r.value, r.lo ?? r.value, r.hi ?? r.value])
