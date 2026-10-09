@@ -27,7 +27,8 @@ FIELDS = ",".join([
     "OutcomeMeasureTitle", "OutcomeGroupTitle", "OutcomeGroupDescription",
 ])
 FILTER = "AREA[HasResults]true AND AREA[StudyType]INTERVENTIONAL"
-SEXY = re.compile(r"\b(female|women|woman|male|men|man|girls?|boys?|sex|gender)\b", re.I)
+FEM = re.compile(r"\b(females?|women|woman|girls?)\b", re.I)
+MAL = re.compile(r"\b(males?|men|man|boys?)\b", re.I)
 
 
 def fetch_pages():
@@ -137,11 +138,13 @@ def parse_study(s):
                             pass
             if vals:
                 age_mean = vals.get(total_ids[0]) if total_ids and total_ids[0] in vals else sum(vals.values()) / len(vals)
-    # was any outcome reported in groups named by sex?
+    # was any outcome reported in groups named by sex? Require at least one female-named group and one
+    # male-named group, and no group that names both (a 'Male and Female' cohort is not a split).
     by_sex = False
     for om in r.get("outcomeMeasuresModule", {}).get("outcomeMeasures", []):
-        gs = om.get("groups", [])
-        if any(SEXY.search(g.get("title", "")) for g in gs) and len(gs) >= 2:
+        gs = [g.get("title", "") for g in om.get("groups", [])]
+        fem = [t for t in gs if FEM.search(t) and not MAL.search(t)]; mal = [t for t in gs if MAL.search(t) and not FEM.search(t)]
+        if fem and mal:
             by_sex = True
             break
     return {

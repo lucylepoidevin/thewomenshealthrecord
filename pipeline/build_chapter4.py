@@ -77,7 +77,21 @@ UNCOUNTED = {"Fibromyalgia": ["Fibromyalgia"], "ME/CFS": ["Fatigue Syndrome, Chr
 SEX_SPECIFIC = {"Breast cancer", "Cervical cancer", "Ovarian cancer", "Uterine cancer", "Prostate cancer", "Testicular cancer", "Gynaecological diseases", "Infertility", "Preterm birth", "Maternal conditions", "Endometriosis", "Vulvodynia", "PCOS"}
 
 PREG = re.compile(r"pregnan|gestation", re.I)
-PREG_EXCL = re.compile(r"(exclu|not |no |must not|cannot|ineligible|unable)[^.\n]{0,120}pregnan|pregnan[^.\n]{0,60}(exclu|not eligible|ineligible|will not|may not|cannot)|(pregnant|pregnancy)[^.\n]{0,40}(or|and)[^.\n]{0,40}(lactat|breast|nursing)|^\s*[-•*\d.)]*\s*(women who are |female[s]? who are |currently |known |confirmed |positive )?pregnan", re.I | re.M)
+PREG_EXCL = re.compile(r"(exclu|not |no |must not|cannot|ineligible|unable)[^.\n]{0,120}pregnan|pregnan[^.\n]{0,60}(exclu|not eligible|ineligible|will not|may not|cannot)|(pregnant|pregnancy)[^.\n]{0,40}(or|and)[^.\n]{0,40}(lactat|breast|nursing)|^\s*[-•*\d.)]*\s*(women who are |female[s]? who are |currently |known |confirmed |positive )?pregnan|\b(is|are|be|being|currently|known to be|found to be|subjects? who are|patients? who are|if) pregnan|positive (serum |urine |blood )?(β-?|beta-?)?(hcg |hcg-|pregnancy )test|pregnancy test|non-?pregnant|not pregnant", re.I | re.M)
+PREG_TOPIC = re.compile(r"pregnan|gestation|obstetric|preterm|premature birth|postpartum|antenatal|prenatal|labor|labour|cesarean|caesarean|lactation|breastfeed", re.I)
+
+
+def excludes_pregnant(r):
+    """Pregnancy is a reason for exclusion, unless the trial is about pregnancy itself."""
+    t = r["criteria"] or ""
+    if not t:
+        return False
+    about = any(PREG_TOPIC.search(x) for x in r["conditions"] + r["mesh"] + r["ancestors"])
+    if about:
+        return False
+    i = re.search(r"exclusion criteria", t, re.I)
+    in_excl = bool(re.search(r"pregnan", t[i.start():], re.I)) if i else False
+    return in_excl or bool(PREG_EXCL.search(t))
 LACT = re.compile(r"lactat|breast[- ]?feed|nursing (mother|women|woman)", re.I)
 CONTRA = re.compile(r"contracept|birth control|barrier method|double[- ]barrier|intrauterine device|abstinen", re.I)
 WOCBP = re.compile(r"child[- ]?bearing potential|reproductive potential|WOCBP|WOCP|able to become pregnant|could become pregnant|capable of becoming pregnant|of childbearing age|fertile (women|females)", re.I)
@@ -107,9 +121,11 @@ def main():
         r = json.loads(line)
         f, m = r["female"], r["male"]
         r["n_sex"] = (f or 0) + (m or 0) if f is not None and m is not None else 0
+        if r["enrollment"] and r["n_sex"] > 1.1 * r["enrollment"]:  # baseline groups overlap (no total group, repeated periods): counts unreliable
+            r["n_sex"] = 0; r["female"] = r["male"] = None
         r["year"], r["period"] = period(r["start"])
         t = r["criteria"] or ""
-        r["mentions_preg"] = bool(PREG.search(t)); r["excl_preg"] = bool(PREG_EXCL.search(t)); r["excl_lact"] = bool(LACT.search(t)); r["contra"] = bool(CONTRA.search(t)); r["wocbp"] = bool(WOCBP.search(t)); r["pregtest"] = bool(PREGTEST.search(t))
+        r["mentions_preg"] = bool(PREG.search(t)); r["excl_preg"] = excludes_pregnant(r); r["excl_lact"] = bool(LACT.search(t)); r["contra"] = bool(CONTRA.search(t)); r["wocbp"] = bool(WOCBP.search(t)); r["pregtest"] = bool(PREGTEST.search(t))
         r["max_age_y"] = age_years(r["max_age"]); r["min_age_y"] = age_years(r["min_age"])
         r["adult"] = (r["min_age_y"] or 0) >= 18 or ("ADULT" in r["std_ages"] and "CHILD" not in r["std_ages"])
         r["phase_group"] = "Phase 3" if "PHASE3" in r["phases"] else "Phase 2" if "PHASE2" in r["phases"] else "Phase 1" if any(p in r["phases"] for p in ("PHASE1", "EARLY_PHASE1")) else "Phase 4" if "PHASE4" in r["phases"] else "Not applicable"
