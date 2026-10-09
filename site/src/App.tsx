@@ -12,6 +12,9 @@ import Chapter4 from './chapters/Chapter4'
 import Chapter5 from './chapters/Chapter5'
 import Chapter6 from './chapters/Chapter6'
 import ComingSoon from './chapters/ComingSoon'
+import CyclingBrain from './cycling/pages/CyclingBrain'
+import CyclingBrainMethods from './cycling/pages/CyclingBrainMethods'
+import CyclingBrainData from './cycling/pages/CyclingBrainData'
 import { CHAPTERS } from './lib/chapters'
 
 function ScrollToTop() {
@@ -20,10 +23,23 @@ function ScrollToTop() {
   return null
 }
 
+/** Experiments run on the inverted colourway: dark plum, blush type. */
+function Theme() {
+  const { pathname } = useLocation()
+  const dark = pathname.startsWith('/cycling-brain')
+  useEffect(() => {
+    if (dark) document.documentElement.dataset.theme = 'dark'
+    else delete document.documentElement.dataset.theme
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#180C12' : '#FDF2F5')
+  }, [dark])
+  return null
+}
+
 export default function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <ScrollToTop />
+      <Theme />
       <header className="sticky top-0 z-30 bg-blush/80 backdrop-blur-md">
         <div className="mx-auto max-w-6xl px-4 min-h-14 py-2 flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
           <Link to="/" className="display text-base sm:text-xl font-medium tracking-tight text-berry whitespace-nowrap">
@@ -32,6 +48,7 @@ export default function App() {
           <nav className="flex flex-wrap items-center gap-x-4 gap-y-1 text-[12px] sm:text-[13px] font-semibold tracking-wide">
             <NavLink to="/" end className={({ isActive }) => isActive ? 'text-berry font-medium' : 'text-ink-2 hover:text-berry'}>Chapters</NavLink>
             <NavLink to="/record" className={({ isActive }) => isActive ? 'text-berry font-medium' : 'text-ink-2 hover:text-berry'}>The record</NavLink>
+            <NavLink to="/cycling-brain" className={({ isActive }) => isActive ? 'text-berry font-medium' : 'text-ink-2 hover:text-berry'}>The cycling brain</NavLink>
             <NavLink to="/methods" className={({ isActive }) => isActive ? 'text-berry font-medium' : 'text-ink-2 hover:text-berry'}>Methods</NavLink>
             <NavLink to="/data" className={({ isActive }) => isActive ? 'text-berry font-medium' : 'text-ink-2 hover:text-berry'}>Data</NavLink>
             <NavLink to="/about" className={({ isActive }) => isActive ? 'text-berry font-medium' : 'text-ink-2 hover:text-berry'}>About</NavLink>
@@ -45,6 +62,9 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/data" element={<Data />} />
           <Route path="/record" element={<Record />} />
+          <Route path="/cycling-brain" element={<CyclingBrain />} />
+          <Route path="/cycling-brain/methods" element={<CyclingBrainMethods />} />
+          <Route path="/cycling-brain/data" element={<CyclingBrainData />} />
           <Route path="/chapters/tested-on-men" element={<Chapter1 />} />
           <Route path="/chapters/pain-gap" element={<Chapter2 />} />
           <Route path="/chapters/funding-vs-burden" element={<Chapter3 />} />

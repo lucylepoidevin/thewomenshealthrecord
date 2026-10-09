@@ -43,6 +43,21 @@ export default function Home() {
           ))}
         </ol>
       </section>
+
+      <section className="mx-auto max-w-6xl px-4 pb-24">
+        <div className="flex items-baseline justify-between mb-6">
+          <h2 className="display text-2xl font-medium">Experiments</h2>
+          <span className="text-xs tracking-wide text-ink-3">Interactive, built on public data, one at a time</span>
+        </div>
+        <Link to="/cycling-brain" className="group block rounded-3xl p-6 sm:p-8 transition hover:-translate-y-0.5" style={{ background: '#180C12', color: '#FBEEF2' }}>
+          <div className="flex items-center justify-between">
+            <span className="inline-flex h-7 min-w-7 items-center justify-center rounded-full px-2 text-xs font-bold" style={{ background: '#F3A3C2', color: '#180C12' }}>1</span>
+            <span className="text-[10px] font-semibold uppercase tracking-[0.18em]" style={{ color: '#A48C97' }}>Live</span>
+          </div>
+          <h3 className="display mt-4 text-2xl sm:text-3xl font-medium leading-snug transition" style={{ color: '#F3A3C2' }}>The cycling brain</h3>
+          <p className="mt-2 max-w-2xl text-sm leading-relaxed" style={{ color: '#D8C3CC' }}>One woman scanned every morning for thirty days across a menstrual cycle, her hormones drawn alongside. Drag through the month and watch her brain, with any of 23 structures measured on each day.</p>
+        </Link>
+      </section>
     </div>
   )
 }

@@ -12,11 +12,14 @@ const pages = [
   { slug: 'sent-home-with-a-label', title: 'Where the diagnosis gap lives', desc: 'The story says she is sent home undiagnosed, under-tested and told it is anxiety. We looked in 20,808 emergency visits and 4.3 million cancer cases. The gap is real. It is not where the story puts it.', img: 'sent-home-with-a-label.png' },
   { slug: 'male-default', title: 'The male default body', desc: 'The animals drugs are tested on, the trials that follow, and the label you are handed: three places where the male body is still the standard, measured.', img: 'male-default.png' },
 ]
+// Experiments live outside /chapters/; `path` overrides the folder and hash route.
+pages.push({ slug: 'cycling-brain', path: 'cycling-brain', title: 'The cycling brain', desc: 'One woman scanned every morning for thirty days across a menstrual cycle, her hormones drawn alongside. Drag through the month and watch her brain.', img: 'cycling-brain.png' })
+const route = p => p.path ? p.path : `chapters/${p.slug}`
 const html = p => `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>${p.title} · The Women's Health Record</title>
 <meta name="description" content="${p.desc}"><meta property="og:type" content="article"><meta property="og:site_name" content="The Women's Health Record">
-<meta property="og:title" content="${p.title}"><meta property="og:description" content="${p.desc}"><meta property="og:image" content="${site}share/${p.img}"><meta property="og:url" content="${site}chapters/${p.slug}/">
+<meta property="og:title" content="${p.title}"><meta property="og:description" content="${p.desc}"><meta property="og:image" content="${site}share/${p.img}"><meta property="og:url" content="${site}${route(p)}/">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${p.title}"><meta name="twitter:description" content="${p.desc}"><meta name="twitter:image" content="${site}share/${p.img}">
-<meta http-equiv="refresh" content="0; url=${site}#/chapters/${p.slug}"><link rel="canonical" href="${site}#/chapters/${p.slug}">
+<meta http-equiv="refresh" content="0; url=${site}#/${route(p)}"><link rel="canonical" href="${site}#/${route(p)}">
 <style>body{font-family:system-ui;background:#FDF2F5;color:#2A1F26;padding:3rem;text-align:center}a{color:#8B1E4B}</style></head>
-<body><p>Opening <a href="${site}#/chapters/${p.slug}">${p.title}</a>…</p></body></html>`
-for (const p of pages) { mkdirSync(`${dist}chapters/${p.slug}`, { recursive: true }); writeFileSync(`${dist}chapters/${p.slug}/index.html`, html(p)); console.log('share page', p.slug) }
+<body><p>Opening <a href="${site}#/${route(p)}">${p.title}</a>…</p></body></html>`
+for (const p of pages) { mkdirSync(`${dist}${route(p)}`, { recursive: true }); writeFileSync(`${dist}${route(p)}/index.html`, html(p)); console.log('share page', route(p)) }
