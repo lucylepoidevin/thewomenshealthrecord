@@ -1,6 +1,7 @@
 {
  "generated": "2026-10-08",
  "summary": {
+  "burden_year": 2023,
   "trials_total": 75716,
   "trials_us": 56591,
   "trials_with_sex": 72614,
@@ -10,10 +11,10 @@
   "n_under": 7,
   "n_over": 19,
   "median_ratio_female_skew": 1.02,
-  "median_ratio_male_skew": 1.22,
-  "median_ratio_balanced": 1.03,
+  "median_ratio_male_skew": 1.2,
+  "median_ratio_balanced": 1.02,
   "excl_preg_pct_us": 54.4,
-  "contra_pct_us": 35.1,
+  "contra_pct_us": 34.8,
   "wocbp_pct_us": 28.5,
   "excl_lact_pct_us": 35.9,
   "max_age_pct_us": 44.3,
@@ -34,8 +35,8 @@
    1624
   ],
   "trials_fit": {
-   "a": 1.425,
-   "b": 0.38
+   "a": 1.402,
+   "b": 0.387
   }
  },
  "diseases": [
@@ -50,8 +51,8 @@
    "trials_open": 562,
    "female_only_trials": 3,
    "male_only_trials": 1,
-   "burden_female_pct": 51.0,
-   "dalys_k": 3960.7,
+   "burden_female_pct": 51.1,
+   "dalys_k": 3959.7,
    "skew": "balanced",
    "funding_m": 491.0,
    "by_sponsor": {
@@ -142,13 +143,13 @@
    "age_trials": 224,
    "over65_trial_pct": 64.3,
    "mean_age": 67.7,
-   "burden_65plus_pct": 63.3,
-   "burden_70plus_pct": 52.3,
-   "women_share_70plus": 56.5,
-   "age_gap_pts": -1.0,
+   "burden_65plus_pct": 65.0,
+   "burden_70plus_pct": 54.1,
+   "women_share_70plus": 56.2,
+   "age_gap_pts": 0.7,
    "ratio": 0.7,
    "ratio_open": 0.7,
-   "gap_pts": -15.3,
+   "gap_pts": -15.4,
    "trials_per_100k_dalys": 14.72,
    "participants_per_1k_dalys": 96.2,
    "by_sponsor_ratio": {
@@ -158,12 +159,12 @@
     "Universities, hospitals, other": 0.9
    },
    "by_period_ratio": {
-    "before 2010": 0.74,
+    "before 2010": 0.73,
     "2010\u20132015": 0.59,
     "2016\u20132020": 0.82,
     "2021 onward": 0.96
    },
-   "expected_trials": 617,
+   "expected_trials": 621,
    "trials_ratio_to_expected": 0.94,
    "rank": 1
   },
@@ -178,8 +179,8 @@
    "trials_open": 541,
    "female_only_trials": 2,
    "male_only_trials": 9,
-   "burden_female_pct": 47.1,
-   "dalys_k": 1010.6,
+   "burden_female_pct": 47.2,
+   "dalys_k": 1016.6,
    "skew": "balanced",
    "funding_m": 254.0,
    "by_sponsor": {
@@ -255,7 +256,7 @@
    },
    "excl_preg_pct": 64.0,
    "excl_lact_pct": 37.0,
-   "contra_pct": 36.0,
+   "contra_pct": 34.6,
    "wocbp_pct": 23.3,
    "pregtest_pct": 16.8,
    "max_age_pct": 89.9,
@@ -270,28 +271,28 @@
    "age_trials": 196,
    "over65_trial_pct": 0.7,
    "mean_age": 40.3,
-   "burden_65plus_pct": 12.0,
-   "burden_70plus_pct": 5.7,
-   "women_share_70plus": 57.2,
-   "age_gap_pts": 11.3,
-   "ratio": 0.79,
+   "burden_65plus_pct": 12.5,
+   "burden_70plus_pct": 6.1,
+   "women_share_70plus": 56.9,
+   "age_gap_pts": 11.8,
+   "ratio": 0.78,
    "ratio_open": 0.79,
-   "gap_pts": -10.1,
-   "trials_per_100k_dalys": 57.79,
-   "participants_per_1k_dalys": 97.6,
+   "gap_pts": -10.2,
+   "trials_per_100k_dalys": 57.45,
+   "participants_per_1k_dalys": 97.0,
    "by_sponsor_ratio": {
     "Industry": 0.73,
-    "NIH": 0.77,
+    "NIH": 0.76,
     "Other US government": 0.33,
     "Universities, hospitals, other": 0.96
    },
    "by_period_ratio": {
     "before 2010": 0.7,
-    "2010\u20132015": 0.76,
+    "2010\u20132015": 0.75,
     "2016\u20132020": 0.92,
     "2021 onward": 0.69
    },
-   "expected_trials": 368,
+   "expected_trials": 367,
    "trials_ratio_to_expected": 1.59,
    "rank": 2
   },
@@ -306,8 +307,8 @@
    "trials_open": 445,
    "female_only_trials": 0,
    "male_only_trials": 6,
-   "burden_female_pct": 51.7,
-   "dalys_k": 4297.2,
+   "burden_female_pct": 52.4,
+   "dalys_k": 4275.0,
    "skew": "balanced",
    "funding_m": 160.0,
    "by_sponsor": {
@@ -383,7 +384,7 @@
    },
    "excl_preg_pct": 56.0,
    "excl_lact_pct": 39.2,
-   "contra_pct": 35.6,
+   "contra_pct": 35.3,
    "wocbp_pct": 37.1,
    "pregtest_pct": 18.5,
    "max_age_pct": 33.6,
@@ -398,30 +399,158 @@
    "age_trials": 102,
    "over65_trial_pct": 50.6,
    "mean_age": 69.1,
-   "burden_65plus_pct": 70.4,
-   "burden_70plus_pct": 56.0,
-   "women_share_70plus": 52.8,
-   "age_gap_pts": 19.8,
-   "ratio": 0.85,
-   "ratio_open": 0.85,
-   "gap_pts": -7.9,
-   "trials_per_100k_dalys": 10.8,
-   "participants_per_1k_dalys": 88.6,
+   "burden_65plus_pct": 72.7,
+   "burden_70plus_pct": 58.5,
+   "women_share_70plus": 53.3,
+   "age_gap_pts": 22.1,
+   "ratio": 0.84,
+   "ratio_open": 0.84,
+   "gap_pts": -8.6,
+   "trials_per_100k_dalys": 10.85,
+   "participants_per_1k_dalys": 89.0,
    "by_sponsor_ratio": {
-    "Industry": 0.68,
+    "Industry": 0.67,
     "NIH": null,
     "Other US government": 0.24,
-    "Universities, hospitals, other": 1.1
+    "Universities, hospitals, other": 1.09
    },
    "by_period_ratio": {
-    "before 2010": 0.63,
-    "2010\u20132015": 0.73,
-    "2016\u20132020": 1.08,
-    "2021 onward": 0.55
+    "before 2010": 0.62,
+    "2010\u20132015": 0.72,
+    "2016\u20132020": 1.06,
+    "2021 onward": 0.54
    },
-   "expected_trials": 637,
-   "trials_ratio_to_expected": 0.73,
+   "expected_trials": 640,
+   "trials_ratio_to_expected": 0.72,
    "rank": 3
+  },
+  {
+   "disease": "Liver cancer",
+   "sex_specific": false,
+   "trials": 324,
+   "trials_sex_counted": 316,
+   "participants": 37194,
+   "female_pct": 28.2,
+   "female_pct_open": 28.2,
+   "trials_open": 316,
+   "female_only_trials": 0,
+   "male_only_trials": 0,
+   "burden_female_pct": 33.1,
+   "dalys_k": 701.8,
+   "skew": "male",
+   "funding_m": 183.0,
+   "by_sponsor": {
+    "Industry": {
+     "trials": 104,
+     "participants": 26898,
+     "female_pct": 24.5
+    },
+    "NIH": {
+     "trials": 40,
+     "participants": 1920,
+     "female_pct": 31.5
+    },
+    "Other US government": {
+     "trials": 0,
+     "participants": 0,
+     "female_pct": null
+    },
+    "Universities, hospitals, other": {
+     "trials": 172,
+     "participants": 8376,
+     "female_pct": 39.3
+    }
+   },
+   "by_period": {
+    "before 2010": {
+     "trials": 93,
+     "participants": 10952,
+     "female_pct": 31.1
+    },
+    "2010\u20132015": {
+     "trials": 106,
+     "participants": 14152,
+     "female_pct": 25.3
+    },
+    "2016\u20132020": {
+     "trials": 87,
+     "participants": 10336,
+     "female_pct": 25.5
+    },
+    "2021 onward": {
+     "trials": 30,
+     "participants": 1754,
+     "female_pct": 48.6
+    }
+   },
+   "by_phase": {
+    "Phase 1": {
+     "trials": 21,
+     "participants": 1111,
+     "female_pct": 30.5
+    },
+    "Phase 2": {
+     "trials": 185,
+     "participants": 11969,
+     "female_pct": 36.1
+    },
+    "Phase 3": {
+     "trials": 44,
+     "participants": 19448,
+     "female_pct": 19.1
+    },
+    "Phase 4": {
+     "trials": 7,
+     "participants": 1338,
+     "female_pct": 56.4
+    },
+    "Not applicable": {
+     "trials": 59,
+     "participants": 3328,
+     "female_pct": 40.8
+    }
+   },
+   "excl_preg_pct": 67.3,
+   "excl_lact_pct": 50.0,
+   "contra_pct": 53.1,
+   "wocbp_pct": 43.8,
+   "pregtest_pct": 41.0,
+   "max_age_pct": 8.6,
+   "max_age_le75_pct": 4.3,
+   "max_age_le65_pct": 2.5,
+   "outcome_by_sex": 0,
+   "sample_nct": [
+    "NCT03298451",
+    "NCT00692770",
+    "NCT00699374"
+   ],
+   "age_trials": 145,
+   "over65_trial_pct": 34.6,
+   "mean_age": 59.9,
+   "burden_65plus_pct": 58.3,
+   "burden_70plus_pct": 38.7,
+   "women_share_70plus": 36.8,
+   "age_gap_pts": 23.7,
+   "ratio": 0.85,
+   "ratio_open": 0.85,
+   "gap_pts": -4.9,
+   "trials_per_100k_dalys": 46.17,
+   "participants_per_1k_dalys": 53.0,
+   "by_sponsor_ratio": {
+    "Industry": 0.74,
+    "NIH": 0.95,
+    "Other US government": null,
+    "Universities, hospitals, other": 1.19
+   },
+   "by_period_ratio": {
+    "before 2010": 0.94,
+    "2010\u20132015": 0.76,
+    "2016\u20132020": 0.77,
+    "2021 onward": 1.47
+   },
+   "expected_trials": 318,
+   "trials_ratio_to_expected": 1.02,
+   "rank": 4
   },
   {
    "disease": "Anxiety disorders",
@@ -435,7 +564,7 @@
    "female_only_trials": 48,
    "male_only_trials": 11,
    "burden_female_pct": 63.7,
-   "dalys_k": 2494.1,
+   "dalys_k": 2979.9,
    "skew": "female",
    "funding_m": 271.0,
    "by_sponsor": {
@@ -511,7 +640,7 @@
    },
    "excl_preg_pct": 41.7,
    "excl_lact_pct": 18.2,
-   "contra_pct": 21.1,
+   "contra_pct": 20.8,
    "wocbp_pct": 13.6,
    "pregtest_pct": 10.7,
    "max_age_pct": 61.2,
@@ -526,15 +655,15 @@
    "age_trials": 275,
    "over65_trial_pct": 11.0,
    "mean_age": 41.4,
-   "burden_65plus_pct": 15.9,
-   "burden_70plus_pct": 9.9,
-   "women_share_70plus": 70.5,
-   "age_gap_pts": 4.9,
+   "burden_65plus_pct": 16.6,
+   "burden_70plus_pct": 10.5,
+   "women_share_70plus": 70.3,
+   "age_gap_pts": 5.6,
    "ratio": 0.86,
    "ratio_open": 0.82,
    "gap_pts": -9.2,
-   "trials_per_100k_dalys": 26.22,
-   "participants_per_1k_dalys": 32.8,
+   "trials_per_100k_dalys": 21.95,
+   "participants_per_1k_dalys": 27.4,
    "by_sponsor_ratio": {
     "Industry": 1.01,
     "NIH": 0.87,
@@ -547,9 +676,9 @@
     "2016\u20132020": 0.67,
     "2021 onward": 1.08
    },
-   "expected_trials": 518,
-   "trials_ratio_to_expected": 1.26,
-   "rank": 4
+   "expected_trials": 557,
+   "trials_ratio_to_expected": 1.17,
+   "rank": 5
   },
   {
    "disease": "Coronary heart disease",
@@ -562,8 +691,8 @@
    "trials_open": 541,
    "female_only_trials": 13,
    "male_only_trials": 4,
-   "burden_female_pct": 35.7,
-   "dalys_k": 10101.9,
+   "burden_female_pct": 35.6,
+   "dalys_k": 9222.5,
    "skew": "male",
    "funding_m": 383.0,
    "by_sponsor": {
@@ -654,157 +783,29 @@
    "age_trials": 197,
    "over65_trial_pct": 40.4,
    "mean_age": 63.4,
-   "burden_65plus_pct": 60.6,
-   "burden_70plus_pct": 47.0,
-   "women_share_70plus": 43.6,
-   "age_gap_pts": 20.2,
+   "burden_65plus_pct": 62.7,
+   "burden_70plus_pct": 49.2,
+   "women_share_70plus": 43.0,
+   "age_gap_pts": 22.3,
    "ratio": 0.86,
    "ratio_open": 0.86,
-   "gap_pts": -5.0,
-   "trials_per_100k_dalys": 5.76,
-   "participants_per_1k_dalys": 66.0,
+   "gap_pts": -4.9,
+   "trials_per_100k_dalys": 6.31,
+   "participants_per_1k_dalys": 72.3,
    "by_sponsor_ratio": {
     "Industry": 0.84,
-    "NIH": 0.99,
+    "NIH": 1.0,
     "Other US government": 0.1,
     "Universities, hospitals, other": 1.08
    },
    "by_period_ratio": {
-    "before 2010": 0.94,
+    "before 2010": 0.95,
     "2010\u20132015": 0.78,
     "2016\u20132020": 0.85,
     "2021 onward": 1.11
    },
-   "expected_trials": 881,
-   "trials_ratio_to_expected": 0.66,
-   "rank": 5
-  },
-  {
-   "disease": "Liver cancer",
-   "sex_specific": false,
-   "trials": 324,
-   "trials_sex_counted": 316,
-   "participants": 37194,
-   "female_pct": 28.2,
-   "female_pct_open": 28.2,
-   "trials_open": 316,
-   "female_only_trials": 0,
-   "male_only_trials": 0,
-   "burden_female_pct": 32.7,
-   "dalys_k": 656.2,
-   "skew": "male",
-   "funding_m": 183.0,
-   "by_sponsor": {
-    "Industry": {
-     "trials": 104,
-     "participants": 26898,
-     "female_pct": 24.5
-    },
-    "NIH": {
-     "trials": 40,
-     "participants": 1920,
-     "female_pct": 31.5
-    },
-    "Other US government": {
-     "trials": 0,
-     "participants": 0,
-     "female_pct": null
-    },
-    "Universities, hospitals, other": {
-     "trials": 172,
-     "participants": 8376,
-     "female_pct": 39.3
-    }
-   },
-   "by_period": {
-    "before 2010": {
-     "trials": 93,
-     "participants": 10952,
-     "female_pct": 31.1
-    },
-    "2010\u20132015": {
-     "trials": 106,
-     "participants": 14152,
-     "female_pct": 25.3
-    },
-    "2016\u20132020": {
-     "trials": 87,
-     "participants": 10336,
-     "female_pct": 25.5
-    },
-    "2021 onward": {
-     "trials": 30,
-     "participants": 1754,
-     "female_pct": 48.6
-    }
-   },
-   "by_phase": {
-    "Phase 1": {
-     "trials": 21,
-     "participants": 1111,
-     "female_pct": 30.5
-    },
-    "Phase 2": {
-     "trials": 185,
-     "participants": 11969,
-     "female_pct": 36.1
-    },
-    "Phase 3": {
-     "trials": 44,
-     "participants": 19448,
-     "female_pct": 19.1
-    },
-    "Phase 4": {
-     "trials": 7,
-     "participants": 1338,
-     "female_pct": 56.4
-    },
-    "Not applicable": {
-     "trials": 59,
-     "participants": 3328,
-     "female_pct": 40.8
-    }
-   },
-   "excl_preg_pct": 67.3,
-   "excl_lact_pct": 50.0,
-   "contra_pct": 53.4,
-   "wocbp_pct": 43.8,
-   "pregtest_pct": 41.0,
-   "max_age_pct": 8.6,
-   "max_age_le75_pct": 4.3,
-   "max_age_le65_pct": 2.5,
-   "outcome_by_sex": 0,
-   "sample_nct": [
-    "NCT03298451",
-    "NCT00692770",
-    "NCT00699374"
-   ],
-   "age_trials": 145,
-   "over65_trial_pct": 34.6,
-   "mean_age": 59.9,
-   "burden_65plus_pct": 56.1,
-   "burden_70plus_pct": 35.7,
-   "women_share_70plus": 37.3,
-   "age_gap_pts": 21.5,
-   "ratio": 0.86,
-   "ratio_open": 0.86,
-   "gap_pts": -4.5,
-   "trials_per_100k_dalys": 49.38,
-   "participants_per_1k_dalys": 56.7,
-   "by_sponsor_ratio": {
-    "Industry": 0.75,
-    "NIH": 0.96,
-    "Other US government": null,
-    "Universities, hospitals, other": 1.2
-   },
-   "by_period_ratio": {
-    "before 2010": 0.95,
-    "2010\u20132015": 0.77,
-    "2016\u20132020": 0.78,
-    "2021 onward": 1.49
-   },
-   "expected_trials": 312,
-   "trials_ratio_to_expected": 1.04,
+   "expected_trials": 862,
+   "trials_ratio_to_expected": 0.68,
    "rank": 6
   },
   {
@@ -818,8 +819,8 @@
    "trials_open": 193,
    "female_only_trials": 0,
    "male_only_trials": 2,
-   "burden_female_pct": 58.6,
-   "dalys_k": 59.5,
+   "burden_female_pct": 58.7,
+   "dalys_k": 52.7,
    "skew": "balanced",
    "funding_m": 153.0,
    "by_sponsor": {
@@ -910,15 +911,15 @@
    "age_trials": 99,
    "over65_trial_pct": 4.1,
    "mean_age": 25.3,
-   "burden_65plus_pct": 11.0,
-   "burden_70plus_pct": 7.0,
-   "women_share_70plus": 67.5,
-   "age_gap_pts": 6.9,
+   "burden_65plus_pct": 12.4,
+   "burden_70plus_pct": 8.1,
+   "women_share_70plus": 67.4,
+   "age_gap_pts": 8.3,
    "ratio": 0.88,
    "ratio_open": 0.88,
-   "gap_pts": -7.0,
-   "trials_per_100k_dalys": 349.58,
-   "participants_per_1k_dalys": 253.5,
+   "gap_pts": -7.1,
+   "trials_per_100k_dalys": 394.69,
+   "participants_per_1k_dalys": 286.3,
    "by_sponsor_ratio": {
     "Industry": 0.88,
     "NIH": 0.88,
@@ -931,8 +932,8 @@
     "2016\u20132020": 0.87,
     "2021 onward": 0.97
    },
-   "expected_trials": 125,
-   "trials_ratio_to_expected": 1.66,
+   "expected_trials": 117,
+   "trials_ratio_to_expected": 1.78,
    "rank": 7
   },
   {
@@ -946,8 +947,8 @@
    "trials_open": 719,
    "female_only_trials": 7,
    "male_only_trials": 7,
-   "burden_female_pct": 64.0,
-   "dalys_k": 4043.7,
+   "burden_female_pct": 63.5,
+   "dalys_k": 4238.7,
    "skew": "female",
    "funding_m": 3859.0,
    "by_sponsor": {
@@ -1039,28 +1040,28 @@
    "over65_trial_pct": 81.7,
    "mean_age": 74.4,
    "burden_65plus_pct": 92.9,
-   "burden_70plus_pct": 88.4,
-   "women_share_70plus": 65.3,
+   "burden_70plus_pct": 88.3,
+   "women_share_70plus": 64.8,
    "age_gap_pts": 11.2,
    "ratio": 0.91,
    "ratio_open": 0.91,
-   "gap_pts": -6.0,
-   "trials_per_100k_dalys": 19.09,
-   "participants_per_1k_dalys": 98.6,
+   "gap_pts": -5.5,
+   "trials_per_100k_dalys": 18.21,
+   "participants_per_1k_dalys": 94.0,
    "by_sponsor_ratio": {
     "Industry": 0.85,
     "NIH": 0.61,
     "Other US government": 0.36,
-    "Universities, hospitals, other": 0.95
+    "Universities, hospitals, other": 0.96
    },
    "by_period_ratio": {
-    "before 2010": 0.87,
-    "2010\u20132015": 0.79,
-    "2016\u20132020": 0.93,
-    "2021 onward": 0.93
+    "before 2010": 0.88,
+    "2010\u20132015": 0.8,
+    "2016\u20132020": 0.94,
+    "2021 onward": 0.94
    },
-   "expected_trials": 622,
-   "trials_ratio_to_expected": 1.24,
+   "expected_trials": 638,
+   "trials_ratio_to_expected": 1.21,
    "rank": 8
   },
   {
@@ -1074,8 +1075,8 @@
    "trials_open": 358,
    "female_only_trials": 5,
    "male_only_trials": 2,
-   "burden_female_pct": 51.2,
-   "dalys_k": 155.0,
+   "burden_female_pct": 51.3,
+   "dalys_k": 155.7,
    "skew": "balanced",
    "funding_m": 170.0,
    "by_sponsor": {
@@ -1166,15 +1167,15 @@
    "age_trials": 127,
    "over65_trial_pct": 4.5,
    "mean_age": 39.1,
-   "burden_65plus_pct": 34.4,
-   "burden_70plus_pct": 23.3,
-   "women_share_70plus": 56.8,
-   "age_gap_pts": 29.9,
-   "ratio": 0.92,
-   "ratio_open": 0.92,
-   "gap_pts": -4.3,
-   "trials_per_100k_dalys": 246.45,
-   "participants_per_1k_dalys": 557.7,
+   "burden_65plus_pct": 35.7,
+   "burden_70plus_pct": 24.4,
+   "women_share_70plus": 55.2,
+   "age_gap_pts": 31.2,
+   "ratio": 0.91,
+   "ratio_open": 0.91,
+   "gap_pts": -4.4,
+   "trials_per_100k_dalys": 245.34,
+   "participants_per_1k_dalys": 555.2,
    "by_sponsor_ratio": {
     "Industry": 0.9,
     "NIH": 0.64,
@@ -1184,11 +1185,11 @@
    "by_period_ratio": {
     "before 2010": 0.98,
     "2010\u20132015": 0.92,
-    "2016\u20132020": 0.89,
+    "2016\u20132020": 0.88,
     "2021 onward": 0.83
    },
-   "expected_trials": 180,
-   "trials_ratio_to_expected": 2.12,
+   "expected_trials": 178,
+   "trials_ratio_to_expected": 2.15,
    "rank": 9
   },
   {
@@ -1202,8 +1203,8 @@
    "trials_open": 550,
    "female_only_trials": 1,
    "male_only_trials": 2,
-   "burden_female_pct": 46.4,
-   "dalys_k": 2801.6,
+   "burden_female_pct": 46.9,
+   "dalys_k": 2766.7,
    "skew": "balanced",
    "funding_m": 717.0,
    "by_sponsor": {
@@ -1294,286 +1295,30 @@
    "age_trials": 182,
    "over65_trial_pct": 46.0,
    "mean_age": 61.9,
-   "burden_65plus_pct": 58.4,
-   "burden_70plus_pct": 45.5,
-   "women_share_70plus": 50.3,
-   "age_gap_pts": 12.4,
-   "ratio": 0.92,
-   "ratio_open": 0.92,
-   "gap_pts": -3.8,
-   "trials_per_100k_dalys": 20.06,
-   "participants_per_1k_dalys": 92.7,
+   "burden_65plus_pct": 60.1,
+   "burden_70plus_pct": 47.6,
+   "women_share_70plus": 50.6,
+   "age_gap_pts": 14.1,
+   "ratio": 0.91,
+   "ratio_open": 0.91,
+   "gap_pts": -4.3,
+   "trials_per_100k_dalys": 20.31,
+   "participants_per_1k_dalys": 93.8,
    "by_sponsor_ratio": {
-    "Industry": 0.88,
-    "NIH": 0.8,
-    "Other US government": 0.23,
-    "Universities, hospitals, other": 1.01
+    "Industry": 0.87,
+    "NIH": 0.79,
+    "Other US government": 0.22,
+    "Universities, hospitals, other": 1.0
    },
    "by_period_ratio": {
-    "before 2010": 0.89,
-    "2010\u20132015": 0.82,
-    "2016\u20132020": 0.98,
-    "2021 onward": 0.8
+    "before 2010": 0.88,
+    "2010\u20132015": 0.81,
+    "2016\u20132020": 0.97,
+    "2021 onward": 0.79
    },
    "expected_trials": 541,
    "trials_ratio_to_expected": 1.04,
    "rank": 10
-  },
-  {
-   "disease": "Depression",
-   "sex_specific": false,
-   "trials": 1407,
-   "trials_sex_counted": 1322,
-   "participants": 315127,
-   "female_pct": 58.4,
-   "female_pct_open": 56.5,
-   "trials_open": 1164,
-   "female_only_trials": 152,
-   "male_only_trials": 11,
-   "burden_female_pct": 62.9,
-   "dalys_k": 2920.2,
-   "skew": "female",
-   "funding_m": 700.0,
-   "by_sponsor": {
-    "Industry": {
-     "trials": 293,
-     "participants": 107538,
-     "female_pct": 65.8
-    },
-    "NIH": {
-     "trials": 25,
-     "participants": 1336,
-     "female_pct": 65.9
-    },
-    "Other US government": {
-     "trials": 92,
-     "participants": 16209,
-     "female_pct": 22.0
-    },
-    "Universities, hospitals, other": {
-     "trials": 912,
-     "participants": 190044,
-     "female_pct": 57.2
-    }
-   },
-   "by_period": {
-    "before 2010": {
-     "trials": 336,
-     "participants": 55514,
-     "female_pct": 59.5
-    },
-    "2010\u20132015": {
-     "trials": 415,
-     "participants": 116639,
-     "female_pct": 57.8
-    },
-    "2016\u20132020": {
-     "trials": 367,
-     "participants": 113498,
-     "female_pct": 55.5
-    },
-    "2021 onward": {
-     "trials": 204,
-     "participants": 29476,
-     "female_pct": 69.3
-    }
-   },
-   "by_phase": {
-    "Phase 1": {
-     "trials": 52,
-     "participants": 2486,
-     "female_pct": 64.3
-    },
-    "Phase 2": {
-     "trials": 231,
-     "participants": 31325,
-     "female_pct": 62.2
-    },
-    "Phase 3": {
-     "trials": 212,
-     "participants": 80893,
-     "female_pct": 64.0
-    },
-    "Phase 4": {
-     "trials": 212,
-     "participants": 25528,
-     "female_pct": 63.0
-    },
-    "Not applicable": {
-     "trials": 615,
-     "participants": 174895,
-     "female_pct": 54.3
-    }
-   },
-   "excl_preg_pct": 46.6,
-   "excl_lact_pct": 25.9,
-   "contra_pct": 26.3,
-   "wocbp_pct": 17.5,
-   "pregtest_pct": 11.2,
-   "max_age_pct": 67.0,
-   "max_age_le75_pct": 58.5,
-   "max_age_le65_pct": 47.1,
-   "outcome_by_sex": 4,
-   "sample_nct": [
-    "NCT05110014",
-    "NCT01696435",
-    "NCT02798354"
-   ],
-   "age_trials": 545,
-   "over65_trial_pct": 20.0,
-   "mean_age": 45.7,
-   "burden_65plus_pct": 14.0,
-   "burden_70plus_pct": 8.6,
-   "women_share_70plus": 64.7,
-   "age_gap_pts": -6.0,
-   "ratio": 0.93,
-   "ratio_open": 0.9,
-   "gap_pts": -4.5,
-   "trials_per_100k_dalys": 48.18,
-   "participants_per_1k_dalys": 107.9,
-   "by_sponsor_ratio": {
-    "Industry": 1.05,
-    "NIH": 1.05,
-    "Other US government": 0.35,
-    "Universities, hospitals, other": 0.91
-   },
-   "by_period_ratio": {
-    "before 2010": 0.95,
-    "2010\u20132015": 0.92,
-    "2016\u20132020": 0.88,
-    "2021 onward": 1.1
-   },
-   "expected_trials": 550,
-   "trials_ratio_to_expected": 2.56,
-   "rank": 11
-  },
-  {
-   "disease": "Hearing loss",
-   "sex_specific": false,
-   "trials": 168,
-   "trials_sex_counted": 162,
-   "participants": 10501,
-   "female_pct": 43.1,
-   "female_pct_open": 43.1,
-   "trials_open": 162,
-   "female_only_trials": 0,
-   "male_only_trials": 0,
-   "burden_female_pct": 46.0,
-   "dalys_k": 2348.0,
-   "skew": "balanced",
-   "funding_m": 191.0,
-   "by_sponsor": {
-    "Industry": {
-     "trials": 87,
-     "participants": 3421,
-     "female_pct": 45.0
-    },
-    "NIH": {
-     "trials": 1,
-     "participants": 35,
-     "female_pct": 40.0
-    },
-    "Other US government": {
-     "trials": 15,
-     "participants": 1875,
-     "female_pct": 5.3
-    },
-    "Universities, hospitals, other": {
-     "trials": 59,
-     "participants": 5170,
-     "female_pct": 55.6
-    }
-   },
-   "by_period": {
-    "before 2010": {
-     "trials": 20,
-     "participants": 1815,
-     "female_pct": 21.7
-    },
-    "2010\u20132015": {
-     "trials": 40,
-     "participants": 2125,
-     "female_pct": 33.3
-    },
-    "2016\u20132020": {
-     "trials": 51,
-     "participants": 3174,
-     "female_pct": 46.8
-    },
-    "2021 onward": {
-     "trials": 51,
-     "participants": 3387,
-     "female_pct": 57.4
-    }
-   },
-   "by_phase": {
-    "Phase 1": {
-     "trials": 6,
-     "participants": 112,
-     "female_pct": 47.3
-    },
-    "Phase 2": {
-     "trials": 22,
-     "participants": 1193,
-     "female_pct": 45.0
-    },
-    "Phase 3": {
-     "trials": 6,
-     "participants": 809,
-     "female_pct": 36.7
-    },
-    "Phase 4": {
-     "trials": 2,
-     "participants": 57,
-     "female_pct": 66.7
-    },
-    "Not applicable": {
-     "trials": 126,
-     "participants": 8330,
-     "female_pct": 43.2
-    }
-   },
-   "excl_preg_pct": 17.3,
-   "excl_lact_pct": 10.7,
-   "contra_pct": 7.7,
-   "wocbp_pct": 7.1,
-   "pregtest_pct": 3.0,
-   "max_age_pct": 56.5,
-   "max_age_le75_pct": 29.2,
-   "max_age_le65_pct": 21.4,
-   "outcome_by_sex": 0,
-   "sample_nct": [
-    "NCT04575051",
-    "NCT04618315",
-    "NCT05244603"
-   ],
-   "age_trials": 70,
-   "over65_trial_pct": 40.4,
-   "mean_age": 59.0,
-   "burden_65plus_pct": 59.1,
-   "burden_70plus_pct": 46.9,
-   "women_share_70plus": 53.3,
-   "age_gap_pts": 18.7,
-   "ratio": 0.94,
-   "ratio_open": 0.94,
-   "gap_pts": -2.9,
-   "trials_per_100k_dalys": 7.16,
-   "participants_per_1k_dalys": 4.5,
-   "by_sponsor_ratio": {
-    "Industry": 0.98,
-    "NIH": null,
-    "Other US government": 0.12,
-    "Universities, hospitals, other": 1.21
-   },
-   "by_period_ratio": {
-    "before 2010": 0.47,
-    "2010\u20132015": 0.72,
-    "2016\u20132020": 1.02,
-    "2021 onward": 1.25
-   },
-   "expected_trials": 506,
-   "trials_ratio_to_expected": 0.33,
-   "rank": 12
   },
   {
    "disease": "Stomach cancer",
@@ -1586,8 +1331,8 @@
    "trials_open": 191,
    "female_only_trials": 1,
    "male_only_trials": 0,
-   "burden_female_pct": 38.6,
-   "dalys_k": 288.8,
+   "burden_female_pct": 39.6,
+   "dalys_k": 309.0,
    "skew": "male",
    "funding_m": 52.0,
    "by_sponsor": {
@@ -1678,29 +1423,285 @@
    "age_trials": 61,
    "over65_trial_pct": 27.4,
    "mean_age": 59.2,
-   "burden_65plus_pct": 50.0,
-   "burden_70plus_pct": 35.2,
-   "women_share_70plus": 39.3,
-   "age_gap_pts": 22.6,
-   "ratio": 0.94,
-   "ratio_open": 0.94,
-   "gap_pts": -2.5,
-   "trials_per_100k_dalys": 67.52,
-   "participants_per_1k_dalys": 103.6,
+   "burden_65plus_pct": 49.3,
+   "burden_70plus_pct": 34.8,
+   "women_share_70plus": 40.3,
+   "age_gap_pts": 21.9,
+   "ratio": 0.91,
+   "ratio_open": 0.91,
+   "gap_pts": -3.5,
+   "trials_per_100k_dalys": 63.11,
+   "participants_per_1k_dalys": 96.8,
    "by_sponsor_ratio": {
-    "Industry": 0.9,
-    "NIH": 0.99,
+    "Industry": 0.88,
+    "NIH": 0.96,
     "Other US government": null,
-    "Universities, hospitals, other": 1.04
+    "Universities, hospitals, other": 1.01
    },
    "by_period_ratio": {
-    "before 2010": 0.94,
-    "2010\u20132015": 0.86,
-    "2016\u20132020": 0.92,
-    "2021 onward": 1.42
+    "before 2010": 0.92,
+    "2010\u20132015": 0.84,
+    "2016\u20132020": 0.89,
+    "2021 onward": 1.39
    },
-   "expected_trials": 228,
-   "trials_ratio_to_expected": 0.85,
+   "expected_trials": 232,
+   "trials_ratio_to_expected": 0.84,
+   "rank": 11
+  },
+  {
+   "disease": "Depression",
+   "sex_specific": false,
+   "trials": 1407,
+   "trials_sex_counted": 1322,
+   "participants": 315127,
+   "female_pct": 58.4,
+   "female_pct_open": 56.5,
+   "trials_open": 1164,
+   "female_only_trials": 152,
+   "male_only_trials": 11,
+   "burden_female_pct": 62.7,
+   "dalys_k": 2967.9,
+   "skew": "female",
+   "funding_m": 700.0,
+   "by_sponsor": {
+    "Industry": {
+     "trials": 293,
+     "participants": 107538,
+     "female_pct": 65.8
+    },
+    "NIH": {
+     "trials": 25,
+     "participants": 1336,
+     "female_pct": 65.9
+    },
+    "Other US government": {
+     "trials": 92,
+     "participants": 16209,
+     "female_pct": 22.0
+    },
+    "Universities, hospitals, other": {
+     "trials": 912,
+     "participants": 190044,
+     "female_pct": 57.2
+    }
+   },
+   "by_period": {
+    "before 2010": {
+     "trials": 336,
+     "participants": 55514,
+     "female_pct": 59.5
+    },
+    "2010\u20132015": {
+     "trials": 415,
+     "participants": 116639,
+     "female_pct": 57.8
+    },
+    "2016\u20132020": {
+     "trials": 367,
+     "participants": 113498,
+     "female_pct": 55.5
+    },
+    "2021 onward": {
+     "trials": 204,
+     "participants": 29476,
+     "female_pct": 69.3
+    }
+   },
+   "by_phase": {
+    "Phase 1": {
+     "trials": 52,
+     "participants": 2486,
+     "female_pct": 64.3
+    },
+    "Phase 2": {
+     "trials": 231,
+     "participants": 31325,
+     "female_pct": 62.2
+    },
+    "Phase 3": {
+     "trials": 212,
+     "participants": 80893,
+     "female_pct": 64.0
+    },
+    "Phase 4": {
+     "trials": 212,
+     "participants": 25528,
+     "female_pct": 63.0
+    },
+    "Not applicable": {
+     "trials": 615,
+     "participants": 174895,
+     "female_pct": 54.3
+    }
+   },
+   "excl_preg_pct": 46.6,
+   "excl_lact_pct": 25.9,
+   "contra_pct": 25.7,
+   "wocbp_pct": 17.5,
+   "pregtest_pct": 11.2,
+   "max_age_pct": 67.0,
+   "max_age_le75_pct": 58.5,
+   "max_age_le65_pct": 47.1,
+   "outcome_by_sex": 4,
+   "sample_nct": [
+    "NCT05110014",
+    "NCT01696435",
+    "NCT02798354"
+   ],
+   "age_trials": 545,
+   "over65_trial_pct": 20.0,
+   "mean_age": 45.7,
+   "burden_65plus_pct": 14.9,
+   "burden_70plus_pct": 9.3,
+   "women_share_70plus": 64.6,
+   "age_gap_pts": -5.1,
+   "ratio": 0.93,
+   "ratio_open": 0.9,
+   "gap_pts": -4.3,
+   "trials_per_100k_dalys": 47.41,
+   "participants_per_1k_dalys": 106.2,
+   "by_sponsor_ratio": {
+    "Industry": 1.05,
+    "NIH": 1.05,
+    "Other US government": 0.35,
+    "Universities, hospitals, other": 0.91
+   },
+   "by_period_ratio": {
+    "before 2010": 0.95,
+    "2010\u20132015": 0.92,
+    "2016\u20132020": 0.89,
+    "2021 onward": 1.11
+   },
+   "expected_trials": 556,
+   "trials_ratio_to_expected": 2.53,
+   "rank": 12
+  },
+  {
+   "disease": "Hearing loss",
+   "sex_specific": false,
+   "trials": 168,
+   "trials_sex_counted": 162,
+   "participants": 10501,
+   "female_pct": 43.1,
+   "female_pct_open": 43.1,
+   "trials_open": 162,
+   "female_only_trials": 0,
+   "male_only_trials": 0,
+   "burden_female_pct": 46.0,
+   "dalys_k": 2462.5,
+   "skew": "balanced",
+   "funding_m": 191.0,
+   "by_sponsor": {
+    "Industry": {
+     "trials": 87,
+     "participants": 3421,
+     "female_pct": 45.0
+    },
+    "NIH": {
+     "trials": 1,
+     "participants": 35,
+     "female_pct": 40.0
+    },
+    "Other US government": {
+     "trials": 15,
+     "participants": 1875,
+     "female_pct": 5.3
+    },
+    "Universities, hospitals, other": {
+     "trials": 59,
+     "participants": 5170,
+     "female_pct": 55.6
+    }
+   },
+   "by_period": {
+    "before 2010": {
+     "trials": 20,
+     "participants": 1815,
+     "female_pct": 21.7
+    },
+    "2010\u20132015": {
+     "trials": 40,
+     "participants": 2125,
+     "female_pct": 33.3
+    },
+    "2016\u20132020": {
+     "trials": 51,
+     "participants": 3174,
+     "female_pct": 46.8
+    },
+    "2021 onward": {
+     "trials": 51,
+     "participants": 3387,
+     "female_pct": 57.4
+    }
+   },
+   "by_phase": {
+    "Phase 1": {
+     "trials": 6,
+     "participants": 112,
+     "female_pct": 47.3
+    },
+    "Phase 2": {
+     "trials": 22,
+     "participants": 1193,
+     "female_pct": 45.0
+    },
+    "Phase 3": {
+     "trials": 6,
+     "participants": 809,
+     "female_pct": 36.7
+    },
+    "Phase 4": {
+     "trials": 2,
+     "participants": 57,
+     "female_pct": 66.7
+    },
+    "Not applicable": {
+     "trials": 126,
+     "participants": 8330,
+     "female_pct": 43.2
+    }
+   },
+   "excl_preg_pct": 17.3,
+   "excl_lact_pct": 10.7,
+   "contra_pct": 7.7,
+   "wocbp_pct": 7.1,
+   "pregtest_pct": 3.0,
+   "max_age_pct": 56.5,
+   "max_age_le75_pct": 29.2,
+   "max_age_le65_pct": 21.4,
+   "outcome_by_sex": 0,
+   "sample_nct": [
+    "NCT04575051",
+    "NCT04618315",
+    "NCT05244603"
+   ],
+   "age_trials": 70,
+   "over65_trial_pct": 40.4,
+   "mean_age": 59.0,
+   "burden_65plus_pct": 60.2,
+   "burden_70plus_pct": 48.1,
+   "women_share_70plus": 53.1,
+   "age_gap_pts": 19.8,
+   "ratio": 0.94,
+   "ratio_open": 0.94,
+   "gap_pts": -2.9,
+   "trials_per_100k_dalys": 6.82,
+   "participants_per_1k_dalys": 4.3,
+   "by_sponsor_ratio": {
+    "Industry": 0.98,
+    "NIH": null,
+    "Other US government": 0.12,
+    "Universities, hospitals, other": 1.21
+   },
+   "by_period_ratio": {
+    "before 2010": 0.47,
+    "2010\u20132015": 0.72,
+    "2016\u20132020": 1.02,
+    "2021 onward": 1.25
+   },
+   "expected_trials": 517,
+   "trials_ratio_to_expected": 0.32,
    "rank": 13
   },
   {
@@ -1714,8 +1715,8 @@
    "trials_open": 60,
    "female_only_trials": 1,
    "male_only_trials": 0,
-   "burden_female_pct": 56.8,
-   "dalys_k": 385.8,
+   "burden_female_pct": 57.1,
+   "dalys_k": 390.8,
    "skew": "balanced",
    "funding_m": 17.0,
    "by_sponsor": {
@@ -1806,28 +1807,28 @@
    "age_trials": 19,
    "over65_trial_pct": 23.5,
    "mean_age": 58.5,
-   "burden_65plus_pct": 42.8,
-   "burden_70plus_pct": 32.4,
-   "women_share_70plus": 50.8,
-   "age_gap_pts": 19.3,
+   "burden_65plus_pct": 44.2,
+   "burden_70plus_pct": 33.3,
+   "women_share_70plus": 51.8,
+   "age_gap_pts": 20.7,
    "ratio": 0.95,
-   "ratio_open": 0.95,
-   "gap_pts": -2.8,
-   "trials_per_100k_dalys": 16.07,
-   "participants_per_1k_dalys": 17.5,
+   "ratio_open": 0.94,
+   "gap_pts": -3.1,
+   "trials_per_100k_dalys": 15.86,
+   "participants_per_1k_dalys": 17.3,
    "by_sponsor_ratio": {
     "Industry": 0.93,
-    "NIH": 0.97,
+    "NIH": 0.96,
     "Other US government": null,
-    "Universities, hospitals, other": 0.97
+    "Universities, hospitals, other": 0.96
    },
    "by_period_ratio": {
     "before 2010": 0.85,
     "2010\u20132015": 1.11,
-    "2016\u20132020": 0.93,
+    "2016\u20132020": 0.92,
     "2021 onward": 1.05
    },
-   "expected_trials": 255,
+   "expected_trials": 254,
    "trials_ratio_to_expected": 0.24,
    "rank": 14
   },
@@ -1843,7 +1844,7 @@
    "female_only_trials": 0,
    "male_only_trials": 0,
    "burden_female_pct": 47.0,
-   "dalys_k": 52.6,
+   "dalys_k": 52.9,
    "skew": "balanced",
    "funding_m": 12.0,
    "by_sponsor": {
@@ -1934,15 +1935,15 @@
    "age_trials": 13,
    "over65_trial_pct": 4.3,
    "mean_age": 9.1,
-   "burden_65plus_pct": 10.1,
-   "burden_70plus_pct": 6.3,
-   "women_share_70plus": 45.5,
-   "age_gap_pts": 5.8,
+   "burden_65plus_pct": 10.7,
+   "burden_70plus_pct": 6.9,
+   "women_share_70plus": 45.0,
+   "age_gap_pts": 6.4,
    "ratio": 0.95,
    "ratio_open": 0.95,
    "gap_pts": -2.5,
-   "trials_per_100k_dalys": 72.24,
-   "participants_per_1k_dalys": 90.7,
+   "trials_per_100k_dalys": 71.83,
+   "participants_per_1k_dalys": 90.2,
    "by_sponsor_ratio": {
     "Industry": 0.93,
     "NIH": null,
@@ -1955,7 +1956,7 @@
     "2016\u20132020": 0.94,
     "2021 onward": null
    },
-   "expected_trials": 120,
+   "expected_trials": 117,
    "trials_ratio_to_expected": 0.32,
    "rank": 15
   },
@@ -1970,8 +1971,8 @@
    "trials_open": 379,
    "female_only_trials": 0,
    "male_only_trials": 1,
-   "burden_female_pct": 37.7,
-   "dalys_k": 668.9,
+   "burden_female_pct": 37.5,
+   "dalys_k": 705.3,
    "skew": "male",
    "funding_m": 250.0,
    "by_sponsor": {
@@ -2062,29 +2063,29 @@
    "age_trials": 152,
    "over65_trial_pct": 50.0,
    "mean_age": 64.8,
-   "burden_65plus_pct": 90.0,
-   "burden_70plus_pct": 82.9,
-   "women_share_70plus": 38.3,
-   "age_gap_pts": 40.0,
+   "burden_65plus_pct": 90.4,
+   "burden_70plus_pct": 83.6,
+   "women_share_70plus": 38.2,
+   "age_gap_pts": 40.4,
    "ratio": 0.95,
    "ratio_open": 0.95,
-   "gap_pts": -2.0,
-   "trials_per_100k_dalys": 58.75,
-   "participants_per_1k_dalys": 60.8,
+   "gap_pts": -1.8,
+   "trials_per_100k_dalys": 55.72,
+   "participants_per_1k_dalys": 57.6,
    "by_sponsor_ratio": {
     "Industry": 0.96,
     "NIH": 0.93,
     "Other US government": 0.46,
-    "Universities, hospitals, other": 1.03
+    "Universities, hospitals, other": 1.04
    },
    "by_period_ratio": {
     "before 2010": 0.97,
     "2010\u20132015": 0.91,
     "2016\u20132020": 0.97,
-    "2021 onward": 0.92
+    "2021 onward": 0.93
    },
-   "expected_trials": 314,
-   "trials_ratio_to_expected": 1.25,
+   "expected_trials": 319,
+   "trials_ratio_to_expected": 1.23,
    "rank": 16
   },
   {
@@ -2098,8 +2099,8 @@
    "trials_open": 321,
    "female_only_trials": 5,
    "male_only_trials": 2,
-   "burden_female_pct": 36.6,
-   "dalys_k": 1164.2,
+   "burden_female_pct": 37.5,
+   "dalys_k": 1073.4,
    "skew": "male",
    "funding_m": 84.0,
    "by_sponsor": {
@@ -2175,7 +2176,7 @@
    },
    "excl_preg_pct": 57.3,
    "excl_lact_pct": 35.2,
-   "contra_pct": 49.9,
+   "contra_pct": 49.6,
    "wocbp_pct": 33.1,
    "pregtest_pct": 19.7,
    "max_age_pct": 39.1,
@@ -2190,29 +2191,29 @@
    "age_trials": 76,
    "over65_trial_pct": 6.3,
    "mean_age": 49.6,
-   "burden_65plus_pct": 33.7,
-   "burden_70plus_pct": 19.3,
-   "women_share_70plus": 43.8,
-   "age_gap_pts": 27.4,
-   "ratio": 0.99,
-   "ratio_open": 0.98,
-   "gap_pts": -0.3,
-   "trials_per_100k_dalys": 28.78,
-   "participants_per_1k_dalys": 58.7,
+   "burden_65plus_pct": 38.3,
+   "burden_70plus_pct": 23.6,
+   "women_share_70plus": 43.7,
+   "age_gap_pts": 32.0,
+   "ratio": 0.97,
+   "ratio_open": 0.95,
+   "gap_pts": -1.2,
+   "trials_per_100k_dalys": 31.21,
+   "participants_per_1k_dalys": 63.6,
    "by_sponsor_ratio": {
-    "Industry": 1.04,
-    "NIH": 0.77,
+    "Industry": 1.01,
+    "NIH": 0.75,
     "Other US government": 0.22,
-    "Universities, hospitals, other": 1.16
+    "Universities, hospitals, other": 1.14
    },
    "by_period_ratio": {
-    "before 2010": 0.92,
-    "2010\u20132015": 0.99,
-    "2016\u20132020": 1.13,
-    "2021 onward": 0.98
+    "before 2010": 0.89,
+    "2010\u20132015": 0.97,
+    "2016\u20132020": 1.1,
+    "2021 onward": 0.95
    },
-   "expected_trials": 388,
-   "trials_ratio_to_expected": 0.86,
+   "expected_trials": 375,
+   "trials_ratio_to_expected": 0.89,
    "rank": 17
   },
   {
@@ -2226,8 +2227,8 @@
    "trials_open": 1442,
    "female_only_trials": 4,
    "male_only_trials": 3,
-   "burden_female_pct": 46.2,
-   "dalys_k": 2858.0,
+   "burden_female_pct": 46.7,
+   "dalys_k": 2881.8,
    "skew": "balanced",
    "funding_m": 492.0,
    "by_sponsor": {
@@ -2303,7 +2304,7 @@
    },
    "excl_preg_pct": 64.9,
    "excl_lact_pct": 52.9,
-   "contra_pct": 57.4,
+   "contra_pct": 57.2,
    "wocbp_pct": 48.4,
    "pregtest_pct": 38.1,
    "max_age_pct": 6.9,
@@ -2318,29 +2319,29 @@
    "age_trials": 528,
    "over65_trial_pct": 34.2,
    "mean_age": 62.5,
-   "burden_65plus_pct": 63.1,
-   "burden_70plus_pct": 44.8,
-   "women_share_70plus": 47.0,
-   "age_gap_pts": 28.9,
-   "ratio": 0.99,
-   "ratio_open": 0.99,
-   "gap_pts": -0.3,
-   "trials_per_100k_dalys": 52.38,
-   "participants_per_1k_dalys": 161.5,
+   "burden_65plus_pct": 64.4,
+   "burden_70plus_pct": 45.7,
+   "women_share_70plus": 47.7,
+   "age_gap_pts": 30.2,
+   "ratio": 0.98,
+   "ratio_open": 0.98,
+   "gap_pts": -0.8,
+   "trials_per_100k_dalys": 51.95,
+   "participants_per_1k_dalys": 160.2,
    "by_sponsor_ratio": {
-    "Industry": 0.87,
-    "NIH": 1.04,
+    "Industry": 0.86,
+    "NIH": 1.03,
     "Other US government": 0.11,
-    "Universities, hospitals, other": 1.09
+    "Universities, hospitals, other": 1.08
    },
    "by_period_ratio": {
-    "before 2010": 1.02,
-    "2010\u20132015": 0.92,
-    "2016\u20132020": 0.94,
-    "2021 onward": 1.05
+    "before 2010": 1.0,
+    "2010\u20132015": 0.91,
+    "2016\u20132020": 0.93,
+    "2021 onward": 1.03
    },
-   "expected_trials": 545,
-   "trials_ratio_to_expected": 2.74,
+   "expected_trials": 550,
+   "trials_ratio_to_expected": 2.72,
    "rank": 18
   },
   {
@@ -2354,8 +2355,8 @@
    "trials_open": 658,
    "female_only_trials": 1,
    "male_only_trials": 2,
-   "burden_female_pct": 53.0,
-   "dalys_k": 232.2,
+   "burden_female_pct": 53.3,
+   "dalys_k": 239.9,
    "skew": "balanced",
    "funding_m": 1133.0,
    "by_sponsor": {
@@ -2446,26 +2447,26 @@
    "age_trials": 200,
    "over65_trial_pct": 42.4,
    "mean_age": 55.8,
-   "burden_65plus_pct": 47.1,
-   "burden_70plus_pct": 38.6,
-   "women_share_70plus": 57.7,
-   "age_gap_pts": 4.7,
-   "ratio": 0.99,
-   "ratio_open": 1.12,
-   "gap_pts": -0.6,
-   "trials_per_100k_dalys": 300.6,
-   "participants_per_1k_dalys": 542.4,
+   "burden_65plus_pct": 48.9,
+   "burden_70plus_pct": 40.4,
+   "women_share_70plus": 58.0,
+   "age_gap_pts": 6.5,
+   "ratio": 0.98,
+   "ratio_open": 1.11,
+   "gap_pts": -0.9,
+   "trials_per_100k_dalys": 290.95,
+   "participants_per_1k_dalys": 525.0,
    "by_sponsor_ratio": {
-    "Industry": 1.12,
+    "Industry": 1.11,
     "NIH": null,
     "Other US government": null,
     "Universities, hospitals, other": 0.52
    },
    "by_period_ratio": {
-    "before 2010": 0.64,
-    "2010\u20132015": 1.12,
-    "2016\u20132020": 1.12,
-    "2021 onward": 1.18
+    "before 2010": 0.63,
+    "2010\u20132015": 1.11,
+    "2016\u20132020": 1.11,
+    "2021 onward": 1.17
    },
    "expected_trials": 210,
    "trials_ratio_to_expected": 3.32,
@@ -2482,8 +2483,8 @@
    "trials_open": 325,
    "female_only_trials": 9,
    "male_only_trials": 1,
-   "burden_female_pct": 67.1,
-   "dalys_k": 234.0,
+   "burden_female_pct": 67.8,
+   "dalys_k": 236.8,
    "skew": "female",
    "funding_m": 108.0,
    "by_sponsor": {
@@ -2574,286 +2575,30 @@
    "age_trials": 123,
    "over65_trial_pct": 5.9,
    "mean_age": 41.1,
-   "burden_65plus_pct": 34.3,
-   "burden_70plus_pct": 21.3,
-   "women_share_70plus": 68.7,
-   "age_gap_pts": 28.4,
-   "ratio": 1.01,
-   "ratio_open": 1.01,
-   "gap_pts": 0.6,
-   "trials_per_100k_dalys": 147.86,
-   "participants_per_1k_dalys": 363.5,
+   "burden_65plus_pct": 36.0,
+   "burden_70plus_pct": 23.0,
+   "women_share_70plus": 69.8,
+   "age_gap_pts": 30.1,
+   "ratio": 1.0,
+   "ratio_open": 1.0,
+   "gap_pts": -0.1,
+   "trials_per_100k_dalys": 146.11,
+   "participants_per_1k_dalys": 359.2,
    "by_sponsor_ratio": {
-    "Industry": 1.0,
-    "NIH": 1.04,
-    "Other US government": 0.94,
-    "Universities, hospitals, other": 1.12
-   },
-   "by_period_ratio": {
-    "before 2010": 1.02,
-    "2010\u20132015": 1.0,
-    "2016\u20132020": 1.0,
-    "2021 onward": 1.02
-   },
-   "expected_trials": 211,
-   "trials_ratio_to_expected": 1.64,
-   "rank": 20
-  },
-  {
-   "disease": "Osteoarthritis",
-   "sex_specific": false,
-   "trials": 467,
-   "trials_sex_counted": 441,
-   "participants": 114775,
-   "female_pct": 59.8,
-   "female_pct_open": 59.7,
-   "trials_open": 431,
-   "female_only_trials": 7,
-   "male_only_trials": 3,
-   "burden_female_pct": 58.8,
-   "dalys_k": 1685.8,
-   "skew": "balanced",
-   "funding_m": 134.0,
-   "by_sponsor": {
-    "Industry": {
-     "trials": 204,
-     "participants": 81759,
-     "female_pct": 62.6
-    },
-    "NIH": {
-     "trials": 1,
-     "participants": 4,
-     "female_pct": 0.0
-    },
-    "Other US government": {
-     "trials": 23,
-     "participants": 4623,
-     "female_pct": 13.6
-    },
-    "Universities, hospitals, other": {
-     "trials": 213,
-     "participants": 28389,
-     "female_pct": 59.2
-    }
-   },
-   "by_period": {
-    "before 2010": {
-     "trials": 100,
-     "participants": 32305,
-     "female_pct": 59.6
-    },
-    "2010\u20132015": {
-     "trials": 153,
-     "participants": 29283,
-     "female_pct": 56.8
-    },
-    "2016\u20132020": {
-     "trials": 144,
-     "participants": 47317,
-     "female_pct": 60.9
-    },
-    "2021 onward": {
-     "trials": 44,
-     "participants": 5870,
-     "female_pct": 66.9
-    }
-   },
-   "by_phase": {
-    "Phase 1": {
-     "trials": 4,
-     "participants": 1983,
-     "female_pct": 56.1
-    },
-    "Phase 2": {
-     "trials": 81,
-     "participants": 16600,
-     "female_pct": 59.0
-    },
-    "Phase 3": {
-     "trials": 94,
-     "participants": 49365,
-     "female_pct": 64.6
-    },
-    "Phase 4": {
-     "trials": 54,
-     "participants": 5606,
-     "female_pct": 53.8
-    },
-    "Not applicable": {
-     "trials": 208,
-     "participants": 41221,
-     "female_pct": 55.4
-    }
-   },
-   "excl_preg_pct": 50.7,
-   "excl_lact_pct": 20.6,
-   "contra_pct": 17.1,
-   "wocbp_pct": 14.1,
-   "pregtest_pct": 7.5,
-   "max_age_pct": 56.1,
-   "max_age_le75_pct": 19.3,
-   "max_age_le65_pct": 4.3,
-   "outcome_by_sex": 1,
-   "sample_nct": [
-    "NCT03737149",
-    "NCT03102580",
-    "NCT02683239"
-   ],
-   "age_trials": 135,
-   "over65_trial_pct": 44.2,
-   "mean_age": 62.0,
-   "burden_65plus_pct": 53.5,
-   "burden_70plus_pct": 37.5,
-   "women_share_70plus": 62.1,
-   "age_gap_pts": 9.3,
-   "ratio": 1.02,
-   "ratio_open": 1.02,
-   "gap_pts": 1.0,
-   "trials_per_100k_dalys": 27.7,
-   "participants_per_1k_dalys": 68.1,
-   "by_sponsor_ratio": {
-    "Industry": 1.06,
-    "NIH": null,
-    "Other US government": 0.23,
-    "Universities, hospitals, other": 1.01
+    "Industry": 0.99,
+    "NIH": 1.03,
+    "Other US government": 0.93,
+    "Universities, hospitals, other": 1.1
    },
    "by_period_ratio": {
     "before 2010": 1.01,
-    "2010\u20132015": 0.97,
-    "2016\u20132020": 1.04,
-    "2021 onward": 1.14
-   },
-   "expected_trials": 446,
-   "trials_ratio_to_expected": 1.05,
-   "rank": 21
-  },
-  {
-   "disease": "Autism",
-   "sex_specific": false,
-   "trials": 242,
-   "trials_sex_counted": 226,
-   "participants": 15087,
-   "female_pct": 28.5,
-   "female_pct_open": 29.1,
-   "trials_open": 216,
-   "female_only_trials": 2,
-   "male_only_trials": 9,
-   "burden_female_pct": 27.6,
-   "dalys_k": 606.7,
-   "skew": "male",
-   "funding_m": 305.0,
-   "by_sponsor": {
-    "Industry": {
-     "trials": 39,
-     "participants": 5435,
-     "female_pct": 22.2
-    },
-    "NIH": {
-     "trials": 4,
-     "participants": 80,
-     "female_pct": 22.5
-    },
-    "Other US government": {
-     "trials": 0,
-     "participants": 0,
-     "female_pct": null
-    },
-    "Universities, hospitals, other": {
-     "trials": 183,
-     "participants": 9572,
-     "female_pct": 32.2
-    }
-   },
-   "by_period": {
-    "before 2010": {
-     "trials": 42,
-     "participants": 2383,
-     "female_pct": 16.5
-    },
-    "2010\u20132015": {
-     "trials": 71,
-     "participants": 5230,
-     "female_pct": 27.3
-    },
-    "2016\u20132020": {
-     "trials": 80,
-     "participants": 5815,
-     "female_pct": 30.1
-    },
-    "2021 onward": {
-     "trials": 33,
-     "participants": 1659,
-     "female_pct": 44.3
-    }
-   },
-   "by_phase": {
-    "Phase 1": {
-     "trials": 11,
-     "participants": 311,
-     "female_pct": 27.7
-    },
-    "Phase 2": {
-     "trials": 75,
-     "participants": 4272,
-     "female_pct": 17.9
-    },
-    "Phase 3": {
-     "trials": 28,
-     "participants": 3408,
-     "female_pct": 21.7
-    },
-    "Phase 4": {
-     "trials": 15,
-     "participants": 713,
-     "female_pct": 17.8
-    },
-    "Not applicable": {
-     "trials": 97,
-     "participants": 6383,
-     "female_pct": 40.6
-    }
-   },
-   "excl_preg_pct": 32.2,
-   "excl_lact_pct": 11.6,
-   "contra_pct": 19.0,
-   "wocbp_pct": 10.7,
-   "pregtest_pct": 8.3,
-   "max_age_pct": 91.7,
-   "max_age_le75_pct": 90.5,
-   "max_age_le65_pct": 90.1,
-   "outcome_by_sex": 0,
-   "sample_nct": [
-    "NCT01592773",
-    "NCT01914393",
-    "NCT01592747"
-   ],
-   "age_trials": 123,
-   "over65_trial_pct": 0.3,
-   "mean_age": 16.0,
-   "burden_65plus_pct": 8.6,
-   "burden_70plus_pct": 4.8,
-   "women_share_70plus": 29.4,
-   "age_gap_pts": 8.3,
-   "ratio": 1.03,
-   "ratio_open": 1.05,
-   "gap_pts": 0.9,
-   "trials_per_100k_dalys": 39.89,
-   "participants_per_1k_dalys": 24.9,
-   "by_sponsor_ratio": {
-    "Industry": 0.8,
-    "NIH": null,
-    "Other US government": null,
-    "Universities, hospitals, other": 1.17
-   },
-   "by_period_ratio": {
-    "before 2010": 0.6,
     "2010\u20132015": 0.99,
-    "2016\u20132020": 1.09,
-    "2021 onward": 1.61
+    "2016\u20132020": 0.99,
+    "2021 onward": 1.01
    },
-   "expected_trials": 303,
-   "trials_ratio_to_expected": 0.8,
-   "rank": 22
+   "expected_trials": 209,
+   "trials_ratio_to_expected": 1.65,
+   "rank": 20
   },
   {
    "disease": "Down syndrome",
@@ -2866,8 +2611,8 @@
    "trials_open": 37,
    "female_only_trials": 0,
    "male_only_trials": 1,
-   "burden_female_pct": 46.0,
-   "dalys_k": 77.1,
+   "burden_female_pct": 46.8,
+   "dalys_k": 74.8,
    "skew": "balanced",
    "funding_m": 115.0,
    "by_sponsor": {
@@ -2958,29 +2703,285 @@
    "age_trials": 11,
    "over65_trial_pct": 0.0,
    "mean_age": 6.3,
-   "burden_65plus_pct": 10.9,
-   "burden_70plus_pct": 1.0,
-   "women_share_70plus": 46.5,
-   "age_gap_pts": 10.9,
-   "ratio": 1.03,
-   "ratio_open": 1.03,
-   "gap_pts": 1.2,
-   "trials_per_100k_dalys": 50.58,
-   "participants_per_1k_dalys": 146.3,
+   "burden_65plus_pct": 11.2,
+   "burden_70plus_pct": 1.4,
+   "women_share_70plus": 42.1,
+   "age_gap_pts": 11.2,
+   "ratio": 1.01,
+   "ratio_open": 1.01,
+   "gap_pts": 0.4,
+   "trials_per_100k_dalys": 52.14,
+   "participants_per_1k_dalys": 150.8,
    "by_sponsor_ratio": {
-    "Industry": 1.08,
+    "Industry": 1.07,
     "NIH": null,
     "Other US government": null,
-    "Universities, hospitals, other": 1.02
+    "Universities, hospitals, other": 1.01
    },
    "by_period_ratio": {
-    "before 2010": 1.12,
-    "2010\u20132015": 1.01,
-    "2016\u20132020": 1.08,
-    "2021 onward": 1.3
+    "before 2010": 1.1,
+    "2010\u20132015": 0.99,
+    "2016\u20132020": 1.07,
+    "2021 onward": 1.28
    },
-   "expected_trials": 138,
-   "trials_ratio_to_expected": 0.28,
+   "expected_trials": 134,
+   "trials_ratio_to_expected": 0.29,
+   "rank": 21
+  },
+  {
+   "disease": "Osteoarthritis",
+   "sex_specific": false,
+   "trials": 467,
+   "trials_sex_counted": 441,
+   "participants": 114775,
+   "female_pct": 59.8,
+   "female_pct_open": 59.7,
+   "trials_open": 431,
+   "female_only_trials": 7,
+   "male_only_trials": 3,
+   "burden_female_pct": 58.5,
+   "dalys_k": 1723.4,
+   "skew": "balanced",
+   "funding_m": 134.0,
+   "by_sponsor": {
+    "Industry": {
+     "trials": 204,
+     "participants": 81759,
+     "female_pct": 62.6
+    },
+    "NIH": {
+     "trials": 1,
+     "participants": 4,
+     "female_pct": 0.0
+    },
+    "Other US government": {
+     "trials": 23,
+     "participants": 4623,
+     "female_pct": 13.6
+    },
+    "Universities, hospitals, other": {
+     "trials": 213,
+     "participants": 28389,
+     "female_pct": 59.2
+    }
+   },
+   "by_period": {
+    "before 2010": {
+     "trials": 100,
+     "participants": 32305,
+     "female_pct": 59.6
+    },
+    "2010\u20132015": {
+     "trials": 153,
+     "participants": 29283,
+     "female_pct": 56.8
+    },
+    "2016\u20132020": {
+     "trials": 144,
+     "participants": 47317,
+     "female_pct": 60.9
+    },
+    "2021 onward": {
+     "trials": 44,
+     "participants": 5870,
+     "female_pct": 66.9
+    }
+   },
+   "by_phase": {
+    "Phase 1": {
+     "trials": 4,
+     "participants": 1983,
+     "female_pct": 56.1
+    },
+    "Phase 2": {
+     "trials": 81,
+     "participants": 16600,
+     "female_pct": 59.0
+    },
+    "Phase 3": {
+     "trials": 94,
+     "participants": 49365,
+     "female_pct": 64.6
+    },
+    "Phase 4": {
+     "trials": 54,
+     "participants": 5606,
+     "female_pct": 53.8
+    },
+    "Not applicable": {
+     "trials": 208,
+     "participants": 41221,
+     "female_pct": 55.4
+    }
+   },
+   "excl_preg_pct": 50.7,
+   "excl_lact_pct": 20.6,
+   "contra_pct": 17.1,
+   "wocbp_pct": 14.1,
+   "pregtest_pct": 7.5,
+   "max_age_pct": 56.1,
+   "max_age_le75_pct": 19.3,
+   "max_age_le65_pct": 4.3,
+   "outcome_by_sex": 1,
+   "sample_nct": [
+    "NCT03737149",
+    "NCT03102580",
+    "NCT02683239"
+   ],
+   "age_trials": 135,
+   "over65_trial_pct": 44.2,
+   "mean_age": 62.0,
+   "burden_65plus_pct": 55.0,
+   "burden_70plus_pct": 39.0,
+   "women_share_70plus": 61.7,
+   "age_gap_pts": 10.8,
+   "ratio": 1.02,
+   "ratio_open": 1.02,
+   "gap_pts": 1.3,
+   "trials_per_100k_dalys": 27.1,
+   "participants_per_1k_dalys": 66.6,
+   "by_sponsor_ratio": {
+    "Industry": 1.07,
+    "NIH": null,
+    "Other US government": 0.23,
+    "Universities, hospitals, other": 1.01
+   },
+   "by_period_ratio": {
+    "before 2010": 1.02,
+    "2010\u20132015": 0.97,
+    "2016\u20132020": 1.04,
+    "2021 onward": 1.14
+   },
+   "expected_trials": 450,
+   "trials_ratio_to_expected": 1.04,
+   "rank": 22
+  },
+  {
+   "disease": "Autism",
+   "sex_specific": false,
+   "trials": 242,
+   "trials_sex_counted": 226,
+   "participants": 15087,
+   "female_pct": 28.5,
+   "female_pct_open": 29.1,
+   "trials_open": 216,
+   "female_only_trials": 2,
+   "male_only_trials": 9,
+   "burden_female_pct": 27.6,
+   "dalys_k": 619.0,
+   "skew": "male",
+   "funding_m": 305.0,
+   "by_sponsor": {
+    "Industry": {
+     "trials": 39,
+     "participants": 5435,
+     "female_pct": 22.2
+    },
+    "NIH": {
+     "trials": 4,
+     "participants": 80,
+     "female_pct": 22.5
+    },
+    "Other US government": {
+     "trials": 0,
+     "participants": 0,
+     "female_pct": null
+    },
+    "Universities, hospitals, other": {
+     "trials": 183,
+     "participants": 9572,
+     "female_pct": 32.2
+    }
+   },
+   "by_period": {
+    "before 2010": {
+     "trials": 42,
+     "participants": 2383,
+     "female_pct": 16.5
+    },
+    "2010\u20132015": {
+     "trials": 71,
+     "participants": 5230,
+     "female_pct": 27.3
+    },
+    "2016\u20132020": {
+     "trials": 80,
+     "participants": 5815,
+     "female_pct": 30.1
+    },
+    "2021 onward": {
+     "trials": 33,
+     "participants": 1659,
+     "female_pct": 44.3
+    }
+   },
+   "by_phase": {
+    "Phase 1": {
+     "trials": 11,
+     "participants": 311,
+     "female_pct": 27.7
+    },
+    "Phase 2": {
+     "trials": 75,
+     "participants": 4272,
+     "female_pct": 17.9
+    },
+    "Phase 3": {
+     "trials": 28,
+     "participants": 3408,
+     "female_pct": 21.7
+    },
+    "Phase 4": {
+     "trials": 15,
+     "participants": 713,
+     "female_pct": 17.8
+    },
+    "Not applicable": {
+     "trials": 97,
+     "participants": 6383,
+     "female_pct": 40.6
+    }
+   },
+   "excl_preg_pct": 32.2,
+   "excl_lact_pct": 11.6,
+   "contra_pct": 19.0,
+   "wocbp_pct": 10.7,
+   "pregtest_pct": 8.3,
+   "max_age_pct": 91.7,
+   "max_age_le75_pct": 90.5,
+   "max_age_le65_pct": 90.1,
+   "outcome_by_sex": 0,
+   "sample_nct": [
+    "NCT01592773",
+    "NCT01914393",
+    "NCT01592747"
+   ],
+   "age_trials": 123,
+   "over65_trial_pct": 0.3,
+   "mean_age": 16.0,
+   "burden_65plus_pct": 9.0,
+   "burden_70plus_pct": 5.1,
+   "women_share_70plus": 29.3,
+   "age_gap_pts": 8.7,
+   "ratio": 1.03,
+   "ratio_open": 1.05,
+   "gap_pts": 0.9,
+   "trials_per_100k_dalys": 39.1,
+   "participants_per_1k_dalys": 24.4,
+   "by_sponsor_ratio": {
+    "Industry": 0.8,
+    "NIH": null,
+    "Other US government": null,
+    "Universities, hospitals, other": 1.17
+   },
+   "by_period_ratio": {
+    "before 2010": 0.6,
+    "2010\u20132015": 0.99,
+    "2016\u20132020": 1.09,
+    "2021 onward": 1.61
+   },
+   "expected_trials": 303,
+   "trials_ratio_to_expected": 0.8,
    "rank": 23
   },
   {
@@ -2995,7 +2996,7 @@
    "female_only_trials": 0,
    "male_only_trials": 0,
    "burden_female_pct": 45.9,
-   "dalys_k": 1019.4,
+   "dalys_k": 1090.2,
    "skew": "balanced",
    "funding_m": 292.0,
    "by_sponsor": {
@@ -3086,15 +3087,15 @@
    "age_trials": 211,
    "over65_trial_pct": 36.1,
    "mean_age": 61.6,
-   "burden_65plus_pct": 60.6,
-   "burden_70plus_pct": 43.5,
-   "women_share_70plus": 49.4,
-   "age_gap_pts": 24.5,
+   "burden_65plus_pct": 61.3,
+   "burden_70plus_pct": 44.3,
+   "women_share_70plus": 49.2,
+   "age_gap_pts": 25.2,
    "ratio": 1.03,
    "ratio_open": 1.03,
    "gap_pts": 1.2,
-   "trials_per_100k_dalys": 48.66,
-   "participants_per_1k_dalys": 37.1,
+   "trials_per_100k_dalys": 45.5,
+   "participants_per_1k_dalys": 34.7,
    "by_sponsor_ratio": {
     "Industry": 1.01,
     "NIH": 1.07,
@@ -3107,8 +3108,8 @@
     "2016\u20132020": 1.0,
     "2021 onward": 1.12
    },
-   "expected_trials": 369,
-   "trials_ratio_to_expected": 1.34,
+   "expected_trials": 377,
+   "trials_ratio_to_expected": 1.31,
    "rank": 24
   },
   {
@@ -3122,8 +3123,8 @@
    "trials_open": 78,
    "female_only_trials": 34,
    "male_only_trials": 7,
-   "burden_female_pct": 79.2,
-   "dalys_k": 43.8,
+   "burden_female_pct": 78.8,
+   "dalys_k": 44.1,
    "skew": "female",
    "funding_m": 448.0,
    "by_sponsor": {
@@ -3199,7 +3200,7 @@
    },
    "excl_preg_pct": 44.5,
    "excl_lact_pct": 45.3,
-   "contra_pct": 45.3,
+   "contra_pct": 44.5,
    "wocbp_pct": 40.6,
    "pregtest_pct": 37.5,
    "max_age_pct": 43.8,
@@ -3214,29 +3215,29 @@
    "age_trials": 47,
    "over65_trial_pct": 0.2,
    "mean_age": 45.9,
-   "burden_65plus_pct": 13.6,
-   "burden_70plus_pct": 8.5,
-   "women_share_70plus": 68.7,
-   "age_gap_pts": 13.4,
+   "burden_65plus_pct": 14.6,
+   "burden_70plus_pct": 9.6,
+   "women_share_70plus": 68.4,
+   "age_gap_pts": 14.4,
    "ratio": 1.03,
    "ratio_open": 0.59,
-   "gap_pts": 2.3,
-   "trials_per_100k_dalys": 292.24,
-   "participants_per_1k_dalys": 3020.9,
+   "gap_pts": 2.7,
+   "trials_per_100k_dalys": 290.25,
+   "participants_per_1k_dalys": 3000.3,
    "by_sponsor_ratio": {
-    "Industry": 1.17,
-    "NIH": 0.92,
+    "Industry": 1.18,
+    "NIH": 0.93,
     "Other US government": null,
-    "Universities, hospitals, other": 0.94
+    "Universities, hospitals, other": 0.95
    },
    "by_period_ratio": {
     "before 2010": 1.23,
-    "2010\u20132015": 0.63,
-    "2016\u20132020": 1.1,
+    "2010\u20132015": 0.64,
+    "2016\u20132020": 1.11,
     "2021 onward": 1.14
    },
-   "expected_trials": 112,
-   "trials_ratio_to_expected": 1.15,
+   "expected_trials": 109,
+   "trials_ratio_to_expected": 1.17,
    "rank": 25
   },
   {
@@ -3251,7 +3252,7 @@
    "female_only_trials": 4,
    "male_only_trials": 1,
    "burden_female_pct": 54.8,
-   "dalys_k": 5951.5,
+   "dalys_k": 6031.9,
    "skew": "balanced",
    "funding_m": 76.0,
    "by_sponsor": {
@@ -3327,7 +3328,7 @@
    },
    "excl_preg_pct": 66.0,
    "excl_lact_pct": 25.8,
-   "contra_pct": 19.9,
+   "contra_pct": 19.1,
    "wocbp_pct": 15.6,
    "pregtest_pct": 8.6,
    "max_age_pct": 44.9,
@@ -3342,15 +3343,15 @@
    "age_trials": 105,
    "over65_trial_pct": 14.4,
    "mean_age": 51.4,
-   "burden_65plus_pct": 27.2,
-   "burden_70plus_pct": 18.3,
-   "women_share_70plus": 59.1,
-   "age_gap_pts": 12.8,
+   "burden_65plus_pct": 28.3,
+   "burden_70plus_pct": 19.3,
+   "women_share_70plus": 59.0,
+   "age_gap_pts": 13.9,
    "ratio": 1.03,
    "ratio_open": 1.03,
    "gap_pts": 1.6,
-   "trials_per_100k_dalys": 4.3,
-   "participants_per_1k_dalys": 50.9,
+   "trials_per_100k_dalys": 4.24,
+   "participants_per_1k_dalys": 50.2,
    "by_sponsor_ratio": {
     "Industry": 1.03,
     "NIH": null,
@@ -3363,9 +3364,137 @@
     "2016\u20132020": 0.95,
     "2021 onward": 0.69
    },
-   "expected_trials": 721,
-   "trials_ratio_to_expected": 0.36,
+   "expected_trials": 731,
+   "trials_ratio_to_expected": 0.35,
    "rank": 26
+  },
+  {
+   "disease": "Bipolar disorder",
+   "sex_specific": false,
+   "trials": 298,
+   "trials_sex_counted": 286,
+   "participants": 45738,
+   "female_pct": 52.5,
+   "female_pct_open": 52.5,
+   "trials_open": 284,
+   "female_only_trials": 2,
+   "male_only_trials": 0,
+   "burden_female_pct": 50.4,
+   "dalys_k": 478.1,
+   "skew": "balanced",
+   "funding_m": 84.0,
+   "by_sponsor": {
+    "Industry": {
+     "trials": 47,
+     "participants": 16108,
+     "female_pct": 53.5
+    },
+    "NIH": {
+     "trials": 5,
+     "participants": 374,
+     "female_pct": 52.4
+    },
+    "Other US government": {
+     "trials": 13,
+     "participants": 1829,
+     "female_pct": 16.3
+    },
+    "Universities, hospitals, other": {
+     "trials": 221,
+     "participants": 27427,
+     "female_pct": 54.4
+    }
+   },
+   "by_period": {
+    "before 2010": {
+     "trials": 126,
+     "participants": 14311,
+     "female_pct": 50.0
+    },
+    "2010\u20132015": {
+     "trials": 91,
+     "participants": 14130,
+     "female_pct": 52.5
+    },
+    "2016\u20132020": {
+     "trials": 53,
+     "participants": 16337,
+     "female_pct": 54.5
+    },
+    "2021 onward": {
+     "trials": 16,
+     "participants": 960,
+     "female_pct": 56.9
+    }
+   },
+   "by_phase": {
+    "Phase 1": {
+     "trials": 4,
+     "participants": 137,
+     "female_pct": 46.7
+    },
+    "Phase 2": {
+     "trials": 47,
+     "participants": 2794,
+     "female_pct": 48.9
+    },
+    "Phase 3": {
+     "trials": 60,
+     "participants": 15341,
+     "female_pct": 50.7
+    },
+    "Phase 4": {
+     "trials": 88,
+     "participants": 8307,
+     "female_pct": 52.8
+    },
+    "Not applicable": {
+     "trials": 87,
+     "participants": 19159,
+     "female_pct": 54.4
+    }
+   },
+   "excl_preg_pct": 67.4,
+   "excl_lact_pct": 40.3,
+   "contra_pct": 36.2,
+   "wocbp_pct": 24.2,
+   "pregtest_pct": 14.1,
+   "max_age_pct": 80.5,
+   "max_age_le75_pct": 74.8,
+   "max_age_le65_pct": 58.4,
+   "outcome_by_sex": 0,
+   "sample_nct": [
+    "NCT02451670",
+    "NCT02507349",
+    "NCT03451630"
+   ],
+   "age_trials": 131,
+   "over65_trial_pct": 2.3,
+   "mean_age": 40.6,
+   "burden_65plus_pct": 14.2,
+   "burden_70plus_pct": 8.0,
+   "women_share_70plus": 55.0,
+   "age_gap_pts": 11.9,
+   "ratio": 1.04,
+   "ratio_open": 1.04,
+   "gap_pts": 2.1,
+   "trials_per_100k_dalys": 62.33,
+   "participants_per_1k_dalys": 95.7,
+   "by_sponsor_ratio": {
+    "Industry": 1.06,
+    "NIH": 1.04,
+    "Other US government": 0.32,
+    "Universities, hospitals, other": 1.08
+   },
+   "by_period_ratio": {
+    "before 2010": 0.99,
+    "2010\u20132015": 1.04,
+    "2016\u20132020": 1.08,
+    "2021 onward": 1.13
+   },
+   "expected_trials": 274,
+   "trials_ratio_to_expected": 1.09,
+   "rank": 27
   },
   {
    "disease": "Peptic ulcer",
@@ -3378,8 +3507,8 @@
    "trials_open": 20,
    "female_only_trials": 0,
    "male_only_trials": 0,
-   "burden_female_pct": 44.3,
-   "dalys_k": 111.0,
+   "burden_female_pct": 44.0,
+   "dalys_k": 105.3,
    "skew": "balanced",
    "funding_m": 7.0,
    "by_sponsor": {
@@ -3470,157 +3599,413 @@
    "age_trials": 6,
    "over65_trial_pct": 64.9,
    "mean_age": 52.3,
-   "burden_65plus_pct": 51.2,
-   "burden_70plus_pct": 38.6,
-   "women_share_70plus": 52.1,
-   "ratio": 1.04,
-   "ratio_open": 1.04,
-   "gap_pts": 1.7,
-   "trials_per_100k_dalys": 18.92,
-   "participants_per_1k_dalys": 94.2,
+   "burden_65plus_pct": 55.9,
+   "burden_70plus_pct": 43.0,
+   "women_share_70plus": 50.8,
+   "ratio": 1.05,
+   "ratio_open": 1.05,
+   "gap_pts": 2.0,
+   "trials_per_100k_dalys": 19.94,
+   "participants_per_1k_dalys": 99.2,
    "by_sponsor_ratio": {
-    "Industry": 1.04,
+    "Industry": 1.05,
     "NIH": null,
     "Other US government": null,
-    "Universities, hospitals, other": 1.0
+    "Universities, hospitals, other": 1.01
    },
    "by_period_ratio": {
-    "before 2010": 1.04,
+    "before 2010": 1.05,
     "2010\u20132015": null,
     "2016\u20132020": null,
     "2021 onward": null
    },
-   "expected_trials": 159,
-   "trials_ratio_to_expected": 0.13,
-   "rank": 27
+   "expected_trials": 153,
+   "trials_ratio_to_expected": 0.14,
+   "rank": 28
   },
   {
-   "disease": "Bipolar disorder",
+   "disease": "Rheumatoid arthritis",
    "sex_specific": false,
-   "trials": 298,
-   "trials_sex_counted": 286,
-   "participants": 45738,
-   "female_pct": 52.5,
-   "female_pct_open": 52.5,
-   "trials_open": 284,
-   "female_only_trials": 2,
-   "male_only_trials": 0,
-   "burden_female_pct": 50.2,
-   "dalys_k": 474.9,
-   "skew": "balanced",
-   "funding_m": 84.0,
+   "trials": 424,
+   "trials_sex_counted": 404,
+   "participants": 164658,
+   "female_pct": 77.2,
+   "female_pct_open": 77.1,
+   "trials_open": 397,
+   "female_only_trials": 6,
+   "male_only_trials": 1,
+   "burden_female_pct": 73.2,
+   "dalys_k": 225.6,
+   "skew": "female",
+   "funding_m": 62.0,
    "by_sponsor": {
     "Industry": {
-     "trials": 47,
-     "participants": 16108,
-     "female_pct": 53.5
+     "trials": 313,
+     "participants": 158479,
+     "female_pct": 77.1
     },
     "NIH": {
-     "trials": 5,
-     "participants": 374,
-     "female_pct": 52.4
+     "trials": 14,
+     "participants": 757,
+     "female_pct": 77.7
     },
     "Other US government": {
-     "trials": 13,
-     "participants": 1829,
-     "female_pct": 16.3
+     "trials": 4,
+     "participants": 64,
+     "female_pct": 26.6
     },
     "Universities, hospitals, other": {
-     "trials": 221,
-     "participants": 27427,
+     "trials": 73,
+     "participants": 5358,
+     "female_pct": 78.1
+    }
+   },
+   "by_period": {
+    "before 2010": {
+     "trials": 136,
+     "participants": 68010,
+     "female_pct": 73.5
+    },
+    "2010\u20132015": {
+     "trials": 148,
+     "participants": 59470,
+     "female_pct": 79.5
+    },
+    "2016\u20132020": {
+     "trials": 91,
+     "participants": 33500,
+     "female_pct": 79.6
+    },
+    "2021 onward": {
+     "trials": 29,
+     "participants": 3678,
+     "female_pct": 83.3
+    }
+   },
+   "by_phase": {
+    "Phase 1": {
+     "trials": 25,
+     "participants": 1476,
+     "female_pct": 74.9
+    },
+    "Phase 2": {
+     "trials": 151,
+     "participants": 26452,
+     "female_pct": 81.2
+    },
+    "Phase 3": {
+     "trials": 135,
+     "participants": 89248,
+     "female_pct": 79.9
+    },
+    "Phase 4": {
+     "trials": 47,
+     "participants": 41740,
+     "female_pct": 69.9
+    },
+    "Not applicable": {
+     "trials": 46,
+     "participants": 5742,
+     "female_pct": 68.4
+    }
+   },
+   "excl_preg_pct": 51.2,
+   "excl_lact_pct": 36.1,
+   "contra_pct": 25.7,
+   "wocbp_pct": 22.2,
+   "pregtest_pct": 12.3,
+   "max_age_pct": 34.0,
+   "max_age_le75_pct": 22.6,
+   "max_age_le65_pct": 4.7,
+   "outcome_by_sex": 1,
+   "sample_nct": [
+    "NCT00346216",
+    "NCT02092467",
+    "NCT01331837"
+   ],
+   "age_trials": 114,
+   "over65_trial_pct": 34.8,
+   "mean_age": 55.5,
+   "burden_65plus_pct": 47.0,
+   "burden_70plus_pct": 33.2,
+   "women_share_70plus": 72.6,
+   "age_gap_pts": 12.2,
+   "ratio": 1.05,
+   "ratio_open": 1.05,
+   "gap_pts": 4.0,
+   "trials_per_100k_dalys": 187.94,
+   "participants_per_1k_dalys": 729.9,
+   "by_sponsor_ratio": {
+    "Industry": 1.05,
+    "NIH": 1.06,
+    "Other US government": null,
+    "Universities, hospitals, other": 1.07
+   },
+   "by_period_ratio": {
+    "before 2010": 1.0,
+    "2010\u20132015": 1.09,
+    "2016\u20132020": 1.09,
+    "2021 onward": 1.14
+   },
+   "expected_trials": 205,
+   "trials_ratio_to_expected": 2.07,
+   "rank": 29
+  },
+  {
+   "disease": "Asthma",
+   "sex_specific": false,
+   "trials": 568,
+   "trials_sex_counted": 548,
+   "participants": 222854,
+   "female_pct": 58.0,
+   "female_pct_open": 57.9,
+   "trials_open": 543,
+   "female_only_trials": 5,
+   "male_only_trials": 3,
+   "burden_female_pct": 54.8,
+   "dalys_k": 1551.0,
+   "skew": "balanced",
+   "funding_m": 270.0,
+   "by_sponsor": {
+    "Industry": {
+     "trials": 302,
+     "participants": 152839,
+     "female_pct": 59.8
+    },
+    "NIH": {
+     "trials": 11,
+     "participants": 1481,
+     "female_pct": 41.7
+    },
+    "Other US government": {
+     "trials": 4,
+     "participants": 287,
+     "female_pct": 36.2
+    },
+    "Universities, hospitals, other": {
+     "trials": 231,
+     "participants": 68247,
      "female_pct": 54.4
     }
    },
    "by_period": {
     "before 2010": {
-     "trials": 126,
-     "participants": 14311,
-     "female_pct": 50.0
+     "trials": 149,
+     "participants": 40764,
+     "female_pct": 55.8
     },
     "2010\u20132015": {
-     "trials": 91,
-     "participants": 14130,
-     "female_pct": 52.5
+     "trials": 225,
+     "participants": 124916,
+     "female_pct": 57.2
     },
     "2016\u20132020": {
-     "trials": 53,
-     "participants": 16337,
-     "female_pct": 54.5
+     "trials": 132,
+     "participants": 41040,
+     "female_pct": 60.7
     },
     "2021 onward": {
-     "trials": 16,
-     "participants": 960,
-     "female_pct": 56.9
+     "trials": 42,
+     "participants": 16134,
+     "female_pct": 63.1
     }
    },
    "by_phase": {
     "Phase 1": {
-     "trials": 4,
-     "participants": 137,
-     "female_pct": 46.7
+     "trials": 22,
+     "participants": 1698,
+     "female_pct": 56.7
     },
     "Phase 2": {
-     "trials": 47,
-     "participants": 2794,
-     "female_pct": 48.9
+     "trials": 157,
+     "participants": 28943,
+     "female_pct": 59.3
     },
     "Phase 3": {
-     "trials": 60,
-     "participants": 15341,
-     "female_pct": 50.7
+     "trials": 164,
+     "participants": 101091,
+     "female_pct": 59.9
     },
     "Phase 4": {
-     "trials": 88,
-     "participants": 8307,
-     "female_pct": 52.8
+     "trials": 85,
+     "participants": 36312,
+     "female_pct": 57.3
     },
     "Not applicable": {
-     "trials": 87,
-     "participants": 19159,
-     "female_pct": 54.4
+     "trials": 120,
+     "participants": 54810,
+     "female_pct": 54.5
     }
    },
-   "excl_preg_pct": 67.4,
-   "excl_lact_pct": 40.3,
-   "contra_pct": 37.9,
-   "wocbp_pct": 24.2,
-   "pregtest_pct": 14.1,
-   "max_age_pct": 80.5,
-   "max_age_le75_pct": 74.8,
-   "max_age_le65_pct": 58.4,
+   "excl_preg_pct": 52.6,
+   "excl_lact_pct": 36.6,
+   "contra_pct": 34.0,
+   "wocbp_pct": 28.7,
+   "pregtest_pct": 17.1,
+   "max_age_pct": 69.2,
+   "max_age_le75_pct": 64.3,
+   "max_age_le65_pct": 50.7,
    "outcome_by_sex": 0,
    "sample_nct": [
-    "NCT02451670",
-    "NCT02507349",
-    "NCT03451630"
+    "NCT01728571",
+    "NCT01444430",
+    "NCT01475721"
    ],
-   "age_trials": 131,
-   "over65_trial_pct": 2.3,
-   "mean_age": 40.6,
-   "burden_65plus_pct": 13.6,
-   "burden_70plus_pct": 7.5,
-   "women_share_70plus": 54.5,
-   "age_gap_pts": 11.3,
-   "ratio": 1.05,
-   "ratio_open": 1.05,
-   "gap_pts": 2.3,
-   "trials_per_100k_dalys": 62.75,
-   "participants_per_1k_dalys": 96.3,
+   "age_trials": 163,
+   "over65_trial_pct": 10.3,
+   "mean_age": 43.0,
+   "burden_65plus_pct": 17.1,
+   "burden_70plus_pct": 11.4,
+   "women_share_70plus": 63.3,
+   "age_gap_pts": 6.8,
+   "ratio": 1.06,
+   "ratio_open": 1.06,
+   "gap_pts": 3.2,
+   "trials_per_100k_dalys": 36.62,
+   "participants_per_1k_dalys": 143.7,
    "by_sponsor_ratio": {
-    "Industry": 1.07,
-    "NIH": 1.04,
-    "Other US government": 0.32,
-    "Universities, hospitals, other": 1.08
+    "Industry": 1.09,
+    "NIH": 0.76,
+    "Other US government": null,
+    "Universities, hospitals, other": 0.99
    },
    "by_period_ratio": {
-    "before 2010": 1.0,
-    "2010\u20132015": 1.05,
-    "2016\u20132020": 1.09,
-    "2021 onward": 1.13
+    "before 2010": 1.02,
+    "2010\u20132015": 1.04,
+    "2016\u20132020": 1.11,
+    "2021 onward": 1.15
    },
-   "expected_trials": 276,
-   "trials_ratio_to_expected": 1.08,
-   "rank": 28
+   "expected_trials": 433,
+   "trials_ratio_to_expected": 1.31,
+   "rank": 30
+  },
+  {
+   "disease": "Brain cancer",
+   "sex_specific": false,
+   "trials": 729,
+   "trials_sex_counted": 716,
+   "participants": 52031,
+   "female_pct": 46.1,
+   "female_pct_open": 45.5,
+   "trials_open": 706,
+   "female_only_trials": 8,
+   "male_only_trials": 2,
+   "burden_female_pct": 43.3,
+   "dalys_k": 597.4,
+   "skew": "balanced",
+   "funding_m": 429.0,
+   "by_sponsor": {
+    "Industry": {
+     "trials": 137,
+     "participants": 18027,
+     "female_pct": 50.2
+    },
+    "NIH": {
+     "trials": 109,
+     "participants": 8200,
+     "female_pct": 44.9
+    },
+    "Other US government": {
+     "trials": 0,
+     "participants": 0,
+     "female_pct": null
+    },
+    "Universities, hospitals, other": {
+     "trials": 470,
+     "participants": 25804,
+     "female_pct": 43.7
+    }
+   },
+   "by_period": {
+    "before 2010": {
+     "trials": 247,
+     "participants": 20793,
+     "female_pct": 44.7
+    },
+    "2010\u20132015": {
+     "trials": 238,
+     "participants": 16855,
+     "female_pct": 46.0
+    },
+    "2016\u20132020": {
+     "trials": 200,
+     "participants": 13123,
+     "female_pct": 47.0
+    },
+    "2021 onward": {
+     "trials": 31,
+     "participants": 1260,
+     "female_pct": 63.4
+    }
+   },
+   "by_phase": {
+    "Phase 1": {
+     "trials": 81,
+     "participants": 2349,
+     "female_pct": 46.1
+    },
+    "Phase 2": {
+     "trials": 503,
+     "participants": 29991,
+     "female_pct": 45.3
+    },
+    "Phase 3": {
+     "trials": 53,
+     "participants": 15274,
+     "female_pct": 46.8
+    },
+    "Phase 4": {
+     "trials": 12,
+     "participants": 1478,
+     "female_pct": 51.6
+    },
+    "Not applicable": {
+     "trials": 67,
+     "participants": 2939,
+     "female_pct": 48.4
+    }
+   },
+   "excl_preg_pct": 81.3,
+   "excl_lact_pct": 59.7,
+   "contra_pct": 72.4,
+   "wocbp_pct": 57.2,
+   "pregtest_pct": 56.1,
+   "max_age_pct": 26.2,
+   "max_age_le75_pct": 20.2,
+   "max_age_le65_pct": 17.6,
+   "outcome_by_sex": 0,
+   "sample_nct": [
+    "NCT03155620",
+    "NCT00304031",
+    "NCT00943826"
+   ],
+   "age_trials": 308,
+   "over65_trial_pct": 15.1,
+   "mean_age": 47.6,
+   "burden_65plus_pct": 39.8,
+   "burden_70plus_pct": 26.2,
+   "women_share_70plus": 46.1,
+   "age_gap_pts": 24.7,
+   "ratio": 1.06,
+   "ratio_open": 1.05,
+   "gap_pts": 2.8,
+   "trials_per_100k_dalys": 122.03,
+   "participants_per_1k_dalys": 87.1,
+   "by_sponsor_ratio": {
+    "Industry": 1.16,
+    "NIH": 1.04,
+    "Other US government": null,
+    "Universities, hospitals, other": 1.01
+   },
+   "by_period_ratio": {
+    "before 2010": 1.03,
+    "2010\u20132015": 1.06,
+    "2016\u20132020": 1.09,
+    "2021 onward": 1.46
+   },
+   "expected_trials": 299,
+   "trials_ratio_to_expected": 2.44,
+   "rank": 31
   },
   {
    "disease": "Eating disorders",
@@ -3633,8 +4018,8 @@
    "trials_open": 55,
    "female_only_trials": 35,
    "male_only_trials": 0,
-   "burden_female_pct": 71.8,
-   "dalys_k": 191.0,
+   "burden_female_pct": 71.4,
+   "dalys_k": 196.3,
    "skew": "female",
    "funding_m": 55.0,
    "by_sponsor": {
@@ -3727,284 +4112,28 @@
    "mean_age": 43.9,
    "burden_65plus_pct": 1.3,
    "burden_70plus_pct": 0.3,
-   "women_share_70plus": 91.8,
+   "women_share_70plus": 91.9,
    "age_gap_pts": 1.0,
-   "ratio": 1.05,
-   "ratio_open": 0.98,
-   "gap_pts": 3.8,
-   "trials_per_100k_dalys": 52.88,
-   "participants_per_1k_dalys": 69.6,
+   "ratio": 1.06,
+   "ratio_open": 0.99,
+   "gap_pts": 4.2,
+   "trials_per_100k_dalys": 51.45,
+   "participants_per_1k_dalys": 67.8,
    "by_sponsor_ratio": {
-    "Industry": 1.18,
+    "Industry": 1.19,
     "NIH": null,
     "Other US government": null,
-    "Universities, hospitals, other": 1.02
+    "Universities, hospitals, other": 1.03
    },
    "by_period_ratio": {
     "before 2010": 0.89,
-    "2010\u20132015": 1.23,
-    "2016\u20132020": 1.13,
+    "2010\u20132015": 1.24,
+    "2016\u20132020": 1.14,
     "2021 onward": 1.27
    },
-   "expected_trials": 195,
+   "expected_trials": 194,
    "trials_ratio_to_expected": 0.52,
-   "rank": 29
-  },
-  {
-   "disease": "Asthma",
-   "sex_specific": false,
-   "trials": 568,
-   "trials_sex_counted": 548,
-   "participants": 222854,
-   "female_pct": 58.0,
-   "female_pct_open": 57.9,
-   "trials_open": 543,
-   "female_only_trials": 5,
-   "male_only_trials": 3,
-   "burden_female_pct": 54.8,
-   "dalys_k": 1428.7,
-   "skew": "balanced",
-   "funding_m": 270.0,
-   "by_sponsor": {
-    "Industry": {
-     "trials": 302,
-     "participants": 152839,
-     "female_pct": 59.8
-    },
-    "NIH": {
-     "trials": 11,
-     "participants": 1481,
-     "female_pct": 41.7
-    },
-    "Other US government": {
-     "trials": 4,
-     "participants": 287,
-     "female_pct": 36.2
-    },
-    "Universities, hospitals, other": {
-     "trials": 231,
-     "participants": 68247,
-     "female_pct": 54.4
-    }
-   },
-   "by_period": {
-    "before 2010": {
-     "trials": 149,
-     "participants": 40764,
-     "female_pct": 55.8
-    },
-    "2010\u20132015": {
-     "trials": 225,
-     "participants": 124916,
-     "female_pct": 57.2
-    },
-    "2016\u20132020": {
-     "trials": 132,
-     "participants": 41040,
-     "female_pct": 60.7
-    },
-    "2021 onward": {
-     "trials": 42,
-     "participants": 16134,
-     "female_pct": 63.1
-    }
-   },
-   "by_phase": {
-    "Phase 1": {
-     "trials": 22,
-     "participants": 1698,
-     "female_pct": 56.7
-    },
-    "Phase 2": {
-     "trials": 157,
-     "participants": 28943,
-     "female_pct": 59.3
-    },
-    "Phase 3": {
-     "trials": 164,
-     "participants": 101091,
-     "female_pct": 59.9
-    },
-    "Phase 4": {
-     "trials": 85,
-     "participants": 36312,
-     "female_pct": 57.3
-    },
-    "Not applicable": {
-     "trials": 120,
-     "participants": 54810,
-     "female_pct": 54.5
-    }
-   },
-   "excl_preg_pct": 52.6,
-   "excl_lact_pct": 36.6,
-   "contra_pct": 34.2,
-   "wocbp_pct": 28.7,
-   "pregtest_pct": 17.1,
-   "max_age_pct": 69.2,
-   "max_age_le75_pct": 64.3,
-   "max_age_le65_pct": 50.7,
-   "outcome_by_sex": 0,
-   "sample_nct": [
-    "NCT01728571",
-    "NCT01444430",
-    "NCT01475721"
-   ],
-   "age_trials": 163,
-   "over65_trial_pct": 10.3,
-   "mean_age": 43.0,
-   "burden_65plus_pct": 15.8,
-   "burden_70plus_pct": 10.3,
-   "women_share_70plus": 63.2,
-   "age_gap_pts": 5.5,
-   "ratio": 1.06,
-   "ratio_open": 1.06,
-   "gap_pts": 3.2,
-   "trials_per_100k_dalys": 39.76,
-   "participants_per_1k_dalys": 156.0,
-   "by_sponsor_ratio": {
-    "Industry": 1.09,
-    "NIH": 0.76,
-    "Other US government": null,
-    "Universities, hospitals, other": 0.99
-   },
-   "by_period_ratio": {
-    "before 2010": 1.02,
-    "2010\u20132015": 1.04,
-    "2016\u20132020": 1.11,
-    "2021 onward": 1.15
-   },
-   "expected_trials": 419,
-   "trials_ratio_to_expected": 1.35,
-   "rank": 30
-  },
-  {
-   "disease": "Rheumatoid arthritis",
-   "sex_specific": false,
-   "trials": 424,
-   "trials_sex_counted": 404,
-   "participants": 164658,
-   "female_pct": 77.2,
-   "female_pct_open": 77.1,
-   "trials_open": 397,
-   "female_only_trials": 6,
-   "male_only_trials": 1,
-   "burden_female_pct": 72.9,
-   "dalys_k": 219.9,
-   "skew": "female",
-   "funding_m": 62.0,
-   "by_sponsor": {
-    "Industry": {
-     "trials": 313,
-     "participants": 158479,
-     "female_pct": 77.1
-    },
-    "NIH": {
-     "trials": 14,
-     "participants": 757,
-     "female_pct": 77.7
-    },
-    "Other US government": {
-     "trials": 4,
-     "participants": 64,
-     "female_pct": 26.6
-    },
-    "Universities, hospitals, other": {
-     "trials": 73,
-     "participants": 5358,
-     "female_pct": 78.1
-    }
-   },
-   "by_period": {
-    "before 2010": {
-     "trials": 136,
-     "participants": 68010,
-     "female_pct": 73.5
-    },
-    "2010\u20132015": {
-     "trials": 148,
-     "participants": 59470,
-     "female_pct": 79.5
-    },
-    "2016\u20132020": {
-     "trials": 91,
-     "participants": 33500,
-     "female_pct": 79.6
-    },
-    "2021 onward": {
-     "trials": 29,
-     "participants": 3678,
-     "female_pct": 83.3
-    }
-   },
-   "by_phase": {
-    "Phase 1": {
-     "trials": 25,
-     "participants": 1476,
-     "female_pct": 74.9
-    },
-    "Phase 2": {
-     "trials": 151,
-     "participants": 26452,
-     "female_pct": 81.2
-    },
-    "Phase 3": {
-     "trials": 135,
-     "participants": 89248,
-     "female_pct": 79.9
-    },
-    "Phase 4": {
-     "trials": 47,
-     "participants": 41740,
-     "female_pct": 69.9
-    },
-    "Not applicable": {
-     "trials": 46,
-     "participants": 5742,
-     "female_pct": 68.4
-    }
-   },
-   "excl_preg_pct": 51.2,
-   "excl_lact_pct": 36.1,
-   "contra_pct": 25.7,
-   "wocbp_pct": 22.2,
-   "pregtest_pct": 12.3,
-   "max_age_pct": 34.0,
-   "max_age_le75_pct": 22.6,
-   "max_age_le65_pct": 4.7,
-   "outcome_by_sex": 1,
-   "sample_nct": [
-    "NCT00346216",
-    "NCT02092467",
-    "NCT01331837"
-   ],
-   "age_trials": 114,
-   "over65_trial_pct": 34.8,
-   "mean_age": 55.5,
-   "burden_65plus_pct": 46.0,
-   "burden_70plus_pct": 32.0,
-   "women_share_70plus": 73.8,
-   "age_gap_pts": 11.2,
-   "ratio": 1.06,
-   "ratio_open": 1.06,
-   "gap_pts": 4.3,
-   "trials_per_100k_dalys": 192.81,
-   "participants_per_1k_dalys": 748.8,
-   "by_sponsor_ratio": {
-    "Industry": 1.06,
-    "NIH": 1.07,
-    "Other US government": null,
-    "Universities, hospitals, other": 1.07
-   },
-   "by_period_ratio": {
-    "before 2010": 1.01,
-    "2010\u20132015": 1.09,
-    "2016\u20132020": 1.09,
-    "2021 onward": 1.14
-   },
-   "expected_trials": 206,
-   "trials_ratio_to_expected": 2.06,
-   "rank": 31
+   "rank": 32
   },
   {
    "disease": "Diabetes",
@@ -4017,8 +4146,8 @@
    "trials_open": 2201,
    "female_only_trials": 71,
    "male_only_trials": 31,
-   "burden_female_pct": 42.7,
-   "dalys_k": 4446.7,
+   "burden_female_pct": 42.6,
+   "dalys_k": 4539.8,
    "skew": "balanced",
    "funding_m": 1151.0,
    "by_sponsor": {
@@ -4109,15 +4238,15 @@
    "age_trials": 738,
    "over65_trial_pct": 35.4,
    "mean_age": 58.5,
-   "burden_65plus_pct": 48.2,
-   "burden_70plus_pct": 33.6,
-   "women_share_70plus": 47.0,
-   "age_gap_pts": 12.8,
+   "burden_65plus_pct": 49.8,
+   "burden_70plus_pct": 35.2,
+   "women_share_70plus": 46.6,
+   "age_gap_pts": 14.4,
    "ratio": 1.08,
    "ratio_open": 1.07,
-   "gap_pts": 3.4,
-   "trials_per_100k_dalys": 53.59,
-   "participants_per_1k_dalys": 234.1,
+   "gap_pts": 3.5,
+   "trials_per_100k_dalys": 52.49,
+   "participants_per_1k_dalys": 229.3,
    "by_sponsor_ratio": {
     "Industry": 1.03,
     "NIH": 0.98,
@@ -4126,140 +4255,12 @@
    },
    "by_period_ratio": {
     "before 2010": 1.05,
-    "2010\u20132015": 0.99,
+    "2010\u20132015": 1.0,
     "2016\u20132020": 1.19,
-    "2021 onward": 1.15
+    "2021 onward": 1.16
    },
-   "expected_trials": 645,
-   "trials_ratio_to_expected": 3.69,
-   "rank": 32
-  },
-  {
-   "disease": "Brain cancer",
-   "sex_specific": false,
-   "trials": 729,
-   "trials_sex_counted": 716,
-   "participants": 52031,
-   "female_pct": 46.1,
-   "female_pct_open": 45.5,
-   "trials_open": 706,
-   "female_only_trials": 8,
-   "male_only_trials": 2,
-   "burden_female_pct": 42.4,
-   "dalys_k": 558.7,
-   "skew": "balanced",
-   "funding_m": 429.0,
-   "by_sponsor": {
-    "Industry": {
-     "trials": 137,
-     "participants": 18027,
-     "female_pct": 50.2
-    },
-    "NIH": {
-     "trials": 109,
-     "participants": 8200,
-     "female_pct": 44.9
-    },
-    "Other US government": {
-     "trials": 0,
-     "participants": 0,
-     "female_pct": null
-    },
-    "Universities, hospitals, other": {
-     "trials": 470,
-     "participants": 25804,
-     "female_pct": 43.7
-    }
-   },
-   "by_period": {
-    "before 2010": {
-     "trials": 247,
-     "participants": 20793,
-     "female_pct": 44.7
-    },
-    "2010\u20132015": {
-     "trials": 238,
-     "participants": 16855,
-     "female_pct": 46.0
-    },
-    "2016\u20132020": {
-     "trials": 200,
-     "participants": 13123,
-     "female_pct": 47.0
-    },
-    "2021 onward": {
-     "trials": 31,
-     "participants": 1260,
-     "female_pct": 63.4
-    }
-   },
-   "by_phase": {
-    "Phase 1": {
-     "trials": 81,
-     "participants": 2349,
-     "female_pct": 46.1
-    },
-    "Phase 2": {
-     "trials": 503,
-     "participants": 29991,
-     "female_pct": 45.3
-    },
-    "Phase 3": {
-     "trials": 53,
-     "participants": 15274,
-     "female_pct": 46.8
-    },
-    "Phase 4": {
-     "trials": 12,
-     "participants": 1478,
-     "female_pct": 51.6
-    },
-    "Not applicable": {
-     "trials": 67,
-     "participants": 2939,
-     "female_pct": 48.4
-    }
-   },
-   "excl_preg_pct": 81.3,
-   "excl_lact_pct": 59.7,
-   "contra_pct": 72.6,
-   "wocbp_pct": 57.2,
-   "pregtest_pct": 56.1,
-   "max_age_pct": 26.2,
-   "max_age_le75_pct": 20.2,
-   "max_age_le65_pct": 17.6,
-   "outcome_by_sex": 0,
-   "sample_nct": [
-    "NCT03155620",
-    "NCT00304031",
-    "NCT00943826"
-   ],
-   "age_trials": 308,
-   "over65_trial_pct": 15.1,
-   "mean_age": 47.6,
-   "burden_65plus_pct": 39.4,
-   "burden_70plus_pct": 25.5,
-   "women_share_70plus": 46.2,
-   "age_gap_pts": 24.3,
-   "ratio": 1.09,
-   "ratio_open": 1.07,
-   "gap_pts": 3.7,
-   "trials_per_100k_dalys": 130.48,
-   "participants_per_1k_dalys": 93.1,
-   "by_sponsor_ratio": {
-    "Industry": 1.18,
-    "NIH": 1.06,
-    "Other US government": null,
-    "Universities, hospitals, other": 1.03
-   },
-   "by_period_ratio": {
-    "before 2010": 1.05,
-    "2010\u20132015": 1.08,
-    "2016\u20132020": 1.11,
-    "2021 onward": 1.5
-   },
-   "expected_trials": 294,
-   "trials_ratio_to_expected": 2.48,
+   "expected_trials": 655,
+   "trials_ratio_to_expected": 3.64,
    "rank": 33
   },
   {
@@ -4273,8 +4274,8 @@
    "trials_open": 715,
    "female_only_trials": 2,
    "male_only_trials": 9,
-   "burden_female_pct": 43.9,
-   "dalys_k": 1462.4,
+   "burden_female_pct": 43.3,
+   "dalys_k": 1576.8,
    "skew": "balanced",
    "funding_m": 338.0,
    "by_sponsor": {
@@ -4365,158 +4366,30 @@
    "age_trials": 284,
    "over65_trial_pct": 34.7,
    "mean_age": 60.7,
-   "burden_65plus_pct": 50.6,
-   "burden_70plus_pct": 35.9,
-   "women_share_70plus": 49.3,
-   "age_gap_pts": 15.9,
-   "ratio": 1.09,
-   "ratio_open": 1.11,
-   "gap_pts": 3.8,
-   "trials_per_100k_dalys": 52.58,
-   "participants_per_1k_dalys": 228.8,
+   "burden_65plus_pct": 50.1,
+   "burden_70plus_pct": 35.4,
+   "women_share_70plus": 48.8,
+   "age_gap_pts": 15.4,
+   "ratio": 1.1,
+   "ratio_open": 1.13,
+   "gap_pts": 4.4,
+   "trials_per_100k_dalys": 48.77,
+   "participants_per_1k_dalys": 212.2,
    "by_sponsor_ratio": {
-    "Industry": 1.0,
-    "NIH": 1.15,
-    "Other US government": 0.23,
-    "Universities, hospitals, other": 1.13
-   },
-   "by_period_ratio": {
-    "before 2010": 1.06,
-    "2010\u20132015": 1.02,
-    "2016\u20132020": 1.2,
-    "2021 onward": 1.17
-   },
-   "expected_trials": 423,
-   "trials_ratio_to_expected": 1.82,
-   "rank": 34
-  },
-  {
-   "disease": "Lymphoma",
-   "sex_specific": false,
-   "trials": 1492,
-   "trials_sex_counted": 1463,
-   "participants": 136965,
-   "female_pct": 44.4,
-   "female_pct_open": 44.2,
-   "trials_open": 1461,
-   "female_only_trials": 2,
-   "male_only_trials": 0,
-   "burden_female_pct": 40.1,
-   "dalys_k": 504.8,
-   "skew": "balanced",
-   "funding_m": 287.0,
-   "by_sponsor": {
-    "Industry": {
-     "trials": 449,
-     "participants": 71014,
-     "female_pct": 45.3
-    },
-    "NIH": {
-     "trials": 155,
-     "participants": 15773,
-     "female_pct": 42.4
-    },
-    "Other US government": {
-     "trials": 2,
-     "participants": 66,
-     "female_pct": 53.0
-    },
-    "Universities, hospitals, other": {
-     "trials": 857,
-     "participants": 50112,
-     "female_pct": 43.9
-    }
-   },
-   "by_period": {
-    "before 2010": {
-     "trials": 545,
-     "participants": 47384,
-     "female_pct": 43.5
-    },
-    "2010\u20132015": {
-     "trials": 482,
-     "participants": 59939,
-     "female_pct": 43.7
-    },
-    "2016\u20132020": {
-     "trials": 353,
-     "participants": 25669,
-     "female_pct": 48.2
-    },
-    "2021 onward": {
-     "trials": 83,
-     "participants": 3973,
-     "female_pct": 42.8
-    }
-   },
-   "by_phase": {
-    "Phase 1": {
-     "trials": 150,
-     "participants": 7833,
-     "female_pct": 46.1
-    },
-    "Phase 2": {
-     "trials": 1077,
-     "participants": 59596,
-     "female_pct": 41.3
-    },
-    "Phase 3": {
-     "trials": 143,
-     "participants": 62985,
-     "female_pct": 46.3
-    },
-    "Phase 4": {
-     "trials": 12,
-     "participants": 481,
-     "female_pct": 43.0
-    },
-    "Not applicable": {
-     "trials": 81,
-     "participants": 6070,
-     "female_pct": 54.0
-    }
-   },
-   "excl_preg_pct": 74.3,
-   "excl_lact_pct": 57.6,
-   "contra_pct": 61.6,
-   "wocbp_pct": 48.1,
-   "pregtest_pct": 39.9,
-   "max_age_pct": 29.0,
-   "max_age_le75_pct": 24.9,
-   "max_age_le65_pct": 13.6,
-   "outcome_by_sex": 0,
-   "sample_nct": [
-    "NCT02883049",
-    "NCT00075725",
-    "NCT01163253"
-   ],
-   "age_trials": 644,
-   "over65_trial_pct": 20.5,
-   "mean_age": 52.7,
-   "burden_65plus_pct": 63.1,
-   "burden_70plus_pct": 50.0,
-   "women_share_70plus": 43.6,
-   "age_gap_pts": 42.6,
-   "ratio": 1.11,
-   "ratio_open": 1.1,
-   "gap_pts": 4.3,
-   "trials_per_100k_dalys": 295.56,
-   "participants_per_1k_dalys": 271.3,
-   "by_sponsor_ratio": {
-    "Industry": 1.13,
-    "NIH": 1.06,
-    "Other US government": null,
-    "Universities, hospitals, other": 1.09
+    "Industry": 1.02,
+    "NIH": 1.16,
+    "Other US government": 0.24,
+    "Universities, hospitals, other": 1.15
    },
    "by_period_ratio": {
     "before 2010": 1.08,
-    "2010\u20132015": 1.09,
-    "2016\u20132020": 1.2,
-    "2021 onward": 1.07
+    "2010\u20132015": 1.03,
+    "2016\u20132020": 1.21,
+    "2021 onward": 1.19
    },
-   "expected_trials": 282,
-   "trials_ratio_to_expected": 5.28,
-   "rank": 35
+   "expected_trials": 435,
+   "trials_ratio_to_expected": 1.77,
+   "rank": 34
   },
   {
    "disease": "Oral and dental disease",
@@ -4530,7 +4403,7 @@
    "female_only_trials": 5,
    "male_only_trials": 0,
    "burden_female_pct": 52.8,
-   "dalys_k": 1297.8,
+   "dalys_k": 1326.6,
    "skew": "balanced",
    "funding_m": 742.0,
    "by_sponsor": {
@@ -4621,15 +4494,15 @@
    "age_trials": 180,
    "over65_trial_pct": 5.5,
    "mean_age": 43.1,
-   "burden_65plus_pct": 40.1,
-   "burden_70plus_pct": 28.0,
-   "women_share_70plus": 57.2,
-   "age_gap_pts": 34.6,
+   "burden_65plus_pct": 41.4,
+   "burden_70plus_pct": 29.4,
+   "women_share_70plus": 56.9,
+   "age_gap_pts": 35.9,
    "ratio": 1.11,
    "ratio_open": 1.0,
    "gap_pts": 5.6,
-   "trials_per_100k_dalys": 33.52,
-   "participants_per_1k_dalys": 70.4,
+   "trials_per_100k_dalys": 32.79,
+   "participants_per_1k_dalys": 68.9,
    "by_sponsor_ratio": {
     "Industry": 1.03,
     "NIH": 0.52,
@@ -4642,393 +4515,137 @@
     "2016\u20132020": 1.03,
     "2021 onward": 1.15
    },
-   "expected_trials": 404,
-   "trials_ratio_to_expected": 1.08,
-   "rank": 36
+   "expected_trials": 407,
+   "trials_ratio_to_expected": 1.07,
+   "rank": 35
   },
   {
-   "disease": "Hodgkin lymphoma",
+   "disease": "Lymphoma",
    "sex_specific": false,
-   "trials": 341,
-   "trials_sex_counted": 335,
-   "participants": 26633,
-   "female_pct": 44.9,
-   "female_pct_open": 44.9,
-   "trials_open": 334,
-   "female_only_trials": 1,
+   "trials": 1492,
+   "trials_sex_counted": 1463,
+   "participants": 136965,
+   "female_pct": 44.4,
+   "female_pct_open": 44.2,
+   "trials_open": 1461,
+   "female_only_trials": 2,
    "male_only_trials": 0,
-   "burden_female_pct": 39.3,
-   "dalys_k": 31.0,
+   "burden_female_pct": 39.6,
+   "dalys_k": 530.5,
    "skew": "male",
-   "funding_m": 20.0,
+   "funding_m": 287.0,
    "by_sponsor": {
     "Industry": {
-     "trials": 51,
-     "participants": 5758,
-     "female_pct": 43.1
+     "trials": 449,
+     "participants": 71014,
+     "female_pct": 45.3
     },
     "NIH": {
-     "trials": 25,
-     "participants": 2282,
-     "female_pct": 40.7
+     "trials": 155,
+     "participants": 15773,
+     "female_pct": 42.4
     },
     "Other US government": {
-     "trials": 0,
-     "participants": 0,
-     "female_pct": null
+     "trials": 2,
+     "participants": 66,
+     "female_pct": 53.0
     },
     "Universities, hospitals, other": {
-     "trials": 259,
-     "participants": 18593,
-     "female_pct": 46.0
+     "trials": 857,
+     "participants": 50112,
+     "female_pct": 43.9
     }
    },
    "by_period": {
     "before 2010": {
-     "trials": 166,
-     "participants": 14109,
-     "female_pct": 44.8
+     "trials": 545,
+     "participants": 47384,
+     "female_pct": 43.5
     },
     "2010\u20132015": {
-     "trials": 108,
-     "participants": 7983,
-     "female_pct": 41.7
+     "trials": 482,
+     "participants": 59939,
+     "female_pct": 43.7
     },
     "2016\u20132020": {
-     "trials": 55,
-     "participants": 4222,
-     "female_pct": 51.2
+     "trials": 353,
+     "participants": 25669,
+     "female_pct": 48.2
     },
     "2021 onward": {
-     "trials": 6,
-     "participants": 319,
-     "female_pct": 46.4
+     "trials": 83,
+     "participants": 3973,
+     "female_pct": 42.8
     }
    },
    "by_phase": {
     "Phase 1": {
-     "trials": 18,
-     "participants": 957,
-     "female_pct": 38.9
+     "trials": 150,
+     "participants": 7833,
+     "female_pct": 46.1
     },
     "Phase 2": {
-     "trials": 264,
-     "participants": 15745,
-     "female_pct": 42.1
+     "trials": 1077,
+     "participants": 59596,
+     "female_pct": 41.3
     },
     "Phase 3": {
-     "trials": 21,
-     "participants": 8072,
-     "female_pct": 47.5
+     "trials": 143,
+     "participants": 62985,
+     "female_pct": 46.3
     },
     "Phase 4": {
-     "trials": 0,
-     "participants": 0,
-     "female_pct": null
+     "trials": 12,
+     "participants": 481,
+     "female_pct": 43.0
     },
     "Not applicable": {
-     "trials": 32,
-     "participants": 1859,
-     "female_pct": 60.9
+     "trials": 81,
+     "participants": 6070,
+     "female_pct": 54.0
     }
    },
-   "excl_preg_pct": 78.9,
-   "excl_lact_pct": 56.6,
-   "contra_pct": 61.9,
-   "wocbp_pct": 41.6,
-   "pregtest_pct": 33.1,
-   "max_age_pct": 44.0,
-   "max_age_le75_pct": 41.6,
-   "max_age_le65_pct": 18.5,
+   "excl_preg_pct": 74.3,
+   "excl_lact_pct": 57.6,
+   "contra_pct": 61.5,
+   "wocbp_pct": 48.1,
+   "pregtest_pct": 39.9,
+   "max_age_pct": 29.0,
+   "max_age_le75_pct": 24.9,
+   "max_age_le65_pct": 13.6,
    "outcome_by_sex": 0,
    "sample_nct": [
-    "NCT00025259",
-    "NCT01712490",
-    "NCT03907488"
+    "NCT02883049",
+    "NCT00075725",
+    "NCT01163253"
    ],
-   "age_trials": 169,
-   "over65_trial_pct": 15.6,
-   "mean_age": 41.9,
-   "burden_65plus_pct": 45.0,
-   "burden_70plus_pct": 33.4,
-   "women_share_70plus": 43.6,
-   "age_gap_pts": 29.4,
-   "ratio": 1.14,
-   "ratio_open": 1.14,
-   "gap_pts": 5.6,
-   "trials_per_100k_dalys": 1100.0,
-   "participants_per_1k_dalys": 859.1,
-   "by_sponsor_ratio": {
-    "Industry": 1.1,
-    "NIH": 1.04,
-    "Other US government": null,
-    "Universities, hospitals, other": 1.17
-   },
-   "by_period_ratio": {
-    "before 2010": 1.14,
-    "2010\u20132015": 1.06,
-    "2016\u20132020": 1.3,
-    "2021 onward": 1.18
-   },
-   "expected_trials": 98,
-   "trials_ratio_to_expected": 3.48,
-   "rank": 37
-  },
-  {
-   "disease": "Migraine",
-   "sex_specific": false,
-   "trials": 266,
-   "trials_sex_counted": 253,
-   "participants": 77865,
-   "female_pct": 83.2,
-   "female_pct_open": 83.1,
-   "trials_open": 247,
-   "female_only_trials": 6,
-   "male_only_trials": 0,
-   "burden_female_pct": 73.2,
-   "dalys_k": 2043.6,
-   "skew": "female",
-   "funding_m": 41.0,
-   "by_sponsor": {
-    "Industry": {
-     "trials": 146,
-     "participants": 68618,
-     "female_pct": 83.5
-    },
-    "NIH": {
-     "trials": 0,
-     "participants": 0,
-     "female_pct": null
-    },
-    "Other US government": {
-     "trials": 3,
-     "participants": 77,
-     "female_pct": 75.3
-    },
-    "Universities, hospitals, other": {
-     "trials": 104,
-     "participants": 9170,
-     "female_pct": 81.3
-    }
-   },
-   "by_period": {
-    "before 2010": {
-     "trials": 56,
-     "participants": 11682,
-     "female_pct": 78.9
-    },
-    "2010\u20132015": {
-     "trials": 68,
-     "participants": 16988,
-     "female_pct": 82.5
-    },
-    "2016\u20132020": {
-     "trials": 104,
-     "participants": 41322,
-     "female_pct": 84.7
-    },
-    "2021 onward": {
-     "trials": 25,
-     "participants": 7873,
-     "female_pct": 83.3
-    }
-   },
-   "by_phase": {
-    "Phase 1": {
-     "trials": 15,
-     "participants": 482,
-     "female_pct": 63.9
-    },
-    "Phase 2": {
-     "trials": 44,
-     "participants": 7979,
-     "female_pct": 81.1
-    },
-    "Phase 3": {
-     "trials": 80,
-     "participants": 52375,
-     "female_pct": 83.6
-    },
-    "Phase 4": {
-     "trials": 60,
-     "participants": 12614,
-     "female_pct": 83.4
-    },
-    "Not applicable": {
-     "trials": 54,
-     "participants": 4415,
-     "female_pct": 83.9
-    }
-   },
-   "excl_preg_pct": 61.3,
-   "excl_lact_pct": 36.1,
-   "contra_pct": 31.2,
-   "wocbp_pct": 25.2,
-   "pregtest_pct": 19.5,
-   "max_age_pct": 77.1,
-   "max_age_le75_pct": 71.4,
-   "max_age_le65_pct": 59.8,
-   "outcome_by_sex": 0,
-   "sample_nct": [
-    "NCT02565186",
-    "NCT02638103",
-    "NCT03266588"
-   ],
-   "age_trials": 69,
-   "over65_trial_pct": 0.4,
-   "mean_age": 38.9,
-   "burden_65plus_pct": 11.5,
-   "burden_70plus_pct": 6.0,
-   "women_share_70plus": 73.4,
-   "age_gap_pts": 11.1,
-   "ratio": 1.14,
-   "ratio_open": 1.14,
-   "gap_pts": 10.0,
-   "trials_per_100k_dalys": 13.02,
-   "participants_per_1k_dalys": 38.1,
+   "age_trials": 644,
+   "over65_trial_pct": 20.5,
+   "mean_age": 52.7,
+   "burden_65plus_pct": 62.5,
+   "burden_70plus_pct": 49.8,
+   "women_share_70plus": 42.8,
+   "age_gap_pts": 42.0,
+   "ratio": 1.12,
+   "ratio_open": 1.12,
+   "gap_pts": 4.8,
+   "trials_per_100k_dalys": 281.24,
+   "participants_per_1k_dalys": 258.2,
    "by_sponsor_ratio": {
     "Industry": 1.14,
-    "NIH": null,
+    "NIH": 1.07,
     "Other US government": null,
     "Universities, hospitals, other": 1.11
    },
    "by_period_ratio": {
-    "before 2010": 1.08,
-    "2010\u20132015": 1.13,
-    "2016\u20132020": 1.16,
-    "2021 onward": 1.14
+    "before 2010": 1.1,
+    "2010\u20132015": 1.1,
+    "2016\u20132020": 1.22,
+    "2021 onward": 1.08
    },
-   "expected_trials": 480,
-   "trials_ratio_to_expected": 0.55,
-   "rank": 38
-  },
-  {
-   "disease": "Cocaine use disorders",
-   "sex_specific": false,
-   "trials": 117,
-   "trials_sex_counted": 115,
-   "participants": 10006,
-   "female_pct": 29.4,
-   "female_pct_open": 27.9,
-   "trials_open": 110,
-   "female_only_trials": 3,
-   "male_only_trials": 2,
-   "burden_female_pct": 25.7,
-   "dalys_k": 828.3,
-   "skew": "male",
-   "funding_m": 142.0,
-   "by_sponsor": {
-    "Industry": {
-     "trials": 3,
-     "participants": 438,
-     "female_pct": 31.5
-    },
-    "NIH": {
-     "trials": 3,
-     "participants": 466,
-     "female_pct": 23.2
-    },
-    "Other US government": {
-     "trials": 4,
-     "participants": 108,
-     "female_pct": 4.6
-    },
-    "Universities, hospitals, other": {
-     "trials": 105,
-     "participants": 8994,
-     "female_pct": 29.9
-    }
-   },
-   "by_period": {
-    "before 2010": {
-     "trials": 59,
-     "participants": 4577,
-     "female_pct": 31.4
-    },
-    "2010\u20132015": {
-     "trials": 44,
-     "participants": 3665,
-     "female_pct": 29.9
-    },
-    "2016\u20132020": {
-     "trials": 11,
-     "participants": 1635,
-     "female_pct": 23.3
-    },
-    "2021 onward": {
-     "trials": 1,
-     "participants": 129,
-     "female_pct": 25.6
-    }
-   },
-   "by_phase": {
-    "Phase 1": {
-     "trials": 7,
-     "participants": 230,
-     "female_pct": 25.7
-    },
-    "Phase 2": {
-     "trials": 73,
-     "participants": 5651,
-     "female_pct": 28.8
-    },
-    "Phase 3": {
-     "trials": 12,
-     "participants": 1566,
-     "female_pct": 33.1
-    },
-    "Phase 4": {
-     "trials": 2,
-     "participants": 242,
-     "female_pct": 36.4
-    },
-    "Not applicable": {
-     "trials": 21,
-     "participants": 2317,
-     "female_pct": 28.1
-    }
-   },
-   "excl_preg_pct": 82.1,
-   "excl_lact_pct": 47.0,
-   "contra_pct": 65.8,
-   "wocbp_pct": 33.3,
-   "pregtest_pct": 27.4,
-   "max_age_pct": 88.0,
-   "max_age_le75_pct": 87.2,
-   "max_age_le65_pct": 82.1,
-   "outcome_by_sex": 3,
-   "sample_nct": [
-    "NCT02774954",
-    "NCT01077024",
-    "NCT00685659"
-   ],
-   "age_trials": 63,
-   "over65_trial_pct": 0.6,
-   "mean_age": 43.6,
-   "burden_65plus_pct": 4.9,
-   "burden_70plus_pct": 1.1,
-   "women_share_70plus": 22.6,
-   "age_gap_pts": 4.3,
-   "ratio": 1.14,
-   "ratio_open": 1.09,
-   "gap_pts": 3.7,
-   "trials_per_100k_dalys": 14.13,
-   "participants_per_1k_dalys": 12.1,
-   "by_sponsor_ratio": {
-    "Industry": null,
-    "NIH": null,
-    "Other US government": null,
-    "Universities, hospitals, other": 1.16
-   },
-   "by_period_ratio": {
-    "before 2010": 1.22,
-    "2010\u20132015": 1.16,
-    "2016\u20132020": 0.91,
-    "2021 onward": null
-   },
-   "expected_trials": 341,
-   "trials_ratio_to_expected": 0.34,
-   "rank": 39
+   "expected_trials": 286,
+   "trials_ratio_to_expected": 5.22,
+   "rank": 36
   },
   {
    "disease": "Epilepsy",
@@ -5041,8 +4658,8 @@
    "trials_open": 250,
    "female_only_trials": 3,
    "male_only_trials": 3,
-   "burden_female_pct": 45.7,
-   "dalys_k": 442.1,
+   "burden_female_pct": 46.7,
+   "dalys_k": 446.9,
    "skew": "balanced",
    "funding_m": 230.0,
    "by_sponsor": {
@@ -5133,30 +4750,158 @@
    "age_trials": 122,
    "over65_trial_pct": 3.2,
    "mean_age": 29.3,
-   "burden_65plus_pct": 19.9,
-   "burden_70plus_pct": 13.3,
-   "women_share_70plus": 52.9,
-   "age_gap_pts": 16.7,
-   "ratio": 1.16,
-   "ratio_open": 1.16,
-   "gap_pts": 7.4,
-   "trials_per_100k_dalys": 64.47,
-   "participants_per_1k_dalys": 74.3,
+   "burden_65plus_pct": 21.4,
+   "burden_70plus_pct": 14.5,
+   "women_share_70plus": 54.0,
+   "age_gap_pts": 18.2,
+   "ratio": 1.14,
+   "ratio_open": 1.13,
+   "gap_pts": 6.4,
+   "trials_per_100k_dalys": 63.77,
+   "participants_per_1k_dalys": 73.5,
    "by_sponsor_ratio": {
-    "Industry": 1.15,
+    "Industry": 1.13,
     "NIH": null,
     "Other US government": null,
-    "Universities, hospitals, other": 1.23
+    "Universities, hospitals, other": 1.2
    },
    "by_period_ratio": {
-    "before 2010": 1.16,
-    "2010\u20132015": 1.11,
-    "2016\u20132020": 1.25,
-    "2021 onward": 1.0
+    "before 2010": 1.13,
+    "2010\u20132015": 1.08,
+    "2016\u20132020": 1.22,
+    "2021 onward": 0.98
    },
-   "expected_trials": 269,
-   "trials_ratio_to_expected": 1.06,
-   "rank": 40
+   "expected_trials": 267,
+   "trials_ratio_to_expected": 1.07,
+   "rank": 37
+  },
+  {
+   "disease": "Migraine",
+   "sex_specific": false,
+   "trials": 266,
+   "trials_sex_counted": 253,
+   "participants": 77865,
+   "female_pct": 83.2,
+   "female_pct_open": 83.1,
+   "trials_open": 247,
+   "female_only_trials": 6,
+   "male_only_trials": 0,
+   "burden_female_pct": 73.2,
+   "dalys_k": 2057.9,
+   "skew": "female",
+   "funding_m": 41.0,
+   "by_sponsor": {
+    "Industry": {
+     "trials": 146,
+     "participants": 68618,
+     "female_pct": 83.5
+    },
+    "NIH": {
+     "trials": 0,
+     "participants": 0,
+     "female_pct": null
+    },
+    "Other US government": {
+     "trials": 3,
+     "participants": 77,
+     "female_pct": 75.3
+    },
+    "Universities, hospitals, other": {
+     "trials": 104,
+     "participants": 9170,
+     "female_pct": 81.3
+    }
+   },
+   "by_period": {
+    "before 2010": {
+     "trials": 56,
+     "participants": 11682,
+     "female_pct": 78.9
+    },
+    "2010\u20132015": {
+     "trials": 68,
+     "participants": 16988,
+     "female_pct": 82.5
+    },
+    "2016\u20132020": {
+     "trials": 104,
+     "participants": 41322,
+     "female_pct": 84.7
+    },
+    "2021 onward": {
+     "trials": 25,
+     "participants": 7873,
+     "female_pct": 83.3
+    }
+   },
+   "by_phase": {
+    "Phase 1": {
+     "trials": 15,
+     "participants": 482,
+     "female_pct": 63.9
+    },
+    "Phase 2": {
+     "trials": 44,
+     "participants": 7979,
+     "female_pct": 81.1
+    },
+    "Phase 3": {
+     "trials": 80,
+     "participants": 52375,
+     "female_pct": 83.6
+    },
+    "Phase 4": {
+     "trials": 60,
+     "participants": 12614,
+     "female_pct": 83.4
+    },
+    "Not applicable": {
+     "trials": 54,
+     "participants": 4415,
+     "female_pct": 83.9
+    }
+   },
+   "excl_preg_pct": 61.3,
+   "excl_lact_pct": 36.1,
+   "contra_pct": 31.2,
+   "wocbp_pct": 25.2,
+   "pregtest_pct": 19.5,
+   "max_age_pct": 77.1,
+   "max_age_le75_pct": 71.4,
+   "max_age_le65_pct": 59.8,
+   "outcome_by_sex": 0,
+   "sample_nct": [
+    "NCT02565186",
+    "NCT02638103",
+    "NCT03266588"
+   ],
+   "age_trials": 69,
+   "over65_trial_pct": 0.4,
+   "mean_age": 38.9,
+   "burden_65plus_pct": 12.0,
+   "burden_70plus_pct": 6.4,
+   "women_share_70plus": 73.2,
+   "age_gap_pts": 11.6,
+   "ratio": 1.14,
+   "ratio_open": 1.14,
+   "gap_pts": 10.0,
+   "trials_per_100k_dalys": 12.93,
+   "participants_per_1k_dalys": 37.8,
+   "by_sponsor_ratio": {
+    "Industry": 1.14,
+    "NIH": null,
+    "Other US government": null,
+    "Universities, hospitals, other": 1.11
+   },
+   "by_period_ratio": {
+    "before 2010": 1.08,
+    "2010\u20132015": 1.13,
+    "2016\u20132020": 1.16,
+    "2021 onward": 1.14
+   },
+   "expected_trials": 482,
+   "trials_ratio_to_expected": 0.55,
+   "rank": 38
   },
   {
    "disease": "Congenital heart disease",
@@ -5169,8 +4914,8 @@
    "trials_open": 143,
    "female_only_trials": 6,
    "male_only_trials": 2,
-   "burden_female_pct": 42.6,
-   "dalys_k": 299.5,
+   "burden_female_pct": 42.4,
+   "dalys_k": 297.3,
    "skew": "balanced",
    "funding_m": 154.0,
    "by_sponsor": {
@@ -5261,15 +5006,15 @@
    "age_trials": 69,
    "over65_trial_pct": 1.2,
    "mean_age": 23.0,
-   "burden_65plus_pct": 4.6,
-   "burden_70plus_pct": 3.0,
-   "women_share_70plus": 55.9,
-   "age_gap_pts": 3.4,
+   "burden_65plus_pct": 5.0,
+   "burden_70plus_pct": 3.2,
+   "women_share_70plus": 53.4,
+   "age_gap_pts": 3.8,
    "ratio": 1.18,
-   "ratio_open": 1.14,
-   "gap_pts": 7.5,
-   "trials_per_100k_dalys": 51.09,
-   "participants_per_1k_dalys": 55.9,
+   "ratio_open": 1.15,
+   "gap_pts": 7.7,
+   "trials_per_100k_dalys": 51.46,
+   "participants_per_1k_dalys": 56.3,
    "by_sponsor_ratio": {
     "Industry": 1.22,
     "NIH": null,
@@ -5277,14 +5022,14 @@
     "Universities, hospitals, other": 1.14
    },
    "by_period_ratio": {
-    "before 2010": 1.14,
-    "2010\u20132015": 1.24,
+    "before 2010": 1.15,
+    "2010\u20132015": 1.25,
     "2016\u20132020": 1.23,
     "2021 onward": 1.26
    },
-   "expected_trials": 232,
-   "trials_ratio_to_expected": 0.66,
-   "rank": 41
+   "expected_trials": 228,
+   "trials_ratio_to_expected": 0.67,
+   "rank": 39
   },
   {
    "disease": "Tuberculosis",
@@ -5297,8 +5042,8 @@
    "trials_open": 34,
    "female_only_trials": 2,
    "male_only_trials": 0,
-   "burden_female_pct": 35.4,
-   "dalys_k": 19.8,
+   "burden_female_pct": 36.3,
+   "dalys_k": 19.6,
    "skew": "male",
    "funding_m": 578.0,
    "by_sponsor": {
@@ -5389,30 +5134,542 @@
    "age_trials": 17,
    "over65_trial_pct": 2.7,
    "mean_age": 35.3,
-   "burden_65plus_pct": 38.6,
-   "burden_70plus_pct": 28.6,
-   "women_share_70plus": 40.6,
-   "age_gap_pts": 35.9,
-   "ratio": 1.21,
-   "ratio_open": 1.19,
-   "gap_pts": 7.3,
-   "trials_per_100k_dalys": 207.07,
-   "participants_per_1k_dalys": 812.5,
+   "burden_65plus_pct": 42.4,
+   "burden_70plus_pct": 31.7,
+   "women_share_70plus": 41.6,
+   "age_gap_pts": 39.7,
+   "ratio": 1.18,
+   "ratio_open": 1.16,
+   "gap_pts": 6.4,
+   "trials_per_100k_dalys": 209.18,
+   "participants_per_1k_dalys": 820.8,
    "by_sponsor_ratio": {
     "Industry": null,
-    "NIH": 1.49,
-    "Other US government": 0.92,
-    "Universities, hospitals, other": 1.36
+    "NIH": 1.45,
+    "Other US government": 0.9,
+    "Universities, hospitals, other": 1.32
    },
    "by_period_ratio": {
-    "before 2010": 1.13,
-    "2010\u20132015": 1.45,
-    "2016\u20132020": 0.91,
-    "2021 onward": 1.61
+    "before 2010": 1.1,
+    "2010\u20132015": 1.42,
+    "2016\u20132020": 0.89,
+    "2021 onward": 1.57
    },
-   "expected_trials": 83,
-   "trials_ratio_to_expected": 0.5,
+   "expected_trials": 80,
+   "trials_ratio_to_expected": 0.51,
+   "rank": 40
+  },
+  {
+   "disease": "Hodgkin lymphoma",
+   "sex_specific": false,
+   "trials": 341,
+   "trials_sex_counted": 335,
+   "participants": 26633,
+   "female_pct": 44.9,
+   "female_pct_open": 44.9,
+   "trials_open": 334,
+   "female_only_trials": 1,
+   "male_only_trials": 0,
+   "burden_female_pct": 37.7,
+   "dalys_k": 33.5,
+   "skew": "male",
+   "funding_m": 20.0,
+   "by_sponsor": {
+    "Industry": {
+     "trials": 51,
+     "participants": 5758,
+     "female_pct": 43.1
+    },
+    "NIH": {
+     "trials": 25,
+     "participants": 2282,
+     "female_pct": 40.7
+    },
+    "Other US government": {
+     "trials": 0,
+     "participants": 0,
+     "female_pct": null
+    },
+    "Universities, hospitals, other": {
+     "trials": 259,
+     "participants": 18593,
+     "female_pct": 46.0
+    }
+   },
+   "by_period": {
+    "before 2010": {
+     "trials": 166,
+     "participants": 14109,
+     "female_pct": 44.8
+    },
+    "2010\u20132015": {
+     "trials": 108,
+     "participants": 7983,
+     "female_pct": 41.7
+    },
+    "2016\u20132020": {
+     "trials": 55,
+     "participants": 4222,
+     "female_pct": 51.2
+    },
+    "2021 onward": {
+     "trials": 6,
+     "participants": 319,
+     "female_pct": 46.4
+    }
+   },
+   "by_phase": {
+    "Phase 1": {
+     "trials": 18,
+     "participants": 957,
+     "female_pct": 38.9
+    },
+    "Phase 2": {
+     "trials": 264,
+     "participants": 15745,
+     "female_pct": 42.1
+    },
+    "Phase 3": {
+     "trials": 21,
+     "participants": 8072,
+     "female_pct": 47.5
+    },
+    "Phase 4": {
+     "trials": 0,
+     "participants": 0,
+     "female_pct": null
+    },
+    "Not applicable": {
+     "trials": 32,
+     "participants": 1859,
+     "female_pct": 60.9
+    }
+   },
+   "excl_preg_pct": 78.9,
+   "excl_lact_pct": 56.6,
+   "contra_pct": 61.9,
+   "wocbp_pct": 41.6,
+   "pregtest_pct": 33.1,
+   "max_age_pct": 44.0,
+   "max_age_le75_pct": 41.6,
+   "max_age_le65_pct": 18.5,
+   "outcome_by_sex": 0,
+   "sample_nct": [
+    "NCT00025259",
+    "NCT01712490",
+    "NCT03907488"
+   ],
+   "age_trials": 169,
+   "over65_trial_pct": 15.6,
+   "mean_age": 41.9,
+   "burden_65plus_pct": 44.3,
+   "burden_70plus_pct": 32.9,
+   "women_share_70plus": 42.5,
+   "age_gap_pts": 28.7,
+   "ratio": 1.19,
+   "ratio_open": 1.19,
+   "gap_pts": 7.2,
+   "trials_per_100k_dalys": 1017.91,
+   "participants_per_1k_dalys": 795.0,
+   "by_sponsor_ratio": {
+    "Industry": 1.14,
+    "NIH": 1.08,
+    "Other US government": null,
+    "Universities, hospitals, other": 1.22
+   },
+   "by_period_ratio": {
+    "before 2010": 1.19,
+    "2010\u20132015": 1.11,
+    "2016\u20132020": 1.36,
+    "2021 onward": 1.23
+   },
+   "expected_trials": 98,
+   "trials_ratio_to_expected": 3.47,
+   "rank": 41
+  },
+  {
+   "disease": "Cocaine use disorders",
+   "sex_specific": false,
+   "trials": 117,
+   "trials_sex_counted": 115,
+   "participants": 10006,
+   "female_pct": 29.4,
+   "female_pct_open": 27.9,
+   "trials_open": 110,
+   "female_only_trials": 3,
+   "male_only_trials": 2,
+   "burden_female_pct": 24.8,
+   "dalys_k": 808.1,
+   "skew": "male",
+   "funding_m": 142.0,
+   "by_sponsor": {
+    "Industry": {
+     "trials": 3,
+     "participants": 438,
+     "female_pct": 31.5
+    },
+    "NIH": {
+     "trials": 3,
+     "participants": 466,
+     "female_pct": 23.2
+    },
+    "Other US government": {
+     "trials": 4,
+     "participants": 108,
+     "female_pct": 4.6
+    },
+    "Universities, hospitals, other": {
+     "trials": 105,
+     "participants": 8994,
+     "female_pct": 29.9
+    }
+   },
+   "by_period": {
+    "before 2010": {
+     "trials": 59,
+     "participants": 4577,
+     "female_pct": 31.4
+    },
+    "2010\u20132015": {
+     "trials": 44,
+     "participants": 3665,
+     "female_pct": 29.9
+    },
+    "2016\u20132020": {
+     "trials": 11,
+     "participants": 1635,
+     "female_pct": 23.3
+    },
+    "2021 onward": {
+     "trials": 1,
+     "participants": 129,
+     "female_pct": 25.6
+    }
+   },
+   "by_phase": {
+    "Phase 1": {
+     "trials": 7,
+     "participants": 230,
+     "female_pct": 25.7
+    },
+    "Phase 2": {
+     "trials": 73,
+     "participants": 5651,
+     "female_pct": 28.8
+    },
+    "Phase 3": {
+     "trials": 12,
+     "participants": 1566,
+     "female_pct": 33.1
+    },
+    "Phase 4": {
+     "trials": 2,
+     "participants": 242,
+     "female_pct": 36.4
+    },
+    "Not applicable": {
+     "trials": 21,
+     "participants": 2317,
+     "female_pct": 28.1
+    }
+   },
+   "excl_preg_pct": 82.1,
+   "excl_lact_pct": 47.0,
+   "contra_pct": 62.4,
+   "wocbp_pct": 33.3,
+   "pregtest_pct": 27.4,
+   "max_age_pct": 88.0,
+   "max_age_le75_pct": 87.2,
+   "max_age_le65_pct": 82.1,
+   "outcome_by_sex": 3,
+   "sample_nct": [
+    "NCT02774954",
+    "NCT01077024",
+    "NCT00685659"
+   ],
+   "age_trials": 63,
+   "over65_trial_pct": 0.6,
+   "mean_age": 43.6,
+   "burden_65plus_pct": 6.1,
+   "burden_70plus_pct": 1.5,
+   "women_share_70plus": 18.9,
+   "age_gap_pts": 5.5,
+   "ratio": 1.19,
+   "ratio_open": 1.12,
+   "gap_pts": 4.6,
+   "trials_per_100k_dalys": 14.48,
+   "participants_per_1k_dalys": 12.4,
+   "by_sponsor_ratio": {
+    "Industry": null,
+    "NIH": null,
+    "Other US government": null,
+    "Universities, hospitals, other": 1.21
+   },
+   "by_period_ratio": {
+    "before 2010": 1.27,
+    "2010\u20132015": 1.21,
+    "2016\u20132020": 0.94,
+    "2021 onward": null
+   },
+   "expected_trials": 336,
+   "trials_ratio_to_expected": 0.35,
    "rank": 42
+  },
+  {
+   "disease": "Pneumonia and influenza",
+   "sex_specific": false,
+   "trials": 1177,
+   "trials_sex_counted": 1098,
+   "participants": 2194848,
+   "female_pct": 55.4,
+   "female_pct_open": 55.3,
+   "trials_open": 1080,
+   "female_only_trials": 16,
+   "male_only_trials": 3,
+   "burden_female_pct": 46.1,
+   "dalys_k": 938.4,
+   "skew": "balanced",
+   "funding_m": 619.0,
+   "by_sponsor": {
+    "Industry": {
+     "trials": 519,
+     "participants": 784515,
+     "female_pct": 52.8
+    },
+    "NIH": {
+     "trials": 86,
+     "participants": 36437,
+     "female_pct": 46.3
+    },
+    "Other US government": {
+     "trials": 11,
+     "participants": 3717,
+     "female_pct": 51.0
+    },
+    "Universities, hospitals, other": {
+     "trials": 482,
+     "participants": 1370179,
+     "female_pct": 57.1
+    }
+   },
+   "by_period": {
+    "before 2010": {
+     "trials": 138,
+     "participants": 190366,
+     "female_pct": 54.5
+    },
+    "2010\u20132015": {
+     "trials": 150,
+     "participants": 300589,
+     "female_pct": 52.9
+    },
+    "2016\u20132020": {
+     "trials": 429,
+     "participants": 758729,
+     "female_pct": 54.2
+    },
+    "2021 onward": {
+     "trials": 381,
+     "participants": 945164,
+     "female_pct": 57.2
+    }
+   },
+   "by_phase": {
+    "Phase 1": {
+     "trials": 90,
+     "participants": 7048,
+     "female_pct": 52.6
+    },
+    "Phase 2": {
+     "trials": 412,
+     "participants": 105135,
+     "female_pct": 53.3
+    },
+    "Phase 3": {
+     "trials": 265,
+     "participants": 728132,
+     "female_pct": 52.4
+    },
+    "Phase 4": {
+     "trials": 139,
+     "participants": 124775,
+     "female_pct": 50.3
+    },
+    "Not applicable": {
+     "trials": 192,
+     "participants": 1229758,
+     "female_pct": 57.8
+    }
+   },
+   "excl_preg_pct": 57.9,
+   "excl_lact_pct": 43.5,
+   "contra_pct": 35.2,
+   "wocbp_pct": 33.1,
+   "pregtest_pct": 26.2,
+   "max_age_pct": 37.4,
+   "max_age_le75_pct": 27.9,
+   "max_age_le65_pct": 23.8,
+   "outcome_by_sex": 2,
+   "sample_nct": [
+    "NCT03666026",
+    "NCT05493787",
+    "NCT05537441"
+   ],
+   "age_trials": 424,
+   "over65_trial_pct": 19.2,
+   "mean_age": 48.6,
+   "burden_65plus_pct": 56.0,
+   "burden_70plus_pct": 45.3,
+   "women_share_70plus": 48.5,
+   "age_gap_pts": 36.8,
+   "ratio": 1.2,
+   "ratio_open": 1.2,
+   "gap_pts": 9.3,
+   "trials_per_100k_dalys": 125.43,
+   "participants_per_1k_dalys": 2338.9,
+   "by_sponsor_ratio": {
+    "Industry": 1.15,
+    "NIH": 1.0,
+    "Other US government": 1.11,
+    "Universities, hospitals, other": 1.24
+   },
+   "by_period_ratio": {
+    "before 2010": 1.18,
+    "2010\u20132015": 1.15,
+    "2016\u20132020": 1.18,
+    "2021 onward": 1.24
+   },
+   "expected_trials": 356,
+   "trials_ratio_to_expected": 3.3,
+   "rank": 43
+  },
+  {
+   "disease": "Cirrhosis and chronic liver disease",
+   "sex_specific": false,
+   "trials": 59,
+   "trials_sex_counted": 55,
+   "participants": 9538,
+   "female_pct": 45.1,
+   "female_pct_open": 45.1,
+   "trials_open": 55,
+   "female_only_trials": 0,
+   "male_only_trials": 0,
+   "burden_female_pct": 37.2,
+   "dalys_k": 1771.6,
+   "skew": "male",
+   "funding_m": 444.0,
+   "by_sponsor": {
+    "Industry": {
+     "trials": 31,
+     "participants": 3805,
+     "female_pct": 50.6
+    },
+    "NIH": {
+     "trials": 2,
+     "participants": 1077,
+     "female_pct": 29.7
+    },
+    "Other US government": {
+     "trials": 0,
+     "participants": 0,
+     "female_pct": null
+    },
+    "Universities, hospitals, other": {
+     "trials": 22,
+     "participants": 4656,
+     "female_pct": 44.1
+    }
+   },
+   "by_period": {
+    "before 2010": {
+     "trials": 5,
+     "participants": 1750,
+     "female_pct": 30.7
+    },
+    "2010\u20132015": {
+     "trials": 17,
+     "participants": 1552,
+     "female_pct": 53.3
+    },
+    "2016\u20132020": {
+     "trials": 21,
+     "participants": 4470,
+     "female_pct": 47.6
+    },
+    "2021 onward": {
+     "trials": 12,
+     "participants": 1766,
+     "female_pct": 45.9
+    }
+   },
+   "by_phase": {
+    "Phase 1": {
+     "trials": 2,
+     "participants": 30,
+     "female_pct": 16.7
+    },
+    "Phase 2": {
+     "trials": 32,
+     "participants": 3250,
+     "female_pct": 51.9
+    },
+    "Phase 3": {
+     "trials": 3,
+     "participants": 1437,
+     "female_pct": 39.1
+    },
+    "Phase 4": {
+     "trials": 4,
+     "participants": 648,
+     "female_pct": 33.0
+    },
+    "Not applicable": {
+     "trials": 14,
+     "participants": 4173,
+     "female_pct": 43.9
+    }
+   },
+   "excl_preg_pct": 52.5,
+   "excl_lact_pct": 37.3,
+   "contra_pct": 30.5,
+   "wocbp_pct": 35.6,
+   "pregtest_pct": 22.0,
+   "max_age_pct": 49.2,
+   "max_age_le75_pct": 37.3,
+   "max_age_le65_pct": 6.8,
+   "outcome_by_sex": 0,
+   "sample_nct": [
+    "NCT04281784",
+    "NCT00006164",
+    "NCT04283994"
+   ],
+   "age_trials": 22,
+   "over65_trial_pct": 46.8,
+   "mean_age": 60.3,
+   "burden_65plus_pct": 28.4,
+   "burden_70plus_pct": 15.2,
+   "women_share_70plus": 43.2,
+   "age_gap_pts": -18.4,
+   "ratio": 1.21,
+   "ratio_open": 1.21,
+   "gap_pts": 7.9,
+   "trials_per_100k_dalys": 3.33,
+   "participants_per_1k_dalys": 5.4,
+   "by_sponsor_ratio": {
+    "Industry": 1.36,
+    "NIH": null,
+    "Other US government": null,
+    "Universities, hospitals, other": 1.19
+   },
+   "by_period_ratio": {
+    "before 2010": 0.83,
+    "2010\u20132015": 1.43,
+    "2016\u20132020": 1.28,
+    "2021 onward": 1.23
+   },
+   "expected_trials": 455,
+   "trials_ratio_to_expected": 0.13,
+   "rank": 44
   },
   {
    "disease": "HIV/AIDS",
@@ -5425,8 +5682,8 @@
    "trials_open": 608,
    "female_only_trials": 59,
    "male_only_trials": 79,
-   "burden_female_pct": 25.6,
-   "dalys_k": 312.7,
+   "burden_female_pct": 25.8,
+   "dalys_k": 319.6,
    "skew": "male",
    "funding_m": 3293.0,
    "by_sponsor": {
@@ -5517,285 +5774,29 @@
    "age_trials": 253,
    "over65_trial_pct": 2.7,
    "mean_age": 38.2,
-   "burden_65plus_pct": 16.9,
-   "burden_70plus_pct": 6.6,
-   "women_share_70plus": 22.1,
-   "age_gap_pts": 14.2,
-   "ratio": 1.22,
-   "ratio_open": 1.18,
-   "gap_pts": 5.7,
-   "trials_per_100k_dalys": 254.88,
-   "participants_per_1k_dalys": 509.6,
+   "burden_65plus_pct": 19.2,
+   "burden_70plus_pct": 8.3,
+   "women_share_70plus": 22.0,
+   "age_gap_pts": 16.5,
+   "ratio": 1.21,
+   "ratio_open": 1.17,
+   "gap_pts": 5.5,
+   "trials_per_100k_dalys": 249.37,
+   "participants_per_1k_dalys": 498.6,
    "by_sponsor_ratio": {
     "Industry": 0.96,
-    "NIH": 1.43,
-    "Other US government": 1.18,
-    "Universities, hospitals, other": 1.3
+    "NIH": 1.42,
+    "Other US government": 1.17,
+    "Universities, hospitals, other": 1.29
    },
    "by_period_ratio": {
-    "before 2010": 1.26,
+    "before 2010": 1.25,
     "2010\u20132015": 1.16,
-    "2016\u20132020": 1.09,
-    "2021 onward": 1.98
+    "2016\u20132020": 1.08,
+    "2021 onward": 1.96
    },
    "expected_trials": 235,
-   "trials_ratio_to_expected": 3.38,
-   "rank": 43
-  },
-  {
-   "disease": "Cirrhosis and chronic liver disease",
-   "sex_specific": false,
-   "trials": 59,
-   "trials_sex_counted": 55,
-   "participants": 9538,
-   "female_pct": 45.1,
-   "female_pct_open": 45.1,
-   "trials_open": 55,
-   "female_only_trials": 0,
-   "male_only_trials": 0,
-   "burden_female_pct": 36.3,
-   "dalys_k": 1986.2,
-   "skew": "male",
-   "funding_m": 444.0,
-   "by_sponsor": {
-    "Industry": {
-     "trials": 31,
-     "participants": 3805,
-     "female_pct": 50.6
-    },
-    "NIH": {
-     "trials": 2,
-     "participants": 1077,
-     "female_pct": 29.7
-    },
-    "Other US government": {
-     "trials": 0,
-     "participants": 0,
-     "female_pct": null
-    },
-    "Universities, hospitals, other": {
-     "trials": 22,
-     "participants": 4656,
-     "female_pct": 44.1
-    }
-   },
-   "by_period": {
-    "before 2010": {
-     "trials": 5,
-     "participants": 1750,
-     "female_pct": 30.7
-    },
-    "2010\u20132015": {
-     "trials": 17,
-     "participants": 1552,
-     "female_pct": 53.3
-    },
-    "2016\u20132020": {
-     "trials": 21,
-     "participants": 4470,
-     "female_pct": 47.6
-    },
-    "2021 onward": {
-     "trials": 12,
-     "participants": 1766,
-     "female_pct": 45.9
-    }
-   },
-   "by_phase": {
-    "Phase 1": {
-     "trials": 2,
-     "participants": 30,
-     "female_pct": 16.7
-    },
-    "Phase 2": {
-     "trials": 32,
-     "participants": 3250,
-     "female_pct": 51.9
-    },
-    "Phase 3": {
-     "trials": 3,
-     "participants": 1437,
-     "female_pct": 39.1
-    },
-    "Phase 4": {
-     "trials": 4,
-     "participants": 648,
-     "female_pct": 33.0
-    },
-    "Not applicable": {
-     "trials": 14,
-     "participants": 4173,
-     "female_pct": 43.9
-    }
-   },
-   "excl_preg_pct": 52.5,
-   "excl_lact_pct": 37.3,
-   "contra_pct": 33.9,
-   "wocbp_pct": 35.6,
-   "pregtest_pct": 22.0,
-   "max_age_pct": 49.2,
-   "max_age_le75_pct": 37.3,
-   "max_age_le65_pct": 6.8,
-   "outcome_by_sex": 0,
-   "sample_nct": [
-    "NCT04281784",
-    "NCT00006164",
-    "NCT04283994"
-   ],
-   "age_trials": 22,
-   "over65_trial_pct": 46.8,
-   "mean_age": 60.3,
-   "burden_65plus_pct": 25.0,
-   "burden_70plus_pct": 12.3,
-   "women_share_70plus": 42.4,
-   "age_gap_pts": -21.8,
-   "ratio": 1.24,
-   "ratio_open": 1.24,
-   "gap_pts": 8.8,
-   "trials_per_100k_dalys": 2.97,
-   "participants_per_1k_dalys": 4.8,
-   "by_sponsor_ratio": {
-    "Industry": 1.39,
-    "NIH": null,
-    "Other US government": null,
-    "Universities, hospitals, other": 1.21
-   },
-   "by_period_ratio": {
-    "before 2010": 0.85,
-    "2010\u20132015": 1.47,
-    "2016\u20132020": 1.31,
-    "2021 onward": 1.26
-   },
-   "expected_trials": 475,
-   "trials_ratio_to_expected": 0.12,
-   "rank": 44
-  },
-  {
-   "disease": "Pneumonia and influenza",
-   "sex_specific": false,
-   "trials": 1177,
-   "trials_sex_counted": 1098,
-   "participants": 2194848,
-   "female_pct": 55.4,
-   "female_pct_open": 55.3,
-   "trials_open": 1080,
-   "female_only_trials": 16,
-   "male_only_trials": 3,
-   "burden_female_pct": 43.8,
-   "dalys_k": 886.9,
-   "skew": "balanced",
-   "funding_m": 619.0,
-   "by_sponsor": {
-    "Industry": {
-     "trials": 519,
-     "participants": 784515,
-     "female_pct": 52.8
-    },
-    "NIH": {
-     "trials": 86,
-     "participants": 36437,
-     "female_pct": 46.3
-    },
-    "Other US government": {
-     "trials": 11,
-     "participants": 3717,
-     "female_pct": 51.0
-    },
-    "Universities, hospitals, other": {
-     "trials": 482,
-     "participants": 1370179,
-     "female_pct": 57.1
-    }
-   },
-   "by_period": {
-    "before 2010": {
-     "trials": 138,
-     "participants": 190366,
-     "female_pct": 54.5
-    },
-    "2010\u20132015": {
-     "trials": 150,
-     "participants": 300589,
-     "female_pct": 52.9
-    },
-    "2016\u20132020": {
-     "trials": 429,
-     "participants": 758729,
-     "female_pct": 54.2
-    },
-    "2021 onward": {
-     "trials": 381,
-     "participants": 945164,
-     "female_pct": 57.2
-    }
-   },
-   "by_phase": {
-    "Phase 1": {
-     "trials": 90,
-     "participants": 7048,
-     "female_pct": 52.6
-    },
-    "Phase 2": {
-     "trials": 412,
-     "participants": 105135,
-     "female_pct": 53.3
-    },
-    "Phase 3": {
-     "trials": 265,
-     "participants": 728132,
-     "female_pct": 52.4
-    },
-    "Phase 4": {
-     "trials": 139,
-     "participants": 124775,
-     "female_pct": 50.3
-    },
-    "Not applicable": {
-     "trials": 192,
-     "participants": 1229758,
-     "female_pct": 57.8
-    }
-   },
-   "excl_preg_pct": 57.9,
-   "excl_lact_pct": 43.5,
-   "contra_pct": 35.3,
-   "wocbp_pct": 33.1,
-   "pregtest_pct": 26.2,
-   "max_age_pct": 37.4,
-   "max_age_le75_pct": 27.9,
-   "max_age_le65_pct": 23.8,
-   "outcome_by_sex": 2,
-   "sample_nct": [
-    "NCT03666026",
-    "NCT05493787",
-    "NCT05537441"
-   ],
-   "age_trials": 424,
-   "over65_trial_pct": 19.2,
-   "mean_age": 48.6,
-   "burden_65plus_pct": 54.7,
-   "burden_70plus_pct": 43.7,
-   "women_share_70plus": 47.2,
-   "age_gap_pts": 35.5,
-   "ratio": 1.26,
-   "ratio_open": 1.26,
-   "gap_pts": 11.6,
-   "trials_per_100k_dalys": 132.71,
-   "participants_per_1k_dalys": 2474.7,
-   "by_sponsor_ratio": {
-    "Industry": 1.21,
-    "NIH": 1.06,
-    "Other US government": 1.16,
-    "Universities, hospitals, other": 1.3
-   },
-   "by_period_ratio": {
-    "before 2010": 1.24,
-    "2010\u20132015": 1.21,
-    "2016\u20132020": 1.24,
-    "2021 onward": 1.31
-   },
-   "expected_trials": 350,
-   "trials_ratio_to_expected": 3.36,
+   "trials_ratio_to_expected": 3.39,
    "rank": 45
   },
   {
@@ -5809,8 +5810,8 @@
    "trials_open": 652,
    "female_only_trials": 5,
    "male_only_trials": 0,
-   "burden_female_pct": 34.7,
-   "dalys_k": 405.4,
+   "burden_female_pct": 35.1,
+   "dalys_k": 436.9,
    "skew": "male",
    "funding_m": 256.0,
    "by_sponsor": {
@@ -5902,28 +5903,28 @@
    "over65_trial_pct": 26.4,
    "mean_age": 56.6,
    "burden_65plus_pct": 59.9,
-   "burden_70plus_pct": 46.0,
-   "women_share_70plus": 33.8,
+   "burden_70plus_pct": 46.4,
+   "women_share_70plus": 33.4,
    "age_gap_pts": 33.5,
-   "ratio": 1.27,
-   "ratio_open": 1.23,
-   "gap_pts": 9.3,
-   "trials_per_100k_dalys": 167.49,
-   "participants_per_1k_dalys": 191.2,
+   "ratio": 1.25,
+   "ratio_open": 1.21,
+   "gap_pts": 8.9,
+   "trials_per_100k_dalys": 155.41,
+   "participants_per_1k_dalys": 177.4,
    "by_sponsor_ratio": {
-    "Industry": 1.23,
-    "NIH": 1.1,
+    "Industry": 1.21,
+    "NIH": 1.09,
     "Other US government": null,
-    "Universities, hospitals, other": 1.56
+    "Universities, hospitals, other": 1.54
    },
    "by_period_ratio": {
-    "before 2010": 1.17,
-    "2010\u20132015": 1.27,
-    "2016\u20132020": 1.35,
-    "2021 onward": 1.2
+    "before 2010": 1.16,
+    "2010\u20132015": 1.26,
+    "2016\u20132020": 1.34,
+    "2021 onward": 1.18
    },
-   "expected_trials": 260,
-   "trials_ratio_to_expected": 2.61,
+   "expected_trials": 265,
+   "trials_ratio_to_expected": 2.56,
    "rank": 46
   },
   {
@@ -5937,8 +5938,8 @@
    "trials_open": 1059,
    "female_only_trials": 65,
    "male_only_trials": 40,
-   "burden_female_pct": 35.1,
-   "dalys_k": 8934.8,
+   "burden_female_pct": 35.0,
+   "dalys_k": 8449.2,
    "skew": "male",
    "funding_m": 1663.0,
    "by_sponsor": {
@@ -6014,7 +6015,7 @@
    },
    "excl_preg_pct": 56.7,
    "excl_lact_pct": 29.0,
-   "contra_pct": 40.1,
+   "contra_pct": 35.5,
    "wocbp_pct": 19.2,
    "pregtest_pct": 14.6,
    "max_age_pct": 65.7,
@@ -6029,15 +6030,15 @@
    "age_trials": 495,
    "over65_trial_pct": 7.2,
    "mean_age": 45.3,
-   "burden_65plus_pct": 3.4,
-   "burden_70plus_pct": 0.7,
-   "women_share_70plus": 44.9,
-   "age_gap_pts": -3.8,
+   "burden_65plus_pct": 4.2,
+   "burden_70plus_pct": 1.0,
+   "women_share_70plus": 40.1,
+   "age_gap_pts": -3.0,
    "ratio": 1.31,
-   "ratio_open": 1.28,
-   "gap_pts": 10.9,
-   "trials_per_100k_dalys": 13.82,
-   "participants_per_1k_dalys": 27.2,
+   "ratio_open": 1.29,
+   "gap_pts": 11.0,
+   "trials_per_100k_dalys": 14.62,
+   "participants_per_1k_dalys": 28.7,
    "by_sponsor_ratio": {
     "Industry": 1.39,
     "NIH": 1.06,
@@ -6046,12 +6047,12 @@
    },
    "by_period_ratio": {
     "before 2010": 1.07,
-    "2010\u20132015": 1.28,
+    "2010\u20132015": 1.29,
     "2016\u20132020": 1.15,
     "2021 onward": 1.53
    },
-   "expected_trials": 841,
-   "trials_ratio_to_expected": 1.47,
+   "expected_trials": 833,
+   "trials_ratio_to_expected": 1.48,
    "rank": 47
   },
   {
@@ -6065,8 +6066,8 @@
    "trials_open": 283,
    "female_only_trials": 1,
    "male_only_trials": 1,
-   "burden_female_pct": 26.8,
-   "dalys_k": 192.8,
+   "burden_female_pct": 26.9,
+   "dalys_k": 191.5,
    "skew": "male",
    "funding_m": 75.0,
    "by_sponsor": {
@@ -6142,7 +6143,7 @@
    },
    "excl_preg_pct": 53.2,
    "excl_lact_pct": 29.4,
-   "contra_pct": 30.7,
+   "contra_pct": 30.4,
    "wocbp_pct": 26.3,
    "pregtest_pct": 20.5,
    "max_age_pct": 96.2,
@@ -6157,30 +6158,286 @@
    "age_trials": 129,
    "over65_trial_pct": 0.0,
    "mean_age": 18.8,
-   "burden_65plus_pct": 0.8,
+   "burden_65plus_pct": 0.9,
    "burden_70plus_pct": 0.2,
-   "women_share_70plus": 53.1,
-   "age_gap_pts": 0.8,
-   "ratio": 1.36,
-   "ratio_open": 1.36,
-   "gap_pts": 9.6,
-   "trials_per_100k_dalys": 151.97,
-   "participants_per_1k_dalys": 200.2,
+   "women_share_70plus": 53.2,
+   "age_gap_pts": 0.9,
+   "ratio": 1.35,
+   "ratio_open": 1.35,
+   "gap_pts": 9.5,
+   "trials_per_100k_dalys": 153.0,
+   "participants_per_1k_dalys": 201.6,
    "by_sponsor_ratio": {
-    "Industry": 1.37,
+    "Industry": 1.36,
     "NIH": null,
     "Other US government": null,
-    "Universities, hospitals, other": 1.34
+    "Universities, hospitals, other": 1.33
    },
    "by_period_ratio": {
     "before 2010": 1.22,
-    "2010\u20132015": 1.36,
-    "2016\u20132020": 1.44,
-    "2021 onward": 1.92
+    "2010\u20132015": 1.35,
+    "2016\u20132020": 1.43,
+    "2021 onward": 1.91
    },
-   "expected_trials": 196,
-   "trials_ratio_to_expected": 1.5,
+   "expected_trials": 193,
+   "trials_ratio_to_expected": 1.52,
    "rank": 48
+  },
+  {
+   "disease": "Alcohol use disorders",
+   "sex_specific": false,
+   "trials": 428,
+   "trials_sex_counted": 413,
+   "participants": 41542,
+   "female_pct": 41.2,
+   "female_pct_open": 38.2,
+   "trials_open": 387,
+   "female_only_trials": 14,
+   "male_only_trials": 13,
+   "burden_female_pct": 30.4,
+   "dalys_k": 1631.5,
+   "skew": "male",
+   "funding_m": 639.0,
+   "by_sponsor": {
+    "Industry": {
+     "trials": 19,
+     "participants": 1694,
+     "female_pct": 40.9
+    },
+    "NIH": {
+     "trials": 24,
+     "participants": 2022,
+     "female_pct": 30.9
+    },
+    "Other US government": {
+     "trials": 42,
+     "participants": 4485,
+     "female_pct": 14.1
+    },
+    "Universities, hospitals, other": {
+     "trials": 328,
+     "participants": 33341,
+     "female_pct": 45.5
+    }
+   },
+   "by_period": {
+    "before 2010": {
+     "trials": 106,
+     "participants": 13637,
+     "female_pct": 34.3
+    },
+    "2010\u20132015": {
+     "trials": 119,
+     "participants": 10738,
+     "female_pct": 34.6
+    },
+    "2016\u20132020": {
+     "trials": 132,
+     "participants": 11693,
+     "female_pct": 48.8
+    },
+    "2021 onward": {
+     "trials": 56,
+     "participants": 5474,
+     "female_pct": 54.8
+    }
+   },
+   "by_phase": {
+    "Phase 1": {
+     "trials": 25,
+     "participants": 905,
+     "female_pct": 47.7
+    },
+    "Phase 2": {
+     "trials": 153,
+     "participants": 10728,
+     "female_pct": 35.3
+    },
+    "Phase 3": {
+     "trials": 37,
+     "participants": 2751,
+     "female_pct": 30.2
+    },
+    "Phase 4": {
+     "trials": 50,
+     "participants": 4217,
+     "female_pct": 24.1
+    },
+    "Not applicable": {
+     "trials": 148,
+     "participants": 22941,
+     "female_pct": 48.1
+    }
+   },
+   "excl_preg_pct": 65.7,
+   "excl_lact_pct": 31.8,
+   "contra_pct": 46.7,
+   "wocbp_pct": 27.8,
+   "pregtest_pct": 19.6,
+   "max_age_pct": 70.3,
+   "max_age_le75_pct": 67.8,
+   "max_age_le65_pct": 54.0,
+   "outcome_by_sex": 2,
+   "sample_nct": [
+    "NCT00227877",
+    "NCT04907045",
+    "NCT04356261"
+   ],
+   "age_trials": 168,
+   "over65_trial_pct": 2.0,
+   "mean_age": 38.1,
+   "burden_65plus_pct": 13.4,
+   "burden_70plus_pct": 5.8,
+   "women_share_70plus": 31.8,
+   "age_gap_pts": 11.4,
+   "ratio": 1.36,
+   "ratio_open": 1.26,
+   "gap_pts": 10.8,
+   "trials_per_100k_dalys": 26.23,
+   "participants_per_1k_dalys": 25.5,
+   "by_sponsor_ratio": {
+    "Industry": 1.35,
+    "NIH": 1.02,
+    "Other US government": 0.46,
+    "Universities, hospitals, other": 1.5
+   },
+   "by_period_ratio": {
+    "before 2010": 1.13,
+    "2010\u20132015": 1.14,
+    "2016\u20132020": 1.61,
+    "2021 onward": 1.8
+   },
+   "expected_trials": 441,
+   "trials_ratio_to_expected": 0.97,
+   "rank": 49
+  },
+  {
+   "disease": "Opioid use disorders",
+   "sex_specific": false,
+   "trials": 333,
+   "trials_sex_counted": 302,
+   "participants": 120068,
+   "female_pct": 50.6,
+   "female_pct_open": 50.2,
+   "trials_open": 283,
+   "female_only_trials": 14,
+   "male_only_trials": 5,
+   "burden_female_pct": 36.7,
+   "dalys_k": 6754.7,
+   "skew": "male",
+   "funding_m": 747.0,
+   "by_sponsor": {
+    "Industry": {
+     "trials": 48,
+     "participants": 7491,
+     "female_pct": 35.9
+    },
+    "NIH": {
+     "trials": 3,
+     "participants": 656,
+     "female_pct": 45.1
+    },
+    "Other US government": {
+     "trials": 5,
+     "participants": 766,
+     "female_pct": 13.6
+    },
+    "Universities, hospitals, other": {
+     "trials": 246,
+     "participants": 111155,
+     "female_pct": 51.8
+    }
+   },
+   "by_period": {
+    "before 2010": {
+     "trials": 49,
+     "participants": 5188,
+     "female_pct": 35.1
+    },
+    "2010\u20132015": {
+     "trials": 60,
+     "participants": 9337,
+     "female_pct": 34.7
+    },
+    "2016\u20132020": {
+     "trials": 112,
+     "participants": 21954,
+     "female_pct": 47.5
+    },
+    "2021 onward": {
+     "trials": 81,
+     "participants": 83589,
+     "female_pct": 54.1
+    }
+   },
+   "by_phase": {
+    "Phase 1": {
+     "trials": 24,
+     "participants": 834,
+     "female_pct": 43.6
+    },
+    "Phase 2": {
+     "trials": 72,
+     "participants": 3847,
+     "female_pct": 33.6
+    },
+    "Phase 3": {
+     "trials": 49,
+     "participants": 9728,
+     "female_pct": 37.2
+    },
+    "Phase 4": {
+     "trials": 31,
+     "participants": 3235,
+     "female_pct": 36.5
+    },
+    "Not applicable": {
+     "trials": 126,
+     "participants": 102424,
+     "female_pct": 53.0
+    }
+   },
+   "excl_preg_pct": 58.9,
+   "excl_lact_pct": 32.7,
+   "contra_pct": 29.7,
+   "wocbp_pct": 14.1,
+   "pregtest_pct": 11.7,
+   "max_age_pct": 57.1,
+   "max_age_le75_pct": 52.6,
+   "max_age_le65_pct": 45.9,
+   "outcome_by_sex": 1,
+   "sample_nct": [
+    "NCT03833804",
+    "NCT04198428",
+    "NCT05387408"
+   ],
+   "age_trials": 121,
+   "over65_trial_pct": 10.7,
+   "mean_age": 49.4,
+   "burden_65plus_pct": 3.9,
+   "burden_70plus_pct": 0.9,
+   "women_share_70plus": 46.1,
+   "age_gap_pts": -6.8,
+   "ratio": 1.38,
+   "ratio_open": 1.37,
+   "gap_pts": 13.9,
+   "trials_per_100k_dalys": 4.93,
+   "participants_per_1k_dalys": 17.8,
+   "by_sponsor_ratio": {
+    "Industry": 0.98,
+    "NIH": null,
+    "Other US government": 0.37,
+    "Universities, hospitals, other": 1.41
+   },
+   "by_period_ratio": {
+    "before 2010": 0.96,
+    "2010\u20132015": 0.95,
+    "2016\u20132020": 1.29,
+    "2021 onward": 1.47
+   },
+   "expected_trials": 764,
+   "trials_ratio_to_expected": 0.44,
+   "rank": 50
   },
   {
    "disease": "Hepatitis B",
@@ -6193,8 +6450,8 @@
    "trials_open": 88,
    "female_only_trials": 0,
    "male_only_trials": 1,
-   "burden_female_pct": 32.3,
-   "dalys_k": 157.1,
+   "burden_female_pct": 31.8,
+   "dalys_k": 158.3,
    "skew": "male",
    "funding_m": 136.0,
    "by_sponsor": {
@@ -6285,285 +6542,29 @@
    "age_trials": 15,
    "over65_trial_pct": 3.3,
    "mean_age": 40.5,
-   "burden_65plus_pct": 33.6,
-   "burden_70plus_pct": 18.9,
-   "women_share_70plus": 35.0,
-   "age_gap_pts": 30.3,
-   "ratio": 1.38,
-   "ratio_open": 1.38,
-   "gap_pts": 12.4,
-   "trials_per_100k_dalys": 57.92,
-   "participants_per_1k_dalys": 211.4,
+   "burden_65plus_pct": 36.9,
+   "burden_70plus_pct": 21.8,
+   "women_share_70plus": 34.3,
+   "age_gap_pts": 33.6,
+   "ratio": 1.41,
+   "ratio_open": 1.41,
+   "gap_pts": 12.9,
+   "trials_per_100k_dalys": 57.49,
+   "participants_per_1k_dalys": 209.8,
    "by_sponsor_ratio": {
-    "Industry": 1.36,
-    "NIH": 1.19,
+    "Industry": 1.38,
+    "NIH": 1.21,
     "Other US government": null,
-    "Universities, hospitals, other": 1.58
-   },
-   "by_period_ratio": {
-    "before 2010": 1.14,
-    "2010\u20132015": 1.48,
-    "2016\u20132020": 1.52,
-    "2021 onward": 1.24
-   },
-   "expected_trials": 181,
-   "trials_ratio_to_expected": 0.5,
-   "rank": 49
-  },
-  {
-   "disease": "Alcohol use disorders",
-   "sex_specific": false,
-   "trials": 428,
-   "trials_sex_counted": 413,
-   "participants": 41542,
-   "female_pct": 41.2,
-   "female_pct_open": 38.2,
-   "trials_open": 387,
-   "female_only_trials": 14,
-   "male_only_trials": 13,
-   "burden_female_pct": 29.9,
-   "dalys_k": 1647.3,
-   "skew": "male",
-   "funding_m": 639.0,
-   "by_sponsor": {
-    "Industry": {
-     "trials": 19,
-     "participants": 1694,
-     "female_pct": 40.9
-    },
-    "NIH": {
-     "trials": 24,
-     "participants": 2022,
-     "female_pct": 30.9
-    },
-    "Other US government": {
-     "trials": 42,
-     "participants": 4485,
-     "female_pct": 14.1
-    },
-    "Universities, hospitals, other": {
-     "trials": 328,
-     "participants": 33341,
-     "female_pct": 45.5
-    }
-   },
-   "by_period": {
-    "before 2010": {
-     "trials": 106,
-     "participants": 13637,
-     "female_pct": 34.3
-    },
-    "2010\u20132015": {
-     "trials": 119,
-     "participants": 10738,
-     "female_pct": 34.6
-    },
-    "2016\u20132020": {
-     "trials": 132,
-     "participants": 11693,
-     "female_pct": 48.8
-    },
-    "2021 onward": {
-     "trials": 56,
-     "participants": 5474,
-     "female_pct": 54.8
-    }
-   },
-   "by_phase": {
-    "Phase 1": {
-     "trials": 25,
-     "participants": 905,
-     "female_pct": 47.7
-    },
-    "Phase 2": {
-     "trials": 153,
-     "participants": 10728,
-     "female_pct": 35.3
-    },
-    "Phase 3": {
-     "trials": 37,
-     "participants": 2751,
-     "female_pct": 30.2
-    },
-    "Phase 4": {
-     "trials": 50,
-     "participants": 4217,
-     "female_pct": 24.1
-    },
-    "Not applicable": {
-     "trials": 148,
-     "participants": 22941,
-     "female_pct": 48.1
-    }
-   },
-   "excl_preg_pct": 65.7,
-   "excl_lact_pct": 31.8,
-   "contra_pct": 53.0,
-   "wocbp_pct": 27.8,
-   "pregtest_pct": 19.6,
-   "max_age_pct": 70.3,
-   "max_age_le75_pct": 67.8,
-   "max_age_le65_pct": 54.0,
-   "outcome_by_sex": 2,
-   "sample_nct": [
-    "NCT00227877",
-    "NCT04907045",
-    "NCT04356261"
-   ],
-   "age_trials": 168,
-   "over65_trial_pct": 2.0,
-   "mean_age": 38.1,
-   "burden_65plus_pct": 12.9,
-   "burden_70plus_pct": 5.4,
-   "women_share_70plus": 32.3,
-   "age_gap_pts": 10.9,
-   "ratio": 1.38,
-   "ratio_open": 1.28,
-   "gap_pts": 11.3,
-   "trials_per_100k_dalys": 25.98,
-   "participants_per_1k_dalys": 25.2,
-   "by_sponsor_ratio": {
-    "Industry": 1.37,
-    "NIH": 1.03,
-    "Other US government": 0.47,
-    "Universities, hospitals, other": 1.52
+    "Universities, hospitals, other": 1.6
    },
    "by_period_ratio": {
     "before 2010": 1.15,
-    "2010\u20132015": 1.16,
-    "2016\u20132020": 1.63,
-    "2021 onward": 1.83
+    "2010\u20132015": 1.5,
+    "2016\u20132020": 1.54,
+    "2021 onward": 1.26
    },
-   "expected_trials": 442,
-   "trials_ratio_to_expected": 0.97,
-   "rank": 50
-  },
-  {
-   "disease": "Opioid use disorders",
-   "sex_specific": false,
-   "trials": 333,
-   "trials_sex_counted": 302,
-   "participants": 120068,
-   "female_pct": 50.6,
-   "female_pct_open": 50.2,
-   "trials_open": 283,
-   "female_only_trials": 14,
-   "male_only_trials": 5,
-   "burden_female_pct": 36.7,
-   "dalys_k": 7156.7,
-   "skew": "male",
-   "funding_m": 747.0,
-   "by_sponsor": {
-    "Industry": {
-     "trials": 48,
-     "participants": 7491,
-     "female_pct": 35.9
-    },
-    "NIH": {
-     "trials": 3,
-     "participants": 656,
-     "female_pct": 45.1
-    },
-    "Other US government": {
-     "trials": 5,
-     "participants": 766,
-     "female_pct": 13.6
-    },
-    "Universities, hospitals, other": {
-     "trials": 246,
-     "participants": 111155,
-     "female_pct": 51.8
-    }
-   },
-   "by_period": {
-    "before 2010": {
-     "trials": 49,
-     "participants": 5188,
-     "female_pct": 35.1
-    },
-    "2010\u20132015": {
-     "trials": 60,
-     "participants": 9337,
-     "female_pct": 34.7
-    },
-    "2016\u20132020": {
-     "trials": 112,
-     "participants": 21954,
-     "female_pct": 47.5
-    },
-    "2021 onward": {
-     "trials": 81,
-     "participants": 83589,
-     "female_pct": 54.1
-    }
-   },
-   "by_phase": {
-    "Phase 1": {
-     "trials": 24,
-     "participants": 834,
-     "female_pct": 43.6
-    },
-    "Phase 2": {
-     "trials": 72,
-     "participants": 3847,
-     "female_pct": 33.6
-    },
-    "Phase 3": {
-     "trials": 49,
-     "participants": 9728,
-     "female_pct": 37.2
-    },
-    "Phase 4": {
-     "trials": 31,
-     "participants": 3235,
-     "female_pct": 36.5
-    },
-    "Not applicable": {
-     "trials": 126,
-     "participants": 102424,
-     "female_pct": 53.0
-    }
-   },
-   "excl_preg_pct": 58.9,
-   "excl_lact_pct": 32.7,
-   "contra_pct": 32.1,
-   "wocbp_pct": 14.1,
-   "pregtest_pct": 11.7,
-   "max_age_pct": 57.1,
-   "max_age_le75_pct": 52.6,
-   "max_age_le65_pct": 45.9,
-   "outcome_by_sex": 1,
-   "sample_nct": [
-    "NCT03833804",
-    "NCT04198428",
-    "NCT05387408"
-   ],
-   "age_trials": 121,
-   "over65_trial_pct": 10.7,
-   "mean_age": 49.4,
-   "burden_65plus_pct": 3.1,
-   "burden_70plus_pct": 0.7,
-   "women_share_70plus": 51.1,
-   "age_gap_pts": -7.6,
-   "ratio": 1.38,
-   "ratio_open": 1.37,
-   "gap_pts": 13.9,
-   "trials_per_100k_dalys": 4.65,
-   "participants_per_1k_dalys": 16.8,
-   "by_sponsor_ratio": {
-    "Industry": 0.98,
-    "NIH": null,
-    "Other US government": 0.37,
-    "Universities, hospitals, other": 1.41
-   },
-   "by_period_ratio": {
-    "before 2010": 0.96,
-    "2010\u20132015": 0.95,
-    "2016\u20132020": 1.29,
-    "2021 onward": 1.47
-   },
-   "expected_trials": 773,
-   "trials_ratio_to_expected": 0.43,
+   "expected_trials": 179,
+   "trials_ratio_to_expected": 0.51,
    "rank": 51
   },
   {
@@ -6577,8 +6578,8 @@
    "trials_open": 184,
    "female_only_trials": 1,
    "male_only_trials": 0,
-   "burden_female_pct": 18.9,
-   "dalys_k": 412.5,
+   "burden_female_pct": 19.3,
+   "dalys_k": 435.6,
    "skew": "male",
    "funding_m": 59.0,
    "by_sponsor": {
@@ -6669,29 +6670,29 @@
    "age_trials": 66,
    "over65_trial_pct": 36.7,
    "mean_age": 59.2,
-   "burden_65plus_pct": 54.9,
-   "burden_70plus_pct": 36.4,
-   "women_share_70plus": 21.6,
-   "age_gap_pts": 18.2,
-   "ratio": 1.78,
-   "ratio_open": 1.78,
-   "gap_pts": 14.7,
-   "trials_per_100k_dalys": 45.09,
-   "participants_per_1k_dalys": 43.3,
+   "burden_65plus_pct": 56.5,
+   "burden_70plus_pct": 38.3,
+   "women_share_70plus": 21.4,
+   "age_gap_pts": 19.8,
+   "ratio": 1.74,
+   "ratio_open": 1.74,
+   "gap_pts": 14.3,
+   "trials_per_100k_dalys": 42.7,
+   "participants_per_1k_dalys": 41.0,
    "by_sponsor_ratio": {
-    "Industry": 1.79,
-    "NIH": 1.15,
+    "Industry": 1.76,
+    "NIH": 1.13,
     "Other US government": null,
-    "Universities, hospitals, other": 1.81
+    "Universities, hospitals, other": 1.77
    },
    "by_period_ratio": {
-    "before 2010": 1.77,
-    "2010\u20132015": 1.78,
-    "2016\u20132020": 1.56,
-    "2021 onward": 2.21
+    "before 2010": 1.73,
+    "2010\u20132015": 1.74,
+    "2016\u20132020": 1.52,
+    "2021 onward": 2.16
    },
-   "expected_trials": 262,
-   "trials_ratio_to_expected": 0.71,
+   "expected_trials": 265,
+   "trials_ratio_to_expected": 0.7,
    "rank": 52
   },
   {
@@ -6705,8 +6706,8 @@
    "trials_open": 145,
    "female_only_trials": 5,
    "male_only_trials": 1,
-   "burden_female_pct": 22.4,
-   "dalys_k": 2003.4,
+   "burden_female_pct": 22.5,
+   "dalys_k": 2194.4,
    "skew": "male",
    "funding_m": 190.0,
    "by_sponsor": {
@@ -6782,7 +6783,7 @@
    },
    "excl_preg_pct": 29.0,
    "excl_lact_pct": 17.0,
-   "contra_pct": 14.8,
+   "contra_pct": 12.5,
    "wocbp_pct": 8.0,
    "pregtest_pct": 4.5,
    "max_age_pct": 67.6,
@@ -6797,29 +6798,29 @@
    "age_trials": 75,
    "over65_trial_pct": 2.2,
    "mean_age": 24.1,
-   "burden_65plus_pct": 10.6,
+   "burden_65plus_pct": 10.7,
    "burden_70plus_pct": 6.0,
-   "women_share_70plus": 19.7,
-   "age_gap_pts": 8.4,
-   "ratio": 2.0,
-   "ratio_open": 1.98,
-   "gap_pts": 22.3,
-   "trials_per_100k_dalys": 8.79,
-   "participants_per_1k_dalys": 60.1,
+   "women_share_70plus": 20.9,
+   "age_gap_pts": 8.5,
+   "ratio": 1.99,
+   "ratio_open": 1.97,
+   "gap_pts": 22.2,
+   "trials_per_100k_dalys": 8.02,
+   "participants_per_1k_dalys": 54.9,
    "by_sponsor_ratio": {
-    "Industry": 2.36,
+    "Industry": 2.35,
     "NIH": null,
-    "Other US government": 1.06,
-    "Universities, hospitals, other": 2.03
+    "Other US government": 1.05,
+    "Universities, hospitals, other": 2.02
    },
    "by_period_ratio": {
-    "before 2010": 2.94,
-    "2010\u20132015": 1.87,
-    "2016\u20132020": 2.05,
-    "2021 onward": 1.99
+    "before 2010": 2.93,
+    "2010\u20132015": 1.86,
+    "2016\u20132020": 2.04,
+    "2021 onward": 1.98
    },
-   "expected_trials": 477,
-   "trials_ratio_to_expected": 0.37,
+   "expected_trials": 495,
+   "trials_ratio_to_expected": 0.36,
    "rank": 53
   }
  ],
@@ -6836,7 +6837,7 @@
    "female_only_trials": 920,
    "male_only_trials": 0,
    "burden_female_pct": 98.8,
-   "dalys_k": 1298.1,
+   "dalys_k": 1341.5,
    "skew": "female",
    "funding_m": 740.0,
    "by_sponsor": {
@@ -6927,10 +6928,10 @@
    "age_trials": 616,
    "over65_trial_pct": 24.3,
    "mean_age": 55.0,
-   "burden_65plus_pct": 48.1,
-   "burden_70plus_pct": 34.3,
+   "burden_65plus_pct": 48.9,
+   "burden_70plus_pct": 35.3,
    "women_share_70plus": 98.6,
-   "age_gap_pts": 23.8
+   "age_gap_pts": 24.6
   },
   {
    "disease": "Cervical cancer",
@@ -6944,7 +6945,7 @@
    "female_only_trials": 134,
    "male_only_trials": 0,
    "burden_female_pct": 100.0,
-   "dalys_k": 213.5,
+   "dalys_k": 215.5,
    "skew": "female",
    "funding_m": 149.0,
    "by_sponsor": {
@@ -7035,10 +7036,10 @@
    "age_trials": 84,
    "over65_trial_pct": 1.1,
    "mean_age": 44.0,
-   "burden_65plus_pct": 26.5,
-   "burden_70plus_pct": 15.4,
+   "burden_65plus_pct": 27.5,
+   "burden_70plus_pct": 16.1,
    "women_share_70plus": 100.0,
-   "age_gap_pts": 25.4
+   "age_gap_pts": 26.4
   },
   {
    "disease": "Macular degeneration",
@@ -7143,10 +7144,10 @@
    "age_trials": 88,
    "over65_trial_pct": 62.0,
    "mean_age": 69.8,
-   "burden_65plus_pct": 87.9,
-   "burden_70plus_pct": 80.2,
-   "women_share_70plus": 67.5,
-   "age_gap_pts": 25.9
+   "burden_65plus_pct": 88.5,
+   "burden_70plus_pct": 81.0,
+   "women_share_70plus": 67.3,
+   "age_gap_pts": 26.5
   },
   {
    "disease": "Ovarian cancer",
@@ -7160,7 +7161,7 @@
    "female_only_trials": 357,
    "male_only_trials": 0,
    "burden_female_pct": 100.0,
-   "dalys_k": 319.0,
+   "dalys_k": 317.1,
    "skew": "female",
    "funding_m": 178.0,
    "by_sponsor": {
@@ -7251,10 +7252,10 @@
    "age_trials": 227,
    "over65_trial_pct": 34.5,
    "mean_age": 61.1,
-   "burden_65plus_pct": 52.0,
+   "burden_65plus_pct": 51.7,
    "burden_70plus_pct": 36.1,
    "women_share_70plus": 100.0,
-   "age_gap_pts": 17.5
+   "age_gap_pts": 17.2
   },
   {
    "disease": "Prostate cancer",
@@ -7268,7 +7269,7 @@
    "female_only_trials": 0,
    "male_only_trials": 871,
    "burden_female_pct": 0.0,
-   "dalys_k": 802.0,
+   "dalys_k": 861.5,
    "skew": "male",
    "funding_m": 311.0,
    "by_sponsor": {
@@ -7344,7 +7345,7 @@
    },
    "excl_preg_pct": 7.8,
    "excl_lact_pct": 6.4,
-   "contra_pct": 39.2,
+   "contra_pct": 38.9,
    "wocbp_pct": 17.0,
    "pregtest_pct": 3.0,
    "max_age_pct": 11.5,
@@ -7359,10 +7360,10 @@
    "age_trials": 397,
    "over65_trial_pct": 42.7,
    "mean_age": 64.7,
-   "burden_65plus_pct": 76.0,
-   "burden_70plus_pct": 60.9,
+   "burden_65plus_pct": 76.5,
+   "burden_70plus_pct": 61.3,
    "women_share_70plus": 0.0,
-   "age_gap_pts": 33.3
+   "age_gap_pts": 33.8
   },
   {
    "disease": "Testicular cancer",
@@ -7467,10 +7468,10 @@
    "age_trials": 20,
    "over65_trial_pct": 6.8,
    "mean_age": 28.2,
-   "burden_65plus_pct": 7.0,
-   "burden_70plus_pct": 3.6,
+   "burden_65plus_pct": 8.2,
+   "burden_70plus_pct": 4.1,
    "women_share_70plus": 0.0,
-   "age_gap_pts": 0.2
+   "age_gap_pts": 1.4
   },
   {
    "disease": "Uterine cancer",
@@ -7484,7 +7485,7 @@
    "female_only_trials": 227,
    "male_only_trials": 0,
    "burden_female_pct": 100.0,
-   "dalys_k": 312.1,
+   "dalys_k": 354.6,
    "skew": "female",
    "funding_m": 44.0,
    "by_sponsor": {
@@ -7575,10 +7576,10 @@
    "age_trials": 141,
    "over65_trial_pct": 3.5,
    "mean_age": 45.6,
-   "burden_65plus_pct": 58.1,
-   "burden_70plus_pct": 39.6,
+   "burden_65plus_pct": 58.8,
+   "burden_70plus_pct": 40.3,
    "women_share_70plus": 100.0,
-   "age_gap_pts": 54.6
+   "age_gap_pts": 55.3
   },
   {
    "disease": "Gynaecological diseases",
@@ -7592,7 +7593,7 @@
    "female_only_trials": 230,
    "male_only_trials": 0,
    "burden_female_pct": 100.0,
-   "dalys_k": 896.6,
+   "dalys_k": 962.3,
    "skew": "female",
    "funding_m": 58.0,
    "by_sponsor": {
@@ -7683,10 +7684,10 @@
    "age_trials": 95,
    "over65_trial_pct": 0.1,
    "mean_age": 35.0,
-   "burden_65plus_pct": 8.6,
-   "burden_70plus_pct": 5.1,
+   "burden_65plus_pct": 9.5,
+   "burden_70plus_pct": 5.6,
    "women_share_70plus": 100.0,
-   "age_gap_pts": 8.5
+   "age_gap_pts": 9.4
   },
   {
    "disease": "Infertility",
@@ -7699,8 +7700,8 @@
    "trials_open": 5,
    "female_only_trials": 53,
    "male_only_trials": 13,
-   "burden_female_pct": 42.8,
-   "dalys_k": 19.0,
+   "burden_female_pct": 45.1,
+   "dalys_k": 19.9,
    "skew": "balanced",
    "funding_m": 221.0,
    "by_sponsor": {
@@ -7807,8 +7808,8 @@
    "trials_open": 102,
    "female_only_trials": 41,
    "male_only_trials": 0,
-   "burden_female_pct": 47.5,
-   "dalys_k": 1005.1,
+   "burden_female_pct": 47.4,
+   "dalys_k": 1014.0,
    "skew": "balanced",
    "funding_m": 433.0,
    "by_sponsor": {
@@ -7884,7 +7885,7 @@
    },
    "excl_preg_pct": 0.0,
    "excl_lact_pct": 4.9,
-   "contra_pct": 2.8,
+   "contra_pct": 1.4,
    "wocbp_pct": 0.7,
    "pregtest_pct": 0.0,
    "max_age_pct": 72.9,
@@ -7899,10 +7900,10 @@
    "age_trials": 58,
    "over65_trial_pct": 0.0,
    "mean_age": 25.2,
-   "burden_65plus_pct": 2.6,
-   "burden_70plus_pct": 1.1,
-   "women_share_70plus": 65.7,
-   "age_gap_pts": 2.6
+   "burden_65plus_pct": 2.7,
+   "burden_70plus_pct": 1.2,
+   "women_share_70plus": 65.8,
+   "age_gap_pts": 2.7
   },
   {
    "disease": "Maternal conditions",
@@ -7916,7 +7917,7 @@
    "female_only_trials": 280,
    "male_only_trials": 1,
    "burden_female_pct": 100.0,
-   "dalys_k": 67.8,
+   "dalys_k": 56.9,
    "skew": "female",
    "funding_m": 382.0,
    "by_sponsor": {
@@ -7992,7 +7993,7 @@
    },
    "excl_preg_pct": 0.0,
    "excl_lact_pct": 10.2,
-   "contra_pct": 4.6,
+   "contra_pct": 4.1,
    "wocbp_pct": 0.5,
    "pregtest_pct": 3.4,
    "max_age_pct": 58.0,
@@ -8076,27 +8077,6 @@
    "participants": 73173,
    "female_pct": 89.5,
    "sex_specific": false
-  },
-  {
-   "condition": "Endometriosis",
-   "trials": 46,
-   "participants": 5676,
-   "female_pct": 99.6,
-   "sex_specific": true
-  },
-  {
-   "condition": "Vulvodynia",
-   "trials": 13,
-   "participants": 641,
-   "female_pct": 100.0,
-   "sex_specific": true
-  },
-  {
-   "condition": "PCOS",
-   "trials": 55,
-   "participants": 3143,
-   "female_pct": 98.9,
-   "sex_specific": true
   }
  ],
  "trend": [
@@ -8124,7 +8104,7 @@
    "other_female_pct": 48.0,
    "median_trial_female_pct": 41.7,
    "excl_preg_pct": 61.1,
-   "contra_pct": 42.8,
+   "contra_pct": 41.7,
    "wocbp_pct": 16.7,
    "excl_lact_pct": 30.6,
    "max_age_pct": 39.4,
@@ -8139,7 +8119,7 @@
    "other_female_pct": 39.7,
    "median_trial_female_pct": 41.0,
    "excl_preg_pct": 64.2,
-   "contra_pct": 43.8,
+   "contra_pct": 41.5,
    "wocbp_pct": 20.8,
    "excl_lact_pct": 31.3,
    "max_age_pct": 39.9,
@@ -8154,7 +8134,7 @@
    "other_female_pct": 45.1,
    "median_trial_female_pct": 42.3,
    "excl_preg_pct": 57.9,
-   "contra_pct": 42.4,
+   "contra_pct": 41.9,
    "wocbp_pct": 23.5,
    "excl_lact_pct": 33.0,
    "max_age_pct": 38.8,
@@ -8169,7 +8149,7 @@
    "other_female_pct": 45.2,
    "median_trial_female_pct": 43.4,
    "excl_preg_pct": 60.4,
-   "contra_pct": 46.6,
+   "contra_pct": 46.2,
    "wocbp_pct": 25.6,
    "excl_lact_pct": 35.9,
    "max_age_pct": 41.1,
@@ -8184,7 +8164,7 @@
    "other_female_pct": 44.9,
    "median_trial_female_pct": 43.6,
    "excl_preg_pct": 57.4,
-   "contra_pct": 42.9,
+   "contra_pct": 42.7,
    "wocbp_pct": 23.7,
    "excl_lact_pct": 34.2,
    "max_age_pct": 39.3,
@@ -8199,7 +8179,7 @@
    "other_female_pct": 46.7,
    "median_trial_female_pct": 44.9,
    "excl_preg_pct": 56.3,
-   "contra_pct": 41.7,
+   "contra_pct": 41.6,
    "wocbp_pct": 25.7,
    "excl_lact_pct": 36.6,
    "max_age_pct": 41.2,
@@ -8214,7 +8194,7 @@
    "other_female_pct": 47.3,
    "median_trial_female_pct": 44.9,
    "excl_preg_pct": 57.7,
-   "contra_pct": 39.6,
+   "contra_pct": 39.4,
    "wocbp_pct": 27.0,
    "excl_lact_pct": 37.2,
    "max_age_pct": 41.8,
@@ -8229,7 +8209,7 @@
    "other_female_pct": 48.4,
    "median_trial_female_pct": 46.2,
    "excl_preg_pct": 57.4,
-   "contra_pct": 38.7,
+   "contra_pct": 38.5,
    "wocbp_pct": 29.1,
    "excl_lact_pct": 37.2,
    "max_age_pct": 44.3,
@@ -8244,7 +8224,7 @@
    "other_female_pct": 44.2,
    "median_trial_female_pct": 46.3,
    "excl_preg_pct": 58.0,
-   "contra_pct": 39.4,
+   "contra_pct": 39.2,
    "wocbp_pct": 31.2,
    "excl_lact_pct": 38.6,
    "max_age_pct": 44.4,
@@ -8259,7 +8239,7 @@
    "other_female_pct": 49.9,
    "median_trial_female_pct": 45.9,
    "excl_preg_pct": 58.7,
-   "contra_pct": 39.1,
+   "contra_pct": 38.8,
    "wocbp_pct": 32.4,
    "excl_lact_pct": 38.9,
    "max_age_pct": 44.6,
@@ -8274,7 +8254,7 @@
    "other_female_pct": 47.0,
    "median_trial_female_pct": 45.2,
    "excl_preg_pct": 56.9,
-   "contra_pct": 37.2,
+   "contra_pct": 36.9,
    "wocbp_pct": 30.5,
    "excl_lact_pct": 39.1,
    "max_age_pct": 45.7,
@@ -8289,7 +8269,7 @@
    "other_female_pct": 49.6,
    "median_trial_female_pct": 45.7,
    "excl_preg_pct": 56.7,
-   "contra_pct": 35.6,
+   "contra_pct": 35.5,
    "wocbp_pct": 31.1,
    "excl_lact_pct": 37.5,
    "max_age_pct": 46.2,
@@ -8304,7 +8284,7 @@
    "other_female_pct": 53.3,
    "median_trial_female_pct": 45.5,
    "excl_preg_pct": 55.1,
-   "contra_pct": 34.8,
+   "contra_pct": 34.5,
    "wocbp_pct": 29.7,
    "excl_lact_pct": 36.4,
    "max_age_pct": 47.4,
@@ -8319,7 +8299,7 @@
    "other_female_pct": 51.1,
    "median_trial_female_pct": 46.7,
    "excl_preg_pct": 54.5,
-   "contra_pct": 34.4,
+   "contra_pct": 34.2,
    "wocbp_pct": 30.5,
    "excl_lact_pct": 35.2,
    "max_age_pct": 45.6,
@@ -8334,7 +8314,7 @@
    "other_female_pct": 48.2,
    "median_trial_female_pct": 46.8,
    "excl_preg_pct": 54.7,
-   "contra_pct": 34.9,
+   "contra_pct": 34.7,
    "wocbp_pct": 30.8,
    "excl_lact_pct": 37.1,
    "max_age_pct": 42.6,
@@ -8349,7 +8329,7 @@
    "other_female_pct": 50.9,
    "median_trial_female_pct": 47.8,
    "excl_preg_pct": 56.1,
-   "contra_pct": 35.2,
+   "contra_pct": 34.9,
    "wocbp_pct": 31.0,
    "excl_lact_pct": 38.6,
    "max_age_pct": 44.9,
@@ -8364,7 +8344,7 @@
    "other_female_pct": 47.7,
    "median_trial_female_pct": 48.0,
    "excl_preg_pct": 57.4,
-   "contra_pct": 38.1,
+   "contra_pct": 37.9,
    "wocbp_pct": 34.4,
    "excl_lact_pct": 39.3,
    "max_age_pct": 43.8,
@@ -8379,7 +8359,7 @@
    "other_female_pct": 55.4,
    "median_trial_female_pct": 49.6,
    "excl_preg_pct": 53.3,
-   "contra_pct": 34.9,
+   "contra_pct": 34.4,
    "wocbp_pct": 29.7,
    "excl_lact_pct": 36.8,
    "max_age_pct": 44.8,
@@ -8394,7 +8374,7 @@
    "other_female_pct": 55.5,
    "median_trial_female_pct": 50.0,
    "excl_preg_pct": 50.1,
-   "contra_pct": 32.1,
+   "contra_pct": 31.6,
    "wocbp_pct": 26.9,
    "excl_lact_pct": 34.6,
    "max_age_pct": 47.2,
@@ -8409,7 +8389,7 @@
    "other_female_pct": 54.2,
    "median_trial_female_pct": 50.0,
    "excl_preg_pct": 51.5,
-   "contra_pct": 31.2,
+   "contra_pct": 30.8,
    "wocbp_pct": 27.6,
    "excl_lact_pct": 34.9,
    "max_age_pct": 40.7,
@@ -8424,7 +8404,7 @@
    "other_female_pct": 57.3,
    "median_trial_female_pct": 51.1,
    "excl_preg_pct": 48.3,
-   "contra_pct": 27.6,
+   "contra_pct": 27.4,
    "wocbp_pct": 24.8,
    "excl_lact_pct": 33.3,
    "max_age_pct": 43.3,
@@ -8439,7 +8419,7 @@
    "other_female_pct": 55.1,
    "median_trial_female_pct": 52.1,
    "excl_preg_pct": 46.6,
-   "contra_pct": 25.5,
+   "contra_pct": 25.0,
    "wocbp_pct": 22.6,
    "excl_lact_pct": 30.3,
    "max_age_pct": 46.8,
@@ -8454,7 +8434,7 @@
    "other_female_pct": 55.3,
    "median_trial_female_pct": 52.6,
    "excl_preg_pct": 43.5,
-   "contra_pct": 21.3,
+   "contra_pct": 21.1,
    "wocbp_pct": 19.6,
    "excl_lact_pct": 27.4,
    "max_age_pct": 46.5,
@@ -8469,7 +8449,7 @@
    "other_female_pct": 54.0,
    "median_trial_female_pct": 55.7,
    "excl_preg_pct": 38.8,
-   "contra_pct": 17.9,
+   "contra_pct": 17.6,
    "wocbp_pct": 15.4,
    "excl_lact_pct": 20.0,
    "max_age_pct": 44.1,
@@ -8481,7 +8461,7 @@
    "Phase 1": {
     "trials": 3818,
     "excl_preg_pct": 59.5,
-    "contra_pct": 53.1,
+    "contra_pct": 52.5,
     "wocbp_pct": 45.8,
     "excl_lact_pct": 50.0,
     "pregtest_pct": 31.3
@@ -8489,7 +8469,7 @@
    "Phase 2": {
     "trials": 19375,
     "excl_preg_pct": 64.3,
-    "contra_pct": 54.4,
+    "contra_pct": 54.2,
     "wocbp_pct": 44.0,
     "excl_lact_pct": 49.2,
     "pregtest_pct": 34.4
@@ -8497,7 +8477,7 @@
    "Phase 3": {
     "trials": 10045,
     "excl_preg_pct": 53.1,
-    "contra_pct": 39.1,
+    "contra_pct": 38.9,
     "wocbp_pct": 32.5,
     "excl_lact_pct": 39.3,
     "pregtest_pct": 22.3
@@ -8505,7 +8485,7 @@
    "Phase 4": {
     "trials": 5593,
     "excl_preg_pct": 56.9,
-    "contra_pct": 28.2,
+    "contra_pct": 27.9,
     "wocbp_pct": 21.0,
     "excl_lact_pct": 34.1,
     "pregtest_pct": 15.4
@@ -8513,7 +8493,7 @@
    "Not applicable": {
     "trials": 17760,
     "excl_preg_pct": 42.5,
-    "contra_pct": 10.1,
+    "contra_pct": 9.6,
     "wocbp_pct": 7.8,
     "excl_lact_pct": 17.1,
     "pregtest_pct": 7.6
@@ -8523,7 +8503,7 @@
    "Industry": {
     "trials": 22089,
     "excl_preg_pct": 52.0,
-    "contra_pct": 39.1,
+    "contra_pct": 38.8,
     "wocbp_pct": 34.7,
     "excl_lact_pct": 39.7
    },
@@ -8537,14 +8517,14 @@
    "Other US government": {
     "trials": 1563,
     "excl_preg_pct": 32.4,
-    "contra_pct": 12.0,
+    "contra_pct": 11.1,
     "wocbp_pct": 8.1,
     "excl_lact_pct": 13.9
    },
    "Universities, hospitals, other": {
     "trials": 30681,
     "excl_preg_pct": 55.5,
-    "contra_pct": 30.2,
+    "contra_pct": 29.9,
     "wocbp_pct": 22.7,
     "excl_lact_pct": 32.3
    }
@@ -8552,14 +8532,14 @@
   "drug_trials": {
    "trials": 38043,
    "excl_preg_pct": 62.5,
-   "contra_pct": 47.0,
+   "contra_pct": 46.8,
    "wocbp_pct": 38.5,
    "excl_lact_pct": 46.5
   },
   "non_drug_trials": {
    "trials": 16527,
    "excl_preg_pct": 41.7,
-   "contra_pct": 8.8,
+   "contra_pct": 8.4,
    "wocbp_pct": 7.6,
    "excl_lact_pct": 15.8
   },
@@ -8680,7 +8660,7 @@
    "industry": 31.6,
    "nih": 35.6,
    "other": 45.8,
-   "burden": 51.0,
+   "burden": 51.1,
    "n_industry": 121,
    "n_nih": 3,
    "n_other": 371
@@ -8690,7 +8670,7 @@
    "industry": 34.5,
    "nih": 36.1,
    "other": 45.4,
-   "burden": 47.1,
+   "burden": 47.2,
    "n_industry": 209,
    "n_nih": 6,
    "n_other": 288
@@ -8700,10 +8680,20 @@
    "industry": 34.9,
    "nih": 26.6,
    "other": 57.1,
-   "burden": 51.7,
+   "burden": 52.4,
    "n_industry": 286,
    "n_nih": 1,
    "n_other": 137
+  },
+  {
+   "disease": "Liver cancer",
+   "industry": 24.5,
+   "nih": 31.5,
+   "other": 39.3,
+   "burden": 33.1,
+   "n_industry": 104,
+   "n_nih": 40,
+   "n_other": 172
   },
   {
    "disease": "Anxiety disorders",
@@ -8720,27 +8710,17 @@
    "industry": 29.9,
    "nih": 35.5,
    "other": 38.4,
-   "burden": 35.7,
+   "burden": 35.6,
    "n_industry": 202,
    "n_nih": 5,
    "n_other": 326
-  },
-  {
-   "disease": "Liver cancer",
-   "industry": 24.5,
-   "nih": 31.5,
-   "other": 39.3,
-   "burden": 32.7,
-   "n_industry": 104,
-   "n_nih": 40,
-   "n_other": 172
   },
   {
    "disease": "Sickle cell disease",
    "industry": 51.6,
    "nih": 51.6,
    "other": 51.6,
-   "burden": 58.6,
+   "burden": 58.7,
    "n_industry": 56,
    "n_nih": 13,
    "n_other": 126
@@ -8750,7 +8730,7 @@
    "industry": 54.1,
    "nih": 38.9,
    "other": 61.0,
-   "burden": 64.0,
+   "burden": 63.5,
    "n_industry": 297,
    "n_nih": 10,
    "n_other": 399
@@ -8760,7 +8740,7 @@
    "industry": 46.3,
    "nih": 33.0,
    "other": 55.2,
-   "burden": 51.2,
+   "burden": 51.3,
    "n_industry": 264,
    "n_nih": 5,
    "n_other": 94
@@ -8770,17 +8750,27 @@
    "industry": 40.8,
    "nih": 37.0,
    "other": 46.8,
-   "burden": 46.4,
+   "burden": 46.9,
    "n_industry": 276,
    "n_nih": 7,
    "n_other": 251
+  },
+  {
+   "disease": "Stomach cancer",
+   "industry": 34.9,
+   "nih": 38.1,
+   "other": 40.0,
+   "burden": 39.6,
+   "n_industry": 87,
+   "n_nih": 19,
+   "n_other": 86
   },
   {
    "disease": "Depression",
    "industry": 65.8,
    "nih": 65.9,
    "other": 57.2,
-   "burden": 62.9,
+   "burden": 62.7,
    "n_industry": 293,
    "n_nih": 25,
    "n_other": 912
@@ -8796,21 +8786,11 @@
    "n_other": 59
   },
   {
-   "disease": "Stomach cancer",
-   "industry": 34.9,
-   "nih": 38.1,
-   "other": 40.0,
-   "burden": 38.6,
-   "n_industry": 87,
-   "n_nih": 19,
-   "n_other": 86
-  },
-  {
    "disease": "Gallbladder disease",
    "industry": 53.0,
    "nih": 55.1,
    "other": 55.0,
-   "burden": 56.8,
+   "burden": 57.1,
    "n_industry": 15,
    "n_nih": 13,
    "n_other": 33
@@ -8830,7 +8810,7 @@
    "industry": 36.1,
    "nih": 35.0,
    "other": 38.9,
-   "burden": 37.7,
+   "burden": 37.5,
    "n_industry": 151,
    "n_nih": 7,
    "n_other": 199
@@ -8840,7 +8820,7 @@
    "industry": 38.0,
    "nih": 28.0,
    "other": 42.6,
-   "burden": 36.6,
+   "burden": 37.5,
    "n_industry": 190,
    "n_nih": 27,
    "n_other": 94
@@ -8850,7 +8830,7 @@
    "industry": 40.1,
    "nih": 48.0,
    "other": 50.4,
-   "burden": 46.2,
+   "burden": 46.7,
    "n_industry": 641,
    "n_nih": 113,
    "n_other": 686
@@ -8860,7 +8840,7 @@
    "industry": 59.2,
    "nih": 56.8,
    "other": 27.7,
-   "burden": 53.0,
+   "burden": 53.3,
    "n_industry": 508,
    "n_nih": 2,
    "n_other": 150
@@ -8870,7 +8850,7 @@
    "industry": 66.9,
    "nih": 69.5,
    "other": 74.9,
-   "burden": 67.1,
+   "burden": 67.8,
    "n_industry": 153,
    "n_nih": 11,
    "n_other": 152
@@ -8880,7 +8860,7 @@
    "industry": 62.6,
    "nih": 0.0,
    "other": 59.2,
-   "burden": 58.8,
+   "burden": 58.5,
    "n_industry": 204,
    "n_nih": 1,
    "n_other": 213
@@ -8910,7 +8890,7 @@
    "industry": 92.6,
    "nih": 73.1,
    "other": 74.5,
-   "burden": 79.2,
+   "burden": 78.8,
    "n_industry": 47,
    "n_nih": 24,
    "n_other": 48
@@ -8930,10 +8910,20 @@
    "industry": 53.5,
    "nih": 52.4,
    "other": 54.4,
-   "burden": 50.2,
+   "burden": 50.4,
    "n_industry": 47,
    "n_nih": 5,
    "n_other": 221
+  },
+  {
+   "disease": "Rheumatoid arthritis",
+   "industry": 77.1,
+   "nih": 77.7,
+   "other": 78.1,
+   "burden": 73.2,
+   "n_industry": 313,
+   "n_nih": 14,
+   "n_other": 73
   },
   {
    "disease": "Asthma",
@@ -8946,54 +8936,34 @@
    "n_other": 231
   },
   {
-   "disease": "Rheumatoid arthritis",
-   "industry": 77.1,
-   "nih": 77.7,
-   "other": 78.1,
-   "burden": 72.9,
-   "n_industry": 313,
-   "n_nih": 14,
-   "n_other": 73
+   "disease": "Brain cancer",
+   "industry": 50.2,
+   "nih": 44.9,
+   "other": 43.7,
+   "burden": 43.3,
+   "n_industry": 137,
+   "n_nih": 109,
+   "n_other": 470
   },
   {
    "disease": "Diabetes",
    "industry": 43.9,
    "nih": 41.9,
    "other": 51.9,
-   "burden": 42.7,
+   "burden": 42.6,
    "n_industry": 1032,
    "n_nih": 44,
    "n_other": 1138
-  },
-  {
-   "disease": "Brain cancer",
-   "industry": 50.2,
-   "nih": 44.9,
-   "other": 43.7,
-   "burden": 42.4,
-   "n_industry": 137,
-   "n_nih": 109,
-   "n_other": 470
   },
   {
    "disease": "Colorectal cancer",
    "industry": 44.1,
    "nih": 50.3,
    "other": 49.7,
-   "burden": 43.9,
+   "burden": 43.3,
    "n_industry": 251,
    "n_nih": 65,
    "n_other": 391
-  },
-  {
-   "disease": "Lymphoma",
-   "industry": 45.3,
-   "nih": 42.4,
-   "other": 43.9,
-   "burden": 40.1,
-   "n_industry": 449,
-   "n_nih": 155,
-   "n_other": 857
   },
   {
    "disease": "Oral and dental disease",
@@ -9006,14 +8976,24 @@
    "n_other": 233
   },
   {
-   "disease": "Hodgkin lymphoma",
-   "industry": 43.1,
-   "nih": 40.7,
-   "other": 46.0,
-   "burden": 39.3,
-   "n_industry": 51,
-   "n_nih": 25,
-   "n_other": 259
+   "disease": "Lymphoma",
+   "industry": 45.3,
+   "nih": 42.4,
+   "other": 43.9,
+   "burden": 39.6,
+   "n_industry": 449,
+   "n_nih": 155,
+   "n_other": 857
+  },
+  {
+   "disease": "Epilepsy",
+   "industry": 52.7,
+   "nih": 58.5,
+   "other": 56.2,
+   "burden": 46.7,
+   "n_industry": 168,
+   "n_nih": 3,
+   "n_other": 84
   },
   {
    "disease": "Migraine",
@@ -9026,61 +9006,61 @@
    "n_other": 104
   },
   {
-   "disease": "Epilepsy",
-   "industry": 52.7,
-   "nih": 58.5,
-   "other": 56.2,
-   "burden": 45.7,
-   "n_industry": 168,
-   "n_nih": 3,
-   "n_other": 84
-  },
-  {
    "disease": "Congenital heart disease",
    "industry": 51.8,
    "nih": 37.8,
    "other": 48.4,
-   "burden": 42.6,
+   "burden": 42.4,
    "n_industry": 50,
    "n_nih": 3,
    "n_other": 97
   },
   {
-   "disease": "HIV/AIDS",
-   "industry": 24.7,
-   "nih": 36.6,
-   "other": 33.3,
-   "burden": 25.6,
-   "n_industry": 199,
-   "n_nih": 124,
-   "n_other": 388
-  },
-  {
-   "disease": "Cirrhosis and chronic liver disease",
-   "industry": 50.6,
-   "nih": 29.7,
-   "other": 44.1,
-   "burden": 36.3,
-   "n_industry": 31,
-   "n_nih": 2,
-   "n_other": 22
+   "disease": "Hodgkin lymphoma",
+   "industry": 43.1,
+   "nih": 40.7,
+   "other": 46.0,
+   "burden": 37.7,
+   "n_industry": 51,
+   "n_nih": 25,
+   "n_other": 259
   },
   {
    "disease": "Pneumonia and influenza",
    "industry": 52.8,
    "nih": 46.3,
    "other": 57.1,
-   "burden": 43.8,
+   "burden": 46.1,
    "n_industry": 519,
    "n_nih": 86,
    "n_other": 482
+  },
+  {
+   "disease": "Cirrhosis and chronic liver disease",
+   "industry": 50.6,
+   "nih": 29.7,
+   "other": 44.1,
+   "burden": 37.2,
+   "n_industry": 31,
+   "n_nih": 2,
+   "n_other": 22
+  },
+  {
+   "disease": "HIV/AIDS",
+   "industry": 24.7,
+   "nih": 36.6,
+   "other": 33.3,
+   "burden": 25.8,
+   "n_industry": 199,
+   "n_nih": 124,
+   "n_other": 388
   },
   {
    "disease": "Skin cancer",
    "industry": 42.6,
    "nih": 38.2,
    "other": 54.2,
-   "burden": 34.7,
+   "burden": 35.1,
    "n_industry": 253,
    "n_nih": 92,
    "n_other": 311
@@ -9090,7 +9070,7 @@
    "industry": 48.8,
    "nih": 37.1,
    "other": 47.3,
-   "burden": 35.1,
+   "burden": 35.0,
    "n_industry": 101,
    "n_nih": 31,
    "n_other": 947
@@ -9100,27 +9080,17 @@
    "industry": 36.7,
    "nih": 32.7,
    "other": 35.8,
-   "burden": 26.8,
+   "burden": 26.9,
    "n_industry": 123,
    "n_nih": 1,
    "n_other": 158
-  },
-  {
-   "disease": "Hepatitis B",
-   "industry": 44.0,
-   "nih": 38.4,
-   "other": 51.0,
-   "burden": 32.3,
-   "n_industry": 65,
-   "n_nih": 7,
-   "n_other": 17
   },
   {
    "disease": "Alcohol use disorders",
    "industry": 40.9,
    "nih": 30.9,
    "other": 45.5,
-   "burden": 29.9,
+   "burden": 30.4,
    "n_industry": 19,
    "n_nih": 24,
    "n_other": 328
@@ -9136,11 +9106,21 @@
    "n_other": 246
   },
   {
+   "disease": "Hepatitis B",
+   "industry": 44.0,
+   "nih": 38.4,
+   "other": 51.0,
+   "burden": 31.8,
+   "n_industry": 65,
+   "n_nih": 7,
+   "n_other": 17
+  },
+  {
    "disease": "Esophageal cancer",
    "industry": 33.9,
    "nih": 21.8,
    "other": 34.2,
-   "burden": 18.9,
+   "burden": 19.3,
    "n_industry": 52,
    "n_nih": 14,
    "n_other": 119
@@ -9151,114 +9131,104 @@
   "over65_trial_pct": 23.6,
   "over65_drug_phase3_pct": 23.7,
   "diseases_with_age": 52,
-  "diseases_under_by_10": 35,
+  "diseases_under_by_10": 36,
   "old_diseases": [
    {
     "disease": "Lymphoma",
     "over65_trial_pct": 20.5,
-    "burden_65plus_pct": 63.1,
-    "women_share_70plus": 43.6,
-    "age_gap_pts": 42.6,
+    "burden_65plus_pct": 62.5,
+    "women_share_70plus": 42.8,
+    "age_gap_pts": 42.0,
     "max_age_pct": 29.0,
     "female_pct": 44.4,
-    "burden_female_pct": 40.1
+    "burden_female_pct": 39.6
    },
    {
     "disease": "Parkinson's disease",
     "over65_trial_pct": 50.0,
-    "burden_65plus_pct": 90.0,
-    "women_share_70plus": 38.3,
-    "age_gap_pts": 40.0,
+    "burden_65plus_pct": 90.4,
+    "women_share_70plus": 38.2,
+    "age_gap_pts": 40.4,
     "max_age_pct": 53.9,
     "female_pct": 35.7,
-    "burden_female_pct": 37.7
+    "burden_female_pct": 37.5
    },
    {
     "disease": "Pneumonia and influenza",
     "over65_trial_pct": 19.2,
-    "burden_65plus_pct": 54.7,
-    "women_share_70plus": 47.2,
-    "age_gap_pts": 35.5,
+    "burden_65plus_pct": 56.0,
+    "women_share_70plus": 48.5,
+    "age_gap_pts": 36.8,
     "max_age_pct": 37.4,
     "female_pct": 55.4,
-    "burden_female_pct": 43.8
+    "burden_female_pct": 46.1
    },
    {
     "disease": "Skin cancer",
     "over65_trial_pct": 26.4,
     "burden_65plus_pct": 59.9,
-    "women_share_70plus": 33.8,
+    "women_share_70plus": 33.4,
     "age_gap_pts": 33.5,
     "max_age_pct": 10.0,
     "female_pct": 44.0,
-    "burden_female_pct": 34.7
+    "burden_female_pct": 35.1
    },
    {
     "disease": "Lung cancer",
     "over65_trial_pct": 34.2,
-    "burden_65plus_pct": 63.1,
-    "women_share_70plus": 47.0,
-    "age_gap_pts": 28.9,
+    "burden_65plus_pct": 64.4,
+    "women_share_70plus": 47.7,
+    "age_gap_pts": 30.2,
     "max_age_pct": 6.9,
     "female_pct": 45.9,
-    "burden_female_pct": 46.2
+    "burden_female_pct": 46.7
    },
    {
     "disease": "Pancreatic cancer",
     "over65_trial_pct": 36.1,
-    "burden_65plus_pct": 60.6,
-    "women_share_70plus": 49.4,
-    "age_gap_pts": 24.5,
+    "burden_65plus_pct": 61.3,
+    "women_share_70plus": 49.2,
+    "age_gap_pts": 25.2,
     "max_age_pct": 8.7,
     "female_pct": 47.1,
     "burden_female_pct": 45.9
    },
    {
-    "disease": "Stomach cancer",
-    "over65_trial_pct": 27.4,
-    "burden_65plus_pct": 50.0,
-    "women_share_70plus": 39.3,
-    "age_gap_pts": 22.6,
-    "max_age_pct": 4.1,
-    "female_pct": 36.1,
-    "burden_female_pct": 38.6
-   },
-   {
     "disease": "Liver cancer",
     "over65_trial_pct": 34.6,
-    "burden_65plus_pct": 56.1,
-    "women_share_70plus": 37.3,
-    "age_gap_pts": 21.5,
+    "burden_65plus_pct": 58.3,
+    "women_share_70plus": 36.8,
+    "age_gap_pts": 23.7,
     "max_age_pct": 8.6,
     "female_pct": 28.2,
-    "burden_female_pct": 32.7
+    "burden_female_pct": 33.1
    },
    {
     "disease": "Coronary heart disease",
     "over65_trial_pct": 40.4,
-    "burden_65plus_pct": 60.6,
-    "women_share_70plus": 43.6,
-    "age_gap_pts": 20.2,
+    "burden_65plus_pct": 62.7,
+    "women_share_70plus": 43.0,
+    "age_gap_pts": 22.3,
     "max_age_pct": 32.1,
     "female_pct": 30.7,
-    "burden_female_pct": 35.7
+    "burden_female_pct": 35.6
    },
    {
     "disease": "COPD",
     "over65_trial_pct": 50.6,
-    "burden_65plus_pct": 70.4,
-    "women_share_70plus": 52.8,
-    "age_gap_pts": 19.8,
+    "burden_65plus_pct": 72.7,
+    "women_share_70plus": 53.3,
+    "age_gap_pts": 22.1,
     "max_age_pct": 33.6,
     "female_pct": 43.8,
-    "burden_female_pct": 51.7
+    "burden_female_pct": 52.4
    },
    {
     "disease": "Hearing loss",
     "over65_trial_pct": 40.4,
-    "burden_65plus_pct": 59.1,
-    "women_share_70plus": 53.3,
-    "age_gap_pts": 18.7,
+    "burden_65plus_pct": 60.2,
+    "women_share_70plus": 53.1,
+    "age_gap_pts": 19.8,
     "max_age_pct": 56.5,
     "female_pct": 43.1,
     "burden_female_pct": 46.0
@@ -9266,62 +9236,62 @@
    {
     "disease": "Esophageal cancer",
     "over65_trial_pct": 36.7,
-    "burden_65plus_pct": 54.9,
-    "women_share_70plus": 21.6,
-    "age_gap_pts": 18.2,
+    "burden_65plus_pct": 56.5,
+    "women_share_70plus": 21.4,
+    "age_gap_pts": 19.8,
     "max_age_pct": 8.1,
     "female_pct": 33.6,
-    "burden_female_pct": 18.9
+    "burden_female_pct": 19.3
    },
    {
     "disease": "Colorectal cancer",
     "over65_trial_pct": 34.7,
-    "burden_65plus_pct": 50.6,
-    "women_share_70plus": 49.3,
-    "age_gap_pts": 15.9,
+    "burden_65plus_pct": 50.1,
+    "women_share_70plus": 48.8,
+    "age_gap_pts": 15.4,
     "max_age_pct": 18.6,
     "female_pct": 47.7,
-    "burden_female_pct": 43.9
+    "burden_female_pct": 43.3
    },
    {
     "disease": "Kidney disease",
     "over65_trial_pct": 46.0,
-    "burden_65plus_pct": 58.4,
-    "women_share_70plus": 50.3,
-    "age_gap_pts": 12.4,
+    "burden_65plus_pct": 60.1,
+    "women_share_70plus": 50.6,
+    "age_gap_pts": 14.1,
     "max_age_pct": 39.1,
     "female_pct": 42.6,
-    "burden_female_pct": 46.4
+    "burden_female_pct": 46.9
    },
    {
     "disease": "Alzheimer's and other dementias",
     "over65_trial_pct": 81.7,
     "burden_65plus_pct": 92.9,
-    "women_share_70plus": 65.3,
+    "women_share_70plus": 64.8,
     "age_gap_pts": 11.2,
     "max_age_pct": 43.3,
     "female_pct": 58.0,
-    "burden_female_pct": 64.0
+    "burden_female_pct": 63.5
    },
    {
     "disease": "Osteoarthritis",
     "over65_trial_pct": 44.2,
-    "burden_65plus_pct": 53.5,
-    "women_share_70plus": 62.1,
-    "age_gap_pts": 9.3,
+    "burden_65plus_pct": 55.0,
+    "women_share_70plus": 61.7,
+    "age_gap_pts": 10.8,
     "max_age_pct": 56.1,
     "female_pct": 59.8,
-    "burden_female_pct": 58.8
+    "burden_female_pct": 58.5
    },
    {
     "disease": "Stroke",
     "over65_trial_pct": 64.3,
-    "burden_65plus_pct": 63.3,
-    "women_share_70plus": 56.5,
-    "age_gap_pts": -1.0,
+    "burden_65plus_pct": 65.0,
+    "women_share_70plus": 56.2,
+    "age_gap_pts": 0.7,
     "max_age_pct": 48.2,
     "female_pct": 35.7,
-    "burden_female_pct": 51.0
+    "burden_female_pct": 51.1
    }
   ]
  }

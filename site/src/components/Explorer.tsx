@@ -13,7 +13,7 @@ const ROWS: { key: string; label: string; unit: string; note?: string }[] = [
   { key: 'opioid_ed', label: 'are given an opioid', unit: '%' },
   { key: 'anyimage', label: 'get any imaging', unit: '%' },
   { key: 'tests_count', label: 'tests ordered, on average', unit: '' },
-  { key: 'admitted', label: 'are admitted', unit: '%' },
+  { key: 'admitted', label: 'are admitted, observed or transferred', unit: '%' },
   { key: 'symptom_dx', label: 'leave with a symptom-only diagnosis', unit: '%', note: 'a code like "abdominal pain" rather than a condition' },
   { key: 'lov_mean', label: 'minutes in the department', unit: ' min' },
 ]

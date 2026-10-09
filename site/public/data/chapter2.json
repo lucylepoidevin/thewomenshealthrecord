@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-06",
+ "generated": "2026-10-08",
  "years": [
   2018,
   2022
@@ -15,13 +15,15 @@
      "est": 67.6,
      "lo": 64.3,
      "hi": 70.8,
-     "n": 138
+     "n": 138,
+     "reliable": true
     },
     "men": {
      "est": 63.3,
      "lo": 60.3,
      "hi": 66.3,
-     "n": 239
+     "n": 239,
+     "reliable": true
     },
     "diff": 4.3,
     "diff_lo": -0.1,
@@ -32,13 +34,15 @@
      "est": 37.9,
      "lo": 26.4,
      "hi": 49.4,
-     "n": 138
+     "n": 138,
+     "reliable": true
     },
     "men": {
      "est": 46.0,
      "lo": 36.4,
      "hi": 55.7,
-     "n": 239
+     "n": 239,
+     "reliable": true
     },
     "diff": -8.1,
     "diff_lo": -23.1,
@@ -49,13 +53,15 @@
      "est": 49.7,
      "lo": 36.5,
      "hi": 63.0,
-     "n": 138
+     "n": 138,
+     "reliable": true
     },
     "men": {
      "est": 58.0,
      "lo": 48.8,
      "hi": 67.2,
-     "n": 239
+     "n": 239,
+     "reliable": true
     },
     "diff": -8.3,
     "diff_lo": -24.4,
@@ -66,13 +72,15 @@
      "est": 34.8,
      "lo": 25.8,
      "hi": 43.8,
-     "n": 131
+     "n": 131,
+     "reliable": true
     },
     "men": {
      "est": 47.7,
      "lo": 38.9,
      "hi": 56.4,
-     "n": 234
+     "n": 234,
+     "reliable": true
     },
     "diff": -12.9,
     "diff_lo": -25.4,
@@ -83,13 +91,15 @@
      "est": 48.1,
      "lo": 32.4,
      "hi": 63.9,
-     "n": 98
+     "n": 98,
+     "reliable": true
     },
     "men": {
      "est": 62.7,
      "lo": 52.7,
      "hi": 72.7,
-     "n": 177
+     "n": 177,
+     "reliable": true
     },
     "diff": -14.5,
     "diff_lo": -33.2,
@@ -100,13 +110,15 @@
      "est": 4.8,
      "lo": -2.0,
      "hi": 11.5,
-     "n": 98
+     "n": 98,
+     "reliable": false
     },
     "men": {
      "est": 13.8,
      "lo": 5.3,
      "hi": 22.2,
-     "n": 177
+     "n": 177,
+     "reliable": false
     },
     "diff": -9.0,
     "diff_lo": -19.8,
@@ -117,13 +129,15 @@
      "est": 17.3,
      "lo": 12.3,
      "hi": 22.2,
-     "n": 113
+     "n": 113,
+     "reliable": true
     },
     "men": {
      "est": 19.3,
      "lo": 13.7,
      "hi": 24.8,
-     "n": 203
+     "n": 203,
+     "reliable": true
     },
     "diff": -2.0,
     "diff_lo": -9.4,
@@ -134,13 +148,15 @@
      "est": 78.1,
      "lo": 70.2,
      "hi": 86.1,
-     "n": 138
+     "n": 138,
+     "reliable": true
     },
     "men": {
      "est": 79.9,
      "lo": 72.9,
      "hi": 86.9,
-     "n": 239
+     "n": 239,
+     "reliable": true
     },
     "diff": -1.8,
     "diff_lo": -12.4,
@@ -151,13 +167,15 @@
      "est": 27.9,
      "lo": 16.4,
      "hi": 39.4,
-     "n": 138
+     "n": 138,
+     "reliable": true
     },
     "men": {
      "est": 43.4,
      "lo": 33.7,
      "hi": 53.0,
-     "n": 239
+     "n": 239,
+     "reliable": true
     },
     "diff": -15.4,
     "diff_lo": -30.5,
@@ -165,33 +183,37 @@
    },
    "admitted": {
     "women": {
-     "est": 13.3,
-     "lo": 4.9,
-     "hi": 21.7,
-     "n": 138
+     "est": 81.8,
+     "lo": 74.3,
+     "hi": 89.3,
+     "n": 138,
+     "reliable": true
     },
     "men": {
-     "est": 15.8,
-     "lo": 8.9,
-     "hi": 22.6,
-     "n": 239
+     "est": 77.3,
+     "lo": 68.5,
+     "hi": 86.1,
+     "n": 239,
+     "reliable": true
     },
-    "diff": -2.5,
-    "diff_lo": -13.3,
-    "diff_hi": 8.3
+    "diff": 4.5,
+    "diff_lo": -7.1,
+    "diff_hi": 16.0
    },
    "lov_mean": {
     "women": {
      "est": 307.0,
      "lo": 239.0,
      "hi": 376.0,
-     "n": 128
+     "n": 128,
+     "reliable": true
     },
     "men": {
      "est": 393.0,
      "lo": 316.0,
      "hi": 469.0,
-     "n": 223
+     "n": 223,
+     "reliable": true
     },
     "diff": -85.0,
     "diff_lo": -188.0,
@@ -204,13 +226,15 @@
      "est": 50.4,
      "lo": 32.1,
      "hi": 68.7,
-     "n": 50
+     "n": 50,
+     "reliable": true
     },
     "men": {
      "est": 60.6,
      "lo": 47.6,
      "hi": 73.7,
-     "n": 118
+     "n": 118,
+     "reliable": true
     },
     "diff": -10.2,
     "diff_lo": -32.7,
@@ -221,13 +245,15 @@
      "est": 59.3,
      "lo": 39.1,
      "hi": 79.5,
-     "n": 43
+     "n": 43,
+     "reliable": true
     },
     "men": {
      "est": 70.5,
      "lo": 57.8,
      "hi": 83.2,
-     "n": 84
+     "n": 84,
+     "reliable": true
     },
     "diff": -11.2,
     "diff_lo": -35.0,
@@ -238,13 +264,15 @@
      "est": 26.4,
      "lo": 10.2,
      "hi": 42.5,
-     "n": 50
+     "n": 50,
+     "reliable": false
     },
     "men": {
      "est": 33.6,
      "lo": 22.0,
      "hi": 45.3,
-     "n": 118
+     "n": 118,
+     "reliable": true
     },
     "diff": -7.2,
     "diff_lo": -27.1,
@@ -264,13 +292,15 @@
       "est": 61.8,
       "lo": 58.8,
       "hi": 64.8,
-      "n": 1609
+      "n": 1609,
+      "reliable": true
      },
      "men": {
       "est": 62.9,
       "lo": 58.3,
       "hi": 67.6,
-      "n": 755
+      "n": 755,
+      "reliable": true
      },
      "diff": -1.2,
      "diff_lo": -6.7,
@@ -281,13 +311,15 @@
       "est": 8.0,
       "lo": 5.1,
       "hi": 10.8,
-      "n": 1622
+      "n": 1622,
+      "reliable": true
      },
      "men": {
       "est": 8.3,
       "lo": 5.5,
       "hi": 11.1,
-      "n": 760
+      "n": 760,
+      "reliable": true
      },
      "diff": -0.4,
      "diff_lo": -4.4,
@@ -298,13 +330,15 @@
       "est": 7.8,
       "lo": 6.4,
       "hi": 9.2,
-      "n": 2177
+      "n": 2177,
+      "reliable": true
      },
      "men": {
       "est": 13.1,
       "lo": 9.6,
       "hi": 16.6,
-      "n": 1016
+      "n": 1016,
+      "reliable": true
      },
      "diff": -5.3,
      "diff_lo": -9.1,
@@ -315,13 +349,15 @@
       "est": 44.0,
       "lo": 37.0,
       "hi": 51.0,
-      "n": 1929
+      "n": 1929,
+      "reliable": true
      },
      "men": {
       "est": 41.0,
       "lo": 34.0,
       "hi": 49.0,
-      "n": 879
+      "n": 879,
+      "reliable": true
      },
      "diff": 2.0,
      "diff_lo": -7.0,
@@ -332,13 +368,15 @@
       "est": 49.0,
       "lo": 45.1,
       "hi": 52.9,
-      "n": 2241
+      "n": 2241,
+      "reliable": true
      },
      "men": {
       "est": 47.1,
       "lo": 42.3,
       "hi": 51.9,
-      "n": 1050
+      "n": 1050,
+      "reliable": true
      },
      "diff": 1.8,
      "diff_lo": -4.3,
@@ -349,13 +387,15 @@
       "est": 27.1,
       "lo": 24.1,
       "hi": 30.1,
-      "n": 2241
+      "n": 2241,
+      "reliable": true
      },
      "men": {
       "est": 30.7,
       "lo": 26.1,
       "hi": 35.3,
-      "n": 1050
+      "n": 1050,
+      "reliable": true
      },
      "diff": -3.6,
      "diff_lo": -9.1,
@@ -366,13 +406,15 @@
       "est": 64.3,
       "lo": 61.4,
       "hi": 67.2,
-      "n": 2241
+      "n": 2241,
+      "reliable": true
      },
      "men": {
       "est": 62.3,
       "lo": 57.7,
       "hi": 67.0,
-      "n": 1050
+      "n": 1050,
+      "reliable": true
      },
      "diff": 1.9,
      "diff_lo": -3.5,
@@ -383,13 +425,15 @@
       "est": 5.6,
       "lo": 5.4,
       "hi": 5.7,
-      "n": 2225
+      "n": 2225,
+      "reliable": true
      },
      "men": {
       "est": 4.7,
       "lo": 4.5,
       "hi": 5.0,
-      "n": 1034
+      "n": 1034,
+      "reliable": true
      },
      "diff": 0.8,
      "diff_lo": 0.5,
@@ -397,33 +441,37 @@
     },
     "admitted": {
      "women": {
-      "est": 0.9,
-      "lo": 0.1,
-      "hi": 1.7,
-      "n": 2241
+      "est": 9.8,
+      "lo": 7.9,
+      "hi": 11.6,
+      "n": 2241,
+      "reliable": true
      },
      "men": {
-      "est": 0.7,
-      "lo": 0.2,
-      "hi": 1.3,
-      "n": 1050
+      "est": 14.7,
+      "lo": 11.6,
+      "hi": 17.8,
+      "n": 1050,
+      "reliable": true
      },
-     "diff": 0.2,
-     "diff_lo": -0.8,
-     "diff_hi": 1.1
+     "diff": -5.0,
+     "diff_lo": -8.6,
+     "diff_hi": -1.3
     },
     "symptom_dx": {
      "women": {
       "est": 47.1,
       "lo": 43.5,
       "hi": 50.7,
-      "n": 2241
+      "n": 2241,
+      "reliable": true
      },
      "men": {
       "est": 42.9,
       "lo": 38.2,
       "hi": 47.6,
-      "n": 1050
+      "n": 1050,
+      "reliable": true
      },
      "diff": 4.1,
      "diff_lo": -1.8,
@@ -434,13 +482,15 @@
       "est": 306.0,
       "lo": 280.0,
       "hi": 333.0,
-      "n": 2132
+      "n": 2132,
+      "reliable": true
      },
      "men": {
       "est": 302.0,
       "lo": 272.0,
       "hi": 332.0,
-      "n": 992
+      "n": 992,
+      "reliable": true
      },
      "diff": 5.0,
      "diff_lo": -35.0,
@@ -459,13 +509,15 @@
       "est": 70.3,
       "lo": 66.6,
       "hi": 74.1,
-      "n": 734
+      "n": 734,
+      "reliable": true
      },
      "men": {
       "est": 59.1,
       "lo": 53.4,
       "hi": 64.8,
-      "n": 556
+      "n": 556,
+      "reliable": true
      },
      "diff": 11.2,
      "diff_lo": 4.4,
@@ -476,13 +528,15 @@
       "est": 7.9,
       "lo": 5.1,
       "hi": 10.7,
-      "n": 749
+      "n": 749,
+      "reliable": true
      },
      "men": {
       "est": 8.4,
       "lo": 4.9,
       "hi": 12.0,
-      "n": 558
+      "n": 558,
+      "reliable": true
      },
      "diff": -0.5,
      "diff_lo": -5.0,
@@ -493,13 +547,15 @@
       "est": 13.9,
       "lo": 10.5,
       "hi": 17.2,
-      "n": 996
+      "n": 996,
+      "reliable": true
      },
      "men": {
       "est": 15.0,
       "lo": 11.2,
       "hi": 18.7,
-      "n": 753
+      "n": 753,
+      "reliable": true
      },
      "diff": -1.1,
      "diff_lo": -6.1,
@@ -510,13 +566,15 @@
       "est": 36.0,
       "lo": 29.0,
       "hi": 43.0,
-      "n": 916
+      "n": 916,
+      "reliable": true
      },
      "men": {
       "est": 36.0,
       "lo": 28.0,
       "hi": 43.0,
-      "n": 671
+      "n": 671,
+      "reliable": true
      },
      "diff": 1.0,
      "diff_lo": -9.0,
@@ -527,13 +585,15 @@
       "est": 58.0,
       "lo": 53.4,
       "hi": 62.5,
-      "n": 1031
+      "n": 1031,
+      "reliable": true
      },
      "men": {
       "est": 55.3,
       "lo": 49.7,
       "hi": 60.9,
-      "n": 778
+      "n": 778,
+      "reliable": true
      },
      "diff": 2.7,
      "diff_lo": -4.5,
@@ -544,13 +604,15 @@
       "est": 42.4,
       "lo": 37.7,
       "hi": 47.2,
-      "n": 1031
+      "n": 1031,
+      "reliable": true
      },
      "men": {
       "est": 42.7,
       "lo": 37.7,
       "hi": 47.8,
-      "n": 778
+      "n": 778,
+      "reliable": true
      },
      "diff": -0.3,
      "diff_lo": -7.3,
@@ -561,13 +623,15 @@
       "est": 78.9,
       "lo": 75.3,
       "hi": 82.4,
-      "n": 1031
+      "n": 1031,
+      "reliable": true
      },
      "men": {
       "est": 74.2,
       "lo": 69.7,
       "hi": 78.7,
-      "n": 778
+      "n": 778,
+      "reliable": true
      },
      "diff": 4.7,
      "diff_lo": -1.0,
@@ -578,13 +642,15 @@
       "est": 6.1,
       "lo": 5.8,
       "hi": 6.4,
-      "n": 1023
+      "n": 1023,
+      "reliable": true
      },
      "men": {
       "est": 5.5,
       "lo": 5.2,
       "hi": 5.9,
-      "n": 769
+      "n": 769,
+      "reliable": true
      },
      "diff": 0.6,
      "diff_lo": 0.1,
@@ -592,33 +658,37 @@
     },
     "admitted": {
      "women": {
-      "est": 2.5,
-      "lo": 1.0,
-      "hi": 3.9,
-      "n": 1031
+      "est": 22.0,
+      "lo": 18.8,
+      "hi": 25.3,
+      "n": 1031,
+      "reliable": true
      },
      "men": {
-      "est": 1.3,
-      "lo": 0.3,
-      "hi": 2.2,
-      "n": 778
+      "est": 20.6,
+      "lo": 16.0,
+      "hi": 25.3,
+      "n": 778,
+      "reliable": true
      },
-     "diff": 1.2,
-     "diff_lo": -0.5,
-     "diff_hi": 3.0
+     "diff": 1.4,
+     "diff_lo": -4.3,
+     "diff_hi": 7.1
     },
     "symptom_dx": {
      "women": {
       "est": 48.7,
       "lo": 43.4,
       "hi": 53.9,
-      "n": 1031
+      "n": 1031,
+      "reliable": true
      },
      "men": {
       "est": 44.6,
       "lo": 39.8,
       "hi": 49.4,
-      "n": 778
+      "n": 778,
+      "reliable": true
      },
      "diff": 4.1,
      "diff_lo": -3.0,
@@ -629,13 +699,15 @@
       "est": 353.0,
       "lo": 320.0,
       "hi": 387.0,
-      "n": 989
+      "n": 989,
+      "reliable": true
      },
      "men": {
       "est": 331.0,
       "lo": 297.0,
       "hi": 365.0,
-      "n": 748
+      "n": 748,
+      "reliable": true
      },
      "diff": 23.0,
      "diff_lo": -25.0,
@@ -654,13 +726,15 @@
       "est": 54.1,
       "lo": 45.2,
       "hi": 63.1,
-      "n": 413
+      "n": 413,
+      "reliable": true
      },
      "men": {
       "est": 46.6,
       "lo": 37.0,
       "hi": 56.1,
-      "n": 304
+      "n": 304,
+      "reliable": true
      },
      "diff": 7.6,
      "diff_lo": -5.5,
@@ -671,13 +745,15 @@
       "est": 10.2,
       "lo": 6.4,
       "hi": 14.0,
-      "n": 466
+      "n": 466,
+      "reliable": true
      },
      "men": {
       "est": 11.5,
       "lo": 6.6,
       "hi": 16.3,
-      "n": 324
+      "n": 324,
+      "reliable": true
      },
      "diff": -1.3,
      "diff_lo": -7.4,
@@ -688,13 +764,15 @@
       "est": 25.7,
       "lo": 20.4,
       "hi": 31.0,
-      "n": 584
+      "n": 584,
+      "reliable": true
      },
      "men": {
       "est": 27.6,
       "lo": 20.5,
       "hi": 34.8,
-      "n": 413
+      "n": 413,
+      "reliable": true
      },
      "diff": -1.9,
      "diff_lo": -10.8,
@@ -705,13 +783,15 @@
       "est": 40.0,
       "lo": 32.0,
       "hi": 48.0,
-      "n": 544
+      "n": 544,
+      "reliable": true
      },
      "men": {
       "est": 34.0,
       "lo": 27.0,
       "hi": 41.0,
-      "n": 366
+      "n": 366,
+      "reliable": true
      },
      "diff": 6.0,
      "diff_lo": -4.0,
@@ -722,13 +802,15 @@
       "est": 50.2,
       "lo": 44.2,
       "hi": 56.2,
-      "n": 600
+      "n": 600,
+      "reliable": true
      },
      "men": {
       "est": 47.7,
       "lo": 41.2,
       "hi": 54.1,
-      "n": 423
+      "n": 423,
+      "reliable": true
      },
      "diff": 2.5,
      "diff_lo": -6.3,
@@ -739,13 +821,15 @@
       "est": 38.4,
       "lo": 33.2,
       "hi": 43.7,
-      "n": 600
+      "n": 600,
+      "reliable": true
      },
      "men": {
       "est": 33.3,
       "lo": 27.8,
       "hi": 38.9,
-      "n": 423
+      "n": 423,
+      "reliable": true
      },
      "diff": 5.1,
      "diff_lo": -2.5,
@@ -756,13 +840,15 @@
       "est": 86.3,
       "lo": 82.1,
       "hi": 90.6,
-      "n": 600
+      "n": 600,
+      "reliable": true
      },
      "men": {
       "est": 83.5,
       "lo": 79.3,
       "hi": 87.7,
-      "n": 423
+      "n": 423,
+      "reliable": true
      },
      "diff": 2.8,
      "diff_lo": -3.2,
@@ -773,13 +859,15 @@
       "est": 6.6,
       "lo": 6.2,
       "hi": 7.1,
-      "n": 595
+      "n": 595,
+      "reliable": true
      },
      "men": {
       "est": 6.5,
       "lo": 5.9,
       "hi": 7.1,
-      "n": 421
+      "n": 421,
+      "reliable": true
      },
      "diff": 0.1,
      "diff_lo": -0.6,
@@ -787,33 +875,37 @@
     },
     "admitted": {
      "women": {
-      "est": 4.6,
-      "lo": 2.2,
-      "hi": 7.0,
-      "n": 600
+      "est": 37.0,
+      "lo": 31.3,
+      "hi": 42.7,
+      "n": 600,
+      "reliable": true
      },
      "men": {
-      "est": 3.8,
-      "lo": 1.3,
-      "hi": 6.4,
-      "n": 423
+      "est": 34.3,
+      "lo": 27.1,
+      "hi": 41.5,
+      "n": 423,
+      "reliable": true
      },
-     "diff": 0.8,
-     "diff_lo": -2.7,
-     "diff_hi": 4.3
+     "diff": 2.7,
+     "diff_lo": -6.5,
+     "diff_hi": 11.9
     },
     "symptom_dx": {
      "women": {
       "est": 37.7,
       "lo": 33.0,
       "hi": 42.4,
-      "n": 600
+      "n": 600,
+      "reliable": true
      },
      "men": {
       "est": 42.4,
       "lo": 36.0,
       "hi": 48.8,
-      "n": 423
+      "n": 423,
+      "reliable": true
      },
      "diff": -4.7,
      "diff_lo": -12.6,
@@ -824,13 +916,15 @@
       "est": 420.0,
       "lo": 350.0,
       "hi": 490.0,
-      "n": 572
+      "n": 572,
+      "reliable": true
      },
      "men": {
       "est": 384.0,
       "lo": 313.0,
       "hi": 454.0,
-      "n": 399
+      "n": 399,
+      "reliable": true
      },
      "diff": 36.0,
      "diff_lo": -63.0,
@@ -849,13 +943,15 @@
       "est": 62.9,
       "lo": 60.3,
       "hi": 65.6,
-      "n": 2756
+      "n": 2756,
+      "reliable": true
      },
      "men": {
       "est": 58.1,
       "lo": 53.9,
       "hi": 62.4,
-      "n": 1615
+      "n": 1615,
+      "reliable": true
      },
      "diff": 4.8,
      "diff_lo": -0.2,
@@ -866,13 +962,15 @@
       "est": 8.3,
       "lo": 6.3,
       "hi": 10.4,
-      "n": 2837
+      "n": 2837,
+      "reliable": true
      },
      "men": {
       "est": 9.0,
       "lo": 6.5,
       "hi": 11.5,
-      "n": 1642
+      "n": 1642,
+      "reliable": true
      },
      "diff": -0.7,
      "diff_lo": -4.0,
@@ -883,13 +981,15 @@
       "est": 12.1,
       "lo": 10.5,
       "hi": 13.8,
-      "n": 3757
+      "n": 3757,
+      "reliable": true
      },
      "men": {
       "est": 16.8,
       "lo": 13.7,
       "hi": 19.8,
-      "n": 2182
+      "n": 2182,
+      "reliable": true
      },
      "diff": -4.6,
      "diff_lo": -8.1,
@@ -900,13 +1000,15 @@
       "est": 41.0,
       "lo": 36.0,
       "hi": 47.0,
-      "n": 3389
+      "n": 3389,
+      "reliable": true
      },
      "men": {
       "est": 38.0,
       "lo": 33.0,
       "hi": 43.0,
-      "n": 1916
+      "n": 1916,
+      "reliable": true
      },
      "diff": 3.0,
      "diff_lo": -4.0,
@@ -917,13 +1019,15 @@
       "est": 51.5,
       "lo": 48.3,
       "hi": 54.6,
-      "n": 3872
+      "n": 3872,
+      "reliable": true
      },
      "men": {
       "est": 50.1,
       "lo": 46.6,
       "hi": 53.6,
-      "n": 2251
+      "n": 2251,
+      "reliable": true
      },
      "diff": 1.4,
      "diff_lo": -3.3,
@@ -934,13 +1038,15 @@
       "est": 32.8,
       "lo": 30.1,
       "hi": 35.5,
-      "n": 3872
+      "n": 3872,
+      "reliable": true
      },
      "men": {
       "est": 35.5,
       "lo": 32.0,
       "hi": 38.9,
-      "n": 2251
+      "n": 2251,
+      "reliable": true
      },
      "diff": -2.6,
      "diff_lo": -7.0,
@@ -951,13 +1057,15 @@
       "est": 71.5,
       "lo": 69.4,
       "hi": 73.6,
-      "n": 3872
+      "n": 3872,
+      "reliable": true
      },
      "men": {
       "est": 70.8,
       "lo": 67.8,
       "hi": 73.9,
-      "n": 2251
+      "n": 2251,
+      "reliable": true
      },
      "diff": 0.7,
      "diff_lo": -3.0,
@@ -968,13 +1076,15 @@
       "est": 5.9,
       "lo": 5.7,
       "hi": 6.1,
-      "n": 3843
+      "n": 3843,
+      "reliable": true
      },
      "men": {
       "est": 5.4,
       "lo": 5.1,
       "hi": 5.7,
-      "n": 2224
+      "n": 2224,
+      "reliable": true
      },
      "diff": 0.5,
      "diff_lo": 0.2,
@@ -982,33 +1092,37 @@
     },
     "admitted": {
      "women": {
-      "est": 1.9,
-      "lo": 0.9,
-      "hi": 2.8,
-      "n": 3872
+      "est": 17.2,
+      "lo": 15.5,
+      "hi": 18.9,
+      "n": 3872,
+      "reliable": true
      },
      "men": {
-      "est": 1.5,
-      "lo": 0.8,
-      "hi": 2.3,
-      "n": 2251
+      "est": 20.8,
+      "lo": 18.1,
+      "hi": 23.5,
+      "n": 2251,
+      "reliable": true
      },
-     "diff": 0.3,
-     "diff_lo": -0.9,
-     "diff_hi": 1.6
+     "diff": -3.6,
+     "diff_lo": -6.8,
+     "diff_hi": -0.4
     },
     "symptom_dx": {
      "women": {
       "est": 46.0,
       "lo": 43.1,
       "hi": 48.9,
-      "n": 3872
+      "n": 3872,
+      "reliable": true
      },
      "men": {
       "est": 43.4,
       "lo": 40.4,
       "hi": 46.4,
-      "n": 2251
+      "n": 2251,
+      "reliable": true
      },
      "diff": 2.6,
      "diff_lo": -1.5,
@@ -1019,13 +1133,15 @@
       "est": 336.0,
       "lo": 308.0,
       "hi": 364.0,
-      "n": 3693
+      "n": 3693,
+      "reliable": true
      },
      "men": {
       "est": 329.0,
       "lo": 303.0,
       "hi": 355.0,
-      "n": 2139
+      "n": 2139,
+      "reliable": true
      },
      "diff": 7.0,
      "diff_lo": -31.0,
@@ -1044,13 +1160,15 @@
       "est": 51.4,
       "lo": 46.2,
       "hi": 56.5,
-      "n": 595
+      "n": 595,
+      "reliable": true
      },
      "men": {
       "est": 40.2,
       "lo": 34.1,
       "hi": 46.4,
-      "n": 524
+      "n": 524,
+      "reliable": true
      },
      "diff": 11.1,
      "diff_lo": 3.1,
@@ -1061,13 +1179,15 @@
       "est": 25.5,
       "lo": 20.3,
       "hi": 30.7,
-      "n": 638
+      "n": 638,
+      "reliable": true
      },
      "men": {
       "est": 35.2,
       "lo": 27.7,
       "hi": 42.7,
-      "n": 551
+      "n": 551,
+      "reliable": true
      },
      "diff": -9.7,
      "diff_lo": -18.8,
@@ -1078,13 +1198,15 @@
       "est": 12.3,
       "lo": 9.5,
       "hi": 15.0,
-      "n": 858
+      "n": 858,
+      "reliable": true
      },
      "men": {
       "est": 16.2,
       "lo": 12.3,
       "hi": 20.1,
-      "n": 711
+      "n": 711,
+      "reliable": true
      },
      "diff": -3.9,
      "diff_lo": -8.7,
@@ -1095,13 +1217,15 @@
       "est": 30.0,
       "lo": 27.0,
       "hi": 34.0,
-      "n": 768
+      "n": 768,
+      "reliable": true
      },
      "men": {
       "est": 37.0,
       "lo": 28.0,
       "hi": 47.0,
-      "n": 635
+      "n": 635,
+      "reliable": true
      },
      "diff": -7.0,
      "diff_lo": -17.0,
@@ -1112,13 +1236,15 @@
       "est": 43.2,
       "lo": 37.6,
       "hi": 48.8,
-      "n": 885
+      "n": 885,
+      "reliable": true
      },
      "men": {
       "est": 41.2,
       "lo": 36.9,
       "hi": 45.4,
-      "n": 732
+      "n": 732,
+      "reliable": true
      },
      "diff": 2.0,
      "diff_lo": -5.0,
@@ -1129,13 +1255,15 @@
       "est": 10.7,
       "lo": 7.1,
       "hi": 14.3,
-      "n": 885
+      "n": 885,
+      "reliable": true
      },
      "men": {
       "est": 7.4,
       "lo": 4.9,
       "hi": 9.8,
-      "n": 732
+      "n": 732,
+      "reliable": true
      },
      "diff": 3.3,
      "diff_lo": -1.0,
@@ -1146,13 +1274,15 @@
       "est": 82.4,
       "lo": 78.1,
       "hi": 86.7,
-      "n": 885
+      "n": 885,
+      "reliable": true
      },
      "men": {
       "est": 83.6,
       "lo": 79.7,
       "hi": 87.5,
-      "n": 732
+      "n": 732,
+      "reliable": true
      },
      "diff": -1.2,
      "diff_lo": -7.0,
@@ -1163,13 +1293,15 @@
       "est": 5.9,
       "lo": 5.6,
       "hi": 6.3,
-      "n": 880
+      "n": 880,
+      "reliable": true
      },
      "men": {
       "est": 5.5,
       "lo": 5.2,
       "hi": 5.8,
-      "n": 725
+      "n": 725,
+      "reliable": true
      },
      "diff": 0.4,
      "diff_lo": -0.1,
@@ -1177,33 +1309,37 @@
     },
     "admitted": {
      "women": {
-      "est": 0.2,
-      "lo": -0.1,
-      "hi": 0.5,
-      "n": 885
+      "est": 6.8,
+      "lo": 4.1,
+      "hi": 9.4,
+      "n": 885,
+      "reliable": true
      },
      "men": {
-      "est": 1.5,
-      "lo": 0.5,
-      "hi": 2.6,
-      "n": 732
+      "est": 9.9,
+      "lo": 7.3,
+      "hi": 12.6,
+      "n": 732,
+      "reliable": true
      },
-     "diff": -1.3,
-     "diff_lo": -2.5,
-     "diff_hi": -0.2
+     "diff": -3.2,
+     "diff_lo": -6.9,
+     "diff_hi": 0.5
     },
     "symptom_dx": {
      "women": {
       "est": 67.1,
       "lo": 62.9,
       "hi": 71.3,
-      "n": 885
+      "n": 885,
+      "reliable": true
      },
      "men": {
       "est": 67.8,
       "lo": 62.5,
       "hi": 73.0,
-      "n": 732
+      "n": 732,
+      "reliable": true
      },
      "diff": -0.7,
      "diff_lo": -7.4,
@@ -1214,13 +1350,15 @@
       "est": 276.0,
       "lo": 244.0,
       "hi": 308.0,
-      "n": 853
+      "n": 853,
+      "reliable": true
      },
      "men": {
       "est": 258.0,
       "lo": 229.0,
       "hi": 286.0,
-      "n": 702
+      "n": 702,
+      "reliable": true
      },
      "diff": 18.0,
      "diff_lo": -25.0,
@@ -1239,13 +1377,15 @@
       "est": 50.9,
       "lo": 44.9,
       "hi": 56.9,
-      "n": 502
+      "n": 502,
+      "reliable": true
      },
      "men": {
       "est": 40.6,
       "lo": 34.4,
       "hi": 46.7,
-      "n": 502
+      "n": 502,
+      "reliable": true
      },
      "diff": 10.4,
      "diff_lo": 1.8,
@@ -1256,13 +1396,15 @@
       "est": 45.6,
       "lo": 39.1,
       "hi": 52.0,
-      "n": 557
+      "n": 557,
+      "reliable": true
      },
      "men": {
       "est": 52.5,
       "lo": 44.9,
       "hi": 60.2,
-      "n": 557
+      "n": 557,
+      "reliable": true
      },
      "diff": -7.0,
      "diff_lo": -17.0,
@@ -1273,13 +1415,15 @@
       "est": 17.6,
       "lo": 14.2,
       "hi": 21.0,
-      "n": 739
+      "n": 739,
+      "reliable": true
      },
      "men": {
       "est": 25.4,
       "lo": 20.4,
       "hi": 30.4,
-      "n": 732
+      "n": 732,
+      "reliable": true
      },
      "diff": -7.8,
      "diff_lo": -13.9,
@@ -1290,13 +1434,15 @@
       "est": 29.0,
       "lo": 24.0,
       "hi": 34.0,
-      "n": 666
+      "n": 666,
+      "reliable": true
      },
      "men": {
       "est": 29.0,
       "lo": 22.0,
       "hi": 37.0,
-      "n": 666
+      "n": 666,
+      "reliable": true
      },
      "diff": -0.0,
      "diff_lo": -9.0,
@@ -1307,13 +1453,15 @@
       "est": 57.0,
       "lo": 51.9,
       "hi": 62.0,
-      "n": 765
+      "n": 765,
+      "reliable": true
      },
      "men": {
       "est": 57.6,
       "lo": 51.2,
       "hi": 63.9,
-      "n": 771
+      "n": 771,
+      "reliable": true
      },
      "diff": -0.6,
      "diff_lo": -8.7,
@@ -1324,13 +1472,15 @@
       "est": 20.0,
       "lo": 16.1,
       "hi": 23.9,
-      "n": 765
+      "n": 765,
+      "reliable": true
      },
      "men": {
       "est": 20.4,
       "lo": 15.4,
       "hi": 25.4,
-      "n": 771
+      "n": 771,
+      "reliable": true
      },
      "diff": -0.4,
      "diff_lo": -6.7,
@@ -1341,13 +1491,15 @@
       "est": 88.5,
       "lo": 85.7,
       "hi": 91.4,
-      "n": 765
+      "n": 765,
+      "reliable": true
      },
      "men": {
       "est": 83.4,
       "lo": 78.5,
       "hi": 88.3,
-      "n": 771
+      "n": 771,
+      "reliable": true
      },
      "diff": 5.1,
      "diff_lo": -0.6,
@@ -1358,13 +1510,15 @@
       "est": 6.7,
       "lo": 6.4,
       "hi": 7.0,
-      "n": 755
+      "n": 755,
+      "reliable": true
      },
      "men": {
       "est": 6.4,
       "lo": 6.0,
       "hi": 6.7,
-      "n": 761
+      "n": 761,
+      "reliable": true
      },
      "diff": 0.3,
      "diff_lo": -0.1,
@@ -1372,33 +1526,37 @@
     },
     "admitted": {
      "women": {
-      "est": 2.6,
-      "lo": 1.1,
-      "hi": 4.2,
-      "n": 765
+      "est": 21.2,
+      "lo": 16.0,
+      "hi": 26.3,
+      "n": 765,
+      "reliable": true
      },
      "men": {
-      "est": 2.3,
-      "lo": 1.0,
-      "hi": 3.6,
-      "n": 771
+      "est": 28.0,
+      "lo": 23.5,
+      "hi": 32.4,
+      "n": 771,
+      "reliable": true
      },
-     "diff": 0.3,
-     "diff_lo": -1.7,
-     "diff_hi": 2.3
+     "diff": -6.8,
+     "diff_lo": -13.6,
+     "diff_hi": 0.0
     },
     "symptom_dx": {
      "women": {
       "est": 68.5,
       "lo": 64.2,
       "hi": 72.8,
-      "n": 765
+      "n": 765,
+      "reliable": true
      },
      "men": {
       "est": 64.2,
       "lo": 59.0,
       "hi": 69.4,
-      "n": 771
+      "n": 771,
+      "reliable": true
      },
      "diff": 4.3,
      "diff_lo": -2.5,
@@ -1409,13 +1567,15 @@
       "est": 337.0,
       "lo": 291.0,
       "hi": 383.0,
-      "n": 725
+      "n": 725,
+      "reliable": true
      },
      "men": {
       "est": 375.0,
       "lo": 336.0,
       "hi": 414.0,
-      "n": 720
+      "n": 720,
+      "reliable": true
      },
      "diff": -38.0,
      "diff_lo": -98.0,
@@ -1434,13 +1594,15 @@
       "est": 36.4,
       "lo": 29.2,
       "hi": 43.6,
-      "n": 349
+      "n": 349,
+      "reliable": true
      },
      "men": {
       "est": 29.5,
       "lo": 21.1,
       "hi": 37.9,
-      "n": 312
+      "n": 312,
+      "reliable": true
      },
      "diff": 6.9,
      "diff_lo": -4.1,
@@ -1451,13 +1613,15 @@
       "est": 51.3,
       "lo": 43.3,
       "hi": 59.3,
-      "n": 404
+      "n": 404,
+      "reliable": true
      },
      "men": {
       "est": 46.6,
       "lo": 37.9,
       "hi": 55.2,
-      "n": 345
+      "n": 345,
+      "reliable": true
      },
      "diff": 4.7,
      "diff_lo": -7.1,
@@ -1468,13 +1632,15 @@
       "est": 36.0,
       "lo": 30.1,
       "hi": 42.0,
-      "n": 519
+      "n": 519,
+      "reliable": true
      },
      "men": {
       "est": 34.8,
       "lo": 28.9,
       "hi": 40.8,
-      "n": 473
+      "n": 473,
+      "reliable": true
      },
      "diff": 1.2,
      "diff_lo": -7.2,
@@ -1485,13 +1651,15 @@
       "est": 26.0,
       "lo": 21.0,
       "hi": 30.0,
-      "n": 483
+      "n": 483,
+      "reliable": true
      },
      "men": {
       "est": 31.0,
       "lo": 22.0,
       "hi": 41.0,
-      "n": 425
+      "n": 425,
+      "reliable": true
      },
      "diff": -6.0,
      "diff_lo": -16.0,
@@ -1502,13 +1670,15 @@
       "est": 51.0,
       "lo": 44.1,
       "hi": 57.9,
-      "n": 540
+      "n": 540,
+      "reliable": true
      },
      "men": {
       "est": 48.8,
       "lo": 42.7,
       "hi": 54.8,
-      "n": 487
+      "n": 487,
+      "reliable": true
      },
      "diff": 2.2,
      "diff_lo": -6.9,
@@ -1519,13 +1689,15 @@
       "est": 17.6,
       "lo": 12.7,
       "hi": 22.5,
-      "n": 540
+      "n": 540,
+      "reliable": true
      },
      "men": {
       "est": 18.6,
       "lo": 13.1,
       "hi": 24.2,
-      "n": 487
+      "n": 487,
+      "reliable": true
      },
      "diff": -1.1,
      "diff_lo": -8.4,
@@ -1536,13 +1708,15 @@
       "est": 93.8,
       "lo": 91.5,
       "hi": 96.1,
-      "n": 540
+      "n": 540,
+      "reliable": true
      },
      "men": {
       "est": 85.9,
       "lo": 81.9,
       "hi": 89.9,
-      "n": 487
+      "n": 487,
+      "reliable": true
      },
      "diff": 7.9,
      "diff_lo": 3.3,
@@ -1553,13 +1727,15 @@
       "est": 6.8,
       "lo": 6.5,
       "hi": 7.2,
-      "n": 536
+      "n": 536,
+      "reliable": true
      },
      "men": {
       "est": 6.8,
       "lo": 6.3,
       "hi": 7.2,
-      "n": 484
+      "n": 484,
+      "reliable": true
      },
      "diff": 0.1,
      "diff_lo": -0.5,
@@ -1567,33 +1743,37 @@
     },
     "admitted": {
      "women": {
-      "est": 4.5,
-      "lo": 2.1,
-      "hi": 6.8,
-      "n": 540
+      "est": 35.2,
+      "lo": 27.9,
+      "hi": 42.5,
+      "n": 540,
+      "reliable": true
      },
      "men": {
-      "est": 8.0,
-      "lo": 3.7,
-      "hi": 12.2,
-      "n": 487
+      "est": 44.8,
+      "lo": 38.8,
+      "hi": 50.7,
+      "n": 487,
+      "reliable": true
      },
-     "diff": -3.5,
-     "diff_lo": -8.3,
-     "diff_hi": 1.3
+     "diff": -9.6,
+     "diff_lo": -19.0,
+     "diff_hi": -0.2
     },
     "symptom_dx": {
      "women": {
       "est": 65.3,
       "lo": 59.3,
       "hi": 71.4,
-      "n": 540
+      "n": 540,
+      "reliable": true
      },
      "men": {
       "est": 65.3,
       "lo": 59.9,
       "hi": 70.8,
-      "n": 487
+      "n": 487,
+      "reliable": true
      },
      "diff": 0.0,
      "diff_lo": -8.1,
@@ -1604,13 +1784,15 @@
       "est": 393.0,
       "lo": 302.0,
       "hi": 484.0,
-      "n": 516
+      "n": 516,
+      "reliable": true
      },
      "men": {
       "est": 385.0,
       "lo": 330.0,
       "hi": 440.0,
-      "n": 454
+      "n": 454,
+      "reliable": true
      },
      "diff": 8.0,
      "diff_lo": -98.0,
@@ -1629,13 +1811,15 @@
       "est": 47.8,
       "lo": 44.4,
       "hi": 51.3,
-      "n": 1446
+      "n": 1446,
+      "reliable": true
      },
      "men": {
       "est": 37.9,
       "lo": 33.6,
       "hi": 42.2,
-      "n": 1338
+      "n": 1338,
+      "reliable": true
      },
      "diff": 9.9,
      "diff_lo": 4.4,
@@ -1646,13 +1830,15 @@
       "est": 39.3,
       "lo": 34.0,
       "hi": 44.6,
-      "n": 1599
+      "n": 1599,
+      "reliable": true
      },
      "men": {
       "est": 44.6,
       "lo": 39.1,
       "hi": 50.1,
-      "n": 1453
+      "n": 1453,
+      "reliable": true
      },
      "diff": -5.3,
      "diff_lo": -12.9,
@@ -1663,13 +1849,15 @@
       "est": 19.8,
       "lo": 17.5,
       "hi": 22.2,
-      "n": 2116
+      "n": 2116,
+      "reliable": true
      },
      "men": {
       "est": 24.4,
       "lo": 21.2,
       "hi": 27.5,
-      "n": 1916
+      "n": 1916,
+      "reliable": true
      },
      "diff": -4.6,
      "diff_lo": -8.5,
@@ -1680,13 +1868,15 @@
       "est": 29.0,
       "lo": 26.0,
       "hi": 32.0,
-      "n": 1917
+      "n": 1917,
+      "reliable": true
      },
      "men": {
       "est": 33.0,
       "lo": 27.0,
       "hi": 38.0,
-      "n": 1726
+      "n": 1726,
+      "reliable": true
      },
      "diff": -4.0,
      "diff_lo": -10.0,
@@ -1697,13 +1887,15 @@
       "est": 50.1,
       "lo": 46.1,
       "hi": 54.1,
-      "n": 2190
+      "n": 2190,
+      "reliable": true
      },
      "men": {
       "est": 49.5,
       "lo": 45.6,
       "hi": 53.5,
-      "n": 1990
+      "n": 1990,
+      "reliable": true
      },
      "diff": 0.6,
      "diff_lo": -5.0,
@@ -1714,13 +1906,15 @@
       "est": 15.8,
       "lo": 13.3,
       "hi": 18.2,
-      "n": 2190
+      "n": 2190,
+      "reliable": true
      },
      "men": {
       "est": 15.3,
       "lo": 12.5,
       "hi": 18.0,
-      "n": 1990
+      "n": 1990,
+      "reliable": true
      },
      "diff": 0.5,
      "diff_lo": -3.2,
@@ -1731,13 +1925,15 @@
       "est": 87.4,
       "lo": 85.1,
       "hi": 89.6,
-      "n": 2190
+      "n": 2190,
+      "reliable": true
      },
      "men": {
       "est": 84.1,
       "lo": 81.1,
       "hi": 87.1,
-      "n": 1990
+      "n": 1990,
+      "reliable": true
      },
      "diff": 3.3,
      "diff_lo": -0.4,
@@ -1748,13 +1944,15 @@
       "est": 6.4,
       "lo": 6.2,
       "hi": 6.7,
-      "n": 2171
+      "n": 2171,
+      "reliable": true
      },
      "men": {
       "est": 6.2,
       "lo": 5.9,
       "hi": 6.4,
-      "n": 1970
+      "n": 1970,
+      "reliable": true
      },
      "diff": 0.3,
      "diff_lo": -0.1,
@@ -1762,33 +1960,37 @@
     },
     "admitted": {
      "women": {
-      "est": 2.1,
-      "lo": 1.2,
-      "hi": 3.1,
-      "n": 2190
+      "est": 18.8,
+      "lo": 15.3,
+      "hi": 22.4,
+      "n": 2190,
+      "reliable": true
      },
      "men": {
-      "est": 3.4,
-      "lo": 2.0,
-      "hi": 4.8,
-      "n": 1990
+      "est": 25.5,
+      "lo": 23.0,
+      "hi": 28.1,
+      "n": 1990,
+      "reliable": true
      },
-     "diff": -1.3,
-     "diff_lo": -3.0,
-     "diff_hi": 0.4
+     "diff": -6.7,
+     "diff_lo": -11.1,
+     "diff_hi": -2.3
     },
     "symptom_dx": {
      "women": {
       "est": 67.2,
       "lo": 64.1,
       "hi": 70.3,
-      "n": 2190
+      "n": 2190,
+      "reliable": true
      },
      "men": {
       "est": 65.8,
       "lo": 62.9,
       "hi": 68.6,
-      "n": 1990
+      "n": 1990,
+      "reliable": true
      },
      "diff": 1.4,
      "diff_lo": -2.8,
@@ -1799,13 +2001,15 @@
       "est": 326.0,
       "lo": 290.0,
       "hi": 362.0,
-      "n": 2094
+      "n": 2094,
+      "reliable": true
      },
      "men": {
       "est": 334.0,
       "lo": 306.0,
       "hi": 362.0,
-      "n": 1876
+      "n": 1876,
+      "reliable": true
      },
      "diff": -8.0,
      "diff_lo": -54.0,
@@ -1824,13 +2028,15 @@
       "est": 74.0,
       "lo": 69.5,
       "hi": 78.6,
-      "n": 468
+      "n": 468,
+      "reliable": true
      },
      "men": {
       "est": 72.2,
       "lo": 66.6,
       "hi": 77.8,
-      "n": 352
+      "n": 352,
+      "reliable": true
      },
      "diff": 1.8,
      "diff_lo": -5.4,
@@ -1841,13 +2047,15 @@
       "est": 5.4,
       "lo": 0.8,
       "hi": 10.0,
-      "n": 490
+      "n": 490,
+      "reliable": false
      },
      "men": {
       "est": 4.2,
       "lo": 0.6,
       "hi": 7.9,
-      "n": 337
+      "n": 337,
+      "reliable": false
      },
      "diff": 1.2,
      "diff_lo": -4.7,
@@ -1858,13 +2066,15 @@
       "est": 6.4,
       "lo": 4.2,
       "hi": 8.6,
-      "n": 639
+      "n": 639,
+      "reliable": true
      },
      "men": {
       "est": 8.5,
       "lo": 5.3,
       "hi": 11.6,
-      "n": 460
+      "n": 460,
+      "reliable": true
      },
      "diff": -2.1,
      "diff_lo": -5.9,
@@ -1875,13 +2085,15 @@
       "est": 41.0,
       "lo": 27.0,
       "hi": 56.0,
-      "n": 566
+      "n": 566,
+      "reliable": true
      },
      "men": {
       "est": 32.0,
       "lo": 26.0,
       "hi": 37.0,
-      "n": 406
+      "n": 406,
+      "reliable": true
      },
      "diff": 9.0,
      "diff_lo": -6.0,
@@ -1892,13 +2104,15 @@
       "est": 61.1,
       "lo": 56.3,
       "hi": 65.9,
-      "n": 653
+      "n": 653,
+      "reliable": true
      },
      "men": {
       "est": 61.5,
       "lo": 54.8,
       "hi": 68.2,
-      "n": 473
+      "n": 473,
+      "reliable": true
      },
      "diff": -0.4,
      "diff_lo": -8.7,
@@ -1909,13 +2123,15 @@
       "est": 19.3,
       "lo": 15.3,
       "hi": 23.2,
-      "n": 653
+      "n": 653,
+      "reliable": true
      },
      "men": {
       "est": 19.5,
       "lo": 14.5,
       "hi": 24.6,
-      "n": 473
+      "n": 473,
+      "reliable": true
      },
      "diff": -0.2,
      "diff_lo": -6.6,
@@ -1926,13 +2142,15 @@
       "est": 45.9,
       "lo": 40.8,
       "hi": 51.0,
-      "n": 653
+      "n": 653,
+      "reliable": true
      },
      "men": {
       "est": 47.6,
       "lo": 41.2,
       "hi": 53.9,
-      "n": 473
+      "n": 473,
+      "reliable": true
      },
      "diff": -1.7,
      "diff_lo": -9.8,
@@ -1943,13 +2161,15 @@
       "est": 2.8,
       "lo": 2.5,
       "hi": 3.1,
-      "n": 638
+      "n": 638,
+      "reliable": true
      },
      "men": {
       "est": 1.6,
       "lo": 1.3,
       "hi": 1.9,
-      "n": 464
+      "n": 464,
+      "reliable": true
      },
      "diff": 1.2,
      "diff_lo": 0.7,
@@ -1957,33 +2177,37 @@
     },
     "admitted": {
      "women": {
-      "est": 0.3,
-      "lo": -0.1,
-      "hi": 0.7,
-      "n": 653
+      "est": 3.3,
+      "lo": 1.6,
+      "hi": 5.0,
+      "n": 653,
+      "reliable": true
      },
      "men": {
-      "est": 0.5,
-      "lo": -0.2,
-      "hi": 1.2,
-      "n": 473
+      "est": 3.8,
+      "lo": 1.5,
+      "hi": 6.1,
+      "n": 473,
+      "reliable": false
      },
-     "diff": -0.2,
-     "diff_lo": -1.0,
-     "diff_hi": 0.6
+     "diff": -0.5,
+     "diff_lo": -3.3,
+     "diff_hi": 2.4
     },
     "symptom_dx": {
      "women": {
       "est": 7.9,
       "lo": 5.3,
       "hi": 10.4,
-      "n": 653
+      "n": 653,
+      "reliable": true
      },
      "men": {
       "est": 2.9,
       "lo": 1.3,
       "hi": 4.6,
-      "n": 473
+      "n": 473,
+      "reliable": true
      },
      "diff": 4.9,
      "diff_lo": 1.9,
@@ -1994,13 +2218,15 @@
       "est": 210.0,
       "lo": 183.0,
       "hi": 237.0,
-      "n": 629
+      "n": 629,
+      "reliable": true
      },
      "men": {
       "est": 166.0,
       "lo": 146.0,
       "hi": 185.0,
-      "n": 459
+      "n": 459,
+      "reliable": true
      },
      "diff": 44.0,
      "diff_lo": 11.0,
@@ -2019,13 +2245,15 @@
       "est": 80.3,
       "lo": 74.6,
       "hi": 85.9,
-      "n": 309
+      "n": 309,
+      "reliable": true
      },
      "men": {
       "est": 73.8,
       "lo": 64.7,
       "hi": 82.9,
-      "n": 272
+      "n": 272,
+      "reliable": true
      },
      "diff": 6.5,
      "diff_lo": -4.3,
@@ -2036,13 +2264,15 @@
       "est": 5.1,
       "lo": 1.6,
       "hi": 8.6,
-      "n": 312
+      "n": 312,
+      "reliable": false
      },
      "men": {
       "est": 6.8,
       "lo": 2.0,
       "hi": 11.5,
-      "n": 284
+      "n": 284,
+      "reliable": false
      },
      "diff": -1.7,
      "diff_lo": -7.6,
@@ -2053,13 +2283,15 @@
       "est": 10.5,
       "lo": 6.6,
       "hi": 14.4,
-      "n": 416
+      "n": 416,
+      "reliable": true
      },
      "men": {
       "est": 17.3,
       "lo": 11.5,
       "hi": 23.1,
-      "n": 372
+      "n": 372,
+      "reliable": true
      },
      "diff": -6.8,
      "diff_lo": -13.8,
@@ -2070,13 +2302,15 @@
       "est": 44.0,
       "lo": 33.0,
       "hi": 56.0,
-      "n": 366
+      "n": 366,
+      "reliable": true
      },
      "men": {
       "est": 32.0,
       "lo": 25.0,
       "hi": 40.0,
-      "n": 341
+      "n": 341,
+      "reliable": true
      },
      "diff": 12.0,
      "diff_lo": -2.0,
@@ -2087,13 +2321,15 @@
       "est": 69.0,
       "lo": 62.8,
       "hi": 75.2,
-      "n": 429
+      "n": 429,
+      "reliable": true
      },
      "men": {
       "est": 62.6,
       "lo": 56.9,
       "hi": 68.3,
-      "n": 388
+      "n": 388,
+      "reliable": true
      },
      "diff": 6.4,
      "diff_lo": -2.1,
@@ -2104,13 +2340,15 @@
       "est": 32.7,
       "lo": 26.7,
       "hi": 38.8,
-      "n": 429
+      "n": 429,
+      "reliable": true
      },
      "men": {
       "est": 28.8,
       "lo": 22.5,
       "hi": 35.2,
-      "n": 388
+      "n": 388,
+      "reliable": true
      },
      "diff": 3.9,
      "diff_lo": -4.9,
@@ -2121,13 +2359,15 @@
       "est": 66.2,
       "lo": 60.4,
       "hi": 72.0,
-      "n": 429
+      "n": 429,
+      "reliable": true
      },
      "men": {
       "est": 56.0,
       "lo": 48.7,
       "hi": 63.4,
-      "n": 388
+      "n": 388,
+      "reliable": true
      },
      "diff": 10.2,
      "diff_lo": 0.8,
@@ -2138,13 +2378,15 @@
       "est": 2.6,
       "lo": 2.2,
       "hi": 2.9,
-      "n": 423
+      "n": 423,
+      "reliable": true
      },
      "men": {
       "est": 2.8,
       "lo": 2.4,
       "hi": 3.2,
-      "n": 375
+      "n": 375,
+      "reliable": true
      },
      "diff": -0.2,
      "diff_lo": -0.8,
@@ -2152,33 +2394,37 @@
     },
     "admitted": {
      "women": {
-      "est": 0.1,
-      "lo": -0.1,
-      "hi": 0.2,
-      "n": 429
+      "est": 4.3,
+      "lo": 2.3,
+      "hi": 6.3,
+      "n": 429,
+      "reliable": true
      },
      "men": {
-      "est": 0.6,
-      "lo": -0.3,
-      "hi": 1.5,
-      "n": 388
+      "est": 7.3,
+      "lo": 4.1,
+      "hi": 10.6,
+      "n": 388,
+      "reliable": true
      },
-     "diff": -0.5,
-     "diff_lo": -1.5,
-     "diff_hi": 0.4
+     "diff": -3.1,
+     "diff_lo": -6.9,
+     "diff_hi": 0.8
     },
     "symptom_dx": {
      "women": {
       "est": 10.1,
       "lo": 6.6,
       "hi": 13.6,
-      "n": 429
+      "n": 429,
+      "reliable": true
      },
      "men": {
       "est": 4.4,
       "lo": 2.1,
       "hi": 6.7,
-      "n": 388
+      "n": 388,
+      "reliable": true
      },
      "diff": 5.7,
      "diff_lo": 1.5,
@@ -2189,13 +2435,15 @@
       "est": 227.0,
       "lo": 197.0,
       "hi": 257.0,
-      "n": 405
+      "n": 405,
+      "reliable": true
      },
      "men": {
       "est": 219.0,
       "lo": 193.0,
       "hi": 245.0,
-      "n": 372
+      "n": 372,
+      "reliable": true
      },
      "diff": 8.0,
      "diff_lo": -32.0,
@@ -2214,13 +2462,15 @@
       "est": 63.3,
       "lo": 51.9,
       "hi": 74.6,
-      "n": 211
+      "n": 211,
+      "reliable": true
      },
      "men": {
       "est": 74.1,
       "lo": 65.3,
       "hi": 82.9,
-      "n": 141
+      "n": 141,
+      "reliable": true
      },
      "diff": -10.8,
      "diff_lo": -25.2,
@@ -2231,13 +2481,15 @@
       "est": 10.5,
       "lo": 4.4,
       "hi": 16.6,
-      "n": 218
+      "n": 218,
+      "reliable": true
      },
      "men": {
       "est": 10.2,
       "lo": 3.4,
       "hi": 17.1,
-      "n": 150
+      "n": 150,
+      "reliable": false
      },
      "diff": 0.3,
      "diff_lo": -8.9,
@@ -2248,13 +2500,15 @@
       "est": 24.5,
       "lo": 17.9,
       "hi": 31.2,
-      "n": 280
+      "n": 280,
+      "reliable": true
      },
      "men": {
       "est": 27.2,
       "lo": 17.8,
       "hi": 36.5,
-      "n": 192
+      "n": 192,
+      "reliable": true
      },
      "diff": -2.6,
      "diff_lo": -14.1,
@@ -2265,13 +2519,15 @@
       "est": 41.0,
       "lo": 29.0,
       "hi": 52.0,
-      "n": 255
+      "n": 255,
+      "reliable": true
      },
      "men": {
       "est": 40.0,
       "lo": 28.0,
       "hi": 51.0,
-      "n": 171
+      "n": 171,
+      "reliable": true
      },
      "diff": 1.0,
      "diff_lo": -15.0,
@@ -2282,13 +2538,15 @@
       "est": 63.2,
       "lo": 55.4,
       "hi": 70.9,
-      "n": 286
+      "n": 286,
+      "reliable": true
      },
      "men": {
       "est": 66.4,
       "lo": 57.3,
       "hi": 75.4,
-      "n": 197
+      "n": 197,
+      "reliable": true
      },
      "diff": -3.2,
      "diff_lo": -15.1,
@@ -2299,13 +2557,15 @@
       "est": 41.7,
       "lo": 35.0,
       "hi": 48.3,
-      "n": 286
+      "n": 286,
+      "reliable": true
      },
      "men": {
       "est": 42.8,
       "lo": 33.0,
       "hi": 52.6,
-      "n": 197
+      "n": 197,
+      "reliable": true
      },
      "diff": -1.1,
      "diff_lo": -13.0,
@@ -2316,13 +2576,15 @@
       "est": 76.3,
       "lo": 70.0,
       "hi": 82.6,
-      "n": 286
+      "n": 286,
+      "reliable": true
      },
      "men": {
       "est": 72.1,
       "lo": 63.3,
       "hi": 81.0,
-      "n": 197
+      "n": 197,
+      "reliable": true
      },
      "diff": 4.2,
      "diff_lo": -6.7,
@@ -2333,13 +2595,15 @@
       "est": 3.8,
       "lo": 3.3,
       "hi": 4.2,
-      "n": 283
+      "n": 283,
+      "reliable": true
      },
      "men": {
       "est": 4.0,
       "lo": 3.3,
       "hi": 4.6,
-      "n": 195
+      "n": 195,
+      "reliable": true
      },
      "diff": -0.2,
      "diff_lo": -0.9,
@@ -2347,33 +2611,37 @@
     },
     "admitted": {
      "women": {
-      "est": 1.1,
-      "lo": 0.2,
-      "hi": 2.0,
-      "n": 286
+      "est": 14.8,
+      "lo": 9.5,
+      "hi": 20.0,
+      "n": 286,
+      "reliable": true
      },
      "men": {
-      "est": 2.6,
-      "lo": -0.4,
-      "hi": 5.6,
-      "n": 197
+      "est": 19.0,
+      "lo": 10.9,
+      "hi": 27.1,
+      "n": 197,
+      "reliable": true
      },
-     "diff": -1.5,
-     "diff_lo": -4.6,
-     "diff_hi": 1.6
+     "diff": -4.2,
+     "diff_lo": -13.8,
+     "diff_hi": 5.4
     },
     "symptom_dx": {
      "women": {
       "est": 5.6,
       "lo": 2.0,
       "hi": 9.2,
-      "n": 286
+      "n": 286,
+      "reliable": false
      },
      "men": {
       "est": 7.7,
       "lo": 3.9,
       "hi": 11.5,
-      "n": 197
+      "n": 197,
+      "reliable": true
      },
      "diff": -2.1,
      "diff_lo": -7.3,
@@ -2384,13 +2652,15 @@
       "est": 275.0,
       "lo": 239.0,
       "hi": 311.0,
-      "n": 274
+      "n": 274,
+      "reliable": true
      },
      "men": {
       "est": 260.0,
       "lo": 213.0,
       "hi": 308.0,
-      "n": 186
+      "n": 186,
+      "reliable": true
      },
      "diff": 14.0,
      "diff_lo": -45.0,
@@ -2409,13 +2679,15 @@
       "est": 73.3,
       "lo": 69.0,
       "hi": 77.6,
-      "n": 988
+      "n": 988,
+      "reliable": true
      },
      "men": {
       "est": 73.2,
       "lo": 68.3,
       "hi": 78.0,
-      "n": 765
+      "n": 765,
+      "reliable": true
      },
      "diff": 0.2,
      "diff_lo": -6.3,
@@ -2426,13 +2698,15 @@
       "est": 6.6,
       "lo": 3.3,
       "hi": 9.8,
-      "n": 1020
+      "n": 1020,
+      "reliable": true
      },
      "men": {
       "est": 6.4,
       "lo": 3.3,
       "hi": 9.6,
-      "n": 771
+      "n": 771,
+      "reliable": true
      },
      "diff": 0.2,
      "diff_lo": -4.4,
@@ -2443,13 +2717,15 @@
       "est": 11.9,
       "lo": 9.4,
       "hi": 14.4,
-      "n": 1335
+      "n": 1335,
+      "reliable": true
      },
      "men": {
       "est": 15.3,
       "lo": 11.8,
       "hi": 18.8,
-      "n": 1024
+      "n": 1024,
+      "reliable": true
      },
      "diff": -3.4,
      "diff_lo": -7.7,
@@ -2460,13 +2736,15 @@
       "est": 42.0,
       "lo": 34.0,
       "hi": 50.0,
-      "n": 1187
+      "n": 1187,
+      "reliable": true
      },
      "men": {
       "est": 34.0,
       "lo": 29.0,
       "hi": 38.0,
-      "n": 918
+      "n": 918,
+      "reliable": true
      },
      "diff": 9.0,
      "diff_lo": -1.0,
@@ -2477,13 +2755,15 @@
       "est": 64.0,
       "lo": 60.4,
       "hi": 67.6,
-      "n": 1368
+      "n": 1368,
+      "reliable": true
      },
      "men": {
       "est": 62.9,
       "lo": 58.4,
       "hi": 67.3,
-      "n": 1058
+      "n": 1058,
+      "reliable": true
      },
      "diff": 1.1,
      "diff_lo": -4.6,
@@ -2494,13 +2774,15 @@
       "est": 28.6,
       "lo": 25.2,
       "hi": 32.1,
-      "n": 1368
+      "n": 1368,
+      "reliable": true
      },
      "men": {
       "est": 27.4,
       "lo": 23.1,
       "hi": 31.7,
-      "n": 1058
+      "n": 1058,
+      "reliable": true
      },
      "diff": 1.2,
      "diff_lo": -4.3,
@@ -2511,13 +2793,15 @@
       "est": 59.2,
       "lo": 55.3,
       "hi": 63.1,
-      "n": 1368
+      "n": 1368,
+      "reliable": true
      },
      "men": {
       "est": 55.4,
       "lo": 51.7,
       "hi": 59.1,
-      "n": 1058
+      "n": 1058,
+      "reliable": true
      },
      "diff": 3.8,
      "diff_lo": -1.6,
@@ -2528,13 +2812,15 @@
       "est": 3.0,
       "lo": 2.7,
       "hi": 3.2,
-      "n": 1344
+      "n": 1344,
+      "reliable": true
      },
      "men": {
       "est": 2.5,
       "lo": 2.2,
       "hi": 2.8,
-      "n": 1034
+      "n": 1034,
+      "reliable": true
      },
      "diff": 0.5,
      "diff_lo": 0.1,
@@ -2542,33 +2828,37 @@
     },
     "admitted": {
      "women": {
-      "est": 0.4,
-      "lo": 0.1,
-      "hi": 0.7,
-      "n": 1368
+      "est": 6.3,
+      "lo": 4.5,
+      "hi": 8.1,
+      "n": 1368,
+      "reliable": true
      },
      "men": {
-      "est": 1.0,
-      "lo": 0.2,
-      "hi": 1.7,
-      "n": 1058
+      "est": 8.1,
+      "lo": 5.5,
+      "hi": 10.6,
+      "n": 1058,
+      "reliable": true
      },
-     "diff": -0.5,
-     "diff_lo": -1.3,
-     "diff_hi": 0.2
+     "diff": -1.8,
+     "diff_lo": -4.9,
+     "diff_hi": 1.4
     },
     "symptom_dx": {
      "women": {
       "est": 8.0,
       "lo": 6.1,
       "hi": 9.9,
-      "n": 1368
+      "n": 1368,
+      "reliable": true
      },
      "men": {
       "est": 4.4,
       "lo": 3.1,
       "hi": 5.7,
-      "n": 1058
+      "n": 1058,
+      "reliable": true
      },
      "diff": 3.6,
      "diff_lo": 1.3,
@@ -2579,13 +2869,15 @@
       "est": 231.0,
       "lo": 209.0,
       "hi": 252.0,
-      "n": 1308
+      "n": 1308,
+      "reliable": true
      },
      "men": {
       "est": 203.0,
       "lo": 185.0,
       "hi": 220.0,
-      "n": 1017
+      "n": 1017,
+      "reliable": true
      },
      "diff": 28.0,
      "diff_lo": -0.0,
@@ -2604,13 +2896,15 @@
       "est": 62.3,
       "lo": 57.0,
       "hi": 67.6,
-      "n": 577
+      "n": 577,
+      "reliable": true
      },
      "men": {
       "est": 49.6,
       "lo": 39.7,
       "hi": 59.5,
-      "n": 256
+      "n": 256,
+      "reliable": true
      },
      "diff": 12.7,
      "diff_lo": 1.5,
@@ -2621,13 +2915,15 @@
       "est": 7.2,
       "lo": 4.6,
       "hi": 9.8,
-      "n": 585
+      "n": 585,
+      "reliable": true
      },
      "men": {
       "est": 5.7,
       "lo": 2.1,
       "hi": 9.3,
-      "n": 276
+      "n": 276,
+      "reliable": false
      },
      "diff": 1.5,
      "diff_lo": -2.9,
@@ -2638,13 +2934,15 @@
       "est": 6.9,
       "lo": 4.7,
       "hi": 9.2,
-      "n": 777
+      "n": 777,
+      "reliable": true
      },
      "men": {
       "est": 11.7,
       "lo": 7.6,
       "hi": 15.9,
-      "n": 368
+      "n": 368,
+      "reliable": true
      },
      "diff": -4.8,
      "diff_lo": -9.5,
@@ -2655,13 +2953,15 @@
       "est": 53.0,
       "lo": 31.0,
       "hi": 75.0,
-      "n": 694
+      "n": 694,
+      "reliable": true
      },
      "men": {
       "est": 33.0,
       "lo": 25.0,
       "hi": 40.0,
-      "n": 326
+      "n": 326,
+      "reliable": true
      },
      "diff": 20.0,
      "diff_lo": -3.0,
@@ -2672,13 +2972,15 @@
       "est": 58.2,
       "lo": 53.7,
       "hi": 62.7,
-      "n": 800
+      "n": 800,
+      "reliable": true
      },
      "men": {
       "est": 52.8,
       "lo": 44.5,
       "hi": 61.1,
-      "n": 382
+      "n": 382,
+      "reliable": true
      },
      "diff": 5.4,
      "diff_lo": -4.1,
@@ -2689,13 +2991,15 @@
       "est": 10.3,
       "lo": 7.1,
       "hi": 13.5,
-      "n": 800
+      "n": 800,
+      "reliable": true
      },
      "men": {
       "est": 10.5,
       "lo": 5.6,
       "hi": 15.3,
-      "n": 382
+      "n": 382,
+      "reliable": true
      },
      "diff": -0.2,
      "diff_lo": -6.0,
@@ -2706,13 +3010,15 @@
       "est": 37.8,
       "lo": 32.6,
       "hi": 43.0,
-      "n": 800
+      "n": 800,
+      "reliable": true
      },
      "men": {
       "est": 49.1,
       "lo": 41.5,
       "hi": 56.8,
-      "n": 382
+      "n": 382,
+      "reliable": true
      },
      "diff": -11.4,
      "diff_lo": -20.6,
@@ -2723,13 +3029,15 @@
       "est": 2.8,
       "lo": 2.6,
       "hi": 3.1,
-      "n": 785
+      "n": 785,
+      "reliable": true
      },
      "men": {
       "est": 2.6,
       "lo": 2.2,
       "hi": 3.1,
-      "n": 368
+      "n": 368,
+      "reliable": true
      },
      "diff": 0.2,
      "diff_lo": -0.3,
@@ -2737,33 +3045,37 @@
     },
     "admitted": {
      "women": {
-      "est": 0.5,
-      "lo": 0.0,
-      "hi": 0.9,
-      "n": 800
+      "est": 2.4,
+      "lo": 1.1,
+      "hi": 3.6,
+      "n": 800,
+      "reliable": true
      },
      "men": {
-      "est": 0.6,
-      "lo": -0.0,
-      "hi": 1.3,
-      "n": 382
+      "est": 5.2,
+      "lo": 1.9,
+      "hi": 8.5,
+      "n": 382,
+      "reliable": false
      },
-     "diff": -0.2,
-     "diff_lo": -1.0,
-     "diff_hi": 0.6
+     "diff": -2.8,
+     "diff_lo": -6.4,
+     "diff_hi": 0.7
     },
     "symptom_dx": {
      "women": {
       "est": 41.5,
       "lo": 36.5,
       "hi": 46.5,
-      "n": 800
+      "n": 800,
+      "reliable": true
      },
      "men": {
       "est": 41.2,
       "lo": 34.7,
       "hi": 47.7,
-      "n": 382
+      "n": 382,
+      "reliable": true
      },
      "diff": 0.3,
      "diff_lo": -7.9,
@@ -2774,13 +3086,15 @@
       "est": 230.0,
       "lo": 206.0,
       "hi": 254.0,
-      "n": 772
+      "n": 772,
+      "reliable": true
      },
      "men": {
       "est": 203.0,
       "lo": 172.0,
       "hi": 233.0,
-      "n": 360
+      "n": 360,
+      "reliable": true
      },
      "diff": 27.0,
      "diff_lo": -12.0,
@@ -2799,13 +3113,15 @@
       "est": 66.5,
       "lo": 58.9,
       "hi": 74.0,
-      "n": 268
+      "n": 268,
+      "reliable": true
      },
      "men": {
       "est": 52.9,
       "lo": 41.7,
       "hi": 64.1,
-      "n": 156
+      "n": 156,
+      "reliable": true
      },
      "diff": 13.6,
      "diff_lo": 0.0,
@@ -2816,13 +3132,15 @@
       "est": 14.3,
       "lo": 9.0,
       "hi": 19.6,
-      "n": 291
+      "n": 291,
+      "reliable": true
      },
      "men": {
       "est": 12.5,
       "lo": 6.1,
       "hi": 18.9,
-      "n": 151
+      "n": 151,
+      "reliable": true
      },
      "diff": 1.8,
      "diff_lo": -6.5,
@@ -2833,13 +3151,15 @@
       "est": 8.7,
       "lo": 5.5,
       "hi": 11.8,
-      "n": 370
+      "n": 370,
+      "reliable": true
      },
      "men": {
       "est": 11.4,
       "lo": 5.7,
       "hi": 17.0,
-      "n": 210
+      "n": 210,
+      "reliable": true
      },
      "diff": -2.7,
      "diff_lo": -9.2,
@@ -2850,13 +3170,15 @@
       "est": 40.0,
       "lo": 30.0,
       "hi": 50.0,
-      "n": 334
+      "n": 334,
+      "reliable": true
      },
      "men": {
       "est": 55.0,
       "lo": 40.0,
       "hi": 71.0,
-      "n": 179
+      "n": 179,
+      "reliable": true
      },
      "diff": -15.0,
      "diff_lo": -34.0,
@@ -2867,13 +3189,15 @@
       "est": 64.0,
       "lo": 56.6,
       "hi": 71.3,
-      "n": 385
+      "n": 385,
+      "reliable": true
      },
      "men": {
       "est": 51.4,
       "lo": 42.2,
       "hi": 60.6,
-      "n": 214
+      "n": 214,
+      "reliable": true
      },
      "diff": 12.6,
      "diff_lo": 0.8,
@@ -2884,13 +3208,15 @@
       "est": 17.8,
       "lo": 11.8,
       "hi": 23.8,
-      "n": 385
+      "n": 385,
+      "reliable": true
      },
      "men": {
       "est": 13.1,
       "lo": 7.9,
       "hi": 18.3,
-      "n": 214
+      "n": 214,
+      "reliable": true
      },
      "diff": 4.7,
      "diff_lo": -3.2,
@@ -2901,13 +3227,15 @@
       "est": 61.8,
       "lo": 54.3,
       "hi": 69.4,
-      "n": 385
+      "n": 385,
+      "reliable": true
      },
      "men": {
       "est": 60.4,
       "lo": 53.1,
       "hi": 67.6,
-      "n": 214
+      "n": 214,
+      "reliable": true
      },
      "diff": 1.5,
      "diff_lo": -9.0,
@@ -2918,13 +3246,15 @@
       "est": 3.8,
       "lo": 3.4,
       "hi": 4.2,
-      "n": 380
+      "n": 380,
+      "reliable": true
      },
      "men": {
       "est": 3.6,
       "lo": 3.0,
       "hi": 4.2,
-      "n": 212
+      "n": 212,
+      "reliable": true
      },
      "diff": 0.2,
      "diff_lo": -0.5,
@@ -2932,33 +3262,37 @@
     },
     "admitted": {
      "women": {
-      "est": 0.2,
-      "lo": -0.2,
-      "hi": 0.6,
-      "n": 385
+      "est": 6.3,
+      "lo": 2.6,
+      "hi": 9.9,
+      "n": 385,
+      "reliable": true
      },
      "men": {
-      "est": 0.0,
-      "lo": 0.0,
-      "hi": 0.0,
-      "n": 214
+      "est": 6.9,
+      "lo": 2.6,
+      "hi": 11.1,
+      "n": 214,
+      "reliable": false
      },
-     "diff": 0.2,
-     "diff_lo": -0.2,
-     "diff_hi": 0.6
+     "diff": -0.6,
+     "diff_lo": -6.2,
+     "diff_hi": 5.0
     },
     "symptom_dx": {
      "women": {
       "est": 42.6,
       "lo": 35.5,
       "hi": 49.7,
-      "n": 385
+      "n": 385,
+      "reliable": true
      },
      "men": {
       "est": 40.8,
       "lo": 32.2,
       "hi": 49.5,
-      "n": 214
+      "n": 214,
+      "reliable": true
      },
      "diff": 1.8,
      "diff_lo": -9.4,
@@ -2969,13 +3303,15 @@
       "est": 270.0,
       "lo": 230.0,
       "hi": 310.0,
-      "n": 368
+      "n": 368,
+      "reliable": true
      },
      "men": {
       "est": 296.0,
       "lo": 243.0,
       "hi": 350.0,
-      "n": 202
+      "n": 202,
+      "reliable": true
      },
      "diff": -27.0,
      "diff_lo": -93.0,
@@ -2994,13 +3330,15 @@
       "est": 49.6,
       "lo": 39.1,
       "hi": 60.1,
-      "n": 149
+      "n": 149,
+      "reliable": true
      },
      "men": {
       "est": 43.8,
       "lo": 27.1,
       "hi": 60.5,
-      "n": 67
+      "n": 67,
+      "reliable": true
      },
      "diff": 5.8,
      "diff_lo": -13.9,
@@ -3011,13 +3349,15 @@
       "est": 20.0,
       "lo": 12.5,
       "hi": 27.4,
-      "n": 161
+      "n": 161,
+      "reliable": true
      },
      "men": {
       "est": 9.2,
       "lo": 3.1,
       "hi": 15.3,
-      "n": 73
+      "n": 73,
+      "reliable": false
      },
      "diff": 10.8,
      "diff_lo": 1.2,
@@ -3028,13 +3368,15 @@
       "est": 27.2,
       "lo": 18.6,
       "hi": 35.7,
-      "n": 201
+      "n": 201,
+      "reliable": true
      },
      "men": {
       "est": 26.8,
       "lo": 15.1,
       "hi": 38.6,
-      "n": 103
+      "n": 103,
+      "reliable": true
      },
      "diff": 0.3,
      "diff_lo": -14.2,
@@ -3045,13 +3387,15 @@
       "est": 44.0,
       "lo": 22.0,
       "hi": 65.0,
-      "n": 185
+      "n": 185,
+      "reliable": true
      },
      "men": {
       "est": 60.0,
       "lo": 33.0,
       "hi": 88.0,
-      "n": 93
+      "n": 93,
+      "reliable": true
      },
      "diff": -17.0,
      "diff_lo": -52.0,
@@ -3062,13 +3406,15 @@
       "est": 53.2,
       "lo": 43.8,
       "hi": 62.6,
-      "n": 206
+      "n": 206,
+      "reliable": true
      },
      "men": {
       "est": 49.5,
       "lo": 37.2,
       "hi": 61.8,
-      "n": 109
+      "n": 109,
+      "reliable": true
      },
      "diff": 3.6,
      "diff_lo": -11.9,
@@ -3079,13 +3425,15 @@
       "est": 9.8,
       "lo": 5.1,
       "hi": 14.5,
-      "n": 206
+      "n": 206,
+      "reliable": true
      },
      "men": {
       "est": 15.9,
       "lo": 7.4,
       "hi": 24.3,
-      "n": 109
+      "n": 109,
+      "reliable": true
      },
      "diff": -6.1,
      "diff_lo": -15.8,
@@ -3096,13 +3444,15 @@
       "est": 81.2,
       "lo": 75.1,
       "hi": 87.3,
-      "n": 206
+      "n": 206,
+      "reliable": true
      },
      "men": {
       "est": 85.8,
       "lo": 78.2,
       "hi": 93.5,
-      "n": 109
+      "n": 109,
+      "reliable": true
      },
      "diff": -4.6,
      "diff_lo": -14.4,
@@ -3113,13 +3463,15 @@
       "est": 4.4,
       "lo": 3.9,
       "hi": 4.9,
-      "n": 204
+      "n": 204,
+      "reliable": true
      },
      "men": {
       "est": 5.5,
       "lo": 4.6,
       "hi": 6.4,
-      "n": 106
+      "n": 106,
+      "reliable": true
      },
      "diff": -1.1,
      "diff_lo": -2.1,
@@ -3127,33 +3479,37 @@
     },
     "admitted": {
      "women": {
-      "est": 2.9,
-      "lo": -0.1,
-      "hi": 6.0,
-      "n": 206
+      "est": 12.0,
+      "lo": 6.1,
+      "hi": 18.0,
+      "n": 206,
+      "reliable": true
      },
      "men": {
-      "est": 4.3,
-      "lo": -0.4,
-      "hi": 8.9,
-      "n": 109
+      "est": 27.3,
+      "lo": 15.7,
+      "hi": 38.8,
+      "n": 109,
+      "reliable": true
      },
-     "diff": -1.3,
-     "diff_lo": -6.9,
-     "diff_hi": 4.3
+     "diff": -15.2,
+     "diff_lo": -28.2,
+     "diff_hi": -2.3
     },
     "symptom_dx": {
      "women": {
       "est": 41.3,
       "lo": 33.3,
       "hi": 49.3,
-      "n": 206
+      "n": 206,
+      "reliable": true
      },
      "men": {
       "est": 36.6,
       "lo": 24.0,
       "hi": 49.3,
-      "n": 109
+      "n": 109,
+      "reliable": true
      },
      "diff": 4.7,
      "diff_lo": -10.3,
@@ -3164,13 +3520,15 @@
       "est": 329.0,
       "lo": 259.0,
       "hi": 398.0,
-      "n": 199
+      "n": 199,
+      "reliable": true
      },
      "men": {
       "est": 357.0,
       "lo": 296.0,
       "hi": 418.0,
-      "n": 100
+      "n": 100,
+      "reliable": true
      },
      "diff": -28.0,
      "diff_lo": -121.0,
@@ -3189,13 +3547,15 @@
       "est": 61.5,
       "lo": 57.4,
       "hi": 65.5,
-      "n": 994
+      "n": 994,
+      "reliable": true
      },
      "men": {
       "est": 49.8,
       "lo": 42.2,
       "hi": 57.4,
-      "n": 479
+      "n": 479,
+      "reliable": true
      },
      "diff": 11.7,
      "diff_lo": 3.0,
@@ -3206,13 +3566,15 @@
       "est": 11.3,
       "lo": 8.7,
       "hi": 13.9,
-      "n": 1037
+      "n": 1037,
+      "reliable": true
      },
      "men": {
       "est": 8.3,
       "lo": 5.3,
       "hi": 11.4,
-      "n": 500
+      "n": 500,
+      "reliable": true
      },
      "diff": 3.0,
      "diff_lo": -1.0,
@@ -3223,13 +3585,15 @@
       "est": 10.5,
       "lo": 8.3,
       "hi": 12.7,
-      "n": 1348
+      "n": 1348,
+      "reliable": true
      },
      "men": {
       "est": 14.1,
       "lo": 10.3,
       "hi": 18.0,
-      "n": 681
+      "n": 681,
+      "reliable": true
      },
      "diff": -3.7,
      "diff_lo": -8.1,
@@ -3240,13 +3604,15 @@
       "est": 48.0,
       "lo": 33.0,
       "hi": 63.0,
-      "n": 1213
+      "n": 1213,
+      "reliable": true
      },
      "men": {
       "est": 44.0,
       "lo": 36.0,
       "hi": 52.0,
-      "n": 598
+      "n": 598,
+      "reliable": true
      },
      "diff": 4.0,
      "diff_lo": -14.0,
@@ -3257,13 +3623,15 @@
       "est": 59.1,
       "lo": 55.1,
       "hi": 63.1,
-      "n": 1391
+      "n": 1391,
+      "reliable": true
      },
      "men": {
       "est": 51.8,
       "lo": 46.6,
       "hi": 57.0,
-      "n": 705
+      "n": 705,
+      "reliable": true
      },
      "diff": 7.3,
      "diff_lo": 0.7,
@@ -3274,13 +3642,15 @@
       "est": 12.4,
       "lo": 9.3,
       "hi": 15.4,
-      "n": 1391
+      "n": 1391,
+      "reliable": true
      },
      "men": {
       "est": 12.2,
       "lo": 8.7,
       "hi": 15.7,
-      "n": 705
+      "n": 705,
+      "reliable": true
      },
      "diff": 0.1,
      "diff_lo": -4.5,
@@ -3291,13 +3661,15 @@
       "est": 51.1,
       "lo": 46.8,
       "hi": 55.3,
-      "n": 1391
+      "n": 1391,
+      "reliable": true
      },
      "men": {
       "est": 58.8,
       "lo": 53.6,
       "hi": 64.1,
-      "n": 705
+      "n": 705,
+      "reliable": true
      },
      "diff": -7.8,
      "diff_lo": -14.6,
@@ -3308,13 +3680,15 @@
       "est": 3.3,
       "lo": 3.1,
       "hi": 3.6,
-      "n": 1369
+      "n": 1369,
+      "reliable": true
      },
      "men": {
       "est": 3.4,
       "lo": 3.0,
       "hi": 3.8,
-      "n": 686
+      "n": 686,
+      "reliable": true
      },
      "diff": -0.1,
      "diff_lo": -0.5,
@@ -3322,33 +3696,37 @@
     },
     "admitted": {
      "women": {
-      "est": 0.8,
-      "lo": 0.2,
-      "hi": 1.3,
-      "n": 1391
+      "est": 4.9,
+      "lo": 3.5,
+      "hi": 6.3,
+      "n": 1391,
+      "reliable": true
      },
      "men": {
-      "est": 1.1,
-      "lo": 0.1,
-      "hi": 2.0,
-      "n": 705
+      "est": 9.5,
+      "lo": 6.6,
+      "hi": 12.5,
+      "n": 705,
+      "reliable": true
      },
-     "diff": -0.3,
-     "diff_lo": -1.4,
-     "diff_hi": 0.8
+     "diff": -4.6,
+     "diff_lo": -7.9,
+     "diff_hi": -1.3
     },
     "symptom_dx": {
      "women": {
       "est": 41.8,
       "lo": 37.9,
       "hi": 45.7,
-      "n": 1391
+      "n": 1391,
+      "reliable": true
      },
      "men": {
       "est": 40.3,
       "lo": 34.9,
       "hi": 45.7,
-      "n": 705
+      "n": 705,
+      "reliable": true
      },
      "diff": 1.5,
      "diff_lo": -5.2,
@@ -3359,13 +3737,15 @@
       "est": 256.0,
       "lo": 230.0,
       "hi": 281.0,
-      "n": 1339
+      "n": 1339,
+      "reliable": true
      },
      "men": {
       "est": 257.0,
       "lo": 230.0,
       "hi": 284.0,
-      "n": 662
+      "n": 662,
+      "reliable": true
      },
      "diff": -1.0,
      "diff_lo": -38.0,
@@ -3384,13 +3764,15 @@
       "est": 67.7,
       "lo": 62.6,
       "hi": 72.7,
-      "n": 607
+      "n": 607,
+      "reliable": true
      },
      "men": {
       "est": 60.2,
       "lo": 54.6,
       "hi": 65.8,
-      "n": 544
+      "n": 544,
+      "reliable": true
      },
      "diff": 7.5,
      "diff_lo": -0.0,
@@ -3401,13 +3783,15 @@
       "est": 5.5,
       "lo": 2.6,
       "hi": 8.3,
-      "n": 627
+      "n": 627,
+      "reliable": true
      },
      "men": {
       "est": 6.4,
       "lo": 2.1,
       "hi": 10.7,
-      "n": 589
+      "n": 589,
+      "reliable": false
      },
      "diff": -0.9,
      "diff_lo": -6.1,
@@ -3418,13 +3802,15 @@
       "est": 9.6,
       "lo": 7.0,
       "hi": 12.3,
-      "n": 839
+      "n": 839,
+      "reliable": true
      },
      "men": {
       "est": 13.0,
       "lo": 9.5,
       "hi": 16.6,
-      "n": 757
+      "n": 757,
+      "reliable": true
      },
      "diff": -3.4,
      "diff_lo": -7.8,
@@ -3435,13 +3821,15 @@
       "est": 39.0,
       "lo": 30.0,
       "hi": 49.0,
-      "n": 731
+      "n": 731,
+      "reliable": true
      },
      "men": {
       "est": 34.0,
       "lo": 28.0,
       "hi": 40.0,
-      "n": 671
+      "n": 671,
+      "reliable": true
      },
      "diff": 5.0,
      "diff_lo": -7.0,
@@ -3452,13 +3840,15 @@
       "est": 51.7,
       "lo": 46.6,
       "hi": 56.8,
-      "n": 861
+      "n": 861,
+      "reliable": true
      },
      "men": {
       "est": 47.7,
       "lo": 42.8,
       "hi": 52.6,
-      "n": 782
+      "n": 782,
+      "reliable": true
      },
      "diff": 4.0,
      "diff_lo": -3.1,
@@ -3469,13 +3859,15 @@
       "est": 19.2,
       "lo": 16.0,
       "hi": 22.3,
-      "n": 861
+      "n": 861,
+      "reliable": true
      },
      "men": {
       "est": 19.5,
       "lo": 16.0,
       "hi": 23.1,
-      "n": 782
+      "n": 782,
+      "reliable": true
      },
      "diff": -0.4,
      "diff_lo": -5.1,
@@ -3486,13 +3878,15 @@
       "est": 73.0,
       "lo": 69.1,
       "hi": 76.9,
-      "n": 861
+      "n": 861,
+      "reliable": true
      },
      "men": {
       "est": 71.3,
       "lo": 66.8,
       "hi": 75.8,
-      "n": 782
+      "n": 782,
+      "reliable": true
      },
      "diff": 1.7,
      "diff_lo": -4.3,
@@ -3503,13 +3897,15 @@
       "est": 1.8,
       "lo": 1.5,
       "hi": 2.0,
-      "n": 847
+      "n": 847,
+      "reliable": true
      },
      "men": {
       "est": 1.7,
       "lo": 1.5,
       "hi": 2.0,
-      "n": 764
+      "n": 764,
+      "reliable": true
      },
      "diff": 0.0,
      "diff_lo": -0.3,
@@ -3517,33 +3913,37 @@
     },
     "admitted": {
      "women": {
-      "est": 0.2,
-      "lo": -0.1,
-      "hi": 0.6,
-      "n": 861
+      "est": 2.1,
+      "lo": 0.6,
+      "hi": 3.6,
+      "n": 861,
+      "reliable": false
      },
      "men": {
-      "est": 0.9,
-      "lo": -0.1,
-      "hi": 1.9,
-      "n": 782
+      "est": 3.0,
+      "lo": 1.6,
+      "hi": 4.4,
+      "n": 782,
+      "reliable": true
      },
-     "diff": -0.7,
-     "diff_lo": -1.7,
-     "diff_hi": 0.4
+     "diff": -0.9,
+     "diff_lo": -2.9,
+     "diff_hi": 1.2
     },
     "symptom_dx": {
      "women": {
       "est": 4.1,
       "lo": 2.4,
       "hi": 5.7,
-      "n": 861
+      "n": 861,
+      "reliable": true
      },
      "men": {
       "est": 3.9,
       "lo": 1.8,
       "hi": 6.0,
-      "n": 782
+      "n": 782,
+      "reliable": true
      },
      "diff": 0.2,
      "diff_lo": -2.5,
@@ -3554,13 +3954,15 @@
       "est": 200.0,
       "lo": 173.0,
       "hi": 228.0,
-      "n": 816
+      "n": 816,
+      "reliable": true
      },
      "men": {
       "est": 211.0,
       "lo": 163.0,
       "hi": 258.0,
-      "n": 741
+      "n": 741,
+      "reliable": true
      },
      "diff": -10.0,
      "diff_lo": -65.0,
@@ -3579,13 +3981,15 @@
       "est": 72.6,
       "lo": 67.1,
       "hi": 78.1,
-      "n": 539
+      "n": 539,
+      "reliable": true
      },
      "men": {
       "est": 68.5,
       "lo": 61.6,
       "hi": 75.4,
-      "n": 431
+      "n": 431,
+      "reliable": true
      },
      "diff": 4.1,
      "diff_lo": -4.7,
@@ -3596,13 +4000,15 @@
       "est": 3.4,
       "lo": 1.6,
       "hi": 5.2,
-      "n": 560
+      "n": 560,
+      "reliable": true
      },
      "men": {
       "est": 7.6,
       "lo": 4.0,
       "hi": 11.2,
-      "n": 457
+      "n": 457,
+      "reliable": true
      },
      "diff": -4.2,
      "diff_lo": -8.2,
@@ -3613,13 +4019,15 @@
       "est": 14.3,
       "lo": 11.0,
       "hi": 17.5,
-      "n": 743
+      "n": 743,
+      "reliable": true
      },
      "men": {
       "est": 14.5,
       "lo": 11.2,
       "hi": 17.8,
-      "n": 607
+      "n": 607,
+      "reliable": true
      },
      "diff": -0.2,
      "diff_lo": -4.9,
@@ -3630,13 +4038,15 @@
       "est": 30.0,
       "lo": 25.0,
       "hi": 34.0,
-      "n": 659
+      "n": 659,
+      "reliable": true
      },
      "men": {
       "est": 42.0,
       "lo": 30.0,
       "hi": 55.0,
-      "n": 532
+      "n": 532,
+      "reliable": true
      },
      "diff": -13.0,
      "diff_lo": -26.0,
@@ -3647,13 +4057,15 @@
       "est": 51.9,
       "lo": 47.2,
       "hi": 56.6,
-      "n": 760
+      "n": 760,
+      "reliable": true
      },
      "men": {
       "est": 50.7,
       "lo": 44.1,
       "hi": 57.4,
-      "n": 624
+      "n": 624,
+      "reliable": true
      },
      "diff": 1.2,
      "diff_lo": -7.0,
@@ -3664,13 +4076,15 @@
       "est": 24.7,
       "lo": 20.3,
       "hi": 29.0,
-      "n": 760
+      "n": 760,
+      "reliable": true
      },
      "men": {
       "est": 24.9,
       "lo": 19.8,
       "hi": 30.0,
-      "n": 624
+      "n": 624,
+      "reliable": true
      },
      "diff": -0.2,
      "diff_lo": -6.9,
@@ -3681,13 +4095,15 @@
       "est": 74.4,
       "lo": 69.8,
       "hi": 78.9,
-      "n": 760
+      "n": 760,
+      "reliable": true
      },
      "men": {
       "est": 66.4,
       "lo": 60.3,
       "hi": 72.5,
-      "n": 624
+      "n": 624,
+      "reliable": true
      },
      "diff": 8.0,
      "diff_lo": 0.4,
@@ -3698,13 +4114,15 @@
       "est": 2.3,
       "lo": 2.0,
       "hi": 2.5,
-      "n": 739
+      "n": 739,
+      "reliable": true
      },
      "men": {
       "est": 2.4,
       "lo": 2.0,
       "hi": 2.7,
-      "n": 613
+      "n": 613,
+      "reliable": true
      },
      "diff": -0.1,
      "diff_lo": -0.5,
@@ -3712,33 +4130,37 @@
     },
     "admitted": {
      "women": {
-      "est": 0.5,
-      "lo": -0.0,
-      "hi": 0.9,
-      "n": 760
+      "est": 5.8,
+      "lo": 3.9,
+      "hi": 7.6,
+      "n": 760,
+      "reliable": true
      },
      "men": {
-      "est": 0.6,
-      "lo": 0.1,
-      "hi": 1.2,
-      "n": 624
+      "est": 8.6,
+      "lo": 5.1,
+      "hi": 12.1,
+      "n": 624,
+      "reliable": true
      },
-     "diff": -0.2,
-     "diff_lo": -0.9,
-     "diff_hi": 0.6
+     "diff": -2.8,
+     "diff_lo": -6.8,
+     "diff_hi": 1.2
     },
     "symptom_dx": {
      "women": {
       "est": 4.9,
       "lo": 2.4,
       "hi": 7.3,
-      "n": 760
+      "n": 760,
+      "reliable": true
      },
      "men": {
       "est": 3.5,
       "lo": 1.2,
       "hi": 5.8,
-      "n": 624
+      "n": 624,
+      "reliable": false
      },
      "diff": 1.3,
      "diff_lo": -2.0,
@@ -3749,13 +4171,15 @@
       "est": 218.0,
       "lo": 190.0,
       "hi": 247.0,
-      "n": 724
+      "n": 724,
+      "reliable": true
      },
      "men": {
       "est": 244.0,
       "lo": 202.0,
       "hi": 285.0,
-      "n": 594
+      "n": 594,
+      "reliable": true
      },
      "diff": -25.0,
      "diff_lo": -75.0,
@@ -3774,13 +4198,15 @@
       "est": 62.2,
       "lo": 55.7,
       "hi": 68.6,
-      "n": 431
+      "n": 431,
+      "reliable": true
      },
      "men": {
       "est": 55.9,
       "lo": 47.0,
       "hi": 64.8,
-      "n": 269
+      "n": 269,
+      "reliable": true
      },
      "diff": 6.2,
      "diff_lo": -4.8,
@@ -3791,13 +4217,15 @@
       "est": 7.3,
       "lo": 3.9,
       "hi": 10.6,
-      "n": 474
+      "n": 474,
+      "reliable": true
      },
      "men": {
       "est": 5.0,
       "lo": 1.9,
       "hi": 8.1,
-      "n": 304
+      "n": 304,
+      "reliable": false
      },
      "diff": 2.2,
      "diff_lo": -2.3,
@@ -3808,13 +4236,15 @@
       "est": 37.3,
       "lo": 31.7,
       "hi": 42.9,
-      "n": 602
+      "n": 602,
+      "reliable": true
      },
      "men": {
       "est": 27.4,
       "lo": 21.8,
       "hi": 33.0,
-      "n": 389
+      "n": 389,
+      "reliable": true
      },
      "diff": 9.9,
      "diff_lo": 2.0,
@@ -3825,13 +4255,15 @@
       "est": 34.0,
       "lo": 23.0,
       "hi": 45.0,
-      "n": 552
+      "n": 552,
+      "reliable": true
      },
      "men": {
       "est": 41.0,
       "lo": 31.0,
       "hi": 51.0,
-      "n": 356
+      "n": 356,
+      "reliable": true
      },
      "diff": -7.0,
      "diff_lo": -22.0,
@@ -3842,13 +4274,15 @@
       "est": 53.5,
       "lo": 47.8,
       "hi": 59.2,
-      "n": 624
+      "n": 624,
+      "reliable": true
      },
      "men": {
       "est": 46.2,
       "lo": 38.1,
       "hi": 54.3,
-      "n": 400
+      "n": 400,
+      "reliable": true
      },
      "diff": 7.3,
      "diff_lo": -2.6,
@@ -3859,13 +4293,15 @@
       "est": 31.5,
       "lo": 26.2,
       "hi": 36.7,
-      "n": 624
+      "n": 624,
+      "reliable": true
      },
      "men": {
       "est": 27.3,
       "lo": 21.5,
       "hi": 33.1,
-      "n": 400
+      "n": 400,
+      "reliable": true
      },
      "diff": 4.2,
      "diff_lo": -3.7,
@@ -3876,13 +4312,15 @@
       "est": 85.4,
       "lo": 81.5,
       "hi": 89.3,
-      "n": 624
+      "n": 624,
+      "reliable": true
      },
      "men": {
       "est": 84.7,
       "lo": 80.0,
       "hi": 89.4,
-      "n": 400
+      "n": 400,
+      "reliable": true
      },
      "diff": 0.7,
      "diff_lo": -5.5,
@@ -3893,13 +4331,15 @@
       "est": 3.5,
       "lo": 3.1,
       "hi": 3.8,
-      "n": 620
+      "n": 620,
+      "reliable": true
      },
      "men": {
       "est": 3.5,
       "lo": 3.1,
       "hi": 3.9,
-      "n": 396
+      "n": 396,
+      "reliable": true
      },
      "diff": -0.0,
      "diff_lo": -0.6,
@@ -3907,33 +4347,37 @@
     },
     "admitted": {
      "women": {
-      "est": 2.0,
-      "lo": 0.5,
-      "hi": 3.6,
-      "n": 624
+      "est": 23.3,
+      "lo": 19.0,
+      "hi": 27.7,
+      "n": 624,
+      "reliable": true
      },
      "men": {
-      "est": 2.3,
-      "lo": -0.0,
-      "hi": 4.5,
-      "n": 400
+      "est": 19.5,
+      "lo": 13.8,
+      "hi": 25.3,
+      "n": 400,
+      "reliable": true
      },
-     "diff": -0.2,
-     "diff_lo": -3.0,
-     "diff_hi": 2.5
+     "diff": 3.8,
+     "diff_lo": -3.4,
+     "diff_hi": 11.0
     },
     "symptom_dx": {
      "women": {
       "est": 6.0,
       "lo": 3.3,
       "hi": 8.8,
-      "n": 624
+      "n": 624,
+      "reliable": true
      },
      "men": {
       "est": 5.1,
       "lo": 2.1,
       "hi": 8.1,
-      "n": 400
+      "n": 400,
+      "reliable": false
      },
      "diff": 1.0,
      "diff_lo": -3.1,
@@ -3944,13 +4388,15 @@
       "est": 277.0,
       "lo": 241.0,
       "hi": 313.0,
-      "n": 597
+      "n": 597,
+      "reliable": true
      },
      "men": {
       "est": 275.0,
       "lo": 225.0,
       "hi": 325.0,
-      "n": 379
+      "n": 379,
+      "reliable": true
      },
      "diff": 2.0,
      "diff_lo": -60.0,
@@ -3969,13 +4415,15 @@
       "est": 67.8,
       "lo": 64.6,
       "hi": 70.9,
-      "n": 1577
+      "n": 1577,
+      "reliable": true
      },
      "men": {
       "est": 62.1,
       "lo": 57.4,
       "hi": 66.8,
-      "n": 1244
+      "n": 1244,
+      "reliable": true
      },
      "diff": 5.7,
      "diff_lo": 0.1,
@@ -3986,13 +4434,15 @@
       "est": 5.3,
       "lo": 3.5,
       "hi": 7.2,
-      "n": 1661
+      "n": 1661,
+      "reliable": true
      },
      "men": {
       "est": 6.5,
       "lo": 3.8,
       "hi": 9.1,
-      "n": 1350
+      "n": 1350,
+      "reliable": true
      },
      "diff": -1.1,
      "diff_lo": -4.3,
@@ -4003,13 +4453,15 @@
       "est": 18.8,
       "lo": 16.3,
       "hi": 21.3,
-      "n": 2184
+      "n": 2184,
+      "reliable": true
      },
      "men": {
       "est": 16.8,
       "lo": 14.4,
       "hi": 19.1,
-      "n": 1753
+      "n": 1753,
+      "reliable": true
      },
      "diff": 2.0,
      "diff_lo": -1.4,
@@ -4020,13 +4472,15 @@
       "est": 35.0,
       "lo": 29.0,
       "hi": 41.0,
-      "n": 1942
+      "n": 1942,
+      "reliable": true
      },
      "men": {
       "est": 39.0,
       "lo": 33.0,
       "hi": 45.0,
-      "n": 1559
+      "n": 1559,
+      "reliable": true
      },
      "diff": -4.0,
      "diff_lo": -12.0,
@@ -4037,13 +4491,15 @@
       "est": 52.3,
       "lo": 48.9,
       "hi": 55.7,
-      "n": 2245
+      "n": 2245,
+      "reliable": true
      },
      "men": {
       "est": 48.4,
       "lo": 44.4,
       "hi": 52.4,
-      "n": 1806
+      "n": 1806,
+      "reliable": true
      },
      "diff": 3.9,
      "diff_lo": -1.4,
@@ -4054,13 +4510,15 @@
       "est": 24.4,
       "lo": 22.0,
       "hi": 26.7,
-      "n": 2245
+      "n": 2245,
+      "reliable": true
      },
      "men": {
       "est": 23.1,
       "lo": 20.6,
       "hi": 25.6,
-      "n": 1806
+      "n": 1806,
+      "reliable": true
      },
      "diff": 1.3,
      "diff_lo": -2.2,
@@ -4071,13 +4529,15 @@
       "est": 76.9,
       "lo": 74.2,
       "hi": 79.5,
-      "n": 2245
+      "n": 2245,
+      "reliable": true
      },
      "men": {
       "est": 72.6,
       "lo": 69.5,
       "hi": 75.8,
-      "n": 1806
+      "n": 1806,
+      "reliable": true
      },
      "diff": 4.2,
      "diff_lo": 0.1,
@@ -4088,13 +4548,15 @@
       "est": 2.4,
       "lo": 2.2,
       "hi": 2.6,
-      "n": 2206
+      "n": 2206,
+      "reliable": true
      },
      "men": {
       "est": 2.4,
       "lo": 2.2,
       "hi": 2.6,
-      "n": 1773
+      "n": 1773,
+      "reliable": true
      },
      "diff": 0.0,
      "diff_lo": -0.2,
@@ -4102,33 +4564,37 @@
     },
     "admitted": {
      "women": {
-      "est": 0.8,
-      "lo": 0.3,
-      "hi": 1.3,
-      "n": 2245
+      "est": 9.2,
+      "lo": 7.5,
+      "hi": 10.9,
+      "n": 2245,
+      "reliable": true
      },
      "men": {
-      "est": 1.1,
-      "lo": 0.3,
-      "hi": 1.9,
-      "n": 1806
+      "est": 8.6,
+      "lo": 6.5,
+      "hi": 10.8,
+      "n": 1806,
+      "reliable": true
      },
-     "diff": -0.3,
-     "diff_lo": -1.3,
-     "diff_hi": 0.7
+     "diff": 0.6,
+     "diff_lo": -2.1,
+     "diff_hi": 3.3
     },
     "symptom_dx": {
      "women": {
       "est": 4.9,
       "lo": 3.5,
       "hi": 6.3,
-      "n": 2245
+      "n": 2245,
+      "reliable": true
      },
      "men": {
       "est": 4.0,
       "lo": 2.6,
       "hi": 5.5,
-      "n": 1806
+      "n": 1806,
+      "reliable": true
      },
      "diff": 0.8,
      "diff_lo": -1.2,
@@ -4139,13 +4605,15 @@
       "est": 228.0,
       "lo": 206.0,
       "hi": 249.0,
-      "n": 2137
+      "n": 2137,
+      "reliable": true
      },
      "men": {
       "est": 236.0,
       "lo": 207.0,
       "hi": 266.0,
-      "n": 1714
+      "n": 1714,
+      "reliable": true
      },
      "diff": -9.0,
      "diff_lo": -45.0,
@@ -4164,13 +4632,15 @@
       "est": 64.8,
       "lo": 57.1,
       "hi": 72.5,
-      "n": 288
+      "n": 288,
+      "reliable": true
      },
      "men": {
       "est": 73.2,
       "lo": 65.7,
       "hi": 80.7,
-      "n": 203
+      "n": 203,
+      "reliable": true
      },
      "diff": -8.4,
      "diff_lo": -19.1,
@@ -4181,13 +4651,15 @@
       "est": 8.5,
       "lo": 3.5,
       "hi": 13.5,
-      "n": 301
+      "n": 301,
+      "reliable": false
      },
      "men": {
       "est": 14.9,
       "lo": 5.0,
       "hi": 24.8,
-      "n": 217
+      "n": 217,
+      "reliable": false
      },
      "diff": -6.4,
      "diff_lo": -17.5,
@@ -4198,13 +4670,15 @@
       "est": 7.8,
       "lo": 3.5,
       "hi": 12.0,
-      "n": 390
+      "n": 390,
+      "reliable": true
      },
      "men": {
       "est": 6.8,
       "lo": 3.5,
       "hi": 10.2,
-      "n": 286
+      "n": 286,
+      "reliable": true
      },
      "diff": 0.9,
      "diff_lo": -4.5,
@@ -4215,13 +4689,15 @@
       "est": 38.0,
       "lo": 31.0,
       "hi": 44.0,
-      "n": 338
+      "n": 338,
+      "reliable": true
      },
      "men": {
       "est": 38.0,
       "lo": 27.0,
       "hi": 49.0,
-      "n": 256
+      "n": 256,
+      "reliable": true
      },
      "diff": -1.0,
      "diff_lo": -14.0,
@@ -4232,13 +4708,15 @@
       "est": 61.4,
       "lo": 54.4,
       "hi": 68.3,
-      "n": 407
+      "n": 407,
+      "reliable": true
      },
      "men": {
       "est": 70.2,
       "lo": 61.9,
       "hi": 78.5,
-      "n": 291
+      "n": 291,
+      "reliable": true
      },
      "diff": -8.8,
      "diff_lo": -19.7,
@@ -4249,13 +4727,15 @@
       "est": 28.7,
       "lo": 22.2,
       "hi": 35.3,
-      "n": 407
+      "n": 407,
+      "reliable": true
      },
      "men": {
       "est": 40.4,
       "lo": 31.5,
       "hi": 49.2,
-      "n": 291
+      "n": 291,
+      "reliable": true
      },
      "diff": -11.6,
      "diff_lo": -22.6,
@@ -4266,13 +4746,15 @@
       "est": 70.7,
       "lo": 63.6,
       "hi": 77.7,
-      "n": 407
+      "n": 407,
+      "reliable": true
      },
      "men": {
       "est": 81.5,
       "lo": 76.0,
       "hi": 87.1,
-      "n": 291
+      "n": 291,
+      "reliable": true
      },
      "diff": -10.9,
      "diff_lo": -19.8,
@@ -4283,13 +4765,15 @@
       "est": 4.6,
       "lo": 4.2,
       "hi": 5.0,
-      "n": 398
+      "n": 398,
+      "reliable": true
      },
      "men": {
       "est": 4.0,
       "lo": 3.6,
       "hi": 4.5,
-      "n": 288
+      "n": 288,
+      "reliable": true
      },
      "diff": 0.6,
      "diff_lo": -0.0,
@@ -4297,33 +4781,37 @@
     },
     "admitted": {
      "women": {
-      "est": 0.1,
-      "lo": -0.1,
-      "hi": 0.4,
-      "n": 407
+      "est": 9.1,
+      "lo": 5.4,
+      "hi": 12.8,
+      "n": 407,
+      "reliable": true
      },
      "men": {
-      "est": 0.8,
-      "lo": -0.2,
-      "hi": 1.8,
-      "n": 291
+      "est": 7.7,
+      "lo": 1.3,
+      "hi": 14.0,
+      "n": 291,
+      "reliable": false
      },
-     "diff": -0.7,
-     "diff_lo": -1.7,
-     "diff_hi": 0.4
+     "diff": 1.5,
+     "diff_lo": -5.9,
+     "diff_hi": 8.8
     },
     "symptom_dx": {
      "women": {
       "est": 29.3,
       "lo": 23.1,
       "hi": 35.4,
-      "n": 407
+      "n": 407,
+      "reliable": true
      },
      "men": {
       "est": 26.5,
       "lo": 20.1,
       "hi": 32.8,
-      "n": 291
+      "n": 291,
+      "reliable": true
      },
      "diff": 2.8,
      "diff_lo": -6.0,
@@ -4334,13 +4822,15 @@
       "est": 256.0,
       "lo": 220.0,
       "hi": 293.0,
-      "n": 385
+      "n": 385,
+      "reliable": true
      },
      "men": {
       "est": 233.0,
       "lo": 198.0,
       "hi": 268.0,
-      "n": 280
+      "n": 280,
+      "reliable": true
      },
      "diff": 23.0,
      "diff_lo": -27.0,
@@ -4359,13 +4849,15 @@
       "est": 78.2,
       "lo": 69.1,
       "hi": 87.2,
-      "n": 175
+      "n": 175,
+      "reliable": true
      },
      "men": {
       "est": 71.7,
       "lo": 64.3,
       "hi": 79.2,
-      "n": 218
+      "n": 218,
+      "reliable": true
      },
      "diff": 6.4,
      "diff_lo": -5.3,
@@ -4376,13 +4868,15 @@
       "est": 10.7,
       "lo": 3.3,
       "hi": 18.0,
-      "n": 172
+      "n": 172,
+      "reliable": false
      },
      "men": {
       "est": 13.8,
       "lo": 7.9,
       "hi": 19.7,
-      "n": 222
+      "n": 222,
+      "reliable": true
      },
      "diff": -3.1,
      "diff_lo": -12.6,
@@ -4393,13 +4887,15 @@
       "est": 11.2,
       "lo": 5.9,
       "hi": 16.5,
-      "n": 240
+      "n": 240,
+      "reliable": true
      },
      "men": {
       "est": 13.1,
       "lo": 7.4,
       "hi": 18.8,
-      "n": 278
+      "n": 278,
+      "reliable": true
      },
      "diff": -1.9,
      "diff_lo": -9.7,
@@ -4410,13 +4906,15 @@
       "est": 52.0,
       "lo": 36.0,
       "hi": 68.0,
-      "n": 208
+      "n": 208,
+      "reliable": true
      },
      "men": {
       "est": 30.0,
       "lo": 24.0,
       "hi": 37.0,
-      "n": 254
+      "n": 254,
+      "reliable": true
      },
      "diff": 22.0,
      "diff_lo": 4.0,
@@ -4427,13 +4925,15 @@
       "est": 67.3,
       "lo": 59.8,
       "hi": 74.7,
-      "n": 244
+      "n": 244,
+      "reliable": true
      },
      "men": {
       "est": 73.0,
       "lo": 64.7,
       "hi": 81.2,
-      "n": 284
+      "n": 284,
+      "reliable": true
      },
      "diff": -5.7,
      "diff_lo": -16.8,
@@ -4444,13 +4944,15 @@
       "est": 41.5,
       "lo": 33.7,
       "hi": 49.2,
-      "n": 244
+      "n": 244,
+      "reliable": true
      },
      "men": {
       "est": 43.1,
       "lo": 35.4,
       "hi": 50.9,
-      "n": 284
+      "n": 284,
+      "reliable": true
      },
      "diff": -1.7,
      "diff_lo": -12.6,
@@ -4461,13 +4963,15 @@
       "est": 81.6,
       "lo": 75.0,
       "hi": 88.2,
-      "n": 244
+      "n": 244,
+      "reliable": true
      },
      "men": {
       "est": 82.3,
       "lo": 76.3,
       "hi": 88.2,
-      "n": 284
+      "n": 284,
+      "reliable": true
      },
      "diff": -0.6,
      "diff_lo": -9.6,
@@ -4478,13 +4982,15 @@
       "est": 4.7,
       "lo": 4.3,
       "hi": 5.2,
-      "n": 238
+      "n": 238,
+      "reliable": true
      },
      "men": {
       "est": 4.6,
       "lo": 4.1,
       "hi": 5.1,
-      "n": 281
+      "n": 281,
+      "reliable": true
      },
      "diff": 0.1,
      "diff_lo": -0.6,
@@ -4492,33 +4998,37 @@
     },
     "admitted": {
      "women": {
-      "est": 0.9,
-      "lo": -0.1,
-      "hi": 2.0,
-      "n": 244
+      "est": 14.2,
+      "lo": 8.6,
+      "hi": 19.8,
+      "n": 244,
+      "reliable": true
      },
      "men": {
-      "est": 0.4,
-      "lo": -0.2,
-      "hi": 1.1,
-      "n": 284
+      "est": 12.7,
+      "lo": 6.6,
+      "hi": 18.9,
+      "n": 284,
+      "reliable": true
      },
-     "diff": 0.5,
-     "diff_lo": -0.7,
-     "diff_hi": 1.8
+     "diff": 1.5,
+     "diff_lo": -6.9,
+     "diff_hi": 9.8
     },
     "symptom_dx": {
      "women": {
       "est": 33.6,
       "lo": 24.4,
       "hi": 42.7,
-      "n": 244
+      "n": 244,
+      "reliable": true
      },
      "men": {
       "est": 24.1,
       "lo": 17.8,
       "hi": 30.3,
-      "n": 284
+      "n": 284,
+      "reliable": true
      },
      "diff": 9.5,
      "diff_lo": -1.6,
@@ -4529,13 +5039,15 @@
       "est": 294.0,
       "lo": 246.0,
       "hi": 342.0,
-      "n": 228
+      "n": 228,
+      "reliable": true
      },
      "men": {
       "est": 246.0,
       "lo": 216.0,
       "hi": 276.0,
-      "n": 274
+      "n": 274,
+      "reliable": true
      },
      "diff": 48.0,
      "diff_lo": -8.0,
@@ -4554,13 +5066,15 @@
       "est": 60.5,
       "lo": 48.4,
       "hi": 72.6,
-      "n": 113
+      "n": 113,
+      "reliable": true
      },
      "men": {
       "est": 66.0,
       "lo": 55.8,
       "hi": 76.3,
-      "n": 102
+      "n": 102,
+      "reliable": true
      },
      "diff": -5.6,
      "diff_lo": -21.5,
@@ -4571,13 +5085,15 @@
       "est": 8.5,
       "lo": 1.5,
       "hi": 15.4,
-      "n": 117
+      "n": 117,
+      "reliable": false
      },
      "men": {
       "est": 5.8,
       "lo": 1.1,
       "hi": 10.6,
-      "n": 103
+      "n": 103,
+      "reliable": false
      },
      "diff": 2.7,
      "diff_lo": -5.8,
@@ -4588,13 +5104,15 @@
       "est": 17.8,
       "lo": 9.0,
       "hi": 26.5,
-      "n": 155
+      "n": 155,
+      "reliable": true
      },
      "men": {
       "est": 24.1,
       "lo": 13.6,
       "hi": 34.5,
-      "n": 134
+      "n": 134,
+      "reliable": true
      },
      "diff": -6.3,
      "diff_lo": -20.0,
@@ -4605,13 +5123,15 @@
       "est": 34.0,
       "lo": 24.0,
       "hi": 44.0,
-      "n": 138
+      "n": 138,
+      "reliable": true
      },
      "men": {
       "est": 30.0,
       "lo": 17.0,
       "hi": 42.0,
-      "n": 124
+      "n": 124,
+      "reliable": true
      },
      "diff": 4.0,
      "diff_lo": -12.0,
@@ -4622,13 +5142,15 @@
       "est": 60.9,
       "lo": 49.3,
       "hi": 72.4,
-      "n": 163
+      "n": 163,
+      "reliable": true
      },
      "men": {
       "est": 59.5,
       "lo": 50.1,
       "hi": 68.8,
-      "n": 136
+      "n": 136,
+      "reliable": true
      },
      "diff": 1.4,
      "diff_lo": -13.5,
@@ -4639,13 +5161,15 @@
       "est": 46.3,
       "lo": 33.6,
       "hi": 58.9,
-      "n": 163
+      "n": 163,
+      "reliable": true
      },
      "men": {
       "est": 40.1,
       "lo": 29.0,
       "hi": 51.1,
-      "n": 136
+      "n": 136,
+      "reliable": true
      },
      "diff": 6.2,
      "diff_lo": -10.6,
@@ -4656,13 +5180,15 @@
       "est": 83.2,
       "lo": 75.5,
       "hi": 90.8,
-      "n": 163
+      "n": 163,
+      "reliable": true
      },
      "men": {
       "est": 86.7,
       "lo": 79.5,
       "hi": 93.9,
-      "n": 136
+      "n": 136,
+      "reliable": true
      },
      "diff": -3.5,
      "diff_lo": -14.0,
@@ -4673,13 +5199,15 @@
       "est": 5.0,
       "lo": 4.4,
       "hi": 5.5,
-      "n": 162
+      "n": 162,
+      "reliable": true
      },
      "men": {
       "est": 5.1,
       "lo": 4.2,
       "hi": 6.0,
-      "n": 135
+      "n": 135,
+      "reliable": true
      },
      "diff": -0.1,
      "diff_lo": -1.2,
@@ -4687,33 +5215,37 @@
     },
     "admitted": {
      "women": {
-      "est": 1.4,
-      "lo": -0.6,
-      "hi": 3.4,
-      "n": 163
+      "est": 14.0,
+      "lo": 8.3,
+      "hi": 19.7,
+      "n": 163,
+      "reliable": true
      },
      "men": {
-      "est": 1.8,
-      "lo": -0.6,
-      "hi": 4.2,
-      "n": 136
+      "est": 14.0,
+      "lo": 7.4,
+      "hi": 20.7,
+      "n": 136,
+      "reliable": true
      },
-     "diff": -0.4,
-     "diff_lo": -3.5,
-     "diff_hi": 2.7
+     "diff": -0.0,
+     "diff_lo": -8.8,
+     "diff_hi": 8.7
     },
     "symptom_dx": {
      "women": {
       "est": 33.3,
       "lo": 22.9,
       "hi": 43.8,
-      "n": 163
+      "n": 163,
+      "reliable": true
      },
      "men": {
       "est": 33.2,
       "lo": 23.9,
       "hi": 42.5,
-      "n": 136
+      "n": 136,
+      "reliable": true
      },
      "diff": 0.1,
      "diff_lo": -13.8,
@@ -4724,13 +5256,15 @@
       "est": 311.0,
       "lo": 256.0,
       "hi": 365.0,
-      "n": 160
+      "n": 160,
+      "reliable": true
      },
      "men": {
       "est": 292.0,
       "lo": 239.0,
       "hi": 345.0,
-      "n": 136
+      "n": 136,
+      "reliable": true
      },
      "diff": 18.0,
      "diff_lo": -58.0,
@@ -4749,13 +5283,15 @@
       "est": 68.0,
       "lo": 61.8,
       "hi": 74.1,
-      "n": 576
+      "n": 576,
+      "reliable": true
      },
      "men": {
       "est": 71.2,
       "lo": 66.3,
       "hi": 76.1,
-      "n": 523
+      "n": 523,
+      "reliable": true
      },
      "diff": -3.2,
      "diff_lo": -11.1,
@@ -4766,13 +5302,15 @@
       "est": 9.1,
       "lo": 5.6,
       "hi": 12.6,
-      "n": 590
+      "n": 590,
+      "reliable": true
      },
      "men": {
       "est": 12.8,
       "lo": 7.9,
       "hi": 17.6,
-      "n": 542
+      "n": 542,
+      "reliable": true
      },
      "diff": -3.7,
      "diff_lo": -9.7,
@@ -4783,13 +5321,15 @@
       "est": 10.8,
       "lo": 7.9,
       "hi": 13.8,
-      "n": 785
+      "n": 785,
+      "reliable": true
      },
      "men": {
       "est": 12.6,
       "lo": 8.8,
       "hi": 16.4,
-      "n": 698
+      "n": 698,
+      "reliable": true
      },
      "diff": -1.8,
      "diff_lo": -6.6,
@@ -4800,13 +5340,15 @@
       "est": 41.0,
       "lo": 34.0,
       "hi": 48.0,
-      "n": 684
+      "n": 684,
+      "reliable": true
      },
      "men": {
       "est": 33.0,
       "lo": 27.0,
       "hi": 40.0,
-      "n": 634
+      "n": 634,
+      "reliable": true
      },
      "diff": 8.0,
      "diff_lo": -2.0,
@@ -4817,13 +5359,15 @@
       "est": 62.9,
       "lo": 57.8,
       "hi": 68.1,
-      "n": 814
+      "n": 814,
+      "reliable": true
      },
      "men": {
       "est": 69.4,
       "lo": 63.2,
       "hi": 75.5,
-      "n": 711
+      "n": 711,
+      "reliable": true
      },
      "diff": -6.4,
      "diff_lo": -14.4,
@@ -4834,13 +5378,15 @@
       "est": 36.0,
       "lo": 30.7,
       "hi": 41.3,
-      "n": 814
+      "n": 814,
+      "reliable": true
      },
      "men": {
       "est": 41.4,
       "lo": 35.5,
       "hi": 47.4,
-      "n": 711
+      "n": 711,
+      "reliable": true
      },
      "diff": -5.4,
      "diff_lo": -13.4,
@@ -4851,13 +5397,15 @@
       "est": 76.4,
       "lo": 71.7,
       "hi": 81.1,
-      "n": 814
+      "n": 814,
+      "reliable": true
      },
      "men": {
       "est": 82.8,
       "lo": 79.3,
       "hi": 86.3,
-      "n": 711
+      "n": 711,
+      "reliable": true
      },
      "diff": -6.4,
      "diff_lo": -12.3,
@@ -4868,13 +5416,15 @@
       "est": 4.7,
       "lo": 4.4,
       "hi": 5.0,
-      "n": 798
+      "n": 798,
+      "reliable": true
      },
      "men": {
       "est": 4.5,
       "lo": 4.1,
       "hi": 4.9,
-      "n": 704
+      "n": 704,
+      "reliable": true
      },
      "diff": 0.2,
      "diff_lo": -0.2,
@@ -4882,33 +5432,37 @@
     },
     "admitted": {
      "women": {
-      "est": 0.6,
-      "lo": 0.0,
-      "hi": 1.2,
-      "n": 814
+      "est": 11.6,
+      "lo": 8.6,
+      "hi": 14.5,
+      "n": 814,
+      "reliable": true
      },
      "men": {
-      "est": 0.8,
-      "lo": 0.2,
-      "hi": 1.5,
-      "n": 711
+      "est": 10.9,
+      "lo": 6.6,
+      "hi": 15.2,
+      "n": 711,
+      "reliable": true
      },
-     "diff": -0.2,
-     "diff_lo": -1.1,
-     "diff_hi": 0.7
+     "diff": 0.7,
+     "diff_lo": -4.5,
+     "diff_hi": 5.8
     },
     "symptom_dx": {
      "women": {
       "est": 31.3,
       "lo": 27.0,
       "hi": 35.6,
-      "n": 814
+      "n": 814,
+      "reliable": true
      },
      "men": {
       "est": 26.7,
       "lo": 22.2,
       "hi": 31.2,
-      "n": 711
+      "n": 711,
+      "reliable": true
      },
      "diff": 4.6,
      "diff_lo": -1.6,
@@ -4919,13 +5473,15 @@
       "est": 279.0,
       "lo": 251.0,
       "hi": 306.0,
-      "n": 773
+      "n": 773,
+      "reliable": true
      },
      "men": {
       "est": 250.0,
       "lo": 226.0,
       "hi": 274.0,
-      "n": 690
+      "n": 690,
+      "reliable": true
      },
      "diff": 29.0,
      "diff_lo": -7.0,
@@ -4944,13 +5500,15 @@
       "est": 62.7,
       "lo": 60.6,
       "hi": 64.8,
-      "n": 4144
+      "n": 4144,
+      "reliable": true
      },
      "men": {
       "est": 58.3,
       "lo": 55.8,
       "hi": 60.8,
-      "n": 2634
+      "n": 2634,
+      "reliable": true
      },
      "diff": 4.4,
      "diff_lo": 1.1,
@@ -4961,13 +5519,15 @@
       "est": 9.8,
       "lo": 7.7,
       "hi": 12.0,
-      "n": 4263
+      "n": 4263,
+      "reliable": true
      },
      "men": {
       "est": 13.5,
       "lo": 10.7,
       "hi": 16.3,
-      "n": 2730
+      "n": 2730,
+      "reliable": true
      },
      "diff": -3.6,
      "diff_lo": -7.2,
@@ -4978,13 +5538,15 @@
       "est": 8.5,
       "lo": 7.5,
       "hi": 9.5,
-      "n": 5680
+      "n": 5680,
+      "reliable": true
      },
      "men": {
       "est": 12.5,
       "lo": 11.0,
       "hi": 14.0,
-      "n": 3598
+      "n": 3598,
+      "reliable": true
      },
      "diff": -4.0,
      "diff_lo": -5.8,
@@ -4995,13 +5557,15 @@
       "est": 42.0,
       "lo": 36.0,
       "hi": 47.0,
-      "n": 5026
+      "n": 5026,
+      "reliable": true
      },
      "men": {
       "est": 37.0,
       "lo": 33.0,
       "hi": 41.0,
-      "n": 3173
+      "n": 3173,
+      "reliable": true
      },
      "diff": 5.0,
      "diff_lo": -2.0,
@@ -5012,13 +5576,15 @@
       "est": 51.9,
       "lo": 49.0,
       "hi": 54.8,
-      "n": 5847
+      "n": 5847,
+      "reliable": true
      },
      "men": {
       "est": 50.2,
       "lo": 47.3,
       "hi": 53.1,
-      "n": 3710
+      "n": 3710,
+      "reliable": true
      },
      "diff": 1.6,
      "diff_lo": -2.5,
@@ -5029,13 +5595,15 @@
       "est": 20.5,
       "lo": 18.5,
       "hi": 22.5,
-      "n": 5847
+      "n": 5847,
+      "reliable": true
      },
      "men": {
       "est": 20.8,
       "lo": 18.8,
       "hi": 22.9,
-      "n": 3710
+      "n": 3710,
+      "reliable": true
      },
      "diff": -0.3,
      "diff_lo": -3.2,
@@ -5046,13 +5614,15 @@
       "est": 63.3,
       "lo": 61.1,
       "hi": 65.5,
-      "n": 5847
+      "n": 5847,
+      "reliable": true
      },
      "men": {
       "est": 67.0,
       "lo": 64.4,
       "hi": 69.6,
-      "n": 3710
+      "n": 3710,
+      "reliable": true
      },
      "diff": -3.7,
      "diff_lo": -7.1,
@@ -5063,13 +5633,15 @@
       "est": 4.4,
       "lo": 4.1,
       "hi": 4.6,
-      "n": 5773
+      "n": 5773,
+      "reliable": true
      },
      "men": {
       "est": 3.6,
       "lo": 3.4,
       "hi": 3.8,
-      "n": 3643
+      "n": 3643,
+      "reliable": true
      },
      "diff": 0.7,
      "diff_lo": 0.5,
@@ -5077,33 +5649,37 @@
     },
     "admitted": {
      "women": {
-      "est": 0.5,
-      "lo": 0.2,
-      "hi": 0.8,
-      "n": 5847
+      "est": 6.5,
+      "lo": 5.4,
+      "hi": 7.6,
+      "n": 5847,
+      "reliable": true
      },
      "men": {
-      "est": 0.9,
-      "lo": 0.5,
-      "hi": 1.3,
-      "n": 3710
+      "est": 8.4,
+      "lo": 7.0,
+      "hi": 9.7,
+      "n": 3710,
+      "reliable": true
      },
-     "diff": -0.4,
-     "diff_lo": -0.9,
-     "diff_hi": 0.2
+     "diff": -1.9,
+     "diff_lo": -3.6,
+     "diff_hi": -0.1
     },
     "symptom_dx": {
      "women": {
       "est": 37.6,
       "lo": 35.2,
       "hi": 40.1,
-      "n": 5847
+      "n": 5847,
+      "reliable": true
      },
      "men": {
       "est": 33.3,
       "lo": 30.8,
       "hi": 35.8,
-      "n": 3710
+      "n": 3710,
+      "reliable": true
      },
      "diff": 4.3,
      "diff_lo": 0.8,
@@ -5114,13 +5690,15 @@
       "est": 262.0,
       "lo": 245.0,
       "hi": 279.0,
-      "n": 5587
+      "n": 5587,
+      "reliable": true
      },
      "men": {
       "est": 240.0,
       "lo": 221.0,
       "hi": 259.0,
-      "n": 3534
+      "n": 3534,
+      "reliable": true
      },
      "diff": 22.0,
      "diff_lo": -3.0,
@@ -5139,13 +5717,15 @@
       "est": 67.9,
       "lo": 65.3,
       "hi": 70.4,
-      "n": 2527
+      "n": 2527,
+      "reliable": true
      },
      "men": {
       "est": 58.9,
       "lo": 55.5,
       "hi": 62.2,
-      "n": 2135
+      "n": 2135,
+      "reliable": true
      },
      "diff": 9.0,
      "diff_lo": 4.8,
@@ -5156,13 +5736,15 @@
       "est": 16.4,
       "lo": 13.8,
       "hi": 18.9,
-      "n": 2641
+      "n": 2641,
+      "reliable": true
      },
      "men": {
       "est": 20.5,
       "lo": 17.1,
       "hi": 23.8,
-      "n": 2229
+      "n": 2229,
+      "reliable": true
      },
      "diff": -4.1,
      "diff_lo": -8.3,
@@ -5173,13 +5755,15 @@
       "est": 13.7,
       "lo": 11.9,
       "hi": 15.5,
-      "n": 3504
+      "n": 3504,
+      "reliable": true
      },
      "men": {
       "est": 17.5,
       "lo": 15.2,
       "hi": 19.9,
-      "n": 2952
+      "n": 2952,
+      "reliable": true
      },
      "diff": -3.8,
      "diff_lo": -6.8,
@@ -5190,13 +5774,15 @@
       "est": 36.0,
       "lo": 31.0,
       "hi": 40.0,
-      "n": 3149
+      "n": 3149,
+      "reliable": true
      },
      "men": {
       "est": 36.0,
       "lo": 31.0,
       "hi": 41.0,
-      "n": 2643
+      "n": 2643,
+      "reliable": true
      },
      "diff": -0.0,
      "diff_lo": -6.0,
@@ -5207,13 +5793,15 @@
       "est": 59.1,
       "lo": 56.2,
       "hi": 62.0,
-      "n": 3614
+      "n": 3614,
+      "reliable": true
      },
      "men": {
       "est": 57.3,
       "lo": 53.7,
       "hi": 60.8,
-      "n": 3059
+      "n": 3059,
+      "reliable": true
      },
      "diff": 1.8,
      "diff_lo": -2.8,
@@ -5224,13 +5812,15 @@
       "est": 29.9,
       "lo": 27.1,
       "hi": 32.6,
-      "n": 3614
+      "n": 3614,
+      "reliable": true
      },
      "men": {
       "est": 29.6,
       "lo": 26.8,
       "hi": 32.4,
-      "n": 3059
+      "n": 3059,
+      "reliable": true
      },
      "diff": 0.3,
      "diff_lo": -3.6,
@@ -5241,13 +5831,15 @@
       "est": 77.1,
       "lo": 75.0,
       "hi": 79.3,
-      "n": 3614
+      "n": 3614,
+      "reliable": true
      },
      "men": {
       "est": 72.8,
       "lo": 69.9,
       "hi": 75.8,
-      "n": 3059
+      "n": 3059,
+      "reliable": true
      },
      "diff": 4.3,
      "diff_lo": 0.7,
@@ -5258,13 +5850,15 @@
       "est": 4.8,
       "lo": 4.5,
       "hi": 5.0,
-      "n": 3558
+      "n": 3558,
+      "reliable": true
      },
      "men": {
       "est": 4.6,
       "lo": 4.4,
       "hi": 4.8,
-      "n": 3011
+      "n": 3011,
+      "reliable": true
      },
      "diff": 0.2,
      "diff_lo": -0.2,
@@ -5272,33 +5866,37 @@
     },
     "admitted": {
      "women": {
-      "est": 1.5,
-      "lo": 0.9,
-      "hi": 2.1,
-      "n": 3614
+      "est": 14.4,
+      "lo": 12.3,
+      "hi": 16.4,
+      "n": 3614,
+      "reliable": true
      },
      "men": {
-      "est": 1.2,
-      "lo": 0.7,
-      "hi": 1.7,
-      "n": 3059
+      "est": 17.0,
+      "lo": 14.7,
+      "hi": 19.4,
+      "n": 3059,
+      "reliable": true
      },
-     "diff": 0.3,
-     "diff_lo": -0.5,
-     "diff_hi": 1.1
+     "diff": -2.6,
+     "diff_lo": -5.8,
+     "diff_hi": 0.5
     },
     "symptom_dx": {
      "women": {
       "est": 38.7,
       "lo": 35.9,
       "hi": 41.5,
-      "n": 3614
+      "n": 3614,
+      "reliable": true
      },
      "men": {
       "est": 34.9,
       "lo": 31.8,
       "hi": 38.0,
-      "n": 3059
+      "n": 3059,
+      "reliable": true
      },
      "diff": 3.7,
      "diff_lo": -0.4,
@@ -5309,13 +5907,15 @@
       "est": 295.0,
       "lo": 273.0,
       "hi": 317.0,
-      "n": 3439
+      "n": 3439,
+      "reliable": true
      },
      "men": {
       "est": 301.0,
       "lo": 281.0,
       "hi": 321.0,
-      "n": 2910
+      "n": 2910,
+      "reliable": true
      },
      "diff": -6.0,
      "diff_lo": -36.0,
@@ -5334,13 +5934,15 @@
       "est": 53.9,
       "lo": 50.2,
       "hi": 57.6,
-      "n": 1666
+      "n": 1666,
+      "reliable": true
      },
      "men": {
       "est": 48.9,
       "lo": 44.0,
       "hi": 53.7,
-      "n": 1195
+      "n": 1195,
+      "reliable": true
      },
      "diff": 5.0,
      "diff_lo": -1.0,
@@ -5351,13 +5953,15 @@
       "est": 19.0,
       "lo": 15.8,
       "hi": 22.2,
-      "n": 1840
+      "n": 1840,
+      "reliable": true
      },
      "men": {
       "est": 18.3,
       "lo": 14.6,
       "hi": 22.1,
-      "n": 1299
+      "n": 1299,
+      "reliable": true
      },
      "diff": 0.6,
      "diff_lo": -4.3,
@@ -5368,13 +5972,15 @@
       "est": 30.2,
       "lo": 27.5,
       "hi": 33.0,
-      "n": 2341
+      "n": 2341,
+      "reliable": true
      },
      "men": {
       "est": 29.2,
       "lo": 25.6,
       "hi": 32.8,
-      "n": 1704
+      "n": 1704,
+      "reliable": true
      },
      "diff": 1.0,
      "diff_lo": -3.6,
@@ -5385,13 +5991,15 @@
       "est": 35.0,
       "lo": 30.0,
       "hi": 41.0,
-      "n": 2157
+      "n": 2157,
+      "reliable": true
      },
      "men": {
       "est": 37.0,
       "lo": 31.0,
       "hi": 43.0,
-      "n": 1535
+      "n": 1535,
+      "reliable": true
      },
      "diff": -1.0,
      "diff_lo": -9.0,
@@ -5402,13 +6010,15 @@
       "est": 53.9,
       "lo": 50.5,
       "hi": 57.3,
-      "n": 2419
+      "n": 2419,
+      "reliable": true
      },
      "men": {
       "est": 50.7,
       "lo": 47.4,
       "hi": 54.1,
-      "n": 1752
+      "n": 1752,
+      "reliable": true
      },
      "diff": 3.2,
      "diff_lo": -1.6,
@@ -5419,13 +6029,15 @@
       "est": 30.7,
       "lo": 27.7,
       "hi": 33.7,
-      "n": 2419
+      "n": 2419,
+      "reliable": true
      },
      "men": {
       "est": 28.3,
       "lo": 25.6,
       "hi": 31.1,
-      "n": 1752
+      "n": 1752,
+      "reliable": true
      },
      "diff": 2.4,
      "diff_lo": -1.7,
@@ -5436,13 +6048,15 @@
       "est": 85.8,
       "lo": 84.0,
       "hi": 87.6,
-      "n": 2419
+      "n": 2419,
+      "reliable": true
      },
      "men": {
       "est": 83.5,
       "lo": 81.3,
       "hi": 85.8,
-      "n": 1752
+      "n": 1752,
+      "reliable": true
      },
      "diff": 2.2,
      "diff_lo": -0.6,
@@ -5453,13 +6067,15 @@
       "est": 5.2,
       "lo": 5.0,
       "hi": 5.5,
-      "n": 2400
+      "n": 2400,
+      "reliable": true
      },
      "men": {
       "est": 5.5,
       "lo": 5.1,
       "hi": 5.8,
-      "n": 1737
+      "n": 1737,
+      "reliable": true
      },
      "diff": -0.2,
      "diff_lo": -0.7,
@@ -5467,33 +6083,37 @@
     },
     "admitted": {
      "women": {
-      "est": 3.1,
-      "lo": 1.8,
-      "hi": 4.4,
-      "n": 2419
+      "est": 26.7,
+      "lo": 23.9,
+      "hi": 29.5,
+      "n": 2419,
+      "reliable": true
      },
      "men": {
-      "est": 4.4,
-      "lo": 2.6,
-      "hi": 6.1,
-      "n": 1752
+      "est": 30.3,
+      "lo": 26.6,
+      "hi": 34.1,
+      "n": 1752,
+      "reliable": true
      },
-     "diff": -1.3,
-     "diff_lo": -3.5,
-     "diff_hi": 0.9
+     "diff": -3.7,
+     "diff_lo": -8.3,
+     "diff_hi": 1.0
     },
     "symptom_dx": {
      "women": {
       "est": 31.8,
       "lo": 28.9,
       "hi": 34.8,
-      "n": 2419
+      "n": 2419,
+      "reliable": true
      },
      "men": {
       "est": 35.7,
       "lo": 32.7,
       "hi": 38.6,
-      "n": 1752
+      "n": 1752,
+      "reliable": true
      },
      "diff": -3.8,
      "diff_lo": -8.0,
@@ -5504,13 +6124,15 @@
       "est": 344.0,
       "lo": 314.0,
       "hi": 374.0,
-      "n": 2318
+      "n": 2318,
+      "reliable": true
      },
      "men": {
       "est": 338.0,
       "lo": 304.0,
       "hi": 371.0,
-      "n": 1654
+      "n": 1654,
+      "reliable": true
      },
      "diff": 7.0,
      "diff_lo": -38.0,
@@ -5529,13 +6151,15 @@
       "est": 62.5,
       "lo": 60.9,
       "hi": 64.1,
-      "n": 8337
+      "n": 8337,
+      "reliable": true
      },
      "men": {
       "est": 56.5,
       "lo": 54.1,
       "hi": 58.9,
-      "n": 5964
+      "n": 5964,
+      "reliable": true
      },
      "diff": 6.0,
      "diff_lo": 3.1,
@@ -5546,13 +6170,15 @@
       "est": 13.8,
       "lo": 11.9,
       "hi": 15.7,
-      "n": 8744
+      "n": 8744,
+      "reliable": true
      },
      "men": {
       "est": 17.0,
       "lo": 14.6,
       "hi": 19.5,
-      "n": 6258
+      "n": 6258,
+      "reliable": true
      },
      "diff": -3.3,
      "diff_lo": -6.4,
@@ -5563,13 +6189,15 @@
       "est": 14.5,
       "lo": 13.4,
       "hi": 15.6,
-      "n": 11525
+      "n": 11525,
+      "reliable": true
      },
      "men": {
       "est": 17.9,
       "lo": 16.2,
       "hi": 19.6,
-      "n": 8254
+      "n": 8254,
+      "reliable": true
      },
      "diff": -3.4,
      "diff_lo": -5.4,
@@ -5580,13 +6208,15 @@
       "est": 38.0,
       "lo": 34.0,
       "hi": 43.0,
-      "n": 10332
+      "n": 10332,
+      "reliable": true
      },
      "men": {
       "est": 36.0,
       "lo": 33.0,
       "hi": 40.0,
-      "n": 7351
+      "n": 7351,
+      "reliable": true
      },
      "diff": 2.0,
      "diff_lo": -4.0,
@@ -5597,13 +6227,15 @@
       "est": 54.5,
       "lo": 52.2,
       "hi": 56.7,
-      "n": 11880
+      "n": 11880,
+      "reliable": true
      },
      "men": {
       "est": 52.9,
       "lo": 50.4,
       "hi": 55.4,
-      "n": 8521
+      "n": 8521,
+      "reliable": true
      },
      "diff": 1.6,
      "diff_lo": -1.8,
@@ -5614,13 +6246,15 @@
       "est": 25.4,
       "lo": 23.6,
       "hi": 27.3,
-      "n": 11880
+      "n": 11880,
+      "reliable": true
      },
      "men": {
       "est": 25.6,
       "lo": 23.8,
       "hi": 27.4,
-      "n": 8521
+      "n": 8521,
+      "reliable": true
      },
      "diff": -0.2,
      "diff_lo": -2.8,
@@ -5631,13 +6265,15 @@
       "est": 72.1,
       "lo": 70.4,
       "hi": 73.8,
-      "n": 11880
+      "n": 11880,
+      "reliable": true
      },
      "men": {
       "est": 72.6,
       "lo": 70.8,
       "hi": 74.5,
-      "n": 8521
+      "n": 8521,
+      "reliable": true
      },
      "diff": -0.5,
      "diff_lo": -3.0,
@@ -5648,13 +6284,15 @@
       "est": 4.7,
       "lo": 4.5,
       "hi": 4.8,
-      "n": 11731
+      "n": 11731,
+      "reliable": true
      },
      "men": {
       "est": 4.4,
       "lo": 4.2,
       "hi": 4.6,
-      "n": 8391
+      "n": 8391,
+      "reliable": true
      },
      "diff": 0.3,
      "diff_lo": 0.0,
@@ -5662,33 +6300,37 @@
     },
     "admitted": {
      "women": {
-      "est": 1.4,
-      "lo": 0.9,
-      "hi": 1.8,
-      "n": 11880
+      "est": 13.0,
+      "lo": 11.7,
+      "hi": 14.3,
+      "n": 11880,
+      "reliable": true
      },
      "men": {
-      "est": 1.7,
-      "lo": 1.2,
-      "hi": 2.3,
-      "n": 8521
+      "est": 16.2,
+      "lo": 14.4,
+      "hi": 17.9,
+      "n": 8521,
+      "reliable": true
      },
-     "diff": -0.4,
-     "diff_lo": -1.1,
-     "diff_hi": 0.4
+     "diff": -3.2,
+     "diff_lo": -5.3,
+     "diff_hi": -1.0
     },
     "symptom_dx": {
      "women": {
       "est": 36.8,
       "lo": 34.8,
       "hi": 38.7,
-      "n": 11880
+      "n": 11880,
+      "reliable": true
      },
      "men": {
       "est": 34.4,
       "lo": 32.4,
       "hi": 36.4,
-      "n": 8521
+      "n": 8521,
+      "reliable": true
      },
      "diff": 2.4,
      "diff_lo": -0.4,
@@ -5699,13 +6341,15 @@
       "est": 289.0,
       "lo": 272.0,
       "hi": 306.0,
-      "n": 11344
+      "n": 11344,
+      "reliable": true
      },
      "men": {
       "est": 283.0,
       "lo": 265.0,
       "hi": 301.0,
-      "n": 8098
+      "n": 8098,
+      "reliable": true
      },
      "diff": 6.0,
      "diff_lo": -18.0,
@@ -5722,13 +6366,15 @@
      "est": 18.6,
      "lo": 14.4,
      "hi": 22.8,
-     "n": 452
+     "n": 452,
+     "reliable": true
     },
     "men": {
      "est": 19.4,
      "lo": 13.8,
      "hi": 24.9,
-     "n": 397
+     "n": 397,
+     "reliable": true
     },
     "diff": -0.8,
     "diff_lo": -7.7,
@@ -5742,13 +6388,15 @@
      "est": 28.4,
      "lo": 9.9,
      "hi": 46.9,
-     "n": 46
+     "n": 46,
+     "reliable": false
     },
     "men": {
      "est": 31.1,
      "lo": 14.1,
      "hi": 48.0,
-     "n": 56
+     "n": 56,
+     "reliable": true
     },
     "diff": -2.7,
     "diff_lo": -27.8,
@@ -5762,13 +6410,15 @@
      "est": 19.5,
      "lo": 11.7,
      "hi": 27.3,
-     "n": 196
+     "n": 196,
+     "reliable": true
     },
     "men": {
      "est": 11.3,
      "lo": 5.9,
      "hi": 16.7,
-     "n": 194
+     "n": 194,
+     "reliable": true
     },
     "diff": 8.2,
     "diff_lo": -1.3,
@@ -5782,13 +6432,15 @@
      "est": 4.8,
      "lo": 1.7,
      "hi": 7.8,
-     "n": 249
+     "n": 249,
+     "reliable": false
     },
     "men": {
      "est": 24.4,
      "lo": 13.1,
      "hi": 35.8,
-     "n": 242
+     "n": 242,
+     "reliable": true
     },
     "diff": -19.7,
     "diff_lo": -31.4,
@@ -5802,13 +6454,15 @@
      "est": 12.5,
      "lo": 8.2,
      "hi": 16.8,
-     "n": 400
+     "n": 400,
+     "reliable": true
     },
     "men": {
      "est": 19.4,
      "lo": 13.4,
      "hi": 25.4,
-     "n": 311
+     "n": 311,
+     "reliable": true
     },
     "diff": -6.9,
     "diff_lo": -14.3,
@@ -5822,13 +6476,15 @@
      "est": 12.9,
      "lo": 9.2,
      "hi": 16.6,
-     "n": 647
+     "n": 647,
+     "reliable": true
     },
     "men": {
      "est": 14.6,
      "lo": 10.8,
      "hi": 18.3,
-     "n": 531
+     "n": 531,
+     "reliable": true
     },
     "diff": -1.7,
     "diff_lo": -7.0,
@@ -5842,13 +6498,15 @@
      "est": 16.5,
      "lo": 11.8,
      "hi": 21.2,
-     "n": 681
+     "n": 681,
+     "reliable": true
     },
     "men": {
      "est": 15.8,
      "lo": 10.9,
      "hi": 20.7,
-     "n": 489
+     "n": 489,
+     "reliable": true
     },
     "diff": 0.7,
     "diff_lo": -6.1,
@@ -5862,13 +6520,15 @@
      "est": 11.9,
      "lo": 8.6,
      "hi": 15.1,
-     "n": 979
+     "n": 979,
+     "reliable": true
     },
     "men": {
      "est": 12.8,
      "lo": 9.0,
      "hi": 16.6,
-     "n": 625
+     "n": 625,
+     "reliable": true
     },
     "diff": -0.9,
     "diff_lo": -5.9,
@@ -5882,13 +6542,15 @@
      "est": 12.8,
      "lo": 9.7,
      "hi": 15.9,
-     "n": 1362
+     "n": 1362,
+     "reliable": true
     },
     "men": {
      "est": 15.9,
      "lo": 12.4,
      "hi": 19.5,
-     "n": 859
+     "n": 859,
+     "reliable": true
     },
     "diff": -3.1,
     "diff_lo": -7.8,
@@ -5902,13 +6564,15 @@
      "est": 10.6,
      "lo": 7.3,
      "hi": 13.9,
-     "n": 696
+     "n": 696,
+     "reliable": true
     },
     "men": {
      "est": 13.8,
      "lo": 9.6,
      "hi": 17.9,
-     "n": 412
+     "n": 412,
+     "reliable": true
     },
     "diff": -3.2,
     "diff_lo": -8.5,
@@ -5922,13 +6586,15 @@
      "est": 13.7,
      "lo": 10.3,
      "hi": 17.2,
-     "n": 1404
+     "n": 1404,
+     "reliable": true
     },
     "men": {
      "est": 16.4,
      "lo": 12.9,
      "hi": 19.9,
-     "n": 962
+     "n": 962,
+     "reliable": true
     },
     "diff": -2.7,
     "diff_lo": -7.6,
@@ -5943,13 +6609,15 @@
      "est": 22.9,
      "lo": 19.5,
      "hi": 26.3,
-     "n": 1243
+     "n": 1243,
+     "reliable": true
     },
     "men": {
      "est": 25.3,
      "lo": 20.3,
      "hi": 30.2,
-     "n": 1072
+     "n": 1072,
+     "reliable": true
     },
     "diff": -2.4,
     "diff_lo": -8.4,
@@ -5960,13 +6628,15 @@
      "est": 12.2,
      "lo": 10.2,
      "hi": 14.1,
-     "n": 7287
+     "n": 7287,
+     "reliable": true
     },
     "men": {
      "est": 15.3,
      "lo": 12.7,
      "hi": 17.8,
-     "n": 5005
+     "n": 5005,
+     "reliable": true
     },
     "diff": -3.1,
     "diff_lo": -6.3,
@@ -5979,13 +6649,15 @@
      "est": 23.5,
      "lo": 17.5,
      "hi": 29.5,
-     "n": 556
+     "n": 556,
+     "reliable": true
     },
     "men": {
      "est": 22.6,
      "lo": 14.8,
      "hi": 30.4,
-     "n": 457
+     "n": 457,
+     "reliable": true
     },
     "diff": 0.9,
     "diff_lo": -8.9,
@@ -5996,13 +6668,15 @@
      "est": 10.9,
      "lo": 9.1,
      "hi": 12.8,
-     "n": 3806
+     "n": 3806,
+     "reliable": true
     },
     "men": {
      "est": 13.6,
      "lo": 11.3,
      "hi": 16.0,
-     "n": 2345
+     "n": 2345,
+     "reliable": true
     },
     "diff": -2.7,
     "diff_lo": -5.7,
@@ -6015,13 +6689,15 @@
      "est": 29.0,
      "lo": 24.0,
      "hi": 35.0,
-     "n": 1435
+     "n": 1435,
+     "reliable": true
     },
     "men": {
      "est": 33.0,
      "lo": 26.0,
      "hi": 39.0,
-     "n": 1260
+     "n": 1260,
+     "reliable": true
     },
     "diff": -4.0,
     "diff_lo": -12.0,
@@ -6032,13 +6708,15 @@
      "est": 40.0,
      "lo": 35.0,
      "hi": 44.0,
-     "n": 8676
+     "n": 8676,
+     "reliable": true
     },
     "men": {
      "est": 37.0,
      "lo": 33.0,
      "hi": 41.0,
-     "n": 5930
+     "n": 5930,
+     "reliable": true
     },
     "diff": 3.0,
     "diff_lo": -3.0,
@@ -6051,13 +6729,15 @@
      "est": 57.8,
      "lo": 33.2,
      "hi": 82.3,
-     "n": 36
+     "n": 36,
+     "reliable": true
     },
     "men": {
      "est": 64.1,
      "lo": 49.9,
      "hi": 78.3,
-     "n": 82
+     "n": 82,
+     "reliable": true
     },
     "diff": -6.3,
     "diff_lo": -34.8,
@@ -6068,13 +6748,15 @@
      "est": 41.2,
      "lo": 25.4,
      "hi": 57.0,
-     "n": 62
+     "n": 62,
+     "reliable": true
     },
     "men": {
      "est": 61.2,
      "lo": 49.4,
      "hi": 73.0,
-     "n": 95
+     "n": 95,
+     "reliable": true
     },
     "diff": -20.0,
     "diff_lo": -39.7,
@@ -6087,13 +6769,15 @@
      "est": 35.1,
      "lo": 14.2,
      "hi": 56.0,
-     "n": 48
+     "n": 48,
+     "reliable": false
     },
     "men": {
      "est": 47.2,
      "lo": 34.6,
      "hi": 59.9,
-     "n": 105
+     "n": 105,
+     "reliable": true
     },
     "diff": -12.1,
     "diff_lo": -36.6,
@@ -6104,13 +6788,15 @@
      "est": 23.5,
      "lo": 11.8,
      "hi": 35.3,
-     "n": 90
+     "n": 90,
+     "reliable": true
     },
     "men": {
      "est": 40.0,
      "lo": 25.6,
      "hi": 54.5,
-     "n": 134
+     "n": 134,
+     "reliable": true
     },
     "diff": -16.5,
     "diff_lo": -35.1,
@@ -6134,13 +6820,15 @@
       "est": 32.8,
       "lo": 30.1,
       "hi": 35.5,
-      "n": 3872
+      "n": 3872,
+      "reliable": true
      },
      "men": {
       "est": 35.5,
       "lo": 32.0,
       "hi": 38.9,
-      "n": 2251
+      "n": 2251,
+      "reliable": true
      },
      "diff": -2.6,
      "diff_lo": -7.0,
@@ -6151,13 +6839,15 @@
       "est": 37.3,
       "lo": 34.5,
       "hi": 40.1,
-      "n": 3872
+      "n": 3872,
+      "reliable": true
      },
      "men": {
       "est": 40.6,
       "lo": 37.0,
       "hi": 44.1,
-      "n": 2251
+      "n": 2251,
+      "reliable": true
      },
      "diff": -3.3,
      "diff_lo": -7.8,
@@ -6168,13 +6858,15 @@
       "est": 51.5,
       "lo": 48.3,
       "hi": 54.6,
-      "n": 3872
+      "n": 3872,
+      "reliable": true
      },
      "men": {
       "est": 50.1,
       "lo": 46.6,
       "hi": 53.6,
-      "n": 2251
+      "n": 2251,
+      "reliable": true
      },
      "diff": 1.4,
      "diff_lo": -3.3,
@@ -6185,13 +6877,15 @@
       "est": 41.2,
       "lo": 35.9,
       "hi": 46.5,
-      "n": 3389
+      "n": 3389,
+      "reliable": true
      },
      "men": {
       "est": 37.8,
       "lo": 32.8,
       "hi": 42.7,
-      "n": 1916
+      "n": 1916,
+      "reliable": true
      },
      "diff": 3.5,
      "diff_lo": -3.8,
@@ -6202,13 +6896,15 @@
       "est": 62.9,
       "lo": 60.3,
       "hi": 65.6,
-      "n": 2756
+      "n": 2756,
+      "reliable": true
      },
      "men": {
       "est": 58.1,
       "lo": 53.9,
       "hi": 62.4,
-      "n": 1615
+      "n": 1615,
+      "reliable": true
      },
      "diff": 4.8,
      "diff_lo": -0.2,
@@ -6219,13 +6915,15 @@
       "est": 8.3,
       "lo": 6.3,
       "hi": 10.4,
-      "n": 2837
+      "n": 2837,
+      "reliable": true
      },
      "men": {
       "est": 9.0,
       "lo": 6.5,
       "hi": 11.5,
-      "n": 1642
+      "n": 1642,
+      "reliable": true
      },
      "diff": -0.7,
      "diff_lo": -4.0,
@@ -6233,33 +6931,37 @@
     },
     "admitted": {
      "women": {
-      "est": 1.9,
-      "lo": 0.9,
-      "hi": 2.8,
-      "n": 3872
+      "est": 17.2,
+      "lo": 15.5,
+      "hi": 18.9,
+      "n": 3872,
+      "reliable": true
      },
      "men": {
-      "est": 1.5,
-      "lo": 0.8,
-      "hi": 2.3,
-      "n": 2251
+      "est": 20.8,
+      "lo": 18.1,
+      "hi": 23.5,
+      "n": 2251,
+      "reliable": true
      },
-     "diff": 0.3,
-     "diff_lo": -0.9,
-     "diff_hi": 1.6
+     "diff": -3.6,
+     "diff_lo": -6.8,
+     "diff_hi": -0.4
     },
     "opioid_ed_severe": {
      "women": {
       "est": 40.8,
       "lo": 37.1,
       "hi": 44.5,
-      "n": 1726
+      "n": 1726,
+      "reliable": true
      },
      "men": {
       "est": 48.4,
       "lo": 43.3,
       "hi": 53.5,
-      "n": 936
+      "n": 936,
+      "reliable": true
      },
      "diff": -7.6,
      "diff_lo": -13.9,
@@ -6270,13 +6972,15 @@
       "est": 61.1,
       "lo": 57.4,
       "hi": 64.8,
-      "n": 1726
+      "n": 1726,
+      "reliable": true
      },
      "men": {
       "est": 62.9,
       "lo": 57.9,
       "hi": 67.8,
-      "n": 936
+      "n": 936,
+      "reliable": true
      },
      "diff": -1.8,
      "diff_lo": -7.9,
@@ -6287,13 +6991,15 @@
       "est": 38.7,
       "lo": 32.7,
       "hi": 44.7,
-      "n": 1551
+      "n": 1551,
+      "reliable": true
      },
      "men": {
       "est": 35.0,
       "lo": 29.4,
       "hi": 40.6,
-      "n": 808
+      "n": 808,
+      "reliable": true
      },
      "diff": 3.7,
      "diff_lo": -4.5,
@@ -6304,13 +7010,15 @@
       "est": 1.1,
       "lo": 0.4,
       "hi": 1.8,
-      "n": 3872
+      "n": 3872,
+      "reliable": false
      },
      "men": {
       "est": 1.1,
       "lo": 0.6,
       "hi": 1.6,
-      "n": 2251
+      "n": 2251,
+      "reliable": true
      },
      "diff": 0.0,
      "diff_lo": -0.9,
@@ -6321,13 +7029,15 @@
       "est": 46.0,
       "lo": 43.1,
       "hi": 48.9,
-      "n": 3872
+      "n": 3872,
+      "reliable": true
      },
      "men": {
       "est": 43.4,
       "lo": 40.4,
       "hi": 46.4,
-      "n": 2251
+      "n": 2251,
+      "reliable": true
      },
      "diff": 2.6,
      "diff_lo": -1.5,
@@ -6338,13 +7048,15 @@
       "est": 5.9,
       "lo": 5.7,
       "hi": 6.1,
-      "n": 3843
+      "n": 3843,
+      "reliable": true
      },
      "men": {
       "est": 5.4,
       "lo": 5.1,
       "hi": 5.7,
-      "n": 2224
+      "n": 2224,
+      "reliable": true
      },
      "diff": 0.5,
      "diff_lo": 0.2,
@@ -6355,13 +7067,15 @@
       "est": 12.1,
       "lo": 10.5,
       "hi": 13.8,
-      "n": 3757
+      "n": 3757,
+      "reliable": true
      },
      "men": {
       "est": 16.8,
       "lo": 13.7,
       "hi": 19.8,
-      "n": 2182
+      "n": 2182,
+      "reliable": true
      },
      "diff": -4.6,
      "diff_lo": -8.1,
@@ -6372,13 +7086,15 @@
       "est": 46.2,
       "lo": 43.2,
       "hi": 49.3,
-      "n": 3872
+      "n": 3872,
+      "reliable": true
      },
      "men": {
       "est": 54.4,
       "lo": 50.9,
       "hi": 57.9,
-      "n": 2251
+      "n": 2251,
+      "reliable": true
      },
      "diff": -8.2,
      "diff_lo": -12.8,
@@ -6427,13 +7143,15 @@
       "est": 15.8,
       "lo": 13.3,
       "hi": 18.2,
-      "n": 2190
+      "n": 2190,
+      "reliable": true
      },
      "men": {
       "est": 15.3,
       "lo": 12.5,
       "hi": 18.0,
-      "n": 1990
+      "n": 1990,
+      "reliable": true
      },
      "diff": 0.5,
      "diff_lo": -3.2,
@@ -6444,13 +7162,15 @@
       "est": 18.4,
       "lo": 15.6,
       "hi": 21.1,
-      "n": 2190
+      "n": 2190,
+      "reliable": true
      },
      "men": {
       "est": 17.1,
       "lo": 14.4,
       "hi": 19.9,
-      "n": 1990
+      "n": 1990,
+      "reliable": true
      },
      "diff": 1.2,
      "diff_lo": -2.7,
@@ -6461,13 +7181,15 @@
       "est": 50.1,
       "lo": 46.1,
       "hi": 54.1,
-      "n": 2190
+      "n": 2190,
+      "reliable": true
      },
      "men": {
       "est": 49.5,
       "lo": 45.6,
       "hi": 53.5,
-      "n": 1990
+      "n": 1990,
+      "reliable": true
      },
      "diff": 0.6,
      "diff_lo": -5.0,
@@ -6478,13 +7200,15 @@
       "est": 28.8,
       "lo": 25.7,
       "hi": 31.9,
-      "n": 1917
+      "n": 1917,
+      "reliable": true
      },
      "men": {
       "est": 32.7,
       "lo": 27.4,
       "hi": 37.9,
-      "n": 1726
+      "n": 1726,
+      "reliable": true
      },
      "diff": -3.9,
      "diff_lo": -10.0,
@@ -6495,13 +7219,15 @@
       "est": 47.8,
       "lo": 44.4,
       "hi": 51.3,
-      "n": 1446
+      "n": 1446,
+      "reliable": true
      },
      "men": {
       "est": 37.9,
       "lo": 33.6,
       "hi": 42.2,
-      "n": 1338
+      "n": 1338,
+      "reliable": true
      },
      "diff": 9.9,
      "diff_lo": 4.4,
@@ -6512,13 +7238,15 @@
       "est": 39.3,
       "lo": 34.0,
       "hi": 44.6,
-      "n": 1599
+      "n": 1599,
+      "reliable": true
      },
      "men": {
       "est": 44.6,
       "lo": 39.1,
       "hi": 50.1,
-      "n": 1453
+      "n": 1453,
+      "reliable": true
      },
      "diff": -5.3,
      "diff_lo": -12.9,
@@ -6526,33 +7254,37 @@
     },
     "admitted": {
      "women": {
-      "est": 2.1,
-      "lo": 1.2,
-      "hi": 3.1,
-      "n": 2190
+      "est": 18.8,
+      "lo": 15.3,
+      "hi": 22.4,
+      "n": 2190,
+      "reliable": true
      },
      "men": {
-      "est": 3.4,
-      "lo": 2.0,
-      "hi": 4.8,
-      "n": 1990
+      "est": 25.5,
+      "lo": 23.0,
+      "hi": 28.1,
+      "n": 1990,
+      "reliable": true
      },
-     "diff": -1.3,
-     "diff_lo": -3.0,
-     "diff_hi": 0.4
+     "diff": -6.7,
+     "diff_lo": -11.1,
+     "diff_hi": -2.3
     },
     "opioid_ed_severe": {
      "women": {
       "est": 26.6,
       "lo": 21.0,
       "hi": 32.3,
-      "n": 652
+      "n": 652,
+      "reliable": true
      },
      "men": {
       "est": 28.4,
       "lo": 21.4,
       "hi": 35.4,
-      "n": 502
+      "n": 502,
+      "reliable": true
      },
      "diff": -1.8,
      "diff_lo": -10.8,
@@ -6563,13 +7295,15 @@
       "est": 63.8,
       "lo": 57.9,
       "hi": 69.6,
-      "n": 652
+      "n": 652,
+      "reliable": true
      },
      "men": {
       "est": 64.7,
       "lo": 58.7,
       "hi": 70.7,
-      "n": 502
+      "n": 502,
+      "reliable": true
      },
      "diff": -0.9,
      "diff_lo": -9.3,
@@ -6580,13 +7314,15 @@
       "est": 28.3,
       "lo": 23.7,
       "hi": 33.0,
-      "n": 584
+      "n": 584,
+      "reliable": true
      },
      "men": {
       "est": 31.6,
       "lo": 22.2,
       "hi": 41.1,
-      "n": 440
+      "n": 440,
+      "reliable": true
      },
      "diff": -3.3,
      "diff_lo": -13.9,
@@ -6597,13 +7333,15 @@
       "est": 2.4,
       "lo": 1.4,
       "hi": 3.4,
-      "n": 2190
+      "n": 2190,
+      "reliable": true
      },
      "men": {
       "est": 3.5,
       "lo": 2.2,
       "hi": 4.8,
-      "n": 1990
+      "n": 1990,
+      "reliable": true
      },
      "diff": -1.1,
      "diff_lo": -2.7,
@@ -6614,13 +7352,15 @@
       "est": 67.2,
       "lo": 64.1,
       "hi": 70.3,
-      "n": 2190
+      "n": 2190,
+      "reliable": true
      },
      "men": {
       "est": 65.8,
       "lo": 62.9,
       "hi": 68.6,
-      "n": 1990
+      "n": 1990,
+      "reliable": true
      },
      "diff": 1.4,
      "diff_lo": -2.8,
@@ -6631,13 +7371,15 @@
       "est": 6.4,
       "lo": 6.2,
       "hi": 6.7,
-      "n": 2171
+      "n": 2171,
+      "reliable": true
      },
      "men": {
       "est": 6.2,
       "lo": 5.9,
       "hi": 6.4,
-      "n": 1970
+      "n": 1970,
+      "reliable": true
      },
      "diff": 0.3,
      "diff_lo": -0.1,
@@ -6648,13 +7390,15 @@
       "est": 19.8,
       "lo": 17.5,
       "hi": 22.2,
-      "n": 2116
+      "n": 2116,
+      "reliable": true
      },
      "men": {
       "est": 24.4,
       "lo": 21.2,
       "hi": 27.5,
-      "n": 1916
+      "n": 1916,
+      "reliable": true
      },
      "diff": -4.6,
      "diff_lo": -8.5,
@@ -6665,13 +7409,15 @@
       "est": 84.8,
       "lo": 81.9,
       "hi": 87.7,
-      "n": 2190
+      "n": 2190,
+      "reliable": true
      },
      "men": {
       "est": 85.2,
       "lo": 82.2,
       "hi": 88.1,
-      "n": 1990
+      "n": 1990,
+      "reliable": true
      },
      "diff": -0.4,
      "diff_lo": -4.5,
@@ -6682,13 +7428,15 @@
       "est": 30.7,
       "lo": 25.8,
       "hi": 35.6,
-      "n": 2190
+      "n": 2190,
+      "reliable": true
      },
      "men": {
       "est": 30.6,
       "lo": 25.3,
       "hi": 35.9,
-      "n": 1990
+      "n": 1990,
+      "reliable": true
      },
      "diff": 0.1,
      "diff_lo": -7.1,
@@ -6699,13 +7447,15 @@
       "est": 83.5,
       "lo": 79.1,
       "hi": 87.9,
-      "n": 652
+      "n": 652,
+      "reliable": true
      },
      "men": {
       "est": 85.0,
       "lo": 79.5,
       "hi": 90.6,
-      "n": 502
+      "n": 502,
+      "reliable": true
      },
      "diff": -1.5,
      "diff_lo": -8.6,
@@ -6716,13 +7466,15 @@
       "est": 26.0,
       "lo": 21.3,
       "hi": 30.8,
-      "n": 2190
+      "n": 2190,
+      "reliable": true
      },
      "men": {
       "est": 30.4,
       "lo": 25.7,
       "hi": 35.1,
-      "n": 1990
+      "n": 1990,
+      "reliable": true
      },
      "diff": -4.4,
      "diff_lo": -11.1,
@@ -6733,13 +7485,15 @@
       "est": 19.6,
       "lo": 16.6,
       "hi": 22.7,
-      "n": 2190
+      "n": 2190,
+      "reliable": true
      },
      "men": {
       "est": 14.4,
       "lo": 11.9,
       "hi": 17.0,
-      "n": 1990
+      "n": 1990,
+      "reliable": true
      },
      "diff": 5.2,
      "diff_lo": 1.2,
@@ -6750,13 +7504,15 @@
       "est": 81.3,
       "lo": 79.1,
       "hi": 83.6,
-      "n": 2190
+      "n": 2190,
+      "reliable": true
      },
      "men": {
       "est": 79.2,
       "lo": 76.0,
       "hi": 82.5,
-      "n": 1990
+      "n": 1990,
+      "reliable": true
      },
      "diff": 2.1,
      "diff_lo": -1.9,
@@ -6767,13 +7523,15 @@
       "est": 2.7,
       "lo": 1.7,
       "hi": 3.6,
-      "n": 2190
+      "n": 2190,
+      "reliable": true
      },
      "men": {
       "est": 6.5,
       "lo": 5.1,
       "hi": 7.9,
-      "n": 1990
+      "n": 1990,
+      "reliable": true
      },
      "diff": -3.8,
      "diff_lo": -5.5,
@@ -6814,13 +7572,15 @@
       "est": 2.7,
       "lo": 1.7,
       "hi": 3.6,
-      "n": 2190
+      "n": 2190,
+      "reliable": true
      },
      "men": {
       "est": 6.5,
       "lo": 5.1,
       "hi": 7.9,
-      "n": 1990
+      "n": 1990,
+      "reliable": true
      },
      "diff": -3.8,
      "diff_lo": -5.5,
@@ -6831,13 +7591,15 @@
       "est": 6.3,
       "lo": 4.8,
       "hi": 7.8,
-      "n": 2190
+      "n": 2190,
+      "reliable": true
      },
      "men": {
       "est": 5.9,
       "lo": 4.4,
       "hi": 7.3,
-      "n": 1990
+      "n": 1990,
+      "reliable": true
      },
      "diff": 0.4,
      "diff_lo": -1.7,
@@ -6848,13 +7610,15 @@
       "est": 2.5,
       "lo": 1.6,
       "hi": 3.4,
-      "n": 2190
+      "n": 2190,
+      "reliable": true
      },
      "men": {
       "est": 2.5,
       "lo": 1.6,
       "hi": 3.4,
-      "n": 1990
+      "n": 1990,
+      "reliable": true
      },
      "diff": -0.0,
      "diff_lo": -1.3,
@@ -6865,13 +7629,15 @@
       "est": 3.2,
       "lo": 2.2,
       "hi": 4.2,
-      "n": 2190
+      "n": 2190,
+      "reliable": true
      },
      "men": {
       "est": 2.0,
       "lo": 1.2,
       "hi": 2.7,
-      "n": 1990
+      "n": 1990,
+      "reliable": true
      },
      "diff": 1.2,
      "diff_lo": -0.0,
@@ -6882,13 +7648,15 @@
       "est": 4.5,
       "lo": 3.4,
       "hi": 5.7,
-      "n": 2190
+      "n": 2190,
+      "reliable": true
      },
      "men": {
       "est": 4.4,
       "lo": 3.3,
       "hi": 5.5,
-      "n": 1990
+      "n": 1990,
+      "reliable": true
      },
      "diff": 0.1,
      "diff_lo": -1.5,
@@ -6899,13 +7667,15 @@
       "est": 2.4,
       "lo": 1.4,
       "hi": 3.4,
-      "n": 2190
+      "n": 2190,
+      "reliable": true
      },
      "men": {
       "est": 3.5,
       "lo": 2.2,
       "hi": 4.8,
-      "n": 1990
+      "n": 1990,
+      "reliable": true
      },
      "diff": -1.1,
      "diff_lo": -2.7,
@@ -6916,13 +7686,15 @@
       "est": 58.0,
       "lo": 54.6,
       "hi": 61.3,
-      "n": 2190
+      "n": 2190,
+      "reliable": true
      },
      "men": {
       "est": 57.6,
       "lo": 54.4,
       "hi": 60.8,
-      "n": 1990
+      "n": 1990,
+      "reliable": true
      },
      "diff": 0.3,
      "diff_lo": -4.3,
@@ -6933,13 +7705,15 @@
       "est": 9.2,
       "lo": 7.7,
       "hi": 10.8,
-      "n": 2190
+      "n": 2190,
+      "reliable": true
      },
      "men": {
       "est": 8.2,
       "lo": 6.6,
       "hi": 9.7,
-      "n": 1990
+      "n": 1990,
+      "reliable": true
      },
      "diff": 1.1,
      "diff_lo": -1.1,
@@ -6950,13 +7724,15 @@
       "est": 11.3,
       "lo": 9.5,
       "hi": 13.1,
-      "n": 2190
+      "n": 2190,
+      "reliable": true
      },
      "men": {
       "est": 9.5,
       "lo": 7.9,
       "hi": 11.1,
-      "n": 1990
+      "n": 1990,
+      "reliable": true
      },
      "diff": 1.8,
      "diff_lo": -0.6,
@@ -6969,13 +7745,15 @@
       "est": 0.3,
       "lo": -0.1,
       "hi": 0.7,
-      "n": 885
+      "n": 885,
+      "reliable": false
      },
      "men": {
       "est": 3.1,
       "lo": 0.9,
       "hi": 5.3,
-      "n": 732
+      "n": 732,
+      "reliable": false
      },
      "diff": -2.8,
      "diff_lo": -5.0,
@@ -6986,13 +7764,15 @@
       "est": 3.5,
       "lo": 1.6,
       "hi": 5.4,
-      "n": 765
+      "n": 765,
+      "reliable": true
      },
      "men": {
       "est": 7.4,
       "lo": 5.0,
       "hi": 9.9,
-      "n": 771
+      "n": 771,
+      "reliable": true
      },
      "diff": -3.9,
      "diff_lo": -7.0,
@@ -7003,13 +7783,15 @@
       "est": 5.3,
       "lo": 2.5,
       "hi": 8.2,
-      "n": 540
+      "n": 540,
+      "reliable": true
      },
      "men": {
       "est": 10.1,
       "lo": 7.0,
       "hi": 13.3,
-      "n": 487
+      "n": 487,
+      "reliable": true
      },
      "diff": -4.8,
      "diff_lo": -9.1,
@@ -7030,13 +7812,15 @@
       "est": 28.6,
       "lo": 25.2,
       "hi": 32.1,
-      "n": 1368
+      "n": 1368,
+      "reliable": true
      },
      "men": {
       "est": 27.4,
       "lo": 23.1,
       "hi": 31.7,
-      "n": 1058
+      "n": 1058,
+      "reliable": true
      },
      "diff": 1.2,
      "diff_lo": -4.3,
@@ -7047,13 +7831,15 @@
       "est": 35.5,
       "lo": 31.4,
       "hi": 39.6,
-      "n": 1368
+      "n": 1368,
+      "reliable": true
      },
      "men": {
       "est": 36.5,
       "lo": 32.0,
       "hi": 41.0,
-      "n": 1058
+      "n": 1058,
+      "reliable": true
      },
      "diff": -1.0,
      "diff_lo": -7.0,
@@ -7064,13 +7850,15 @@
       "est": 64.0,
       "lo": 60.4,
       "hi": 67.6,
-      "n": 1368
+      "n": 1368,
+      "reliable": true
      },
      "men": {
       "est": 62.9,
       "lo": 58.4,
       "hi": 67.3,
-      "n": 1058
+      "n": 1058,
+      "reliable": true
      },
      "diff": 1.1,
      "diff_lo": -4.6,
@@ -7081,13 +7869,15 @@
       "est": 42.0,
       "lo": 34.1,
       "hi": 50.0,
-      "n": 1187
+      "n": 1187,
+      "reliable": true
      },
      "men": {
       "est": 33.5,
       "lo": 28.9,
       "hi": 38.2,
-      "n": 918
+      "n": 918,
+      "reliable": true
      },
      "diff": 8.5,
      "diff_lo": -0.7,
@@ -7098,13 +7888,15 @@
       "est": 73.3,
       "lo": 69.0,
       "hi": 77.6,
-      "n": 988
+      "n": 988,
+      "reliable": true
      },
      "men": {
       "est": 73.2,
       "lo": 68.3,
       "hi": 78.0,
-      "n": 765
+      "n": 765,
+      "reliable": true
      },
      "diff": 0.2,
      "diff_lo": -6.3,
@@ -7115,13 +7907,15 @@
       "est": 6.6,
       "lo": 3.3,
       "hi": 9.8,
-      "n": 1020
+      "n": 1020,
+      "reliable": true
      },
      "men": {
       "est": 6.4,
       "lo": 3.3,
       "hi": 9.6,
-      "n": 771
+      "n": 771,
+      "reliable": true
      },
      "diff": 0.2,
      "diff_lo": -4.4,
@@ -7129,33 +7923,37 @@
     },
     "admitted": {
      "women": {
-      "est": 0.4,
-      "lo": 0.1,
-      "hi": 0.7,
-      "n": 1368
+      "est": 6.3,
+      "lo": 4.5,
+      "hi": 8.1,
+      "n": 1368,
+      "reliable": true
      },
      "men": {
-      "est": 1.0,
-      "lo": 0.2,
-      "hi": 1.7,
-      "n": 1058
+      "est": 8.1,
+      "lo": 5.5,
+      "hi": 10.6,
+      "n": 1058,
+      "reliable": true
      },
-     "diff": -0.5,
-     "diff_lo": -1.3,
-     "diff_hi": 0.2
+     "diff": -1.8,
+     "diff_lo": -4.9,
+     "diff_hi": 1.4
     },
     "opioid_ed_severe": {
      "women": {
       "est": 35.2,
       "lo": 30.3,
       "hi": 40.1,
-      "n": 736
+      "n": 736,
+      "reliable": true
      },
      "men": {
       "est": 33.1,
       "lo": 27.0,
       "hi": 39.3,
-      "n": 555
+      "n": 555,
+      "reliable": true
      },
      "diff": 2.1,
      "diff_lo": -5.8,
@@ -7166,13 +7964,15 @@
       "est": 73.6,
       "lo": 70.0,
       "hi": 77.1,
-      "n": 736
+      "n": 736,
+      "reliable": true
      },
      "men": {
       "est": 68.2,
       "lo": 61.6,
       "hi": 74.7,
-      "n": 555
+      "n": 555,
+      "reliable": true
      },
      "diff": 5.4,
      "diff_lo": -2.1,
@@ -7183,13 +7983,15 @@
       "est": 37.9,
       "lo": 30.1,
       "hi": 45.7,
-      "n": 657
+      "n": 657,
+      "reliable": true
      },
      "men": {
       "est": 33.1,
       "lo": 26.4,
       "hi": 39.8,
-      "n": 490
+      "n": 490,
+      "reliable": true
      },
      "diff": 4.8,
      "diff_lo": -5.4,
@@ -7200,13 +8002,15 @@
       "est": 0.4,
       "lo": 0.1,
       "hi": 0.7,
-      "n": 1368
+      "n": 1368,
+      "reliable": false
      },
      "men": {
       "est": 1.0,
       "lo": 0.1,
       "hi": 2.0,
-      "n": 1058
+      "n": 1058,
+      "reliable": false
      },
      "diff": -0.6,
      "diff_lo": -1.7,
@@ -7217,13 +8021,15 @@
       "est": 8.0,
       "lo": 6.1,
       "hi": 9.9,
-      "n": 1368
+      "n": 1368,
+      "reliable": true
      },
      "men": {
       "est": 4.4,
       "lo": 3.1,
       "hi": 5.7,
-      "n": 1058
+      "n": 1058,
+      "reliable": true
      },
      "diff": 3.6,
      "diff_lo": 1.3,
@@ -7234,13 +8040,15 @@
       "est": 3.0,
       "lo": 2.7,
       "hi": 3.2,
-      "n": 1344
+      "n": 1344,
+      "reliable": true
      },
      "men": {
       "est": 2.5,
       "lo": 2.2,
       "hi": 2.8,
-      "n": 1034
+      "n": 1034,
+      "reliable": true
      },
      "diff": 0.5,
      "diff_lo": 0.1,
@@ -7251,13 +8059,15 @@
       "est": 11.9,
       "lo": 9.4,
       "hi": 14.4,
-      "n": 1335
+      "n": 1335,
+      "reliable": true
      },
      "men": {
       "est": 15.3,
       "lo": 11.8,
       "hi": 18.8,
-      "n": 1024
+      "n": 1024,
+      "reliable": true
      },
      "diff": -3.4,
      "diff_lo": -7.7,
@@ -7306,13 +8116,15 @@
       "est": 12.4,
       "lo": 9.3,
       "hi": 15.4,
-      "n": 1391
+      "n": 1391,
+      "reliable": true
      },
      "men": {
       "est": 12.2,
       "lo": 8.7,
       "hi": 15.7,
-      "n": 705
+      "n": 705,
+      "reliable": true
      },
      "diff": 0.1,
      "diff_lo": -4.5,
@@ -7323,13 +8135,15 @@
       "est": 16.0,
       "lo": 12.9,
       "hi": 19.1,
-      "n": 1391
+      "n": 1391,
+      "reliable": true
      },
      "men": {
       "est": 15.6,
       "lo": 11.1,
       "hi": 20.0,
-      "n": 705
+      "n": 705,
+      "reliable": true
      },
      "diff": 0.4,
      "diff_lo": -5.0,
@@ -7340,13 +8154,15 @@
       "est": 59.1,
       "lo": 55.1,
       "hi": 63.1,
-      "n": 1391
+      "n": 1391,
+      "reliable": true
      },
      "men": {
       "est": 51.8,
       "lo": 46.6,
       "hi": 57.0,
-      "n": 705
+      "n": 705,
+      "reliable": true
      },
      "diff": 7.3,
      "diff_lo": 0.7,
@@ -7357,13 +8173,15 @@
       "est": 47.9,
       "lo": 32.6,
       "hi": 63.1,
-      "n": 1213
+      "n": 1213,
+      "reliable": true
      },
      "men": {
       "est": 44.2,
       "lo": 36.4,
       "hi": 52.1,
-      "n": 598
+      "n": 598,
+      "reliable": true
      },
      "diff": 3.6,
      "diff_lo": -13.5,
@@ -7374,13 +8192,15 @@
       "est": 61.5,
       "lo": 57.4,
       "hi": 65.5,
-      "n": 994
+      "n": 994,
+      "reliable": true
      },
      "men": {
       "est": 49.8,
       "lo": 42.2,
       "hi": 57.4,
-      "n": 479
+      "n": 479,
+      "reliable": true
      },
      "diff": 11.7,
      "diff_lo": 3.0,
@@ -7391,13 +8211,15 @@
       "est": 11.3,
       "lo": 8.7,
       "hi": 13.9,
-      "n": 1037
+      "n": 1037,
+      "reliable": true
      },
      "men": {
       "est": 8.3,
       "lo": 5.3,
       "hi": 11.4,
-      "n": 500
+      "n": 500,
+      "reliable": true
      },
      "diff": 3.0,
      "diff_lo": -1.0,
@@ -7405,33 +8227,37 @@
     },
     "admitted": {
      "women": {
-      "est": 0.8,
-      "lo": 0.2,
-      "hi": 1.3,
-      "n": 1391
+      "est": 4.9,
+      "lo": 3.5,
+      "hi": 6.3,
+      "n": 1391,
+      "reliable": true
      },
      "men": {
-      "est": 1.1,
-      "lo": 0.1,
-      "hi": 2.0,
-      "n": 705
+      "est": 9.5,
+      "lo": 6.6,
+      "hi": 12.5,
+      "n": 705,
+      "reliable": true
      },
-     "diff": -0.3,
-     "diff_lo": -1.4,
-     "diff_hi": 0.8
+     "diff": -4.6,
+     "diff_lo": -7.9,
+     "diff_hi": -1.3
     },
     "opioid_ed_severe": {
      "women": {
       "est": 16.8,
       "lo": 12.1,
       "hi": 21.6,
-      "n": 633
+      "n": 633,
+      "reliable": true
      },
      "men": {
       "est": 16.2,
       "lo": 10.4,
       "hi": 22.0,
-      "n": 258
+      "n": 258,
+      "reliable": true
      },
      "diff": 0.6,
      "diff_lo": -6.9,
@@ -7442,13 +8268,15 @@
       "est": 69.1,
       "lo": 63.7,
       "hi": 74.6,
-      "n": 633
+      "n": 633,
+      "reliable": true
      },
      "men": {
       "est": 60.8,
       "lo": 53.7,
       "hi": 67.9,
-      "n": 258
+      "n": 258,
+      "reliable": true
      },
      "diff": 8.4,
      "diff_lo": -0.6,
@@ -7459,13 +8287,15 @@
       "est": 48.6,
       "lo": 33.7,
       "hi": 63.4,
-      "n": 548
+      "n": 548,
+      "reliable": true
      },
      "men": {
       "est": 40.3,
       "lo": 30.7,
       "hi": 49.9,
-      "n": 222
+      "n": 222,
+      "reliable": true
      },
      "diff": 8.3,
      "diff_lo": -9.4,
@@ -7476,13 +8306,15 @@
       "est": 0.9,
       "lo": 0.4,
       "hi": 1.5,
-      "n": 1391
+      "n": 1391,
+      "reliable": false
      },
      "men": {
       "est": 4.0,
       "lo": 2.0,
       "hi": 6.0,
-      "n": 705
+      "n": 705,
+      "reliable": true
      },
      "diff": -3.1,
      "diff_lo": -5.2,
@@ -7493,13 +8325,15 @@
       "est": 41.8,
       "lo": 37.9,
       "hi": 45.7,
-      "n": 1391
+      "n": 1391,
+      "reliable": true
      },
      "men": {
       "est": 40.3,
       "lo": 34.9,
       "hi": 45.7,
-      "n": 705
+      "n": 705,
+      "reliable": true
      },
      "diff": 1.5,
      "diff_lo": -5.2,
@@ -7510,13 +8344,15 @@
       "est": 3.3,
       "lo": 3.1,
       "hi": 3.6,
-      "n": 1369
+      "n": 1369,
+      "reliable": true
      },
      "men": {
       "est": 3.4,
       "lo": 3.0,
       "hi": 3.8,
-      "n": 686
+      "n": 686,
+      "reliable": true
      },
      "diff": -0.1,
      "diff_lo": -0.5,
@@ -7527,13 +8363,15 @@
       "est": 10.5,
       "lo": 8.3,
       "hi": 12.7,
-      "n": 1348
+      "n": 1348,
+      "reliable": true
      },
      "men": {
       "est": 14.1,
       "lo": 10.3,
       "hi": 18.0,
-      "n": 681
+      "n": 681,
+      "reliable": true
      },
      "diff": -3.7,
      "diff_lo": -8.1,
@@ -7544,13 +8382,15 @@
       "est": 37.9,
       "lo": 34.3,
       "hi": 41.5,
-      "n": 1391
+      "n": 1391,
+      "reliable": true
      },
      "men": {
       "est": 44.8,
       "lo": 38.9,
       "hi": 50.7,
-      "n": 705
+      "n": 705,
+      "reliable": true
      },
      "diff": -6.9,
      "diff_lo": -13.8,
@@ -7599,13 +8439,15 @@
       "est": 24.4,
       "lo": 22.0,
       "hi": 26.7,
-      "n": 2245
+      "n": 2245,
+      "reliable": true
      },
      "men": {
       "est": 23.1,
       "lo": 20.6,
       "hi": 25.6,
-      "n": 1806
+      "n": 1806,
+      "reliable": true
      },
      "diff": 1.3,
      "diff_lo": -2.2,
@@ -7616,13 +8458,15 @@
       "est": 32.7,
       "lo": 29.5,
       "hi": 36.0,
-      "n": 2245
+      "n": 2245,
+      "reliable": true
      },
      "men": {
       "est": 31.0,
       "lo": 28.0,
       "hi": 34.0,
-      "n": 1806
+      "n": 1806,
+      "reliable": true
      },
      "diff": 1.7,
      "diff_lo": -2.7,
@@ -7633,13 +8477,15 @@
       "est": 52.3,
       "lo": 48.9,
       "hi": 55.7,
-      "n": 2245
+      "n": 2245,
+      "reliable": true
      },
      "men": {
       "est": 48.4,
       "lo": 44.4,
       "hi": 52.4,
-      "n": 1806
+      "n": 1806,
+      "reliable": true
      },
      "diff": 3.9,
      "diff_lo": -1.4,
@@ -7650,13 +8496,15 @@
       "est": 34.6,
       "lo": 28.7,
       "hi": 40.6,
-      "n": 1942
+      "n": 1942,
+      "reliable": true
      },
      "men": {
       "est": 38.6,
       "lo": 32.5,
       "hi": 44.7,
-      "n": 1559
+      "n": 1559,
+      "reliable": true
      },
      "diff": -4.0,
      "diff_lo": -12.5,
@@ -7667,13 +8515,15 @@
       "est": 67.8,
       "lo": 64.6,
       "hi": 70.9,
-      "n": 1577
+      "n": 1577,
+      "reliable": true
      },
      "men": {
       "est": 62.1,
       "lo": 57.4,
       "hi": 66.8,
-      "n": 1244
+      "n": 1244,
+      "reliable": true
      },
      "diff": 5.7,
      "diff_lo": 0.1,
@@ -7684,13 +8534,15 @@
       "est": 5.3,
       "lo": 3.5,
       "hi": 7.2,
-      "n": 1661
+      "n": 1661,
+      "reliable": true
      },
      "men": {
       "est": 6.5,
       "lo": 3.8,
       "hi": 9.1,
-      "n": 1350
+      "n": 1350,
+      "reliable": true
      },
      "diff": -1.1,
      "diff_lo": -4.3,
@@ -7698,33 +8550,37 @@
     },
     "admitted": {
      "women": {
-      "est": 0.8,
-      "lo": 0.3,
-      "hi": 1.3,
-      "n": 2245
+      "est": 9.2,
+      "lo": 7.5,
+      "hi": 10.9,
+      "n": 2245,
+      "reliable": true
      },
      "men": {
-      "est": 1.1,
-      "lo": 0.3,
-      "hi": 1.9,
-      "n": 1806
+      "est": 8.6,
+      "lo": 6.5,
+      "hi": 10.8,
+      "n": 1806,
+      "reliable": true
      },
-     "diff": -0.3,
-     "diff_lo": -1.3,
-     "diff_hi": 0.7
+     "diff": 0.6,
+     "diff_lo": -2.1,
+     "diff_hi": 3.3
     },
     "opioid_ed_severe": {
      "women": {
       "est": 30.9,
       "lo": 27.6,
       "hi": 34.1,
-      "n": 1064
+      "n": 1064,
+      "reliable": true
      },
      "men": {
       "est": 26.0,
       "lo": 22.1,
       "hi": 30.0,
-      "n": 763
+      "n": 763,
+      "reliable": true
      },
      "diff": 4.8,
      "diff_lo": -0.4,
@@ -7735,13 +8591,15 @@
       "est": 62.4,
       "lo": 58.1,
       "hi": 66.8,
-      "n": 1064
+      "n": 1064,
+      "reliable": true
      },
      "men": {
       "est": 56.1,
       "lo": 50.1,
       "hi": 62.2,
-      "n": 763
+      "n": 763,
+      "reliable": true
      },
      "diff": 6.3,
      "diff_lo": -1.1,
@@ -7752,13 +8610,15 @@
       "est": 32.8,
       "lo": 26.2,
       "hi": 39.5,
-      "n": 937
+      "n": 937,
+      "reliable": true
      },
      "men": {
       "est": 37.5,
       "lo": 30.4,
       "hi": 44.5,
-      "n": 685
+      "n": 685,
+      "reliable": true
      },
      "diff": -4.6,
      "diff_lo": -14.3,
@@ -7769,13 +8629,15 @@
       "est": 0.5,
       "lo": 0.1,
       "hi": 1.0,
-      "n": 2245
+      "n": 2245,
+      "reliable": false
      },
      "men": {
       "est": 1.0,
       "lo": 0.4,
       "hi": 1.5,
-      "n": 1806
+      "n": 1806,
+      "reliable": true
      },
      "diff": -0.4,
      "diff_lo": -1.1,
@@ -7786,13 +8648,15 @@
       "est": 4.9,
       "lo": 3.5,
       "hi": 6.3,
-      "n": 2245
+      "n": 2245,
+      "reliable": true
      },
      "men": {
       "est": 4.0,
       "lo": 2.6,
       "hi": 5.5,
-      "n": 1806
+      "n": 1806,
+      "reliable": true
      },
      "diff": 0.8,
      "diff_lo": -1.2,
@@ -7803,13 +8667,15 @@
       "est": 2.4,
       "lo": 2.2,
       "hi": 2.6,
-      "n": 2206
+      "n": 2206,
+      "reliable": true
      },
      "men": {
       "est": 2.4,
       "lo": 2.2,
       "hi": 2.6,
-      "n": 1773
+      "n": 1773,
+      "reliable": true
      },
      "diff": 0.0,
      "diff_lo": -0.2,
@@ -7820,13 +8686,15 @@
       "est": 18.8,
       "lo": 16.3,
       "hi": 21.3,
-      "n": 2184
+      "n": 2184,
+      "reliable": true
      },
      "men": {
       "est": 16.8,
       "lo": 14.4,
       "hi": 19.1,
-      "n": 1753
+      "n": 1753,
+      "reliable": true
      },
      "diff": 2.0,
      "diff_lo": -1.4,
@@ -7875,13 +8743,15 @@
       "est": 36.0,
       "lo": 30.7,
       "hi": 41.3,
-      "n": 814
+      "n": 814,
+      "reliable": true
      },
      "men": {
       "est": 41.4,
       "lo": 35.5,
       "hi": 47.4,
-      "n": 711
+      "n": 711,
+      "reliable": true
      },
      "diff": -5.4,
      "diff_lo": -13.4,
@@ -7892,13 +8762,15 @@
       "est": 43.4,
       "lo": 37.7,
       "hi": 49.1,
-      "n": 814
+      "n": 814,
+      "reliable": true
      },
      "men": {
       "est": 51.1,
       "lo": 45.6,
       "hi": 56.6,
-      "n": 711
+      "n": 711,
+      "reliable": true
      },
      "diff": -7.7,
      "diff_lo": -15.7,
@@ -7909,13 +8781,15 @@
       "est": 62.9,
       "lo": 57.8,
       "hi": 68.1,
-      "n": 814
+      "n": 814,
+      "reliable": true
      },
      "men": {
       "est": 69.4,
       "lo": 63.2,
       "hi": 75.5,
-      "n": 711
+      "n": 711,
+      "reliable": true
      },
      "diff": -6.4,
      "diff_lo": -14.4,
@@ -7926,13 +8800,15 @@
       "est": 41.0,
       "lo": 33.8,
       "hi": 48.3,
-      "n": 684
+      "n": 684,
+      "reliable": true
      },
      "men": {
       "est": 33.5,
       "lo": 27.2,
       "hi": 39.8,
-      "n": 634
+      "n": 634,
+      "reliable": true
      },
      "diff": 7.5,
      "diff_lo": -2.0,
@@ -7943,13 +8819,15 @@
       "est": 68.0,
       "lo": 61.8,
       "hi": 74.1,
-      "n": 576
+      "n": 576,
+      "reliable": true
      },
      "men": {
       "est": 71.2,
       "lo": 66.3,
       "hi": 76.1,
-      "n": 523
+      "n": 523,
+      "reliable": true
      },
      "diff": -3.2,
      "diff_lo": -11.1,
@@ -7960,13 +8838,15 @@
       "est": 9.1,
       "lo": 5.6,
       "hi": 12.6,
-      "n": 590
+      "n": 590,
+      "reliable": true
      },
      "men": {
       "est": 12.8,
       "lo": 7.9,
       "hi": 17.6,
-      "n": 542
+      "n": 542,
+      "reliable": true
      },
      "diff": -3.7,
      "diff_lo": -9.7,
@@ -7974,33 +8854,37 @@
     },
     "admitted": {
      "women": {
-      "est": 0.6,
-      "lo": 0.0,
-      "hi": 1.2,
-      "n": 814
+      "est": 11.6,
+      "lo": 8.6,
+      "hi": 14.5,
+      "n": 814,
+      "reliable": true
      },
      "men": {
-      "est": 0.8,
-      "lo": 0.2,
-      "hi": 1.5,
-      "n": 711
+      "est": 10.9,
+      "lo": 6.6,
+      "hi": 15.2,
+      "n": 711,
+      "reliable": true
      },
-     "diff": -0.2,
-     "diff_lo": -1.1,
-     "diff_hi": 0.7
+     "diff": 0.7,
+     "diff_lo": -4.5,
+     "diff_hi": 5.8
     },
     "opioid_ed_severe": {
      "women": {
       "est": 47.4,
       "lo": 39.7,
       "hi": 55.1,
-      "n": 391
+      "n": 391,
+      "reliable": true
      },
      "men": {
       "est": 55.5,
       "lo": 47.9,
       "hi": 63.1,
-      "n": 346
+      "n": 346,
+      "reliable": true
      },
      "diff": -8.1,
      "diff_lo": -18.9,
@@ -8011,13 +8895,15 @@
       "est": 77.9,
       "lo": 72.4,
       "hi": 83.5,
-      "n": 391
+      "n": 391,
+      "reliable": true
      },
      "men": {
       "est": 85.3,
       "lo": 80.9,
       "hi": 89.7,
-      "n": 346
+      "n": 346,
+      "reliable": true
      },
      "diff": -7.4,
      "diff_lo": -14.4,
@@ -8028,13 +8914,15 @@
       "est": 43.7,
       "lo": 31.7,
       "hi": 55.7,
-      "n": 339
+      "n": 339,
+      "reliable": true
      },
      "men": {
       "est": 28.9,
       "lo": 23.1,
       "hi": 34.8,
-      "n": 313
+      "n": 313,
+      "reliable": true
      },
      "diff": 14.8,
      "diff_lo": 1.4,
@@ -8045,13 +8933,15 @@
       "est": 0.2,
       "lo": -0.0,
       "hi": 0.3,
-      "n": 814
+      "n": 814,
+      "reliable": false
      },
      "men": {
       "est": 0.1,
       "lo": -0.1,
       "hi": 0.3,
-      "n": 711
+      "n": 711,
+      "reliable": false
      },
      "diff": 0.0,
      "diff_lo": -0.3,
@@ -8062,13 +8952,15 @@
       "est": 31.3,
       "lo": 27.0,
       "hi": 35.6,
-      "n": 814
+      "n": 814,
+      "reliable": true
      },
      "men": {
       "est": 26.7,
       "lo": 22.2,
       "hi": 31.2,
-      "n": 711
+      "n": 711,
+      "reliable": true
      },
      "diff": 4.6,
      "diff_lo": -1.6,
@@ -8079,13 +8971,15 @@
       "est": 4.7,
       "lo": 4.4,
       "hi": 5.0,
-      "n": 798
+      "n": 798,
+      "reliable": true
      },
      "men": {
       "est": 4.5,
       "lo": 4.1,
       "hi": 4.9,
-      "n": 704
+      "n": 704,
+      "reliable": true
      },
      "diff": 0.2,
      "diff_lo": -0.2,
@@ -8096,13 +8990,15 @@
       "est": 10.8,
       "lo": 7.9,
       "hi": 13.8,
-      "n": 785
+      "n": 785,
+      "reliable": true
      },
      "men": {
       "est": 12.6,
       "lo": 8.8,
       "hi": 16.4,
-      "n": 698
+      "n": 698,
+      "reliable": true
      },
      "diff": -1.8,
      "diff_lo": -6.6,
@@ -8149,13 +9045,15 @@
      "est": 25.4,
      "lo": 23.6,
      "hi": 27.3,
-     "n": 11880
+     "n": 11880,
+     "reliable": true
     },
     "men": {
      "est": 25.6,
      "lo": 23.8,
      "hi": 27.4,
-     "n": 8521
+     "n": 8521,
+     "reliable": true
     },
     "diff": -0.2,
     "diff_lo": -2.8,
@@ -8166,13 +9064,15 @@
      "est": 30.6,
      "lo": 28.6,
      "hi": 32.6,
-     "n": 11880
+     "n": 11880,
+     "reliable": true
     },
     "men": {
      "est": 31.2,
      "lo": 29.2,
      "hi": 33.2,
-     "n": 8521
+     "n": 8521,
+     "reliable": true
     },
     "diff": -0.6,
     "diff_lo": -3.4,
@@ -8183,13 +9083,15 @@
      "est": 54.5,
      "lo": 52.2,
      "hi": 56.7,
-     "n": 11880
+     "n": 11880,
+     "reliable": true
     },
     "men": {
      "est": 52.9,
      "lo": 50.4,
      "hi": 55.4,
-     "n": 8521
+     "n": 8521,
+     "reliable": true
     },
     "diff": 1.6,
     "diff_lo": -1.8,
@@ -8200,13 +9102,15 @@
      "est": 38.4,
      "lo": 34.2,
      "hi": 42.7,
-     "n": 10332
+     "n": 10332,
+     "reliable": true
     },
     "men": {
      "est": 36.3,
      "lo": 32.6,
      "hi": 40.1,
-     "n": 7351
+     "n": 7351,
+     "reliable": true
     },
     "diff": 2.1,
     "diff_lo": -3.6,
@@ -8217,13 +9121,15 @@
      "est": 62.5,
      "lo": 60.9,
      "hi": 64.1,
-     "n": 8337
+     "n": 8337,
+     "reliable": true
     },
     "men": {
      "est": 56.5,
      "lo": 54.1,
      "hi": 58.9,
-     "n": 5964
+     "n": 5964,
+     "reliable": true
     },
     "diff": 6.0,
     "diff_lo": 3.1,
@@ -8234,13 +9140,15 @@
      "est": 33.9,
      "lo": 31.5,
      "hi": 36.2,
-     "n": 5202
+     "n": 5202,
+     "reliable": true
     },
     "men": {
      "est": 36.3,
      "lo": 33.2,
      "hi": 39.3,
-     "n": 3360
+     "n": 3360,
+     "reliable": true
     },
     "diff": -2.4,
     "diff_lo": -6.2,
@@ -8251,13 +9159,15 @@
      "est": 65.6,
      "lo": 63.1,
      "hi": 68.1,
-     "n": 5202
+     "n": 5202,
+     "reliable": true
     },
     "men": {
      "est": 64.7,
      "lo": 61.5,
      "hi": 67.8,
-     "n": 3360
+     "n": 3360,
+     "reliable": true
     },
     "diff": 0.9,
     "diff_lo": -3.1,
@@ -8268,13 +9178,15 @@
      "est": 37.4,
      "lo": 33.0,
      "hi": 41.9,
-     "n": 4616
+     "n": 4616,
+     "reliable": true
     },
     "men": {
      "est": 34.5,
      "lo": 30.2,
      "hi": 38.8,
-     "n": 2958
+     "n": 2958,
+     "reliable": true
     },
     "diff": 3.0,
     "diff_lo": -3.2,
@@ -8285,13 +9197,15 @@
      "est": 13.8,
      "lo": 11.9,
      "hi": 15.7,
-     "n": 8744
+     "n": 8744,
+     "reliable": true
     },
     "men": {
      "est": 17.0,
      "lo": 14.6,
      "hi": 19.5,
-     "n": 6258
+     "n": 6258,
+     "reliable": true
     },
     "diff": -3.3,
     "diff_lo": -6.4,
@@ -8302,13 +9216,15 @@
      "est": 14.5,
      "lo": 13.4,
      "hi": 15.6,
-     "n": 11525
+     "n": 11525,
+     "reliable": true
     },
     "men": {
      "est": 17.9,
      "lo": 16.2,
      "hi": 19.6,
-     "n": 8254
+     "n": 8254,
+     "reliable": true
     },
     "diff": -3.4,
     "diff_lo": -5.4,
@@ -8319,13 +9235,15 @@
      "est": 1.1,
      "lo": 0.7,
      "hi": 1.4,
-     "n": 11880
+     "n": 11880,
+     "reliable": true
     },
     "men": {
      "est": 1.8,
      "lo": 1.3,
      "hi": 2.3,
-     "n": 8521
+     "n": 8521,
+     "reliable": true
     },
     "diff": -0.7,
     "diff_lo": -1.3,
@@ -8336,13 +9254,15 @@
      "est": 36.8,
      "lo": 34.8,
      "hi": 38.7,
-     "n": 11880
+     "n": 11880,
+     "reliable": true
     },
     "men": {
      "est": 34.4,
      "lo": 32.4,
      "hi": 36.4,
-     "n": 8521
+     "n": 8521,
+     "reliable": true
     },
     "diff": 2.4,
     "diff_lo": -0.4,
@@ -8353,13 +9273,15 @@
      "est": 4.7,
      "lo": 4.5,
      "hi": 4.8,
-     "n": 11731
+     "n": 11731,
+     "reliable": true
     },
     "men": {
      "est": 4.4,
      "lo": 4.2,
      "hi": 4.6,
-     "n": 8391
+     "n": 8391,
+     "reliable": true
     },
     "diff": 0.3,
     "diff_lo": 0.0,
@@ -8413,13 +9335,15 @@
      "est": 30.7,
      "lo": 26.9,
      "hi": 34.4,
-     "n": 986
+     "n": 986,
+     "reliable": true
     },
     "men": {
      "est": 28.6,
      "lo": 24.8,
      "hi": 32.5,
-     "n": 863
+     "n": 863,
+     "reliable": true
     },
     "diff": 2.0,
     "diff_lo": -3.4,
@@ -8430,13 +9354,15 @@
      "est": 28.7,
      "lo": 26.6,
      "hi": 30.9,
-     "n": 5353
+     "n": 5353,
+     "reliable": true
     },
     "men": {
      "est": 29.7,
      "lo": 27.4,
      "hi": 32.1,
-     "n": 3583
+     "n": 3583,
+     "reliable": true
     },
     "diff": -1.0,
     "diff_lo": -4.2,
@@ -8447,13 +9373,15 @@
      "est": 19.9,
      "lo": 17.2,
      "hi": 22.6,
-     "n": 1677
+     "n": 1677,
+     "reliable": true
     },
     "men": {
      "est": 20.7,
      "lo": 17.4,
      "hi": 24.0,
-     "n": 1274
+     "n": 1274,
+     "reliable": true
     },
     "diff": -0.8,
     "diff_lo": -5.1,
@@ -8469,13 +9397,15 @@
      "est": 13.4,
      "lo": 9.0,
      "hi": 17.9,
-     "n": 530
+     "n": 530,
+     "reliable": true
     },
     "men": {
      "est": 12.8,
      "lo": 7.4,
      "hi": 18.3,
-     "n": 460
+     "n": 460,
+     "reliable": true
     },
     "diff": 0.6,
     "diff_lo": -6.4,
@@ -8486,13 +9416,15 @@
      "est": 37.3,
      "lo": 32.1,
      "hi": 42.4,
-     "n": 530
+     "n": 530,
+     "reliable": true
     },
     "men": {
      "est": 33.2,
      "lo": 26.5,
      "hi": 40.0,
-     "n": 460
+     "n": 460,
+     "reliable": true
     },
     "diff": 4.1,
     "diff_lo": -4.4,
@@ -8506,13 +9438,15 @@
      "est": 3.3,
      "lo": -0.2,
      "hi": 6.9,
-     "n": 51
+     "n": 51,
+     "reliable": false
     },
     "men": {
      "est": 10.2,
      "lo": 1.6,
      "hi": 18.9,
-     "n": 70
+     "n": 70,
+     "reliable": false
     },
     "diff": -6.9,
     "diff_lo": -16.2,
@@ -8523,13 +9457,15 @@
      "est": 42.7,
      "lo": 27.5,
      "hi": 57.8,
-     "n": 51
+     "n": 51,
+     "reliable": true
     },
     "men": {
      "est": 38.7,
      "lo": 24.0,
      "hi": 53.4,
-     "n": 70
+     "n": 70,
+     "reliable": true
     },
     "diff": 4.0,
     "diff_lo": -17.1,
@@ -8543,13 +9479,15 @@
      "est": 16.3,
      "lo": 9.9,
      "hi": 22.7,
-     "n": 243
+     "n": 243,
+     "reliable": true
     },
     "men": {
      "est": 10.6,
      "lo": 5.8,
      "hi": 15.5,
-     "n": 233
+     "n": 233,
+     "reliable": true
     },
     "diff": 5.7,
     "diff_lo": -2.3,
@@ -8560,13 +9498,15 @@
      "est": 45.3,
      "lo": 36.1,
      "hi": 54.5,
-     "n": 243
+     "n": 243,
+     "reliable": true
     },
     "men": {
      "est": 38.9,
      "lo": 30.2,
      "hi": 47.6,
-     "n": 233
+     "n": 233,
+     "reliable": true
     },
     "diff": 6.4,
     "diff_lo": -6.3,
@@ -8580,13 +9520,15 @@
      "est": 10.5,
      "lo": 6.5,
      "hi": 14.4,
-     "n": 288
+     "n": 288,
+     "reliable": true
     },
     "men": {
      "est": 9.7,
      "lo": 5.3,
      "hi": 14.1,
-     "n": 286
+     "n": 286,
+     "reliable": true
     },
     "diff": 0.8,
     "diff_lo": -5.1,
@@ -8597,13 +9539,15 @@
      "est": 39.1,
      "lo": 32.2,
      "hi": 45.9,
-     "n": 288
+     "n": 288,
+     "reliable": true
     },
     "men": {
      "est": 41.7,
      "lo": 32.6,
      "hi": 50.7,
-     "n": 286
+     "n": 286,
+     "reliable": true
     },
     "diff": -2.6,
     "diff_lo": -14.0,
@@ -8617,13 +9561,15 @@
      "est": 17.1,
      "lo": 12.3,
      "hi": 21.8,
-     "n": 471
+     "n": 471,
+     "reliable": true
     },
     "men": {
      "est": 15.6,
      "lo": 10.3,
      "hi": 20.8,
-     "n": 370
+     "n": 370,
+     "reliable": true
     },
     "diff": 1.5,
     "diff_lo": -5.6,
@@ -8634,13 +9580,15 @@
      "est": 44.7,
      "lo": 38.3,
      "hi": 51.0,
-     "n": 471
+     "n": 471,
+     "reliable": true
     },
     "men": {
      "est": 48.1,
      "lo": 41.1,
      "hi": 55.0,
-     "n": 370
+     "n": 370,
+     "reliable": true
     },
     "diff": -3.4,
     "diff_lo": -12.8,
@@ -8654,13 +9602,15 @@
      "est": 19.1,
      "lo": 14.8,
      "hi": 23.5,
-     "n": 741
+     "n": 741,
+     "reliable": true
     },
     "men": {
      "est": 18.6,
      "lo": 13.5,
      "hi": 23.7,
-     "n": 631
+     "n": 631,
+     "reliable": true
     },
     "diff": 0.6,
     "diff_lo": -6.1,
@@ -8671,13 +9621,15 @@
      "est": 50.0,
      "lo": 44.6,
      "hi": 55.3,
-     "n": 741
+     "n": 741,
+     "reliable": true
     },
     "men": {
      "est": 53.4,
      "lo": 46.5,
      "hi": 60.4,
-     "n": 631
+     "n": 631,
+     "reliable": true
     },
     "diff": -3.5,
     "diff_lo": -12.3,
@@ -8691,13 +9643,15 @@
      "est": 20.4,
      "lo": 17.1,
      "hi": 23.6,
-     "n": 811
+     "n": 811,
+     "reliable": true
     },
     "men": {
      "est": 19.7,
      "lo": 13.9,
      "hi": 25.5,
-     "n": 554
+     "n": 554,
+     "reliable": true
     },
     "diff": 0.7,
     "diff_lo": -6.0,
@@ -8708,13 +9662,15 @@
      "est": 52.7,
      "lo": 48.2,
      "hi": 57.2,
-     "n": 811
+     "n": 811,
+     "reliable": true
     },
     "men": {
      "est": 47.6,
      "lo": 41.0,
      "hi": 54.2,
-     "n": 554
+     "n": 554,
+     "reliable": true
     },
     "diff": 5.1,
     "diff_lo": -2.9,
@@ -8728,13 +9684,15 @@
      "est": 23.4,
      "lo": 19.9,
      "hi": 26.8,
-     "n": 1159
+     "n": 1159,
+     "reliable": true
     },
     "men": {
      "est": 30.9,
      "lo": 26.6,
      "hi": 35.3,
-     "n": 730
+     "n": 730,
+     "reliable": true
     },
     "diff": -7.6,
     "diff_lo": -13.1,
@@ -8745,13 +9703,15 @@
      "est": 60.1,
      "lo": 56.0,
      "hi": 64.2,
-     "n": 1159
+     "n": 1159,
+     "reliable": true
     },
     "men": {
      "est": 61.0,
      "lo": 56.5,
      "hi": 65.4,
-     "n": 730
+     "n": 730,
+     "reliable": true
     },
     "diff": -0.9,
     "diff_lo": -6.9,
@@ -8765,13 +9725,15 @@
      "est": 31.8,
      "lo": 28.2,
      "hi": 35.4,
-     "n": 1589
+     "n": 1589,
+     "reliable": true
     },
     "men": {
      "est": 31.3,
      "lo": 26.4,
      "hi": 36.3,
-     "n": 1008
+     "n": 1008,
+     "reliable": true
     },
     "diff": 0.5,
     "diff_lo": -5.7,
@@ -8782,13 +9744,15 @@
      "est": 63.2,
      "lo": 59.9,
      "hi": 66.5,
-     "n": 1589
+     "n": 1589,
+     "reliable": true
     },
     "men": {
      "est": 63.2,
      "lo": 57.3,
      "hi": 69.1,
-     "n": 1008
+     "n": 1008,
+     "reliable": true
     },
     "diff": -0.0,
     "diff_lo": -6.8,
@@ -8802,13 +9766,15 @@
      "est": 33.7,
      "lo": 28.8,
      "hi": 38.6,
-     "n": 828
+     "n": 828,
+     "reliable": true
     },
     "men": {
      "est": 35.1,
      "lo": 27.8,
      "hi": 42.4,
-     "n": 508
+     "n": 508,
+     "reliable": true
     },
     "diff": -1.4,
     "diff_lo": -10.1,
@@ -8819,13 +9785,15 @@
      "est": 64.9,
      "lo": 59.5,
      "hi": 70.2,
-     "n": 828
+     "n": 828,
+     "reliable": true
     },
     "men": {
      "est": 63.4,
      "lo": 57.2,
      "hi": 69.5,
-     "n": 508
+     "n": 508,
+     "reliable": true
     },
     "diff": 1.5,
     "diff_lo": -6.7,
@@ -8839,13 +9807,15 @@
      "est": 43.4,
      "lo": 39.7,
      "hi": 47.2,
-     "n": 1626
+     "n": 1626,
+     "reliable": true
     },
     "men": {
      "est": 45.4,
      "lo": 40.2,
      "hi": 50.6,
-     "n": 1114
+     "n": 1114,
+     "reliable": true
     },
     "diff": -2.0,
     "diff_lo": -8.4,
@@ -8856,13 +9826,15 @@
      "est": 72.2,
      "lo": 68.7,
      "hi": 75.7,
-     "n": 1626
+     "n": 1626,
+     "reliable": true
     },
     "men": {
      "est": 69.3,
      "lo": 65.0,
      "hi": 73.6,
-     "n": 1114
+     "n": 1114,
+     "reliable": true
     },
     "diff": 2.9,
     "diff_lo": -2.6,
@@ -8876,13 +9848,15 @@
     "est": 15.3,
     "lo": 14.2,
     "hi": 16.4,
-    "n": 37502
+    "n": 37502,
+    "reliable": true
    },
    "men": {
     "est": 14.3,
     "lo": 13.4,
     "hi": 15.3,
-    "n": 31002
+    "n": 31002,
+    "reliable": true
    },
    "diff": 1.0,
    "diff_lo": -0.5,
@@ -8893,13 +9867,15 @@
     "est": 36.2,
     "lo": 32.7,
     "hi": 39.7,
-    "n": 31954
+    "n": 31954,
+    "reliable": true
    },
    "men": {
     "est": 33.7,
     "lo": 30.7,
     "hi": 36.7,
-    "n": 26116
+    "n": 26116,
+    "reliable": true
    },
    "diff": 2.5,
    "diff_lo": -2.1,

@@ -3,7 +3,7 @@ symptom_raw,Left with a symptom code: unadjusted,,20808,1.07,1.0,1.14,0.057,sym_
 symptom_adj,"… adjusted for age band, complaint, year",,20808,1.09,1.01,1.17,0.028,sym_i ~ femalei + C(age_band) + C(complaint) + yearf
 symptom_adj_workup,"… plus tests ordered, imaging, triage level, ambulance",,15262,1.06,0.97,1.16,0.21,sym_i ~ femalei + C(age_band) + C(complaint) + yearf + tests + img_i + tri + ems_i
 symptom_adj_workup_chron,… plus number of chronic conditions,2020 onward only; earlier files lack the count,15177,1.06,0.97,1.16,0.203,sym_i ~ femalei + C(age_band) + C(complaint) + yearf + tests + img_i + tri + ems_i + chron
-symptom_discharged_adj,"Symptom code among those sent home: adjusted for age, complaint, year, workup",,14868,1.06,0.98,1.16,0.158,sym_i ~ femalei + C(age_band) + C(complaint) + yearf + tests + img_i + tri + ems_i
+symptom_discharged_adj,"Symptom code among those sent home: adjusted for age, complaint, year, workup",,12160,0.97,0.88,1.08,0.612,sym_i ~ femalei + C(age_band) + C(complaint) + yearf + tests + img_i + tri + ems_i
 anxiety_raw,Anxiety or stress code attached: unadjusted,,20808,1.36,0.96,1.93,0.082,anx_i ~ femalei
 anxiety_adj,"… adjusted for age, complaint, year, workup",,15262,1.73,1.18,2.54,0.005,anx_i ~ femalei + C(age_band) + C(complaint) + yearf + tests + img_i + tri + ems_i
 anxiety_adj_no_rfv,"… same, excluding visits where the patient mentioned anxiety or a psychological symptom",,14803,1.68,1.08,2.62,0.022,anx_i ~ femalei + C(age_band) + C(complaint) + yearf + tests + img_i + tri + ems_i
@@ -12,7 +12,7 @@ anxiety_cardio_adj,"Anxiety code, heart-and-breath complaints: adjusted for age,
 anxiety_cardio_older_adj,… aged 65 and over,,1886,2.66,1.04,6.83,0.041,anx_i ~ femalei + C(complaint) + yearf + tests + img_i + tri + ems_i
 psych_adj,"Any psychiatric code attached: adjusted for age, complaint, year, workup",,15262,1.51,1.08,2.12,0.017,psy_i ~ femalei + C(age_band) + C(complaint) + yearf + tests + img_i + tri + ems_i
 imaging_adj,"Any imaging: adjusted for age, complaint, year, triage, ambulance, pain score",visits with a recorded pain score,12173,0.92,0.81,1.03,0.15,img_i ~ femalei + C(age_band) + C(complaint) + yearf + tri + ems_i + pain_rec
-admitted_adj,"Admitted: adjusted for age, complaint, year, triage, ambulance",,15331,0.94,0.7,1.26,0.679,adm_i ~ femalei + C(age_band) + C(complaint) + yearf + tri + ems_i
+admitted_adj,"Admitted: adjusted for age, complaint, year, triage, ambulance",,15331,0.76,0.7,0.83,0.0,adm_i ~ femalei + C(age_band) + C(complaint) + yearf + tri + ems_i
 return72_raw,Back in the same ED within 72 hours: unadjusted,,19383,0.78,0.61,1.0,0.048,s72_i ~ femalei
 return72_adj,"… adjusted for age band, complaint, year",,19383,0.76,0.59,0.98,0.037,s72_i ~ femalei + C(age_band) + C(complaint) + yearf
 symptom_adj_abdominal,"Symptom code, abdominal pain: adjusted for age, year, workup",,3887,1.09,0.93,1.28,0.269,sym_i ~ femalei + C(age_band) + yearf + tests + img_i + tri + ems_i

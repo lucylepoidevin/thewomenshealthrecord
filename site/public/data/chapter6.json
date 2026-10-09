@@ -1,21 +1,21 @@
 {
  "generated": "2026-10-08",
  "labels": {
-  "n": 390,
+  "n": 384,
   "statements": {
-   "quantified difference": 11,
+   "quantified difference": 8,
    "difference noted": 4,
-   "no difference asserted": 169,
+   "no difference asserted": 168,
    "not evaluated": 0,
-   "mentioned, unclear": 63,
-   "silent": 93,
+   "mentioned, unclear": 62,
+   "silent": 92,
    "one-sex drug": 50
   },
   "dosing": {
-   "n": 390,
-   "weight_based_n": 132,
-   "flat_n": 258,
-   "flat_pct": 66.2,
+   "n": 384,
+   "weight_based_n": 128,
+   "flat_n": 256,
+   "flat_pct": 66.7,
    "flat_weight_affects_n": 23,
    "flat_weight_no_n": 27,
    "flat_weight_affects_no_sex_diff_n": 6,
@@ -161,28 +161,28 @@
    ],
    "by_category_flat_pct": {
     "Cardiovascular": 66.7,
-    "Gastroenterology": 72.7,
+    "Gastroenterology": 80.0,
     "Hematology": 43.8,
     "Imaging & diagnostics": 100.0,
     "Immunology & dermatology": 80.0,
-    "Infectious disease": 54.9,
+    "Infectious disease": 57.1,
     "Metabolic & endocrine": 52.4,
     "Neurology": 62.2,
-    "Oncology": 59.3,
+    "Oncology": 59.5,
     "Ophthalmology": 100.0,
     "Other": 69.2,
     "Psychiatry": 100.0,
     "Urology & nephrology": 88.9
    }
   },
-  "male_only_pk_pct": 4.6,
-  "male_only_pk_n": 18,
-  "quantified_pct": 2.8,
-  "difference_pct": 3.1,
-  "no_difference_pct": 44.1,
+  "male_only_pk_pct": 4.2,
+  "male_only_pk_n": 16,
+  "quantified_pct": 2.1,
+  "difference_pct": 2.9,
+  "no_difference_pct": 44.3,
   "not_evaluated_pct": 0.0,
-  "no_preg_data_pct": 78.5,
-  "no_lact_data_pct": 93.1,
+  "no_preg_data_pct": 78.4,
+  "no_lact_data_pct": 93.2,
   "sex_dose_pct": 0.3,
   "sex_dose_n": 1,
   "sex_dose_brands": [
@@ -220,11 +220,6 @@
     "trial_female_pct": 40.3
    },
    {
-    "brand": "Cresemba",
-    "example": "Elderly female AUC estimates were 38% and 47% greater than AUC estimates obtained in elderly males and younger females, respectively.",
-    "trial_female_pct": 40.3
-   },
-   {
     "brand": "Myqorzo",
     "example": "Female patients demonstrated a 31% higher mean exposure (AUC) compared to male patients.",
     "trial_female_pct": 40.8
@@ -233,16 +228,6 @@
     "brand": "Zokinvy",
     "example": "Male and Female Patients Following a single oral dose of 100 mg lonafarnib in healthy subjects, the plasma lonafarnib AUC and C max were 44% and 26% higher in female subjects, respectively, compared to male subjects.",
     "trial_female_pct": 47.6
-   },
-   {
-    "brand": "Sarclisa",
-    "example": "Specific Populations The following factors have no clinically meaningful effect on the exposure of isatuximab-irfc: age (31 to 86 years, 18% patients were \u226575 years old), sex, race (White 66%, Asian 15%), renal impairment including patients with End-Stage Renal Disease (ESRD) or on dialysis (eGFR <9",
-    "trial_female_pct": 48.2
-   },
-   {
-    "brand": "Avycaz",
-    "example": "Gender Following single-dose administration of 0.5 grams avibactam as a 30-minute infusion, healthy male subjects (n = 17) had 18% lower avibactam C max values than healthy female subjects (n = 16).",
-    "trial_female_pct": 74.1
    }
   ],
   "male_only_brands": [
@@ -265,11 +250,6 @@
     "brand": "Akynzeo",
     "trial_female_pct": 39.7,
     "category": "Gastroenterology"
-   },
-   {
-    "brand": "Cresemba",
-    "trial_female_pct": 40.3,
-    "category": "Infectious disease"
    },
    {
     "brand": "Cresemba",
@@ -322,11 +302,6 @@
     "category": "Gastroenterology"
    },
    {
-    "brand": "Avycaz",
-    "trial_female_pct": 74.1,
-    "category": "Infectious disease"
-   },
-   {
     "brand": "Zavzpret",
     "trial_female_pct": 84.2,
     "category": "Neurology"
@@ -339,25 +314,25 @@
   ],
   "by_trial_share": {
    "under 30% women": {
-    "n": 47,
-    "no_difference_pct": 48.9,
-    "quantified_pct": 2.1,
+    "n": 46,
+    "no_difference_pct": 47.8,
+    "quantified_pct": 2.2,
     "not_evaluated_pct": 0.0,
-    "silent_pct": 25.5
+    "silent_pct": 26.1
    },
    "30\u201349% women": {
-    "n": 140,
-    "no_difference_pct": 50.7,
-    "quantified_pct": 6.4,
+    "n": 138,
+    "no_difference_pct": 51.4,
+    "quantified_pct": 5.1,
     "not_evaluated_pct": 0.0,
-    "silent_pct": 23.6
+    "silent_pct": 23.2
    },
    "50% or more women": {
-    "n": 186,
-    "no_difference_pct": 41.9,
-    "quantified_pct": 0.5,
+    "n": 183,
+    "no_difference_pct": 42.1,
+    "quantified_pct": 0.0,
     "not_evaluated_pct": 0.0,
-    "silent_pct": 25.8
+    "silent_pct": 26.2
    }
   },
   "by_category": {
@@ -371,13 +346,13 @@
     "trial_female_pct_median": 40.6
    },
    "Gastroenterology": {
-    "n": 11,
-    "no_preg_data_pct": 90.9,
-    "no_lact_data_pct": 90.9,
-    "no_difference_pct": 27.3,
-    "quantified_pct": 9.1,
-    "male_only_pk_pct": 18.2,
-    "trial_female_pct_median": 76.0
+    "n": 10,
+    "no_preg_data_pct": 90.0,
+    "no_lact_data_pct": 90.0,
+    "no_difference_pct": 30.0,
+    "quantified_pct": 10.0,
+    "male_only_pk_pct": 20.0,
+    "trial_female_pct_median": 79.0
    },
    "Hematology": {
     "n": 16,
@@ -407,12 +382,12 @@
     "trial_female_pct_median": 55.2
    },
    "Infectious disease": {
-    "n": 51,
-    "no_preg_data_pct": 54.9,
-    "no_lact_data_pct": 86.3,
-    "no_difference_pct": 54.9,
-    "quantified_pct": 11.8,
-    "male_only_pk_pct": 15.7,
+    "n": 49,
+    "no_preg_data_pct": 55.1,
+    "no_lact_data_pct": 85.7,
+    "no_difference_pct": 57.1,
+    "quantified_pct": 8.2,
+    "male_only_pk_pct": 12.2,
     "trial_female_pct_median": 44.9
    },
    "Metabolic & endocrine": {
@@ -434,13 +409,13 @@
     "trial_female_pct_median": 53.1
    },
    "Oncology": {
-    "n": 113,
-    "no_preg_data_pct": 87.6,
+    "n": 111,
+    "no_preg_data_pct": 87.4,
     "no_lact_data_pct": 99.1,
-    "no_difference_pct": 52.2,
-    "quantified_pct": 1.8,
+    "no_difference_pct": 52.3,
+    "quantified_pct": 0.9,
     "male_only_pk_pct": 0.0,
-    "trial_female_pct_median": 46.4
+    "trial_female_pct_median": 46.2
    },
    "Ophthalmology": {
     "n": 10,
@@ -461,13 +436,13 @@
     "trial_female_pct_median": 53.3
    },
    "Psychiatry": {
-    "n": 9,
-    "no_preg_data_pct": 88.9,
-    "no_lact_data_pct": 55.6,
-    "no_difference_pct": 55.6,
+    "n": 8,
+    "no_preg_data_pct": 87.5,
+    "no_lact_data_pct": 62.5,
+    "no_difference_pct": 50.0,
     "quantified_pct": 0.0,
     "male_only_pk_pct": 0.0,
-    "trial_female_pct_median": 40.6
+    "trial_female_pct_median": 64.9
    },
    "Urology & nephrology": {
     "n": 9,
@@ -482,11 +457,11 @@
   "by_year": [
    {
     "year": 2015,
-    "n": 42,
-    "no_preg_data_pct": 66.7,
-    "no_lact_data_pct": 81.0,
-    "no_difference_pct": 35.7,
-    "quantified_pct": 9.5
+    "n": 38,
+    "no_preg_data_pct": 65.8,
+    "no_lact_data_pct": 81.6,
+    "no_difference_pct": 36.8,
+    "quantified_pct": 5.3
    },
    {
     "year": 2016,
@@ -498,11 +473,11 @@
    },
    {
     "year": 2017,
-    "n": 38,
-    "no_preg_data_pct": 78.9,
-    "no_lact_data_pct": 97.4,
-    "no_difference_pct": 34.2,
-    "quantified_pct": 2.6
+    "n": 37,
+    "no_preg_data_pct": 78.4,
+    "no_lact_data_pct": 97.3,
+    "no_difference_pct": 35.1,
+    "quantified_pct": 2.7
    },
    {
     "year": 2018,
@@ -514,10 +489,10 @@
    },
    {
     "year": 2019,
-    "n": 41,
-    "no_preg_data_pct": 70.7,
-    "no_lact_data_pct": 95.1,
-    "no_difference_pct": 53.7,
+    "n": 40,
+    "no_preg_data_pct": 70.0,
+    "no_lact_data_pct": 95.0,
+    "no_difference_pct": 52.5,
     "quantified_pct": 0.0
    },
    {
@@ -526,7 +501,7 @@
     "no_preg_data_pct": 85.4,
     "no_lact_data_pct": 95.1,
     "no_difference_pct": 41.5,
-    "quantified_pct": 4.9
+    "quantified_pct": 2.4
    },
    {
     "year": 2022,
@@ -1988,31 +1963,6 @@
     "example": null
    },
    {
-    "slug": "drug-trials-snapshots-vraylar-treatment-schizophrenia",
-    "brand": "Vraylar",
-    "year": 2015,
-    "category": "Psychiatry",
-    "trial_female_pct": 28.5,
-    "faers_female_pct": 67.4,
-    "label_date": "20251218",
-    "male_only_pk": false,
-    "quantified": false,
-    "difference": false,
-    "no_difference": true,
-    "not_evaluated": false,
-    "mentions_sex": true,
-    "no_preg_data": true,
-    "no_lact_data": false,
-    "sex_dose": false,
-    "has_lactation_section": false,
-    "has_pregnancy_section": true,
-    "weight_based": false,
-    "weight_effect": "silent",
-    "weight_example": null,
-    "sex_statement": "no difference asserted",
-    "example": "Age , Sex, Race Age, sex, or race does not have clinically relevant effect on pharmacokinetics of cariprazine, DCAR, or DDCAR in adult population."
-   },
-   {
     "slug": "drug-trials-snapshots-emrelis",
     "brand": "Emrelis",
     "year": 2025,
@@ -2436,31 +2386,6 @@
     "weight_example": null,
     "sex_statement": "no difference asserted",
     "example": "Body Weight, Gender, Race, and Age Body weight, gender, race, and age did not have a clinically significant effect on deucravacitinib exposure."
-   },
-   {
-    "slug": "drug-trials-snapshot-cholbam-peroxisomal-disorders",
-    "brand": "Cholbam",
-    "year": 2015,
-    "category": "Gastroenterology",
-    "trial_female_pct": 33.3,
-    "faers_female_pct": 51.2,
-    "label_date": "20260126",
-    "male_only_pk": false,
-    "quantified": false,
-    "difference": false,
-    "no_difference": false,
-    "not_evaluated": false,
-    "mentions_sex": false,
-    "no_preg_data": true,
-    "no_lact_data": true,
-    "sex_dose": false,
-    "has_lactation_section": false,
-    "has_pregnancy_section": true,
-    "weight_based": true,
-    "weight_effect": "silent",
-    "weight_example": null,
-    "sex_statement": "silent",
-    "example": null
    },
    {
     "slug": "drug-trials-snapshot-cosela",
@@ -3439,31 +3364,6 @@
    },
    {
     "slug": "drug-trials-snapshots-cresemba-aspergillosis",
-    "brand": "Cresemba",
-    "year": 2015,
-    "category": "Infectious disease",
-    "trial_female_pct": 40.3,
-    "faers_female_pct": 40.3,
-    "label_date": "20250425",
-    "male_only_pk": true,
-    "quantified": true,
-    "difference": true,
-    "no_difference": false,
-    "not_evaluated": false,
-    "mentions_sex": true,
-    "no_preg_data": false,
-    "no_lact_data": true,
-    "sex_dose": false,
-    "has_lactation_section": false,
-    "has_pregnancy_section": true,
-    "weight_based": true,
-    "weight_effect": "silent",
-    "weight_example": null,
-    "sex_statement": "quantified difference",
-    "example": "Elderly female AUC estimates were 38% and 47% greater than AUC estimates obtained in elderly males and younger females, respectively."
-   },
-   {
-    "slug": "drug-trials-snapshots-cresemba-mucormycosis",
     "brand": "Cresemba",
     "year": 2015,
     "category": "Infectious disease",
@@ -5246,7 +5146,7 @@
     "faers_female_pct": 44.5,
     "label_date": "20260710",
     "male_only_pk": false,
-    "quantified": true,
+    "quantified": false,
     "difference": false,
     "no_difference": true,
     "not_evaluated": false,
@@ -5259,7 +5159,7 @@
     "weight_based": false,
     "weight_effect": "affects exposure",
     "weight_example": "Body weight In patients who received the recommended SARCLISA ESCENA subcutaneous dosage, the steady state C trough and AUC 2weeks were 44% and 41% lower in the higher body weight (BW) group (>100 kg), and 24% and 26% higher in the lower BW group (\u226450 kg), compared to the patients with BW of 51 kg\u20131",
-    "sex_statement": "quantified difference",
+    "sex_statement": "no difference asserted",
     "example": "Specific Populations The following factors have no clinically meaningful effect on the exposure of isatuximab-irfc: age (31 to 86 years, 18% patients were \u226575 years old), sex, race (White 66%, Asian 15%), renal impairment including patients with End-Stage Renal Disease (ESRD) or on dialysis (eGFR <9"
    },
    {
@@ -6688,31 +6588,6 @@
     "example": null
    },
    {
-    "slug": "drug-trials-snapshots-rydapt",
-    "brand": "Rydapt",
-    "year": 2017,
-    "category": "Oncology",
-    "trial_female_pct": 55.5,
-    "faers_female_pct": 46.7,
-    "label_date": "20260608",
-    "male_only_pk": false,
-    "quantified": false,
-    "difference": false,
-    "no_difference": false,
-    "not_evaluated": false,
-    "mentions_sex": true,
-    "no_preg_data": true,
-    "no_lact_data": true,
-    "sex_dose": false,
-    "has_lactation_section": false,
-    "has_pregnancy_section": true,
-    "weight_based": false,
-    "weight_effect": "silent",
-    "weight_example": null,
-    "sex_statement": "mentioned, unclear",
-    "example": null
-   },
-   {
     "slug": "drug-trials-snapshots-ziihera",
     "brand": "Ziihera",
     "year": 2024,
@@ -6786,31 +6661,6 @@
     "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
-   },
-   {
-    "slug": "drug-trials-snapshots-rozlytrek-0",
-    "brand": "Rozlytrek",
-    "year": 2019,
-    "category": "Oncology",
-    "trial_female_pct": 56.2,
-    "faers_female_pct": 56.1,
-    "label_date": "20251204",
-    "male_only_pk": false,
-    "quantified": false,
-    "difference": false,
-    "no_difference": true,
-    "not_evaluated": false,
-    "mentions_sex": true,
-    "no_preg_data": true,
-    "no_lact_data": true,
-    "sex_dose": false,
-    "has_lactation_section": false,
-    "has_pregnancy_section": true,
-    "weight_based": true,
-    "weight_effect": "silent",
-    "weight_example": null,
-    "sex_statement": "no difference asserted",
-    "example": "Specific Populations No clinically significant differences in the pharmacokinetics of entrectinib were observed based on sex, race (White, Asian and Black), mild to moderate renal impairment (CLcr 30 to < 90 mL/min) and mild hepatic impairment (total bilirubin \u2264 ULN with aspartate aminotransferase >"
    },
    {
     "slug": "drug-trials-snapshot-lytgobi",
@@ -8711,31 +8561,6 @@
     "weight_example": null,
     "sex_statement": "mentioned, unclear",
     "example": null
-   },
-   {
-    "slug": "drug-trials-snapshot-avycaz-cuti",
-    "brand": "Avycaz",
-    "year": 2015,
-    "category": "Infectious disease",
-    "trial_female_pct": 74.1,
-    "faers_female_pct": 58.3,
-    "label_date": "20250430",
-    "male_only_pk": true,
-    "quantified": true,
-    "difference": false,
-    "no_difference": false,
-    "not_evaluated": false,
-    "mentions_sex": true,
-    "no_preg_data": true,
-    "no_lact_data": true,
-    "sex_dose": false,
-    "has_lactation_section": false,
-    "has_pregnancy_section": true,
-    "weight_based": true,
-    "weight_effect": "silent",
-    "weight_example": null,
-    "sex_statement": "quantified difference",
-    "example": "Gender Following single-dose administration of 0.5 grams avibactam as a 30-minute infusion, healthy male subjects (n = 17) had 18% lower avibactam C max values than healthy female subjects (n = 16)."
    },
    {
     "slug": "drug-trials-snapshot-tryptyr",

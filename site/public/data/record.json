@@ -1,15 +1,15 @@
 {
- "generated": "2026-10-07",
+ "generated": "2026-10-08",
  "conditions": [
   {
    "disease": "ADHD",
    "funding": {
     "funding_m": 75.0,
-    "dalys_k": 192.8,
-    "female_share": 26.8,
-    "dollars_per_daly": 389.0,
-    "ratio_to_expected": 0.61,
-    "rank_by_ratio": 21,
+    "dalys_k": 191.5,
+    "female_share": 26.9,
+    "dollars_per_daly": 392.0,
+    "ratio_to_expected": 0.62,
+    "rank_by_ratio": 22,
     "n_ranked": 67,
     "skew": "male"
    },
@@ -19,11 +19,11 @@
     "trials": 293,
     "participants": 38599,
     "female_pct": 36.4,
-    "burden_female_pct": 26.8,
-    "ratio": 1.36,
+    "burden_female_pct": 26.9,
+    "ratio": 1.35,
     "rank": 48,
     "excl_preg_pct": 53.2,
-    "contra_pct": 30.7,
+    "contra_pct": 30.4,
     "max_age_pct": 96.2,
     "outcome_by_sex": 1,
     "sex_specific": false,
@@ -38,11 +38,11 @@
    "disease": "Alcohol use disorders",
    "funding": {
     "funding_m": 639.0,
-    "dalys_k": 1647.3,
-    "female_share": 29.9,
-    "dollars_per_daly": 388.0,
-    "ratio_to_expected": 2.33,
-    "rank_by_ratio": 54,
+    "dalys_k": 1631.5,
+    "female_share": 30.4,
+    "dollars_per_daly": 392.0,
+    "ratio_to_expected": 2.35,
+    "rank_by_ratio": 55,
     "n_ranked": 67,
     "skew": "male"
    },
@@ -66,11 +66,11 @@
     "trials": 428,
     "participants": 41542,
     "female_pct": 41.2,
-    "burden_female_pct": 29.9,
-    "ratio": 1.38,
-    "rank": 50,
+    "burden_female_pct": 30.4,
+    "ratio": 1.36,
+    "rank": 49,
     "excl_preg_pct": 65.7,
-    "contra_pct": 53.0,
+    "contra_pct": 46.7,
     "max_age_pct": 70.3,
     "outcome_by_sex": 2,
     "sex_specific": false,
@@ -85,10 +85,10 @@
    "disease": "Alzheimer's and other dementias",
    "funding": {
     "funding_m": 3859.0,
-    "dalys_k": 4043.7,
-    "female_share": 64.0,
-    "dollars_per_daly": 954.0,
-    "ratio_to_expected": 10.03,
+    "dalys_k": 4238.7,
+    "female_share": 63.5,
+    "dollars_per_daly": 910.0,
+    "ratio_to_expected": 9.96,
     "rank_by_ratio": 65,
     "n_ranked": 67,
     "skew": "female"
@@ -139,7 +139,7 @@
     "trials": 772,
     "participants": 398649,
     "female_pct": 58.0,
-    "burden_female_pct": 64.0,
+    "burden_female_pct": 63.5,
     "ratio": 0.91,
     "rank": 8,
     "excl_preg_pct": 23.1,
@@ -158,10 +158,10 @@
    "disease": "Amphetamine use disorders",
    "funding": {
     "funding_m": 99.0,
-    "dalys_k": 512.0,
-    "female_share": 29.1,
-    "dollars_per_daly": 193.0,
-    "ratio_to_expected": 0.56,
+    "dalys_k": 488.0,
+    "female_share": 28.4,
+    "dollars_per_daly": 203.0,
+    "ratio_to_expected": 0.57,
     "rank_by_ratio": 20,
     "n_ranked": 67,
     "skew": "male"
@@ -176,11 +176,11 @@
    "disease": "Anxiety disorders",
    "funding": {
     "funding_m": 271.0,
-    "dalys_k": 2494.1,
+    "dalys_k": 2979.9,
     "female_share": 63.7,
-    "dollars_per_daly": 109.0,
-    "ratio_to_expected": 0.85,
-    "rank_by_ratio": 27,
+    "dollars_per_daly": 91.0,
+    "ratio_to_expected": 0.8,
+    "rank_by_ratio": 26,
     "n_ranked": 67,
     "skew": "female"
    },
@@ -192,9 +192,9 @@
     "female_pct": 54.5,
     "burden_female_pct": 63.7,
     "ratio": 0.86,
-    "rank": 4,
+    "rank": 5,
     "excl_preg_pct": 41.7,
-    "contra_pct": 21.1,
+    "contra_pct": 20.8,
     "max_age_pct": 61.2,
     "outcome_by_sex": 0,
     "sex_specific": false,
@@ -209,10 +209,10 @@
    "disease": "Asthma",
    "funding": {
     "funding_m": 270.0,
-    "dalys_k": 1428.7,
+    "dalys_k": 1551.0,
     "female_share": 54.8,
-    "dollars_per_daly": 189.0,
-    "ratio_to_expected": 1.04,
+    "dollars_per_daly": 174.0,
+    "ratio_to_expected": 1.01,
     "rank_by_ratio": 29,
     "n_ranked": 67,
     "skew": "balanced"
@@ -280,7 +280,7 @@
     "ratio": 1.06,
     "rank": 30,
     "excl_preg_pct": 52.6,
-    "contra_pct": 34.2,
+    "contra_pct": 34.0,
     "max_age_pct": 69.2,
     "outcome_by_sex": 0,
     "sex_specific": false,
@@ -295,11 +295,11 @@
    "disease": "Autism",
    "funding": {
     "funding_m": 305.0,
-    "dalys_k": 606.7,
+    "dalys_k": 619.0,
     "female_share": 27.6,
-    "dollars_per_daly": 503.0,
-    "ratio_to_expected": 1.62,
-    "rank_by_ratio": 48,
+    "dollars_per_daly": 493.0,
+    "ratio_to_expected": 1.61,
+    "rank_by_ratio": 47,
     "n_ranked": 67,
     "skew": "male"
    },
@@ -311,7 +311,7 @@
     "female_pct": 28.5,
     "burden_female_pct": 27.6,
     "ratio": 1.03,
-    "rank": 22,
+    "rank": 23,
     "excl_preg_pct": 32.2,
     "contra_pct": 19.0,
     "max_age_pct": 91.7,
@@ -328,7 +328,7 @@
    "disease": "Back and neck pain",
    "funding": {
     "funding_m": 76.0,
-    "dalys_k": 5951.5,
+    "dalys_k": 6031.9,
     "female_share": 54.8,
     "dollars_per_daly": 13.0,
     "ratio_to_expected": 0.17,
@@ -346,13 +346,15 @@
        "est": 73.3,
        "lo": 69.0,
        "hi": 77.6,
-       "n": 988
+       "n": 988,
+       "reliable": true
       },
       "men": {
        "est": 73.2,
        "lo": 68.3,
        "hi": 78.0,
-       "n": 765
+       "n": 765,
+       "reliable": true
       },
       "diff": 0.2,
       "diff_lo": -6.3,
@@ -363,13 +365,15 @@
        "est": 6.6,
        "lo": 3.3,
        "hi": 9.8,
-       "n": 1020
+       "n": 1020,
+       "reliable": true
       },
       "men": {
        "est": 6.4,
        "lo": 3.3,
        "hi": 9.6,
-       "n": 771
+       "n": 771,
+       "reliable": true
       },
       "diff": 0.2,
       "diff_lo": -4.4,
@@ -380,13 +384,15 @@
        "est": 11.9,
        "lo": 9.4,
        "hi": 14.4,
-       "n": 1335
+       "n": 1335,
+       "reliable": true
       },
       "men": {
        "est": 15.3,
        "lo": 11.8,
        "hi": 18.8,
-       "n": 1024
+       "n": 1024,
+       "reliable": true
       },
       "diff": -3.4,
       "diff_lo": -7.7,
@@ -397,13 +403,15 @@
        "est": 42.0,
        "lo": 34.1,
        "hi": 50.0,
-       "n": 1187
+       "n": 1187,
+       "reliable": true
       },
       "men": {
        "est": 33.5,
        "lo": 28.9,
        "hi": 38.2,
-       "n": 918
+       "n": 918,
+       "reliable": true
       },
       "diff": 8.5,
       "diff_lo": -0.7,
@@ -414,13 +422,15 @@
        "est": 64.0,
        "lo": 60.4,
        "hi": 67.6,
-       "n": 1368
+       "n": 1368,
+       "reliable": true
       },
       "men": {
        "est": 62.9,
        "lo": 58.4,
        "hi": 67.3,
-       "n": 1058
+       "n": 1058,
+       "reliable": true
       },
       "diff": 1.1,
       "diff_lo": -4.6,
@@ -431,13 +441,15 @@
        "est": 28.6,
        "lo": 25.2,
        "hi": 32.1,
-       "n": 1368
+       "n": 1368,
+       "reliable": true
       },
       "men": {
        "est": 27.4,
        "lo": 23.1,
        "hi": 31.7,
-       "n": 1058
+       "n": 1058,
+       "reliable": true
       },
       "diff": 1.2,
       "diff_lo": -4.3,
@@ -448,13 +460,15 @@
        "est": 35.2,
        "lo": 30.3,
        "hi": 40.1,
-       "n": 736
+       "n": 736,
+       "reliable": true
       },
       "men": {
        "est": 33.1,
        "lo": 27.0,
        "hi": 39.3,
-       "n": 555
+       "n": 555,
+       "reliable": true
       },
       "diff": 2.1,
       "diff_lo": -5.8,
@@ -462,20 +476,22 @@
      },
      "admitted": {
       "women": {
-       "est": 0.4,
-       "lo": 0.1,
-       "hi": 0.7,
-       "n": 1368
+       "est": 6.3,
+       "lo": 4.5,
+       "hi": 8.1,
+       "n": 1368,
+       "reliable": true
       },
       "men": {
-       "est": 1.0,
-       "lo": 0.2,
-       "hi": 1.7,
-       "n": 1058
+       "est": 8.1,
+       "lo": 5.5,
+       "hi": 10.6,
+       "n": 1058,
+       "reliable": true
       },
-      "diff": -0.5,
-      "diff_lo": -1.3,
-      "diff_hi": 0.2
+      "diff": -1.8,
+      "diff_lo": -4.9,
+      "diff_hi": 1.4
      }
     }
    },
@@ -487,7 +503,7 @@
     "ratio": 1.03,
     "rank": 26,
     "excl_preg_pct": 66.0,
-    "contra_pct": 19.9,
+    "contra_pct": 19.1,
     "max_age_pct": 44.9,
     "outcome_by_sex": 1,
     "sex_specific": false,
@@ -505,13 +521,15 @@
        "est": 11.7,
        "lo": 8.6,
        "hi": 14.8,
-       "n": 755
+       "n": 755,
+       "reliable": true
       },
       "men": {
        "est": 5.0,
        "lo": 3.0,
        "hi": 7.1,
-       "n": 492
+       "n": 492,
+       "reliable": true
       },
       "diff": 6.7,
       "diff_lo": 3.0,
@@ -522,13 +540,15 @@
        "est": 1.2,
        "lo": 0.2,
        "hi": 2.2,
-       "n": 755
+       "n": 755,
+       "reliable": false
       },
       "men": {
        "est": 0.3,
        "lo": -0.0,
        "hi": 0.6,
-       "n": 492
+       "n": 492,
+       "reliable": false
       },
       "diff": 0.9,
       "diff_lo": -0.2,
@@ -539,13 +559,15 @@
        "est": 3.24,
        "lo": 2.91,
        "hi": 3.56,
-       "n": 747
+       "n": 747,
+       "reliable": true
       },
       "men": {
        "est": 2.86,
        "lo": 2.51,
        "hi": 3.2,
-       "n": 484
+       "n": 484,
+       "reliable": true
       },
       "diff": 0.38,
       "diff_lo": -0.09,
@@ -556,13 +578,15 @@
        "est": 53.1,
        "lo": 48.1,
        "hi": 58.0,
-       "n": 755
+       "n": 755,
+       "reliable": true
       },
       "men": {
        "est": 50.0,
        "lo": 44.4,
        "hi": 55.6,
-       "n": 492
+       "n": 492,
+       "reliable": true
       },
       "diff": 3.1,
       "diff_lo": -4.4,
@@ -570,33 +594,37 @@
      },
      "admitted": {
       "women": {
-       "est": 0.4,
-       "lo": -0.0,
-       "hi": 0.7,
-       "n": 755
+       "est": 5.9,
+       "lo": 3.9,
+       "hi": 7.8,
+       "n": 755,
+       "reliable": true
       },
       "men": {
-       "est": 1.2,
-       "lo": 0.2,
-       "hi": 2.2,
-       "n": 492
+       "est": 8.4,
+       "lo": 5.8,
+       "hi": 11.0,
+       "n": 492,
+       "reliable": true
       },
-      "diff": -0.8,
-      "diff_lo": -1.9,
-      "diff_hi": 0.3
+      "diff": -2.5,
+      "diff_lo": -5.8,
+      "diff_hi": 0.8
      },
      "seen72": {
       "women": {
        "est": 4.4,
        "lo": 1.9,
        "hi": 6.9,
-       "n": 701
+       "n": 701,
+       "reliable": true
       },
       "men": {
        "est": 5.9,
        "lo": 3.1,
        "hi": 8.7,
-       "n": 459
+       "n": 459,
+       "reliable": true
       },
       "diff": -1.5,
       "diff_lo": -5.2,
@@ -609,9 +637,9 @@
    "disease": "Bipolar disorder",
    "funding": {
     "funding_m": 84.0,
-    "dalys_k": 474.9,
-    "female_share": 50.2,
-    "dollars_per_daly": 177.0,
+    "dalys_k": 478.1,
+    "female_share": 50.4,
+    "dollars_per_daly": 176.0,
     "ratio_to_expected": 0.49,
     "rank_by_ratio": 19,
     "n_ranked": 67,
@@ -637,11 +665,11 @@
     "trials": 298,
     "participants": 45738,
     "female_pct": 52.5,
-    "burden_female_pct": 50.2,
-    "ratio": 1.05,
-    "rank": 28,
+    "burden_female_pct": 50.4,
+    "ratio": 1.04,
+    "rank": 27,
     "excl_preg_pct": 67.4,
-    "contra_pct": 37.9,
+    "contra_pct": 36.2,
     "max_age_pct": 80.5,
     "outcome_by_sex": 0,
     "sex_specific": false,
@@ -656,11 +684,11 @@
    "disease": "Brain cancer",
    "funding": {
     "funding_m": 429.0,
-    "dalys_k": 558.7,
-    "female_share": 42.4,
-    "dollars_per_daly": 768.0,
-    "ratio_to_expected": 2.35,
-    "rank_by_ratio": 55,
+    "dalys_k": 597.4,
+    "female_share": 43.3,
+    "dollars_per_daly": 718.0,
+    "ratio_to_expected": 2.3,
+    "rank_by_ratio": 54,
     "n_ranked": 67,
     "skew": "balanced"
    },
@@ -710,11 +738,11 @@
     "trials": 729,
     "participants": 52031,
     "female_pct": 46.1,
-    "burden_female_pct": 42.4,
-    "ratio": 1.09,
-    "rank": 33,
+    "burden_female_pct": 43.3,
+    "ratio": 1.06,
+    "rank": 31,
     "excl_preg_pct": 81.3,
-    "contra_pct": 72.6,
+    "contra_pct": 72.4,
     "max_age_pct": 26.2,
     "outcome_by_sex": 0,
     "sex_specific": false,
@@ -764,10 +792,10 @@
    "disease": "Breast cancer",
    "funding": {
     "funding_m": 740.0,
-    "dalys_k": 1298.1,
+    "dalys_k": 1341.5,
     "female_share": 98.8,
-    "dollars_per_daly": 570.0,
-    "ratio_to_expected": 2.95,
+    "dollars_per_daly": 552.0,
+    "ratio_to_expected": 2.93,
     "rank_by_ratio": 58,
     "n_ranked": 67,
     "skew": "female"
@@ -826,19 +854,6 @@
      "label_flat": false
     },
     {
-     "brand": "Margenza",
-     "year": 2020,
-     "trial_female_pct": 99.4,
-     "faers_female_pct": 100.0,
-     "gap": null,
-     "rate_ratio": null,
-     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-margenza",
-     "label_sex": "one-sex drug",
-     "label_no_preg": true,
-     "label_no_lact": true,
-     "label_flat": false
-    },
-    {
      "brand": "Inluriyo",
      "year": 2025,
      "trial_female_pct": 99.4,
@@ -850,6 +865,19 @@
      "label_no_preg": null,
      "label_no_lact": null,
      "label_flat": null
+    },
+    {
+     "brand": "Margenza",
+     "year": 2020,
+     "trial_female_pct": 99.4,
+     "faers_female_pct": 100.0,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshot-margenza",
+     "label_sex": "one-sex drug",
+     "label_no_preg": true,
+     "label_no_lact": true,
+     "label_flat": false
     },
     {
      "brand": "Enhertu",
@@ -967,8 +995,8 @@
    "disease": "COPD",
    "funding": {
     "funding_m": 160.0,
-    "dalys_k": 4297.2,
-    "female_share": 51.7,
+    "dalys_k": 4275.0,
+    "female_share": 52.4,
     "dollars_per_daly": 37.0,
     "ratio_to_expected": 0.41,
     "rank_by_ratio": 15,
@@ -1021,11 +1049,11 @@
     "trials": 464,
     "participants": 380554,
     "female_pct": 43.8,
-    "burden_female_pct": 51.7,
-    "ratio": 0.85,
+    "burden_female_pct": 52.4,
+    "ratio": 0.84,
     "rank": 3,
     "excl_preg_pct": 56.0,
-    "contra_pct": 35.6,
+    "contra_pct": 35.3,
     "max_age_pct": 33.6,
     "outcome_by_sex": 1,
     "sex_specific": false,
@@ -1040,9 +1068,9 @@
    "disease": "Cervical cancer",
    "funding": {
     "funding_m": 149.0,
-    "dalys_k": 213.5,
+    "dalys_k": 215.5,
     "female_share": 100.0,
-    "dollars_per_daly": 698.0,
+    "dollars_per_daly": 691.0,
     "ratio_to_expected": 1.17,
     "rank_by_ratio": 32,
     "n_ranked": 67,
@@ -1090,11 +1118,11 @@
    "disease": "Cirrhosis and chronic liver disease",
    "funding": {
     "funding_m": 444.0,
-    "dalys_k": 1986.2,
-    "female_share": 36.3,
-    "dollars_per_daly": 224.0,
-    "ratio_to_expected": 1.51,
-    "rank_by_ratio": 43,
+    "dalys_k": 1771.6,
+    "female_share": 37.2,
+    "dollars_per_daly": 251.0,
+    "ratio_to_expected": 1.59,
+    "rank_by_ratio": 46,
     "n_ranked": 67,
     "skew": "male"
    },
@@ -1196,11 +1224,11 @@
     "trials": 59,
     "participants": 9538,
     "female_pct": 45.1,
-    "burden_female_pct": 36.3,
-    "ratio": 1.24,
+    "burden_female_pct": 37.2,
+    "ratio": 1.21,
     "rank": 44,
     "excl_preg_pct": 52.5,
-    "contra_pct": 33.9,
+    "contra_pct": 30.5,
     "max_age_pct": 49.2,
     "outcome_by_sex": 0,
     "sex_specific": false,
@@ -1215,10 +1243,10 @@
    "disease": "Cocaine use disorders",
    "funding": {
     "funding_m": 142.0,
-    "dalys_k": 828.3,
-    "female_share": 25.7,
-    "dollars_per_daly": 171.0,
-    "ratio_to_expected": 0.67,
+    "dalys_k": 808.1,
+    "female_share": 24.8,
+    "dollars_per_daly": 176.0,
+    "ratio_to_expected": 0.68,
     "rank_by_ratio": 24,
     "n_ranked": 67,
     "skew": "male"
@@ -1229,11 +1257,11 @@
     "trials": 117,
     "participants": 10006,
     "female_pct": 29.4,
-    "burden_female_pct": 25.7,
-    "ratio": 1.14,
-    "rank": 39,
+    "burden_female_pct": 24.8,
+    "ratio": 1.19,
+    "rank": 42,
     "excl_preg_pct": 82.1,
-    "contra_pct": 65.8,
+    "contra_pct": 62.4,
     "max_age_pct": 88.0,
     "outcome_by_sex": 3,
     "sex_specific": false,
@@ -1248,11 +1276,11 @@
    "disease": "Colorectal cancer",
    "funding": {
     "funding_m": 338.0,
-    "dalys_k": 1462.4,
-    "female_share": 43.9,
-    "dollars_per_daly": 231.0,
-    "ratio_to_expected": 1.29,
-    "rank_by_ratio": 37,
+    "dalys_k": 1576.8,
+    "female_share": 43.3,
+    "dollars_per_daly": 214.0,
+    "ratio_to_expected": 1.26,
+    "rank_by_ratio": 36,
     "n_ranked": 67,
     "skew": "balanced"
    },
@@ -1328,8 +1356,8 @@
     "trials": 769,
     "participants": 334596,
     "female_pct": 47.7,
-    "burden_female_pct": 43.9,
-    "ratio": 1.09,
+    "burden_female_pct": 43.3,
+    "ratio": 1.1,
     "rank": 34,
     "excl_preg_pct": 57.7,
     "contra_pct": 47.3,
@@ -1382,10 +1410,10 @@
    "disease": "Congenital heart disease",
    "funding": {
     "funding_m": 154.0,
-    "dalys_k": 299.5,
-    "female_share": 42.6,
-    "dollars_per_daly": 514.0,
-    "ratio_to_expected": 1.06,
+    "dalys_k": 297.3,
+    "female_share": 42.4,
+    "dollars_per_daly": 518.0,
+    "ratio_to_expected": 1.07,
     "rank_by_ratio": 30,
     "n_ranked": 67,
     "skew": "balanced"
@@ -1396,9 +1424,9 @@
     "trials": 153,
     "participants": 16748,
     "female_pct": 50.1,
-    "burden_female_pct": 42.6,
+    "burden_female_pct": 42.4,
     "ratio": 1.18,
-    "rank": 41,
+    "rank": 39,
     "excl_preg_pct": 39.9,
     "contra_pct": 14.4,
     "max_age_pct": 64.1,
@@ -1415,10 +1443,10 @@
    "disease": "Coronary heart disease",
    "funding": {
     "funding_m": 383.0,
-    "dalys_k": 10101.9,
-    "female_share": 35.7,
-    "dollars_per_daly": 38.0,
-    "ratio_to_expected": 0.71,
+    "dalys_k": 9222.5,
+    "female_share": 35.6,
+    "dollars_per_daly": 42.0,
+    "ratio_to_expected": 0.74,
     "rank_by_ratio": 25,
     "n_ranked": 67,
     "skew": "male"
@@ -1512,13 +1540,15 @@
        "est": 47.8,
        "lo": 44.4,
        "hi": 51.3,
-       "n": 1446
+       "n": 1446,
+       "reliable": true
       },
       "men": {
        "est": 37.9,
        "lo": 33.6,
        "hi": 42.2,
-       "n": 1338
+       "n": 1338,
+       "reliable": true
       },
       "diff": 9.9,
       "diff_lo": 4.4,
@@ -1529,13 +1559,15 @@
        "est": 39.3,
        "lo": 34.0,
        "hi": 44.6,
-       "n": 1599
+       "n": 1599,
+       "reliable": true
       },
       "men": {
        "est": 44.6,
        "lo": 39.1,
        "hi": 50.1,
-       "n": 1453
+       "n": 1453,
+       "reliable": true
       },
       "diff": -5.3,
       "diff_lo": -12.9,
@@ -1546,13 +1578,15 @@
        "est": 19.8,
        "lo": 17.5,
        "hi": 22.2,
-       "n": 2116
+       "n": 2116,
+       "reliable": true
       },
       "men": {
        "est": 24.4,
        "lo": 21.2,
        "hi": 27.5,
-       "n": 1916
+       "n": 1916,
+       "reliable": true
       },
       "diff": -4.6,
       "diff_lo": -8.5,
@@ -1563,13 +1597,15 @@
        "est": 28.8,
        "lo": 25.7,
        "hi": 31.9,
-       "n": 1917
+       "n": 1917,
+       "reliable": true
       },
       "men": {
        "est": 32.7,
        "lo": 27.4,
        "hi": 37.9,
-       "n": 1726
+       "n": 1726,
+       "reliable": true
       },
       "diff": -3.9,
       "diff_lo": -10.0,
@@ -1580,13 +1616,15 @@
        "est": 50.1,
        "lo": 46.1,
        "hi": 54.1,
-       "n": 2190
+       "n": 2190,
+       "reliable": true
       },
       "men": {
        "est": 49.5,
        "lo": 45.6,
        "hi": 53.5,
-       "n": 1990
+       "n": 1990,
+       "reliable": true
       },
       "diff": 0.6,
       "diff_lo": -5.0,
@@ -1597,13 +1635,15 @@
        "est": 15.8,
        "lo": 13.3,
        "hi": 18.2,
-       "n": 2190
+       "n": 2190,
+       "reliable": true
       },
       "men": {
        "est": 15.3,
        "lo": 12.5,
        "hi": 18.0,
-       "n": 1990
+       "n": 1990,
+       "reliable": true
       },
       "diff": 0.5,
       "diff_lo": -3.2,
@@ -1614,13 +1654,15 @@
        "est": 26.6,
        "lo": 21.0,
        "hi": 32.3,
-       "n": 652
+       "n": 652,
+       "reliable": true
       },
       "men": {
        "est": 28.4,
        "lo": 21.4,
        "hi": 35.4,
-       "n": 502
+       "n": 502,
+       "reliable": true
       },
       "diff": -1.8,
       "diff_lo": -10.8,
@@ -1628,20 +1670,22 @@
      },
      "admitted": {
       "women": {
-       "est": 2.1,
-       "lo": 1.2,
-       "hi": 3.1,
-       "n": 2190
+       "est": 18.8,
+       "lo": 15.3,
+       "hi": 22.4,
+       "n": 2190,
+       "reliable": true
       },
       "men": {
-       "est": 3.4,
-       "lo": 2.0,
-       "hi": 4.8,
-       "n": 1990
+       "est": 25.5,
+       "lo": 23.0,
+       "hi": 28.1,
+       "n": 1990,
+       "reliable": true
       },
-      "diff": -1.3,
-      "diff_lo": -3.0,
-      "diff_hi": 0.4
+      "diff": -6.7,
+      "diff_lo": -11.1,
+      "diff_hi": -2.3
      }
     }
    },
@@ -1649,9 +1693,9 @@
     "trials": 582,
     "participants": 666932,
     "female_pct": 30.7,
-    "burden_female_pct": 35.7,
+    "burden_female_pct": 35.6,
     "ratio": 0.86,
-    "rank": 5,
+    "rank": 6,
     "excl_preg_pct": 57.2,
     "contra_pct": 21.1,
     "max_age_pct": 32.1,
@@ -1671,13 +1715,15 @@
        "est": 70.4,
        "lo": 67.1,
        "hi": 73.6,
-       "n": 1850
+       "n": 1850,
+       "reliable": true
       },
       "men": {
        "est": 69.9,
        "lo": 67.0,
        "hi": 72.8,
-       "n": 1687
+       "n": 1687,
+       "reliable": true
       },
       "diff": 0.5,
       "diff_lo": -3.9,
@@ -1688,13 +1734,15 @@
        "est": 6.4,
        "lo": 4.6,
        "hi": 8.3,
-       "n": 1850
+       "n": 1850,
+       "reliable": true
       },
       "men": {
        "est": 5.5,
        "lo": 3.7,
        "hi": 7.4,
-       "n": 1687
+       "n": 1687,
+       "reliable": true
       },
       "diff": 0.9,
       "diff_lo": -1.7,
@@ -1705,13 +1753,15 @@
        "est": 6.54,
        "lo": 6.24,
        "hi": 6.84,
-       "n": 1842
+       "n": 1842,
+       "reliable": true
       },
       "men": {
        "est": 6.29,
        "lo": 6.0,
        "hi": 6.59,
-       "n": 1681
+       "n": 1681,
+       "reliable": true
       },
       "diff": 0.24,
       "diff_lo": -0.18,
@@ -1722,13 +1772,15 @@
        "est": 88.7,
        "lo": 86.6,
        "hi": 90.8,
-       "n": 1850
+       "n": 1850,
+       "reliable": true
       },
       "men": {
        "est": 86.6,
        "lo": 84.3,
        "hi": 89.0,
-       "n": 1687
+       "n": 1687,
+       "reliable": true
       },
       "diff": 2.1,
       "diff_lo": -1.1,
@@ -1736,33 +1788,37 @@
      },
      "admitted": {
       "women": {
-       "est": 2.4,
-       "lo": 1.4,
-       "hi": 3.3,
-       "n": 1850
+       "est": 20.2,
+       "lo": 16.2,
+       "hi": 24.3,
+       "n": 1850,
+       "reliable": true
       },
       "men": {
-       "est": 3.6,
-       "lo": 1.9,
-       "hi": 5.2,
-       "n": 1687
+       "est": 26.8,
+       "lo": 23.9,
+       "hi": 29.7,
+       "n": 1687,
+       "reliable": true
       },
-      "diff": -1.2,
-      "diff_lo": -3.1,
-      "diff_hi": 0.7
+      "diff": -6.6,
+      "diff_lo": -11.6,
+      "diff_hi": -1.6
      },
      "seen72": {
       "women": {
        "est": 2.9,
        "lo": 1.8,
        "hi": 4.0,
-       "n": 1726
+       "n": 1726,
+       "reliable": true
       },
       "men": {
        "est": 5.8,
        "lo": 2.9,
        "hi": 8.6,
-       "n": 1572
+       "n": 1572,
+       "reliable": true
       },
       "diff": -2.8,
       "diff_lo": -5.9,
@@ -1775,9 +1831,9 @@
    "disease": "Depression",
    "funding": {
     "funding_m": 700.0,
-    "dalys_k": 2920.2,
-    "female_share": 62.9,
-    "dollars_per_daly": 240.0,
+    "dalys_k": 2967.9,
+    "female_share": 62.7,
+    "dollars_per_daly": 236.0,
     "ratio_to_expected": 2.06,
     "rank_by_ratio": 52,
     "n_ranked": 67,
@@ -1855,11 +1911,11 @@
     "trials": 1407,
     "participants": 315127,
     "female_pct": 58.4,
-    "burden_female_pct": 62.9,
+    "burden_female_pct": 62.7,
     "ratio": 0.93,
-    "rank": 11,
+    "rank": 12,
     "excl_preg_pct": 46.6,
-    "contra_pct": 26.3,
+    "contra_pct": 25.7,
     "max_age_pct": 67.0,
     "outcome_by_sex": 4,
     "sex_specific": false,
@@ -1874,9 +1930,9 @@
    "disease": "Diabetes",
    "funding": {
     "funding_m": 1151.0,
-    "dalys_k": 4446.7,
-    "female_share": 42.7,
-    "dollars_per_daly": 259.0,
+    "dalys_k": 4539.8,
+    "female_share": 42.6,
+    "dollars_per_daly": 254.0,
     "ratio_to_expected": 2.89,
     "rank_by_ratio": 57,
     "n_ranked": 67,
@@ -1993,9 +2049,9 @@
     "trials": 2383,
     "participants": 1040837,
     "female_pct": 46.1,
-    "burden_female_pct": 42.7,
+    "burden_female_pct": 42.6,
     "ratio": 1.08,
-    "rank": 32,
+    "rank": 33,
     "excl_preg_pct": 55.5,
     "contra_pct": 28.8,
     "max_age_pct": 57.4,
@@ -2012,10 +2068,10 @@
    "disease": "Down syndrome",
    "funding": {
     "funding_m": 115.0,
-    "dalys_k": 77.1,
-    "female_share": 46.0,
-    "dollars_per_daly": 1491.0,
-    "ratio_to_expected": 1.32,
+    "dalys_k": 74.8,
+    "female_share": 46.8,
+    "dollars_per_daly": 1537.0,
+    "ratio_to_expected": 1.34,
     "rank_by_ratio": 39,
     "n_ranked": 67,
     "skew": "balanced"
@@ -2026,9 +2082,9 @@
     "trials": 39,
     "participants": 11281,
     "female_pct": 47.2,
-    "burden_female_pct": 46.0,
-    "ratio": 1.03,
-    "rank": 23,
+    "burden_female_pct": 46.8,
+    "ratio": 1.01,
+    "rank": 21,
     "excl_preg_pct": 38.5,
     "contra_pct": 15.4,
     "max_age_pct": 82.1,
@@ -2045,10 +2101,10 @@
    "disease": "Drug use disorders",
    "funding": {
     "funding_m": 1663.0,
-    "dalys_k": 8934.8,
-    "female_share": 35.1,
-    "dollars_per_daly": 186.0,
-    "ratio_to_expected": 3.21,
+    "dalys_k": 8449.2,
+    "female_share": 35.0,
+    "dollars_per_daly": 197.0,
+    "ratio_to_expected": 3.32,
     "rank_by_ratio": 60,
     "n_ranked": 67,
     "skew": "male"
@@ -2059,11 +2115,11 @@
     "trials": 1235,
     "participants": 242831,
     "female_pct": 46.0,
-    "burden_female_pct": 35.1,
+    "burden_female_pct": 35.0,
     "ratio": 1.31,
     "rank": 47,
     "excl_preg_pct": 56.7,
-    "contra_pct": 40.1,
+    "contra_pct": 35.5,
     "max_age_pct": 65.7,
     "outcome_by_sex": 8,
     "sex_specific": false,
@@ -2078,9 +2134,9 @@
    "disease": "Eating disorders",
    "funding": {
     "funding_m": 55.0,
-    "dalys_k": 191.0,
-    "female_share": 71.8,
-    "dollars_per_daly": 288.0,
+    "dalys_k": 196.3,
+    "female_share": 71.4,
+    "dollars_per_daly": 280.0,
     "ratio_to_expected": 0.45,
     "rank_by_ratio": 16,
     "n_ranked": 67,
@@ -2092,9 +2148,9 @@
     "trials": 101,
     "participants": 13301,
     "female_pct": 75.6,
-    "burden_female_pct": 71.8,
-    "ratio": 1.05,
-    "rank": 29,
+    "burden_female_pct": 71.4,
+    "ratio": 1.06,
+    "rank": 32,
     "excl_preg_pct": 63.4,
     "contra_pct": 25.7,
     "max_age_pct": 82.2,
@@ -2108,43 +2164,12 @@
    "ed_label": null
   },
   {
-   "disease": "Endometriosis",
-   "funding": {
-    "funding_m": 28.0,
-    "uncounted": true
-   },
-   "drugs": [
-    {
-     "brand": "Orilissa",
-     "year": 2018,
-     "trial_female_pct": 100.0,
-     "faers_female_pct": 99.7,
-     "gap": -0.3,
-     "rate_ratio": null,
-     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-orilissa",
-     "label_sex": "one-sex drug",
-     "label_no_preg": true,
-     "label_no_lact": true,
-     "label_flat": true
-    }
-   ],
-   "ed": null,
-   "trials": {
-    "trials": 46,
-    "participants": 5676,
-    "female_pct": 99.6,
-    "sex_specific": true,
-    "uncounted": true
-   },
-   "ed_label": null
-  },
-  {
    "disease": "Epilepsy",
    "funding": {
     "funding_m": 230.0,
-    "dalys_k": 442.1,
-    "female_share": 45.7,
-    "dollars_per_daly": 520.0,
+    "dalys_k": 446.9,
+    "female_share": 46.7,
+    "dollars_per_daly": 515.0,
     "ratio_to_expected": 1.37,
     "rank_by_ratio": 40,
     "n_ranked": 67,
@@ -2222,9 +2247,9 @@
     "trials": 285,
     "participants": 32859,
     "female_pct": 53.1,
-    "burden_female_pct": 45.7,
-    "ratio": 1.16,
-    "rank": 40,
+    "burden_female_pct": 46.7,
+    "ratio": 1.14,
+    "rank": 37,
     "excl_preg_pct": 49.1,
     "contra_pct": 36.8,
     "max_age_pct": 74.4,
@@ -2241,11 +2266,11 @@
    "disease": "Esophageal cancer",
    "funding": {
     "funding_m": 59.0,
-    "dalys_k": 412.5,
-    "female_share": 18.9,
-    "dollars_per_daly": 143.0,
+    "dalys_k": 435.6,
+    "female_share": 19.3,
+    "dollars_per_daly": 135.0,
     "ratio_to_expected": 0.36,
-    "rank_by_ratio": 13,
+    "rank_by_ratio": 12,
     "n_ranked": 67,
     "skew": "male"
    },
@@ -2321,8 +2346,8 @@
     "trials": 186,
     "participants": 17850,
     "female_pct": 33.6,
-    "burden_female_pct": 18.9,
-    "ratio": 1.78,
+    "burden_female_pct": 19.3,
+    "ratio": 1.74,
     "rank": 52,
     "excl_preg_pct": 65.6,
     "contra_pct": 61.3,
@@ -2392,8 +2417,8 @@
    "disease": "Gallbladder disease",
    "funding": {
     "funding_m": 17.0,
-    "dalys_k": 385.8,
-    "female_share": 56.8,
+    "dalys_k": 390.8,
+    "female_share": 57.1,
     "dollars_per_daly": 44.0,
     "ratio_to_expected": 0.11,
     "rank_by_ratio": 3,
@@ -2463,13 +2488,15 @@
        "est": 62.9,
        "lo": 60.3,
        "hi": 65.6,
-       "n": 2756
+       "n": 2756,
+       "reliable": true
       },
       "men": {
        "est": 58.1,
        "lo": 53.9,
        "hi": 62.4,
-       "n": 1615
+       "n": 1615,
+       "reliable": true
       },
       "diff": 4.8,
       "diff_lo": -0.2,
@@ -2480,13 +2507,15 @@
        "est": 8.3,
        "lo": 6.3,
        "hi": 10.4,
-       "n": 2837
+       "n": 2837,
+       "reliable": true
       },
       "men": {
        "est": 9.0,
        "lo": 6.5,
        "hi": 11.5,
-       "n": 1642
+       "n": 1642,
+       "reliable": true
       },
       "diff": -0.7,
       "diff_lo": -4.0,
@@ -2497,13 +2526,15 @@
        "est": 12.1,
        "lo": 10.5,
        "hi": 13.8,
-       "n": 3757
+       "n": 3757,
+       "reliable": true
       },
       "men": {
        "est": 16.8,
        "lo": 13.7,
        "hi": 19.8,
-       "n": 2182
+       "n": 2182,
+       "reliable": true
       },
       "diff": -4.6,
       "diff_lo": -8.1,
@@ -2514,13 +2545,15 @@
        "est": 41.2,
        "lo": 35.9,
        "hi": 46.5,
-       "n": 3389
+       "n": 3389,
+       "reliable": true
       },
       "men": {
        "est": 37.8,
        "lo": 32.8,
        "hi": 42.7,
-       "n": 1916
+       "n": 1916,
+       "reliable": true
       },
       "diff": 3.5,
       "diff_lo": -3.8,
@@ -2531,13 +2564,15 @@
        "est": 51.5,
        "lo": 48.3,
        "hi": 54.6,
-       "n": 3872
+       "n": 3872,
+       "reliable": true
       },
       "men": {
        "est": 50.1,
        "lo": 46.6,
        "hi": 53.6,
-       "n": 2251
+       "n": 2251,
+       "reliable": true
       },
       "diff": 1.4,
       "diff_lo": -3.3,
@@ -2548,13 +2583,15 @@
        "est": 32.8,
        "lo": 30.1,
        "hi": 35.5,
-       "n": 3872
+       "n": 3872,
+       "reliable": true
       },
       "men": {
        "est": 35.5,
        "lo": 32.0,
        "hi": 38.9,
-       "n": 2251
+       "n": 2251,
+       "reliable": true
       },
       "diff": -2.6,
       "diff_lo": -7.0,
@@ -2565,13 +2602,15 @@
        "est": 40.8,
        "lo": 37.1,
        "hi": 44.5,
-       "n": 1726
+       "n": 1726,
+       "reliable": true
       },
       "men": {
        "est": 48.4,
        "lo": 43.3,
        "hi": 53.5,
-       "n": 936
+       "n": 936,
+       "reliable": true
       },
       "diff": -7.6,
       "diff_lo": -13.9,
@@ -2579,20 +2618,22 @@
      },
      "admitted": {
       "women": {
-       "est": 1.9,
-       "lo": 0.9,
-       "hi": 2.8,
-       "n": 3872
+       "est": 17.2,
+       "lo": 15.5,
+       "hi": 18.9,
+       "n": 3872,
+       "reliable": true
       },
       "men": {
-       "est": 1.5,
-       "lo": 0.8,
-       "hi": 2.3,
-       "n": 2251
+       "est": 20.8,
+       "lo": 18.1,
+       "hi": 23.5,
+       "n": 2251,
+       "reliable": true
       },
-      "diff": 0.3,
-      "diff_lo": -0.9,
-      "diff_hi": 1.6
+      "diff": -3.6,
+      "diff_lo": -6.8,
+      "diff_hi": -0.4
      }
     }
    },
@@ -2600,7 +2641,7 @@
     "trials": 62,
     "participants": 6770,
     "female_pct": 54.0,
-    "burden_female_pct": 56.8,
+    "burden_female_pct": 57.1,
     "ratio": 0.95,
     "rank": 14,
     "excl_preg_pct": 80.6,
@@ -2622,13 +2663,15 @@
        "est": 47.0,
        "lo": 43.8,
        "hi": 50.2,
-       "n": 3374
+       "n": 3374,
+       "reliable": true
       },
       "men": {
        "est": 45.3,
        "lo": 42.1,
        "hi": 48.5,
-       "n": 1921
+       "n": 1921,
+       "reliable": true
       },
       "diff": 1.8,
       "diff_lo": -2.8,
@@ -2639,13 +2682,15 @@
        "est": 2.0,
        "lo": 1.0,
        "hi": 3.1,
-       "n": 3374
+       "n": 3374,
+       "reliable": true
       },
       "men": {
        "est": 1.2,
        "lo": 0.6,
        "hi": 1.9,
-       "n": 1921
+       "n": 1921,
+       "reliable": true
       },
       "diff": 0.8,
       "diff_lo": -0.4,
@@ -2656,13 +2701,15 @@
        "est": 5.93,
        "lo": 5.73,
        "hi": 6.14,
-       "n": 3358
+       "n": 3358,
+       "reliable": true
       },
       "men": {
        "est": 5.46,
        "lo": 5.14,
        "hi": 5.78,
-       "n": 1907
+       "n": 1907,
+       "reliable": true
       },
       "diff": 0.47,
       "diff_lo": 0.09,
@@ -2673,13 +2720,15 @@
        "est": 72.2,
        "lo": 69.9,
        "hi": 74.4,
-       "n": 3374
+       "n": 3374,
+       "reliable": true
       },
       "men": {
        "est": 73.0,
        "lo": 70.0,
        "hi": 75.9,
-       "n": 1921
+       "n": 1921,
+       "reliable": true
       },
       "diff": -0.8,
       "diff_lo": -4.5,
@@ -2687,33 +2736,37 @@
      },
      "admitted": {
       "women": {
-       "est": 1.9,
-       "lo": 0.8,
-       "hi": 3.0,
-       "n": 3374
+       "est": 17.6,
+       "lo": 15.6,
+       "hi": 19.6,
+       "n": 3374,
+       "reliable": true
       },
       "men": {
-       "est": 1.5,
-       "lo": 0.7,
-       "hi": 2.3,
-       "n": 1921
+       "est": 21.0,
+       "lo": 17.8,
+       "hi": 24.1,
+       "n": 1921,
+       "reliable": true
       },
-      "diff": 0.4,
-      "diff_lo": -0.9,
-      "diff_hi": 1.8
+      "diff": -3.3,
+      "diff_lo": -7.0,
+      "diff_hi": 0.4
      },
      "seen72": {
       "women": {
        "est": 4.0,
        "lo": 2.8,
        "hi": 5.3,
-       "n": 3166
+       "n": 3166,
+       "reliable": true
       },
       "men": {
        "est": 5.0,
        "lo": 3.4,
        "hi": 6.6,
-       "n": 1791
+       "n": 1791,
+       "reliable": true
       },
       "diff": -1.0,
       "diff_lo": -3.0,
@@ -2726,10 +2779,10 @@
    "disease": "Gynaecological diseases",
    "funding": {
     "funding_m": 58.0,
-    "dalys_k": 896.6,
+    "dalys_k": 962.3,
     "female_share": 100.0,
-    "dollars_per_daly": 65.0,
-    "ratio_to_expected": 0.27,
+    "dollars_per_daly": 60.0,
+    "ratio_to_expected": 0.26,
     "rank_by_ratio": 9,
     "n_ranked": 67,
     "skew": "female"
@@ -2773,10 +2826,10 @@
    "disease": "HIV/AIDS",
    "funding": {
     "funding_m": 3293.0,
-    "dalys_k": 312.7,
-    "female_share": 25.6,
-    "dollars_per_daly": 10531.0,
-    "ratio_to_expected": 22.41,
+    "dalys_k": 319.6,
+    "female_share": 25.8,
+    "dollars_per_daly": 10304.0,
+    "ratio_to_expected": 22.31,
     "rank_by_ratio": 67,
     "n_ranked": 67,
     "skew": "male"
@@ -2879,9 +2932,9 @@
     "trials": 797,
     "participants": 159352,
     "female_pct": 31.3,
-    "burden_female_pct": 25.6,
-    "ratio": 1.22,
-    "rank": 43,
+    "burden_female_pct": 25.8,
+    "ratio": 1.21,
+    "rank": 45,
     "excl_preg_pct": 64.5,
     "contra_pct": 46.5,
     "max_age_pct": 43.5,
@@ -2898,55 +2951,15 @@
    "disease": "Hearing loss",
    "funding": {
     "funding_m": 191.0,
-    "dalys_k": 2348.0,
+    "dalys_k": 2462.5,
     "female_share": 46.0,
-    "dollars_per_daly": 81.0,
-    "ratio_to_expected": 0.61,
-    "rank_by_ratio": 22,
+    "dollars_per_daly": 78.0,
+    "ratio_to_expected": 0.6,
+    "rank_by_ratio": 21,
     "n_ranked": 67,
     "skew": "balanced"
    },
-   "drugs": [
-    {
-     "brand": "Caplyta",
-     "year": 2019,
-     "trial_female_pct": 24.3,
-     "faers_female_pct": 69.1,
-     "gap": 44.7,
-     "rate_ratio": null,
-     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-caplyta",
-     "label_sex": "no difference asserted",
-     "label_no_preg": true,
-     "label_no_lact": true,
-     "label_flat": true
-    },
-    {
-     "brand": "Vraylar",
-     "year": 2015,
-     "trial_female_pct": 28.5,
-     "faers_female_pct": 67.4,
-     "gap": 38.9,
-     "rate_ratio": null,
-     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-vraylar-treatment-schizophrenia",
-     "label_sex": "no difference asserted",
-     "label_no_preg": true,
-     "label_no_lact": false,
-     "label_flat": true
-    },
-    {
-     "brand": "Aristada",
-     "year": 2015,
-     "trial_female_pct": 32.1,
-     "faers_female_pct": 48.5,
-     "gap": 16.4,
-     "rate_ratio": null,
-     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-aristada",
-     "label_sex": "no difference asserted",
-     "label_no_preg": true,
-     "label_no_lact": false,
-     "label_flat": true
-    }
-   ],
+   "drugs": [],
    "ed": null,
    "trials": {
     "trials": 168,
@@ -2954,7 +2967,7 @@
     "female_pct": 43.1,
     "burden_female_pct": 46.0,
     "ratio": 0.94,
-    "rank": 12,
+    "rank": 13,
     "excl_preg_pct": 17.3,
     "contra_pct": 7.7,
     "max_age_pct": 56.5,
@@ -2971,9 +2984,9 @@
    "disease": "Hepatitis B",
    "funding": {
     "funding_m": 136.0,
-    "dalys_k": 157.1,
-    "female_share": 32.3,
-    "dollars_per_daly": 866.0,
+    "dalys_k": 158.3,
+    "female_share": 31.8,
+    "dollars_per_daly": 859.0,
     "ratio_to_expected": 1.2,
     "rank_by_ratio": 33,
     "n_ranked": 67,
@@ -2985,9 +2998,9 @@
     "trials": 91,
     "participants": 33216,
     "female_pct": 44.7,
-    "burden_female_pct": 32.3,
-    "ratio": 1.38,
-    "rank": 49,
+    "burden_female_pct": 31.8,
+    "ratio": 1.41,
+    "rank": 51,
     "excl_preg_pct": 72.5,
     "contra_pct": 49.5,
     "max_age_pct": 63.7,
@@ -3004,11 +3017,11 @@
    "disease": "Hepatitis C",
    "funding": {
     "funding_m": 84.0,
-    "dalys_k": 1164.2,
-    "female_share": 36.6,
-    "dollars_per_daly": 72.0,
-    "ratio_to_expected": 0.35,
-    "rank_by_ratio": 12,
+    "dalys_k": 1073.4,
+    "female_share": 37.5,
+    "dollars_per_daly": 78.0,
+    "ratio_to_expected": 0.36,
+    "rank_by_ratio": 13,
     "n_ranked": 67,
     "skew": "male"
    },
@@ -3071,11 +3084,11 @@
     "trials": 335,
     "participants": 68282,
     "female_pct": 36.3,
-    "burden_female_pct": 36.6,
-    "ratio": 0.99,
+    "burden_female_pct": 37.5,
+    "ratio": 0.97,
     "rank": 17,
     "excl_preg_pct": 57.3,
-    "contra_pct": 49.9,
+    "contra_pct": 49.6,
     "max_age_pct": 39.1,
     "outcome_by_sex": 0,
     "sex_specific": false,
@@ -3090,50 +3103,23 @@
    "disease": "Hodgkin lymphoma",
    "funding": {
     "funding_m": 20.0,
-    "dalys_k": 31.0,
-    "female_share": 39.3,
-    "dollars_per_daly": 645.0,
-    "ratio_to_expected": 0.32,
+    "dalys_k": 33.5,
+    "female_share": 37.7,
+    "dollars_per_daly": 598.0,
+    "ratio_to_expected": 0.31,
     "rank_by_ratio": 11,
     "n_ranked": 67,
     "skew": "male"
    },
-   "drugs": [
-    {
-     "brand": "Calquence",
-     "year": 2017,
-     "trial_female_pct": 20.2,
-     "faers_female_pct": 37.4,
-     "gap": 17.2,
-     "rate_ratio": null,
-     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-calquence",
-     "label_sex": "no difference asserted",
-     "label_no_preg": true,
-     "label_no_lact": true,
-     "label_flat": false
-    },
-    {
-     "brand": "Brukinsa",
-     "year": 2019,
-     "trial_female_pct": 24.6,
-     "faers_female_pct": null,
-     "gap": null,
-     "rate_ratio": null,
-     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-brukinsa",
-     "label_sex": null,
-     "label_no_preg": null,
-     "label_no_lact": null,
-     "label_flat": null
-    }
-   ],
+   "drugs": [],
    "ed": null,
    "trials": {
     "trials": 341,
     "participants": 26633,
     "female_pct": 44.9,
-    "burden_female_pct": 39.3,
-    "ratio": 1.14,
-    "rank": 37,
+    "burden_female_pct": 37.7,
+    "ratio": 1.19,
+    "rank": 41,
     "excl_preg_pct": 78.9,
     "contra_pct": 61.9,
     "max_age_pct": 44.0,
@@ -3185,10 +3171,10 @@
    "disease": "Infertility",
    "funding": {
     "funding_m": 221.0,
-    "dalys_k": 19.0,
-    "female_share": 42.8,
-    "dollars_per_daly": 11636.0,
-    "ratio_to_expected": 4.31,
+    "dalys_k": 19.9,
+    "female_share": 45.1,
+    "dollars_per_daly": 11091.0,
+    "ratio_to_expected": 4.22,
     "rank_by_ratio": 61,
     "n_ranked": 67,
     "skew": "balanced"
@@ -3226,7 +3212,7 @@
     "trials": 71,
     "participants": 11110,
     "female_pct": 90.0,
-    "burden_female_pct": 42.8,
+    "burden_female_pct": 45.1,
     "ratio": null,
     "rank": null,
     "excl_preg_pct": 29.6,
@@ -3245,11 +3231,11 @@
    "disease": "Inflammatory bowel disease",
    "funding": {
     "funding_m": 170.0,
-    "dalys_k": 155.0,
-    "female_share": 51.2,
-    "dollars_per_daly": 1097.0,
+    "dalys_k": 155.7,
+    "female_share": 51.3,
+    "dollars_per_daly": 1092.0,
     "ratio_to_expected": 1.51,
-    "rank_by_ratio": 44,
+    "rank_by_ratio": 43,
     "n_ranked": 67,
     "skew": "balanced"
    },
@@ -3277,13 +3263,15 @@
        "est": 62.9,
        "lo": 60.3,
        "hi": 65.6,
-       "n": 2756
+       "n": 2756,
+       "reliable": true
       },
       "men": {
        "est": 58.1,
        "lo": 53.9,
        "hi": 62.4,
-       "n": 1615
+       "n": 1615,
+       "reliable": true
       },
       "diff": 4.8,
       "diff_lo": -0.2,
@@ -3294,13 +3282,15 @@
        "est": 8.3,
        "lo": 6.3,
        "hi": 10.4,
-       "n": 2837
+       "n": 2837,
+       "reliable": true
       },
       "men": {
        "est": 9.0,
        "lo": 6.5,
        "hi": 11.5,
-       "n": 1642
+       "n": 1642,
+       "reliable": true
       },
       "diff": -0.7,
       "diff_lo": -4.0,
@@ -3311,13 +3301,15 @@
        "est": 12.1,
        "lo": 10.5,
        "hi": 13.8,
-       "n": 3757
+       "n": 3757,
+       "reliable": true
       },
       "men": {
        "est": 16.8,
        "lo": 13.7,
        "hi": 19.8,
-       "n": 2182
+       "n": 2182,
+       "reliable": true
       },
       "diff": -4.6,
       "diff_lo": -8.1,
@@ -3328,13 +3320,15 @@
        "est": 41.2,
        "lo": 35.9,
        "hi": 46.5,
-       "n": 3389
+       "n": 3389,
+       "reliable": true
       },
       "men": {
        "est": 37.8,
        "lo": 32.8,
        "hi": 42.7,
-       "n": 1916
+       "n": 1916,
+       "reliable": true
       },
       "diff": 3.5,
       "diff_lo": -3.8,
@@ -3345,13 +3339,15 @@
        "est": 51.5,
        "lo": 48.3,
        "hi": 54.6,
-       "n": 3872
+       "n": 3872,
+       "reliable": true
       },
       "men": {
        "est": 50.1,
        "lo": 46.6,
        "hi": 53.6,
-       "n": 2251
+       "n": 2251,
+       "reliable": true
       },
       "diff": 1.4,
       "diff_lo": -3.3,
@@ -3362,13 +3358,15 @@
        "est": 32.8,
        "lo": 30.1,
        "hi": 35.5,
-       "n": 3872
+       "n": 3872,
+       "reliable": true
       },
       "men": {
        "est": 35.5,
        "lo": 32.0,
        "hi": 38.9,
-       "n": 2251
+       "n": 2251,
+       "reliable": true
       },
       "diff": -2.6,
       "diff_lo": -7.0,
@@ -3379,13 +3377,15 @@
        "est": 40.8,
        "lo": 37.1,
        "hi": 44.5,
-       "n": 1726
+       "n": 1726,
+       "reliable": true
       },
       "men": {
        "est": 48.4,
        "lo": 43.3,
        "hi": 53.5,
-       "n": 936
+       "n": 936,
+       "reliable": true
       },
       "diff": -7.6,
       "diff_lo": -13.9,
@@ -3393,20 +3393,22 @@
      },
      "admitted": {
       "women": {
-       "est": 1.9,
-       "lo": 0.9,
-       "hi": 2.8,
-       "n": 3872
+       "est": 17.2,
+       "lo": 15.5,
+       "hi": 18.9,
+       "n": 3872,
+       "reliable": true
       },
       "men": {
-       "est": 1.5,
-       "lo": 0.8,
-       "hi": 2.3,
-       "n": 2251
+       "est": 20.8,
+       "lo": 18.1,
+       "hi": 23.5,
+       "n": 2251,
+       "reliable": true
       },
-      "diff": 0.3,
-      "diff_lo": -0.9,
-      "diff_hi": 1.6
+      "diff": -3.6,
+      "diff_lo": -6.8,
+      "diff_hi": -0.4
      }
     }
    },
@@ -3414,8 +3416,8 @@
     "trials": 382,
     "participants": 86442,
     "female_pct": 46.9,
-    "burden_female_pct": 51.2,
-    "ratio": 0.92,
+    "burden_female_pct": 51.3,
+    "ratio": 0.91,
     "rank": 9,
     "excl_preg_pct": 53.7,
     "contra_pct": 34.6,
@@ -3436,13 +3438,15 @@
        "est": 47.0,
        "lo": 43.8,
        "hi": 50.2,
-       "n": 3374
+       "n": 3374,
+       "reliable": true
       },
       "men": {
        "est": 45.3,
        "lo": 42.1,
        "hi": 48.5,
-       "n": 1921
+       "n": 1921,
+       "reliable": true
       },
       "diff": 1.8,
       "diff_lo": -2.8,
@@ -3453,13 +3457,15 @@
        "est": 2.0,
        "lo": 1.0,
        "hi": 3.1,
-       "n": 3374
+       "n": 3374,
+       "reliable": true
       },
       "men": {
        "est": 1.2,
        "lo": 0.6,
        "hi": 1.9,
-       "n": 1921
+       "n": 1921,
+       "reliable": true
       },
       "diff": 0.8,
       "diff_lo": -0.4,
@@ -3470,13 +3476,15 @@
        "est": 5.93,
        "lo": 5.73,
        "hi": 6.14,
-       "n": 3358
+       "n": 3358,
+       "reliable": true
       },
       "men": {
        "est": 5.46,
        "lo": 5.14,
        "hi": 5.78,
-       "n": 1907
+       "n": 1907,
+       "reliable": true
       },
       "diff": 0.47,
       "diff_lo": 0.09,
@@ -3487,13 +3495,15 @@
        "est": 72.2,
        "lo": 69.9,
        "hi": 74.4,
-       "n": 3374
+       "n": 3374,
+       "reliable": true
       },
       "men": {
        "est": 73.0,
        "lo": 70.0,
        "hi": 75.9,
-       "n": 1921
+       "n": 1921,
+       "reliable": true
       },
       "diff": -0.8,
       "diff_lo": -4.5,
@@ -3501,33 +3511,37 @@
      },
      "admitted": {
       "women": {
-       "est": 1.9,
-       "lo": 0.8,
-       "hi": 3.0,
-       "n": 3374
+       "est": 17.6,
+       "lo": 15.6,
+       "hi": 19.6,
+       "n": 3374,
+       "reliable": true
       },
       "men": {
-       "est": 1.5,
-       "lo": 0.7,
-       "hi": 2.3,
-       "n": 1921
+       "est": 21.0,
+       "lo": 17.8,
+       "hi": 24.1,
+       "n": 1921,
+       "reliable": true
       },
-      "diff": 0.4,
-      "diff_lo": -0.9,
-      "diff_hi": 1.8
+      "diff": -3.3,
+      "diff_lo": -7.0,
+      "diff_hi": 0.4
      },
      "seen72": {
       "women": {
        "est": 4.0,
        "lo": 2.8,
        "hi": 5.3,
-       "n": 3166
+       "n": 3166,
+       "reliable": true
       },
       "men": {
        "est": 5.0,
        "lo": 3.4,
        "hi": 6.6,
-       "n": 1791
+       "n": 1791,
+       "reliable": true
       },
       "diff": -1.0,
       "diff_lo": -3.0,
@@ -3540,8 +3554,8 @@
    "disease": "Interpersonal violence",
    "funding": {
     "funding_m": 12.0,
-    "dalys_k": 1467.0,
-    "female_share": 21.0,
+    "dalys_k": 1417.6,
+    "female_share": 21.7,
     "dollars_per_daly": 8.0,
     "ratio_to_expected": 0.05,
     "rank_by_ratio": 1,
@@ -3575,10 +3589,10 @@
    "disease": "Kidney disease",
    "funding": {
     "funding_m": 717.0,
-    "dalys_k": 2801.6,
-    "female_share": 46.4,
-    "dollars_per_daly": 256.0,
-    "ratio_to_expected": 2.14,
+    "dalys_k": 2766.7,
+    "female_share": 46.9,
+    "dollars_per_daly": 259.0,
+    "ratio_to_expected": 2.17,
     "rank_by_ratio": 53,
     "n_ranked": 67,
     "skew": "balanced"
@@ -3733,8 +3747,8 @@
     "trials": 562,
     "participants": 259588,
     "female_pct": 42.6,
-    "burden_female_pct": 46.4,
-    "ratio": 0.92,
+    "burden_female_pct": 46.9,
+    "ratio": 0.91,
     "rank": 10,
     "excl_preg_pct": 0.0,
     "contra_pct": 32.2,
@@ -3752,10 +3766,10 @@
    "disease": "Liver cancer",
    "funding": {
     "funding_m": 183.0,
-    "dalys_k": 656.2,
-    "female_share": 32.7,
-    "dollars_per_daly": 279.0,
-    "ratio_to_expected": 0.94,
+    "dalys_k": 701.8,
+    "female_share": 33.1,
+    "dollars_per_daly": 261.0,
+    "ratio_to_expected": 0.92,
     "rank_by_ratio": 28,
     "n_ranked": 67,
     "skew": "male"
@@ -3793,11 +3807,11 @@
     "trials": 324,
     "participants": 37194,
     "female_pct": 28.2,
-    "burden_female_pct": 32.7,
-    "ratio": 0.86,
-    "rank": 6,
+    "burden_female_pct": 33.1,
+    "ratio": 0.85,
+    "rank": 4,
     "excl_preg_pct": 67.3,
-    "contra_pct": 53.4,
+    "contra_pct": 53.1,
     "max_age_pct": 8.6,
     "outcome_by_sex": 0,
     "sex_specific": false,
@@ -3847,11 +3861,11 @@
    "disease": "Lung cancer",
    "funding": {
     "funding_m": 492.0,
-    "dalys_k": 2858.0,
-    "female_share": 46.2,
-    "dollars_per_daly": 172.0,
-    "ratio_to_expected": 1.46,
-    "rank_by_ratio": 41,
+    "dalys_k": 2881.8,
+    "female_share": 46.7,
+    "dollars_per_daly": 171.0,
+    "ratio_to_expected": 1.47,
+    "rank_by_ratio": 42,
     "n_ranked": 67,
     "skew": "balanced"
    },
@@ -4000,19 +4014,6 @@
      "label_flat": true
     },
     {
-     "brand": "Rozlytrek",
-     "year": 2019,
-     "trial_female_pct": 56.2,
-     "faers_female_pct": 56.1,
-     "gap": -0.1,
-     "rate_ratio": null,
-     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-rozlytrek-0",
-     "label_sex": "no difference asserted",
-     "label_no_preg": true,
-     "label_no_lact": true,
-     "label_flat": false
-    },
-    {
      "brand": "Alunbrig",
      "year": 2017,
      "trial_female_pct": 56.8,
@@ -4148,11 +4149,11 @@
     "trials": 1497,
     "participants": 461522,
     "female_pct": 45.9,
-    "burden_female_pct": 46.2,
-    "ratio": 0.99,
+    "burden_female_pct": 46.7,
+    "ratio": 0.98,
     "rank": 18,
     "excl_preg_pct": 64.9,
-    "contra_pct": 57.4,
+    "contra_pct": 57.2,
     "max_age_pct": 6.9,
     "outcome_by_sex": 2,
     "sex_specific": false,
@@ -4233,13 +4234,13 @@
    "disease": "Lymphoma",
    "funding": {
     "funding_m": 287.0,
-    "dalys_k": 504.8,
-    "female_share": 40.1,
-    "dollars_per_daly": 569.0,
-    "ratio_to_expected": 1.63,
-    "rank_by_ratio": 49,
+    "dalys_k": 530.5,
+    "female_share": 39.6,
+    "dollars_per_daly": 541.0,
+    "ratio_to_expected": 1.61,
+    "rank_by_ratio": 48,
     "n_ranked": 67,
-    "skew": "balanced"
+    "skew": "male"
    },
    "drugs": [
     {
@@ -4360,19 +4361,6 @@
      "label_flat": null
     },
     {
-     "brand": "Ukoniq",
-     "year": 2021,
-     "trial_female_pct": 43.4,
-     "faers_female_pct": null,
-     "gap": null,
-     "rate_ratio": null,
-     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-ukoniq-0",
-     "label_sex": null,
-     "label_no_preg": null,
-     "label_no_lact": null,
-     "label_flat": null
-    },
-    {
      "brand": "Monjuvi",
      "year": 2020,
      "trial_female_pct": 45.7,
@@ -4456,11 +4444,11 @@
     "trials": 1492,
     "participants": 136965,
     "female_pct": 44.4,
-    "burden_female_pct": 40.1,
-    "ratio": 1.11,
-    "rank": 35,
+    "burden_female_pct": 39.6,
+    "ratio": 1.12,
+    "rank": 36,
     "excl_preg_pct": 74.3,
-    "contra_pct": 61.6,
+    "contra_pct": 61.5,
     "max_age_pct": 29.0,
     "outcome_by_sex": 0,
     "sex_specific": false,
@@ -4510,10 +4498,10 @@
    "disease": "Maternal conditions",
    "funding": {
     "funding_m": 382.0,
-    "dalys_k": 67.8,
+    "dalys_k": 56.9,
     "female_share": 100.0,
-    "dollars_per_daly": 5636.0,
-    "ratio_to_expected": 4.62,
+    "dollars_per_daly": 6710.0,
+    "ratio_to_expected": 4.93,
     "rank_by_ratio": 62,
     "n_ranked": 67,
     "skew": "female"
@@ -4581,7 +4569,7 @@
     "ratio": null,
     "rank": null,
     "excl_preg_pct": 0.0,
-    "contra_pct": 4.6,
+    "contra_pct": 4.1,
     "max_age_pct": 58.0,
     "outcome_by_sex": 0,
     "sex_specific": true,
@@ -4596,7 +4584,7 @@
    "disease": "Migraine",
    "funding": {
     "funding_m": 41.0,
-    "dalys_k": 2043.6,
+    "dalys_k": 2057.9,
     "female_share": 73.2,
     "dollars_per_daly": 20.0,
     "ratio_to_expected": 0.14,
@@ -4719,13 +4707,15 @@
        "est": 61.5,
        "lo": 57.4,
        "hi": 65.5,
-       "n": 994
+       "n": 994,
+       "reliable": true
       },
       "men": {
        "est": 49.8,
        "lo": 42.2,
        "hi": 57.4,
-       "n": 479
+       "n": 479,
+       "reliable": true
       },
       "diff": 11.7,
       "diff_lo": 3.0,
@@ -4736,13 +4726,15 @@
        "est": 11.3,
        "lo": 8.7,
        "hi": 13.9,
-       "n": 1037
+       "n": 1037,
+       "reliable": true
       },
       "men": {
        "est": 8.3,
        "lo": 5.3,
        "hi": 11.4,
-       "n": 500
+       "n": 500,
+       "reliable": true
       },
       "diff": 3.0,
       "diff_lo": -1.0,
@@ -4753,13 +4745,15 @@
        "est": 10.5,
        "lo": 8.3,
        "hi": 12.7,
-       "n": 1348
+       "n": 1348,
+       "reliable": true
       },
       "men": {
        "est": 14.1,
        "lo": 10.3,
        "hi": 18.0,
-       "n": 681
+       "n": 681,
+       "reliable": true
       },
       "diff": -3.7,
       "diff_lo": -8.1,
@@ -4770,13 +4764,15 @@
        "est": 47.9,
        "lo": 32.6,
        "hi": 63.1,
-       "n": 1213
+       "n": 1213,
+       "reliable": true
       },
       "men": {
        "est": 44.2,
        "lo": 36.4,
        "hi": 52.1,
-       "n": 598
+       "n": 598,
+       "reliable": true
       },
       "diff": 3.6,
       "diff_lo": -13.5,
@@ -4787,13 +4783,15 @@
        "est": 59.1,
        "lo": 55.1,
        "hi": 63.1,
-       "n": 1391
+       "n": 1391,
+       "reliable": true
       },
       "men": {
        "est": 51.8,
        "lo": 46.6,
        "hi": 57.0,
-       "n": 705
+       "n": 705,
+       "reliable": true
       },
       "diff": 7.3,
       "diff_lo": 0.7,
@@ -4804,13 +4802,15 @@
        "est": 12.4,
        "lo": 9.3,
        "hi": 15.4,
-       "n": 1391
+       "n": 1391,
+       "reliable": true
       },
       "men": {
        "est": 12.2,
        "lo": 8.7,
        "hi": 15.7,
-       "n": 705
+       "n": 705,
+       "reliable": true
       },
       "diff": 0.1,
       "diff_lo": -4.5,
@@ -4821,13 +4821,15 @@
        "est": 16.8,
        "lo": 12.1,
        "hi": 21.6,
-       "n": 633
+       "n": 633,
+       "reliable": true
       },
       "men": {
        "est": 16.2,
        "lo": 10.4,
        "hi": 22.0,
-       "n": 258
+       "n": 258,
+       "reliable": true
       },
       "diff": 0.6,
       "diff_lo": -6.9,
@@ -4835,20 +4837,22 @@
      },
      "admitted": {
       "women": {
-       "est": 0.8,
-       "lo": 0.2,
-       "hi": 1.3,
-       "n": 1391
+       "est": 4.9,
+       "lo": 3.5,
+       "hi": 6.3,
+       "n": 1391,
+       "reliable": true
       },
       "men": {
-       "est": 1.1,
-       "lo": 0.1,
-       "hi": 2.0,
-       "n": 705
+       "est": 9.5,
+       "lo": 6.6,
+       "hi": 12.5,
+       "n": 705,
+       "reliable": true
       },
-      "diff": -0.3,
-      "diff_lo": -1.4,
-      "diff_hi": 0.8
+      "diff": -4.6,
+      "diff_lo": -7.9,
+      "diff_hi": -1.3
      }
     }
    },
@@ -4878,13 +4882,15 @@
        "est": 45.7,
        "lo": 41.3,
        "hi": 50.2,
-       "n": 1023
+       "n": 1023,
+       "reliable": true
       },
       "men": {
        "est": 45.7,
        "lo": 38.5,
        "hi": 52.9,
-       "n": 483
+       "n": 483,
+       "reliable": true
       },
       "diff": 0.1,
       "diff_lo": -8.4,
@@ -4895,13 +4901,15 @@
        "est": 4.1,
        "lo": 2.6,
        "hi": 5.7,
-       "n": 1023
+       "n": 1023,
+       "reliable": true
       },
       "men": {
        "est": 5.2,
        "lo": 2.6,
        "hi": 7.8,
-       "n": 483
+       "n": 483,
+       "reliable": true
       },
       "diff": -1.1,
       "diff_lo": -4.1,
@@ -4912,13 +4920,15 @@
        "est": 3.46,
        "lo": 3.19,
        "hi": 3.74,
-       "n": 1012
+       "n": 1012,
+       "reliable": true
       },
       "men": {
        "est": 3.42,
        "lo": 2.98,
        "hi": 3.85,
-       "n": 475
+       "n": 475,
+       "reliable": true
       },
       "diff": 0.05,
       "diff_lo": -0.47,
@@ -4929,13 +4939,15 @@
        "est": 47.7,
        "lo": 42.6,
        "hi": 52.8,
-       "n": 1023
+       "n": 1023,
+       "reliable": true
       },
       "men": {
        "est": 54.7,
        "lo": 48.4,
        "hi": 61.0,
-       "n": 483
+       "n": 483,
+       "reliable": true
       },
       "diff": -7.0,
       "diff_lo": -15.1,
@@ -4943,33 +4955,37 @@
      },
      "admitted": {
       "women": {
-       "est": 0.7,
-       "lo": 0.2,
-       "hi": 1.2,
-       "n": 1023
+       "est": 4.9,
+       "lo": 3.0,
+       "hi": 6.7,
+       "n": 1023,
+       "reliable": true
       },
       "men": {
-       "est": 1.0,
-       "lo": -0.1,
-       "hi": 2.2,
-       "n": 483
+       "est": 10.0,
+       "lo": 6.4,
+       "hi": 13.7,
+       "n": 483,
+       "reliable": true
       },
-      "diff": -0.4,
-      "diff_lo": -1.6,
-      "diff_hi": 0.9
+      "diff": -5.2,
+      "diff_lo": -9.3,
+      "diff_hi": -1.0
      },
      "seen72": {
       "women": {
        "est": 3.2,
        "lo": 1.4,
        "hi": 5.1,
-       "n": 946
+       "n": 946,
+       "reliable": true
       },
       "men": {
        "est": 4.4,
        "lo": 1.2,
        "hi": 7.6,
-       "n": 456
+       "n": 456,
+       "reliable": false
       },
       "diff": -1.1,
       "diff_lo": -4.8,
@@ -4982,11 +4998,11 @@
    "disease": "Multiple sclerosis",
    "funding": {
     "funding_m": 108.0,
-    "dalys_k": 234.0,
-    "female_share": 67.1,
-    "dollars_per_daly": 462.0,
+    "dalys_k": 236.8,
+    "female_share": 67.8,
+    "dollars_per_daly": 456.0,
     "ratio_to_expected": 0.82,
-    "rank_by_ratio": 26,
+    "rank_by_ratio": 27,
     "n_ranked": 67,
     "skew": "female"
    },
@@ -5062,8 +5078,8 @@
     "trials": 346,
     "participants": 85060,
     "female_pct": 67.7,
-    "burden_female_pct": 67.1,
-    "ratio": 1.01,
+    "burden_female_pct": 67.8,
+    "ratio": 1.0,
     "rank": 20,
     "excl_preg_pct": 61.6,
     "contra_pct": 41.6,
@@ -5081,9 +5097,9 @@
    "disease": "Neural tube defects",
    "funding": {
     "funding_m": 16.0,
-    "dalys_k": 55.3,
-    "female_share": 52.8,
-    "dollars_per_daly": 289.0,
+    "dalys_k": 55.1,
+    "female_share": 52.5,
+    "dollars_per_daly": 290.0,
     "ratio_to_expected": 0.21,
     "rank_by_ratio": 8,
     "n_ranked": 67,
@@ -5099,11 +5115,11 @@
    "disease": "Opioid use disorders",
    "funding": {
     "funding_m": 747.0,
-    "dalys_k": 7156.7,
+    "dalys_k": 6754.7,
     "female_share": 36.7,
-    "dollars_per_daly": 104.0,
-    "ratio_to_expected": 1.57,
-    "rank_by_ratio": 45,
+    "dollars_per_daly": 111.0,
+    "ratio_to_expected": 1.62,
+    "rank_by_ratio": 49,
     "n_ranked": 67,
     "skew": "male"
    },
@@ -5115,9 +5131,9 @@
     "female_pct": 50.6,
     "burden_female_pct": 36.7,
     "ratio": 1.38,
-    "rank": 51,
+    "rank": 50,
     "excl_preg_pct": 58.9,
-    "contra_pct": 32.1,
+    "contra_pct": 29.7,
     "max_age_pct": 57.1,
     "outcome_by_sex": 1,
     "sex_specific": false,
@@ -5132,10 +5148,10 @@
    "disease": "Oral and dental disease",
    "funding": {
     "funding_m": 742.0,
-    "dalys_k": 1297.8,
+    "dalys_k": 1326.6,
     "female_share": 52.8,
-    "dollars_per_daly": 572.0,
-    "ratio_to_expected": 2.96,
+    "dollars_per_daly": 559.0,
+    "ratio_to_expected": 2.95,
     "rank_by_ratio": 59,
     "n_ranked": 67,
     "skew": "balanced"
@@ -5175,7 +5191,7 @@
     "female_pct": 58.4,
     "burden_female_pct": 52.8,
     "ratio": 1.11,
-    "rank": 36,
+    "rank": 35,
     "excl_preg_pct": 69.2,
     "contra_pct": 35.4,
     "max_age_pct": 44.6,
@@ -5192,9 +5208,9 @@
    "disease": "Osteoarthritis",
    "funding": {
     "funding_m": 134.0,
-    "dalys_k": 1685.8,
-    "female_share": 58.8,
-    "dollars_per_daly": 79.0,
+    "dalys_k": 1723.4,
+    "female_share": 58.5,
+    "dollars_per_daly": 78.0,
     "ratio_to_expected": 0.48,
     "rank_by_ratio": 17,
     "n_ranked": 67,
@@ -5210,13 +5226,15 @@
        "est": 67.8,
        "lo": 64.6,
        "hi": 70.9,
-       "n": 1577
+       "n": 1577,
+       "reliable": true
       },
       "men": {
        "est": 62.1,
        "lo": 57.4,
        "hi": 66.8,
-       "n": 1244
+       "n": 1244,
+       "reliable": true
       },
       "diff": 5.7,
       "diff_lo": 0.1,
@@ -5227,13 +5245,15 @@
        "est": 5.3,
        "lo": 3.5,
        "hi": 7.2,
-       "n": 1661
+       "n": 1661,
+       "reliable": true
       },
       "men": {
        "est": 6.5,
        "lo": 3.8,
        "hi": 9.1,
-       "n": 1350
+       "n": 1350,
+       "reliable": true
       },
       "diff": -1.1,
       "diff_lo": -4.3,
@@ -5244,13 +5264,15 @@
        "est": 18.8,
        "lo": 16.3,
        "hi": 21.3,
-       "n": 2184
+       "n": 2184,
+       "reliable": true
       },
       "men": {
        "est": 16.8,
        "lo": 14.4,
        "hi": 19.1,
-       "n": 1753
+       "n": 1753,
+       "reliable": true
       },
       "diff": 2.0,
       "diff_lo": -1.4,
@@ -5261,13 +5283,15 @@
        "est": 34.6,
        "lo": 28.7,
        "hi": 40.6,
-       "n": 1942
+       "n": 1942,
+       "reliable": true
       },
       "men": {
        "est": 38.6,
        "lo": 32.5,
        "hi": 44.7,
-       "n": 1559
+       "n": 1559,
+       "reliable": true
       },
       "diff": -4.0,
       "diff_lo": -12.5,
@@ -5278,13 +5302,15 @@
        "est": 52.3,
        "lo": 48.9,
        "hi": 55.7,
-       "n": 2245
+       "n": 2245,
+       "reliable": true
       },
       "men": {
        "est": 48.4,
        "lo": 44.4,
        "hi": 52.4,
-       "n": 1806
+       "n": 1806,
+       "reliable": true
       },
       "diff": 3.9,
       "diff_lo": -1.4,
@@ -5295,13 +5321,15 @@
        "est": 24.4,
        "lo": 22.0,
        "hi": 26.7,
-       "n": 2245
+       "n": 2245,
+       "reliable": true
       },
       "men": {
        "est": 23.1,
        "lo": 20.6,
        "hi": 25.6,
-       "n": 1806
+       "n": 1806,
+       "reliable": true
       },
       "diff": 1.3,
       "diff_lo": -2.2,
@@ -5312,13 +5340,15 @@
        "est": 30.9,
        "lo": 27.6,
        "hi": 34.1,
-       "n": 1064
+       "n": 1064,
+       "reliable": true
       },
       "men": {
        "est": 26.0,
        "lo": 22.1,
        "hi": 30.0,
-       "n": 763
+       "n": 763,
+       "reliable": true
       },
       "diff": 4.8,
       "diff_lo": -0.4,
@@ -5326,20 +5356,22 @@
      },
      "admitted": {
       "women": {
-       "est": 0.8,
-       "lo": 0.3,
-       "hi": 1.3,
-       "n": 2245
+       "est": 9.2,
+       "lo": 7.5,
+       "hi": 10.9,
+       "n": 2245,
+       "reliable": true
       },
       "men": {
-       "est": 1.1,
-       "lo": 0.3,
-       "hi": 1.9,
-       "n": 1806
+       "est": 8.6,
+       "lo": 6.5,
+       "hi": 10.8,
+       "n": 1806,
+       "reliable": true
       },
-      "diff": -0.3,
-      "diff_lo": -1.3,
-      "diff_hi": 0.7
+      "diff": 0.6,
+      "diff_lo": -2.1,
+      "diff_hi": 3.3
      }
     }
    },
@@ -5347,9 +5379,9 @@
     "trials": 467,
     "participants": 114775,
     "female_pct": 59.8,
-    "burden_female_pct": 58.8,
+    "burden_female_pct": 58.5,
     "ratio": 1.02,
-    "rank": 21,
+    "rank": 22,
     "excl_preg_pct": 50.7,
     "contra_pct": 17.1,
     "max_age_pct": 56.1,
@@ -5369,13 +5401,15 @@
        "est": 7.9,
        "lo": 5.2,
        "hi": 10.6,
-       "n": 794
+       "n": 794,
+       "reliable": true
       },
       "men": {
        "est": 5.2,
        "lo": 3.0,
        "hi": 7.3,
-       "n": 721
+       "n": 721,
+       "reliable": true
       },
       "diff": 2.7,
       "diff_lo": -0.8,
@@ -5386,13 +5420,15 @@
        "est": 1.0,
        "lo": 0.2,
        "hi": 1.9,
-       "n": 794
+       "n": 794,
+       "reliable": false
       },
       "men": {
        "est": 0.8,
        "lo": 0.1,
        "hi": 1.4,
-       "n": 721
+       "n": 721,
+       "reliable": false
       },
       "diff": 0.3,
       "diff_lo": -0.7,
@@ -5403,13 +5439,15 @@
        "est": 2.54,
        "lo": 2.25,
        "hi": 2.84,
-       "n": 780
+       "n": 780,
+       "reliable": true
       },
       "men": {
        "est": 2.51,
        "lo": 2.19,
        "hi": 2.84,
-       "n": 712
+       "n": 712,
+       "reliable": true
       },
       "diff": 0.03,
       "diff_lo": -0.41,
@@ -5420,13 +5458,15 @@
        "est": 65.3,
        "lo": 60.3,
        "hi": 70.3,
-       "n": 794
+       "n": 794,
+       "reliable": true
       },
       "men": {
        "est": 59.4,
        "lo": 54.2,
        "hi": 64.6,
-       "n": 721
+       "n": 721,
+       "reliable": true
       },
       "diff": 5.9,
       "diff_lo": -1.3,
@@ -5434,33 +5474,37 @@
      },
      "admitted": {
       "women": {
-       "est": 0.8,
-       "lo": 0.0,
-       "hi": 1.5,
-       "n": 794
+       "est": 5.7,
+       "lo": 3.7,
+       "hi": 7.7,
+       "n": 794,
+       "reliable": true
       },
       "men": {
-       "est": 2.2,
-       "lo": 0.5,
-       "hi": 3.9,
-       "n": 721
+       "est": 8.4,
+       "lo": 5.3,
+       "hi": 11.5,
+       "n": 721,
+       "reliable": true
       },
-      "diff": -1.4,
-      "diff_lo": -3.3,
-      "diff_hi": 0.4
+      "diff": -2.7,
+      "diff_lo": -6.3,
+      "diff_hi": 1.0
      },
      "seen72": {
       "women": {
        "est": 3.5,
        "lo": 1.4,
        "hi": 5.7,
-       "n": 743
+       "n": 743,
+       "reliable": false
       },
       "men": {
        "est": 3.6,
        "lo": 1.7,
        "hi": 5.4,
-       "n": 674
+       "n": 674,
+       "reliable": true
       },
       "diff": -0.0,
       "diff_lo": -2.9,
@@ -5477,19 +5521,6 @@
    },
    "drugs": [
     {
-     "brand": "Tymlos",
-     "year": 2017,
-     "trial_female_pct": 100.0,
-     "faers_female_pct": 94.5,
-     "gap": -5.5,
-     "rate_ratio": null,
-     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-tymlos",
-     "label_sex": "one-sex drug",
-     "label_no_preg": true,
-     "label_no_lact": true,
-     "label_flat": true
-    },
-    {
      "brand": "Evenity",
      "year": 2019,
      "trial_female_pct": 100.0,
@@ -5500,6 +5531,19 @@
      "label_sex": "one-sex drug",
      "label_no_preg": false,
      "label_no_lact": false,
+     "label_flat": true
+    },
+    {
+     "brand": "Tymlos",
+     "year": 2017,
+     "trial_female_pct": 100.0,
+     "faers_female_pct": 94.5,
+     "gap": -5.5,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-tymlos",
+     "label_sex": "one-sex drug",
+     "label_no_preg": true,
+     "label_no_lact": true,
      "label_flat": true
     }
    ],
@@ -5517,9 +5561,9 @@
    "disease": "Otitis media",
    "funding": {
     "funding_m": 12.0,
-    "dalys_k": 52.6,
+    "dalys_k": 52.9,
     "female_share": 47.0,
-    "dollars_per_daly": 228.0,
+    "dollars_per_daly": 227.0,
     "ratio_to_expected": 0.16,
     "rank_by_ratio": 6,
     "n_ranked": 67,
@@ -5550,28 +5594,15 @@
    "disease": "Ovarian cancer",
    "funding": {
     "funding_m": 178.0,
-    "dalys_k": 319.0,
+    "dalys_k": 317.1,
     "female_share": 100.0,
-    "dollars_per_daly": 558.0,
-    "ratio_to_expected": 1.2,
+    "dollars_per_daly": 561.0,
+    "ratio_to_expected": 1.21,
     "rank_by_ratio": 34,
     "n_ranked": 67,
     "skew": "female"
    },
    "drugs": [
-    {
-     "brand": "Elahere",
-     "year": null,
-     "trial_female_pct": 100.0,
-     "faers_female_pct": 99.7,
-     "gap": -0.3,
-     "rate_ratio": null,
-     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trial-snapshots-elahere",
-     "label_sex": "one-sex drug",
-     "label_no_preg": false,
-     "label_no_lact": true,
-     "label_flat": false
-    },
     {
      "brand": "Avmapki Fakzynja Co-Pack",
      "year": 2025,
@@ -5584,6 +5615,19 @@
      "label_no_preg": true,
      "label_no_lact": true,
      "label_flat": true
+    },
+    {
+     "brand": "Elahere",
+     "year": null,
+     "trial_female_pct": 100.0,
+     "faers_female_pct": 99.7,
+     "gap": -0.3,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trial-snapshots-elahere",
+     "label_sex": "one-sex drug",
+     "label_no_preg": false,
+     "label_no_lact": true,
+     "label_flat": false
     },
     {
      "brand": "Rubraca",
@@ -5636,10 +5680,10 @@
    "disease": "Pancreatic cancer",
    "funding": {
     "funding_m": 292.0,
-    "dalys_k": 1019.4,
+    "dalys_k": 1090.2,
     "female_share": 45.9,
-    "dollars_per_daly": 286.0,
-    "ratio_to_expected": 1.27,
+    "dollars_per_daly": 268.0,
+    "ratio_to_expected": 1.25,
     "rank_by_ratio": 35,
     "n_ranked": 67,
     "skew": "balanced"
@@ -5718,11 +5762,11 @@
    "disease": "Parkinson's disease",
    "funding": {
     "funding_m": 250.0,
-    "dalys_k": 668.9,
-    "female_share": 37.7,
-    "dollars_per_daly": 374.0,
-    "ratio_to_expected": 1.28,
-    "rank_by_ratio": 36,
+    "dalys_k": 705.3,
+    "female_share": 37.5,
+    "dollars_per_daly": 354.0,
+    "ratio_to_expected": 1.26,
+    "rank_by_ratio": 37,
     "n_ranked": 67,
     "skew": "male"
    },
@@ -5798,7 +5842,7 @@
     "trials": 393,
     "participants": 40637,
     "female_pct": 35.7,
-    "burden_female_pct": 37.7,
+    "burden_female_pct": 37.5,
     "ratio": 0.95,
     "rank": 16,
     "excl_preg_pct": 46.1,
@@ -5817,9 +5861,9 @@
    "disease": "Peptic ulcer",
    "funding": {
     "funding_m": 7.0,
-    "dalys_k": 111.0,
-    "female_share": 44.3,
-    "dollars_per_daly": 63.0,
+    "dalys_k": 105.3,
+    "female_share": 44.0,
+    "dollars_per_daly": 66.0,
     "ratio_to_expected": 0.07,
     "rank_by_ratio": 2,
     "n_ranked": 67,
@@ -5862,13 +5906,15 @@
        "est": 62.9,
        "lo": 60.3,
        "hi": 65.6,
-       "n": 2756
+       "n": 2756,
+       "reliable": true
       },
       "men": {
        "est": 58.1,
        "lo": 53.9,
        "hi": 62.4,
-       "n": 1615
+       "n": 1615,
+       "reliable": true
       },
       "diff": 4.8,
       "diff_lo": -0.2,
@@ -5879,13 +5925,15 @@
        "est": 8.3,
        "lo": 6.3,
        "hi": 10.4,
-       "n": 2837
+       "n": 2837,
+       "reliable": true
       },
       "men": {
        "est": 9.0,
        "lo": 6.5,
        "hi": 11.5,
-       "n": 1642
+       "n": 1642,
+       "reliable": true
       },
       "diff": -0.7,
       "diff_lo": -4.0,
@@ -5896,13 +5944,15 @@
        "est": 12.1,
        "lo": 10.5,
        "hi": 13.8,
-       "n": 3757
+       "n": 3757,
+       "reliable": true
       },
       "men": {
        "est": 16.8,
        "lo": 13.7,
        "hi": 19.8,
-       "n": 2182
+       "n": 2182,
+       "reliable": true
       },
       "diff": -4.6,
       "diff_lo": -8.1,
@@ -5913,13 +5963,15 @@
        "est": 41.2,
        "lo": 35.9,
        "hi": 46.5,
-       "n": 3389
+       "n": 3389,
+       "reliable": true
       },
       "men": {
        "est": 37.8,
        "lo": 32.8,
        "hi": 42.7,
-       "n": 1916
+       "n": 1916,
+       "reliable": true
       },
       "diff": 3.5,
       "diff_lo": -3.8,
@@ -5930,13 +5982,15 @@
        "est": 51.5,
        "lo": 48.3,
        "hi": 54.6,
-       "n": 3872
+       "n": 3872,
+       "reliable": true
       },
       "men": {
        "est": 50.1,
        "lo": 46.6,
        "hi": 53.6,
-       "n": 2251
+       "n": 2251,
+       "reliable": true
       },
       "diff": 1.4,
       "diff_lo": -3.3,
@@ -5947,13 +6001,15 @@
        "est": 32.8,
        "lo": 30.1,
        "hi": 35.5,
-       "n": 3872
+       "n": 3872,
+       "reliable": true
       },
       "men": {
        "est": 35.5,
        "lo": 32.0,
        "hi": 38.9,
-       "n": 2251
+       "n": 2251,
+       "reliable": true
       },
       "diff": -2.6,
       "diff_lo": -7.0,
@@ -5964,13 +6020,15 @@
        "est": 40.8,
        "lo": 37.1,
        "hi": 44.5,
-       "n": 1726
+       "n": 1726,
+       "reliable": true
       },
       "men": {
        "est": 48.4,
        "lo": 43.3,
        "hi": 53.5,
-       "n": 936
+       "n": 936,
+       "reliable": true
       },
       "diff": -7.6,
       "diff_lo": -13.9,
@@ -5978,20 +6036,22 @@
      },
      "admitted": {
       "women": {
-       "est": 1.9,
-       "lo": 0.9,
-       "hi": 2.8,
-       "n": 3872
+       "est": 17.2,
+       "lo": 15.5,
+       "hi": 18.9,
+       "n": 3872,
+       "reliable": true
       },
       "men": {
-       "est": 1.5,
-       "lo": 0.8,
-       "hi": 2.3,
-       "n": 2251
+       "est": 20.8,
+       "lo": 18.1,
+       "hi": 23.5,
+       "n": 2251,
+       "reliable": true
       },
-      "diff": 0.3,
-      "diff_lo": -0.9,
-      "diff_hi": 1.6
+      "diff": -3.6,
+      "diff_lo": -6.8,
+      "diff_hi": -0.4
      }
     }
    },
@@ -5999,9 +6059,9 @@
     "trials": 21,
     "participants": 10451,
     "female_pct": 46.0,
-    "burden_female_pct": 44.3,
-    "ratio": 1.04,
-    "rank": 27,
+    "burden_female_pct": 44.0,
+    "ratio": 1.05,
+    "rank": 28,
     "excl_preg_pct": 61.9,
     "contra_pct": 47.6,
     "max_age_pct": 9.5,
@@ -6021,13 +6081,15 @@
        "est": 47.0,
        "lo": 43.8,
        "hi": 50.2,
-       "n": 3374
+       "n": 3374,
+       "reliable": true
       },
       "men": {
        "est": 45.3,
        "lo": 42.1,
        "hi": 48.5,
-       "n": 1921
+       "n": 1921,
+       "reliable": true
       },
       "diff": 1.8,
       "diff_lo": -2.8,
@@ -6038,13 +6100,15 @@
        "est": 2.0,
        "lo": 1.0,
        "hi": 3.1,
-       "n": 3374
+       "n": 3374,
+       "reliable": true
       },
       "men": {
        "est": 1.2,
        "lo": 0.6,
        "hi": 1.9,
-       "n": 1921
+       "n": 1921,
+       "reliable": true
       },
       "diff": 0.8,
       "diff_lo": -0.4,
@@ -6055,13 +6119,15 @@
        "est": 5.93,
        "lo": 5.73,
        "hi": 6.14,
-       "n": 3358
+       "n": 3358,
+       "reliable": true
       },
       "men": {
        "est": 5.46,
        "lo": 5.14,
        "hi": 5.78,
-       "n": 1907
+       "n": 1907,
+       "reliable": true
       },
       "diff": 0.47,
       "diff_lo": 0.09,
@@ -6072,13 +6138,15 @@
        "est": 72.2,
        "lo": 69.9,
        "hi": 74.4,
-       "n": 3374
+       "n": 3374,
+       "reliable": true
       },
       "men": {
        "est": 73.0,
        "lo": 70.0,
        "hi": 75.9,
-       "n": 1921
+       "n": 1921,
+       "reliable": true
       },
       "diff": -0.8,
       "diff_lo": -4.5,
@@ -6086,33 +6154,37 @@
      },
      "admitted": {
       "women": {
-       "est": 1.9,
-       "lo": 0.8,
-       "hi": 3.0,
-       "n": 3374
+       "est": 17.6,
+       "lo": 15.6,
+       "hi": 19.6,
+       "n": 3374,
+       "reliable": true
       },
       "men": {
-       "est": 1.5,
-       "lo": 0.7,
-       "hi": 2.3,
-       "n": 1921
+       "est": 21.0,
+       "lo": 17.8,
+       "hi": 24.1,
+       "n": 1921,
+       "reliable": true
       },
-      "diff": 0.4,
-      "diff_lo": -0.9,
-      "diff_hi": 1.8
+      "diff": -3.3,
+      "diff_lo": -7.0,
+      "diff_hi": 0.4
      },
      "seen72": {
       "women": {
        "est": 4.0,
        "lo": 2.8,
        "hi": 5.3,
-       "n": 3166
+       "n": 3166,
+       "reliable": true
       },
       "men": {
        "est": 5.0,
        "lo": 3.4,
        "hi": 6.6,
-       "n": 1791
+       "n": 1791,
+       "reliable": true
       },
       "diff": -1.0,
       "diff_lo": -3.0,
@@ -6125,10 +6197,10 @@
    "disease": "Pneumonia and influenza",
    "funding": {
     "funding_m": 619.0,
-    "dalys_k": 886.9,
-    "female_share": 43.8,
-    "dollars_per_daly": 698.0,
-    "ratio_to_expected": 2.85,
+    "dalys_k": 938.4,
+    "female_share": 46.1,
+    "dollars_per_daly": 660.0,
+    "ratio_to_expected": 2.8,
     "rank_by_ratio": 56,
     "n_ranked": 67,
     "skew": "balanced"
@@ -6218,11 +6290,11 @@
     "trials": 1177,
     "participants": 2194848,
     "female_pct": 55.4,
-    "burden_female_pct": 43.8,
-    "ratio": 1.26,
-    "rank": 45,
+    "burden_female_pct": 46.1,
+    "ratio": 1.2,
+    "rank": 43,
     "excl_preg_pct": 57.9,
-    "contra_pct": 35.3,
+    "contra_pct": 35.2,
     "max_age_pct": 37.4,
     "outcome_by_sex": 2,
     "sex_specific": false,
@@ -6231,23 +6303,6 @@
     "n_ranked": 53
    },
    "cancer": null,
-   "ed_label": null
-  },
-  {
-   "disease": "Polycystic ovary syndrome (PCOS)",
-   "funding": {
-    "funding_m": 9.0,
-    "uncounted": true
-   },
-   "drugs": [],
-   "ed": null,
-   "trials": {
-    "trials": 55,
-    "participants": 3143,
-    "female_pct": 98.9,
-    "sex_specific": true,
-    "uncounted": true
-   },
    "ed_label": null
   },
   {
@@ -6271,10 +6326,10 @@
    "disease": "Preterm birth",
    "funding": {
     "funding_m": 433.0,
-    "dalys_k": 1005.1,
-    "female_share": 47.5,
-    "dollars_per_daly": 431.0,
-    "ratio_to_expected": 1.9,
+    "dalys_k": 1014.0,
+    "female_share": 47.4,
+    "dollars_per_daly": 427.0,
+    "ratio_to_expected": 1.91,
     "rank_by_ratio": 50,
     "n_ranked": 67,
     "skew": "balanced"
@@ -6285,11 +6340,11 @@
     "trials": 144,
     "participants": 97924,
     "female_pct": 91.9,
-    "burden_female_pct": 47.5,
+    "burden_female_pct": 47.4,
     "ratio": null,
     "rank": null,
     "excl_preg_pct": 0.0,
-    "contra_pct": 2.8,
+    "contra_pct": 1.4,
     "max_age_pct": 72.9,
     "outcome_by_sex": 0,
     "sex_specific": true,
@@ -6304,11 +6359,11 @@
    "disease": "Prostate cancer",
    "funding": {
     "funding_m": 311.0,
-    "dalys_k": 802.0,
+    "dalys_k": 861.5,
     "female_share": 0.0,
-    "dollars_per_daly": 388.0,
-    "ratio_to_expected": 1.49,
-    "rank_by_ratio": 42,
+    "dollars_per_daly": 361.0,
+    "ratio_to_expected": 1.45,
+    "rank_by_ratio": 41,
     "n_ranked": 67,
     "skew": "male"
    },
@@ -6321,19 +6376,6 @@
      "gap": 0.4,
      "rate_ratio": null,
      "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-erleada",
-     "label_sex": "one-sex drug",
-     "label_no_preg": true,
-     "label_no_lact": true,
-     "label_flat": true
-    },
-    {
-     "brand": "Orgovyx",
-     "year": 2020,
-     "trial_female_pct": 0.0,
-     "faers_female_pct": 1.3,
-     "gap": 1.3,
-     "rate_ratio": null,
-     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-orgovyx",
      "label_sex": "one-sex drug",
      "label_no_preg": true,
      "label_no_lact": true,
@@ -6353,19 +6395,6 @@
      "label_flat": true
     },
     {
-     "brand": "Posluma",
-     "year": 2023,
-     "trial_female_pct": 0.0,
-     "faers_female_pct": 2.7,
-     "gap": null,
-     "rate_ratio": null,
-     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshot-posluma",
-     "label_sex": "one-sex drug",
-     "label_no_preg": true,
-     "label_no_lact": true,
-     "label_flat": true
-    },
-    {
      "brand": "Nubeqa",
      "year": 2019,
      "trial_female_pct": 0.0,
@@ -6379,6 +6408,19 @@
      "label_flat": null
     },
     {
+     "brand": "Orgovyx",
+     "year": 2020,
+     "trial_female_pct": 0.0,
+     "faers_female_pct": 1.3,
+     "gap": 1.3,
+     "rate_ratio": null,
+     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-orgovyx",
+     "label_sex": "one-sex drug",
+     "label_no_preg": true,
+     "label_no_lact": true,
+     "label_flat": true
+    },
+    {
      "brand": "Pluvicto",
      "year": 2022,
      "trial_female_pct": 0.0,
@@ -6386,6 +6428,19 @@
      "gap": 1.0,
      "rate_ratio": null,
      "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-pluvicto",
+     "label_sex": "one-sex drug",
+     "label_no_preg": true,
+     "label_no_lact": true,
+     "label_flat": true
+    },
+    {
+     "brand": "Posluma",
+     "year": 2023,
+     "trial_female_pct": 0.0,
+     "faers_female_pct": 2.7,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshot-posluma",
      "label_sex": "one-sex drug",
      "label_no_preg": true,
      "label_no_lact": true,
@@ -6401,7 +6456,7 @@
     "ratio": null,
     "rank": null,
     "excl_preg_pct": 7.8,
-    "contra_pct": 39.2,
+    "contra_pct": 38.9,
     "max_age_pct": 11.5,
     "outcome_by_sex": 0,
     "sex_specific": true,
@@ -6416,9 +6471,9 @@
    "disease": "Rheumatoid arthritis",
    "funding": {
     "funding_m": 62.0,
-    "dalys_k": 219.9,
-    "female_share": 72.9,
-    "dollars_per_daly": 282.0,
+    "dalys_k": 225.6,
+    "female_share": 73.2,
+    "dollars_per_daly": 275.0,
     "ratio_to_expected": 0.48,
     "rank_by_ratio": 18,
     "n_ranked": 67,
@@ -6470,9 +6525,9 @@
     "trials": 424,
     "participants": 164658,
     "female_pct": 77.2,
-    "burden_female_pct": 72.9,
-    "ratio": 1.06,
-    "rank": 31,
+    "burden_female_pct": 73.2,
+    "ratio": 1.05,
+    "rank": 29,
     "excl_preg_pct": 51.2,
     "contra_pct": 25.7,
     "max_age_pct": 34.0,
@@ -6489,10 +6544,10 @@
    "disease": "Schizophrenia",
    "funding": {
     "funding_m": 254.0,
-    "dalys_k": 1010.6,
-    "female_share": 47.1,
-    "dollars_per_daly": 251.0,
-    "ratio_to_expected": 1.11,
+    "dalys_k": 1016.6,
+    "female_share": 47.2,
+    "dollars_per_daly": 250.0,
+    "ratio_to_expected": 1.12,
     "rank_by_ratio": 31,
     "n_ranked": 67,
     "skew": "balanced"
@@ -6525,19 +6580,6 @@
      "label_flat": true
     },
     {
-     "brand": "Vraylar",
-     "year": 2015,
-     "trial_female_pct": 28.5,
-     "faers_female_pct": 67.4,
-     "gap": 38.9,
-     "rate_ratio": null,
-     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-vraylar-treatment-schizophrenia",
-     "label_sex": "no difference asserted",
-     "label_no_preg": true,
-     "label_no_lact": false,
-     "label_flat": true
-    },
-    {
      "brand": "Aristada",
      "year": 2015,
      "trial_female_pct": 32.1,
@@ -6556,11 +6598,11 @@
     "trials": 584,
     "participants": 98599,
     "female_pct": 37.0,
-    "burden_female_pct": 47.1,
-    "ratio": 0.79,
+    "burden_female_pct": 47.2,
+    "ratio": 0.78,
     "rank": 2,
     "excl_preg_pct": 64.0,
-    "contra_pct": 36.0,
+    "contra_pct": 34.6,
     "max_age_pct": 89.9,
     "outcome_by_sex": 0,
     "sex_specific": false,
@@ -6592,10 +6634,10 @@
    "disease": "Sexually transmitted infections",
    "funding": {
     "funding_m": 448.0,
-    "dalys_k": 43.8,
-    "female_share": 79.2,
-    "dollars_per_daly": 10237.0,
-    "ratio_to_expected": 6.38,
+    "dalys_k": 44.1,
+    "female_share": 78.8,
+    "dollars_per_daly": 10152.0,
+    "ratio_to_expected": 6.36,
     "rank_by_ratio": 63,
     "n_ranked": 67,
     "skew": "female"
@@ -6620,11 +6662,11 @@
     "trials": 128,
     "participants": 132314,
     "female_pct": 81.5,
-    "burden_female_pct": 79.2,
+    "burden_female_pct": 78.8,
     "ratio": 1.03,
     "rank": 25,
     "excl_preg_pct": 44.5,
-    "contra_pct": 45.3,
+    "contra_pct": 44.5,
     "max_age_pct": 43.8,
     "outcome_by_sex": 0,
     "sex_specific": false,
@@ -6639,10 +6681,10 @@
    "disease": "Sickle cell disease",
    "funding": {
     "funding_m": 153.0,
-    "dalys_k": 59.5,
-    "female_share": 58.6,
-    "dollars_per_daly": 2571.0,
-    "ratio_to_expected": 1.94,
+    "dalys_k": 52.7,
+    "female_share": 58.7,
+    "dollars_per_daly": 2902.0,
+    "ratio_to_expected": 2.03,
     "rank_by_ratio": 51,
     "n_ranked": 67,
     "skew": "balanced"
@@ -6680,7 +6722,7 @@
     "trials": 208,
     "participants": 15086,
     "female_pct": 51.6,
-    "burden_female_pct": 58.6,
+    "burden_female_pct": 58.7,
     "ratio": 0.88,
     "rank": 7,
     "excl_preg_pct": 66.8,
@@ -6699,11 +6741,11 @@
    "disease": "Skin cancer",
    "funding": {
     "funding_m": 256.0,
-    "dalys_k": 405.4,
-    "female_share": 34.7,
-    "dollars_per_daly": 631.0,
-    "ratio_to_expected": 1.58,
-    "rank_by_ratio": 46,
+    "dalys_k": 436.9,
+    "female_share": 35.1,
+    "dollars_per_daly": 586.0,
+    "ratio_to_expected": 1.54,
+    "rank_by_ratio": 44,
     "n_ranked": 67,
     "skew": "male"
    },
@@ -6857,8 +6899,8 @@
     "trials": 679,
     "participants": 77510,
     "female_pct": 44.0,
-    "burden_female_pct": 34.7,
-    "ratio": 1.27,
+    "burden_female_pct": 35.1,
+    "ratio": 1.25,
     "rank": 46,
     "excl_preg_pct": 66.1,
     "contra_pct": 64.4,
@@ -6911,9 +6953,9 @@
    "disease": "Stomach cancer",
    "funding": {
     "funding_m": 52.0,
-    "dalys_k": 288.8,
-    "female_share": 38.6,
-    "dollars_per_daly": 180.0,
+    "dalys_k": 309.0,
+    "female_share": 39.6,
+    "dollars_per_daly": 168.0,
     "ratio_to_expected": 0.36,
     "rank_by_ratio": 14,
     "n_ranked": 67,
@@ -6939,9 +6981,9 @@
     "trials": 195,
     "participants": 29909,
     "female_pct": 36.1,
-    "burden_female_pct": 38.6,
-    "ratio": 0.94,
-    "rank": 13,
+    "burden_female_pct": 39.6,
+    "ratio": 0.91,
+    "rank": 11,
     "excl_preg_pct": 63.6,
     "contra_pct": 59.0,
     "max_age_pct": 4.1,
@@ -6993,10 +7035,10 @@
    "disease": "Stroke",
    "funding": {
     "funding_m": 491.0,
-    "dalys_k": 3960.7,
-    "female_share": 51.0,
+    "dalys_k": 3959.7,
+    "female_share": 51.1,
     "dollars_per_daly": 124.0,
-    "ratio_to_expected": 1.29,
+    "ratio_to_expected": 1.3,
     "rank_by_ratio": 38,
     "n_ranked": 67,
     "skew": "balanced"
@@ -7047,7 +7089,7 @@
     "trials": 583,
     "participants": 380939,
     "female_pct": 35.7,
-    "burden_female_pct": 51.0,
+    "burden_female_pct": 51.1,
     "ratio": 0.7,
     "rank": 1,
     "excl_preg_pct": 50.3,
@@ -7066,9 +7108,9 @@
    "disease": "Sudden infant death syndrome",
    "funding": {
     "funding_m": 13.0,
-    "dalys_k": 121.7,
-    "female_share": 42.8,
-    "dollars_per_daly": 107.0,
+    "dalys_k": 123.0,
+    "female_share": 42.5,
+    "dollars_per_daly": 106.0,
     "ratio_to_expected": 0.13,
     "rank_by_ratio": 4,
     "n_ranked": 67,
@@ -7084,10 +7126,10 @@
    "disease": "Suicide and self-harm",
    "funding": {
     "funding_m": 190.0,
-    "dalys_k": 2003.4,
-    "female_share": 22.4,
-    "dollars_per_daly": 95.0,
-    "ratio_to_expected": 0.64,
+    "dalys_k": 2194.4,
+    "female_share": 22.5,
+    "dollars_per_daly": 87.0,
+    "ratio_to_expected": 0.63,
     "rank_by_ratio": 23,
     "n_ranked": 67,
     "skew": "male"
@@ -7098,11 +7140,11 @@
     "trials": 176,
     "participants": 120477,
     "female_pct": 44.7,
-    "burden_female_pct": 22.4,
-    "ratio": 2.0,
+    "burden_female_pct": 22.5,
+    "ratio": 1.99,
     "rank": 53,
     "excl_preg_pct": 29.0,
-    "contra_pct": 14.8,
+    "contra_pct": 12.5,
     "max_age_pct": 67.6,
     "outcome_by_sex": 1,
     "sex_specific": false,
@@ -7134,10 +7176,10 @@
    "disease": "Tuberculosis",
    "funding": {
     "funding_m": 578.0,
-    "dalys_k": 19.8,
-    "female_share": 35.4,
-    "dollars_per_daly": 29180.0,
-    "ratio_to_expected": 11.09,
+    "dalys_k": 19.6,
+    "female_share": 36.3,
+    "dollars_per_daly": 29431.0,
+    "ratio_to_expected": 11.11,
     "rank_by_ratio": 66,
     "n_ranked": 67,
     "skew": "male"
@@ -7162,9 +7204,9 @@
     "trials": 41,
     "participants": 16088,
     "female_pct": 42.7,
-    "burden_female_pct": 35.4,
-    "ratio": 1.21,
-    "rank": 42,
+    "burden_female_pct": 36.3,
+    "ratio": 1.18,
+    "rank": 40,
     "excl_preg_pct": 65.9,
     "contra_pct": 53.7,
     "max_age_pct": 53.7,
@@ -7181,11 +7223,11 @@
    "disease": "Unintentional injuries",
    "funding": {
     "funding_m": 892.0,
-    "dalys_k": 11293.6,
-    "female_share": 44.8,
-    "dollars_per_daly": 79.0,
-    "ratio_to_expected": 1.58,
-    "rank_by_ratio": 47,
+    "dalys_k": 12146.2,
+    "female_share": 44.4,
+    "dollars_per_daly": 73.0,
+    "ratio_to_expected": 1.55,
+    "rank_by_ratio": 45,
     "n_ranked": 67,
     "skew": "balanced"
    },
@@ -7199,10 +7241,10 @@
    "disease": "Uterine cancer",
    "funding": {
     "funding_m": 44.0,
-    "dalys_k": 312.1,
+    "dalys_k": 354.6,
     "female_share": 100.0,
-    "dollars_per_daly": 141.0,
-    "ratio_to_expected": 0.3,
+    "dollars_per_daly": 124.0,
+    "ratio_to_expected": 0.29,
     "rank_by_ratio": 10,
     "n_ranked": 67,
     "skew": "female"
@@ -7232,93 +7274,15 @@
    "disease": "Vision loss",
    "funding": {
     "funding_m": 1133.0,
-    "dalys_k": 232.2,
-    "female_share": 53.0,
-    "dollars_per_daly": 4880.0,
-    "ratio_to_expected": 8.62,
+    "dalys_k": 239.9,
+    "female_share": 53.3,
+    "dollars_per_daly": 4723.0,
+    "ratio_to_expected": 8.54,
     "rank_by_ratio": 64,
     "n_ranked": 67,
     "skew": "balanced"
    },
    "drugs": [
-    {
-     "brand": "Attruby",
-     "year": 2024,
-     "trial_female_pct": 9.2,
-     "faers_female_pct": 24.1,
-     "gap": null,
-     "rate_ratio": null,
-     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshot-attruby",
-     "label_sex": "mentioned, unclear",
-     "label_no_preg": true,
-     "label_no_lact": true,
-     "label_flat": true
-    },
-    {
-     "brand": "Vyndaqel/Vyndamax",
-     "year": 2019,
-     "trial_female_pct": 9.8,
-     "faers_female_pct": 17.4,
-     "gap": 7.7,
-     "rate_ratio": null,
-     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/resources-information-approved-drugs/drug-trial-snapshots-vyndaqelvyndamax",
-     "label_sex": null,
-     "label_no_preg": null,
-     "label_no_lact": null,
-     "label_flat": null
-    },
-    {
-     "brand": "Onpattro",
-     "year": 2018,
-     "trial_female_pct": 25.8,
-     "faers_female_pct": 34.4,
-     "gap": 8.6,
-     "rate_ratio": null,
-     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-onpattro",
-     "label_sex": "no difference asserted",
-     "label_no_preg": true,
-     "label_no_lact": true,
-     "label_flat": false
-    },
-    {
-     "brand": "Wainua",
-     "year": 2023,
-     "trial_female_pct": 30.7,
-     "faers_female_pct": 48.9,
-     "gap": 18.2,
-     "rate_ratio": null,
-     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-wainua",
-     "label_sex": "no difference asserted",
-     "label_no_preg": true,
-     "label_no_lact": true,
-     "label_flat": true
-    },
-    {
-     "brand": "Amvuttra",
-     "year": 2022,
-     "trial_female_pct": 31.2,
-     "faers_female_pct": 38.1,
-     "gap": null,
-     "rate_ratio": null,
-     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trial-snapshots-amvuttra",
-     "label_sex": "no difference asserted",
-     "label_no_preg": true,
-     "label_no_lact": true,
-     "label_flat": true
-    },
-    {
-     "brand": "Tegsedi",
-     "year": 2018,
-     "trial_female_pct": 31.4,
-     "faers_female_pct": null,
-     "gap": null,
-     "rate_ratio": null,
-     "snapshot_url": "https://web.archive.org/web/20230127052325/https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trial-snapshot-tegsedi",
-     "label_sex": null,
-     "label_no_preg": null,
-     "label_no_lact": null,
-     "label_flat": null
-    },
     {
      "brand": "Beovu",
      "year": 2019,
@@ -7370,6 +7334,19 @@
      "label_no_preg": true,
      "label_no_lact": true,
      "label_flat": true
+    },
+    {
+     "brand": "Izervay",
+     "year": 2023,
+     "trial_female_pct": 80.6,
+     "faers_female_pct": null,
+     "gap": null,
+     "rate_ratio": null,
+     "snapshot_url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-izervay",
+     "label_sex": null,
+     "label_no_preg": null,
+     "label_no_lact": null,
+     "label_flat": null
     }
    ],
    "ed": null,
@@ -7377,8 +7354,8 @@
     "trials": 698,
     "participants": 125949,
     "female_pct": 52.4,
-    "burden_female_pct": 53.0,
-    "ratio": 0.99,
+    "burden_female_pct": 53.3,
+    "ratio": 0.98,
     "rank": 19,
     "excl_preg_pct": 41.1,
     "contra_pct": 11.0,
@@ -7390,23 +7367,6 @@
     "n_ranked": 53
    },
    "cancer": null,
-   "ed_label": null
-  },
-  {
-   "disease": "Vulvodynia",
-   "funding": {
-    "funding_m": 2.0,
-    "uncounted": true
-   },
-   "drugs": [],
-   "ed": null,
-   "trials": {
-    "trials": 13,
-    "participants": 641,
-    "female_pct": 100.0,
-    "sex_specific": true,
-    "uncounted": true
-   },
    "ed_label": null
   }
  ]

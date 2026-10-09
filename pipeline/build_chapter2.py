@@ -62,7 +62,7 @@ def load():
             "year": year, "sex": df["SEX"], "age": df["AGE"], "w": df["PATWT"], "strat": df["CSTRATM"], "psu": df["CPSUM"],
             "wait": df["WAITTIME"], "pain": df["PAINSCALE"], "rfv1": df["RFV1"], "triage": df["IMMEDR"], "ems": df["ARREMS"],
             "ekg": df["EKG"], "cardmon": df["CARDMON"], "ctab": df["CTAB"], "cthead": df["CTHEAD"], "anyimage": df["ANYIMAGE"],
-            "admit": df["ADMIT"] if "ADMIT" in df else df["ADMITHOS"],
+            "admit": ((df["ADMITHOS"] == 1) | (df["OBSHOS"] == 1) | (df["TRANOTH"] == 1)).astype(int),  # admitted to this hospital, observation then admitted, or transferred; ADMIT is the unit type, not admission
             "op_any": op_any, "op_ed": op_ed, "an_any": an_any, "an_ed": an_ed,
         })
         frames.append(out)
@@ -118,8 +118,9 @@ def compare(d, dom, y, scale=100.0, nd=1):
     diff = f["est"] - m["est"]
     dse = math.sqrt(f["se"] ** 2 + m["se"] ** 2)  # independent domains (approximation)
     r = lambda v: round(v * scale, nd)
-    return {"women": {"est": r(f["est"]), "lo": r(f["lo"]), "hi": r(f["hi"]), "n": f["n"]},
-            "men": {"est": r(m["est"]), "lo": r(m["lo"]), "hi": r(m["hi"]), "n": m["n"]},
+    rel = lambda e: bool(e["n"] >= 30 and (e["est"] == 0 or e["se"] / abs(e["est"]) <= 0.30))  # NCHS presentation rule: 30+ records and relative SE under 30%
+    return {"women": {"est": r(f["est"]), "lo": r(f["lo"]), "hi": r(f["hi"]), "n": f["n"], "reliable": rel(f)},
+            "men": {"est": r(m["est"]), "lo": r(m["lo"]), "hi": r(m["hi"]), "n": m["n"], "reliable": rel(m)},
             "diff": r(diff), "diff_lo": r(diff - 1.96 * dse), "diff_hi": r(diff + 1.96 * dse)}
 
 

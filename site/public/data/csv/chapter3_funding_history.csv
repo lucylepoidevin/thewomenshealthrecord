@@ -161,6 +161,24 @@ Stroke,2022,415.0
 Stroke,2023,443.0
 Stroke,2024,491.0
 Stroke,2025,422.0
+Anxiety disorders,2008,0
+Anxiety disorders,2009,0
+Anxiety disorders,2010,0
+Anxiety disorders,2011,0
+Anxiety disorders,2012,0
+Anxiety disorders,2013,0
+Anxiety disorders,2014,0
+Anxiety disorders,2015,156.2
+Anxiety disorders,2016,174.2
+Anxiety disorders,2017,190.0
+Anxiety disorders,2018,213.0
+Anxiety disorders,2019,233.0
+Anxiety disorders,2020,236.0
+Anxiety disorders,2021,243.0
+Anxiety disorders,2022,246.0
+Anxiety disorders,2023,267.0
+Anxiety disorders,2024,271.0
+Anxiety disorders,2025,253.0
 Depression,2008,401.7
 Depression,2009,402.0
 Depression,2010,420.4
@@ -215,24 +233,6 @@ Kidney disease,2022,673.0
 Kidney disease,2023,703.0
 Kidney disease,2024,717.0
 Kidney disease,2025,745.0
-Anxiety disorders,2008,0
-Anxiety disorders,2009,0
-Anxiety disorders,2010,0
-Anxiety disorders,2011,0
-Anxiety disorders,2012,0
-Anxiety disorders,2013,0
-Anxiety disorders,2014,0
-Anxiety disorders,2015,156.2
-Anxiety disorders,2016,174.2
-Anxiety disorders,2017,190.0
-Anxiety disorders,2018,213.0
-Anxiety disorders,2019,233.0
-Anxiety disorders,2020,236.0
-Anxiety disorders,2021,243.0
-Anxiety disorders,2022,246.0
-Anxiety disorders,2023,267.0
-Anxiety disorders,2024,271.0
-Anxiety disorders,2025,253.0
 Hearing loss,2008,0
 Hearing loss,2009,0
 Hearing loss,2010,0
@@ -251,24 +251,6 @@ Hearing loss,2022,179.0
 Hearing loss,2023,200.0
 Hearing loss,2024,191.0
 Hearing loss,2025,197.0
-Migraine,2008,0
-Migraine,2009,0
-Migraine,2010,15.1
-Migraine,2011,16.2
-Migraine,2012,18.1
-Migraine,2013,19.5
-Migraine,2014,20.1
-Migraine,2015,19.6
-Migraine,2016,18.0
-Migraine,2017,22.0
-Migraine,2018,21.0
-Migraine,2019,28.0
-Migraine,2020,28.0
-Migraine,2021,40.0
-Migraine,2022,46.0
-Migraine,2023,49.0
-Migraine,2024,41.0
-Migraine,2025,43.0
 Suicide and self-harm,2008,39.4
 Suicide and self-harm,2009,36.3
 Suicide and self-harm,2010,36.5
@@ -287,6 +269,24 @@ Suicide and self-harm,2022,153.0
 Suicide and self-harm,2023,187.0
 Suicide and self-harm,2024,190.0
 Suicide and self-harm,2025,217.0
+Migraine,2008,0
+Migraine,2009,0
+Migraine,2010,15.1
+Migraine,2011,16.2
+Migraine,2012,18.1
+Migraine,2013,19.5
+Migraine,2014,20.1
+Migraine,2015,19.6
+Migraine,2016,18.0
+Migraine,2017,22.0
+Migraine,2018,21.0
+Migraine,2019,28.0
+Migraine,2020,28.0
+Migraine,2021,40.0
+Migraine,2022,46.0
+Migraine,2023,49.0
+Migraine,2024,41.0
+Migraine,2025,43.0
 Cirrhosis and chronic liver disease,2008,241.2
 Cirrhosis and chronic liver disease,2009,273.7
 Cirrhosis and chronic liver disease,2010,284.3
@@ -341,24 +341,6 @@ Alcohol use disorders,2022,613.0
 Alcohol use disorders,2023,647.0
 Alcohol use disorders,2024,639.0
 Alcohol use disorders,2025,613.0
-Interpersonal violence,2008,0.3
-Interpersonal violence,2009,2.1
-Interpersonal violence,2010,1.2
-Interpersonal violence,2011,1.0
-Interpersonal violence,2012,0.7
-Interpersonal violence,2013,0.3
-Interpersonal violence,2014,0.2
-Interpersonal violence,2015,0.7
-Interpersonal violence,2016,0.8
-Interpersonal violence,2017,1.0
-Interpersonal violence,2018,2.0
-Interpersonal violence,2019,3.0
-Interpersonal violence,2020,6.0
-Interpersonal violence,2021,13.0
-Interpersonal violence,2022,10.0
-Interpersonal violence,2023,8.0
-Interpersonal violence,2024,12.0
-Interpersonal violence,2025,10.0
 Colorectal cancer,2008,273.6
 Colorectal cancer,2009,280.8
 Colorectal cancer,2010,291.3
@@ -395,6 +377,24 @@ Asthma,2022,285.0
 Asthma,2023,274.0
 Asthma,2024,270.0
 Asthma,2025,242.0
+Interpersonal violence,2008,0.3
+Interpersonal violence,2009,2.1
+Interpersonal violence,2010,1.2
+Interpersonal violence,2011,1.0
+Interpersonal violence,2012,0.7
+Interpersonal violence,2013,0.3
+Interpersonal violence,2014,0.2
+Interpersonal violence,2015,0.7
+Interpersonal violence,2016,0.8
+Interpersonal violence,2017,1.0
+Interpersonal violence,2018,2.0
+Interpersonal violence,2019,3.0
+Interpersonal violence,2020,6.0
+Interpersonal violence,2021,13.0
+Interpersonal violence,2022,10.0
+Interpersonal violence,2023,8.0
+Interpersonal violence,2024,12.0
+Interpersonal violence,2025,10.0
 Breast cancer,2008,725.9
 Breast cancer,2009,721.8
 Breast cancer,2010,763.4
@@ -431,24 +431,6 @@ Oral and dental disease,2022,712.0
 Oral and dental disease,2023,730.0
 Oral and dental disease,2024,742.0
 Oral and dental disease,2025,788.0
-Hepatitis C,2008,92.6
-Hepatitis C,2009,97.5
-Hepatitis C,2010,100.3
-Hepatitis C,2011,113.6
-Hepatitis C,2012,112.3
-Hepatitis C,2013,101.1
-Hepatitis C,2014,110.5
-Hepatitis C,2015,95.7
-Hepatitis C,2016,107.3
-Hepatitis C,2017,114.0
-Hepatitis C,2018,129.0
-Hepatitis C,2019,150.0
-Hepatitis C,2020,120.0
-Hepatitis C,2021,115.0
-Hepatitis C,2022,107.0
-Hepatitis C,2023,99.0
-Hepatitis C,2024,84.0
-Hepatitis C,2025,86.0
 Pancreatic cancer,2008,0
 Pancreatic cancer,2009,0
 Pancreatic cancer,2010,0
@@ -467,6 +449,24 @@ Pancreatic cancer,2022,265.0
 Pancreatic cancer,2023,280.0
 Pancreatic cancer,2024,292.0
 Pancreatic cancer,2025,288.0
+Hepatitis C,2008,92.6
+Hepatitis C,2009,97.5
+Hepatitis C,2010,100.3
+Hepatitis C,2011,113.6
+Hepatitis C,2012,112.3
+Hepatitis C,2013,101.1
+Hepatitis C,2014,110.5
+Hepatitis C,2015,95.7
+Hepatitis C,2016,107.3
+Hepatitis C,2017,114.0
+Hepatitis C,2018,129.0
+Hepatitis C,2019,150.0
+Hepatitis C,2020,120.0
+Hepatitis C,2021,115.0
+Hepatitis C,2022,107.0
+Hepatitis C,2023,99.0
+Hepatitis C,2024,84.0
+Hepatitis C,2025,86.0
 Schizophrenia,2008,249.4
 Schizophrenia,2009,265.2
 Schizophrenia,2010,276.4
@@ -539,24 +539,6 @@ Pneumonia and influenza,2022,578.0
 Pneumonia and influenza,2023,654.0
 Pneumonia and influenza,2024,619.0
 Pneumonia and influenza,2025,562.0
-Cocaine use disorders,2008,0
-Cocaine use disorders,2009,0
-Cocaine use disorders,2010,0
-Cocaine use disorders,2011,0
-Cocaine use disorders,2012,0
-Cocaine use disorders,2013,0
-Cocaine use disorders,2014,0
-Cocaine use disorders,2015,0
-Cocaine use disorders,2016,0
-Cocaine use disorders,2017,0
-Cocaine use disorders,2018,0
-Cocaine use disorders,2019,0
-Cocaine use disorders,2020,0
-Cocaine use disorders,2021,0
-Cocaine use disorders,2022,155.0
-Cocaine use disorders,2023,153.0
-Cocaine use disorders,2024,142.0
-Cocaine use disorders,2025,147.0
 Prostate cancer,2008,289.6
 Prostate cancer,2009,310.4
 Prostate cancer,2010,330.9
@@ -575,6 +557,24 @@ Prostate cancer,2022,278.0
 Prostate cancer,2023,305.0
 Prostate cancer,2024,311.0
 Prostate cancer,2025,314.0
+Cocaine use disorders,2008,0
+Cocaine use disorders,2009,0
+Cocaine use disorders,2010,0
+Cocaine use disorders,2011,0
+Cocaine use disorders,2012,0
+Cocaine use disorders,2013,0
+Cocaine use disorders,2014,0
+Cocaine use disorders,2015,0
+Cocaine use disorders,2016,0
+Cocaine use disorders,2017,0
+Cocaine use disorders,2018,0
+Cocaine use disorders,2019,0
+Cocaine use disorders,2020,0
+Cocaine use disorders,2021,0
+Cocaine use disorders,2022,155.0
+Cocaine use disorders,2023,153.0
+Cocaine use disorders,2024,142.0
+Cocaine use disorders,2025,147.0
 Parkinson's disease,2008,151.7
 Parkinson's disease,2009,162.2
 Parkinson's disease,2010,154.3
@@ -647,24 +647,6 @@ Brain cancer,2022,401.0
 Brain cancer,2023,427.0
 Brain cancer,2024,429.0
 Brain cancer,2025,434.0
-Amphetamine use disorders,2008,67.4
-Amphetamine use disorders,2009,68.5
-Amphetamine use disorders,2010,72.9
-Amphetamine use disorders,2011,70.0
-Amphetamine use disorders,2012,68.8
-Amphetamine use disorders,2013,68.3
-Amphetamine use disorders,2014,62.7
-Amphetamine use disorders,2015,57.9
-Amphetamine use disorders,2016,50.2
-Amphetamine use disorders,2017,48.0
-Amphetamine use disorders,2018,49.0
-Amphetamine use disorders,2019,47.0
-Amphetamine use disorders,2020,92.0
-Amphetamine use disorders,2021,87.0
-Amphetamine use disorders,2022,106.0
-Amphetamine use disorders,2023,93.0
-Amphetamine use disorders,2024,99.0
-Amphetamine use disorders,2025,85.0
 Lymphoma,2008,193.2
 Lymphoma,2009,183.6
 Lymphoma,2010,195.1
@@ -683,6 +665,24 @@ Lymphoma,2022,302.0
 Lymphoma,2023,323.0
 Lymphoma,2024,287.0
 Lymphoma,2025,281.0
+Amphetamine use disorders,2008,67.4
+Amphetamine use disorders,2009,68.5
+Amphetamine use disorders,2010,72.9
+Amphetamine use disorders,2011,70.0
+Amphetamine use disorders,2012,68.8
+Amphetamine use disorders,2013,68.3
+Amphetamine use disorders,2014,62.7
+Amphetamine use disorders,2015,57.9
+Amphetamine use disorders,2016,50.2
+Amphetamine use disorders,2017,48.0
+Amphetamine use disorders,2018,49.0
+Amphetamine use disorders,2019,47.0
+Amphetamine use disorders,2020,92.0
+Amphetamine use disorders,2021,87.0
+Amphetamine use disorders,2022,106.0
+Amphetamine use disorders,2023,93.0
+Amphetamine use disorders,2024,99.0
+Amphetamine use disorders,2025,85.0
 Bipolar disorder,2008,0
 Bipolar disorder,2009,0
 Bipolar disorder,2010,0
@@ -719,24 +719,6 @@ Epilepsy,2022,226.0
 Epilepsy,2023,245.0
 Epilepsy,2024,230.0
 Epilepsy,2025,216.0
-Esophageal cancer,2008,0
-Esophageal cancer,2009,0
-Esophageal cancer,2010,0
-Esophageal cancer,2011,0
-Esophageal cancer,2012,0
-Esophageal cancer,2013,0
-Esophageal cancer,2014,0
-Esophageal cancer,2015,0
-Esophageal cancer,2016,0
-Esophageal cancer,2017,0
-Esophageal cancer,2018,0
-Esophageal cancer,2019,0
-Esophageal cancer,2020,37.0
-Esophageal cancer,2021,45.0
-Esophageal cancer,2022,54.0
-Esophageal cancer,2023,61.0
-Esophageal cancer,2024,59.0
-Esophageal cancer,2025,61.0
 Skin cancer,2008,0
 Skin cancer,2009,0
 Skin cancer,2010,0
@@ -755,6 +737,24 @@ Skin cancer,2022,0
 Skin cancer,2023,0
 Skin cancer,2024,256.0
 Skin cancer,2025,285.0
+Esophageal cancer,2008,0
+Esophageal cancer,2009,0
+Esophageal cancer,2010,0
+Esophageal cancer,2011,0
+Esophageal cancer,2012,0
+Esophageal cancer,2013,0
+Esophageal cancer,2014,0
+Esophageal cancer,2015,0
+Esophageal cancer,2016,0
+Esophageal cancer,2017,0
+Esophageal cancer,2018,0
+Esophageal cancer,2019,0
+Esophageal cancer,2020,37.0
+Esophageal cancer,2021,45.0
+Esophageal cancer,2022,54.0
+Esophageal cancer,2023,61.0
+Esophageal cancer,2024,59.0
+Esophageal cancer,2025,61.0
 Gallbladder disease,2008,6.8
 Gallbladder disease,2009,7.0
 Gallbladder disease,2010,5.0
@@ -773,42 +773,6 @@ Gallbladder disease,2022,19.0
 Gallbladder disease,2023,16.0
 Gallbladder disease,2024,17.0
 Gallbladder disease,2025,17.0
-Ovarian cancer,2008,96.2
-Ovarian cancer,2009,101.8
-Ovarian cancer,2010,122.2
-Ovarian cancer,2011,138.1
-Ovarian cancer,2012,147.4
-Ovarian cancer,2013,133.3
-Ovarian cancer,2014,130.7
-Ovarian cancer,2015,118.2
-Ovarian cancer,2016,143.6
-Ovarian cancer,2017,151.0
-Ovarian cancer,2018,159.0
-Ovarian cancer,2019,168.0
-Ovarian cancer,2020,188.0
-Ovarian cancer,2021,178.0
-Ovarian cancer,2022,178.0
-Ovarian cancer,2023,171.0
-Ovarian cancer,2024,178.0
-Ovarian cancer,2025,177.0
-HIV/AIDS,2008,2928.3
-HIV/AIDS,2009,3019.3
-HIV/AIDS,2010,3085.3
-HIV/AIDS,2011,3059.2
-HIV/AIDS,2012,3074.0
-HIV/AIDS,2013,2897.5
-HIV/AIDS,2014,2977.5
-HIV/AIDS,2015,3000.0
-HIV/AIDS,2016,3000.0
-HIV/AIDS,2017,3000.0
-HIV/AIDS,2018,2995.0
-HIV/AIDS,2019,3037.0
-HIV/AIDS,2020,3076.0
-HIV/AIDS,2021,3082.0
-HIV/AIDS,2022,3194.0
-HIV/AIDS,2023,3294.0
-HIV/AIDS,2024,3293.0
-HIV/AIDS,2025,3294.0
 Uterine cancer,2008,15.8
 Uterine cancer,2009,25.0
 Uterine cancer,2010,25.7
@@ -827,24 +791,42 @@ Uterine cancer,2022,37.0
 Uterine cancer,2023,42.0
 Uterine cancer,2024,44.0
 Uterine cancer,2025,49.0
-Congenital heart disease,2008,0
-Congenital heart disease,2009,0
-Congenital heart disease,2010,0
-Congenital heart disease,2011,0
-Congenital heart disease,2012,0
-Congenital heart disease,2013,0
-Congenital heart disease,2014,0
-Congenital heart disease,2015,0
-Congenital heart disease,2016,110.9
-Congenital heart disease,2017,119.0
-Congenital heart disease,2018,117.0
-Congenital heart disease,2019,131.0
-Congenital heart disease,2020,135.0
-Congenital heart disease,2021,136.0
-Congenital heart disease,2022,137.0
-Congenital heart disease,2023,157.0
-Congenital heart disease,2024,154.0
-Congenital heart disease,2025,139.0
+HIV/AIDS,2008,2928.3
+HIV/AIDS,2009,3019.3
+HIV/AIDS,2010,3085.3
+HIV/AIDS,2011,3059.2
+HIV/AIDS,2012,3074.0
+HIV/AIDS,2013,2897.5
+HIV/AIDS,2014,2977.5
+HIV/AIDS,2015,3000.0
+HIV/AIDS,2016,3000.0
+HIV/AIDS,2017,3000.0
+HIV/AIDS,2018,2995.0
+HIV/AIDS,2019,3037.0
+HIV/AIDS,2020,3076.0
+HIV/AIDS,2021,3082.0
+HIV/AIDS,2022,3194.0
+HIV/AIDS,2023,3294.0
+HIV/AIDS,2024,3293.0
+HIV/AIDS,2025,3294.0
+Ovarian cancer,2008,96.2
+Ovarian cancer,2009,101.8
+Ovarian cancer,2010,122.2
+Ovarian cancer,2011,138.1
+Ovarian cancer,2012,147.4
+Ovarian cancer,2013,133.3
+Ovarian cancer,2014,130.7
+Ovarian cancer,2015,118.2
+Ovarian cancer,2016,143.6
+Ovarian cancer,2017,151.0
+Ovarian cancer,2018,159.0
+Ovarian cancer,2019,168.0
+Ovarian cancer,2020,188.0
+Ovarian cancer,2021,178.0
+Ovarian cancer,2022,178.0
+Ovarian cancer,2023,171.0
+Ovarian cancer,2024,178.0
+Ovarian cancer,2025,177.0
 Stomach cancer,2008,0
 Stomach cancer,2009,0
 Stomach cancer,2010,0
@@ -863,24 +845,24 @@ Stomach cancer,2022,44.0
 Stomach cancer,2023,50.0
 Stomach cancer,2024,52.0
 Stomach cancer,2025,56.0
-Multiple sclerosis,2008,168.6
-Multiple sclerosis,2009,136.7
-Multiple sclerosis,2010,132.7
-Multiple sclerosis,2011,121.6
-Multiple sclerosis,2012,115.4
-Multiple sclerosis,2013,111.5
-Multiple sclerosis,2014,102.2
-Multiple sclerosis,2015,93.8
-Multiple sclerosis,2016,97.1
-Multiple sclerosis,2017,111.0
-Multiple sclerosis,2018,112.0
-Multiple sclerosis,2019,111.0
-Multiple sclerosis,2020,124.0
-Multiple sclerosis,2021,126.0
-Multiple sclerosis,2022,121.0
-Multiple sclerosis,2023,110.0
-Multiple sclerosis,2024,108.0
-Multiple sclerosis,2025,112.0
+Congenital heart disease,2008,0
+Congenital heart disease,2009,0
+Congenital heart disease,2010,0
+Congenital heart disease,2011,0
+Congenital heart disease,2012,0
+Congenital heart disease,2013,0
+Congenital heart disease,2014,0
+Congenital heart disease,2015,0
+Congenital heart disease,2016,110.9
+Congenital heart disease,2017,119.0
+Congenital heart disease,2018,117.0
+Congenital heart disease,2019,131.0
+Congenital heart disease,2020,135.0
+Congenital heart disease,2021,136.0
+Congenital heart disease,2022,137.0
+Congenital heart disease,2023,157.0
+Congenital heart disease,2024,154.0
+Congenital heart disease,2025,139.0
 Vision loss,2008,796.4
 Vision loss,2009,862.2
 Vision loss,2010,817.4
@@ -899,6 +881,24 @@ Vision loss,2022,1097.0
 Vision loss,2023,1146.0
 Vision loss,2024,1133.0
 Vision loss,2025,1069.0
+Multiple sclerosis,2008,168.6
+Multiple sclerosis,2009,136.7
+Multiple sclerosis,2010,132.7
+Multiple sclerosis,2011,121.6
+Multiple sclerosis,2012,115.4
+Multiple sclerosis,2013,111.5
+Multiple sclerosis,2014,102.2
+Multiple sclerosis,2015,93.8
+Multiple sclerosis,2016,97.1
+Multiple sclerosis,2017,111.0
+Multiple sclerosis,2018,112.0
+Multiple sclerosis,2019,111.0
+Multiple sclerosis,2020,124.0
+Multiple sclerosis,2021,126.0
+Multiple sclerosis,2022,121.0
+Multiple sclerosis,2023,110.0
+Multiple sclerosis,2024,108.0
+Multiple sclerosis,2025,112.0
 Rheumatoid arthritis,2008,0
 Rheumatoid arthritis,2009,0
 Rheumatoid arthritis,2010,0
@@ -935,24 +935,6 @@ Cervical cancer,2022,147.0
 Cervical cancer,2023,164.0
 Cervical cancer,2024,149.0
 Cervical cancer,2025,135.0
-ADHD,2008,60.4
-ADHD,2009,70.9
-ADHD,2010,66.4
-ADHD,2011,55.3
-ADHD,2012,59.7
-ADHD,2013,49.4
-ADHD,2014,44.5
-ADHD,2015,41.4
-ADHD,2016,47.4
-ADHD,2017,54.0
-ADHD,2018,58.0
-ADHD,2019,64.0
-ADHD,2020,72.0
-ADHD,2021,72.0
-ADHD,2022,78.0
-ADHD,2023,72.0
-ADHD,2024,75.0
-ADHD,2025,73.0
 Eating disorders,2008,0
 Eating disorders,2009,26.0
 Eating disorders,2010,28.3
@@ -971,6 +953,24 @@ Eating disorders,2022,55.0
 Eating disorders,2023,55.0
 Eating disorders,2024,55.0
 Eating disorders,2025,53.0
+ADHD,2008,60.4
+ADHD,2009,70.9
+ADHD,2010,66.4
+ADHD,2011,55.3
+ADHD,2012,59.7
+ADHD,2013,49.4
+ADHD,2014,44.5
+ADHD,2015,41.4
+ADHD,2016,47.4
+ADHD,2017,54.0
+ADHD,2018,58.0
+ADHD,2019,64.0
+ADHD,2020,72.0
+ADHD,2021,72.0
+ADHD,2022,78.0
+ADHD,2023,72.0
+ADHD,2024,75.0
+ADHD,2025,73.0
 Hepatitis B,2008,52.9
 Hepatitis B,2009,51.3
 Hepatitis B,2010,65.9
@@ -1079,24 +1079,6 @@ Maternal conditions,2022,346.0
 Maternal conditions,2023,429.0
 Maternal conditions,2024,382.0
 Maternal conditions,2025,425.0
-Sickle cell disease,2008,80.4
-Sickle cell disease,2009,62.6
-Sickle cell disease,2010,73.2
-Sickle cell disease,2011,65.1
-Sickle cell disease,2012,65.5
-Sickle cell disease,2013,69.7
-Sickle cell disease,2014,74.9
-Sickle cell disease,2015,74.7
-Sickle cell disease,2016,92.0
-Sickle cell disease,2017,109.0
-Sickle cell disease,2018,104.0
-Sickle cell disease,2019,139.0
-Sickle cell disease,2020,145.0
-Sickle cell disease,2021,146.0
-Sickle cell disease,2022,153.0
-Sickle cell disease,2023,184.0
-Sickle cell disease,2024,153.0
-Sickle cell disease,2025,155.0
 Neural tube defects,2008,15.4
 Neural tube defects,2009,13.5
 Neural tube defects,2010,12.2
@@ -1133,6 +1115,24 @@ Otitis media,2022,10.0
 Otitis media,2023,12.0
 Otitis media,2024,12.0
 Otitis media,2025,15.0
+Sickle cell disease,2008,80.4
+Sickle cell disease,2009,62.6
+Sickle cell disease,2010,73.2
+Sickle cell disease,2011,65.1
+Sickle cell disease,2012,65.5
+Sickle cell disease,2013,69.7
+Sickle cell disease,2014,74.9
+Sickle cell disease,2015,74.7
+Sickle cell disease,2016,92.0
+Sickle cell disease,2017,109.0
+Sickle cell disease,2018,104.0
+Sickle cell disease,2019,139.0
+Sickle cell disease,2020,145.0
+Sickle cell disease,2021,146.0
+Sickle cell disease,2022,153.0
+Sickle cell disease,2023,184.0
+Sickle cell disease,2024,153.0
+Sickle cell disease,2025,155.0
 Sexually transmitted infections,2008,244.8
 Sexually transmitted infections,2009,249.5
 Sexually transmitted infections,2010,250.2
@@ -1169,24 +1169,6 @@ Hodgkin lymphoma,2022,19.0
 Hodgkin lymphoma,2023,24.0
 Hodgkin lymphoma,2024,20.0
 Hodgkin lymphoma,2025,24.0
-Tuberculosis,2008,141.6
-Tuberculosis,2009,189.1
-Tuberculosis,2010,188.7
-Tuberculosis,2011,209.1
-Tuberculosis,2012,217.9
-Tuberculosis,2013,240.2
-Tuberculosis,2014,278.8
-Tuberculosis,2015,272.2
-Tuberculosis,2016,290.0
-Tuberculosis,2017,347.0
-Tuberculosis,2018,403.0
-Tuberculosis,2019,488.0
-Tuberculosis,2020,477.0
-Tuberculosis,2021,594.0
-Tuberculosis,2022,611.0
-Tuberculosis,2023,595.0
-Tuberculosis,2024,578.0
-Tuberculosis,2025,588.0
 Infertility,2008,73.0
 Infertility,2009,74.6
 Infertility,2010,75.6
@@ -1205,3 +1187,21 @@ Infertility,2022,189.0
 Infertility,2023,216.0
 Infertility,2024,221.0
 Infertility,2025,242.0
+Tuberculosis,2008,141.6
+Tuberculosis,2009,189.1
+Tuberculosis,2010,188.7
+Tuberculosis,2011,209.1
+Tuberculosis,2012,217.9
+Tuberculosis,2013,240.2
+Tuberculosis,2014,278.8
+Tuberculosis,2015,272.2
+Tuberculosis,2016,290.0
+Tuberculosis,2017,347.0
+Tuberculosis,2018,403.0
+Tuberculosis,2019,488.0
+Tuberculosis,2020,477.0
+Tuberculosis,2021,594.0
+Tuberculosis,2022,611.0
+Tuberculosis,2023,595.0
+Tuberculosis,2024,578.0
+Tuberculosis,2025,588.0

@@ -48,7 +48,7 @@ export default function Chapter1() {
     T('snapshots', <>
       <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">Was Ambien a one-off?</p>
       <p>Since 2015 the FDA has published a "Drug Trials Snapshot" for each novel drug its drug centre approves, listing who was in the pivotal trials by sex, race and age.<Cite id="fda-snapshots" /></p>
-      <p>We collected every snapshot, {s.n_drugs} of them across {s.years[0]} to {s.years[1]}, including the ones the FDA has since removed from its live index.<Cite id="fda-snapshots-archive" /> Each dot below is one drug, placed by the share of its trial participants who were women. The median drug was tested on a population that was {s.median_trial_female_pct.toFixed(0)}% women.</p>
+      <p>We collected every snapshot we could retrieve, {s.n_drugs} drugs across {s.years[0]} to {s.years[1]}, including the ones the FDA has since removed from its live index.<Cite id="fda-snapshots-archive" /> Each dot below is one drug, placed by the share of its trial participants who were women. The median drug was tested on a population that was {s.median_trial_female_pct.toFixed(0)}% women.</p>
     </>),
     F('beeswarm', <Beeswarm drugs={data.drugs} mode="low" title={`Who was in the trial, for ${s.n_drugs} new drugs`} subtitle={`Each dot is one FDA approval. In berry: the ${s.n_under_30} drugs approved on trials under 30% women. Hover for the drug.`} source={snapSrc} />, 'chart', true),
     T('low', <>
@@ -64,7 +64,7 @@ export default function Chapter1() {
     F('scatter', <Scatter drugs={withFaers} mode="quadrant" gapThreshold={GAP} title="Who was studied vs. who reports harm" subtitle="One dot per drug. Dotted line: reports match the trial's sex mix. Shaded: the Ambien corner." source={faersSrc} />, 'tall', true),
     T('quadrant', <>
       <p>{quadrant.length} drugs sit in that corner. The median gap there is +{s.median_gap.toFixed(0)} points.</p>
-      <p>This is the Ambien pattern, found {quadrant.length} more times, in drugs approved in the last decade. Here they are. Click a column to sort; click a drug name to open the FDA's own snapshot for it.</p>
+      <p>This is the shape zolpidem taught people to look for, a thin trial and a loud signal, found {quadrant.length} times in drugs approved in the last decade. Zolpidem itself, as the end of this chapter shows, turned out to be mostly a story about who takes the drug; some of these will be too, and some will not. Here they are. Click a column to sort; click a drug name to open the FDA's own snapshot for it.</p>
     </>),
     F('table', <DataTable drugs={quadrant} title={`${quadrant.length} drugs in the corner`} subtitle="Sorted by gap. Click a name for the FDA snapshot." source={faersSrc} />, 'flow', true),
     T('table-text', <>

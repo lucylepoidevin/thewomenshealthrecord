@@ -23,7 +23,7 @@ def drug_rec(x):
 TRIALS = {d["disease"]: d for d in c4["diseases"] + c4["sex_specific"]}
 TRIALS_UNC = {u["condition"]: u for u in c4["uncounted"]}
 ED5 = {g["id"]: g for g in c5["groups"]}
-UNC_NAMES = {"Fibromyalgia": "Fibromyalgia", "Chronic Fatigue Syndrome": "ME/CFS", "Lupus": "Lupus", "Interstitial Cystitis": "Interstitial cystitis", "Temporomandibular Muscle/Joint Disorder": "TMJD", "Sjogren's Disease": "Sjögren's disease", "Scleroderma": "Scleroderma", "Postural Orthostatic Tachycardia Syndrome": "POTS", "Osteoporosis": "Osteoporosis", "Endometriosis": "Endometriosis", "Vulvodynia": "Vulvodynia", "Polycystic Ovary Syndrome": "PCOS"}
+UNC_NAMES = {"Fibromyalgia": "Fibromyalgia", "Chronic Fatigue Syndrome": "ME/CFS", "Lupus": "Lupus", "Interstitial Cystitis": "Interstitial cystitis", "Temporomandibular Muscle/Joint Disorder": "TMJD", "Sjogren's Disease": "Sjögren's disease", "Scleroderma": "Scleroderma", "Postural Orthostatic Tachycardia Syndrome": "POTS", "Osteoporosis": "Osteoporosis"}
 
 
 def trial_rec(t):
@@ -50,10 +50,10 @@ LINKS = {
     "Breast cancer": (r"breast cancer", None), "Ovarian cancer": (r"ovarian", None), "Cervical cancer": (r"cervical cancer", None), "Uterine cancer": (r"endometrial|uterine", None), "Prostate cancer": (r"prostate", None),
     "Lung cancer": (r"lung cancer|non-small cell|small cell", None), "Colorectal cancer": (r"colorectal|colon", None), "Pancreatic cancer": (r"pancrea", None), "Liver cancer": (r"hepatocellular|liver cancer", None),
     "Stomach cancer": (r"gastric|stomach cancer", None), "Esophageal cancer": (r"esophag", None), "Skin cancer": (r"melanoma|skin cancer|squamous cell carcinoma|basal cell", None), "Brain cancer": (r"glioma|glioblastoma|brain tumor", None),
-    "Lymphoma": (r"lymphoma", None), "Hodgkin lymphoma": (r"hodgkin", None), "Rheumatoid arthritis": (r"rheumatoid", None), "Osteoarthritis": (r"osteoarthritis", "limb"), "Back and neck pain": (r"back pain", "back"),
+    "Lymphoma": (r"(?<!hodgkin )lymphoma", None), "Hodgkin lymphoma": (r"(?<!non-)hodgkin", None), "Rheumatoid arthritis": (r"rheumatoid", None), "Osteoarthritis": (r"osteoarthritis", "limb"), "Back and neck pain": (r"back pain", "back"),
     "Inflammatory bowel disease": (r"crohn|ulcerative colitis|inflammatory bowel", "abdominal"), "Peptic ulcer": (r"ulcer|h\. pylori|helicobacter", "abdominal"), "Gallbladder disease": (r"gallbladder|biliary", "abdominal"),
     "Gynaecological diseases": (r"endometriosis|fibroid|polycystic|vulvodynia|pelvic|menorrhag|uterine bleeding", None), "Infertility": (r"infertil|ovulation|ivf", None), "Maternal conditions": (r"pregnan|postpartum|preterm", None),
-    "Sickle cell disease": (r"sickle", None), "Macular degeneration": (r"macular", None), "Hearing loss": (r"hearing", None), "Vision loss": (r"retin|glaucoma|myopia|dry eye", None),
+    "Sickle cell disease": (r"sickle", None), "Macular degeneration": (r"macular", None), "Hearing loss": (r"hearing loss|hearing impair", None), "Vision loss": (r"retinal|retinopathy|retinitis|glaucoma|myopia|dry eye|macular", None),
     "Opioid use disorders": (r"opioid use|opioid dependence|opioid overdose", None), "Alcohol use disorders": (r"alcohol", None), "Drug use disorders": (r"substance use|drug dependence", None),
     "Suicide and self-harm": (r"suicid", None), "Interpersonal violence": (None, None), "Unintentional injuries": (None, None), "Oral and dental disease": (r"dental|periodont", None), "Pneumonia and influenza": (r"pneumonia|influenza", None),
 }

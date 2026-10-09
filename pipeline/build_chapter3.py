@@ -95,7 +95,9 @@ MAPPING = {
     "Tuberculosis": (["Tuberculosis"], [30], "NIH funding is largely for global disease; US burden is small"),
 }
 # conditions NIH funds that have no WHO burden estimate at all (mostly female-dominant)
-UNCOUNTED = ["Fibromyalgia", "Chronic Fatigue Syndrome (ME/CFS)", "Lupus", "Interstitial Cystitis", "Temporomandibular Muscle/Joint Disorder (TMJD)", "Sjogren's Disease", "Scleroderma", "Postural Orthostatic Tachycardia Syndrome", "Osteoporosis", "Endometriosis", "Vulvodynia", "Polycystic Ovary Syndrome (PCOS)"]
+UNCOUNTED = ["Fibromyalgia", "Chronic Fatigue Syndrome (ME/CFS)", "Lupus", "Interstitial Cystitis", "Temporomandibular Muscle/Joint Disorder (TMJD)", "Sjogren's Disease", "Scleroderma", "Postural Orthostatic Tachycardia Syndrome", "Osteoporosis"]  # endometriosis, vulvodynia and PCOS are counted inside WHO's gynaecological diseases
+MAIN_BURDEN_YEAR = 2023
+NESTED = {"Opioid Misuse and Addiction", "Cocaine", "Methamphetamine", "Hodgkin's Disease", "Macular Degeneration"}  # inside Drug Abuse, Lymphoma and Eye Disease respectively
 
 
 def load_rcdc():
@@ -174,16 +176,16 @@ def summarize(rows):
             "median_dollars_per_daly": {"female": med("dollars_per_daly", "female"), "male": med("dollars_per_daly", "male"), "balanced": med("dollars_per_daly", "balanced")},
             "median_ratio_to_expected": {"female": med("ratio_to_expected", "female"), "male": med("ratio_to_expected", "male"), "balanced": med("ratio_to_expected", "balanced")},
             "share_underfunded": {"female": round(under_f / len(fem) * 100) if fem else None, "male": round(under_m / len(mal) * 100) if mal else None},
-            "female_shortfall_m": round(gap_f), "total_funding_m": round(sum(r["funding_m"] for r in rows))}
+            "female_shortfall_m": round(gap_f), "total_funding_m": round(sum(r["funding_m"] for r in rows if not set(r["nih_categories"]) & NESTED))}
 
 
 def main():
     rcdc = load_rcdc()
-    who21 = load_who(2021)
+    who21 = load_who(MAIN_BURDEN_YEAR)
     rows, fit = build_year(rcdc, who21, [LATEST_FY])
     # disability share of burden (YLD / DALY) per disease, from the WHO YLD file
     try:
-        yld = load_who(2021, "yld")
+        yld = load_who(MAIN_BURDEN_YEAR, "yld")
         for r in rows:
             y = sum(yld.get(c, {}).get("Persons", 0) for c in r["who_codes"])
             r["disability_share"] = round(y / (r["dalys_k"]) * 100, 1) if r["dalys_k"] else None
@@ -217,7 +219,7 @@ def main():
               "Postural Orthostatic Tachycardia Syndrome": "Postural orthostatic tachycardia syndrome (POTS)", "Osteoporosis": "Osteoporosis", "Endometriosis": "Endometriosis", "Vulvodynia": "Vulvodynia",
               "Polycystic Ovary Syndrome (PCOS)": "Polycystic ovary syndrome (PCOS)"}
     uncounted = [{"category": c, "label": LABELS.get(c, c), "funding_m": round(rcdc.get(c, {}).get(LATEST_FY, 0), 1)} for c in UNCOUNTED if rcdc.get(c, {}).get(LATEST_FY)]
-    out = {"generated": date.today().isoformat(), "funding_fy": 2024, "burden_year": 2021, "fit": fit, "min_dalys_k": MIN_DALYS_K,
+    out = {"generated": date.today().isoformat(), "funding_fy": 2024, "burden_year": MAIN_BURDEN_YEAR, "fit": fit, "min_dalys_k": MIN_DALYS_K,
            "diseases": sorted(rows, key=lambda r: -r["dalys_k"]), "summary": summary, "trend": trend, "uncounted": uncounted, "comparators": comparators}
     with open(f"{SITE_DATA}/chapter3.json", "w", encoding="utf-8") as f:
         json.dump(out, f, indent=1, default=lambda o: float(o))

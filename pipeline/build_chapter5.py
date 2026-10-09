@@ -137,7 +137,7 @@ def load():
             "stroke_tia": (anyrng("I60", "I69") | anyrng("G45", "G46")).values, "vestibular": anyrng("H81", "H83").values, "anaemia": anyrng("D50", "D64").values, "infection_any": (anystart("A") | anystart("B")).values,
             "totdiag": df["TOTDIAG"], "anyimage": df["ANYIMAGE"], "cbc": df["CBC"], "bmp": df["BMP"], "urine": df["URINE"], "pregtest": df["PREGTEST"],
             "cardenz": df["CARDENZ"], "ddimer": df["DDIMER"], "ekg": df["EKG"], "ctab": df["CTAB"], "cthead": df["CTHEAD"], "ultrasound": df["ULTRASND"] if "ULTRASND" in df else -9, "ctscan": df["CATSCAN"] if "CATSCAN" in df else -9,
-            "admit": df["ADMIT"] if "ADMIT" in df else df["ADMITHOS"], "seen72": df["SEEN72"], "nofu": df["NOFU"], "retrned": df["RETRNED"], "lov": df["LOV"], "wait": df["WAITTIME"], "leftama": df["LEFTAMA"],
+            "admit": ((df["ADMITHOS"] == 1) | (df["OBSHOS"] == 1) | (df["TRANOTH"] == 1)).astype(int), "seen72": df["SEEN72"], "nofu": df["NOFU"], "retrned": df["RETRNED"], "lov": df["LOV"], "wait": df["WAITTIME"], "leftama": df["LEFTAMA"],
             "totchron": df["TOTCHRON"] if "TOTCHRON" in df else -9,
         })
         frames.append(out)

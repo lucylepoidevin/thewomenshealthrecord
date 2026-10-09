@@ -42,7 +42,9 @@ def classify(rec, trial_female_pct=None):
     pop = " ".join(str(rec.get(k, "")) for k in ("use_in_specific_populations", "pregnancy", "lactation", "nursing_mothers", "females_and_males_of_reproductive_potential"))
     dose = str(rec.get("dosage_and_administration", ""))
     sex_sents = [s for s in SENT.split(pk) if re.search(r"\b(sex|gender|females?|women|males?|men)\b", s, re.I) and len(s) < 600]
-    out = {"male_only_pk": bool(R["male_only_pk"].search(pk)), "quantified": any(R["quantified"].search(s) for s in sex_sents), "difference": any(R["difference"].search(s) for s in sex_sents),
+    NEG = re.compile(r"\b(no|not|without) (clinically )?(significant|meaningful|relevant|important)|did not (differ|affect)|no (effect|impact|difference)", re.I)
+    pos_sents = [s for s in sex_sents if not NEG.search(s)]
+    out = {"male_only_pk": bool(R["male_only_pk"].search(pk)), "quantified": any(R["quantified"].search(s) for s in pos_sents), "difference": any(R["difference"].search(s) for s in pos_sents),
            "no_difference": any(R["no_difference"].search(s) for s in sex_sents), "not_evaluated": any(R["not_evaluated"].search(s) for s in sex_sents),
            "mentions_sex": bool(sex_sents), "no_preg_data": bool(R["no_preg_data"].search(pop)), "no_lact_data": bool(R["no_lact_data"].search(pop)), "sex_dose": bool(R["sex_dose"].search(dose)),
            "has_lactation_section": bool(rec.get("lactation") or rec.get("nursing_mothers")), "has_pregnancy_section": bool(rec.get("pregnancy"))}

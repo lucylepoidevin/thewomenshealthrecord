@@ -27,7 +27,7 @@ BURDEN = {d["disease"]: d for d in c3["diseases"]}
 
 
 def load_who_sheet(sheet):
-    df = pd.read_excel(f"{CACHE}/ch3/who_daly_2021.xlsx", sheet_name=sheet, header=None)
+    df = pd.read_excel(f"{CACHE}/ch3/who_daly_{c3['burden_year']}.xlsx", sheet_name=sheet, header=None)
     col = [i for i in range(df.shape[1]) if str(df.iat[7, i]).strip() == "USA"][0]
     out = {}
     for i in range(9, df.shape[0]):
@@ -74,7 +74,7 @@ MESH = {
 }
 # conditions with no WHO burden (chapter 3's uncounted list): trials only
 UNCOUNTED = {"Fibromyalgia": ["Fibromyalgia"], "ME/CFS": ["Fatigue Syndrome, Chronic"], "Lupus": ["Lupus Erythematosus, Systemic"], "Interstitial cystitis": ["Cystitis, Interstitial"], "TMJD": ["Temporomandibular Joint Disorders"],
-             "Sjögren's disease": ["Sjogren's Syndrome"], "Scleroderma": ["Scleroderma, Systemic"], "POTS": ["Postural Orthostatic Tachycardia Syndrome"], "Osteoporosis": ["Osteoporosis"], "Endometriosis": ["Endometriosis"], "Vulvodynia": ["Vulvodynia"], "PCOS": ["Polycystic Ovary Syndrome"]}
+             "Sjögren's disease": ["Sjogren's Syndrome"], "Scleroderma": ["Scleroderma, Systemic"], "POTS": ["Postural Orthostatic Tachycardia Syndrome"], "Osteoporosis": ["Osteoporosis"]}
 SEX_SPECIFIC = {"Breast cancer", "Cervical cancer", "Ovarian cancer", "Uterine cancer", "Prostate cancer", "Testicular cancer", "Gynaecological diseases", "Infertility", "Preterm birth", "Maternal conditions", "Endometriosis", "Vulvodynia", "PCOS"}
 
 PREG = re.compile(r"pregnan|gestation", re.I)
@@ -94,7 +94,7 @@ def excludes_pregnant(r):
     in_excl = bool(re.search(r"pregnan", t[i.start():], re.I)) if i else False
     return in_excl or bool(PREG_EXCL.search(t))
 LACT = re.compile(r"lactat|breast[- ]?feed|nursing (mother|women|woman)", re.I)
-CONTRA = re.compile(r"contracept|birth control|barrier method|double[- ]barrier|intrauterine device|abstinen", re.I)
+CONTRA = re.compile(r"contracept|birth control|barrier method|double[- ]barrier|intrauterine device", re.I)  # not 'abstinence': addiction trials use the word for drink and drugs
 WOCBP = re.compile(r"child[- ]?bearing potential|reproductive potential|WOCBP|WOCP|able to become pregnant|could become pregnant|capable of becoming pregnant|of childbearing age|fertile (women|females)", re.I)
 PREGTEST = re.compile(r"pregnancy test|serum hcg|urine hcg|β-?hcg|beta-?hcg", re.I)
 
@@ -244,7 +244,7 @@ def main():
     # same disease, different sponsor: diseases with >=10 industry and >=10 NIH/other trials
     sponsor_pairs = [{"disease": e["disease"], "industry": e["by_sponsor"]["Industry"]["female_pct"], "nih": e["by_sponsor"]["NIH"]["female_pct"], "other": e["by_sponsor"]["Universities, hospitals, other"]["female_pct"], "burden": e["burden_female_pct"], "n_industry": e["by_sponsor"]["Industry"]["trials"], "n_nih": e["by_sponsor"]["NIH"]["trials"], "n_other": e["by_sponsor"]["Universities, hospitals, other"]["trials"]}
                      for e in ranked if e["by_sponsor"]["Industry"]["trials"] >= 10 and e["by_sponsor"]["Universities, hospitals, other"]["trials"] >= 10]
-    summary = {"trials_total": len(trials), "trials_us": len(US), "trials_with_sex": sum(1 for r in trials if r["n_sex"]), "participants_us": int(sum(r["n_sex"] for r in US)), "female_pct_us_open": share(gen)["female_pct"],
+    summary = {"burden_year": c3["burden_year"], "trials_total": len(trials), "trials_us": len(US), "trials_with_sex": sum(1 for r in trials if r["n_sex"]), "participants_us": int(sum(r["n_sex"] for r in US)), "female_pct_us_open": share(gen)["female_pct"],
                "n_diseases": len(ranked), "n_under": sum(1 for e in ranked if e["ratio"] < 0.9), "n_over": sum(1 for e in ranked if e["ratio"] > 1.1), "median_ratio_female_skew": round(float(np.median([e["ratio"] for e in ranked if e["skew"] == "female"])), 2) if any(e["skew"] == "female" for e in ranked) else None,
                "median_ratio_male_skew": round(float(np.median([e["ratio"] for e in ranked if e["skew"] == "male"])), 2) if any(e["skew"] == "male" for e in ranked) else None, "median_ratio_balanced": round(float(np.median([e["ratio"] for e in ranked if e["skew"] == "balanced"])), 2),
                "excl_preg_pct_us": pct(US, "excl_preg"), "contra_pct_us": pct(US, "contra"), "wocbp_pct_us": pct(US, "wocbp"), "excl_lact_pct_us": pct(US, "excl_lact"), "max_age_pct_us": round(100 * sum(1 for r in US if r["max_age_y"] is not None and r["max_age_y"] < 100) / len(US), 1),

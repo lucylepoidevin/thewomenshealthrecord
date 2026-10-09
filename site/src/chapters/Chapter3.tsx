@@ -30,7 +30,7 @@ export default function Chapter3() {
 
   const blocks: Block[] = [
     T('open', <>
-      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">Every year the National Institutes of Health decides how roughly {money(S.total_funding_m)} of research money is split between the diseases on this page.</p>
+      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">Every year the National Institutes of Health reports roughly {money(S.total_funding_m)} of research spending against the diseases on this page.</p>
       <p>In 2021 a study put NIH's disease funding against how much each disease actually costs Americans in healthy years of life, and found that when a disease fell mostly on one sex, the money favoured men: female-skewed diseases were underfunded for their burden and male-skewed diseases overfunded, with the shortfall nearly twice as large on the women's side.<Cite id="mirin-2021" /> It used a single year of funding and a single year of burden.</p>
       <p>We rebuilt it with the newest numbers from both sources, for {S.n} diseases, and then asked what the 2021 paper could not: how this has moved since 2010, which specific diseases carry the gap, and which conditions never make it into the accounting at all.</p>
     </>),
@@ -79,7 +79,7 @@ export default function Chapter3() {
     )),
     T('uncounted', <>
       <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">The conditions that are not counted.</p>
-      <p>A funding-to-burden comparison can only include diseases whose burden has been estimated. For {data.uncounted.length} conditions NIH funds, together worth {money(uncountedTotal)} a year, the WHO has no burden estimate at all. The list is not random: fibromyalgia, chronic fatigue syndrome, lupus, interstitial cystitis, jaw disorders, postural tachycardia syndrome, osteoporosis, endometriosis, vulvodynia, polycystic ovary syndrome. Nearly every one falls mostly on women.</p>
+      <p>A funding-to-burden comparison can only include diseases whose burden has been estimated. For {data.uncounted.length} conditions NIH funds, together worth {money(uncountedTotal)} a year, the WHO has no burden estimate at all. The list is not random: fibromyalgia, chronic fatigue syndrome, lupus, interstitial cystitis, jaw disorders, Sjögren's disease, scleroderma, postural tachycardia syndrome, osteoporosis. Every one falls mostly on women.</p>
       <p>These conditions cannot be shown to be underfunded relative to burden, because nobody has measured the burden. That is a different kind of gap, and in some ways a worse one.</p>
     </>),
     F('uncounted-fig', <Lollipop rows={[...data.uncounted].sort((a, b) => b.funding_m - a.funding_m).map(u => ({ label: u.label, value: u.funding_m, color: 'var(--c-female)' }))} title="Funded, but not measured" subtitle={`NIH funding, FY${data.funding_fy}, for conditions with no WHO burden estimate`} source={`Source: NIH RCDC category estimates, FY${data.funding_fy}. WHO Global Health Estimates has no cause for these conditions.`} axisLabel="NIH funding, $ millions" fmt={v => `$${v.toFixed(0)}M`} />),

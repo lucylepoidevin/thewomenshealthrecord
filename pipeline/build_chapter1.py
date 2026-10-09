@@ -184,6 +184,11 @@ def main():
             "enrollment_source": src,
         })
 
+    # one record per brand: some drugs have a second snapshot for a later indication; keep the original approval
+    seen = {}
+    for d in sorted(drugs, key=lambda d: (d["year"] is None, d["year"] or 0)):
+        seen.setdefault(d["brand"].lower(), d)
+    drugs = sorted(seen.values(), key=lambda d: d["brand"].lower())
     with_faers = [d for d in drugs if d["faers_n"] and d["faers_n"] >= MIN_REPORTS and not d["sex_specific"]]  # sex-specific drugs cannot have a meaningful gap
     with_rate = sorted([d for d in drugs if d["rate_ratio"]], key=lambda d: -d["rate_ratio"])
     zm = meps.get("zolpidem") or {}

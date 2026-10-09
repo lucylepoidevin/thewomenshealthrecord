@@ -94,7 +94,7 @@ export default function Record() {
             <table className="w-full border-collapse text-[13px] sm:text-[14px]">
               <thead><tr className="text-[11px] font-bold uppercase tracking-[0.12em] text-ink-3"><th className="py-2 pr-3 text-left font-bold">Of those visits…</th><th className="py-2 pr-3 text-right font-bold text-rose">Women</th><th className="py-2 pr-3 text-right font-bold text-bronze">Men</th><th className="py-2 text-right font-bold">Gap</th></tr></thead>
               <tbody>
-                <Row label="rated their pain 7 to 10" c={c.ed.metrics.severe_share} /><Row label="arrived by ambulance" c={c.ed.metrics.ems} /><Row label="were triaged urgent" c={c.ed.metrics.urgent} /><Row label="minutes to see a clinician" c={c.ed.metrics.wait_mean} unit=" min" /><Row label="were given any painkiller" c={c.ed.metrics.analgesic_ed} /><Row label="were given an opioid" c={c.ed.metrics.opioid_ed} /><Row label="were given an opioid, pain 7 to 10" c={c.ed.metrics.opioid_ed_severe} /><Row label="were admitted" c={c.ed.metrics.admitted} />
+                <Row label="rated their pain 7 to 10" c={c.ed.metrics.severe_share} /><Row label="arrived by ambulance" c={c.ed.metrics.ems} /><Row label="were triaged urgent" c={c.ed.metrics.urgent} /><Row label="minutes to see a clinician" c={c.ed.metrics.wait_mean} unit=" min" /><Row label="were given any painkiller" c={c.ed.metrics.analgesic_ed} /><Row label="were given an opioid" c={c.ed.metrics.opioid_ed} /><Row label="were given an opioid, pain 7 to 10" c={c.ed.metrics.opioid_ed_severe} /><Row label="were admitted, observed or transferred" c={c.ed.metrics.admitted} />
               </tbody>
             </table>
             <p className="mt-2 text-[11px] text-ink-3">A gap in bold is one the 95% interval does not reach across. Full intervals in the chapter and the data files.</p>
@@ -133,7 +133,7 @@ export default function Record() {
             <table className="w-full border-collapse text-[13px] sm:text-[14px]">
               <thead><tr className="text-[11px] font-bold uppercase tracking-[0.12em] text-ink-3"><th className="py-2 pr-3 text-left font-bold">Of those visits…</th><th className="py-2 pr-3 text-right font-bold text-rose">Women</th><th className="py-2 pr-3 text-right font-bold text-bronze">Men</th><th className="py-2 text-right font-bold">Gap</th></tr></thead>
               <tbody>
-                <Row label="tests ordered, on average" c={c.ed_label.metrics.tests_count} unit="" /><Row label="got any imaging" c={c.ed_label.metrics.anyimage} /><Row label="left with a symptom code, not a diagnosis" c={c.ed_label.metrics.symptom_dx} /><Row label="had an anxiety or stress code attached" c={c.ed_label.metrics.anxiety_any} /><Row label="were admitted" c={c.ed_label.metrics.admitted} /><Row label="had been in the same ED in the last 72 hours" c={c.ed_label.metrics.seen72} />
+                <Row label="tests ordered, on average" c={c.ed_label.metrics.tests_count} unit="" /><Row label="got any imaging" c={c.ed_label.metrics.anyimage} /><Row label="left with a symptom code, not a diagnosis" c={c.ed_label.metrics.symptom_dx} /><Row label="had an anxiety or stress code attached" c={c.ed_label.metrics.anxiety_any} /><Row label="were admitted, observed or transferred" c={c.ed_label.metrics.admitted} /><Row label="had been in the same ED in the last 72 hours" c={c.ed_label.metrics.seen72} />
               </tbody>
             </table>
           </div>

@@ -4,7 +4,7 @@ import numpy as np
 from build_chapter3 import load_rcdc, load_who, build_year, summarize, LATEST_FY
 from common import SITE_DATA
 
-rcdc = load_rcdc(); who = load_who(2021)
+rcdc = load_rcdc(); who = load_who(2023)
 base_rows, fit = build_year(rcdc, who, [LATEST_FY])
 
 
