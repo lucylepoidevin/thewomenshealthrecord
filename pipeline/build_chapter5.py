@@ -120,6 +120,8 @@ def load():
             "year": year, "sex": df["SEX"], "age": df["AGE"], "w": df["PATWT"].astype(float), "strat": df["CSTRATM"], "psu": df["CPSUM"],
             "rfv1": df["RFV1"], "rfv2": df["RFV2"], "rfv3": df["RFV3"], "injury": df["INJURY"], "pain": df["PAINSCALE"], "triage": df["IMMEDR"], "ems": df["ARREMS"],
             "dx1_valid": valid["DIAG1"].values, "dx1": d1.values,
+            "dxch": np.select([d1.str.startswith("R"), d1.str.startswith("I"), d1.str.startswith("J"), d1.str.startswith("K"), d1.str.startswith("F"), d1.str.startswith("G"), d1.str.startswith("N"), d1.str.startswith("M"), d1.str.match(r"^[AB]"), d1.str.startswith("O")],
+                              ["Symptom code", "Heart and circulation", "Lungs and airways", "Digestive", "Mental health", "Nervous system", "Kidney, bladder, reproductive", "Muscles and bones", "Infection", "Pregnancy"], "Other"),
             "sym1": (d1.str.startswith("R") & valid["DIAG1"]).values,
             "sym_all": ((n_sym + n_z == n_valid) & (n_valid > 0)).values,  # nothing but symptom / encounter codes
             "psych_any": (anystart("F") & ~anyrng("F10", "F19") & ~anyrng("F00", "F09")).values,  # excludes substance and organic
@@ -214,6 +216,7 @@ def main():
         }.get(gid)
         if named:
             g["named"] = [{"label": lab, "cmp": compare(d, dom, d[col])} for lab, col in named]
+        g["dx_mix"] = {c: compare(d, dom, d["dxch"] == c) for c in ["Symptom code", "Heart and circulation", "Lungs and airways", "Digestive", "Mental health", "Nervous system", "Kidney, bladder, reproductive", "Muscles and bones", "Infection", "Pregnancy", "Other"]}
         groups.append(g)
         m = g["metrics"]
         print(f"  {label:28} n={g['n']:5}  symptom dx W {m['symptom_dx']['women']['est']} M {m['symptom_dx']['men']['est']} | anxiety W {m['anxiety_any']['women']['est']} M {m['anxiety_any']['men']['est']} | 72h return W {m['seen72']['women']['est'] if m['seen72'] else '-'} M {m['seen72']['men']['est'] if m['seen72'] else '-'} | tests W {m['tests_count']['women']['est']} M {m['tests_count']['men']['est']}")

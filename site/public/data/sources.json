@@ -100,53 +100,6 @@
   "note": "DALYs in thousands; All ages sheet; Males and Females rows."
  },
  {
-  "id": "nimh-anxiety",
-  "title": "Any anxiety disorder: prevalence of any anxiety disorder among U.S. adults",
-  "publisher": "National Institute of Mental Health, from the National Comorbidity Survey Replication (2001\u20132003)",
-  "url": "https://www.nimh.nih.gov/health/statistics/any-anxiety-disorder",
-  "retrieved": "2026-10-08",
-  "note": "Past-year prevalence 23.4% of women, 14.3% of men."
- },
- {
-  "id": "westergaard-2019",
-  "title": "Population-wide analysis of differences in disease progression patterns in men and women",
-  "publisher": "Westergaard D., Moseley P., S\u00f8rup F.K.H., Baldi P., Brunak S., Nature Communications 10, 666 (2019). doi:10.1038/s41467-019-08475-9",
-  "url": "https://doi.org/10.1038/s41467-019-08475-9",
-  "retrieved": "2026-10-08",
-  "note": "Danish registries, 6.9 million people, 1994\u20132015; women diagnosed later than men for the majority of 770 diseases, about four years on average."
- },
- {
-  "id": "seer-stage",
-  "title": "SEER*Explorer data archive: stage distribution of SEER incidence cases by sex, 2013\u20132022 (November 2024 submission)",
-  "publisher": "Surveillance, Epidemiology, and End Results Program, National Cancer Institute",
-  "url": "https://seer.cancer.gov/statistics-network/explorer/archive.html",
-  "retrieved": "2026-10-08",
-  "note": "SEER summary stage (localized, regional, distant, unstaged); All Races, by sex and age band; 22 registries."
- },
- {
-  "id": "seer-age",
-  "title": "SEER*Explorer data archive: median age at diagnosis by sex, 2018\u20132022 (November 2024 submission)",
-  "publisher": "Surveillance, Epidemiology, and End Results Program, National Cancer Institute",
-  "url": "https://seer.cancer.gov/statistics-network/explorer/archive.html",
-  "retrieved": "2026-10-08"
- },
- {
-  "id": "cohn-2014",
-  "title": "Sex disparities in diagnosis of bladder cancer after initial presentation with hematuria: a nationwide claims-based investigation",
-  "publisher": "Cohn J.A., Vekhter B., Lyttle C., Steinberg G.D., Large M.C., Cancer 120(4), 2014. doi:10.1002/cncr.28416",
-  "url": "https://doi.org/10.1002/cncr.28416",
-  "retrieved": "2026-10-08",
-  "note": "7,649 insured adults with haematuria later diagnosed with bladder cancer, 2004\u20132010: mean 85.4 days to diagnosis for women against 73.6 for men; women 2.3 times as likely to be diagnosed with a urinary infection first."
- },
- {
-  "id": "nhamcs-icd",
-  "title": "ICD-10-CM chapter XVIII: symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified (R00\u2013R99)",
-  "publisher": "National Center for Health Statistics, CDC",
-  "url": "https://www.cdc.gov/nchs/icd/icd-10-cm/index.html",
-  "retrieved": "2026-10-08",
-  "note": "A visit 'ends with a symptom code' when its first-listed diagnosis is in this chapter."
- },
- {
   "id": "pubmed",
   "title": "PubMed E-utilities: record counts by year for MeSH-indexed rodent and human studies by sex",
   "publisher": "National Library of Medicine",
@@ -222,5 +175,52 @@
   "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/study-and-evaluation-gender-differences-clinical-evaluation-drugs",
   "retrieved": "2026-10-08",
   "note": "Lifted the 1977 exclusion of women of childbearing potential from early-phase trials."
+ },
+ {
+  "id": "nimh-anxiety",
+  "title": "Any anxiety disorder: prevalence of any anxiety disorder among U.S. adults",
+  "publisher": "National Institute of Mental Health, from the National Comorbidity Survey Replication (2001\u20132003)",
+  "url": "https://www.nimh.nih.gov/health/statistics/any-anxiety-disorder",
+  "retrieved": "2026-10-08",
+  "note": "Past-year prevalence 23.4% of women, 14.3% of men."
+ },
+ {
+  "id": "westergaard-2019",
+  "title": "Population-wide analysis of differences in disease progression patterns in men and women",
+  "publisher": "Westergaard D., Moseley P., S\u00f8rup F.K.H., Baldi P., Brunak S., Nature Communications 10, 666 (2019). doi:10.1038/s41467-019-08475-9",
+  "url": "https://doi.org/10.1038/s41467-019-08475-9",
+  "retrieved": "2026-10-08",
+  "note": "Danish registries, 6.9 million people, 1994\u20132015; women diagnosed later than men for the majority of 770 diseases, about four years on average."
+ },
+ {
+  "id": "seer-stage",
+  "title": "SEER*Explorer data archive: stage distribution of SEER incidence cases by sex, 2013\u20132022 (November 2024 submission)",
+  "publisher": "Surveillance, Epidemiology, and End Results Program, National Cancer Institute",
+  "url": "https://seer.cancer.gov/statistics-network/explorer/archive.html",
+  "retrieved": "2026-10-08",
+  "note": "SEER summary stage (localized, regional, distant, unstaged); All Races, by sex and age band; 22 registries."
+ },
+ {
+  "id": "seer-age",
+  "title": "SEER*Explorer data archive: median age at diagnosis by sex, 2018\u20132022 (November 2024 submission)",
+  "publisher": "Surveillance, Epidemiology, and End Results Program, National Cancer Institute",
+  "url": "https://seer.cancer.gov/statistics-network/explorer/archive.html",
+  "retrieved": "2026-10-08"
+ },
+ {
+  "id": "cohn-2014",
+  "title": "Sex disparities in diagnosis of bladder cancer after initial presentation with hematuria: a nationwide claims-based investigation",
+  "publisher": "Cohn J.A., Vekhter B., Lyttle C., Steinberg G.D., Large M.C., Cancer 120(4), 2014. doi:10.1002/cncr.28416",
+  "url": "https://doi.org/10.1002/cncr.28416",
+  "retrieved": "2026-10-08",
+  "note": "7,649 insured adults with haematuria later diagnosed with bladder cancer, 2004\u20132010: mean 85.4 days to diagnosis for women against 73.6 for men; women 2.3 times as likely to be diagnosed with a urinary infection first."
+ },
+ {
+  "id": "nhamcs-icd",
+  "title": "ICD-10-CM chapter XVIII: symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified (R00\u2013R99)",
+  "publisher": "National Center for Health Statistics, CDC",
+  "url": "https://www.cdc.gov/nchs/icd/icd-10-cm/index.html",
+  "retrieved": "2026-10-08",
+  "note": "A visit 'ends with a symptom code' when its first-listed diagnosis is in this chapter."
  }
 ]

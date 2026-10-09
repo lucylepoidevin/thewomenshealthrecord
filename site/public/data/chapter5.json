@@ -4443,7 +4443,196 @@
       "diff_hi": 2.0
      }
     }
-   ]
+   ],
+   "dx_mix": {
+    "Symptom code": {
+     "women": {
+      "est": 47.0,
+      "lo": 43.8,
+      "hi": 50.2,
+      "n": 3374
+     },
+     "men": {
+      "est": 45.3,
+      "lo": 42.1,
+      "hi": 48.5,
+      "n": 1921
+     },
+     "diff": 1.8,
+     "diff_lo": -2.8,
+     "diff_hi": 6.3
+    },
+    "Heart and circulation": {
+     "women": {
+      "est": 0.7,
+      "lo": 0.4,
+      "hi": 1.0,
+      "n": 3374
+     },
+     "men": {
+      "est": 1.3,
+      "lo": 0.7,
+      "hi": 1.9,
+      "n": 1921
+     },
+     "diff": -0.6,
+     "diff_lo": -1.3,
+     "diff_hi": 0.1
+    },
+    "Lungs and airways": {
+     "women": {
+      "est": 0.7,
+      "lo": 0.3,
+      "hi": 1.0,
+      "n": 3374
+     },
+     "men": {
+      "est": 0.6,
+      "lo": 0.2,
+      "hi": 1.0,
+      "n": 1921
+     },
+     "diff": 0.0,
+     "diff_lo": -0.5,
+     "diff_hi": 0.6
+    },
+    "Digestive": {
+     "women": {
+      "est": 22.5,
+      "lo": 20.5,
+      "hi": 24.5,
+      "n": 3374
+     },
+     "men": {
+      "est": 34.6,
+      "lo": 31.4,
+      "hi": 37.8,
+      "n": 1921
+     },
+     "diff": -12.1,
+     "diff_lo": -15.9,
+     "diff_hi": -8.3
+    },
+    "Mental health": {
+     "women": {
+      "est": 1.2,
+      "lo": 0.4,
+      "hi": 2.0,
+      "n": 3374
+     },
+     "men": {
+      "est": 0.9,
+      "lo": 0.3,
+      "hi": 1.4,
+      "n": 1921
+     },
+     "diff": 0.3,
+     "diff_lo": -0.6,
+     "diff_hi": 1.3
+    },
+    "Nervous system": {
+     "women": {
+      "est": 0.4,
+      "lo": 0.1,
+      "hi": 0.6,
+      "n": 3374
+     },
+     "men": {
+      "est": 0.4,
+      "lo": 0.1,
+      "hi": 0.6,
+      "n": 1921
+     },
+     "diff": -0.0,
+     "diff_lo": -0.3,
+     "diff_hi": 0.3
+    },
+    "Kidney, bladder, reproductive": {
+     "women": {
+      "est": 15.6,
+      "lo": 13.8,
+      "hi": 17.3,
+      "n": 3374
+     },
+     "men": {
+      "est": 11.6,
+      "lo": 9.4,
+      "hi": 13.7,
+      "n": 1921
+     },
+     "diff": 4.0,
+     "diff_lo": 1.2,
+     "diff_hi": 6.8
+    },
+    "Muscles and bones": {
+     "women": {
+      "est": 0.6,
+      "lo": 0.3,
+      "hi": 0.9,
+      "n": 3374
+     },
+     "men": {
+      "est": 0.7,
+      "lo": 0.3,
+      "hi": 1.2,
+      "n": 1921
+     },
+     "diff": -0.1,
+     "diff_lo": -0.6,
+     "diff_hi": 0.4
+    },
+    "Infection": {
+     "women": {
+      "est": 1.8,
+      "lo": 1.1,
+      "hi": 2.4,
+      "n": 3374
+     },
+     "men": {
+      "est": 2.1,
+      "lo": 1.2,
+      "hi": 3.0,
+      "n": 1921
+     },
+     "diff": -0.3,
+     "diff_lo": -1.4,
+     "diff_hi": 0.8
+    },
+    "Pregnancy": {
+     "women": {
+      "est": 4.0,
+      "lo": 2.6,
+      "hi": 5.3,
+      "n": 3374
+     },
+     "men": {
+      "est": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 1921
+     },
+     "diff": 4.0,
+     "diff_lo": 2.6,
+     "diff_hi": 5.3
+    },
+    "Other": {
+     "women": {
+      "est": 5.6,
+      "lo": 4.3,
+      "hi": 6.9,
+      "n": 3374
+     },
+     "men": {
+      "est": 2.6,
+      "lo": 1.7,
+      "hi": 3.5,
+      "n": 1921
+     },
+     "diff": 3.0,
+     "diff_lo": 1.5,
+     "diff_hi": 4.6
+    }
+   }
   },
   {
    "id": "chest",
@@ -5261,7 +5450,196 @@
       "diff_hi": 0.5
      }
     }
-   ]
+   ],
+   "dx_mix": {
+    "Symptom code": {
+     "women": {
+      "est": 70.4,
+      "lo": 67.1,
+      "hi": 73.6,
+      "n": 1850
+     },
+     "men": {
+      "est": 69.9,
+      "lo": 67.0,
+      "hi": 72.8,
+      "n": 1687
+     },
+     "diff": 0.5,
+     "diff_lo": -3.9,
+     "diff_hi": 4.8
+    },
+    "Heart and circulation": {
+     "women": {
+      "est": 9.4,
+      "lo": 7.4,
+      "hi": 11.3,
+      "n": 1850
+     },
+     "men": {
+      "est": 13.1,
+      "lo": 11.0,
+      "hi": 15.3,
+      "n": 1687
+     },
+     "diff": -3.8,
+     "diff_lo": -6.7,
+     "diff_hi": -0.8
+    },
+    "Lungs and airways": {
+     "women": {
+      "est": 5.0,
+      "lo": 3.7,
+      "hi": 6.3,
+      "n": 1850
+     },
+     "men": {
+      "est": 4.6,
+      "lo": 3.4,
+      "hi": 5.9,
+      "n": 1687
+     },
+     "diff": 0.3,
+     "diff_lo": -1.5,
+     "diff_hi": 2.2
+    },
+    "Digestive": {
+     "women": {
+      "est": 2.7,
+      "lo": 1.6,
+      "hi": 3.8,
+      "n": 1850
+     },
+     "men": {
+      "est": 2.5,
+      "lo": 1.5,
+      "hi": 3.5,
+      "n": 1687
+     },
+     "diff": 0.2,
+     "diff_lo": -1.2,
+     "diff_hi": 1.7
+    },
+    "Mental health": {
+     "women": {
+      "est": 2.4,
+      "lo": 1.3,
+      "hi": 3.5,
+      "n": 1850
+     },
+     "men": {
+      "est": 3.2,
+      "lo": 1.8,
+      "hi": 4.6,
+      "n": 1687
+     },
+     "diff": -0.8,
+     "diff_lo": -2.6,
+     "diff_hi": 1.0
+    },
+    "Nervous system": {
+     "women": {
+      "est": 0.4,
+      "lo": 0.0,
+      "hi": 0.7,
+      "n": 1850
+     },
+     "men": {
+      "est": 0.2,
+      "lo": -0.0,
+      "hi": 0.4,
+      "n": 1687
+     },
+     "diff": 0.2,
+     "diff_lo": -0.3,
+     "diff_hi": 0.6
+    },
+    "Kidney, bladder, reproductive": {
+     "women": {
+      "est": 1.5,
+      "lo": 0.8,
+      "hi": 2.2,
+      "n": 1850
+     },
+     "men": {
+      "est": 0.4,
+      "lo": 0.1,
+      "hi": 0.8,
+      "n": 1687
+     },
+     "diff": 1.1,
+     "diff_lo": 0.2,
+     "diff_hi": 1.9
+    },
+    "Muscles and bones": {
+     "women": {
+      "est": 2.7,
+      "lo": 1.6,
+      "hi": 3.8,
+      "n": 1850
+     },
+     "men": {
+      "est": 2.0,
+      "lo": 1.2,
+      "hi": 2.8,
+      "n": 1687
+     },
+     "diff": 0.7,
+     "diff_lo": -0.7,
+     "diff_hi": 2.0
+    },
+    "Infection": {
+     "women": {
+      "est": 0.6,
+      "lo": 0.2,
+      "hi": 1.0,
+      "n": 1850
+     },
+     "men": {
+      "est": 0.4,
+      "lo": 0.1,
+      "hi": 0.7,
+      "n": 1687
+     },
+     "diff": 0.2,
+     "diff_lo": -0.3,
+     "diff_hi": 0.7
+    },
+    "Pregnancy": {
+     "women": {
+      "est": 0.7,
+      "lo": 0.2,
+      "hi": 1.2,
+      "n": 1850
+     },
+     "men": {
+      "est": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 1687
+     },
+     "diff": 0.7,
+     "diff_lo": 0.2,
+     "diff_hi": 1.2
+    },
+    "Other": {
+     "women": {
+      "est": 4.3,
+      "lo": 3.0,
+      "hi": 5.6,
+      "n": 1850
+     },
+     "men": {
+      "est": 3.5,
+      "lo": 2.5,
+      "hi": 4.6,
+      "n": 1687
+     },
+     "diff": 0.8,
+     "diff_lo": -0.9,
+     "diff_hi": 2.4
+    }
+   }
   },
   {
    "id": "sob",
@@ -6039,7 +6417,196 @@
       "diff_hi": 4.2
      }
     }
-   ]
+   ],
+   "dx_mix": {
+    "Symptom code": {
+     "women": {
+      "est": 32.4,
+      "lo": 28.9,
+      "hi": 35.9,
+      "n": 1334
+     },
+     "men": {
+      "est": 28.4,
+      "lo": 24.4,
+      "hi": 32.4,
+      "n": 1142
+     },
+     "diff": 4.0,
+     "diff_lo": -1.3,
+     "diff_hi": 9.3
+    },
+    "Heart and circulation": {
+     "women": {
+      "est": 10.6,
+      "lo": 8.4,
+      "hi": 12.9,
+      "n": 1334
+     },
+     "men": {
+      "est": 16.1,
+      "lo": 13.1,
+      "hi": 19.0,
+      "n": 1142
+     },
+     "diff": -5.4,
+     "diff_lo": -9.1,
+     "diff_hi": -1.7
+    },
+    "Lungs and airways": {
+     "women": {
+      "est": 35.9,
+      "lo": 32.2,
+      "hi": 39.6,
+      "n": 1334
+     },
+     "men": {
+      "est": 34.1,
+      "lo": 29.8,
+      "hi": 38.4,
+      "n": 1142
+     },
+     "diff": 1.8,
+     "diff_lo": -3.9,
+     "diff_hi": 7.5
+    },
+    "Digestive": {
+     "women": {
+      "est": 1.1,
+      "lo": 0.4,
+      "hi": 1.9,
+      "n": 1334
+     },
+     "men": {
+      "est": 0.6,
+      "lo": 0.2,
+      "hi": 1.0,
+      "n": 1142
+     },
+     "diff": 0.6,
+     "diff_lo": -0.3,
+     "diff_hi": 1.4
+    },
+    "Mental health": {
+     "women": {
+      "est": 2.7,
+      "lo": 1.3,
+      "hi": 4.1,
+      "n": 1334
+     },
+     "men": {
+      "est": 0.9,
+      "lo": 0.3,
+      "hi": 1.4,
+      "n": 1142
+     },
+     "diff": 1.8,
+     "diff_lo": 0.3,
+     "diff_hi": 3.4
+    },
+    "Nervous system": {
+     "women": {
+      "est": 0.7,
+      "lo": 0.0,
+      "hi": 1.4,
+      "n": 1334
+     },
+     "men": {
+      "est": 0.0,
+      "lo": -0.0,
+      "hi": 0.1,
+      "n": 1142
+     },
+     "diff": 0.7,
+     "diff_lo": -0.0,
+     "diff_hi": 1.4
+    },
+    "Kidney, bladder, reproductive": {
+     "women": {
+      "est": 0.9,
+      "lo": 0.3,
+      "hi": 1.4,
+      "n": 1334
+     },
+     "men": {
+      "est": 2.4,
+      "lo": 1.0,
+      "hi": 3.7,
+      "n": 1142
+     },
+     "diff": -1.5,
+     "diff_lo": -2.9,
+     "diff_hi": -0.1
+    },
+    "Muscles and bones": {
+     "women": {
+      "est": 0.7,
+      "lo": 0.1,
+      "hi": 1.3,
+      "n": 1334
+     },
+     "men": {
+      "est": 0.9,
+      "lo": -0.1,
+      "hi": 1.8,
+      "n": 1142
+     },
+     "diff": -0.2,
+     "diff_lo": -1.3,
+     "diff_hi": 0.9
+    },
+    "Infection": {
+     "women": {
+      "est": 2.3,
+      "lo": 0.8,
+      "hi": 3.9,
+      "n": 1334
+     },
+     "men": {
+      "est": 3.0,
+      "lo": 1.5,
+      "hi": 4.4,
+      "n": 1142
+     },
+     "diff": -0.6,
+     "diff_lo": -2.7,
+     "diff_hi": 1.5
+    },
+    "Pregnancy": {
+     "women": {
+      "est": 0.5,
+      "lo": 0.1,
+      "hi": 1.0,
+      "n": 1334
+     },
+     "men": {
+      "est": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 1142
+     },
+     "diff": 0.5,
+     "diff_lo": 0.1,
+     "diff_hi": 1.0
+    },
+    "Other": {
+     "women": {
+      "est": 12.1,
+      "lo": 9.7,
+      "hi": 14.5,
+      "n": 1334
+     },
+     "men": {
+      "est": 13.8,
+      "lo": 10.2,
+      "hi": 17.3,
+      "n": 1142
+     },
+     "diff": -1.6,
+     "diff_lo": -5.9,
+     "diff_hi": 2.6
+    }
+   }
   },
   {
    "id": "headache",
@@ -6797,7 +7364,196 @@
       "diff_hi": 2.0
      }
     }
-   ]
+   ],
+   "dx_mix": {
+    "Symptom code": {
+     "women": {
+      "est": 45.7,
+      "lo": 41.3,
+      "hi": 50.2,
+      "n": 1023
+     },
+     "men": {
+      "est": 45.7,
+      "lo": 38.5,
+      "hi": 52.9,
+      "n": 483
+     },
+     "diff": 0.1,
+     "diff_lo": -8.4,
+     "diff_hi": 8.5
+    },
+    "Heart and circulation": {
+     "women": {
+      "est": 3.7,
+      "lo": 2.2,
+      "hi": 5.2,
+      "n": 1023
+     },
+     "men": {
+      "est": 7.3,
+      "lo": 4.0,
+      "hi": 10.7,
+      "n": 483
+     },
+     "diff": -3.6,
+     "diff_lo": -7.3,
+     "diff_hi": 0.0
+    },
+    "Lungs and airways": {
+     "women": {
+      "est": 7.3,
+      "lo": 4.8,
+      "hi": 9.8,
+      "n": 1023
+     },
+     "men": {
+      "est": 6.6,
+      "lo": 3.7,
+      "hi": 9.5,
+      "n": 483
+     },
+     "diff": 0.7,
+     "diff_lo": -3.1,
+     "diff_hi": 4.5
+    },
+    "Digestive": {
+     "women": {
+      "est": 0.7,
+      "lo": 0.1,
+      "hi": 1.3,
+      "n": 1023
+     },
+     "men": {
+      "est": 1.2,
+      "lo": 0.0,
+      "hi": 2.3,
+      "n": 483
+     },
+     "diff": -0.5,
+     "diff_lo": -1.8,
+     "diff_hi": 0.8
+    },
+    "Mental health": {
+     "women": {
+      "est": 1.0,
+      "lo": 0.2,
+      "hi": 1.7,
+      "n": 1023
+     },
+     "men": {
+      "est": 4.2,
+      "lo": 1.4,
+      "hi": 7.0,
+      "n": 483
+     },
+     "diff": -3.2,
+     "diff_lo": -6.1,
+     "diff_hi": -0.4
+    },
+    "Nervous system": {
+     "women": {
+      "est": 25.2,
+      "lo": 21.6,
+      "hi": 28.9,
+      "n": 1023
+     },
+     "men": {
+      "est": 16.0,
+      "lo": 11.0,
+      "hi": 21.0,
+      "n": 483
+     },
+     "diff": 9.2,
+     "diff_lo": 3.0,
+     "diff_hi": 15.4
+    },
+    "Kidney, bladder, reproductive": {
+     "women": {
+      "est": 2.3,
+      "lo": 1.0,
+      "hi": 3.6,
+      "n": 1023
+     },
+     "men": {
+      "est": 0.8,
+      "lo": -0.1,
+      "hi": 1.8,
+      "n": 483
+     },
+     "diff": 1.4,
+     "diff_lo": -0.2,
+     "diff_hi": 3.0
+    },
+    "Muscles and bones": {
+     "women": {
+      "est": 1.6,
+      "lo": 0.8,
+      "hi": 2.3,
+      "n": 1023
+     },
+     "men": {
+      "est": 2.6,
+      "lo": 0.5,
+      "hi": 4.6,
+      "n": 483
+     },
+     "diff": -1.0,
+     "diff_lo": -3.2,
+     "diff_hi": 1.2
+    },
+    "Infection": {
+     "women": {
+      "est": 2.6,
+      "lo": 1.2,
+      "hi": 3.9,
+      "n": 1023
+     },
+     "men": {
+      "est": 1.8,
+      "lo": 0.6,
+      "hi": 2.9,
+      "n": 483
+     },
+     "diff": 0.8,
+     "diff_lo": -0.9,
+     "diff_hi": 2.5
+    },
+    "Pregnancy": {
+     "women": {
+      "est": 1.7,
+      "lo": 0.3,
+      "hi": 3.1,
+      "n": 1023
+     },
+     "men": {
+      "est": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 483
+     },
+     "diff": 1.7,
+     "diff_lo": 0.3,
+     "diff_hi": 3.1
+    },
+    "Other": {
+     "women": {
+      "est": 8.2,
+      "lo": 5.4,
+      "hi": 11.1,
+      "n": 1023
+     },
+     "men": {
+      "est": 13.8,
+      "lo": 6.7,
+      "hi": 20.8,
+      "n": 483
+     },
+     "diff": -5.5,
+     "diff_lo": -13.2,
+     "diff_hi": 2.1
+    }
+   }
   },
   {
    "id": "dizziness",
@@ -7555,7 +8311,196 @@
       "diff_hi": 8.4
      }
     }
-   ]
+   ],
+   "dx_mix": {
+    "Symptom code": {
+     "women": {
+      "est": 61.3,
+      "lo": 53.3,
+      "hi": 69.4,
+      "n": 621
+     },
+     "men": {
+      "est": 61.8,
+      "lo": 54.9,
+      "hi": 68.7,
+      "n": 402
+     },
+     "diff": -0.5,
+     "diff_lo": -11.0,
+     "diff_hi": 10.1
+    },
+    "Heart and circulation": {
+     "women": {
+      "est": 9.1,
+      "lo": 6.1,
+      "hi": 12.0,
+      "n": 621
+     },
+     "men": {
+      "est": 11.1,
+      "lo": 7.8,
+      "hi": 14.4,
+      "n": 402
+     },
+     "diff": -2.0,
+     "diff_lo": -6.5,
+     "diff_hi": 2.4
+    },
+    "Lungs and airways": {
+     "women": {
+      "est": 2.0,
+      "lo": 0.5,
+      "hi": 3.5,
+      "n": 621
+     },
+     "men": {
+      "est": 2.5,
+      "lo": -1.1,
+      "hi": 6.0,
+      "n": 402
+     },
+     "diff": -0.5,
+     "diff_lo": -4.3,
+     "diff_hi": 3.3
+    },
+    "Digestive": {
+     "women": {
+      "est": 1.2,
+      "lo": 0.3,
+      "hi": 2.1,
+      "n": 621
+     },
+     "men": {
+      "est": 3.6,
+      "lo": 0.9,
+      "hi": 6.2,
+      "n": 402
+     },
+     "diff": -2.3,
+     "diff_lo": -5.2,
+     "diff_hi": 0.5
+    },
+    "Mental health": {
+     "women": {
+      "est": 3.6,
+      "lo": 0.9,
+      "hi": 6.3,
+      "n": 621
+     },
+     "men": {
+      "est": 1.6,
+      "lo": 0.3,
+      "hi": 3.0,
+      "n": 402
+     },
+     "diff": 1.9,
+     "diff_lo": -1.1,
+     "diff_hi": 4.9
+    },
+    "Nervous system": {
+     "women": {
+      "est": 1.6,
+      "lo": 0.5,
+      "hi": 2.6,
+      "n": 621
+     },
+     "men": {
+      "est": 2.1,
+      "lo": -0.2,
+      "hi": 4.4,
+      "n": 402
+     },
+     "diff": -0.5,
+     "diff_lo": -3.0,
+     "diff_hi": 2.0
+    },
+    "Kidney, bladder, reproductive": {
+     "women": {
+      "est": 2.2,
+      "lo": 1.1,
+      "hi": 3.3,
+      "n": 621
+     },
+     "men": {
+      "est": 1.0,
+      "lo": 0.2,
+      "hi": 1.9,
+      "n": 402
+     },
+     "diff": 1.2,
+     "diff_lo": -0.2,
+     "diff_hi": 2.6
+    },
+    "Muscles and bones": {
+     "women": {
+      "est": 0.7,
+      "lo": -0.3,
+      "hi": 1.7,
+      "n": 621
+     },
+     "men": {
+      "est": 0.4,
+      "lo": -0.2,
+      "hi": 1.0,
+      "n": 402
+     },
+     "diff": 0.3,
+     "diff_lo": -0.9,
+     "diff_hi": 1.4
+    },
+    "Infection": {
+     "women": {
+      "est": 1.6,
+      "lo": 0.2,
+      "hi": 3.0,
+      "n": 621
+     },
+     "men": {
+      "est": 1.5,
+      "lo": 0.2,
+      "hi": 2.7,
+      "n": 402
+     },
+     "diff": 0.1,
+     "diff_lo": -1.8,
+     "diff_hi": 2.0
+    },
+    "Pregnancy": {
+     "women": {
+      "est": 2.6,
+      "lo": 0.7,
+      "hi": 4.5,
+      "n": 621
+     },
+     "men": {
+      "est": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 402
+     },
+     "diff": 2.6,
+     "diff_lo": 0.7,
+     "diff_hi": 4.5
+    },
+    "Other": {
+     "women": {
+      "est": 14.2,
+      "lo": 10.2,
+      "hi": 18.1,
+      "n": 621
+     },
+     "men": {
+      "est": 14.5,
+      "lo": 8.9,
+      "hi": 20.1,
+      "n": 402
+     },
+     "diff": -0.3,
+     "diff_lo": -7.2,
+     "diff_hi": 6.5
+    }
+   }
   },
   {
    "id": "weakness",
@@ -8313,7 +9258,196 @@
       "diff_hi": 3.7
      }
     }
-   ]
+   ],
+   "dx_mix": {
+    "Symptom code": {
+     "women": {
+      "est": 39.8,
+      "lo": 34.3,
+      "hi": 45.4,
+      "n": 507
+     },
+     "men": {
+      "est": 40.4,
+      "lo": 34.3,
+      "hi": 46.6,
+      "n": 437
+     },
+     "diff": -0.6,
+     "diff_lo": -8.8,
+     "diff_hi": 7.7
+    },
+    "Heart and circulation": {
+     "women": {
+      "est": 7.8,
+      "lo": 4.7,
+      "hi": 11.0,
+      "n": 507
+     },
+     "men": {
+      "est": 7.7,
+      "lo": 4.2,
+      "hi": 11.3,
+      "n": 437
+     },
+     "diff": 0.1,
+     "diff_lo": -4.7,
+     "diff_hi": 4.9
+    },
+    "Lungs and airways": {
+     "women": {
+      "est": 5.9,
+      "lo": 3.7,
+      "hi": 8.2,
+      "n": 507
+     },
+     "men": {
+      "est": 5.0,
+      "lo": 2.4,
+      "hi": 7.5,
+      "n": 437
+     },
+     "diff": 0.9,
+     "diff_lo": -2.5,
+     "diff_hi": 4.3
+    },
+    "Digestive": {
+     "women": {
+      "est": 4.1,
+      "lo": 1.7,
+      "hi": 6.6,
+      "n": 507
+     },
+     "men": {
+      "est": 2.7,
+      "lo": 1.2,
+      "hi": 4.2,
+      "n": 437
+     },
+     "diff": 1.4,
+     "diff_lo": -1.5,
+     "diff_hi": 4.3
+    },
+    "Mental health": {
+     "women": {
+      "est": 2.1,
+      "lo": 0.1,
+      "hi": 4.2,
+      "n": 507
+     },
+     "men": {
+      "est": 2.9,
+      "lo": 0.4,
+      "hi": 5.4,
+      "n": 437
+     },
+     "diff": -0.7,
+     "diff_lo": -4.0,
+     "diff_hi": 2.5
+    },
+    "Nervous system": {
+     "women": {
+      "est": 5.2,
+      "lo": 2.5,
+      "hi": 7.9,
+      "n": 507
+     },
+     "men": {
+      "est": 5.7,
+      "lo": 2.5,
+      "hi": 8.9,
+      "n": 437
+     },
+     "diff": -0.5,
+     "diff_lo": -4.6,
+     "diff_hi": 3.7
+    },
+    "Kidney, bladder, reproductive": {
+     "women": {
+      "est": 8.8,
+      "lo": 4.8,
+      "hi": 12.7,
+      "n": 507
+     },
+     "men": {
+      "est": 6.5,
+      "lo": 3.9,
+      "hi": 9.1,
+      "n": 437
+     },
+     "diff": 2.3,
+     "diff_lo": -2.4,
+     "diff_hi": 7.0
+    },
+    "Muscles and bones": {
+     "women": {
+      "est": 1.1,
+      "lo": -0.0,
+      "hi": 2.2,
+      "n": 507
+     },
+     "men": {
+      "est": 1.9,
+      "lo": -0.3,
+      "hi": 4.1,
+      "n": 437
+     },
+     "diff": -0.8,
+     "diff_lo": -3.2,
+     "diff_hi": 1.6
+    },
+    "Infection": {
+     "women": {
+      "est": 4.9,
+      "lo": 1.8,
+      "hi": 7.9,
+      "n": 507
+     },
+     "men": {
+      "est": 3.7,
+      "lo": 1.4,
+      "hi": 6.0,
+      "n": 437
+     },
+     "diff": 1.2,
+     "diff_lo": -2.7,
+     "diff_hi": 5.0
+    },
+    "Pregnancy": {
+     "women": {
+      "est": 0.9,
+      "lo": -0.9,
+      "hi": 2.7,
+      "n": 507
+     },
+     "men": {
+      "est": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 437
+     },
+     "diff": 0.9,
+     "diff_lo": -0.9,
+     "diff_hi": 2.7
+    },
+    "Other": {
+     "women": {
+      "est": 19.3,
+      "lo": 15.1,
+      "hi": 23.4,
+      "n": 507
+     },
+     "men": {
+      "est": 23.5,
+      "lo": 18.0,
+      "hi": 29.0,
+      "n": 437
+     },
+     "diff": -4.2,
+     "diff_lo": -11.1,
+     "diff_hi": 2.7
+    }
+   }
   },
   {
    "id": "syncope",
@@ -9035,7 +10169,196 @@
       "diff_hi": 7.2
      }
     }
-   ]
+   ],
+   "dx_mix": {
+    "Symptom code": {
+     "women": {
+      "est": 71.6,
+      "lo": 62.5,
+      "hi": 80.6,
+      "n": 205
+     },
+     "men": {
+      "est": 69.6,
+      "lo": 58.8,
+      "hi": 80.5,
+      "n": 119
+     },
+     "diff": 1.9,
+     "diff_lo": -12.2,
+     "diff_hi": 16.1
+    },
+    "Heart and circulation": {
+     "women": {
+      "est": 9.4,
+      "lo": 3.9,
+      "hi": 14.9,
+      "n": 205
+     },
+     "men": {
+      "est": 10.8,
+      "lo": 3.2,
+      "hi": 18.4,
+      "n": 119
+     },
+     "diff": -1.3,
+     "diff_lo": -10.8,
+     "diff_hi": 8.1
+    },
+    "Lungs and airways": {
+     "women": {
+      "est": 1.0,
+      "lo": -0.4,
+      "hi": 2.3,
+      "n": 205
+     },
+     "men": {
+      "est": 3.2,
+      "lo": 0.0,
+      "hi": 6.5,
+      "n": 119
+     },
+     "diff": -2.3,
+     "diff_lo": -5.8,
+     "diff_hi": 1.2
+    },
+    "Digestive": {
+     "women": {
+      "est": 1.6,
+      "lo": -1.0,
+      "hi": 4.2,
+      "n": 205
+     },
+     "men": {
+      "est": 3.0,
+      "lo": -1.2,
+      "hi": 7.2,
+      "n": 119
+     },
+     "diff": -1.4,
+     "diff_lo": -6.3,
+     "diff_hi": 3.6
+    },
+    "Mental health": {
+     "women": {
+      "est": 2.0,
+      "lo": -0.7,
+      "hi": 4.7,
+      "n": 205
+     },
+     "men": {
+      "est": 6.2,
+      "lo": 0.7,
+      "hi": 11.8,
+      "n": 119
+     },
+     "diff": -4.3,
+     "diff_lo": -10.4,
+     "diff_hi": 1.9
+    },
+    "Nervous system": {
+     "women": {
+      "est": 0.1,
+      "lo": -0.1,
+      "hi": 0.4,
+      "n": 205
+     },
+     "men": {
+      "est": 0.4,
+      "lo": -0.3,
+      "hi": 1.1,
+      "n": 119
+     },
+     "diff": -0.2,
+     "diff_lo": -1.0,
+     "diff_hi": 0.6
+    },
+    "Kidney, bladder, reproductive": {
+     "women": {
+      "est": 3.4,
+      "lo": -0.0,
+      "hi": 6.8,
+      "n": 205
+     },
+     "men": {
+      "est": 2.6,
+      "lo": -1.3,
+      "hi": 6.5,
+      "n": 119
+     },
+     "diff": 0.8,
+     "diff_lo": -4.3,
+     "diff_hi": 6.0
+    },
+    "Muscles and bones": {
+     "women": {
+      "est": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 205
+     },
+     "men": {
+      "est": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 119
+     },
+     "diff": 0.0,
+     "diff_lo": 0.0,
+     "diff_hi": 0.0
+    },
+    "Infection": {
+     "women": {
+      "est": 2.5,
+      "lo": 0.1,
+      "hi": 4.8,
+      "n": 205
+     },
+     "men": {
+      "est": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 119
+     },
+     "diff": 2.5,
+     "diff_lo": 0.1,
+     "diff_hi": 4.8
+    },
+    "Pregnancy": {
+     "women": {
+      "est": 2.0,
+      "lo": -1.2,
+      "hi": 5.1,
+      "n": 205
+     },
+     "men": {
+      "est": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 119
+     },
+     "diff": 2.0,
+     "diff_lo": -1.2,
+     "diff_hi": 5.1
+    },
+    "Other": {
+     "women": {
+      "est": 6.4,
+      "lo": 2.9,
+      "hi": 10.0,
+      "n": 205
+     },
+     "men": {
+      "est": 4.2,
+      "lo": 0.1,
+      "hi": 8.2,
+      "n": 119
+     },
+     "diff": 2.2,
+     "diff_lo": -3.1,
+     "diff_hi": 7.6
+    }
+   }
   },
   {
    "id": "palpitations",
@@ -9773,7 +11096,196 @@
       "diff_hi": 14.1
      }
     }
-   ]
+   ],
+   "dx_mix": {
+    "Symptom code": {
+     "women": {
+      "est": 54.1,
+      "lo": 44.4,
+      "hi": 63.8,
+      "n": 177
+     },
+     "men": {
+      "est": 62.9,
+      "lo": 53.4,
+      "hi": 72.3,
+      "n": 134
+     },
+     "diff": -8.7,
+     "diff_lo": -22.3,
+     "diff_hi": 4.8
+    },
+    "Heart and circulation": {
+     "women": {
+      "est": 30.0,
+      "lo": 21.1,
+      "hi": 39.0,
+      "n": 177
+     },
+     "men": {
+      "est": 22.1,
+      "lo": 14.1,
+      "hi": 30.2,
+      "n": 134
+     },
+     "diff": 7.9,
+     "diff_lo": -4.1,
+     "diff_hi": 19.9
+    },
+    "Lungs and airways": {
+     "women": {
+      "est": 0.9,
+      "lo": -0.5,
+      "hi": 2.3,
+      "n": 177
+     },
+     "men": {
+      "est": 1.8,
+      "lo": -0.9,
+      "hi": 4.5,
+      "n": 134
+     },
+     "diff": -0.9,
+     "diff_lo": -4.0,
+     "diff_hi": 2.1
+    },
+    "Digestive": {
+     "women": {
+      "est": 0.2,
+      "lo": -0.2,
+      "hi": 0.5,
+      "n": 177
+     },
+     "men": {
+      "est": 0.8,
+      "lo": -0.4,
+      "hi": 2.0,
+      "n": 134
+     },
+     "diff": -0.6,
+     "diff_lo": -1.8,
+     "diff_hi": 0.6
+    },
+    "Mental health": {
+     "women": {
+      "est": 9.4,
+      "lo": 1.4,
+      "hi": 17.4,
+      "n": 177
+     },
+     "men": {
+      "est": 3.6,
+      "lo": -1.6,
+      "hi": 8.8,
+      "n": 134
+     },
+     "diff": 5.7,
+     "diff_lo": -3.8,
+     "diff_hi": 15.3
+    },
+    "Nervous system": {
+     "women": {
+      "est": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 177
+     },
+     "men": {
+      "est": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 134
+     },
+     "diff": 0.0,
+     "diff_lo": 0.0,
+     "diff_hi": 0.0
+    },
+    "Kidney, bladder, reproductive": {
+     "women": {
+      "est": 0.3,
+      "lo": -0.3,
+      "hi": 0.8,
+      "n": 177
+     },
+     "men": {
+      "est": 0.8,
+      "lo": -0.8,
+      "hi": 2.4,
+      "n": 134
+     },
+     "diff": -0.5,
+     "diff_lo": -2.2,
+     "diff_hi": 1.2
+    },
+    "Muscles and bones": {
+     "women": {
+      "est": 1.4,
+      "lo": -0.5,
+      "hi": 3.4,
+      "n": 177
+     },
+     "men": {
+      "est": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 134
+     },
+     "diff": 1.4,
+     "diff_lo": -0.5,
+     "diff_hi": 3.4
+    },
+    "Infection": {
+     "women": {
+      "est": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 177
+     },
+     "men": {
+      "est": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 134
+     },
+     "diff": 0.0,
+     "diff_lo": 0.0,
+     "diff_hi": 0.0
+    },
+    "Pregnancy": {
+     "women": {
+      "est": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 177
+     },
+     "men": {
+      "est": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 134
+     },
+     "diff": 0.0,
+     "diff_lo": 0.0,
+     "diff_hi": 0.0
+    },
+    "Other": {
+     "women": {
+      "est": 3.7,
+      "lo": 0.8,
+      "hi": 6.5,
+      "n": 177
+     },
+     "men": {
+      "est": 8.0,
+      "lo": 1.8,
+      "hi": 14.1,
+      "n": 134
+     },
+     "diff": -4.3,
+     "diff_lo": -11.1,
+     "diff_hi": 2.5
+    }
+   }
   },
   {
    "id": "nausea",
@@ -10531,7 +12043,196 @@
       "diff_hi": 3.0
      }
     }
-   ]
+   ],
+   "dx_mix": {
+    "Symptom code": {
+     "women": {
+      "est": 50.2,
+      "lo": 45.7,
+      "hi": 54.8,
+      "n": 1009
+     },
+     "men": {
+      "est": 47.8,
+      "lo": 41.9,
+      "hi": 53.7,
+      "n": 547
+     },
+     "diff": 2.5,
+     "diff_lo": -5.0,
+     "diff_hi": 9.9
+    },
+    "Heart and circulation": {
+     "women": {
+      "est": 1.6,
+      "lo": 0.6,
+      "hi": 2.7,
+      "n": 1009
+     },
+     "men": {
+      "est": 1.6,
+      "lo": 0.5,
+      "hi": 2.8,
+      "n": 547
+     },
+     "diff": -0.0,
+     "diff_lo": -1.6,
+     "diff_hi": 1.5
+    },
+    "Lungs and airways": {
+     "women": {
+      "est": 4.1,
+      "lo": 2.3,
+      "hi": 5.8,
+      "n": 1009
+     },
+     "men": {
+      "est": 2.6,
+      "lo": 1.3,
+      "hi": 3.9,
+      "n": 547
+     },
+     "diff": 1.5,
+     "diff_lo": -0.7,
+     "diff_hi": 3.7
+    },
+    "Digestive": {
+     "women": {
+      "est": 10.9,
+      "lo": 7.8,
+      "hi": 14.0,
+      "n": 1009
+     },
+     "men": {
+      "est": 21.3,
+      "lo": 15.9,
+      "hi": 26.7,
+      "n": 547
+     },
+     "diff": -10.4,
+     "diff_lo": -16.6,
+     "diff_hi": -4.1
+    },
+    "Mental health": {
+     "women": {
+      "est": 2.1,
+      "lo": 0.9,
+      "hi": 3.3,
+      "n": 1009
+     },
+     "men": {
+      "est": 4.8,
+      "lo": 2.3,
+      "hi": 7.4,
+      "n": 547
+     },
+     "diff": -2.7,
+     "diff_lo": -5.6,
+     "diff_hi": 0.1
+    },
+    "Nervous system": {
+     "women": {
+      "est": 0.9,
+      "lo": 0.1,
+      "hi": 1.8,
+      "n": 1009
+     },
+     "men": {
+      "est": 2.0,
+      "lo": 0.1,
+      "hi": 3.9,
+      "n": 547
+     },
+     "diff": -1.0,
+     "diff_lo": -3.1,
+     "diff_hi": 1.1
+    },
+    "Kidney, bladder, reproductive": {
+     "women": {
+      "est": 7.4,
+      "lo": 5.1,
+      "hi": 9.6,
+      "n": 1009
+     },
+     "men": {
+      "est": 3.2,
+      "lo": 1.7,
+      "hi": 4.8,
+      "n": 547
+     },
+     "diff": 4.1,
+     "diff_lo": 1.4,
+     "diff_hi": 6.9
+    },
+    "Muscles and bones": {
+     "women": {
+      "est": 1.1,
+      "lo": 0.1,
+      "hi": 2.1,
+      "n": 1009
+     },
+     "men": {
+      "est": 1.4,
+      "lo": -0.2,
+      "hi": 3.0,
+      "n": 547
+     },
+     "diff": -0.3,
+     "diff_lo": -2.3,
+     "diff_hi": 1.6
+    },
+    "Infection": {
+     "women": {
+      "est": 4.1,
+      "lo": 2.0,
+      "hi": 6.1,
+      "n": 1009
+     },
+     "men": {
+      "est": 6.3,
+      "lo": 3.7,
+      "hi": 8.8,
+      "n": 547
+     },
+     "diff": -2.2,
+     "diff_lo": -5.5,
+     "diff_hi": 1.0
+    },
+    "Pregnancy": {
+     "women": {
+      "est": 7.8,
+      "lo": 5.3,
+      "hi": 10.3,
+      "n": 1009
+     },
+     "men": {
+      "est": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 547
+     },
+     "diff": 7.8,
+     "diff_lo": 5.3,
+     "diff_hi": 10.3
+    },
+    "Other": {
+     "women": {
+      "est": 9.9,
+      "lo": 7.0,
+      "hi": 12.7,
+      "n": 1009
+     },
+     "men": {
+      "est": 9.0,
+      "lo": 5.9,
+      "hi": 12.0,
+      "n": 547
+     },
+     "diff": 0.9,
+     "diff_lo": -3.2,
+     "diff_hi": 5.0
+    }
+   }
   },
   {
    "id": "back",
@@ -11186,6 +12887,195 @@
      },
      "n_women": 153,
      "n_men": 101
+    }
+   },
+   "dx_mix": {
+    "Symptom code": {
+     "women": {
+      "est": 11.7,
+      "lo": 8.6,
+      "hi": 14.8,
+      "n": 755
+     },
+     "men": {
+      "est": 5.0,
+      "lo": 3.0,
+      "hi": 7.1,
+      "n": 492
+     },
+     "diff": 6.7,
+     "diff_lo": 3.0,
+     "diff_hi": 10.4
+    },
+    "Heart and circulation": {
+     "women": {
+      "est": 1.2,
+      "lo": 0.1,
+      "hi": 2.2,
+      "n": 755
+     },
+     "men": {
+      "est": 1.1,
+      "lo": 0.2,
+      "hi": 2.1,
+      "n": 492
+     },
+     "diff": 0.0,
+     "diff_lo": -1.4,
+     "diff_hi": 1.4
+    },
+    "Lungs and airways": {
+     "women": {
+      "est": 1.2,
+      "lo": 0.2,
+      "hi": 2.2,
+      "n": 755
+     },
+     "men": {
+      "est": 1.6,
+      "lo": -0.0,
+      "hi": 3.1,
+      "n": 492
+     },
+     "diff": -0.4,
+     "diff_lo": -2.2,
+     "diff_hi": 1.5
+    },
+    "Digestive": {
+     "women": {
+      "est": 1.0,
+      "lo": 0.4,
+      "hi": 1.7,
+      "n": 755
+     },
+     "men": {
+      "est": 0.9,
+      "lo": -0.0,
+      "hi": 1.8,
+      "n": 492
+     },
+     "diff": 0.2,
+     "diff_lo": -1.0,
+     "diff_hi": 1.3
+    },
+    "Mental health": {
+     "women": {
+      "est": 0.4,
+      "lo": -0.1,
+      "hi": 0.9,
+      "n": 755
+     },
+     "men": {
+      "est": 1.3,
+      "lo": -0.1,
+      "hi": 2.7,
+      "n": 492
+     },
+     "diff": -0.9,
+     "diff_lo": -2.4,
+     "diff_hi": 0.6
+    },
+    "Nervous system": {
+     "women": {
+      "est": 3.7,
+      "lo": 1.5,
+      "hi": 6.0,
+      "n": 755
+     },
+     "men": {
+      "est": 2.7,
+      "lo": 1.0,
+      "hi": 4.5,
+      "n": 492
+     },
+     "diff": 1.0,
+     "diff_lo": -1.9,
+     "diff_hi": 3.9
+    },
+    "Kidney, bladder, reproductive": {
+     "women": {
+      "est": 8.5,
+      "lo": 6.3,
+      "hi": 10.7,
+      "n": 755
+     },
+     "men": {
+      "est": 7.0,
+      "lo": 3.6,
+      "hi": 10.3,
+      "n": 492
+     },
+     "diff": 1.6,
+     "diff_lo": -2.4,
+     "diff_hi": 5.5
+    },
+    "Muscles and bones": {
+     "women": {
+      "est": 61.8,
+      "lo": 57.7,
+      "hi": 65.8,
+      "n": 755
+     },
+     "men": {
+      "est": 72.7,
+      "lo": 67.8,
+      "hi": 77.5,
+      "n": 492
+     },
+     "diff": -10.9,
+     "diff_lo": -17.2,
+     "diff_hi": -4.6
+    },
+    "Infection": {
+     "women": {
+      "est": 1.1,
+      "lo": 0.4,
+      "hi": 1.7,
+      "n": 755
+     },
+     "men": {
+      "est": 0.6,
+      "lo": -0.1,
+      "hi": 1.3,
+      "n": 492
+     },
+     "diff": 0.4,
+     "diff_lo": -0.5,
+     "diff_hi": 1.4
+    },
+    "Pregnancy": {
+     "women": {
+      "est": 2.7,
+      "lo": 1.1,
+      "hi": 4.3,
+      "n": 755
+     },
+     "men": {
+      "est": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 492
+     },
+     "diff": 2.7,
+     "diff_lo": 1.1,
+     "diff_hi": 4.3
+    },
+    "Other": {
+     "women": {
+      "est": 6.7,
+      "lo": 4.3,
+      "hi": 9.1,
+      "n": 755
+     },
+     "men": {
+      "est": 7.1,
+      "lo": 4.2,
+      "hi": 10.0,
+      "n": 492
+     },
+     "diff": -0.4,
+     "diff_lo": -4.1,
+     "diff_hi": 3.4
     }
    }
   },
@@ -11843,6 +13733,195 @@
      "n_women": 112,
      "n_men": 87
     }
+   },
+   "dx_mix": {
+    "Symptom code": {
+     "women": {
+      "est": 33.4,
+      "lo": 28.0,
+      "hi": 38.8,
+      "n": 594
+     },
+     "men": {
+      "est": 30.7,
+      "lo": 24.7,
+      "hi": 36.7,
+      "n": 480
+     },
+     "diff": 2.7,
+     "diff_lo": -5.4,
+     "diff_hi": 10.8
+    },
+    "Heart and circulation": {
+     "women": {
+      "est": 1.5,
+      "lo": 0.1,
+      "hi": 2.9,
+      "n": 594
+     },
+     "men": {
+      "est": 0.3,
+      "lo": -0.0,
+      "hi": 0.7,
+      "n": 480
+     },
+     "diff": 1.2,
+     "diff_lo": -0.3,
+     "diff_hi": 2.6
+    },
+    "Lungs and airways": {
+     "women": {
+      "est": 2.8,
+      "lo": 0.7,
+      "hi": 5.0,
+      "n": 594
+     },
+     "men": {
+      "est": 1.7,
+      "lo": 0.2,
+      "hi": 3.2,
+      "n": 480
+     },
+     "diff": 1.2,
+     "diff_lo": -1.5,
+     "diff_hi": 3.8
+    },
+    "Digestive": {
+     "women": {
+      "est": 3.8,
+      "lo": 2.1,
+      "hi": 5.4,
+      "n": 594
+     },
+     "men": {
+      "est": 7.6,
+      "lo": 4.6,
+      "hi": 10.7,
+      "n": 480
+     },
+     "diff": -3.9,
+     "diff_lo": -7.4,
+     "diff_hi": -0.4
+    },
+    "Mental health": {
+     "women": {
+      "est": 0.1,
+      "lo": -0.1,
+      "hi": 0.2,
+      "n": 594
+     },
+     "men": {
+      "est": 0.1,
+      "lo": -0.1,
+      "hi": 0.2,
+      "n": 480
+     },
+     "diff": 0.0,
+     "diff_lo": -0.2,
+     "diff_hi": 0.2
+    },
+    "Nervous system": {
+     "women": {
+      "est": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 594
+     },
+     "men": {
+      "est": 0.3,
+      "lo": -0.1,
+      "hi": 0.6,
+      "n": 480
+     },
+     "diff": -0.3,
+     "diff_lo": -0.6,
+     "diff_hi": 0.1
+    },
+    "Kidney, bladder, reproductive": {
+     "women": {
+      "est": 37.5,
+      "lo": 32.0,
+      "hi": 43.1,
+      "n": 594
+     },
+     "men": {
+      "est": 46.8,
+      "lo": 40.7,
+      "hi": 52.8,
+      "n": 480
+     },
+     "diff": -9.2,
+     "diff_lo": -17.4,
+     "diff_hi": -1.0
+    },
+    "Muscles and bones": {
+     "women": {
+      "est": 10.5,
+      "lo": 6.7,
+      "hi": 14.3,
+      "n": 594
+     },
+     "men": {
+      "est": 6.2,
+      "lo": 3.3,
+      "hi": 9.0,
+      "n": 480
+     },
+     "diff": 4.4,
+     "diff_lo": -0.4,
+     "diff_hi": 9.1
+    },
+    "Infection": {
+     "women": {
+      "est": 1.6,
+      "lo": 0.1,
+      "hi": 3.1,
+      "n": 594
+     },
+     "men": {
+      "est": 0.5,
+      "lo": -0.0,
+      "hi": 1.1,
+      "n": 480
+     },
+     "diff": 1.1,
+     "diff_lo": -0.5,
+     "diff_hi": 2.7
+    },
+    "Pregnancy": {
+     "women": {
+      "est": 1.2,
+      "lo": 0.1,
+      "hi": 2.4,
+      "n": 594
+     },
+     "men": {
+      "est": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 480
+     },
+     "diff": 1.2,
+     "diff_lo": 0.1,
+     "diff_hi": 2.4
+    },
+    "Other": {
+     "women": {
+      "est": 7.5,
+      "lo": 3.9,
+      "hi": 11.1,
+      "n": 594
+     },
+     "men": {
+      "est": 5.9,
+      "lo": 3.2,
+      "hi": 8.6,
+      "n": 480
+     },
+     "diff": 1.7,
+     "diff_lo": -2.8,
+     "diff_hi": 6.2
+    }
    }
   },
   {
@@ -12498,6 +14577,195 @@
      },
      "n_women": 207,
      "n_men": 166
+    }
+   },
+   "dx_mix": {
+    "Symptom code": {
+     "women": {
+      "est": 7.9,
+      "lo": 5.2,
+      "hi": 10.6,
+      "n": 794
+     },
+     "men": {
+      "est": 5.2,
+      "lo": 3.0,
+      "hi": 7.3,
+      "n": 721
+     },
+     "diff": 2.7,
+     "diff_lo": -0.8,
+     "diff_hi": 6.2
+    },
+    "Heart and circulation": {
+     "women": {
+      "est": 3.4,
+      "lo": 2.0,
+      "hi": 4.8,
+      "n": 794
+     },
+     "men": {
+      "est": 7.1,
+      "lo": 4.5,
+      "hi": 9.6,
+      "n": 721
+     },
+     "diff": -3.7,
+     "diff_lo": -6.6,
+     "diff_hi": -0.8
+    },
+    "Lungs and airways": {
+     "women": {
+      "est": 0.1,
+      "lo": -0.0,
+      "hi": 0.2,
+      "n": 794
+     },
+     "men": {
+      "est": 0.5,
+      "lo": -0.1,
+      "hi": 1.0,
+      "n": 721
+     },
+     "diff": -0.4,
+     "diff_lo": -0.9,
+     "diff_hi": 0.2
+    },
+    "Digestive": {
+     "women": {
+      "est": 0.6,
+      "lo": -0.1,
+      "hi": 1.2,
+      "n": 794
+     },
+     "men": {
+      "est": 0.2,
+      "lo": -0.1,
+      "hi": 0.4,
+      "n": 721
+     },
+     "diff": 0.4,
+     "diff_lo": -0.3,
+     "diff_hi": 1.1
+    },
+    "Mental health": {
+     "women": {
+      "est": 0.4,
+      "lo": -0.3,
+      "hi": 1.0,
+      "n": 794
+     },
+     "men": {
+      "est": 1.7,
+      "lo": 0.4,
+      "hi": 3.0,
+      "n": 721
+     },
+     "diff": -1.3,
+     "diff_lo": -2.7,
+     "diff_hi": 0.1
+    },
+    "Nervous system": {
+     "women": {
+      "est": 2.0,
+      "lo": 0.8,
+      "hi": 3.3,
+      "n": 794
+     },
+     "men": {
+      "est": 2.5,
+      "lo": 1.1,
+      "hi": 3.9,
+      "n": 721
+     },
+     "diff": -0.5,
+     "diff_lo": -2.3,
+     "diff_hi": 1.4
+    },
+    "Kidney, bladder, reproductive": {
+     "women": {
+      "est": 1.2,
+      "lo": 0.1,
+      "hi": 2.3,
+      "n": 794
+     },
+     "men": {
+      "est": 0.7,
+      "lo": 0.0,
+      "hi": 1.3,
+      "n": 721
+     },
+     "diff": 0.5,
+     "diff_lo": -0.7,
+     "diff_hi": 1.8
+    },
+    "Muscles and bones": {
+     "women": {
+      "est": 68.8,
+      "lo": 64.5,
+      "hi": 73.1,
+      "n": 794
+     },
+     "men": {
+      "est": 66.7,
+      "lo": 62.1,
+      "hi": 71.3,
+      "n": 721
+     },
+     "diff": 2.1,
+     "diff_lo": -4.2,
+     "diff_hi": 8.4
+    },
+    "Infection": {
+     "women": {
+      "est": 0.8,
+      "lo": 0.2,
+      "hi": 1.3,
+      "n": 794
+     },
+     "men": {
+      "est": 0.6,
+      "lo": 0.1,
+      "hi": 1.0,
+      "n": 721
+     },
+     "diff": 0.2,
+     "diff_lo": -0.5,
+     "diff_hi": 0.9
+    },
+    "Pregnancy": {
+     "women": {
+      "est": 0.4,
+      "lo": -0.2,
+      "hi": 1.1,
+      "n": 794
+     },
+     "men": {
+      "est": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 721
+     },
+     "diff": 0.4,
+     "diff_lo": -0.2,
+     "diff_hi": 1.1
+    },
+    "Other": {
+     "women": {
+      "est": 14.4,
+      "lo": 11.2,
+      "hi": 17.6,
+      "n": 794
+     },
+     "men": {
+      "est": 15.0,
+      "lo": 11.7,
+      "hi": 18.3,
+      "n": 721
+     },
+     "diff": -0.5,
+     "diff_lo": -5.2,
+     "diff_hi": 4.1
     }
    }
   }
