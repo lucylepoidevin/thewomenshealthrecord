@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-05",
+ "generated": "2026-10-08",
  "faers_last_updated": "2026-07-30",
  "zolpidem": {
   "female": 80646,
@@ -27,11 +27,6 @@
    "label": "Extended-release 12.5 mg",
    "female": 33,
    "male": 25
-  },
-  {
-   "label": "Extended-release 6.25 mg",
-   "female": 15,
-   "male": 5
   }
  ],
  "drugs": [

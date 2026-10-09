@@ -166,7 +166,6 @@ def main():
         "pk": [
             {"label": "Immediate-release 10 mg", "female": 15, "male": 3},
             {"label": "Extended-release 12.5 mg", "female": 33, "male": 25},
-            {"label": "Extended-release 6.25 mg", "female": 15, "male": 5},
         ],
         "drugs": sorted(drugs, key=lambda d: d["trial_female_pct"]),
         "summary": {

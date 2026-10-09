@@ -43,7 +43,7 @@ export default function Chapter1() {
     </>),
     F('pk', <Dumbbell rows={data.pk} title="Still impaired the next morning" subtitle="Share of patients with blood zolpidem above 50 ng/mL about 8 hours after dosing" source="Source: FDA Drug Safety Communication, 10 January 2013, pharmacokinetic data submitted by manufacturers." />),
     T('pk-text', <>
-      <p>The difference held in every formulation the FDA reported: 33% of women against 25% of men on the 12.5 mg extended-release dose, and 15% against 5% even on the halved 6.25 mg dose.<Cite id="fda-dsc-2013" /></p>
+      <p>The extended-release form was worse: 33% of women against 25% of men on the 12.5 mg dose still had levels above the threshold eight hours on.<Cite id="fda-qa-2013" /></p>
       <p>None of this required a new discovery. Intermezzo, a lower-dose zolpidem product approved in November 2011, already carried a lower recommended dose for women than for men.<Cite id="fda-dsc-2013" /> For the products most people were actually taking, the label caught up fourteen months later.</p>
     </>),
     T('snapshots', <>
