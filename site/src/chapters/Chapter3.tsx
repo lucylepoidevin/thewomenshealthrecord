@@ -30,7 +30,7 @@ export default function Chapter3() {
   const blocks: Block[] = [
     T('open', <>
       <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">Every year the National Institutes of Health decides how roughly {money(S.total_funding_m)} of research money is split between the diseases on this page.</p>
-      <p>In 2021 a study put NIH's disease funding against how much each disease actually costs Americans in healthy years of life, and found that when a disease fell mostly on one sex, the money favoured men: female-skewed diseases were underfunded for their burden and male-skewed diseases overfunded, with the shortfall nearly twice as large on the women's side.<Cite id="mirin-2021" /> It used burden data from 2016 and funding from 2019.</p>
+      <p>In 2021 a study put NIH's disease funding against how much each disease actually costs Americans in healthy years of life, and found that when a disease fell mostly on one sex, the money favoured men: female-skewed diseases were underfunded for their burden and male-skewed diseases overfunded, with the shortfall nearly twice as large on the women's side.<Cite id="mirin-2021" /> It used a single year of funding and a single year of burden.</p>
       <p>We rebuilt it with the newest numbers from both sources, for {S.n} diseases, and then asked what the 2021 paper could not: how this has moved since 2010, which specific diseases carry the gap, and which conditions never make it into the accounting at all.</p>
     </>),
     T('method', <>

@@ -5,7 +5,6 @@ import Methods from './pages/Methods'
 import About from './pages/About'
 import Data from './pages/Data'
 import Record from './pages/Record'
-import Corrections from './pages/Corrections'
 import Chapter1 from './chapters/Chapter1'
 import Chapter2 from './chapters/Chapter2'
 import Chapter3 from './chapters/Chapter3'
@@ -46,7 +45,6 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/data" element={<Data />} />
           <Route path="/record" element={<Record />} />
-          <Route path="/corrections" element={<Corrections />} />
           <Route path="/chapters/tested-on-men" element={<Chapter1 />} />
           <Route path="/chapters/pain-gap" element={<Chapter2 />} />
           <Route path="/chapters/funding-vs-burden" element={<Chapter3 />} />
@@ -69,8 +67,6 @@ export default function App() {
             <a href="https://substack.com/@thewomenshealthrecord" className="hover:text-berry" target="_blank" rel="noreferrer">Substack</a>
             <Link to="/methods" className="hover:text-berry">Methods &amp; sources</Link>
             <Link to="/data" className="hover:text-berry">Data</Link>
-            <Link to="/corrections" className="hover:text-berry">Corrections</Link>
-            <a href="https://github.com/lucylepoidevin/thewomenshealthrecord" className="hover:text-berry" target="_blank" rel="noreferrer">Code &amp; data</a>
           </div>
         </div>
       </footer>

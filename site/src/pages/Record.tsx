@@ -100,6 +100,19 @@ export default function Record() {
           </div>
         )}
       </section>
+      {c.drugs.some(d => d.label_sex) && (
+        <section className="graphic-card p-5 sm:p-7 mt-6">
+          <div className="flex items-baseline justify-between gap-4"><h2 className="display text-xl font-medium">What their labels say</h2><Link to="/chapters/male-default" className="text-xs text-berry underline underline-offset-2">Chapter 6</Link></div>
+          {(() => { const L = c.drugs.filter(d => d.label_sex); const n = L.length; const pc = (k: number) => `${Math.round(100 * k / n)}%`; return (
+            <div className="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <Tile v={pc(L.filter(d => d.label_sex === 'no difference asserted').length)} l={`of ${n} labels assert no clinically significant sex difference`} />
+              <Tile v={pc(L.filter(d => d.label_sex === 'quantified difference' || d.label_sex === 'difference noted').length)} l="report a sex difference in exposure" />
+              <Tile v={pc(L.filter(d => d.label_no_preg).length)} l="say human pregnancy data are absent or insufficient" />
+              <Tile v={pc(L.filter(d => d.label_flat).length)} l="are given as one flat dose regardless of body weight" />
+            </div>
+          ) })()}
+        </section>
+      )}
       {c.cancer && (
         <section className="graphic-card p-5 sm:p-7 mt-6">
           <div className="flex items-baseline justify-between gap-4"><h2 className="display text-xl font-medium">When it was found</h2><Link to="/chapters/sent-home-with-a-label" className="text-xs text-berry underline underline-offset-2">Chapter 5</Link></div>
