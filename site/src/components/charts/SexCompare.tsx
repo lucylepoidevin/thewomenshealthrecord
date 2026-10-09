@@ -39,7 +39,7 @@ export default function SexCompare({ rows, title, subtitle, source, unit = '%', 
                 const pts = [{ k: 'men', e: r.cmp.men, c: M, dy: 7, who: 'Men' }, { k: 'women', e: r.cmp.women, c: F, dy: -7, who: 'Women' }]
                 const sig = r.cmp.diff_lo > 0 || r.cmp.diff_hi < 0
                 return (
-                  <g key={r.label}>
+                  <g key={`${r.label}|${r.sub ?? ""}`}>
                     <text x={-12} y={cy + (r.sub ? -2 : 4)} textAnchor="end" fontSize={12} fill="var(--c-text)" fontWeight={500}>{r.label}</text>
                     {r.sub && <text x={-12} y={cy + 12} textAnchor="end" fontSize={10} fill="var(--c-text-2)">{r.sub}</text>}
                     {i > 0 && <line x1={0} x2={iw} y1={i * rowH} y2={i * rowH} stroke="var(--c-grid)" />}
