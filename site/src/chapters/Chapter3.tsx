@@ -40,9 +40,9 @@ export default function Chapter3() {
       <p>NIH publishes how much it spends on each of about 330 research categories every fiscal year.<Cite id="nih-rcdc" /> The World Health Organization estimates, for every country and cause, the number of healthy years lost to death and disability, split by sex: disability-adjusted life years, or DALYs.<Cite id="who-ghe" /> Where an NIH category and a WHO cause describe the same disease, we matched them. That gives {S.n} diseases with both a price tag and a burden, {S.n_female} of them falling mostly on women, {S.n_male} mostly on men.</p>
       <p>Bigger diseases get more money, so the fair comparison is not dollars but dollars for the burden. The dotted line below is what funding a disease of a given size usually gets. Above it, a disease is funded beyond its burden; below it, short.</p>
     </>),
-    F('scatter', <FundingScatter diseases={D} fit={data.fit} title="Funding against burden, 67 diseases" subtitle="Each dot is one disease. Dotted line: the funding a disease of that burden typically gets. Hover for the numbers." source={src} labels={['Migraine', 'HIV/AIDS', "Alzheimer's and other dementias", 'Breast cancer', 'Gynaecological diseases', 'Coronary heart disease', 'Interpersonal violence']} />, 'tall'),
+    F('scatter', <FundingScatter diseases={D} fit={data.fit} burdenYear={data.burden_year} title="Funding against burden, 67 diseases" subtitle="Each dot is one disease. Dotted line: the funding a disease of that burden typically gets. Hover for the numbers." source={src} labels={['Migraine', 'HIV/AIDS', "Alzheimer's and other dementias", 'Breast cancer', 'Gynaecological diseases', 'Coronary heart disease', 'Interpersonal violence']} />, 'tall'),
     T('scatter-text', <>
-      <p>The first thing the chart says is that the 2021 pattern has not held at the level of averages. The typical female-skewed disease now sits at {S.median_ratio_to_expected.female?.toFixed(2)}× the funding its burden predicts; the typical male-skewed disease at {S.median_ratio_to_expected.male?.toFixed(2)}×. Half of each group is below the line. That is a real change from the 2016 picture, and part of it is one disease: Alzheimer's, which falls mostly on women and whose budget rose to {money(alz.funding_m)}, {alz.ratio_to_expected.toFixed(0)} times what its burden alone would predict.</p>
+      <p>The first thing the chart says is that the 2021 pattern is still there in the averages, but narrower than the paper found. The typical female-skewed disease sits at {S.median_ratio_to_expected.female?.toFixed(2)}× the funding its burden predicts; the typical male-skewed disease at {S.median_ratio_to_expected.male?.toFixed(2)}×. About half of each group is below the line. The women's average is held up by one disease: Alzheimer's, which falls mostly on women and whose budget rose to {money(alz.funding_m)}, {alz.ratio_to_expected.toFixed(0)} times what its burden alone would predict.</p>
       <p>The second thing it says is that averages are the wrong place to look. The gap did not close; it moved into specific diseases.</p>
     </>),
     F('ratio', <Lollipop rows={skewed.map(d => ({ label: d.disease, sub: `${d.female_share.toFixed(0)}% women · ${d.dalys_k >= 1000 ? (d.dalys_k / 1000).toFixed(1) + 'M' : d.dalys_k.toFixed(0) + 'k'} DALYs`, value: d.ratio_to_expected, color: col(d.skew), tip: <><b>{d.disease}</b><br />{money(d.funding_m)} against an expected {money(d.expected_m)}<br />${d.dollars_per_daly.toLocaleString()} per DALY</> }))} title="Funding relative to what the burden predicts" subtitle={`The ${skewed.length} diseases that fall at least 60% on one sex, ranked. 1× is on the line.`} source={src} axisLabel="funding ÷ expected funding (log scale)" fmt={v => `${v}×`} log reference={{ value: 1, label: 'on the line' }} legend={[{ label: 'Mostly women', color: 'var(--c-female)' }, { label: 'Mostly men', color: 'var(--c-male)' }]} />),
@@ -86,7 +86,7 @@ export default function Chapter3() {
     F('uncounted-fig', <Lollipop rows={[...data.uncounted].sort((a, b) => b.funding_m - a.funding_m).map(u => ({ label: u.label, value: u.funding_m, color: 'var(--c-female)' }))} title="Funded, but not measured" subtitle={`NIH funding, FY${data.funding_fy}, for conditions with no WHO burden estimate`} source={`Source: NIH RCDC category estimates, FY${data.funding_fy}. WHO Global Health Estimates has no cause for these conditions.`} axisLabel="NIH funding, $ millions" fmt={v => `$${v.toFixed(0)}M`} />),
     T('trend', <>
       <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">Has it moved?</p>
-      <p>The WHO has burden estimates for 2010, 2015, 2019, 2021 and 2023, and NIH funding for each of those years, so the comparison can be repeated across thirteen years. The share of female-skewed diseases sitting below the line was {data.trend[0].share_underfunded.female}% in 2010 and {data.trend[data.trend.length - 1].share_underfunded.female}% in 2023. For male-skewed diseases it was {data.trend[0].share_underfunded.male}% and {data.trend[data.trend.length - 1].share_underfunded.male}%. Thirteen years, a decade of NIH policy on sex as a biological variable, and the women's line has drifted the wrong way to meet the men's, not the other way round.</p>
+      <p>The WHO has burden estimates for 2010, 2015, 2019, 2021 and 2023, and NIH funding for each of those years, so the comparison can be repeated across thirteen years. The share of female-skewed diseases sitting below the line was {data.trend[0].share_underfunded.female}% in 2010 and {data.trend[data.trend.length - 1].share_underfunded.female}% in 2023. For male-skewed diseases it was {data.trend[0].share_underfunded.male}% and {data.trend[data.trend.length - 1].share_underfunded.male}%. Thirteen years, seven of them under NIH's policy on sex as a biological variable, and the women's line has drifted up to meet the men's, not the other way round.</p>
     </>),
     F('trend-fig', <MultiLine series={[{ label: 'Mostly-women diseases', color: 'var(--c-female)', points: trendF }, { label: 'Mostly-men diseases', color: 'var(--c-male)', points: trendM }]} title="Share of diseases funded below their burden" subtitle="Diseases falling at least 60% on one sex, by burden year, with that year's NIH funding" source="Sources: NIH RCDC category estimates FY2010–FY2023; WHO Global Health Estimates 2010, 2015, 2019, 2021 and 2023, United States. The funding line is refitted for each year. Analysis by The Women's Health Record." yLabel="share below the line" fmt={v => `${v.toFixed(0)}%`} reference={{ value: 50, label: 'half' }} />, 'chart'),
     T('caveats', <>
@@ -98,7 +98,7 @@ export default function Chapter3() {
       <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">What this means for you.</p>
       <p>If you live with one of these diseases, the number that matters when you write to a representative, a foundation or a journalist is dollars per year of health lost, set beside a disease everyone knows. Look yours up below. The funding history is there too; NIH's own figures, not ours.</p>
     </>),
-    F('explorer', <DiseaseExplorer diseases={D} n={S.n} source={src} />),
+    F('explorer', <DiseaseExplorer diseases={D} n={S.n} source={src} burdenYear={data.burden_year} />),
     T('for-you-2', <>
       <p>And if your condition is one of the uncounted, the first ask is not money. It is a burden estimate. A condition without one cannot be shown to be underfunded, and so it never is.</p>
     </>),
@@ -113,11 +113,11 @@ export default function Chapter3() {
         <p className="mt-5 text-xs tracking-wide text-ink-3">NIH FY{data.funding_fy}, WHO {data.burden_year} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>
       </header>
       <Story blocks={blocks} />
+      <NextChapter slug='funding-vs-burden' />
       <section className="mx-auto max-w-3xl px-4 pt-16">
         <h2 className="display text-2xl font-medium mb-4">Sources</h2>
         <SourceList only={['mirin-2021', 'nih-rcdc', 'who-ghe']} />
       </section>
-      <NextChapter slug='funding-vs-burden' />
     </article>
   )
 }

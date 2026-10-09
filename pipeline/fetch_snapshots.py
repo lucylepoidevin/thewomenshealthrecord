@@ -5,11 +5,13 @@ live index and are fetched from the Internet Archive capture of the old index.
 Writes pipeline/out/snapshots_raw.csv
 """
 import csv
+import json
+import os
 import re
 import sys
 from urllib.parse import urljoin
 
-from common import OUT, fetch, html_to_text
+from common import CACHE, OUT, fetch, html_to_text
 from parse_snapshot import parse_sex
 from parse_tables import parse_html_tables
 
@@ -86,6 +88,14 @@ def parse(text):
 
 def main():
     urls = collect_urls()
+    # pages the archive holds that neither index listed (found with the Wayback CDX index; mostly 2021 approvals)
+    extra_path = os.path.join(CACHE, "ch1_missing_snapshots.json")
+    if os.path.exists(extra_path):
+        for original, ts in json.load(open(extra_path)):
+            slug = original.rstrip("/").rsplit("/", 1)[-1].lower()
+            if slug not in urls:
+                urls[slug] = ("archive-cdx", f"https://web.archive.org/web/{ts}/{original}")
+        print(f"  + archive-cdx pages: {sum(1 for v in urls.values() if v[0] == 'archive-cdx')}")
     print(f"{len(urls)} snapshot URLs collected")
     # Pre-fetch into the cache: live pages first (fast), then archived pages with a small pool.
     from concurrent.futures import ThreadPoolExecutor

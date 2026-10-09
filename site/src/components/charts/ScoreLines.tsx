@@ -25,6 +25,7 @@ export default function ScoreLines({ points, title, subtitle, source, yLabel }: 
   return (
     <ChartFrame title={title} subtitle={subtitle} source={source}>
       <Legend items={[{ label: 'Women', color: F }, { label: 'Men', color: M }]} />
+      <p className="text-[11px] text-ink-3 -mt-0.5 mb-1">Hollow points rest on fewer than 30 sampled visits or a relative error over 30% and should not be quoted.</p>
       <div ref={ref} className="relative h-[calc(100%-1.5rem)] w-full">
         {width > 0 && (
           <svg width={width} height={height} role="img" aria-label={title}>
@@ -39,7 +40,7 @@ export default function ScoreLines({ points, title, subtitle, source, yLabel }: 
               {series.map(s => <path key={s.k + 'b'} d={band(s.k)} fill={s.c} opacity={0.12} />)}
               {series.map(s => <path key={s.k} d={ln(s.k)} fill="none" stroke={s.c} strokeWidth={2.5} />)}
               {series.map(s => points.map(p => (
-                <circle key={s.k + p.score} cx={x(p.score)} cy={y(p.cmp[s.k].est)} r={4.5} fill={s.c} stroke="var(--c-surface)" strokeWidth={1.5}
+                <circle key={s.k + p.score} cx={x(p.score)} cy={y(p.cmp[s.k].est)} r={4.5} fill={p.cmp[s.k].reliable === false ? "var(--c-surface)" : s.c} stroke={p.cmp[s.k].reliable === false ? s.c : "var(--c-surface)"} strokeWidth={1.5}
                   onMouseEnter={() => setTip({ x: x(p.score) + m.left, y: y(p.cmp[s.k].est) + m.top, content: <><b>{s.who}</b>, pain score {p.score}<br />{p.cmp[s.k].est.toFixed(0)}% (95% CI {p.cmp[s.k].lo.toFixed(0)}–{p.cmp[s.k].hi.toFixed(0)}%)<br />{p.cmp[s.k].n.toLocaleString()} sampled visits</> })}
                   onMouseLeave={() => setTip(null)} />
               )))}

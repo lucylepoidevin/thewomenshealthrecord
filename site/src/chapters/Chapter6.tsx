@@ -156,11 +156,11 @@ export default function Chapter6() {
         <p className="mt-5 text-xs tracking-wide text-ink-3">PubMed {P.years[0]}–{y1}, openFDA labels retrieved {data.generated} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>
       </header>
       <Story blocks={blocks} />
+      <NextChapter slug='male-default' />
       <section className="mx-auto max-w-3xl px-4 pt-16">
         <h2 className="display text-2xl font-medium mb-4">Sources</h2>
         <SourceList only={['pubmed', 'beery-2011', 'nih-sabv', 'sorge-2015', 'science-2026-pain', 'openfda-label', 'fda-snapshots', 'nchs-anthro']} />
       </section>
-      <NextChapter slug='male-default' />
     </article>
   )
 }

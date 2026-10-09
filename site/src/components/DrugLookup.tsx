@@ -124,7 +124,7 @@ export default function DrugLookup({ drugs, minReports }: { drugs: Drug[]; minRe
           <div className="mt-4 grid gap-3 sm:grid-cols-3">
             <div className="rounded-2xl bg-blush-2/60 p-4">
               <div className="display text-4xl font-light leading-none text-ink-3">—</div>
-              <p className="mt-2 text-xs text-ink-2">no FDA trial snapshot: it was approved before 2015, or is not a novel drug</p>
+              <p className="mt-2 text-xs text-ink-2">no FDA trial snapshot among those we could retrieve: approved before 2015, not a novel drug, or a page the archive did not keep</p>
             </div>
             <div className="rounded-2xl bg-blush-2/60 p-4">
               <div className="display text-4xl font-light leading-none text-berry">{live.female + live.male >= minReports ? `${pct(live.female, live.male).toFixed(0)}%` : '—'}</div>

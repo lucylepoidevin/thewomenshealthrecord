@@ -3,7 +3,7 @@
  "files": [
   {
    "file": "chapter1_drugs.csv",
-   "rows": 452,
+   "rows": 496,
    "description": "Tested on men, prescribed to women: every novel drug approved since 2015 with a parsed FDA Drug Trials Snapshot, its FAERS adverse-event report split by sex, and (where available) MEPS prescription users by sex.",
    "columns": {
     "brand": "Brand name as on the FDA snapshot",
@@ -129,7 +129,7 @@
   },
   {
    "file": "chapter6_labels.csv",
-   "rows": 384,
+   "rows": 419,
    "description": "The male default body: what the current FDA label of each chapter-1 drug says about sex, pregnancy and breastfeeding, classified by the published rules.",
    "columns": {
     "sex_statement": "Classification of the pharmacology section's statement about sex",

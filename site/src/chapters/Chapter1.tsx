@@ -127,11 +127,11 @@ export default function Chapter1() {
         <p className="mt-5 text-xs tracking-wide text-ink-3">data through {data.faers_last_updated ?? data.generated} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>
       </header>
       <Story blocks={blocks} />
+      <NextChapter slug='tested-on-men' />
       <section className="mx-auto max-w-3xl px-4 pt-16">
         <h2 className="display text-2xl font-medium mb-4">Sources</h2>
         <SourceList only={['fda-dsc-2013', 'fda-qa-2013', 'fda-snapshots', 'fda-snapshots-archive', 'openfda-faers', 'meps', 'carmeli-2023']} />
       </section>
-      <NextChapter slug='tested-on-men' />
     </article>
   )
 }

@@ -19,7 +19,7 @@
   "publisher": "U.S. Food and Drug Administration",
   "url": "https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots",
   "retrieved": "2026-10-08",
-  "note": "452 individual snapshot pages parsed; per-drug URLs are linked from the table."
+  "note": "496 individual snapshot pages parsed; per-drug URLs are linked from the table."
  },
  {
   "id": "fda-snapshots-archive",
@@ -51,30 +51,7 @@
   "publisher": "Carmeli A. et al., Patterns (2023); GitHub / Zenodo record 7373942",
   "url": "https://github.com/arielcarmeli/FDA-Drug-Trial-Snapshots-Data-Explorer",
   "retrieved": "2026-10-08",
-  "note": "Used to cross-check our parsed figures, and as the enrollment source for 7 2015\u20132021 drugs whose archived FDA page could not be retrieved or parsed (flagged per drug in the data file)."
- },
- {
-  "id": "chen-2008",
-  "title": "Gender disparity in analgesic treatment of emergency department patients with acute abdominal pain",
-  "publisher": "Chen E.H., Shofer F.S., Dean A.J. et al., Academic Emergency Medicine 15(5), 2008. doi:10.1111/j.1553-2712.2008.00100.x",
-  "url": "https://doi.org/10.1111/j.1553-2712.2008.00100.x",
-  "retrieved": "2026-10-08",
-  "note": "Prospective cohort, 981 adults, one urban ED, April 2004 to January 2005."
- },
- {
-  "id": "nhamcs",
-  "title": "National Hospital Ambulatory Medical Care Survey, emergency department public-use files 2018\u20132022",
-  "publisher": "National Center for Health Statistics, CDC",
-  "url": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/NHAMCS/",
-  "retrieved": "2026-10-08",
-  "note": "68,504 sampled adult visits pooled; estimates weighted with PATWT, variances by Taylor linearization over CSTRATM and CPSUM."
- },
- {
-  "id": "nhamcs-doc",
-  "title": "NHAMCS 2022 emergency department public-use file documentation (reason-for-visit and Multum therapeutic class codes)",
-  "publisher": "National Center for Health Statistics, CDC",
-  "url": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Dataset_Documentation/NHAMCS/doc22-ed-508.pdf",
-  "retrieved": "2026-10-08"
+  "note": "Used to cross-check our parsed figures, and as the enrollment source for 15 2015\u20132021 drugs whose archived FDA page could not be retrieved or parsed (flagged per drug in the data file)."
  },
  {
   "id": "mirin-2021",
@@ -168,6 +145,29 @@
   "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/study-and-evaluation-gender-differences-clinical-evaluation-drugs",
   "retrieved": "2026-10-08",
   "note": "Lifted the 1977 exclusion of women of childbearing potential from early-phase trials."
+ },
+ {
+  "id": "chen-2008",
+  "title": "Gender disparity in analgesic treatment of emergency department patients with acute abdominal pain",
+  "publisher": "Chen E.H., Shofer F.S., Dean A.J. et al., Academic Emergency Medicine 15(5), 2008. doi:10.1111/j.1553-2712.2008.00100.x",
+  "url": "https://doi.org/10.1111/j.1553-2712.2008.00100.x",
+  "retrieved": "2026-10-08",
+  "note": "Prospective cohort, 981 adults, one urban ED, April 2004 to January 2005."
+ },
+ {
+  "id": "nhamcs",
+  "title": "National Hospital Ambulatory Medical Care Survey, emergency department public-use files 2018\u20132022",
+  "publisher": "National Center for Health Statistics, CDC",
+  "url": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/NHAMCS/",
+  "retrieved": "2026-10-08",
+  "note": "68,504 sampled adult visits pooled; estimates weighted with PATWT, variances by Taylor linearization over CSTRATM and CPSUM."
+ },
+ {
+  "id": "nhamcs-doc",
+  "title": "NHAMCS 2022 emergency department public-use file documentation (reason-for-visit and Multum therapeutic class codes)",
+  "publisher": "National Center for Health Statistics, CDC",
+  "url": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Dataset_Documentation/NHAMCS/doc22-ed-508.pdf",
+  "retrieved": "2026-10-08"
  },
  {
   "id": "pubmed",

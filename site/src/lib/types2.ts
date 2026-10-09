@@ -1,4 +1,4 @@
-export type Est = { est: number; lo: number; hi: number; n: number }
+export type Est = { est: number; lo: number; hi: number; n: number; reliable?: boolean }
 export type Cmp = { women: Est; men: Est; diff: number; diff_lo: number; diff_hi: number }
 export type AgeAdj = { women: { est: number; lo: number; hi: number }; men: { est: number; lo: number; hi: number }; diff: number }
 export type Group = {
@@ -19,7 +19,7 @@ export type Chapter2Data = {
   n_adult_visits: number
   weighted_adult_visits_per_year_m: number
   groups: Group[]
-  heart_attack: { n: number; n_women: number; n_men: number; weighted_per_year_k: number; metrics: Record<string, Cmp | null>; under_65: Record<string, Cmp | null> }
+  heart_attack: { n: number; n_women: number; n_men: number; weighted_per_year_k: number; metrics: Record<string, Cmp | null>; under_65: Record<string, Cmp | null>; primary_only: { n: number; n_women: number; cardenz: Cmp | null; urgent: Cmp | null; ems: Cmp | null } }
   all_pain: { n: number; n_women: number; n_men: number; metrics: Record<string, Cmp | null>; age_adjusted: Record<string, AgeAdj>; within_triage: Record<string, Cmp | null> }
   by_score: { score: number; opioid_ed: Cmp; analgesic_ed: Cmp }[]
   by_score_urgent: { score: number; urgent: Cmp }[]

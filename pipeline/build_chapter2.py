@@ -54,7 +54,7 @@ def load():
         dx = df[["DIAG1", "DIAG2", "DIAG3", "DIAG4", "DIAG5"]].astype(str)
         d1 = dx["DIAG1"]
         out = pd.DataFrame({
-            "mi": dx.apply(lambda r: r.str.match(r"I2[12]").any(), axis=1).values,
+            "mi": dx.apply(lambda r: r.str.match(r"I2[12]").any(), axis=1).values, "mi_primary": d1.str.match(r"I2[12]").values,
             "ihd1": d1.str.match(r"I2[0-5]").values, "psych1": d1.str.startswith("F").values, "sym1": d1.str.startswith("R").values,
             "dxcat": np.select([d1.str.match(r"I2[0-5]"), d1.str.startswith("I"), d1.str.startswith("K"), d1.str.startswith("M"), d1.str.startswith("J"), d1.str.startswith("F"), d1.str.match(r"R07"), d1.str.startswith("R")],
                                ["Ischaemic heart disease", "Other circulatory", "Digestive", "Musculoskeletal", "Respiratory", "Psychiatric", "Chest pain, unspecified", "Other symptom code"], "Other"),
@@ -208,6 +208,7 @@ def main():
     }
     chest_codes = {10500, 10501, 10502, 10503}
     mi = d["mi"].values
+    mi_primary = d["mi_primary"].values
     cc_chest = d["rfv1"].isin(chest_codes)
     any_chest = cc_chest | d["rfv2"].isin(chest_codes) | d["rfv3"].isin(chest_codes)
     heart = {
@@ -222,6 +223,7 @@ def main():
             "ekg": compare(d, mi, d["ekg_done"]), "cardenz": compare(d, mi, d["cardenz_done"]), "admitted": compare(d, mi, d["admitted"]),
             "lov_mean": compare(d, mi, d["lov_ok"], scale=1.0, nd=0),
         },
+        "primary_only": {"n": int((mi & mi_primary).sum()), "n_women": int((mi & mi_primary & d["female"].values).sum()), "cardenz": compare(d, mi & mi_primary, d["cardenz_done"]), "urgent": compare(d, mi & mi_primary & (d["triage"] >= 1).values, d["urgent"]), "ems": compare(d, mi & mi_primary & (d["ems"] >= 1).values, d["ems_yes"])},
         "under_65": {"chief_complaint_chest": compare(d, mi & (d["age"] < 65).values, cc_chest), "urgent": compare(d, mi & (d["age"] < 65).values & (d["triage"] >= 1).values, d["urgent"]), "cardenz": compare(d, mi & (d["age"] < 65).values, d["cardenz_done"])},
     }
     # ---- explorer: complaint x age band x sex

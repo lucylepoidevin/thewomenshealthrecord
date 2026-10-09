@@ -18,7 +18,7 @@ CANCER_MAP = {"Lung cancer": "Lung", "Colorectal cancer": "Colon and rectum", "P
 
 def drug_rec(x):
     L = LABELS.get(x["slug"], {})
-    return {"brand": x["brand"], "year": x["year"], "trial_female_pct": x["trial_female_pct"], "faers_female_pct": x["faers_female_pct"], "gap": x["gap"], "rate_ratio": x["rate_ratio"], "snapshot_url": x["snapshot_url"], "label_sex": L.get("sex_statement"), "label_no_preg": L.get("no_preg_data"), "label_no_lact": L.get("no_lact_data"), "label_flat": (not L["weight_based"]) if "weight_based" in L else None}
+    return {"brand": x["brand"], "year": x["year"], "trial_female_pct": x["trial_female_pct"], "faers_n": x["faers_n"], "faers_female_pct": x["faers_female_pct"] if (x["faers_n"] or 0) >= 100 else None, "gap": x["gap"], "rate_ratio": x["rate_ratio"], "snapshot_url": x["snapshot_url"], "label_sex": L.get("sex_statement"), "label_no_preg": L.get("no_preg_data"), "label_no_lact": L.get("no_lact_data"), "label_flat": (not L["weight_based"]) if "weight_based" in L else None}
 
 TRIALS = {d["disease"]: d for d in c4["diseases"] + c4["sex_specific"]}
 TRIALS_UNC = {u["condition"]: u for u in c4["uncounted"]}
@@ -45,16 +45,16 @@ LINKS = {
     "Schizophrenia": (r"schizophren", None), "Eating disorders": (r"binge|anorexia|bulimia", None), "ADHD": (r"attention deficit|adhd", None), "Autism": (r"autis", None),
     "Alzheimer's and other dementias": (r"alzheimer|dementia", None), "Parkinson's disease": (r"parkinson", None), "Epilepsy": (r"seizure|epilep", None), "Multiple sclerosis": (r"multiple sclerosis", None),
     "Asthma": (r"asthma", None), "COPD": (r"copd|chronic obstructive", None), "Diabetes": (r"diabet", None), "Coronary heart disease": (r"coronary|heart attack|myocardial|cardiovascular|angina", "chest"), "Stroke": (r"stroke", None),
-    "Hypertension": (r"hypertension|blood pressure", None), "Kidney disease": (r"kidney disease|renal|nephropathy|dialysis", None), "Cirrhosis and chronic liver disease": (r"cirrhosis|liver disease|steatohepatitis|cholangitis", None),
+    "Hypertension": (r"hypertension|blood pressure", None), "Kidney disease": (r"kidney disease|\brenal (disease|impairment|failure|insufficiency)|nephropathy|dialysis", None), "Cirrhosis and chronic liver disease": (r"cirrhosis|liver disease|steatohepatitis|cholangitis", None),
     "Hepatitis B": (r"hepatitis b", None), "Hepatitis C": (r"hepatitis c", None), "HIV/AIDS": (r"\bhiv\b", None), "Tuberculosis": (r"tuberculosis", None), "Sexually transmitted infections": (r"chlamydia|gonorrh|syphilis|genital herpes|trichomon", None),
     "Breast cancer": (r"breast cancer", None), "Ovarian cancer": (r"ovarian", None), "Cervical cancer": (r"cervical cancer", None), "Uterine cancer": (r"endometrial|uterine", None), "Prostate cancer": (r"prostate", None),
-    "Lung cancer": (r"lung cancer|non-small cell|small cell", None), "Colorectal cancer": (r"colorectal|colon", None), "Pancreatic cancer": (r"pancrea", None), "Liver cancer": (r"hepatocellular|liver cancer", None),
+    "Lung cancer": (r"lung cancer|non-small cell|small cell", None), "Colorectal cancer": (r"colorectal|colon cancer|rectal cancer", None), "Pancreatic cancer": (r"pancrea", None), "Liver cancer": (r"hepatocellular|liver cancer", None),
     "Stomach cancer": (r"gastric|stomach cancer", None), "Esophageal cancer": (r"esophag", None), "Skin cancer": (r"melanoma|skin cancer|squamous cell carcinoma|basal cell", None), "Brain cancer": (r"glioma|glioblastoma|brain tumor", None),
-    "Lymphoma": (r"(?<!hodgkin )lymphoma", None), "Hodgkin lymphoma": (r"(?<!non-)hodgkin", None), "Rheumatoid arthritis": (r"rheumatoid", None), "Osteoarthritis": (r"osteoarthritis", "limb"), "Back and neck pain": (r"back pain", "back"),
+    "Lymphoma": (r"(?<!hodgkin )lymphoma(?! kinase)", None), "Hodgkin lymphoma": (r"(?<!non-)hodgkin", None), "Rheumatoid arthritis": (r"rheumatoid", None), "Osteoarthritis": (r"osteoarthritis", "limb"), "Back and neck pain": (r"back pain", "back"),
     "Inflammatory bowel disease": (r"crohn|ulcerative colitis|inflammatory bowel", "abdominal"), "Peptic ulcer": (r"ulcer|h\. pylori|helicobacter", "abdominal"), "Gallbladder disease": (r"gallbladder|biliary", "abdominal"),
-    "Gynaecological diseases": (r"endometriosis|fibroid|polycystic|vulvodynia|pelvic|menorrhag|uterine bleeding", None), "Infertility": (r"infertil|ovulation|ivf", None), "Maternal conditions": (r"pregnan|postpartum|preterm", None),
+    "Gynaecological diseases": (r"endometriosis|fibroid|polycystic|vulvodynia|pelvic|menorrhag|uterine bleeding", None), "Infertility": (r"infertil|ovulation|ivf", None), "Maternal conditions": (r"(?<!prevent )pregnan|postpartum|preterm", None),
     "Sickle cell disease": (r"sickle", None), "Macular degeneration": (r"macular", None), "Hearing loss": (r"hearing loss|hearing impair", None), "Vision loss": (r"retinal|retinopathy|retinitis|glaucoma|myopia|dry eye|macular", None),
-    "Opioid use disorders": (r"opioid use|opioid dependence|opioid overdose", None), "Alcohol use disorders": (r"alcohol", None), "Drug use disorders": (r"substance use|drug dependence", None),
+    "Opioid use disorders": (r"opioid use|opioid dependence|opioid overdose", None), "Alcohol use disorders": (r"alcohol (use|dependence|withdrawal)|alcoholism", None), "Drug use disorders": (r"substance use|drug dependence", None),
     "Suicide and self-harm": (r"suicid", None), "Interpersonal violence": (None, None), "Unintentional injuries": (None, None), "Oral and dental disease": (r"dental|periodont", None), "Pneumonia and influenza": (r"pneumonia|influenza", None),
 }
 recs = []

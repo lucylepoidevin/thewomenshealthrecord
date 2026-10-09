@@ -220,6 +220,67 @@
     "diff_hi": 18.0
    }
   },
+  "primary_only": {
+   "n": 187,
+   "n_women": 65,
+   "cardenz": {
+    "women": {
+     "est": 24.6,
+     "lo": 9.0,
+     "hi": 40.2,
+     "n": 65,
+     "reliable": false
+    },
+    "men": {
+     "est": 45.9,
+     "lo": 34.0,
+     "hi": 57.8,
+     "n": 122,
+     "reliable": true
+    },
+    "diff": -21.3,
+    "diff_lo": -40.9,
+    "diff_hi": -1.7
+   },
+   "urgent": {
+    "women": {
+     "est": 56.3,
+     "lo": 32.6,
+     "hi": 80.0,
+     "n": 44,
+     "reliable": true
+    },
+    "men": {
+     "est": 73.9,
+     "lo": 61.8,
+     "hi": 86.0,
+     "n": 92,
+     "reliable": true
+    },
+    "diff": -17.6,
+    "diff_lo": -44.2,
+    "diff_hi": 9.0
+   },
+   "ems": {
+    "women": {
+     "est": 36.7,
+     "lo": 21.3,
+     "hi": 52.2,
+     "n": 59,
+     "reliable": true
+    },
+    "men": {
+     "est": 51.3,
+     "lo": 39.1,
+     "hi": 63.5,
+     "n": 119,
+     "reliable": true
+    },
+    "diff": -14.6,
+    "diff_lo": -34.3,
+    "diff_hi": 5.1
+   }
+  },
   "under_65": {
    "chief_complaint_chest": {
     "women": {

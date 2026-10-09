@@ -5,7 +5,7 @@ import MultiLine from './charts/MultiLine'
 const fmtM = (v: number) => v >= 1000 ? `$${(v / 1000).toFixed(2)} billion` : `$${v.toFixed(0)} million`
 
 /** Pick a disease; see its burden split, funding, dollars per DALY, rank and 2008–2025 history. */
-export default function DiseaseExplorer({ diseases, n, source }: { diseases: Disease[]; n: number; source: string }) {
+export default function DiseaseExplorer({ diseases, n, source, burdenYear = 2023 }: { diseases: Disease[]; n: number; source: string; burdenYear?: number }) {
   const sorted = [...diseases].sort((a, b) => a.disease.localeCompare(b.disease))
   const [pick, setPick] = useState('Migraine')
   const d = diseases.find(x => x.disease === pick)
@@ -23,7 +23,7 @@ export default function DiseaseExplorer({ diseases, n, source }: { diseases: Dis
         <div className="mt-5 grid gap-5 lg:grid-cols-[1fr_1.4fr]">
           <div className="grid grid-cols-2 gap-3 content-start">
             <div className="rounded-2xl bg-blush-2/60 p-4"><div className="display text-3xl font-light leading-none text-berry">{d.female_share.toFixed(0)}%</div><p className="mt-2 text-xs text-ink-2">of its US burden falls on women</p></div>
-            <div className="rounded-2xl bg-blush-2/60 p-4"><div className="display text-3xl font-light leading-none text-berry">{d.dalys_k >= 1000 ? `${(d.dalys_k / 1000).toFixed(1)}M` : `${d.dalys_k.toFixed(0)}k`}</div><p className="mt-2 text-xs text-ink-2">disability-adjusted life years lost in the US, 2021</p></div>
+            <div className="rounded-2xl bg-blush-2/60 p-4"><div className="display text-3xl font-light leading-none text-berry">{d.dalys_k >= 1000 ? `${(d.dalys_k / 1000).toFixed(1)}M` : `${d.dalys_k.toFixed(0)}k`}</div><p className="mt-2 text-xs text-ink-2">disability-adjusted life years lost in the US, {burdenYear}</p></div>
             <div className="rounded-2xl bg-blush-2/60 p-4"><div className="display text-3xl font-light leading-none text-berry">{fmtM(d.funding_m)}</div><p className="mt-2 text-xs text-ink-2">NIH funding, fiscal 2024</p></div>
             <div className="rounded-2xl bg-blush-2/60 p-4"><div className="display text-3xl font-light leading-none text-berry">${d.dollars_per_daly.toLocaleString()}</div><p className="mt-2 text-xs text-ink-2">per DALY. {d.ratio_to_expected.toFixed(2)}× what its burden predicts; rank {d.rank_by_ratio} of {n}, where 1 is the most underfunded</p></div>
             {d.note && <p className="col-span-2 text-[11px] text-ink-3">Note: {d.note}.</p>}

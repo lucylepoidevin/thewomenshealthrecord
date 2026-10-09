@@ -72,7 +72,8 @@ def labels():
     n = len(rows)
     pct = lambda k, rs=rows: round(100 * sum(1 for r in rs if r[k]) / len(rs), 1) if rs else None  # noqa: E731
     stmt = {s: sum(1 for r in rows if r["sex_statement"] == s) for s in ("quantified difference", "difference noted", "no difference asserted", "not evaluated", "mentioned, unclear", "silent", "one-sex drug")}
-    low = [r for r in rows if r["trial_female_pct"] < 30 and r["trial_female_pct"] > 0]; mid = [r for r in rows if 30 <= r["trial_female_pct"] < 50]; high = [r for r in rows if r["trial_female_pct"] >= 50]
+    two = [r for r in rows if r["sex_statement"] != "one-sex drug"]
+    low = [r for r in two if r["trial_female_pct"] < 30]; mid = [r for r in two if 30 <= r["trial_female_pct"] < 50]; high = [r for r in two if r["trial_female_pct"] >= 50]
     by_trial = {"under 30% women": {"n": len(low), "no_difference_pct": pct("no_difference", low), "quantified_pct": pct("quantified", low), "not_evaluated_pct": pct("not_evaluated", low), "silent_pct": round(100 * sum(1 for r in low if r["sex_statement"] == "silent") / len(low), 1) if low else None},
                 "30–49% women": {"n": len(mid), "no_difference_pct": pct("no_difference", mid), "quantified_pct": pct("quantified", mid), "not_evaluated_pct": pct("not_evaluated", mid), "silent_pct": round(100 * sum(1 for r in mid if r["sex_statement"] == "silent") / len(mid), 1) if mid else None},
                 "50% or more women": {"n": len(high), "no_difference_pct": pct("no_difference", high), "quantified_pct": pct("quantified", high), "not_evaluated_pct": pct("not_evaluated", high), "silent_pct": round(100 * sum(1 for r in high if r["sex_statement"] == "silent") / len(high), 1) if high else None}}

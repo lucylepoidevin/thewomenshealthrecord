@@ -9,7 +9,7 @@ import Tooltip, { type Tip } from './Tooltip'
 const colorOf = (s: Disease['skew']) => (s === 'female' ? 'var(--c-female)' : s === 'male' ? 'var(--c-male)' : 'var(--c-muted)')
 
 /** Log-log scatter of NIH funding against US burden, with the power-law fit. */
-export default function FundingScatter({ diseases, fit, title, subtitle, source, labels = [] }: { diseases: Disease[]; fit: { a: number; b: number }; title: string; subtitle?: string; source: string; labels?: string[] }) {
+export default function FundingScatter({ diseases, fit, title, subtitle, source, labels = [], burdenYear = 2023 }: { diseases: Disease[]; fit: { a: number; b: number }; title: string; subtitle?: string; source: string; labels?: string[]; burdenYear?: number }) {
   const { ref, width, height } = useSize<HTMLDivElement>()
   const [tip, setTip] = useState<Tip>(null)
   const m = { top: 14, right: 110, bottom: 44, left: 56 }
@@ -42,7 +42,7 @@ export default function FundingScatter({ diseases, fit, title, subtitle, source,
                   {labels.includes(d.disease) && <text x={x(d.dalys_k) + 8} y={y(d.funding_m) + 4} fontSize={11} fill="var(--c-text)" fontWeight={600}>{d.disease}</text>}
                 </g>
               ))}
-              <text x={iw} y={ih + 36} textAnchor="end" fontSize={11} fill="var(--c-text-2)">US burden, disability-adjusted life years lost (2021) →</text>
+              <text x={iw} y={ih + 36} textAnchor="end" fontSize={11} fill="var(--c-text-2)">US burden, disability-adjusted life years lost ({burdenYear}) →</text>
               <text transform={`translate(${-44},0) rotate(-90)`} textAnchor="end" fontSize={11} fill="var(--c-text-2)">NIH funding, FY2024 →</text>
             </g>
           </svg>

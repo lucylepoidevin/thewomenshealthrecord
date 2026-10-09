@@ -47,8 +47,9 @@ def categorize(ind):
 
 GENERIC_FIX = {"artesunate": "artesunate", "tremfya": "guselkumab", "lenvima": "lenvatinib", "datroway": "datopotamab deruxtecan", "penpulimab-kcqx": "penpulimab", "izervay": "avacincaptad pegol",
                "flyrcado": "flurpiridaz F 18", "defencath": "taurolidine and heparin", "xacduro": "sulbactam and durlobactam", "wainua": "eplontersen"}
+INDICATION_FIX = {"bizengri": "BIZENGRI is a drug for the treatment of adults with non-small cell lung cancer or pancreatic adenocarcinoma that has a specific NRG1 gene fusion.", "datroway": "DATROWAY is a drug for the treatment of adults with a specific form of breast cancer (HR-positive, HER2-negative) that has spread.", "truqap": "TRUQAP is a drug for the treatment of adults with a specific form of breast cancer (HR-positive, HER2-negative, with PIK3CA, AKT1 or PTEN alterations) that has spread.", "blujepa": "BLUJEPA is a drug for the treatment of uncomplicated urinary tract infections in women and girls aged 12 and older.", "kerendia": "KERENDIA is a drug to reduce the risk of kidney function decline, kidney failure, cardiovascular death, heart attack and hospitalization for heart failure in adults with chronic kidney disease associated with type 2 diabetes."}
 BRAND_FIX = {"drug-trials-snapshot-ga-68-psma-11": "Ga 68 PSMA-11", "drug-trials-snapshots-ga-68-dotatoc": "Ga 68 DOTATOC"}
-MALE_RX = re.compile(r"prostat|duchenne|h(a)?emophilia|\bin men\b|\bmales?\b[^.]{0,30}only|testicular|erectile|hypogonadism|peyronie", re.I)
+MALE_RX = re.compile(r"prostat|duchenne|menkes|h(a)?emophilia|\bin men\b|\bmales?\b[^.]{0,30}only|testicular|erectile|hypogonadism|peyronie", re.I)
 FEMALE_RX = re.compile(r"breast cancer|ovarian|postmenopausal|pregnan|vaginal|vaginosis|postpartum|\bwomen\b|endometriosis|contracept|uterine|cervical cancer|fallopian|rett syndrome|hypoactive sexual desire|menopaus|vulv", re.I)
 
 
@@ -164,9 +165,9 @@ def main():
             "slug": r["slug"],
             "brand": BRAND_FIX.get(r["slug"]) or ((r.get("brand") or r["slug"]).title() if (r.get("brand") or "").isupper() else (r.get("brand") or r["slug"])),
             "generic": clean_generic(r.get("brand"), r["slug"], r.get("generic")),
-            "sex_specific": sex_specific(r.get("indication"), round(trial_pct, 1)),
+            "sex_specific": sex_specific(INDICATION_FIX.get((r.get("brand") or "").lower()) or r.get("indication"), round(trial_pct, 1)),
             "year": int(yr.group()) if yr else None,
-            "indication": r.get("indication") or None,
+            "indication": INDICATION_FIX.get((r.get("brand") or "").lower()) or (r.get("indication") if (r.get("indication") or "").strip() not in ("", ".") else None),
             "category": categorize(r.get("indication")),
             "trial_n": int(fn + mn),
             "trial_female_pct": round(trial_pct, 1),
@@ -215,8 +216,8 @@ def main():
             "n_drugs": len(drugs),
             "n_with_faers": len(with_faers),
             "median_trial_female_pct": round(statistics.median(d["trial_female_pct"] for d in drugs), 1),
-            "n_under_30": sum(1 for d in drugs if d["trial_female_pct"] < 30),
-            "n_under_40": sum(1 for d in drugs if d["trial_female_pct"] < 40),
+            "n_under_30": sum(1 for d in drugs if d["trial_female_pct"] < 30 and not d["sex_specific"]),
+            "n_under_40": sum(1 for d in drugs if d["trial_female_pct"] < 40 and not d["sex_specific"]),
             "n_gap_quadrant": len(quad),
             "n_with_rate": len(with_rate),
             "n_rate_over_1_5": sum(1 for d in with_rate if d["rate_ratio"] >= 1.5),
