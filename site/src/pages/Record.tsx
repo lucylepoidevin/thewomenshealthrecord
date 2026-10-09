@@ -34,7 +34,7 @@ export default function Record() {
       <header className="text-center pb-10">
         <p className="eyebrow">The record</p>
         <h1 className="display mt-4 text-4xl sm:text-6xl font-light leading-[1.05]">One condition, every chapter</h1>
-        <p className="mx-auto mt-6 max-w-xl text-lg text-ink-2 leading-relaxed">Pick a condition. This pulls together what the chapters know about it: who it burdens, what research it gets, who is in its trials, who its drugs were tested on, and how its patients fare in the emergency department.</p>
+        <p className="mx-auto mt-6 max-w-xl text-lg text-ink-2 leading-relaxed">Pick a condition. This pulls together what the six chapters know about it: who it burdens, what research it gets, who is in its trials, who its drugs were tested on and what their labels say, how its patients fare in the emergency department, and, for cancers, when it is found.</p>
         <p className="mt-6 text-[15px] text-ink-2">Show me{' '}
           <select value={c.disease} onChange={e => setPick(e.target.value)} className="rounded-full border border-hairline bg-white px-4 py-2 text-[15px] outline-none focus:border-rose focus:ring-4 focus:ring-rose/10" aria-label="Condition">
             {data.conditions.map(x => <option key={x.disease} value={x.disease}>{x.disease}</option>)}
