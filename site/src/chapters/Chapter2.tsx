@@ -34,7 +34,7 @@ export default function Chapter2() {
   const L = data.levers
   const chestByAge = (k: string) => data.explorer.filter(c => c.complaint === 'chest' && c.age !== 'all').map(c => ({ label: `Chest pain, age ${c.age}`, sub: `${c.n_women.toLocaleString()} women, ${c.n_men.toLocaleString()} men sampled`, cmp: c.metrics[k]! }))
   const yrs = `${data.years[0]}–${data.years[1]}`
-  const src = `Source: NHAMCS emergency department public-use files ${yrs} (NCHS), adults 18+, survey-weighted; analysis by Lucca Labs.`
+  const src = `Source: NHAMCS emergency department public-use files ${yrs} (NCHS), adults 18+, survey-weighted; analysis by The Women's Health Record.`
   const perYear = data.groups.reduce((a, g) => a + g.weighted_visits_per_year, 0).toFixed(0)
   const rows = (key: string, withAll = true) => [
     ...data.groups.map(g => ({ label: g.label, sub: `${g.weighted_visits_per_year.toFixed(1)}M visits a year`, cmp: g.metrics[key]! })).filter(r => r.cmp),
@@ -149,7 +149,7 @@ export default function Chapter2() {
         <p className="eyebrow">Chapter 2</p>
         <h1 className="display mt-4 text-4xl sm:text-6xl font-light leading-[1.05]">The <span className="italic font-medium text-berry">urgency</span> gap</h1>
         <p className="mx-auto mt-6 max-w-xl text-lg text-ink-2 leading-relaxed">Twenty thousand emergency visits for pain and {data.heart_attack.n} heart attacks, {yrs}: women arrive reporting more pain, and where the system rates them lower it is in specific places: severe abdominal pain, young women's chest pain, and the heart attack.</p>
-        <p className="mt-5 text-xs tracking-wide text-ink-3">Lucca Labs · data {yrs} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>
+        <p className="mt-5 text-xs tracking-wide text-ink-3">data {yrs} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>
       </header>
       <Story blocks={blocks} />
       <section className="mx-auto max-w-3xl px-4 pt-16">

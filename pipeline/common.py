@@ -16,7 +16,7 @@ os.makedirs(CACHE, exist_ok=True)
 os.makedirs(OUT, exist_ok=True)
 os.makedirs(SITE_DATA, exist_ok=True)
 
-UA = {"User-Agent": "Mozilla/5.0 (TheWomensHealthRecord research pipeline; contact via site)"}
+UA = {"User-Agent": "Mozilla/5.0 (The Women's Health Record research pipeline; contact via site)"}
 
 
 def fetch(url, params=None, retries=3, sleep=1.0, as_json=False):

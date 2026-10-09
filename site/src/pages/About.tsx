@@ -15,6 +15,7 @@ export default function About() {
           Most of what gets said about sex bias in medicine is a handful of statistics repeated until they stop meaning anything.
           This site goes back to the primary data, re-analyses it, and publishes the code.
         </p>
+        <p className="mt-6 text-sm tracking-wide text-ink-3">By Lucy Lepoidevin</p>
       </header>
 
       <Section title="What it is">
@@ -27,8 +28,12 @@ export default function About() {
         <p>Nothing here is medical advice. If a chart makes you wonder about a drug you take, bring the chart to your doctor, not a conclusion.</p>
       </Section>
 
+      <Section title="Who">
+        <p>The Women's Health Record is written, analysed and built by Lucy Lepoidevin. The data pipelines, the charts and the text are hers; the datasets belong to the public agencies and researchers who collected them, and are credited under every chart.</p>
+      </Section>
+
       <Section title="Sources">
-        <p>Only official or peer-reviewed datasets: FDA approval records and adverse-event reports, CDC surveys, NIH funding data, ClinicalTrials.gov. Every retrieval date is recorded, and every chart can be regenerated from the repository.</p>
+        <p>Only official or peer-reviewed datasets: FDA approval records, adverse-event reports and drug labels; the CDC's emergency department survey and body-measurement reference data; NIH funding data; WHO burden estimates; ClinicalTrials.gov; the National Cancer Institute's SEER registries; and PubMed's index. Every retrieval date is recorded, and every chart can be regenerated from the repository.</p>
       </Section>
 
     </div>

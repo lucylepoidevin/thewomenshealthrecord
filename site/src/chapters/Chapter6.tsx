@@ -51,8 +51,8 @@ export default function Chapter6() {
   const at = (s: Pt[], y: number) => s.find(p => p.year === y) ?? s[0]
   const lastFull = (s: Pt[]) => s[s.length - 1]
   const y0 = 2000, y1 = lastFull(all)?.year ?? P.years[1]
-  const srcP = `Source: PubMed, records indexed with the Mice or Rats heading and the Male or Female check tag, by publication year ${P.years[0]}–${y1}; field subsets by MeSH heading (methods page). Analysis by Lucca Labs.`
-  const srcL = `Source: openFDA drug labeling (current prescribing information) for ${L.n} new drugs approved 2015–2026 with an FDA Drug Trials Snapshot; sections 8 and 12.3 text-mined with published rules. Analysis by Lucca Labs.`
+  const srcP = `Source: PubMed, records indexed with the Mice or Rats heading and the Male or Female check tag, by publication year ${P.years[0]}–${y1}; field subsets by MeSH heading (methods page). Analysis by The Women's Health Record.`
+  const srcL = `Source: openFDA drug labeling (current prescribing information) for ${L.n} new drugs approved 2015–2026 with an FDA Drug Trials Snapshot; sections 8 and 12.3 text-mined with published rules. Analysis by The Women's Health Record.`
   const T = (id: string, body: React.ReactNode): Block => ({ type: 'text', id, body })
   const F = (id: string, body: React.ReactNode, size: 'chart' | 'tall' | 'flow' = 'flow', wide = true): Block => ({ type: 'figure', id, body, size, wide })
   const pct = (v: number | null | undefined, d = 0) => v == null ? '–' : `${v.toFixed(d)}%`
@@ -151,7 +151,7 @@ export default function Chapter6() {
         <p className="eyebrow">Chapter 6</p>
         <h1 className="display mt-4 text-4xl sm:text-6xl font-light leading-[1.05]">The male <span className="italic font-medium text-berry">default</span> body</h1>
         <p className="mx-auto mt-6 max-w-xl text-lg text-ink-2 leading-relaxed">Three decades of mouse studies by sex, field by field, and what the label of every new drug since 2015 says about women's bodies.</p>
-        <p className="mt-5 text-xs tracking-wide text-ink-3">Lucca Labs · PubMed {P.years[0]}–{y1}, openFDA labels retrieved {data.generated} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>
+        <p className="mt-5 text-xs tracking-wide text-ink-3">PubMed {P.years[0]}–{y1}, openFDA labels retrieved {data.generated} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>
       </header>
       <Story blocks={blocks} />
       <section className="mx-auto max-w-3xl px-4 pt-16">

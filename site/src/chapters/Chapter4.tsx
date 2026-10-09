@@ -72,7 +72,7 @@ export default function Chapter4() {
   const S = data.summary, D = data.diseases, R = data.by_sex_reporting, X = data.exclusions, tr = data.trend
   const get = (n: string) => D.find(d => d.disease === n)!
   const stroke = get('Stroke'), schiz = get('Schizophrenia'), copd = get('COPD'), alz = get("Alzheimer's and other dementias"), chd = get('Coronary heart disease'), dep = get('Depression')
-  const src = `Source: ClinicalTrials.gov, interventional studies with posted results and at least one US site (${S.trials_us.toLocaleString()} trials); WHO Global Health Estimates 2021, US DALYs by sex. Analysis by Lucca Labs.`
+  const src = `Source: ClinicalTrials.gov, interventional studies with posted results and at least one US site (${S.trials_us.toLocaleString()} trials); WHO Global Health Estimates 2021, US DALYs by sex. Analysis by The Women's Health Record.`
   const T = (id: string, body: React.ReactNode): Block => ({ type: 'text', id, body })
   const F = (id: string, body: React.ReactNode, size: 'chart' | 'tall' | 'flow' = 'flow', wide = true): Block => ({ type: 'figure', id, body, size, wide })
   const first = tr[0]
@@ -159,7 +159,7 @@ export default function Chapter4() {
         <p className="eyebrow">Chapter 4</p>
         <h1 className="display mt-4 text-4xl sm:text-6xl font-light leading-[1.05]">Who gets <span className="italic font-medium text-berry">studied</span></h1>
         <p className="mx-auto mt-6 max-w-xl text-lg text-ink-2 leading-relaxed">{S.trials_us.toLocaleString()} trials, {m(S.participants_us)} people: the share of women in each disease's trials against the share of women in the disease, what the fine print excludes, and how few trials ever say what they found in women.</p>
-        <p className="mt-5 text-xs tracking-wide text-ink-3">Lucca Labs · ClinicalTrials.gov, retrieved {data.generated} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>
+        <p className="mt-5 text-xs tracking-wide text-ink-3">ClinicalTrials.gov, retrieved {data.generated} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>
       </header>
       <Story blocks={blocks} />
       <section className="mx-auto max-w-3xl px-4 pt-16">

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import type { Cmp } from '../lib/types2'
 
-type Drug = { brand: string; year: number | null; trial_female_pct: number; faers_female_pct: number | null; gap: number | null; rate_ratio: number | null; snapshot_url: string }
+type Drug = { brand: string; year: number | null; trial_female_pct: number; faers_female_pct: number | null; gap: number | null; rate_ratio: number | null; snapshot_url: string; label_sex?: string | null; label_no_preg?: boolean | null; label_no_lact?: boolean | null; label_flat?: boolean | null }
 type Cond = {
   disease: string
   funding: { funding_m: number; dalys_k?: number; female_share?: number; dollars_per_daly?: number; ratio_to_expected?: number; rank_by_ratio?: number; n_ranked?: number; skew?: string; uncounted?: boolean }
@@ -10,6 +10,7 @@ type Cond = {
   ed: { complaint: string; n: number; metrics: Record<string, Cmp | null> } | null
   trials: { trials: number; participants: number; female_pct: number | null; burden_female_pct?: number | null; ratio?: number | null; rank?: number | null; excl_preg_pct?: number; contra_pct?: number; max_age_pct?: number; outcome_by_sex?: number; sex_specific?: boolean; industry_female_pct?: number | null; academic_female_pct?: number | null; n_ranked?: number; uncounted?: boolean } | null
   ed_label: { complaint: string; n: number; metrics: Record<string, Cmp | null> } | null
+  cancer?: { label: string; cases_women: number; cases_men: number; distant: Cmp; localized: { women: number; men: number }; median_age: { women: number; men: number } | null } | null
 }
 const money = (m: number) => m >= 1000 ? `$${(m / 1000).toFixed(2)} billion` : `$${m.toFixed(0)} million`
 const Tile = ({ v, l, c = 'text-berry' }: { v: string; l: string; c?: string }) => <div className="rounded-2xl bg-blush-2/60 p-4"><div className={`display text-3xl font-light leading-none ${c}`}>{v}</div><p className="mt-2 text-xs text-ink-2 leading-snug">{l}</p></div>
@@ -74,12 +75,12 @@ export default function Record() {
         {c.drugs.length === 0 ? <p className="mt-3 text-[15px] text-ink-2">No novel drug approved since 2015 lists this condition in its FDA snapshot indication.</p> : (
           <div className="mt-3 overflow-x-auto">
             <table className="w-full border-collapse text-[13px] sm:text-[14px]">
-              <thead><tr className="text-[11px] font-bold uppercase tracking-[0.12em] text-ink-3"><th className="py-2 pr-3 text-left font-bold">Drug</th><th className="py-2 pr-3 text-right font-bold">Approved</th><th className="py-2 pr-3 text-right font-bold">Women in trials</th><th className="py-2 pr-3 text-right font-bold">Reports from women</th><th className="py-2 text-right font-bold">Reports per user, W/M</th></tr></thead>
+              <thead><tr className="text-[11px] font-bold uppercase tracking-[0.12em] text-ink-3"><th className="py-2 pr-3 text-left font-bold">Drug</th><th className="py-2 pr-3 text-right font-bold">Approved</th><th className="py-2 pr-3 text-right font-bold">Women in trials</th><th className="py-2 pr-3 text-right font-bold">Reports from women</th><th className="py-2 pr-3 text-right font-bold">Reports per user, W/M</th><th className="py-2 text-left font-bold">Label on sex · pregnancy data</th></tr></thead>
               <tbody>{c.drugs.map(d => (
-                <tr key={d.brand} className="border-t border-hairline/60"><td className="py-2 pr-3"><a href={d.snapshot_url} target="_blank" rel="noreferrer" className="font-medium text-ink hover:text-berry">{d.brand}</a></td><td className="py-2 pr-3 text-right tabular-nums">{d.year ?? ''}</td><td className={`py-2 pr-3 text-right tabular-nums ${d.trial_female_pct < 30 ? 'font-bold text-berry' : ''}`}>{d.trial_female_pct.toFixed(0)}%</td><td className="py-2 pr-3 text-right tabular-nums">{d.faers_female_pct != null ? `${d.faers_female_pct.toFixed(0)}%` : '–'}</td><td className="py-2 text-right tabular-nums">{d.rate_ratio != null ? `${d.rate_ratio.toFixed(1)}×` : '–'}</td></tr>
+                <tr key={d.brand} className="border-t border-hairline/60"><td className="py-2 pr-3"><a href={d.snapshot_url} target="_blank" rel="noreferrer" className="font-medium text-ink hover:text-berry">{d.brand}</a></td><td className="py-2 pr-3 text-right tabular-nums">{d.year ?? ''}</td><td className={`py-2 pr-3 text-right tabular-nums ${d.trial_female_pct < 30 ? 'font-bold text-berry' : ''}`}>{d.trial_female_pct.toFixed(0)}%</td><td className="py-2 pr-3 text-right tabular-nums">{d.faers_female_pct != null ? `${d.faers_female_pct.toFixed(0)}%` : '–'}</td><td className="py-2 pr-3 text-right tabular-nums">{d.rate_ratio != null ? `${d.rate_ratio.toFixed(1)}×` : '–'}</td><td className="py-2 text-[12px] text-ink-2">{d.label_sex ? <>{d.label_sex}{d.label_no_preg != null ? ` · ${d.label_no_preg ? 'none or insufficient' : 'some'}` : ''}</> : '–'}</td></tr>
               ))}</tbody>
             </table>
-            <p className="mt-2 text-[11px] text-ink-3">Drugs whose FDA snapshot indication mentions this condition. Bold: trials under 30% women. Reports per user needs enough surveyed users and is blank for most specialty drugs.</p>
+            <p className="mt-2 text-[11px] text-ink-3">Drugs whose FDA snapshot indication mentions this condition. Bold: trials under 30% women. Reports per user needs enough surveyed users and is blank for most specialty drugs. The last column is what the current label's pharmacology section says about sex (<Link to="/chapters/male-default" className="underline">Chapter 6</Link>), and whether it reports human pregnancy data.</p>
           </div>
         )}
       </section>
@@ -99,6 +100,17 @@ export default function Record() {
           </div>
         )}
       </section>
+      {c.cancer && (
+        <section className="graphic-card p-5 sm:p-7 mt-6">
+          <div className="flex items-baseline justify-between gap-4"><h2 className="display text-xl font-medium">When it was found</h2><Link to="/chapters/sent-home-with-a-label" className="text-xs text-berry underline underline-offset-2">Chapter 5</Link></div>
+          <div className="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <Tile v={`${c.cancer.distant.women.est.toFixed(0)}%`} l="of women's cases found after the cancer had spread" />
+            <Tile v={`${c.cancer.distant.men.est.toFixed(0)}%`} l="of men's cases found after it had spread" c="text-bronze" />
+            <Tile v={`${c.cancer.distant.diff > 0 ? '+' : ''}${c.cancer.distant.diff.toFixed(1)} pts`} l={`women minus men, interval ${c.cancer.distant.diff_lo.toFixed(1)} to ${c.cancer.distant.diff_hi.toFixed(1)}; ${(c.cancer.cases_women + c.cancer.cases_men).toLocaleString()} cases 2013–2022`} />
+            {c.cancer.median_age && <Tile v={`${c.cancer.median_age.women} / ${c.cancer.median_age.men}`} l="median age at diagnosis, women / men, 2018–2022" />}
+          </div>
+        </section>
+      )}
       {c.ed_label && (
         <section className="graphic-card p-5 sm:p-7 mt-6">
           <div className="flex items-baseline justify-between gap-4"><h2 className="display text-xl font-medium">What the visit was called</h2><Link to="/chapters/sent-home-with-a-label" className="text-xs text-berry underline underline-offset-2">Chapter 5</Link></div>

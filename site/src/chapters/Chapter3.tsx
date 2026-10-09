@@ -20,7 +20,7 @@ export default function Chapter3() {
   const D = data.diseases, S = data.summary
   const get = (name: string) => D.find(d => d.disease === name)!
   const mig = get('Migraine'), gyn = get('Gynaecological diseases'), bre = get('Breast cancer'), alz = get("Alzheimer's and other dementias")
-  const src = `Sources: NIH RCDC category estimates, FY${data.funding_fy}; WHO Global Health Estimates ${data.burden_year}, United States, DALYs by cause and sex. Analysis by Lucca Labs.`
+  const src = `Sources: NIH RCDC category estimates, FY${data.funding_fy}; WHO Global Health Estimates ${data.burden_year}, United States, DALYs by cause and sex. Analysis by The Women's Health Record.`
   const skewed = D.filter(d => d.skew !== 'balanced').sort((a, b) => a.ratio_to_expected - b.ratio_to_expected)
   const uncountedTotal = data.uncounted.reduce((a, u) => a + u.funding_m, 0)
   const T = (id: string, body: React.ReactNode): Block => ({ type: 'text', id, body })
@@ -86,7 +86,7 @@ export default function Chapter3() {
       <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">Has it moved?</p>
       <p>The WHO has burden estimates for 2010, 2015, 2019, 2021 and 2023, and NIH funding for each of those years, so the comparison can be repeated across thirteen years. The share of female-skewed diseases sitting below the line was {data.trend[0].share_underfunded.female}% in 2010 and {data.trend[data.trend.length - 1].share_underfunded.female}% in 2023. For male-skewed diseases it was {data.trend[0].share_underfunded.male}% and {data.trend[data.trend.length - 1].share_underfunded.male}%. Thirteen years, a decade of NIH policy on sex as a biological variable, and the women's line has drifted the wrong way to meet the men's, not the other way round.</p>
     </>),
-    F('trend-fig', <MultiLine series={[{ label: 'Mostly-women diseases', color: 'var(--c-female)', points: trendF }, { label: 'Mostly-men diseases', color: 'var(--c-male)', points: trendM }]} title="Share of diseases funded below their burden" subtitle="Diseases falling at least 60% on one sex, by burden year, with that year's NIH funding" source="Sources: NIH RCDC category estimates FY2010–FY2023; WHO Global Health Estimates 2010, 2015, 2019, 2021 and 2023, United States. The funding line is refitted for each year. Analysis by Lucca Labs." yLabel="share below the line" fmt={v => `${v.toFixed(0)}%`} reference={{ value: 50, label: 'half' }} />, 'chart'),
+    F('trend-fig', <MultiLine series={[{ label: 'Mostly-women diseases', color: 'var(--c-female)', points: trendF }, { label: 'Mostly-men diseases', color: 'var(--c-male)', points: trendM }]} title="Share of diseases funded below their burden" subtitle="Diseases falling at least 60% on one sex, by burden year, with that year's NIH funding" source="Sources: NIH RCDC category estimates FY2010–FY2023; WHO Global Health Estimates 2010, 2015, 2019, 2021 and 2023, United States. The funding line is refitted for each year. Analysis by The Women's Health Record." yLabel="share below the line" fmt={v => `${v.toFixed(0)}%`} reference={{ value: 50, label: 'half' }} />, 'chart'),
     T('caveats', <>
       <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">What this does not settle.</p>
       <p>Matching NIH categories to WHO causes is a judgement, and we show every match in the data file. NIH categories overlap, so a dollar can count towards more than one. A DALY is one way to weigh a disease, and it weighs disability by a schedule that is itself argued over. Some diseases are funded for reasons that have nothing to do with American burden: HIV and tuberculosis research is global, and we say so rather than drop them. A burden line fitted across 67 diseases is a description of what NIH does, not a rule for what it should do.</p>
@@ -108,7 +108,7 @@ export default function Chapter3() {
         <p className="eyebrow">Chapter 3</p>
         <h1 className="display mt-4 text-4xl sm:text-6xl font-light leading-[1.05]">The <span className="italic font-medium text-berry">research</span> dollar</h1>
         <p className="mx-auto mt-6 max-w-xl text-lg text-ink-2 leading-relaxed">{S.n} diseases, their NIH budgets and the healthy years they cost Americans: where the money follows the burden, where it doesn't, and which conditions are never measured.</p>
-        <p className="mt-5 text-xs tracking-wide text-ink-3">Lucca Labs · NIH FY{data.funding_fy}, WHO {data.burden_year} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>
+        <p className="mt-5 text-xs tracking-wide text-ink-3">NIH FY{data.funding_fy}, WHO {data.burden_year} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>
       </header>
       <Story blocks={blocks} />
       <section className="mx-auto max-w-3xl px-4 pt-16">

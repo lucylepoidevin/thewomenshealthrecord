@@ -65,7 +65,7 @@ export default function Chapter5() {
   if (!data) return <div className="mx-auto max-w-6xl px-4 py-24 text-ink-3">Loading data…</div>
   const S = data.symptoms, A = data.anxiety, M = data.models, G = data.groups
   const g = (id: string) => G.find(x => x.id === id)!
-  const src = `Source: NHAMCS emergency department public-use files ${data.years[0]}–${data.years[1]}, adults 18+, non-injury visits, survey-weighted. Analysis by Lucca Labs.`
+  const src = `Source: NHAMCS emergency department public-use files ${data.years[0]}–${data.years[1]}, adults 18+, non-injury visits, survey-weighted. Analysis by The Women's Health Record.`
   const T = (id: string, body: React.ReactNode): Block => ({ type: 'text', id, body })
   const F = (id: string, body: React.ReactNode, size: 'chart' | 'tall' | 'flow' = 'flow', wide = true): Block => ({ type: 'figure', id, body, size, wide })
   const sym = S.metrics.symptom_dx!, tests = S.metrics.tests_count!, img = S.metrics.anyimage!, ret = S.metrics.seen72!
@@ -75,7 +75,7 @@ export default function Chapter5() {
   const lab = A.cardio_labelled_anxiety as Record<string, Cmp>
   const retFaint = g('syncope').metrics.seen72!
   const C = data.cancer, bladder = C.sites.find(x => x.label === 'Bladder')!, liver = C.sites.find(x => x.label === 'Liver')!, lung = C.sites.find(x => x.label === 'Lung')!, colon = C.sites.find(x => x.label === 'Colon and rectum')!, mel = C.sites.find(x => x.label === 'Melanoma')!
-  const srcC = `Source: SEER*Explorer data archive, November 2024 submission: stage distribution ${C.years_stage} and median age at diagnosis ${C.years_age}, by sex, all races, 22 registries. Analysis by Lucca Labs.`
+  const srcC = `Source: SEER*Explorer data archive, November 2024 submission: stage distribution ${C.years_stage} and median age at diagnosis ${C.years_age}, by sex, all races, 22 registries. Analysis by The Women's Health Record.`
   const backSym = g('back').metrics.symptom_dx!
 
   const blocks: Block[] = [
@@ -142,7 +142,7 @@ export default function Chapter5() {
         <p className="eyebrow">Chapter 5</p>
         <h1 className="display mt-4 text-4xl sm:text-6xl font-light leading-[1.05]">Sent home with a <span className="italic font-medium text-berry">label</span></h1>
         <p className="mx-auto mt-6 max-w-xl text-lg text-ink-2 leading-relaxed">The story says she leaves without a diagnosis, under-tested, told it is anxiety, and comes straight back. We tested each part in {S.n.toLocaleString()} emergency visits, then went looking for the delay itself in {(C.cases_total / 1e6).toFixed(1)} million cancer cases. One part is true, and it is more specific than the story.</p>
-        <p className="mt-5 text-xs tracking-wide text-ink-3">Lucca Labs · NHAMCS {data.years[0]}–{data.years[1]} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>
+        <p className="mt-5 text-xs tracking-wide text-ink-3">NHAMCS {data.years[0]}–{data.years[1]} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>
       </header>
       <Story blocks={blocks} />
       <section className="mx-auto max-w-3xl px-4 pt-16">

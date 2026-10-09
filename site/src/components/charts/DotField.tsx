@@ -5,7 +5,7 @@ import ChartFrame from './ChartFrame'
 /**
  * One dot per unit, drawn on a canvas so tens of thousands are cheap. The
  * highlighted dots are scattered through the field with a fixed seed so the
- * picture is the same on every load. Built for "142 trials out of 56,591".
+ * picture is the same on every load. Built for "92 trials out of 56,591".
  */
 export default function DotField({ total, highlight, title, subtitle, source, caption, color = 'var(--c-emphasis)', base = '#E6CBD4', annotations = [] }: { total: number; highlight: number; title: string; subtitle?: string; source: string; caption: string; color?: string; base?: string; annotations?: { n: number; label: string }[] }) {
   const { ref, width } = useSize<HTMLDivElement>()

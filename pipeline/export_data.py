@@ -79,5 +79,6 @@ write("chapter6_labels.csv", c6["labels"]["drugs"], ["slug", "brand", "year", "c
 pm = [{"series": name, **p} for name, s in list(c6["pubmed"]["fields"].items()) + [("NIH-funded rodent studies", c6["pubmed"]["nih"])] + list(c6["pubmed"]["human"].items()) for p in s]
 write("chapter6_pubmed.csv", pm, ["series", "year", "n", "n_sexed", "male_only_pct", "female_only_pct", "both_pct", "includes_female_pct", "sexed_pct"], "Chapter 6: PubMed record counts by year and sex check tag for rodent studies (overall, by field, NIH-funded) and human trial reports.", {"n": "Records in the series that year", "n_sexed": "Records carrying a Male or Female tag", "male_only_pct": "Male and not Female, as a share of n_sexed"})
 
-json.dump({"generated": c3["generated"], "files": files}, open(f"{SITE_DATA}/data_index.json", "w"), indent=1)
+from datetime import date
+json.dump({"generated": date.today().isoformat(), "files": files}, open(f"{SITE_DATA}/data_index.json", "w"), indent=1)
 print("index written")

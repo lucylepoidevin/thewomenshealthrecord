@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <section className="mx-auto max-w-4xl px-4 pt-24 pb-16 sm:pt-32 text-center fade-up">
-        <p className="eyebrow">A Lucca Labs research project</p>
+        <p className="eyebrow">A research project by Lucy Lepoidevin</p>
         <h1 className="display mt-5 text-4xl sm:text-6xl lg:text-7xl font-light leading-[1.02]">
           Medicine was built around a <span className="italic font-medium text-berry">male default</span>.
           This is the record of what that costs women.

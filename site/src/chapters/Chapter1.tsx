@@ -29,7 +29,7 @@ export default function Chapter1() {
   const s = data.summary
   const z = data.zolpidem
   const zF = (z.female / (z.female + z.male)) * 100
-  const snapSrc = `Source: FDA Drug Trials Snapshots, ${s.years[0]}–${s.years[1]} (${s.n_drugs} approvals), parsed by Lucca Labs.`
+  const snapSrc = `Source: FDA Drug Trials Snapshots, ${s.years[0]}–${s.years[1]} (${s.n_drugs} approvals), parsed by The Women's Health Record.`
   const faersSrc = `Sources: FDA Drug Trials Snapshots; FDA Adverse Event Reporting System via openFDA (data through ${data.faers_last_updated ?? 'latest release'}). Drugs with at least ${MIN_REPORTS} reports.`
 
   const T = (id: string, body: React.ReactNode): Block => ({ type: 'text', id, body })
@@ -124,7 +124,7 @@ export default function Chapter1() {
         <p className="eyebrow">Chapter 1</p>
         <h1 className="display mt-4 text-4xl sm:text-6xl font-light leading-[1.05]">Tested on men, <span className="italic font-medium text-berry">prescribed to women</span></h1>
         <p className="mx-auto mt-6 max-w-xl text-lg text-ink-2 leading-relaxed">Every new drug the FDA has approved since 2015, scored on who was in the trial against who reports the side effects.</p>
-        <p className="mt-5 text-xs tracking-wide text-ink-3">Lucca Labs · data through {data.faers_last_updated ?? data.generated} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>
+        <p className="mt-5 text-xs tracking-wide text-ink-3">data through {data.faers_last_updated ?? data.generated} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>
       </header>
       <Story blocks={blocks} />
       <section className="mx-auto max-w-3xl px-4 pt-16">

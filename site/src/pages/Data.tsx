@@ -17,7 +17,7 @@ export default function Data() {
       <section className="grid gap-3 sm:grid-cols-[11rem_1fr] sm:gap-10 py-8 border-t border-hairline/70">
         <h2 className="eyebrow pt-1">How to cite</h2>
         <div className="text-[16px] leading-[1.7] text-ink space-y-3">
-          <p>Lucca Labs, <i>The Women's Health Record</i>, chapter and figure name, retrieved {idx?.generated ?? 'date'}, https://lucylepoidevin.github.io/thewomenshealthrecord/. Please also cite the underlying public sources named under each chart; they did the hard part.</p>
+          <p>Lepoidevin L., <i>The Women's Health Record</i>, chapter and figure name, retrieved {idx?.generated ?? 'date'}, https://lucylepoidevin.github.io/thewomenshealthrecord/. Please also cite the underlying public sources named under each chart; they did the hard part.</p>
           <p className="text-sm text-ink-2">The analysis, text and charts are released for reuse with attribution. The underlying FDA, NIH, WHO, CDC and AHRQ data are public.</p>
         </div>
       </section>

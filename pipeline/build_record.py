@@ -10,6 +10,16 @@ c2 = json.load(open(f"{SITE_DATA}/chapter2.json"))
 c3 = json.load(open(f"{SITE_DATA}/chapter3.json"))
 c4 = json.load(open(f"{SITE_DATA}/chapter4.json"))
 c5 = json.load(open(f"{SITE_DATA}/chapter5.json"))
+c6 = json.load(open(f"{SITE_DATA}/chapter6.json"))
+LABELS = {d["slug"]: d for d in c6["labels"]["drugs"]}
+CANCER = {c["label"]: c for c in c5["cancer"]["sites"]}
+CANCER_MAP = {"Lung cancer": "Lung", "Colorectal cancer": "Colon and rectum", "Pancreatic cancer": "Pancreas", "Stomach cancer": "Stomach", "Liver cancer": "Liver", "Esophageal cancer": "Oesophagus", "Skin cancer": "Melanoma", "Brain cancer": "Brain", "Lymphoma": "Non-Hodgkin lymphoma", "Hodgkin lymphoma": "Hodgkin lymphoma"}
+
+
+def drug_rec(x):
+    L = LABELS.get(x["slug"], {})
+    return {"brand": x["brand"], "year": x["year"], "trial_female_pct": x["trial_female_pct"], "faers_female_pct": x["faers_female_pct"], "gap": x["gap"], "rate_ratio": x["rate_ratio"], "snapshot_url": x["snapshot_url"], "label_sex": L.get("sex_statement"), "label_no_preg": L.get("no_preg_data"), "label_no_lact": L.get("no_lact_data"), "label_flat": (not L["weight_based"]) if "weight_based" in L else None}
+
 TRIALS = {d["disease"]: d for d in c4["diseases"] + c4["sex_specific"]}
 TRIALS_UNC = {u["condition"]: u for u in c4["uncounted"]}
 ED5 = {g["id"]: g for g in c5["groups"]}
@@ -54,7 +64,7 @@ for d in c3["diseases"]:
     if kw:
         for x in c1["drugs"]:
             if re.search(kw, (x["indication"] or "") + " " + x["brand"], re.I):
-                drugs.append({"brand": x["brand"], "year": x["year"], "trial_female_pct": x["trial_female_pct"], "faers_female_pct": x["faers_female_pct"], "gap": x["gap"], "rate_ratio": x["rate_ratio"], "snapshot_url": x["snapshot_url"]})
+                drugs.append(drug_rec(x))
     drugs.sort(key=lambda x: x["trial_female_pct"])
     ed = None
     if cid:
@@ -62,7 +72,7 @@ for d in c3["diseases"]:
         if g:
             ed = {"complaint": g["label"], "n": g["n"], "metrics": {k: g["metrics"].get(k) for k in ("severe_share", "urgent", "ems", "wait_mean", "analgesic_ed", "opioid_ed", "opioid_ed_severe", "admitted")}}
     recs.append({"disease": d["disease"], "funding": {"funding_m": d["funding_m"], "dalys_k": d["dalys_k"], "female_share": d["female_share"], "dollars_per_daly": d["dollars_per_daly"], "ratio_to_expected": d["ratio_to_expected"], "rank_by_ratio": d["rank_by_ratio"], "n_ranked": c3["summary"]["n"], "skew": d["skew"]},
-                 "drugs": drugs, "ed": ed, "trials": trial_rec(TRIALS.get(d["disease"])), "ed_label": ed5_rec({"headache": "headache", "chest": "chest", "abdominal": "abdominal", "limb": "limb", "back": "back"}.get(cid or "", None))})
+                 "drugs": drugs, "ed": ed, "trials": trial_rec(TRIALS.get(d["disease"])), "cancer": CANCER.get(CANCER_MAP.get(d["disease"], "")), "ed_label": ed5_rec({"headache": "headache", "chest": "chest", "abdominal": "abdominal", "limb": "limb", "back": "back"}.get(cid or "", None))})
 for u in c3["uncounted"]:
     name = re.sub(r"\s*\(.*?\)", "", u["category"])
     label = u.get("label", name)
@@ -71,7 +81,7 @@ for u in c3["uncounted"]:
     if kw:
         for x in c1["drugs"]:
             if re.search(kw, (x["indication"] or ""), re.I):
-                drugs.append({"brand": x["brand"], "year": x["year"], "trial_female_pct": x["trial_female_pct"], "faers_female_pct": x["faers_female_pct"], "gap": x["gap"], "rate_ratio": x["rate_ratio"], "snapshot_url": x["snapshot_url"]})
+                drugs.append(drug_rec(x))
     tu = TRIALS_UNC.get(UNC_NAMES.get(name, label))
     recs.append({"disease": label, "funding": {"funding_m": u["funding_m"], "uncounted": True}, "drugs": drugs, "ed": None, "trials": {"trials": tu["trials"], "participants": tu["participants"], "female_pct": tu["female_pct"], "sex_specific": tu["sex_specific"], "uncounted": True} if tu else None, "ed_label": None})
 recs.sort(key=lambda r: r["disease"])
