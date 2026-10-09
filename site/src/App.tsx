@@ -63,7 +63,7 @@ export default function App() {
           <div>
             <span className="display text-berry font-semibold">The Women's Health Record</span>
             <span className="mx-2 text-ink-3">·</span>
-            <span>by Lucy Lepoidevin</span>
+            <span>by Lucy LePoidevin</span>
           </div>
           <div className="flex gap-4">
             <a href="https://substack.com/@thewomenshealthrecord" className="hover:text-berry" target="_blank" rel="noreferrer">Substack</a>

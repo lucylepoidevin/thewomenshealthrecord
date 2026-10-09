@@ -15,7 +15,7 @@ export default function About() {
           Most of what gets said about sex bias in medicine is a handful of statistics repeated until they stop meaning anything.
           This site goes back to the primary data, re-analyses it, and publishes the code.
         </p>
-        <p className="mt-6 text-sm tracking-wide text-ink-3">By Lucy Lepoidevin</p>
+        <p className="mt-6 text-sm tracking-wide text-ink-3">By Lucy LePoidevin</p>
       </header>
 
       <Section title="What it is">
@@ -29,7 +29,7 @@ export default function About() {
       </Section>
 
       <Section title="Who">
-        <p>The Women's Health Record is written, analysed and built by Lucy Lepoidevin. The data pipelines, the charts and the text are hers; the datasets belong to the public agencies and researchers who collected them, and are credited under every chart.</p>
+        <p>The Women's Health Record is written, analysed and built by Lucy LePoidevin. The data pipelines, the charts and the text are hers; the datasets belong to the public agencies and researchers who collected them, and are credited under every chart.</p>
       </Section>
 
       <Section title="Sources">
