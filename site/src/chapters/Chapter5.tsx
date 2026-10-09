@@ -4,6 +4,7 @@ import { chapterRef } from '../lib/chapters'
 import Story, { type Block } from '../components/Story'
 import Cite from '../components/Cite'
 import SourceList from '../components/SourceList'
+import NextChapter from '../components/NextChapter'
 import ChartFrame from '../components/charts/ChartFrame'
 import Butterfly from '../components/charts/Butterfly'
 import StackedBars from '../components/charts/StackedBars'
@@ -148,6 +149,7 @@ export default function Chapter5() {
         <h2 className="display text-2xl font-medium mb-4">Sources</h2>
         <SourceList only={['nhamcs', 'nhamcs-doc', 'nhamcs-icd', 'nimh-anxiety', 'westergaard-2019', 'seer-stage', 'seer-age', 'cohn-2014']} />
       </section>
+      <NextChapter slug='sent-home-with-a-label' />
     </article>
   )
 }

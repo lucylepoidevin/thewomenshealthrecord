@@ -4,6 +4,7 @@ import { chapterRef } from '../lib/chapters'
 import Story, { type Block } from '../components/Story'
 import Cite from '../components/Cite'
 import SourceList from '../components/SourceList'
+import NextChapter from '../components/NextChapter'
 import SexCompare from '../components/charts/SexCompare'
 import ScoreLines from '../components/charts/ScoreLines'
 import Butterfly from '../components/charts/Butterfly'
@@ -156,6 +157,7 @@ export default function Chapter2() {
         <h2 className="display text-2xl font-medium mb-4">Sources</h2>
         <SourceList only={['chen-2008', 'nhamcs', 'nhamcs-doc']} />
       </section>
+      <NextChapter slug='pain-gap' />
     </article>
   )
 }

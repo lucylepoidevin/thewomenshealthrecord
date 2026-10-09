@@ -4,6 +4,7 @@ import { chapterRef } from '../lib/chapters'
 import Story, { type Block } from '../components/Story'
 import Cite from '../components/Cite'
 import SourceList from '../components/SourceList'
+import NextChapter from '../components/NextChapter'
 import Lollipop from '../components/charts/Lollipop'
 import MultiLine from '../components/charts/MultiLine'
 import ChartFrame from '../components/charts/ChartFrame'
@@ -85,7 +86,7 @@ export default function Chapter4() {
   const blocks: Block[] = [
     T('open', <>
       <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">Since 2008, trials of the drugs and devices the FDA regulates have had to post their results in public, including how many of their participants were women.</p>
-      <p>{chapterRef('tested-on-men')} looks at drugs: who is in the trials of each new medicine. This chapter looks at diseases. For every disease, there is a share of patients who are women, and a share of trial participants who are women. If trials match patients, the two are equal. We check whether they are.</p>
+      <p>Every disease has two populations. There are the people who have it, and there are the people who were in the trials of its treatments. In each, some share are women. If the trials match the patients, the two shares are equal, and everything medicine learns from the trial applies to the people who will take the drug. If they do not match, the evidence has a gap, and it is usually women standing in it. This chapter measures that gap, disease by disease.</p>
       <p>The data come from ClinicalTrials.gov, where trials post their results, including the number of women and men enrolled. That is {S.trials_total.toLocaleString()} trials, {S.trials_us.toLocaleString()} of them with a site in the United States, together enrolling {m(S.participants_us)} people.<Cite id="ctgov" /> We sorted them by disease, using the registry's own condition labels, and kept the {S.n_diseases} diseases whose burden on American women and men the World Health Organization estimates.<Cite id="who-ghe" /> That burden share is the yardstick: if 51% of the healthy years lost to stroke are women's, a stroke trial that is 37% women has a gap. A study in 2021 made a comparison like this for 20,020 trials up to 2020, by medical specialty, and found women under-enrolled in cardiology, oncology and neurology trials and over-enrolled in psychiatry and musculoskeletal trials.<Cite id="steinberg-2021" /> We repeat it disease by disease, with five more years of trials, and then go further than the sex ratio.</p>
       <p>Two more questions follow from the first. Every trial publishes its eligibility criteria: the rules that say who is allowed to join. We read the criteria of all {S.trials_us.toLocaleString()} US trials and counted how many exclude pregnant women, exclude breastfeeding women, require contraception, or put extra conditions on "women of childbearing potential". Those are the traces of a rule the FDA recommended in 1977 and withdrew in 1993.<Cite id="fda-1993" /> And once a trial has enrolled women, does it ever say what happened to them? We counted the trials that reported even one result for women and men separately.</p>
     </>),
@@ -167,6 +168,7 @@ export default function Chapter4() {
         <h2 className="display text-2xl font-medium mb-4">Sources</h2>
         <SourceList only={['ctgov', 'who-ghe', 'steinberg-2021', 'fda-1993', 'nih-sabv']} />
       </section>
+      <NextChapter slug='who-gets-studied' />
     </article>
   )
 }

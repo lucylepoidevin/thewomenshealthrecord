@@ -4,6 +4,7 @@ import { chapterRef } from '../lib/chapters'
 import Story, { type Block } from '../components/Story'
 import Cite from '../components/Cite'
 import SourceList from '../components/SourceList'
+import NextChapter from '../components/NextChapter'
 import MultiLine from '../components/charts/MultiLine'
 import ChartFrame from '../components/charts/ChartFrame'
 import SmallMultiples from '../components/charts/SmallMultiples'
@@ -159,6 +160,7 @@ export default function Chapter6() {
         <h2 className="display text-2xl font-medium mb-4">Sources</h2>
         <SourceList only={['pubmed', 'beery-2011', 'nih-sabv', 'sorge-2015', 'science-2026-pain', 'openfda-label', 'fda-snapshots', 'nchs-anthro']} />
       </section>
+      <NextChapter slug='male-default' />
     </article>
   )
 }

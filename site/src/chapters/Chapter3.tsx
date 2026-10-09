@@ -4,6 +4,7 @@ import { chapterRef } from '../lib/chapters'
 import Story, { type Block } from '../components/Story'
 import Cite from '../components/Cite'
 import SourceList from '../components/SourceList'
+import NextChapter from '../components/NextChapter'
 import FundingScatter from '../components/charts/FundingScatter'
 import Lollipop from '../components/charts/Lollipop'
 import MultiLine from '../components/charts/MultiLine'
@@ -116,6 +117,7 @@ export default function Chapter3() {
         <h2 className="display text-2xl font-medium mb-4">Sources</h2>
         <SourceList only={['mirin-2021', 'nih-rcdc', 'who-ghe']} />
       </section>
+      <NextChapter slug='funding-vs-burden' />
     </article>
   )
 }

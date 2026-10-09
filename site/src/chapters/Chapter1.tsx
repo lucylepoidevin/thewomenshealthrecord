@@ -4,6 +4,7 @@ import { chapterRef } from '../lib/chapters'
 import Story, { type Block } from '../components/Story'
 import Cite from '../components/Cite'
 import SourceList from '../components/SourceList'
+import NextChapter from '../components/NextChapter'
 import Beeswarm from '../components/charts/Beeswarm'
 import Scatter, { inGapQuadrant } from '../components/charts/Scatter'
 import DataTable from '../components/charts/DataTable'
@@ -130,6 +131,7 @@ export default function Chapter1() {
         <h2 className="display text-2xl font-medium mb-4">Sources</h2>
         <SourceList only={['fda-dsc-2013', 'fda-qa-2013', 'fda-snapshots', 'fda-snapshots-archive', 'openfda-faers', 'meps', 'carmeli-2023']} />
       </section>
+      <NextChapter slug='tested-on-men' />
     </article>
   )
 }
