@@ -8,7 +8,7 @@ import Tooltip, { type Tip } from './Tooltip'
 type Row = { label: string; female: number; male: number }
 
 /** Female vs male value per row, joined by a line. Values are percentages. */
-export default function Dumbbell({ rows, title, subtitle, source, max = 40 }: { rows: Row[]; title: string; subtitle?: string; source: string; max?: number }) {
+export default function Dumbbell({ rows, title, subtitle, source, max = 40, fmt = v => `${v}%`, note = '' }: { rows: Row[]; title: string; subtitle?: string; source: string; max?: number; fmt?: (v: number) => string; note?: string }) {
   const { ref, width, height } = useSize<HTMLDivElement>()
   const [tip, setTip] = useState<Tip>(null)
   const m = { top: 8, right: 24, bottom: 28, left: 10 }
@@ -28,7 +28,7 @@ export default function Dumbbell({ rows, title, subtitle, source, max = 40 }: { 
               {x.ticks(4).map(t => (
                 <g key={t} transform={`translate(${x(t)},0)`}>
                   <line y1={0} y2={ih} stroke="var(--c-grid)" />
-                  <text y={ih + 18} textAnchor="middle" fontSize={11} fill="var(--c-text-2)">{t}%</text>
+                  <text y={ih + 18} textAnchor="middle" fontSize={11} fill="var(--c-text-2)">{fmt(t)}</text>
                 </g>
               ))}
               {rows.map(r => {
@@ -40,9 +40,9 @@ export default function Dumbbell({ rows, title, subtitle, source, max = 40 }: { 
                     {[{ v: r.male, c: M, who: 'Men' }, { v: r.female, c: F, who: 'Women' }].map(p => (
                       <g key={p.who}>
                         <circle cx={x(p.v)} cy={cy} r={7} fill={p.c} stroke="var(--c-surface)" strokeWidth={2}
-                          onMouseEnter={() => setTip({ x: x(p.v) + m.left, y: cy + m.top, content: <><b>{p.who}</b>: {p.v}% above 50 ng/mL<br />{r.label}</> })}
+                          onMouseEnter={() => setTip({ x: x(p.v) + m.left, y: cy + m.top, content: <><b>{p.who}</b>: {fmt(p.v)}{note}<br />{r.label}</> })}
                           onMouseLeave={() => setTip(null)} />
-                        <text x={x(p.v)} y={cy - 12} textAnchor="middle" fontSize={11} fill="var(--c-text-2)">{p.v}%</text>
+                        <text x={x(p.v)} y={cy - 12} textAnchor="middle" fontSize={11} fill="var(--c-text-2)">{fmt(p.v)}</text>
                       </g>
                     ))}
                   </g>
