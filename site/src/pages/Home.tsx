@@ -52,13 +52,10 @@ export default function Home() {
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
           {EXPERIMENTS.map(e => (
-            <Link key={e.path} to={e.path} className="group block rounded-3xl p-6 sm:p-8 transition hover:-translate-y-0.5" style={{ background: '#180C12', color: '#FBEEF2' }}>
-              <div className="flex items-center justify-between">
-                <span className="inline-flex h-7 min-w-7 items-center justify-center rounded-full px-2 text-xs font-bold" style={{ background: '#F3A3C2', color: '#180C12' }}>{e.n}</span>
-                <span className="text-[10px] font-semibold uppercase tracking-[0.18em]" style={{ color: '#A48C97' }}>Live</span>
-              </div>
-              <h3 className="display mt-4 text-2xl sm:text-3xl font-medium leading-snug" style={{ color: '#F3A3C2' }}>{e.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed" style={{ color: '#D8C3CC' }}>{e.dek}</p>
+            <Link key={e.path} to={e.path} className="group block rounded-lg border border-hairline bg-white/40 p-6 sm:p-8 transition hover:border-berry/60">
+              <p className="eyebrow">Experiment {e.n}</p>
+              <h3 className="display mt-3 text-2xl sm:text-3xl font-medium leading-snug text-ink group-hover:text-berry transition">{e.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-ink-2">{e.dek}</p>
             </Link>
           ))}
         </div>

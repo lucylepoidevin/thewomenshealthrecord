@@ -19,7 +19,7 @@ export default function MaleBrainMethods() {
       <ol className="mt-10 space-y-8">
         {steps.map(s => (
           <li key={s.n} className="flex gap-5">
-            <span className="display mt-1 inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-berry text-[#fff] text-sm font-bold">{s.n}</span>
+            <span className="display mt-0.5 w-8 shrink-0 text-2xl font-light text-berry tabular-nums">{s.n}</span>
             <div><h2 className="display text-2xl font-medium">{s.title}</h2><p className="mt-2 text-ink-2 leading-relaxed">{s.body}</p></div>
           </li>
         ))}
@@ -33,7 +33,7 @@ export default function MaleBrainMethods() {
         <li><strong className="text-ink">Research tool.</strong> The model's authors state it is not for diagnostic use. Neither is this page.</li>
       </ul>
       <h2 className="display mt-14 text-2xl font-medium">Run it</h2>
-      <pre className="mt-3 overflow-x-auto rounded-2xl bg-white/70 p-5 text-sm leading-relaxed text-ink"><code>{`cd pipeline
+      <pre className="panel mt-3 overflow-x-auto text-sm leading-relaxed text-ink"><code>{`cd pipeline
 .venv/bin/python fetch_28andhe.py     # 40 T1w scans from OpenNeuro, ~700 MB
 .venv/bin/python preprocess.py        # N4 + affine to MNI305
 .venv/bin/python segment.py           # UNesT 133-label segmentation

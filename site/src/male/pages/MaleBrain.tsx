@@ -18,7 +18,7 @@ function KeyNumbers({ data }: { data: Male }) {
   return (
     <div className="grid gap-5 sm:grid-cols-2">
       {items.map(it => (
-        <div key={it.label} className="rounded-2xl bg-white/60 p-5">
+        <div key={it.label} className="rule pt-4">
           <p className="eyebrow">{it.label}</p>
           <p className="display mt-2 text-2xl sm:text-3xl font-medium text-berry leading-tight">{it.value}</p>
           <p className="mt-1 text-sm text-ink-2">{it.note}</p>
@@ -122,7 +122,7 @@ export default function MaleBrain() {
 
   return (
     <div>
-      <section className="mx-auto max-w-4xl px-4 pt-20 pb-12 sm:pt-28 text-center fade-up">
+      <section className="mx-auto max-w-4xl px-4 pt-20 pb-12 sm:pt-28 text-center">
         <p className="eyebrow">Experiment 3</p>
         <h1 className="display mt-5 text-4xl sm:text-6xl lg:text-7xl font-light leading-[1.02]">
           Morning and evening.<br />
@@ -133,8 +133,8 @@ export default function MaleBrain() {
           His hormones keep a daily rhythm instead of a monthly one. Drag through the month and watch what that does.
         </p>
         <div className="mt-9 flex flex-wrap justify-center gap-3">
-          <a href="#viewer" onClick={jumpTo('viewer')} className="inline-flex items-center gap-2 rounded-full bg-berry px-6 py-3 text-sm font-semibold text-[#fff] shadow-[0_12px_30px_-12px_rgba(0,0,0,0.5)] transition hover:bg-rose">Start on day 1 <span aria-hidden>↓</span></a>
-          <Link to="/male-brain/methods" className="inline-flex items-center gap-2 rounded-full border border-berry/30 bg-white/60 px-6 py-3 text-sm font-semibold text-berry transition hover:bg-white">How it was made</Link>
+          <a href="#viewer" onClick={jumpTo('viewer')} className="btn btn-solid">Start on day 1 <span aria-hidden>↓</span></a>
+          <Link to="/male-brain/methods" className="btn">How it was made</Link>
         </div>
       </section>
       {error && <p className="mx-auto max-w-2xl px-4 text-center text-sm text-berry">Could not load the data: {error}</p>}

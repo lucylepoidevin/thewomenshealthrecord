@@ -51,7 +51,7 @@ export function FindingsTable({ cycle }: { cycle: Cycle }) {
         </thead>
         <tbody>
           {rows.map(({ k, name, s }) => (
-            <tr key={k} className={`border-t border-hairline/70 ${MTL.includes(k) ? 'bg-white/40' : ''}`}>
+            <tr key={k} className={`border-t border-hairline/70`}>
               <td className="py-2 pr-3 font-semibold text-ink">{name}</td>
               <td className="py-2 pr-3 text-right tabular-nums">{fmt.cm3(s.mean)}</td>
               <td className="py-2 pr-3 text-right tabular-nums">{s.cv_pct.toFixed(2)}%</td>

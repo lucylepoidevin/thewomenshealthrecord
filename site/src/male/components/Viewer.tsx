@@ -34,17 +34,17 @@ export default function Viewer({ data }: { data: Male }) {
           <div className="flex flex-col gap-3">
             <div className="brain-stage aspect-square sm:aspect-[4/3.6] lg:aspect-auto lg:h-[520px]">
               <BrainViewer image={image} prefetch={prefetch} highlight={region.labels} labelNames={data.labels} center={region.center_mm} view={view} onLoading={setLoading} />
-              <div className="pointer-events-none absolute left-3 top-3 flex flex-col items-start gap-1 text-[11px] font-semibold tracking-wide text-[rgba(251,238,242,0.9)]">
-                <span className="rounded-full bg-[rgba(0,0,0,0.45)] px-2.5 py-1 backdrop-blur">Day {cur.day} · {cur.time === 'morning' ? '7 am' : '8 pm'} · T1w MRI</span>
-                {loading && <span className="rounded-full bg-[rgba(0,0,0,0.45)] px-2.5 py-1 backdrop-blur text-rose">loading scan…</span>}
+              <div className="pointer-events-none absolute left-3 top-3 flex flex-col items-start gap-1">
+                <span className="stage-label">Day {cur.day} · {cur.time === 'morning' ? '7 am' : '8 pm'} · T1w MRI</span>
+                {loading && <span className="stage-label">loading scan…</span>}
               </div>
-              <div className="pointer-events-none absolute right-3 top-3 rounded-full bg-[rgba(0,0,0,0.45)] px-2.5 py-1 text-[11px] font-semibold text-[rgba(251,238,242,0.9)] backdrop-blur">
-                <span className="inline-block h-2.5 w-2.5 rounded-sm align-middle mr-1.5" style={{ background: '#E05A8A' }} />{region.name}
+              <div className="pointer-events-none absolute right-3 top-3 stage-label">
+                <span className="inline-block h-2.5 w-2.5 rounded-sm align-middle mr-1.5" style={{ background: 'var(--c-region)' }} />{region.name}
               </div>
               <div className="absolute bottom-3 left-3 flex gap-1">
                 {VIEWS.map(v => (
                   <button key={v.key} type="button" onClick={() => setView(v.key)}
-                    className={`rounded-full px-3 py-1 text-[11px] font-semibold tracking-wide backdrop-blur transition ${view === v.key ? 'bg-rose text-[#fff]' : 'bg-[rgba(0,0,0,0.45)] text-[rgba(251,238,242,0.85)] hover:bg-[rgba(0,0,0,0.7)]'}`}>{v.label}</button>
+                    className={`stage-btn ${view === v.key ? 'is-active' : ''}`}>{v.label}</button>
                 ))}
               </div>
             </div>

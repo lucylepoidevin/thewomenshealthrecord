@@ -26,7 +26,7 @@ export default function SessionSlider({ sessions, current, onSession }: Props) {
       </div>
       <div className="flex items-center gap-4">
         <button type="button" onClick={() => setPlaying(p => !p)} aria-label={playing ? 'Pause' : 'Play through the month'}
-          className="shrink-0 inline-flex h-11 w-11 items-center justify-center rounded-full bg-berry text-[#fff] shadow-[0_12px_30px_-12px_rgba(0,0,0,0.5)] transition hover:bg-rose">
+          className="btn btn-icon shrink-0">
           {playing ? <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden><rect x="2" y="2" width="3.5" height="10" fill="currentColor" /><rect x="8.5" y="2" width="3.5" height="10" fill="currentColor" /></svg>
             : <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden><path d="M3 2l9 5-9 5z" fill="currentColor" /></svg>}
         </button>

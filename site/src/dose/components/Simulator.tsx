@@ -38,14 +38,14 @@ export default function Simulator({ file }: { file: DrugsFile }) {
 
   return (
     <section id="simulator" className="mx-auto max-w-6xl px-4">
-      <div className="mb-3 rounded-2xl border border-berry/40 bg-berry/10 px-4 py-3 text-sm text-ink">
+      <div className="mb-4 border-l-2 border-berry pl-4 py-1 text-sm text-ink-2">
         <strong className="text-berry">Educational only.</strong> These curves are population averages from small studies of healthy adults, drawn with a simple model. They are not dosing advice. Never change a dose without your doctor or pharmacist.
       </div>
       <div className="graphic-card p-4 sm:p-6">
-        <div className="flex flex-wrap gap-2 mb-4">
+        <div className="flex flex-wrap mb-4 rule pt-1">
           {file.drugs.map(d => (
             <button key={d.key} type="button" onClick={() => { setDrugKey(d.key); setState('female'); setShowAlt(false) }}
-              className={`rounded-full px-4 py-2 text-sm font-semibold transition ${d.key === drugKey ? 'bg-berry text-[#fff]' : 'bg-white/60 text-berry hover:bg-white'}`}>{d.short}</button>
+              className={`tab ${d.key === drugKey ? 'is-active' : ''}`}>{d.short}</button>
           ))}
         </div>
         <p className="text-sm text-ink-2 mb-4 max-w-3xl">{drug.what} <span className="text-ink">Shown: {drug.regimen.label}.</span></p>
@@ -53,13 +53,13 @@ export default function Simulator({ file }: { file: DrugsFile }) {
           <div className="flex flex-col gap-4">
             <label className="flex flex-col gap-1">
               <span className="eyebrow">Her hormonal state</span>
-              <select value={femaleKey} onChange={e => setState(e.target.value)} className="rounded-full border border-berry/30 bg-white/70 px-4 py-2 text-sm font-semibold text-berry outline-none">
+              <select value={femaleKey} onChange={e => setState(e.target.value)} className="ctl">
                 {states.map(k => <option key={k} value={k}>{FEMALE_STATES[k] ?? drug.profiles[k].name}</option>)}
               </select>
             </label>
             <label className="flex flex-col gap-1">
               <span className="eyebrow">Body weight · {weight} kg {!drug.weight_scaling && <span className="normal-case tracking-normal text-ink-3">(not used for this drug)</span>}</span>
-              <input type="range" min={45} max={120} step={1} value={weight} onChange={e => setWeight(Number(e.target.value))} className="day-slider" disabled={!drug.weight_scaling} aria-label="Body weight in kilograms" />
+              <input type="range" min={45} max={120} step={1} value={weight} onChange={e => setWeight(Number(e.target.value))} className="day-slider mt-3 mb-1" disabled={!drug.weight_scaling} aria-label="Body weight in kilograms" />
               <span className="text-[11px] text-ink-3">Volume and clearance scale with weight, as the studies report them per kilogram.</span>
             </label>
             {hasMale && (
@@ -68,7 +68,7 @@ export default function Simulator({ file }: { file: DrugsFile }) {
             {drug.alt_dose && (
               <label className="flex items-center gap-2 text-sm text-ink-2"><input type="checkbox" checked={showAlt} onChange={e => setShowAlt(e.target.checked)} /> {drug.alt_dose.label}</label>
             )}
-            <div className="rounded-2xl bg-white/50 p-4 text-sm leading-relaxed">
+            <div className="panel text-sm leading-relaxed">
               <p className="eyebrow mb-2">Read-outs · {drug.profiles[femaleKey].name.toLowerCase()}</p>
               <p>Half-life <strong className="text-ink">{fmt.h(halfLife(pHer))}</strong></p>
               <p>Peak <strong className="text-ink">{fmt.conc(herPeak.c, drug.unit)}</strong> at {clock(herPeak.t)}</p>

@@ -91,7 +91,7 @@ export default function YourDose() {
 
   return (
     <div>
-      <section className="mx-auto max-w-4xl px-4 pt-20 pb-12 sm:pt-28 text-center fade-up">
+      <section className="mx-auto max-w-4xl px-4 pt-20 pb-12 sm:pt-28 text-center">
         <p className="eyebrow">Experiment 4</p>
         <h1 className="display mt-5 text-4xl sm:text-6xl lg:text-7xl font-light leading-[1.02]">
           Same pill, different body.<br />
@@ -102,8 +102,8 @@ export default function YourDose() {
           each with sex-specific numbers from the original studies.
         </p>
         <div className="mt-9 flex flex-wrap justify-center gap-3">
-          <a href="#simulator" onClick={jumpTo('simulator')} className="inline-flex items-center gap-2 rounded-full bg-berry px-6 py-3 text-sm font-semibold text-[#fff] shadow-[0_12px_30px_-12px_rgba(0,0,0,0.5)] transition hover:bg-rose">Open the simulator <span aria-hidden>↓</span></a>
-          <Link to="/your-dose/methods" className="inline-flex items-center gap-2 rounded-full border border-berry/30 bg-white/60 px-6 py-3 text-sm font-semibold text-berry transition hover:bg-white">How it was made</Link>
+          <a href="#simulator" onClick={jumpTo('simulator')} className="btn btn-solid">Open the simulator <span aria-hidden>↓</span></a>
+          <Link to="/your-dose/methods" className="btn">How it was made</Link>
         </div>
       </section>
       {error && <p className="mx-auto max-w-2xl px-4 text-center text-sm text-berry">Could not load the data: {error}</p>}

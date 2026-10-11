@@ -12,7 +12,7 @@ export default function RegionPicker({ regions, value, onChange, order = ORDER }
       <select
         value={value}
         onChange={e => onChange(e.target.value)}
-        className="rounded-full border border-berry/30 bg-white/70 px-4 py-2 text-sm font-semibold text-berry outline-none focus:ring-2 focus:ring-rose/40"
+        className="ctl"
       >
         {groups.map(({ g, keys }) => (
           <optgroup key={g} label={g[0].toUpperCase() + g.slice(1)}>

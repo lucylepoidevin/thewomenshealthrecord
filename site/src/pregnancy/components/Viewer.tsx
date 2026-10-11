@@ -43,17 +43,17 @@ export default function Viewer({ data }: { data: Pregnancy }) {
           <div className="flex flex-col gap-3">
             <div className="brain-stage aspect-square sm:aspect-[4/3.6] lg:aspect-auto lg:h-[560px]">
               <BrainViewer image={image} prefetch={prefetch} highlight={region.labels} labelNames={data.labels} center={region.center_mm} view={view} onLoading={setLoading} />
-              <div className="pointer-events-none absolute left-3 top-3 flex flex-col items-start gap-1 text-[11px] font-semibold tracking-wide text-[rgba(251,238,242,0.9)]">
-                <span className="rounded-full bg-[rgba(0,0,0,0.45)] px-2.5 py-1 backdrop-blur">Scan {current} · {cur.site.replace('_retest', '')} · {cur.date}</span>
-                {loading && <span className="rounded-full bg-[rgba(0,0,0,0.45)] px-2.5 py-1 backdrop-blur text-rose">loading scan…</span>}
+              <div className="pointer-events-none absolute left-3 top-3 flex flex-col items-start gap-1">
+                <span className="stage-label">Scan {current} · {cur.site.replace('_retest', '')} · {cur.date}</span>
+                {loading && <span className="stage-label">loading scan…</span>}
               </div>
-              <div className="pointer-events-none absolute right-3 top-3 rounded-full bg-[rgba(0,0,0,0.45)] px-2.5 py-1 text-[11px] font-semibold text-[rgba(251,238,242,0.9)] backdrop-blur">
-                <span className="inline-block h-2.5 w-2.5 rounded-sm align-middle mr-1.5" style={{ background: '#E05A8A' }} />{region.name}
+              <div className="pointer-events-none absolute right-3 top-3 stage-label">
+                <span className="inline-block h-2.5 w-2.5 rounded-sm align-middle mr-1.5" style={{ background: 'var(--c-region)' }} />{region.name}
               </div>
               <div className="absolute bottom-3 left-3 flex gap-1">
                 {VIEWS.map(v => (
                   <button key={v.key} type="button" onClick={() => setView(v.key)}
-                    className={`rounded-full px-3 py-1 text-[11px] font-semibold tracking-wide backdrop-blur transition ${view === v.key ? 'bg-rose text-[#fff]' : 'bg-[rgba(0,0,0,0.45)] text-[rgba(251,238,242,0.85)] hover:bg-[rgba(0,0,0,0.7)]'}`}>{v.label}</button>
+                    className={`stage-btn ${view === v.key ? 'is-active' : ''}`}>{v.label}</button>
                 ))}
               </div>
             </div>
@@ -61,7 +61,7 @@ export default function Viewer({ data }: { data: Pregnancy }) {
               <RegionPicker regions={data.regions} value={regionKey} onChange={setRegionKey} order={ORDER} />
               <label className="flex flex-col gap-1 text-xs font-semibold tracking-wide text-ink-2">
                 <span className="eyebrow">Compare with</span>
-                <select value={refMode} onChange={e => setRefMode(e.target.value as RefMode)} className="rounded-full border border-berry/30 bg-white/70 px-4 py-2 text-sm font-semibold text-berry outline-none focus:ring-2 focus:ring-rose/40">
+                <select value={refMode} onChange={e => setRefMode(e.target.value as RefMode)} className="ctl">
                   <option value="pre">Before conception (scans 1–4)</option>
                   <option value="week9">Week 9, first scan on the Irvine scanner</option>
                 </select>

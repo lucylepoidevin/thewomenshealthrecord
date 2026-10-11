@@ -2,7 +2,6 @@ import { fmt, type HerStats, type Male } from '../lib/data'
 
 const SHOW = ['total_brain', 'cortical_gm', 'cerebral_wm', 'lateral_ventricles', 'third_fourth_ventricles', 'hippocampus', 'entorhinal', 'parahippocampal', 'amygdala', 'thalamus', 'caudate', 'putamen', 'pallidum',
   'precuneus', 'superior_parietal', 'occipital_pole', 'calcarine', 'posterior_cingulate', 'anterior_cingulate', 'superior_frontal', 'insula_anterior', 'fusiform', 'temporal_pole', 'cerebellum', 'brainstem']
-const HEAD = ['total_brain', 'cortical_gm', 'cerebral_wm', 'lateral_ventricles']
 
 /** Sentences written from the numbers. */
 export function FindingsProse({ data, her }: { data: Male; her: HerStats | null }) {
@@ -63,7 +62,7 @@ export function CompareTable({ data, her }: { data: Male; her: HerStats }) {
         </thead>
         <tbody>
           {rows.map(({ k, name, him, she }) => (
-            <tr key={k} className={`border-t border-hairline/70 ${HEAD.includes(k) ? 'bg-white/40' : ''}`}>
+            <tr key={k} className={`border-t border-hairline/70`}>
               <td className="py-2 pr-3 font-semibold text-ink">{name}</td>
               <td className="py-2 pr-3 text-right tabular-nums">{fmt.cm3(she.mean)}</td>
               <td className="py-2 pr-3 text-right tabular-nums">{fmt.cm3(him.mean)}</td>

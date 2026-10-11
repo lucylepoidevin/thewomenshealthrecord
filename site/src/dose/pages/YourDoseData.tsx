@@ -9,7 +9,7 @@ export default function YourDoseData() {
       <h1 className="display mt-3 text-4xl sm:text-5xl font-light leading-tight">The parameter table, for download</h1>
       <p className="mt-6 max-w-3xl text-lg text-ink-2 leading-relaxed">One JSON file holds every number the simulator uses, its unit, its source and, where derived, the arithmetic. Free to reuse with attribution to this page and to the original studies.</p>
       <ul className="mt-8 grid gap-3 sm:grid-cols-2">
-        <li className="rounded-2xl bg-white/60 p-5"><a href={`${DATA}drugs.json`} download className="font-semibold text-berry underline underline-offset-2">drugs.json</a><p className="mt-1 text-sm text-ink-2">Drugs, regimens, profiles by sex and hormonal state, parameters with citations, sources.{data && ` Generated ${data.generated}.`}</p></li>
+        <li className="rule pt-4"><a href={`${DATA}drugs.json`} download className="font-semibold text-berry underline underline-offset-2">drugs.json</a><p className="mt-1 text-sm text-ink-2">Drugs, regimens, profiles by sex and hormonal state, parameters with citations, sources.{data && ` Generated ${data.generated}.`}</p></li>
       </ul>
       {data && data.drugs.map(d => (
         <div key={d.key} className="mt-10">

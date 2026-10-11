@@ -33,7 +33,7 @@ export default function DaySlider({ day, onDay, days }: Props) {
           type="button"
           onClick={() => setPlaying(p => !p)}
           aria-label={playing ? 'Pause' : 'Play through the month'}
-          className="shrink-0 inline-flex h-11 w-11 items-center justify-center rounded-full bg-berry text-white shadow-[0_12px_30px_-12px_rgba(139,30,75,0.6)] transition hover:bg-rose"
+          className="btn btn-icon shrink-0"
         >
           {playing ? (
             <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden><rect x="2" y="2" width="3.5" height="10" fill="currentColor" /><rect x="8.5" y="2" width="3.5" height="10" fill="currentColor" /></svg>

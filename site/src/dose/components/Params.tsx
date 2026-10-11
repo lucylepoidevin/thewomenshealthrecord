@@ -6,7 +6,7 @@ export default function Params({ file, drug, profiles }: { file: DrugsFile; drug
   const srcs = numbered(file.sources)
   const n = (id: string) => srcs.find(s => s.id === id)?.n ?? '?'
   return (
-    <div className="rounded-2xl bg-white/50 p-4 sm:p-5">
+    <div className="panel">
       <p className="eyebrow mb-3">Where these numbers come from</p>
       <div className="grid gap-4 md:grid-cols-2">
         {profiles.map(pk => (

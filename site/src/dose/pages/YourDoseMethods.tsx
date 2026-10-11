@@ -11,7 +11,7 @@ export default function YourDoseMethods() {
       <p className="mt-6 text-lg text-ink-2 leading-relaxed">A one-compartment model with first-order absorption and elimination, the standard teaching model of oral pharmacokinetics, fed with published sex-specific parameters.</p>
       <h2 className="display mt-12 text-2xl font-medium">The model</h2>
       <p className="mt-3 text-ink-2 leading-relaxed">For a single oral dose D with bioavailability F, absorption rate k<sub>a</sub>, volume of distribution V and clearance CL (so elimination rate k<sub>e</sub> = CL / V), the plasma concentration at time t after the dose is</p>
-      <pre className="mt-3 overflow-x-auto rounded-2xl bg-white/70 p-5 text-sm leading-relaxed text-ink"><code>{`C(t) = F · D / V · ka / (ka − ke) · ( e^(−ke·t) − e^(−ka·t) )`}</code></pre>
+      <pre className="panel mt-3 overflow-x-auto text-sm leading-relaxed text-ink"><code>{`C(t) = F · D / V · ka / (ka − ke) · ( e^(−ke·t) − e^(−ka·t) )`}</code></pre>
       <p className="mt-3 text-ink-2 leading-relaxed">Repeated doses are added together (superposition), which is exact for a linear model. Where a study reports a lag before absorption starts, t is shifted by it. The simulator runs five identical days and shows the fifth, so that drugs with longer half-lives have reached their steady pattern. Half-life is ln 2 · V / CL.</p>
       <h2 className="display mt-12 text-2xl font-medium">The parameters</h2>
       <ul className="mt-3 space-y-3 text-ink-2 leading-relaxed list-disc pl-5">
@@ -28,7 +28,7 @@ export default function YourDoseMethods() {
         <li>Not reviewed by a pharmacist or clinical pharmacologist yet. Not medical advice.</li>
       </ul>
       <h2 className="display mt-12 text-2xl font-medium">Run it</h2>
-      <pre className="mt-3 overflow-x-auto rounded-2xl bg-white/70 p-5 text-sm leading-relaxed text-ink"><code>{`cd "your dose project/pipeline"
+      <pre className="panel mt-3 overflow-x-auto text-sm leading-relaxed text-ink"><code>{`cd "your dose project/pipeline"
 python3 build_drugs.py     # writes site/public/data/dose/drugs.json with every value's citation`}</code></pre>
       {data && (<><h2 className="display mt-12 text-2xl font-medium">Sources</h2><div className="mt-4"><SourceList file={data} /></div></>)}
       <p className="mt-12 text-sm text-ink-3">Back to <Link to="/your-dose" className="text-berry underline underline-offset-2">your body, your dose</Link>.</p>

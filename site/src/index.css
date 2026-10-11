@@ -64,64 +64,75 @@ svg text { font-family: var(--font-body); }
 .th-sort { cursor: pointer; user-select: none; }
 .th-sort:hover { color: var(--color-berry); }
 
-/* ---------- Experiments: inverted colourway ----------
-   Routes under /cycling-brain set data-theme="dark" on <html>. Tailwind v4 utilities
-   resolve through these variables, so flipping them flips every text-ink / bg-blush /
-   bg-white/60 on the page, header and footer included. */
+/* ---------- Experiments: a quieter, flat dark ground ----------
+   Routes under /experiments and the experiment pages set data-theme="dark" on <html>.
+   Tailwind v4 utilities resolve through these variables, so flipping them flips the page. */
 :root[data-theme="dark"] {
-  --color-blush: #180C12;
-  --color-blush-2: #24141C;
-  --color-blush-3: #352029;
-  --color-rose: #F07AA6;
-  --color-berry: #F3A3C2;
-  --color-ink: #FBEEF2;
-  --color-ink-2: #D8C3CC;
-  --color-ink-3: #A48C97;
-  --color-hairline: #3B2530;
-  --color-white: #3A2430;
-  --c-estradiol: #F07AA6;
-  --c-progesterone: #D4BE55;
-  --c-lh: #5FC2C2;
-  --c-fsh: #B59CA8;
-  --c-region: #F07AA6;
-  --c-emphasis: #F3A3C2;
-  --c-muted: #6B4F5B;
-  --c-grid: #3B2530;
-  --c-text: #FBEEF2;
-  --c-text-2: #D8C3CC;
-  --c-surface: #180C12;
-  --c-band: rgba(243,163,194,0.03);
-  --c-band-2: rgba(243,163,194,0.07);
+  --color-blush: #121014;
+  --color-blush-2: #1A171B;
+  --color-blush-3: #26222A;
+  --color-rose: #D98BAA;
+  --color-berry: #E6A9C1;
+  --color-ink: #ECE5E8;
+  --color-ink-2: #B9AEB4;
+  --color-ink-3: #7F7479;
+  --color-hairline: #2C272C;
+  --color-white: #1F1B21;
+  --c-estradiol: #E39AB8;
+  --c-progesterone: #CDB86A;
+  --c-lh: #78BDBD;
+  --c-fsh: #9E939A;
+  --c-region: #E39AB8;
+  --c-emphasis: #E6A9C1;
+  --c-muted: #5A5057;
+  --c-grid: #2C272C;
+  --c-text: #ECE5E8;
+  --c-text-2: #B9AEB4;
+  --c-surface: #121014;
+  --c-band: rgba(236,229,232,0.025);
+  --c-band-2: rgba(236,229,232,0.055);
 }
 :root { --c-band: rgba(139,30,75,0.015); --c-band-2: rgba(139,30,75,0.045); }
-:root[data-theme="dark"] body {
-  background: var(--color-blush);
-  background-image: radial-gradient(1200px 600px at 50% -10%, #2a1520 0%, var(--color-blush) 60%);
-}
-:root[data-theme="dark"] .graphic-card {
-  background: rgba(255,255,255,0.04);
-  box-shadow: 0 1px 0 rgba(255,255,255,0.04), 0 30px 80px -40px rgba(0,0,0,0.6);
-}
-:root[data-theme="dark"] .chart-tooltip { background: #24141C; }
+:root[data-theme="dark"] body { background: var(--color-blush); background-image: none; }
+:root[data-theme="dark"] .graphic-card { background: transparent; border: 1px solid var(--color-hairline); border-radius: 10px; box-shadow: none; backdrop-filter: none; }
+:root[data-theme="dark"] .chart-tooltip { background: #1A171B; }
+:root[data-theme="dark"] .eyebrow { color: var(--color-ink-3); font-weight: 600; letter-spacing: 0.18em; }
+:root[data-theme="dark"] .fade-up, :root[data-theme="dark"] .reveal { animation: none; opacity: 1; transform: none; transition: none; }
+:root[data-theme="dark"] .prose-step strong { color: var(--color-ink); }
+:root[data-theme="dark"] select, :root[data-theme="dark"] input[type="checkbox"] { accent-color: var(--color-berry); }
 
 /* The brain canvas sits on a dark field whatever the theme. */
-.brain-stage { background: #15090f; border-radius: 22px; overflow: hidden; position: relative; }
-:root[data-theme="dark"] .brain-stage { box-shadow: inset 0 0 0 1px rgba(255,255,255,0.06); }
+.brain-stage { background: #0B090B; border-radius: 8px; overflow: hidden; position: relative; }
 .brain-stage canvas { display: block; width: 100%; height: 100%; }
+.stage-label { font-size: 11px; letter-spacing: 0.04em; color: rgba(236,229,232,0.85); text-shadow: 0 1px 2px rgba(0,0,0,0.9), 0 0 6px rgba(0,0,0,0.7); }
+.stage-btn { font-size: 11px; letter-spacing: 0.04em; padding: 3px 8px; border-radius: 4px; color: rgba(236,229,232,0.8); background: rgba(11,9,11,0.55); border: 1px solid rgba(236,229,232,0.18); }
+.stage-btn.is-active { color: #0B090B; background: rgba(236,229,232,0.9); border-color: transparent; }
+
+/* Controls on experiment pages: plain, square-cornered, no glow */
+.ctl { border: 1px solid var(--color-hairline); border-radius: 6px; background: transparent; color: var(--color-ink); padding: 7px 10px; font-size: 14px; }
+.ctl:focus { outline: 1px solid var(--color-berry); outline-offset: 1px; }
+.btn { display: inline-flex; align-items: center; gap: 8px; border-radius: 6px; padding: 10px 16px; font-size: 14px; font-weight: 600; border: 1px solid var(--color-berry); color: var(--color-berry); background: transparent; transition: background 150ms, color 150ms; }
+.btn:hover { background: var(--color-berry); color: var(--color-blush); }
+.btn-icon { padding: 8px 10px; }
+.btn-solid { background: var(--color-berry); color: var(--color-blush); }
+.btn-solid:hover { background: var(--color-rose); border-color: var(--color-rose); color: var(--color-blush); }
+.tab { padding: 6px 2px; margin-right: 18px; font-size: 14px; font-weight: 600; color: var(--color-ink-2); border-bottom: 2px solid transparent; }
+.tab:hover { color: var(--color-ink); }
+.tab.is-active { color: var(--color-ink); border-bottom-color: var(--color-berry); }
+.rule { border-top: 1px solid var(--color-hairline); }
+.panel { border: 1px solid var(--color-hairline); border-radius: 8px; padding: 16px; }
 
 /* Day slider */
-input[type="range"].day-slider { -webkit-appearance: none; appearance: none; width: 100%; height: 6px; border-radius: 999px; background: linear-gradient(90deg, var(--color-blush-3), var(--color-rose)); outline: none; }
-input[type="range"].day-slider::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 26px; height: 26px; border-radius: 50%; background: var(--color-blush); border: 3px solid var(--color-berry); box-shadow: 0 6px 18px -6px rgba(0,0,0,0.5); cursor: grab; }
-input[type="range"].day-slider::-moz-range-thumb { width: 26px; height: 26px; border-radius: 50%; background: var(--color-blush); border: 3px solid var(--color-berry); cursor: grab; }
+input[type="range"].day-slider { -webkit-appearance: none; appearance: none; width: 100%; height: 2px; border-radius: 0; background: var(--color-hairline); outline: none; }
+input[type="range"].day-slider::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 14px; height: 22px; border-radius: 3px; background: var(--color-berry); border: 0; cursor: grab; }
+input[type="range"].day-slider::-moz-range-thumb { width: 14px; height: 22px; border-radius: 3px; background: var(--color-berry); border: 0; cursor: grab; }
 input[type="range"].day-slider:active::-webkit-slider-thumb { cursor: grabbing; }
-.prose-step strong { font-weight: 600; color: var(--color-berry); }
+input[type="range"].day-slider:disabled::-webkit-slider-thumb { background: var(--color-ink-3); }
 
-/* Experiment tabs: dark chips after the main nav, inverted again on the dark theme */
-.nav-divider { display: inline-block; width: 1px; height: 14px; background: var(--color-hairline); margin: 0 2px; align-self: center; }
-.nav-exp { display: inline-flex; align-items: center; border-radius: 999px; padding: 4px 11px; font-size: 11px; letter-spacing: 0.02em;
-  background: #180C12; color: #F3A3C2; border: 1px solid #180C12; transition: background 160ms, color 160ms; }
-.nav-exp:hover { background: #2a1520; }
-.nav-exp.is-active { background: #F3A3C2; color: #180C12; border-color: #F3A3C2; }
-:root[data-theme="dark"] .nav-exp { background: #2a1520; color: #F3A3C2; border-color: #4a2a3a; }
-:root[data-theme="dark"] .nav-exp:hover { background: #3a2430; }
-:root[data-theme="dark"] .nav-exp.is-active { background: #F3A3C2; color: #180C12; border-color: #F3A3C2; }
+/* Experiment links in the header: plain text after a thin divider, not chips */
+.nav-divider { display: inline-block; width: 1px; height: 14px; background: var(--color-hairline); margin: 0 4px; align-self: center; }
+.nav-exp { font-size: 12px; font-weight: 600; letter-spacing: 0.02em; color: #8B1E4B; padding-bottom: 1px; border-bottom: 1px solid transparent; }
+.nav-exp:hover { border-bottom-color: #8B1E4B; }
+.nav-exp.is-active { border-bottom-color: #8B1E4B; }
+:root[data-theme="dark"] .nav-exp { color: var(--color-berry); }
+:root[data-theme="dark"] .nav-exp:hover, :root[data-theme="dark"] .nav-exp.is-active { border-bottom-color: var(--color-berry); }

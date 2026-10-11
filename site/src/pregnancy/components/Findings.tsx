@@ -2,7 +2,6 @@ import { fmt, type Pregnancy, type Session } from '../lib/data'
 
 const SHOW = ['total_brain', 'cortical_gm', 'cerebral_wm', 'lateral_ventricles', 'third_fourth_ventricles', 'hippocampus', 'entorhinal', 'parahippocampal', 'amygdala', 'thalamus', 'caudate', 'putamen', 'pallidum', 'accumbens',
   'superior_frontal', 'middle_frontal', 'precentral', 'postcentral', 'precuneus', 'posterior_cingulate', 'anterior_cingulate', 'insula_anterior', 'superior_temporal', 'fusiform', 'calcarine', 'cerebellum', 'brainstem']
-const HEAD = ['total_brain', 'cortical_gm', 'cerebral_wm', 'lateral_ventricles']
 
 const mean = (xs: number[]) => xs.reduce((a, b) => a + b, 0) / xs.length
 /** % change of a group of sessions' region volume against a reference volume. */
@@ -67,7 +66,7 @@ export function FindingsTable({ data }: { data: Pregnancy }) {
         </thead>
         <tbody>
           {rows.map(({ k, name, s }) => (
-            <tr key={k} className={`border-t border-hairline/70 ${HEAD.includes(k) ? 'bg-white/40' : ''}`}>
+            <tr key={k} className={`border-t border-hairline/70`}>
               <td className="py-2 pr-3 font-semibold text-ink">{name}</td>
               <td className="py-2 pr-3 text-right tabular-nums">{fmt.cm3(s.baseline)}</td>
               <td className={`py-2 pr-3 text-right tabular-nums ${Math.abs(s.third_trimester_pct ?? 0) > 2 * Math.abs(s.retest_diff_pct ?? 1) ? 'font-semibold text-berry' : ''}`}>{cell(s.third_trimester_pct)}</td>

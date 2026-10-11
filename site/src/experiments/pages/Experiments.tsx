@@ -6,7 +6,7 @@ import ThreeBrains from '../ThreeBrains'
 export default function Experiments() {
   return (
     <div>
-      <section className="mx-auto max-w-4xl px-4 pt-20 pb-10 sm:pt-28 text-center fade-up">
+      <section className="mx-auto max-w-4xl px-4 pt-20 pb-10 sm:pt-28 text-center">
         <p className="eyebrow">Experiments</p>
         <h1 className="display mt-5 text-4xl sm:text-6xl font-light leading-[1.05]">
           The chapters count what medicine does to women.<br />
@@ -22,9 +22,9 @@ export default function Experiments() {
         <ol className="grid gap-4 sm:grid-cols-2">
           {EXPERIMENTS.map(e => (
             <li key={e.path}>
-              <Link to={e.path} className="group block h-full rounded-3xl bg-white/50 p-6 sm:p-8 transition hover:bg-white/70 hover:-translate-y-0.5">
-                <span className="inline-flex h-7 min-w-7 items-center justify-center rounded-full bg-berry px-2 text-xs font-bold text-[#180C12]">{e.n}</span>
-                <h2 className="display mt-4 text-2xl sm:text-3xl font-medium leading-snug text-ink group-hover:text-berry transition">{e.title}</h2>
+              <Link to={e.path} className="group block h-full rule pt-5 pb-4">
+                <span className="eyebrow">Experiment {e.n}</span>
+                <h2 className="display mt-2 text-2xl sm:text-3xl font-medium leading-snug text-ink group-hover:text-berry transition">{e.title}</h2>
                 <p className="mt-2 text-sm leading-relaxed text-ink-2">{e.dek}</p>
               </Link>
             </li>

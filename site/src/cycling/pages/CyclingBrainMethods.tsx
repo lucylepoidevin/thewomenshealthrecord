@@ -22,7 +22,7 @@ export default function Methods() {
       <ol className="mt-10 space-y-8">
         {steps.map(s => (
           <li key={s.n} className="flex gap-5">
-            <span className="display mt-1 inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-berry text-white text-sm font-bold">{s.n}</span>
+            <span className="display mt-0.5 w-8 shrink-0 text-2xl font-light text-berry tabular-nums">{s.n}</span>
             <div>
               <h2 className="display text-2xl font-medium">{s.title}</h2>
               <p className="mt-2 text-ink-2 leading-relaxed">{s.body}</p>
@@ -50,7 +50,7 @@ export default function Methods() {
       </ul>
 
       <h2 className="display mt-14 text-2xl font-medium">Run it</h2>
-      <pre className="mt-3 overflow-x-auto rounded-2xl bg-white/70 p-5 text-sm leading-relaxed text-ink"><code>{`cd pipeline
+      <pre className="panel mt-3 overflow-x-auto text-sm leading-relaxed text-ink"><code>{`cd pipeline
 python3.12 -m venv .venv && .venv/bin/pip install -r requirements.txt
 .venv/bin/python fetch_28andme.py      # 30 T1w scans from OpenNeuro, ~540 MB
 .venv/bin/python preprocess.py         # N4 + affine to MNI305, ~6 s per scan

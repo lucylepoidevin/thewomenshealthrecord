@@ -14,7 +14,7 @@ export default function MaleBrainData() {
           { href: `${DATA}volumes_long.csv`, name: 'volumes_long.csv', note: 'One row per session per label (132 labels × 40 sessions), native and MNI volumes.' },
           { href: `${DATA}brain/`, name: 'brain/ses-XX_t1.nii.gz, ses-XX_labels.nii.gz', note: '1.5 mm, 8-bit, MNI305-aligned scans and label maps for each session.' },
         ].map(f => (
-          <li key={f.name} className="rounded-2xl bg-white/60 p-5">
+          <li key={f.name} className="rule pt-4">
             <a href={f.href} className="font-semibold text-berry underline underline-offset-2 break-all" download={!f.href.endsWith('/')}>{f.name}</a>
             <p className="mt-1 text-sm text-ink-2">{f.note}</p>
           </li>
@@ -23,7 +23,7 @@ export default function MaleBrainData() {
       {data && (
         <>
           <h2 className="display mt-14 text-2xl font-medium">The month, scan by scan</h2>
-          <div className="table-wrap mt-4 rounded-2xl bg-white/60 p-4">
+          <div className="table-wrap mt-4 rule pt-4">
             <table className="w-full text-xs sm:text-sm">
               <thead>
                 <tr className="text-left text-[10px] uppercase tracking-[0.14em] text-ink-3">
