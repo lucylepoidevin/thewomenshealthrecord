@@ -16,7 +16,7 @@ function KeyNumbers({ cycle }: { cycle: NonNullable<ReturnType<typeof useCycle>[
     { label: 'Estradiol, lowest to highest morning', value: `${Math.min(...e2)} → ${Math.max(...e2)} pg/mL`, note: `${(Math.max(...e2) / Math.min(...e2)).toFixed(0)}-fold, peak on day ${peak(e2, 'estradiol')}` },
     { label: 'Progesterone, lowest to highest morning', value: `${Math.min(...p4)} → ${Math.max(...p4)} ng/mL`, note: `from essentially undetectable, peak on day ${peak(p4, 'progesterone')}` },
     { label: 'LH surge', value: `${Math.max(...lh)} mIU/mL on day ${peak(lh, 'lh')}`, note: `against a baseline near ${Math.round(lh.sort((a, b) => a - b)[Math.floor(lh.length / 2)])}: ovulation` },
-    { label: 'Scans', value: '30 mornings, 30 scans', note: '0.8 mm T1-weighted MRI, 3 T, 10 am ± 30 min' },
+    { label: 'Scans', value: '30 mornings, 30 scans', note: 'blood drawn at 10 am ± 30 min, then a 0.8 mm T1-weighted MRI at 3 T' },
   ]
   return (
     <div className="grid gap-5 sm:grid-cols-2">
@@ -45,7 +45,7 @@ export default function Home() {
         </p>
         <p>
           The brain above is hers, one scan per day. The curves are her blood. The slider walks you through the month: she started in the late
-          luteal phase, her period arrived on day 11, she ovulated on day 23, and by day 30 progesterone was climbing again.
+          luteal phase, her period arrived on day 11, her LH surge (the trigger for ovulation) came on day 23, and by day 30 progesterone was climbing again.
           Pick a structure and the pink shape shows where it is; the chart under the hormones shows how big it measured that day.
         </p>
         <p>

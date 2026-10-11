@@ -64,8 +64,7 @@ export default function PregnantBrain() {
         </p>
         <p>
           Pregnancy makes them look like rounding errors. Here, estradiol climbed past 4,000 pg/mL by the second trimester and past 12,000 by week 36. Progesterone, made first
-          by the corpus luteum and then by the placenta, rose to 50 ng/mL by mid-pregnancy and over 100 near term. Both collapse within days of birth: at the first postpartum
-          visit, seven weeks on, estradiol was 9 pg/mL and progesterone 0.12.<Cite id="openneuro" />
+          by the corpus luteum and then by the placenta, rose to 50 ng/mL by mid-pregnancy and over 100 near term. Both collapse within days of birth: at the first visit after it, week 43, estradiol was 9 pg/mL and progesterone 0.12.<Cite id="openneuro" />
         </p>
         <p>
           The brain is dense with receptors for both hormones. Whatever they do to it across a cycle, pregnancy does for nine months at fifty times the dose.
@@ -123,7 +122,7 @@ export default function PregnantBrain() {
           Nothing here is medical advice.
         </p>
         <p>
-          <strong>And still:</strong> around 140 million women are pregnant each year, and until 2024 not one of their brains had been mapped through the whole arc. This is what the
+          <strong>And still:</strong> well over a hundred million women give birth each year, and until 2024 not one of their brains had been mapped through the whole arc. This is what the
           map looks like. It took a scientist volunteering her own head, twenty-seven times.
         </p>
       </>

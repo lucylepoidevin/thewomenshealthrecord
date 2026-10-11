@@ -29,7 +29,7 @@ export function FindingsProse({ data }: { data: Pregnancy }) {
         Start with the whole brain, ventricles excluded, because it is the one measure the two scanners agree on (the next-day retest differed by {fmt.pct(tb.retest_diff_pct ?? 0)}).
         Against the four scans before conception it was <strong>{fmt.pct(tb.third_trimester_pct ?? 0)}</strong> across the third trimester, with its lowest reading at week {tb.min_pregnancy?.week}
         ({fmt.pct(tb.min_pregnancy?.pct ?? 0)}). In the first three months after the birth it was {fmt.pct(tb.early_postpartum_pct ?? 0)}; two years on, {fmt.pct(tb.two_years_pct ?? 0)}.
-        A brain of {fmt.cm3(tb.baseline)} cm³ gave up roughly {Math.round(Math.abs(tb.min_pregnancy?.pct ?? 0) / 100 * tb.baseline / 1000)} cm³, about the volume of a hen's egg, and took most of it back.
+        A brain of {fmt.cm3(tb.baseline)} cm³ gave up roughly {Math.round(Math.abs(tb.min_pregnancy?.pct ?? 0) / 100 * tb.baseline / 1000)} cm³, about two tablespoons, and took most of it back.
       </p>
       <p>
         Grey and white matter need more care. Between the two scanners, the retest put cortical grey matter {fmt.pct(gm.retest_diff_pct ?? 0)} and white matter {fmt.pct(wm.retest_diff_pct ?? 0)}:
