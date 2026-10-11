@@ -21,6 +21,9 @@ import PregnantBrainData from './pregnancy/pages/PregnantBrainData'
 import MaleBrain from './male/pages/MaleBrain'
 import MaleBrainMethods from './male/pages/MaleBrainMethods'
 import MaleBrainData from './male/pages/MaleBrainData'
+import YourDose from './dose/pages/YourDose'
+import YourDoseMethods from './dose/pages/YourDoseMethods'
+import YourDoseData from './dose/pages/YourDoseData'
 import { CHAPTERS } from './lib/chapters'
 
 /** Interactive experiments live on the inverted colourway and get their own dark tabs. */
@@ -28,6 +31,7 @@ const EXPERIMENTS = [
   { path: '/cycling-brain', label: 'The cycling brain' },
   { path: '/pregnancy-brain', label: 'The pregnant brain' },
   { path: '/male-brain', label: "A man's month" },
+  { path: '/your-dose', label: 'Your dose' },
 ]
 
 function ScrollToTop() {
@@ -88,6 +92,9 @@ export default function App() {
           <Route path="/male-brain" element={<MaleBrain />} />
           <Route path="/male-brain/methods" element={<MaleBrainMethods />} />
           <Route path="/male-brain/data" element={<MaleBrainData />} />
+          <Route path="/your-dose" element={<YourDose />} />
+          <Route path="/your-dose/methods" element={<YourDoseMethods />} />
+          <Route path="/your-dose/data" element={<YourDoseData />} />
           <Route path="/chapters/tested-on-men" element={<Chapter1 />} />
           <Route path="/chapters/pain-gap" element={<Chapter2 />} />
           <Route path="/chapters/funding-vs-burden" element={<Chapter3 />} />

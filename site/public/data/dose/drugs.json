@@ -1,0 +1,392 @@
+{
+ "generated": "2026-10-11",
+ "model": "one compartment, first-order absorption, first-order elimination, superposition of doses; simulated for five identical days and the fifth day shown",
+ "sources": {
+  "abernethy1982": {
+   "text": "Abernethy DR, Divoll M, Greenblatt DJ, Ameer B. Obesity, sex, and acetaminophen disposition. Clinical Pharmacology & Therapeutics 1982;31:783–790. Single 650 mg intravenous doses; 10 control men (70.6 kg) and 11 control women (55.0 kg).",
+   "url": "https://doi.org/10.1038/clpt.1982.111"
+  },
+  "miners1983": {
+   "text": "Miners JO, Attwood J, Birkett DJ. Influence of sex and oral contraceptive steroids on paracetamol metabolism. British Journal of Clinical Pharmacology 1983;16:503–509. 8 men, 8 women, 8 women on oral contraceptive steroids.",
+   "url": "https://doi.org/10.1111/j.1365-2125.1983.tb02207.x"
+  },
+  "rawlins1977": {
+   "text": "Rawlins MD, Henderson DB, Hijab AR. Pharmacokinetics of paracetamol (acetaminophen) after intravenous and oral administration. European Journal of Clinical Pharmacology 1977;11:283–286. Oral bioavailability 0.89 after a 1000 mg dose.",
+   "url": "https://doi.org/10.1007/bf00607678"
+  },
+  "anderson2008": {
+   "text": "Anderson BJ. Paracetamol (acetaminophen): mechanisms of action. Paediatric Anaesthesia 2008;18:915–921. Plasma concentrations near 10 mg/L are associated with meaningful analgesia.",
+   "url": "https://doi.org/10.1111/j.1460-9592.2008.02764.x"
+  },
+  "abernethy1985": {
+   "text": "Abernethy DR, Todd EL. Impairment of caffeine clearance by chronic use of low-dose oestrogen-containing oral contraceptives. European Journal of Clinical Pharmacology 1985;28:425–428. 162 mg oral caffeine; 9 women on the pill and 9 matched controls.",
+   "url": "https://doi.org/10.1007/bf00544361"
+  },
+  "wahllander1989": {
+   "text": "Wahlländer A, Paumgartner G. Effect of ketoconazole and terbinafine on the pharmacokinetics of caffeine in healthy volunteers. European Journal of Clinical Pharmacology 1989;37:279–283. Control arm: 8 healthy men, 3 mg/kg intravenous caffeine.",
+   "url": "https://doi.org/10.1007/bf00679784"
+  },
+  "knutti1982": {
+   "text": "Knutti R, Rothweiler H, Schlatter C. The effect of pregnancy on the pharmacokinetics of caffeine. Archives of Toxicology Supplement 1982;5:187–192. Half-life 3 h in non-pregnant women, 10.5 h in the last four weeks of pregnancy; volume of distribution unchanged.",
+   "url": "https://doi.org/10.1007/978-3-642-68511-8_33"
+  },
+  "lane1992": {
+   "text": "Lane JD, Steege JF, Rupp SL, Kuhn CM. Menstrual cycle effects on caffeine elimination in the human female. European Journal of Clinical Pharmacology 1992;43:543–546. Clearance slower in the late luteal phase, related to progesterone; no size given in the abstract.",
+   "url": "https://doi.org/10.1007/bf02285099"
+  },
+  "blanchard1983": {
+   "text": "Blanchard J, Sawers SJ. The absolute bioavailability of caffeine in man. European Journal of Clinical Pharmacology 1983;24:93–98. Oral bioavailability essentially complete.",
+   "url": "https://doi.org/10.1007/bf00613933"
+  },
+  "fdacaffeine": {
+   "text": "US Food and Drug Administration. Spilling the beans: how much caffeine is too much? An 8-ounce cup of coffee holds about 80 to 100 mg of caffeine; 400 mg a day is the amount the FDA cites as not generally associated with dangerous effects in healthy adults.",
+   "url": "https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much"
+  },
+  "luzier1999": {
+   "text": "Luzier AB, Killian A, Wilton JH, Wilson MF, Forrest A, Kazierad DJ. Gender-related effects on metoprolol pharmacokinetics and pharmacodynamics in healthy volunteers. Clinical Pharmacology & Therapeutics 1999;66:594–601. 10 men and 10 women, 100 mg metoprolol tartrate twice daily; women had higher Cmax and AUC, same half-life, and a greater fall in exercise heart rate.",
+   "url": "https://doi.org/10.1053/cp.1999.v66.103400001"
+  },
+  "eugene2016": {
+   "text": "Eugene AR. Metoprolol dose equivalence in adult men and women based on gender differences: pharmacokinetic modeling and simulations. Medical Sciences 2016;4:18. One-compartment fit to the Luzier data (time to peak 1.35 h in men, 1.44 h in women; apparent clearance 253 vs 101 L/h); concludes 50 mg in women gives roughly the exposure of 100 mg in men.",
+   "url": "https://doi.org/10.3390/medsci4040018"
+  },
+  "lopressor2023": {
+   "text": "Lopressor (metoprolol tartrate) prescribing information, 2023, via openFDA (set id 0283bc9d-6998-493a-824a-d4c85f704111). Oral bioavailability about 50%; half-life 3 to 4 hours; volume of distribution 3.2 to 5.6 L/kg; metabolised by CYP2D6.",
+   "url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name:%22LOPRESSOR%22"
+  },
+  "zucker2020": {
+   "text": "Zucker I, Prendergast BJ. Sex differences in pharmacokinetics predict adverse drug reactions in women. Biology of Sex Differences 2020;11:32. Of 86 drugs, 76 had higher exposure in women; women report adverse reactions nearly twice as often as men.",
+   "url": "https://doi.org/10.1186/s13293-020-00308-5"
+  },
+  "fdazolpidem2013": {
+   "text": "US Food and Drug Administration. Drug Safety Communication: risk of next-morning impairment after use of insomnia drugs; FDA requires lower recommended doses for certain drugs containing zolpidem. 10 January 2013. Recommended dose for women halved from 10 mg to 5 mg.",
+   "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-drug-safety-communication-risk-next-morning-impairment-after-use-insomnia-drugs-fda-requires"
+  }
+ },
+ "drugs": [
+  {
+   "key": "acetaminophen",
+   "name": "Acetaminophen (paracetamol)",
+   "short": "Acetaminophen",
+   "what": "The most-used painkiller in the world. Cleared mainly by the liver attaching sugars to it (glucuronidation and sulphation), a step that runs faster in men and faster still in women on the pill.",
+   "regimen": {
+    "dose_mg": 1000,
+    "times": [
+     8,
+     14,
+     20
+    ],
+    "label": "1000 mg at 8 am, 2 pm and 8 pm",
+    "note": "A common over-the-counter pattern, within the 4 g daily limit on the label."
+   },
+   "unit": "µg/mL",
+   "weight_scaling": true,
+   "reference_lines": [
+    {
+     "value": 10,
+     "label": "≈ meaningful pain relief above this",
+     "source": "anderson2008"
+    }
+   ],
+   "shared": {
+    "F": {
+     "value": 0.89,
+     "unit": "fraction",
+     "source": "rawlins1977",
+     "note": "Oral bioavailability after a 1000 mg dose"
+    },
+    "ka": {
+     "value": 1.4,
+     "unit": "1/h",
+     "source": "rawlins1977",
+     "note": "Assumed: absorption half-life about 30 minutes for an immediate-release tablet, consistent with the peak at 30–60 minutes seen in oral studies. Not measured in the cited work.",
+     "derived": "assumption"
+    }
+   },
+   "profiles": {
+    "male": {
+     "name": "Men",
+     "V_per_kg": {
+      "value": 1.0907,
+      "unit": "L/kg",
+      "source": "abernethy1982",
+      "note": "77 L in control men of 70.6 kg",
+      "derived": "77 / 70.6"
+     },
+     "CL_per_kg": {
+      "value": 0.2745,
+      "unit": "L/h/kg",
+      "source": "abernethy1982",
+      "note": "323 mL/min in control men of 70.6 kg",
+      "derived": "323 × 60 / 1000 / 70.6"
+     },
+     "ref_weight": 70.6
+    },
+    "female": {
+     "name": "Women",
+     "V_per_kg": {
+      "value": 0.9455,
+      "unit": "L/kg",
+      "source": "abernethy1982",
+      "note": "52 L in control women of 55.0 kg",
+      "derived": "52 / 55.0"
+     },
+     "CL_per_kg": {
+      "value": 0.2476,
+      "unit": "L/h/kg",
+      "source": "abernethy1982",
+      "note": "227 mL/min in control women of 55.0 kg",
+      "derived": "227 × 60 / 1000 / 55.0"
+     },
+     "ref_weight": 55.0
+    },
+    "female_pill": {
+     "name": "Women on the pill",
+     "base": "female",
+     "CL_multiplier": {
+      "value": 1.49,
+      "unit": "×",
+      "source": "miners1983",
+      "note": "Clearance 49% greater in women using oral contraceptive steroids than in control women, from induced glucuronidation"
+     },
+     "ref_weight": 55.0
+    }
+   }
+  },
+  {
+   "key": "caffeine",
+   "name": "Caffeine",
+   "short": "Caffeine",
+   "what": "The most widely used psychoactive drug. Cleared by one liver enzyme, CYP1A2, which oestrogen slows down: the pill, and above all pregnancy, stretch a cup of coffee's stay in the body.",
+   "regimen": {
+    "dose_mg": 95,
+    "times": [
+     8,
+     13
+    ],
+    "label": "A cup of coffee (≈95 mg) at 8 am and 1 pm",
+    "note": "An 8-ounce cup holds about 80 to 100 mg."
+   },
+   "unit": "µg/mL",
+   "weight_scaling": true,
+   "reference_lines": [],
+   "shared": {
+    "F": {
+     "value": 1.0,
+     "unit": "fraction",
+     "source": "blanchard1983",
+     "note": "Oral bioavailability essentially complete"
+    }
+   },
+   "profiles": {
+    "female": {
+     "name": "Women, no hormonal contraception",
+     "V_per_kg": {
+      "value": 0.75,
+      "unit": "L/kg",
+      "source": "abernethy1985",
+      "note": "Control women"
+     },
+     "CL_per_kg": {
+      "value": 0.105,
+      "unit": "L/h/kg",
+      "source": "abernethy1985",
+      "note": "1.75 mL/min/kg in control women",
+      "derived": "1.75 × 60 / 1000"
+     },
+     "ka": {
+      "value": 4.672,
+      "unit": "1/h",
+      "source": "abernethy1985",
+      "note": "From the reported time to peak of 0.79 h",
+      "derived": "solve tmax = ln(ka/ke)/(ka − ke) with ke = ln2 / 5.37 h"
+     },
+     "half_life": {
+      "value": 5.37,
+      "unit": "h",
+      "source": "abernethy1985"
+     },
+     "ref_weight": 60
+    },
+    "female_pill": {
+     "name": "Women on the pill",
+     "V_per_kg": {
+      "value": 0.685,
+      "unit": "L/kg",
+      "source": "abernethy1985",
+      "note": "Women on low-dose oestrogen oral contraceptives for over 3 months"
+     },
+     "CL_per_kg": {
+      "value": 0.063,
+      "unit": "L/h/kg",
+      "source": "abernethy1985",
+      "note": "1.05 mL/min/kg",
+      "derived": "1.05 × 60 / 1000"
+     },
+     "ka": {
+      "value": 2.2084,
+      "unit": "1/h",
+      "source": "abernethy1985",
+      "note": "From the reported time to peak of 1.52 h",
+      "derived": "solve tmax = ln(ka/ke)/(ka − ke) with ke = ln2 / 7.88 h"
+     },
+     "half_life": {
+      "value": 7.88,
+      "unit": "h",
+      "source": "abernethy1985"
+     },
+     "ref_weight": 60
+    },
+    "female_pregnant": {
+     "name": "Women, late pregnancy",
+     "base": "female",
+     "CL_multiplier": {
+      "value": 0.5114,
+      "unit": "×",
+      "source": "knutti1982",
+      "note": "Half-life 10.5 h in the last four weeks of pregnancy with no change in volume of distribution, so clearance is scaled to give that half-life. That study's own non-pregnant baseline was 3 h, so the true slowing may be larger than drawn.",
+      "derived": "5.37 / 10.5"
+     },
+     "half_life": {
+      "value": 10.5,
+      "unit": "h",
+      "source": "knutti1982",
+      "note": "Last four weeks of pregnancy"
+     },
+     "ref_weight": 60
+    },
+    "male": {
+     "name": "Men",
+     "V_per_kg": {
+      "value": 0.6728,
+      "unit": "L/kg",
+      "source": "wahllander1989",
+      "note": "Derived from clearance and half-life in 8 healthy men",
+      "derived": "CL × t½ / ln 2"
+     },
+     "CL_per_kg": {
+      "value": 0.0804,
+      "unit": "L/h/kg",
+      "source": "wahllander1989",
+      "note": "1.34 mL/min/kg, control arm",
+      "derived": "1.34 × 60 / 1000"
+     },
+     "ka": {
+      "value": 4.672,
+      "unit": "1/h",
+      "source": "abernethy1985",
+      "note": "No oral time-to-peak in the male study; the women's value is used",
+      "derived": "assumption"
+     },
+     "half_life": {
+      "value": 5.8,
+      "unit": "h",
+      "source": "wahllander1989"
+     },
+     "ref_weight": 70
+    }
+   },
+   "notes": [
+    "Caffeine clearance also slows in the late luteal phase of the cycle, in step with progesterone (Lane 1992), by an amount the study did not quantify in its abstract, so no curve is drawn for it."
+   ]
+  },
+  {
+   "key": "metoprolol",
+   "name": "Metoprolol (S-metoprolol, the active form)",
+   "short": "Metoprolol",
+   "what": "One of the most prescribed heart drugs: a beta-blocker for high blood pressure, angina and after heart attacks. Broken down by CYP2D6 in the liver on its first pass, which lets more of it through in women.",
+   "regimen": {
+    "dose_mg": 100,
+    "times": [
+     8,
+     20
+    ],
+    "label": "100 mg metoprolol tartrate at 8 am and 8 pm",
+    "note": "The regimen of the study the parameters come from. S-metoprolol, the active enantiomer, is shown."
+   },
+   "unit": "ng/mL",
+   "weight_scaling": false,
+   "weight_note": "The study did not report body weights, so the weight slider is off for this drug.",
+   "reference_lines": [],
+   "shared": {
+    "F": {
+     "value": 1.0,
+     "unit": "fraction",
+     "source": "lopressor2023",
+     "note": "Clearance and volume here are apparent oral values, already divided by bioavailability, which the label puts near 50%"
+    }
+   },
+   "profiles": {
+    "male": {
+     "name": "Men",
+     "CL": {
+      "value": 239.8082,
+      "unit": "L/h",
+      "source": "luzier1999",
+      "note": "Apparent CL/F from the steady-state S-metoprolol AUC of 417 µg·h/L per 100 mg dose",
+      "derived": "100 mg / 0.417 mg·h/L"
+     },
+     "V": {
+      "value": 1210.8951,
+      "unit": "L",
+      "source": "lopressor2023",
+      "note": "Apparent V/F from clearance and a 3.5 h half-life (label: 3 to 4 h; no sex difference in the study)",
+      "derived": "CL × t½ / ln 2"
+     },
+     "ka": {
+      "value": 1.8553,
+      "unit": "1/h",
+      "source": "eugene2016",
+      "note": "Solved from the 1.35 h time-to-peak in the published fit",
+      "derived": "solve tmax = ln(ka/ke)/(ka − ke)"
+     },
+     "half_life": {
+      "value": 3.5,
+      "unit": "h",
+      "source": "lopressor2023"
+     },
+     "ref_weight": null
+    },
+    "female": {
+     "name": "Women",
+     "CL": {
+      "value": 115.3403,
+      "unit": "L/h",
+      "source": "luzier1999",
+      "note": "Apparent CL/F from the steady-state S-metoprolol AUC of 867 µg·h/L per 100 mg dose",
+      "derived": "100 mg / 0.867 mg·h/L"
+     },
+     "V": {
+      "value": 582.4028,
+      "unit": "L",
+      "source": "lopressor2023",
+      "note": "Apparent V/F from clearance and a 3.5 h half-life",
+      "derived": "CL × t½ / ln 2"
+     },
+     "ka": {
+      "value": 1.6848,
+      "unit": "1/h",
+      "source": "eugene2016",
+      "note": "Solved from the 1.44 h time-to-peak in the published fit",
+      "derived": "solve tmax = ln(ka/ke)/(ka − ke)"
+     },
+     "half_life": {
+      "value": 3.5,
+      "unit": "h",
+      "source": "lopressor2023"
+     },
+     "ref_weight": null
+    }
+   },
+   "alt_dose": {
+    "profile": "female",
+    "dose_mg": 50,
+    "label": "Women at 50 mg, the modelling paper's proposed equivalent",
+    "source": "eugene2016"
+   },
+   "notes": [
+    "Luzier 1999 measured the people and reported the exposures; the label supplies the half-life; Eugene 2016's fit supplies the time-to-peak. The volume quoted in Eugene's table is inconsistent with its own half-life and is not used."
+   ]
+  }
+ ]
+}

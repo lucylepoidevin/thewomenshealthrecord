@@ -49,11 +49,12 @@ export default function Home() {
           <h2 className="display text-2xl font-medium">Experiments</h2>
           <span className="text-xs tracking-wide text-ink-3">Interactive, built on public data, one at a time</span>
         </div>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2">
           {[
             { to: '/cycling-brain', n: 1, title: 'The cycling brain', dek: 'Thirty consecutive mornings across a menstrual cycle, hormones drawn alongside. Drag through the month and watch her brain, with any of 23 structures measured each day.' },
             { to: '/pregnancy-brain', n: 2, title: 'The pregnant brain', dek: 'Twenty-seven scans from three weeks before conception to two years after the birth. Watch a brain change through pregnancy, every structure measured against its pre-pregnancy size.' },
             { to: '/male-brain', n: 3, title: "A man's month", dek: 'The companion study: forty scans in thirty days at 7 am and 8 pm, on the same scanner, with testosterone and cortisol alongside. His brain keeps a daily rhythm; her month sits beside it.' },
+            { to: '/your-dose', n: 4, title: 'Your body, your dose', dek: 'Same pill, different body. Acetaminophen, caffeine and a common heart drug drawn over a day in a woman\'s body and a man\'s, from the published sex-specific numbers. On the pill, pregnant, any weight.' },
           ].map(e => (
             <Link key={e.to} to={e.to} className="group block rounded-3xl p-6 sm:p-8 transition hover:-translate-y-0.5" style={{ background: '#180C12', color: '#FBEEF2' }}>
               <div className="flex items-center justify-between">
