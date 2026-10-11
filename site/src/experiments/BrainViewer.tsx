@@ -101,9 +101,12 @@ export default function BrainViewer({ image, prefetch = [], highlight, labelName
       nv.updateGLVolume()
       shown.current = image.t1
       onLoading?.(false)
-      // quietly warm the cache in the caller's priority order
+      // quietly warm the cache in the caller's priority order; on small screens or
+      // metered connections only the neighbours, since the full set is tens of megabytes
+      const nc = (navigator as Navigator & { connection?: { saveData?: boolean; effectiveType?: string } }).connection
+      const full = !nc?.saveData && (nc?.effectiveType ?? '4g') === '4g' && window.innerWidth >= 768
       const next = () => {
-        const p = prefetchRef.current.find(x => !cache.current.has(x.t1))
+        const p = prefetchRef.current.slice(0, full ? undefined : 4).find(x => !cache.current.has(x.t1))
         if (!p) return
         Promise.all([load(p.t1), load(p.labels)]).finally(() => setTimeout(next, 60))
       }

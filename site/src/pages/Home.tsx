@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { CHAPTERS } from '../lib/chapters'
+import { EXPERIMENTS } from '../experiments/list'
 
 export default function Home() {
   return (
@@ -46,17 +47,12 @@ export default function Home() {
 
       <section className="mx-auto max-w-6xl px-4 pb-24">
         <div className="flex items-baseline justify-between mb-6">
-          <h2 className="display text-2xl font-medium">Experiments</h2>
+          <Link to="/experiments" className="display text-2xl font-medium hover:text-berry">Experiments →</Link>
           <span className="text-xs tracking-wide text-ink-3">Interactive, built on public data, one at a time</span>
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
-          {[
-            { to: '/cycling-brain', n: 1, title: 'The cycling brain', dek: 'Thirty consecutive mornings across a menstrual cycle, hormones drawn alongside. Drag through the month and watch her brain, with any of 23 structures measured each day.' },
-            { to: '/pregnancy-brain', n: 2, title: 'The pregnant brain', dek: 'Twenty-seven scans from three weeks before conception to two years after the birth. Watch a brain change through pregnancy, every structure measured against its pre-pregnancy size.' },
-            { to: '/male-brain', n: 3, title: "A man's month", dek: 'The companion study: forty scans in thirty days at 7 am and 8 pm, on the same scanner, with testosterone and cortisol alongside. His brain keeps a daily rhythm; her month sits beside it.' },
-            { to: '/your-dose', n: 4, title: 'Your body, your dose', dek: 'Same pill, different body. Acetaminophen, caffeine and a common heart drug drawn over a day in a woman\'s body and a man\'s, from the published sex-specific numbers. On the pill, pregnant, any weight.' },
-          ].map(e => (
-            <Link key={e.to} to={e.to} className="group block rounded-3xl p-6 sm:p-8 transition hover:-translate-y-0.5" style={{ background: '#180C12', color: '#FBEEF2' }}>
+          {EXPERIMENTS.map(e => (
+            <Link key={e.path} to={e.path} className="group block rounded-3xl p-6 sm:p-8 transition hover:-translate-y-0.5" style={{ background: '#180C12', color: '#FBEEF2' }}>
               <div className="flex items-center justify-between">
                 <span className="inline-flex h-7 min-w-7 items-center justify-center rounded-full px-2 text-xs font-bold" style={{ background: '#F3A3C2', color: '#180C12' }}>{e.n}</span>
                 <span className="text-[10px] font-semibold uppercase tracking-[0.18em]" style={{ color: '#A48C97' }}>Live</span>

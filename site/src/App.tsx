@@ -24,15 +24,10 @@ import MaleBrainData from './male/pages/MaleBrainData'
 import YourDose from './dose/pages/YourDose'
 import YourDoseMethods from './dose/pages/YourDoseMethods'
 import YourDoseData from './dose/pages/YourDoseData'
+import Experiments from './experiments/pages/Experiments'
 import { CHAPTERS } from './lib/chapters'
 
-/** Interactive experiments live on the inverted colourway and get their own dark tabs. */
-const EXPERIMENTS = [
-  { path: '/cycling-brain', label: 'The cycling brain' },
-  { path: '/pregnancy-brain', label: 'The pregnant brain' },
-  { path: '/male-brain', label: "A man's month" },
-  { path: '/your-dose', label: 'Your dose' },
-]
+import { EXPERIMENTS } from './experiments/list'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -43,7 +38,7 @@ function ScrollToTop() {
 /** Experiments run on the inverted colourway: dark plum, blush type. */
 function Theme() {
   const { pathname } = useLocation()
-  const dark = EXPERIMENTS.some(e => pathname.startsWith(e.path))
+  const dark = pathname.startsWith('/experiments') || EXPERIMENTS.some(e => pathname.startsWith(e.path))
   useEffect(() => {
     if (dark) document.documentElement.dataset.theme = 'dark'
     else delete document.documentElement.dataset.theme
@@ -92,6 +87,7 @@ export default function App() {
           <Route path="/male-brain" element={<MaleBrain />} />
           <Route path="/male-brain/methods" element={<MaleBrainMethods />} />
           <Route path="/male-brain/data" element={<MaleBrainData />} />
+          <Route path="/experiments" element={<Experiments />} />
           <Route path="/your-dose" element={<YourDose />} />
           <Route path="/your-dose/methods" element={<YourDoseMethods />} />
           <Route path="/your-dose/data" element={<YourDoseData />} />

@@ -5,6 +5,7 @@ import Cite, { SourceList } from '../components/Cite'
 import { FindingsProse, FindingsTable } from '../components/Findings'
 import { usePregnancy, fmt, type Pregnancy } from '../lib/data'
 import { jumpTo } from '../../cycling/lib/jump'
+import ExperimentNav from '../../experiments/ExperimentNav'
 
 function KeyNumbers({ data }: { data: Pregnancy }) {
   const ss = data.sessions
@@ -67,7 +68,7 @@ export default function PregnantBrain() {
           by the corpus luteum and then by the placenta, rose to 50 ng/mL by mid-pregnancy and over 100 near term. Both collapse within days of birth: at the first visit after it, week 43, estradiol was 9 pg/mL and progesterone 0.12.<Cite id="openneuro" />
         </p>
         <p>
-          The brain is dense with receptors for both hormones. Whatever they do to it across a cycle, pregnancy does for nine months at fifty times the dose.
+          The brain is dense with receptors for both hormones. Whatever they do to it across a cycle, pregnancy does for nine months at many times the dose: estradiol at nearly fifty times the cycle's peak, progesterone at seven.
         </p>
       </>
     ) },
@@ -94,9 +95,9 @@ export default function PregnantBrain() {
         <h2 className="display text-3xl font-medium mb-4">What the original study found</h2>
         <p>
           The lab's own analysis, with a different segmentation and with cortical thickness and diffusion imaging we did not use, reported pronounced decreases in grey-matter volume
-          and cortical thickness across the brain, in step with the rising hormones, alongside increases in ventricle volume and cerebrospinal fluid. White matter went the
-          other way: its microstructural integrity rose through the second trimester and returned to baseline by birth. Few regions were untouched, and most of the grey-matter
-          reduction was still present two years later.<Cite id="pritschet2024" />
+          and cortical thickness across the brain, about 4% in roughly 80% of the regions measured, in step with the rising hormones, alongside increases in ventricle volume and
+          cerebrospinal fluid. White matter went the other way: its microstructural integrity rose by about a tenth, peaking around the end of the second trimester, and fell back
+          after the birth. Few regions were untouched, and much of the grey-matter reduction was still present two years later.<Cite id="pritschet2024" />
         </p>
         <p>
           That matches the only earlier evidence, a 2017 study that scanned women before and after a first pregnancy and found grey-matter reductions in the regions used for
@@ -165,6 +166,7 @@ export default function PregnantBrain() {
       {!data && !error && <p className="mx-auto max-w-2xl px-4 text-center text-sm text-ink-3">Loading the scans…</p>}
       {data && <Viewer data={data} />}
       <div className="mt-16"><Story blocks={blocks} /></div>
+      <ExperimentNav current="/pregnancy-brain" />
     </div>
   )
 }

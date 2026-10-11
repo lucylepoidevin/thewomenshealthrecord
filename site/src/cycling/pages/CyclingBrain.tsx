@@ -5,6 +5,7 @@ import Cite, { SourceList } from '../components/Cite'
 import { FindingsProse, FindingsTable } from '../components/Findings'
 import { useCycle, fmt } from '../lib/data'
 import { jumpTo } from '../lib/jump'
+import ExperimentNav from '../../experiments/ExperimentNav'
 
 function KeyNumbers({ cycle }: { cycle: NonNullable<ReturnType<typeof useCycle>['cycle']> }) {
   const d = cycle.days
@@ -141,8 +142,8 @@ export default function Home() {
         </p>
         <p>
           <strong>And still:</strong> for most of the history of neuroscience, the menstrual cycle was treated as noise to exclude rather than a
-          variable to study. Women were left out of brain imaging studies for decades because their hormones "complicated" the data. This page exists
-          because one lab decided the complication was the point.
+          variable to study. Females were left out of neuroscience for decades, in animals and in people, on the belief that their hormones made them too variable to study, a belief that the evidence does not
+          support.<Cite id="beery2011" /> This page exists because one lab decided the variation was the point.
         </p>
       </>
     ) },
@@ -194,7 +195,7 @@ export default function Home() {
       <div className="mt-16">
         <Story blocks={blocks} />
       </div>
-
+      <ExperimentNav current="/cycling-brain" />
     </div>
   )
 }

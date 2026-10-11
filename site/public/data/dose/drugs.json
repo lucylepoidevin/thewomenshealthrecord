@@ -14,9 +14,9 @@
    "text": "Rawlins MD, Henderson DB, Hijab AR. Pharmacokinetics of paracetamol (acetaminophen) after intravenous and oral administration. European Journal of Clinical Pharmacology 1977;11:283–286. Oral bioavailability 0.89 after a 1000 mg dose.",
    "url": "https://doi.org/10.1007/bf00607678"
   },
-  "anderson2008": {
-   "text": "Anderson BJ. Paracetamol (acetaminophen): mechanisms of action. Paediatric Anaesthesia 2008;18:915–921. Plasma concentrations near 10 mg/L are associated with meaningful analgesia.",
-   "url": "https://doi.org/10.1111/j.1460-9592.2008.02764.x"
+  "anderson1999": {
+   "text": "Anderson BJ, Holford NH, Woollard GA, Kanagasundaram S, Mahadevan M. Perioperative pharmacodynamics of acetaminophen analgesia in children. Anesthesiology 1999;90:411–421. An effect-site concentration of 10 mg/L was needed for a mean pain score of 3.6 out of 10.",
+   "url": "https://doi.org/10.1097/00000542-199902000-00014"
   },
   "abernethy1985": {
    "text": "Abernethy DR, Todd EL. Impairment of caffeine clearance by chronic use of low-dose oestrogen-containing oral contraceptives. European Journal of Clinical Pharmacology 1985;28:425–428. 162 mg oral caffeine; 9 women on the pill and 9 matched controls.",
@@ -54,13 +54,17 @@
    "text": "Lopressor (metoprolol tartrate) prescribing information, 2023, via openFDA (set id 0283bc9d-6998-493a-824a-d4c85f704111). Oral bioavailability about 50%; half-life 3 to 4 hours; volume of distribution 3.2 to 5.6 L/kg; metabolised by CYP2D6.",
    "url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name:%22LOPRESSOR%22"
   },
+  "toprol2024": {
+   "text": "Toprol-XL (metoprolol succinate) prescribing information, via openFDA. Clinical pharmacology: \"Age, gender, and race had no significant effects on metoprolol pharmacokinetics.\"",
+   "url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name:%22TOPROL-XL%22"
+  },
   "zucker2020": {
    "text": "Zucker I, Prendergast BJ. Sex differences in pharmacokinetics predict adverse drug reactions in women. Biology of Sex Differences 2020;11:32. Of 86 drugs, 76 had higher exposure in women; women report adverse reactions nearly twice as often as men.",
    "url": "https://doi.org/10.1186/s13293-020-00308-5"
   },
   "fdazolpidem2013": {
-   "text": "US Food and Drug Administration. Drug Safety Communication: risk of next-morning impairment after use of insomnia drugs; FDA requires lower recommended doses for certain drugs containing zolpidem. 10 January 2013. Recommended dose for women halved from 10 mg to 5 mg.",
-   "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-drug-safety-communication-risk-next-morning-impairment-after-use-insomnia-drugs-fda-requires"
+   "text": "US Food and Drug Administration. Drug Safety Communication: risk of next-morning impairment after use of insomnia drugs; FDA requires lower recommended doses for certain drugs containing zolpidem (Ambien, Ambien CR, Edluar, Zolpimist). 10 January 2013. Recommended dose for women lowered from 10 mg to 5 mg (immediate release) and 12.5 mg to 6.25 mg (extended release), because women eliminate zolpidem more slowly.",
+   "url": "https://web.archive.org/web/20130115000000*/http://www.fda.gov/Drugs/DrugSafety/ucm334033.htm"
   }
  },
  "drugs": [
@@ -84,8 +88,8 @@
    "reference_lines": [
     {
      "value": 10,
-     "label": "≈ meaningful pain relief above this",
-     "source": "anderson2008"
+     "label": "≈ 10 µg/mL, the level tied to meaningful pain relief",
+     "source": "anderson1999"
     }
    ],
    "shared": {

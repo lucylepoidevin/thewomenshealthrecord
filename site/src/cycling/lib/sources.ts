@@ -12,6 +12,7 @@ const LIST: Omit<Source, 'n'>[] = [
   { id: 'heller2025', text: 'Heller C, Güllmar D, Colic L, et al. Hormonal milieu influences whole-brain structural dynamics across the menstrual cycle using dense sampling in multiple individuals. Nature Neuroscience 2025;28:2588.', url: 'https://doi.org/10.1038/s41593-025-02066-2' },
   { id: 'niivue', text: 'NiiVue: a WebGL2 medical image viewer. Hanayik T, Rorden C, et al.', url: 'https://github.com/niivue/niivue' },
   { id: 'jacobslab', text: 'Jacobs Lab, UC Santa Barbara. 28andMe project page.', url: 'https://jacobs.psych.ucsb.edu/research/28-and-me' },
+  { id: 'beery2011', text: 'Beery AK, Zucker I. Sex bias in neuroscience and biomedical research. Neuroscience & Biobehavioral Reviews 2011;35:565–572. Male bias was most prominent in neuroscience, with single-sex studies of males outnumbering females 5.5 to 1; the belief that females are intrinsically more variable is without foundation.', url: 'https://doi.org/10.1016/j.neubiorev.2010.07.002' },
   { id: 'monai', text: 'Cardoso MJ, et al. MONAI: An open-source framework for deep learning in healthcare. 2022.', url: 'https://monai.io/' },
 ]
 

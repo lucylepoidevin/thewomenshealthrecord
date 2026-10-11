@@ -4,6 +4,7 @@ import Simulator from '../components/Simulator'
 import { Cite, SourceList } from '../components/Cite'
 import { useDrugs, type DrugsFile } from '../lib/data'
 import { jumpTo } from '../../cycling/lib/jump'
+import ExperimentNav from '../../experiments/ExperimentNav'
 
 function C({ file, id }: { file: DrugsFile; id: string }) { return <Cite file={file} id={id} /> }
 
@@ -14,9 +15,9 @@ export default function YourDose() {
       <>
         <h2 className="display text-3xl font-medium mb-4">The dose was set on a body that may not be yours</h2>
         <p>
-          In January 2013 the US Food and Drug Administration did something it had never done: it told doctors to halve a drug's recommended dose for women. The drug was zolpidem, the sleeping
-          pill sold as Ambien. Women cleared it more slowly, so the next morning they still had enough in their blood to impair driving. The dose had been set, like most doses, on a mixed group
-          dominated by men's results.<C file={data} id="fdazolpidem2013" />
+          In January 2013 the US Food and Drug Administration, for the first time, told doctors to prescribe a lower dose of a drug to women: zolpidem, the sleeping pill sold as Ambien, went from
+          10 mg to 5 mg. Women cleared it more slowly, so the next morning they still had enough in their blood to impair driving. The dose had been set, like most doses, on trials dominated by
+          men's results.<C file={data} id="fdazolpidem2013" />
         </p>
         <p>
           Zolpidem was the case that made the news. It was not the exception. A 2020 review went looking for every drug with published sex-specific pharmacokinetics and found 86. In 76 of them,
@@ -62,8 +63,8 @@ export default function YourDose() {
         <p>
           <strong>Metoprolol.</strong> A beta-blocker taken by millions for blood pressure and after heart attacks. Twenty healthy volunteers took 100 mg twice a day; the women ended up with about
           twice the exposure of the men, and their heart rates fell further on exercise, because more of the drug got through the liver's first pass.<C file={data} id="luzier1999" /> A later
-          modelling study concluded that 50 mg in a woman gives roughly the exposure of 100 mg in a man; tick the box to see that curve.<C file={data} id="eugene2016" /> The label still describes
-          one dose for everyone and says sex has no significant effect.<C file={data} id="lopressor2023" />
+          modelling study concluded that 50 mg in a woman gives roughly the exposure of 100 mg in a man; tick the box to see that curve.<C file={data} id="eugene2016" /> The immediate-release label describes one dose for
+          everyone,<C file={data} id="lopressor2023" /> and the extended-release label states that sex has no significant effect on the drug's kinetics.<C file={data} id="toprol2024" />
         </p>
       </>
     ) },
@@ -109,6 +110,7 @@ export default function YourDose() {
       {!data && !error && <p className="mx-auto max-w-2xl px-4 text-center text-sm text-ink-3">Loading…</p>}
       {data && <Simulator file={data} />}
       <div className="mt-16"><Story blocks={blocks} /></div>
+      <ExperimentNav current="/your-dose" />
     </div>
   )
 }

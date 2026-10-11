@@ -5,6 +5,7 @@ import Cite, { SourceList } from '../components/Cite'
 import { FindingsProse, CompareTable } from '../components/Findings'
 import { useMale, fmt, type Male } from '../lib/data'
 import { jumpTo } from '../../cycling/lib/jump'
+import ExperimentNav from '../../experiments/ExperimentNav'
 
 function KeyNumbers({ data }: { data: Male }) {
   const hs = data.hormone_summary, tb = data.stats.total_brain
@@ -140,6 +141,7 @@ export default function MaleBrain() {
       {!data && !error && <p className="mx-auto max-w-2xl px-4 text-center text-sm text-ink-3">Loading the scans…</p>}
       {data && <Viewer data={data} />}
       <div className="mt-16"><Story blocks={blocks} /></div>
+      <ExperimentNav current="/male-brain" />
     </div>
   )
 }
