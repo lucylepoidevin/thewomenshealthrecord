@@ -115,3 +115,13 @@ input[type="range"].day-slider::-webkit-slider-thumb { -webkit-appearance: none;
 input[type="range"].day-slider::-moz-range-thumb { width: 26px; height: 26px; border-radius: 50%; background: var(--color-blush); border: 3px solid var(--color-berry); cursor: grab; }
 input[type="range"].day-slider:active::-webkit-slider-thumb { cursor: grabbing; }
 .prose-step strong { font-weight: 600; color: var(--color-berry); }
+
+/* Experiment tabs: dark chips after the main nav, inverted again on the dark theme */
+.nav-divider { display: inline-block; width: 1px; height: 14px; background: var(--color-hairline); margin: 0 2px; align-self: center; }
+.nav-exp { display: inline-flex; align-items: center; border-radius: 999px; padding: 4px 11px; font-size: 11px; letter-spacing: 0.02em;
+  background: #180C12; color: #F3A3C2; border: 1px solid #180C12; transition: background 160ms, color 160ms; }
+.nav-exp:hover { background: #2a1520; }
+.nav-exp.is-active { background: #F3A3C2; color: #180C12; border-color: #F3A3C2; }
+:root[data-theme="dark"] .nav-exp { background: #2a1520; color: #F3A3C2; border-color: #4a2a3a; }
+:root[data-theme="dark"] .nav-exp:hover { background: #3a2430; }
+:root[data-theme="dark"] .nav-exp.is-active { background: #F3A3C2; color: #180C12; border-color: #F3A3C2; }

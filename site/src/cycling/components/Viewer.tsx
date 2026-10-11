@@ -1,10 +1,10 @@
 import { useCallback, useMemo, useState } from 'react'
-import BrainViewer, { type View } from './BrainViewer'
+import BrainViewer, { type View } from '../../experiments/BrainViewer'
 import HormoneChart from './charts/HormoneChart'
 import VolumeChart from './charts/VolumeChart'
 import DaySlider from './DaySlider'
-import RegionPicker from './RegionPicker'
-import { fmt, type Cycle } from '../lib/data'
+import RegionPicker from '../../experiments/RegionPicker'
+import { brainUrl, fmt, type Cycle } from '../lib/data'
 
 const VIEWS: { key: View; label: string }[] = [
   { key: 'coronal', label: 'Coronal' }, { key: 'axial', label: 'Axial' }, { key: 'sagittal', label: 'Sagittal' }, { key: 'multi', label: 'All three' },
@@ -21,6 +21,8 @@ export default function Viewer({ cycle }: { cycle: Cycle }) {
   const highlight = useMemo(() => region.labels, [region])
   const stats = cycle.stats[regionKey]
   const cur = cycle.days[day - 1]
+  const image = useMemo(() => ({ t1: brainUrl(day, 't1'), labels: brainUrl(day, 'labels') }), [day])
+  const prefetch = useMemo(() => [day + 1, day - 1, day + 2, day - 2, ...Array.from({ length: 30 }, (_, i) => i + 1)].filter(d => d >= 1 && d <= 30).map(d => ({ t1: brainUrl(d, 't1'), labels: brainUrl(d, 'labels') })), [day])
 
   return (
     <section id="viewer" className="mx-auto max-w-6xl px-4">
@@ -29,7 +31,7 @@ export default function Viewer({ cycle }: { cycle: Cycle }) {
           {/* brain */}
           <div className="flex flex-col gap-3">
             <div className="brain-stage aspect-square sm:aspect-[4/3.6] lg:aspect-auto lg:h-[520px]">
-              <BrainViewer day={day} highlight={highlight} labelNames={cycle.labels} center={region.center_mm} view={view} onLoading={setLoading} />
+              <BrainViewer image={image} prefetch={prefetch} highlight={highlight} labelNames={cycle.labels} center={region.center_mm} view={view} onLoading={setLoading} />
               <div className="pointer-events-none absolute left-3 top-3 flex flex-col items-start gap-1 text-[11px] font-semibold tracking-wide text-[rgba(251,238,242,0.9)]">
                 <span className="rounded-full bg-[rgba(0,0,0,0.45)] px-2.5 py-1 backdrop-blur">Day {day} · T1w MRI</span>
                 {loading && <span className="rounded-full bg-[rgba(0,0,0,0.45)] px-2.5 py-1 backdrop-blur text-rose">loading scan…</span>}

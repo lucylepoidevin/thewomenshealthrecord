@@ -1,14 +1,18 @@
 import { useEffect, useRef, useState } from 'react'
 import { Niivue, NVImage, SLICE_TYPE, DRAG_MODE } from '@niivue/niivue'
-import { brainUrl } from '../lib/data'
 
 export type View = 'coronal' | 'axial' | 'sagittal' | 'multi'
 const SLICE: Record<View, SLICE_TYPE> = {
   coronal: SLICE_TYPE.CORONAL, axial: SLICE_TYPE.AXIAL, sagittal: SLICE_TYPE.SAGITTAL, multi: SLICE_TYPE.MULTIPLANAR,
 }
 
+export type ImagePair = { t1: string; labels: string }
+
 type Props = {
-  day: number
+  /** the scan to show */
+  image: ImagePair
+  /** other scans to warm the cache with, in priority order */
+  prefetch?: ImagePair[]
   /** label ids (UNesT 133 atlas) to paint; everything else stays transparent */
   highlight: number[]
   labelNames: Record<string, string>
@@ -33,17 +37,20 @@ function labelColormap(highlight: number[], names: Record<string, string>) {
 }
 
 /**
- * NiiVue canvas showing one day's T1w scan in MNI305 space with the chosen
- * region painted over it. Volumes are decoded once and cached, so scrubbing
- * the day slider swaps already-loaded images rather than refetching.
+ * NiiVue canvas showing one T1w scan in MNI305 space with the chosen region
+ * painted over it. Shared by every experiment. Volumes are decoded once and
+ * cached, so scrubbing a slider swaps already-loaded images rather than
+ * refetching.
  */
-export default function BrainViewer({ day, highlight, labelNames, center, view, onLoading }: Props) {
+export default function BrainViewer({ image, prefetch = [], highlight, labelNames, center, view, onLoading }: Props) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
   const nvRef = useRef<Niivue | null>(null)
   const cache = useRef(new Map<string, Promise<NVImage>>())
   const centerRef = useRef(center)
   centerRef.current = center
-  const shown = useRef<number | null>(null)
+  const shown = useRef<string | null>(null)
+  const prefetchRef = useRef(prefetch)
+  prefetchRef.current = prefetch
   const [ready, setReady] = useState(false)
 
   const load = (url: string) => {
@@ -80,7 +87,7 @@ export default function BrainViewer({ day, highlight, labelNames, center, view, 
     if (!nv || !ready) return
     let cancelled = false
     onLoading?.(true)
-    Promise.all([load(brainUrl(day, 't1')), load(brainUrl(day, 'labels'))]).then(([t1, lab]) => {
+    Promise.all([load(image.t1), load(image.labels)]).then(([t1, lab]) => {
       if (cancelled) return
       const keep = Array.from(nv.scene.crosshairPos) as [number, number, number]
       while (nv.volumes.length) nv.removeVolume(nv.volumes[0])
@@ -92,22 +99,19 @@ export default function BrainViewer({ day, highlight, labelNames, center, view, 
       const c = centerRef.current
       nv.scene.crosshairPos = shown.current === null && c ? nv.mm2frac([c[0], c[1], c[2]]) : keep
       nv.updateGLVolume()
-      shown.current = day
+      shown.current = image.t1
       onLoading?.(false)
-      // quietly warm the cache for the neighbouring days, then the rest
-      const order = [day + 1, day - 1, day + 2, day - 2, ...Array.from({ length: 30 }, (_, i) => i + 1)]
-      const seen = new Set<number>()
+      // quietly warm the cache in the caller's priority order
       const next = () => {
-        const d = order.find(x => x >= 1 && x <= 30 && !seen.has(x) && !cache.current.has(brainUrl(x, 't1')))
-        if (d === undefined) return
-        seen.add(d)
-        Promise.all([load(brainUrl(d, 't1')), load(brainUrl(d, 'labels'))]).finally(() => setTimeout(next, 60))
+        const p = prefetchRef.current.find(x => !cache.current.has(x.t1))
+        if (!p) return
+        Promise.all([load(p.t1), load(p.labels)]).finally(() => setTimeout(next, 60))
       }
       setTimeout(next, 300)
     }).catch(() => onLoading?.(false))
     return () => { cancelled = true }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [day, ready])
+  }, [image.t1, image.labels, ready])
 
   // repaint the region without reloading
   useEffect(() => {
@@ -128,7 +132,7 @@ export default function BrainViewer({ day, highlight, labelNames, center, view, 
     if (!nv || !ready || !center || nv.volumes.length === 0) return
     nv.scene.crosshairPos = nv.mm2frac([center[0], center[1], center[2]])
     nv.drawScene()
-  }, [center, ready, day])
+  }, [center, ready, image.t1])
 
   return <canvas ref={canvasRef} />
 }

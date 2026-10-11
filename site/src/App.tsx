@@ -15,7 +15,16 @@ import ComingSoon from './chapters/ComingSoon'
 import CyclingBrain from './cycling/pages/CyclingBrain'
 import CyclingBrainMethods from './cycling/pages/CyclingBrainMethods'
 import CyclingBrainData from './cycling/pages/CyclingBrainData'
+import PregnantBrain from './pregnancy/pages/PregnantBrain'
+import PregnantBrainMethods from './pregnancy/pages/PregnantBrainMethods'
+import PregnantBrainData from './pregnancy/pages/PregnantBrainData'
 import { CHAPTERS } from './lib/chapters'
+
+/** Interactive experiments live on the inverted colourway and get their own dark tabs. */
+const EXPERIMENTS = [
+  { path: '/cycling-brain', label: 'The cycling brain' },
+  { path: '/pregnancy-brain', label: 'The pregnant brain' },
+]
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -26,7 +35,7 @@ function ScrollToTop() {
 /** Experiments run on the inverted colourway: dark plum, blush type. */
 function Theme() {
   const { pathname } = useLocation()
-  const dark = pathname.startsWith('/cycling-brain')
+  const dark = EXPERIMENTS.some(e => pathname.startsWith(e.path))
   useEffect(() => {
     if (dark) document.documentElement.dataset.theme = 'dark'
     else delete document.documentElement.dataset.theme
@@ -48,10 +57,14 @@ export default function App() {
           <nav className="flex flex-wrap items-center gap-x-4 gap-y-1 text-[12px] sm:text-[13px] font-semibold tracking-wide">
             <NavLink to="/" end className={({ isActive }) => isActive ? 'text-berry font-medium' : 'text-ink-2 hover:text-berry'}>Chapters</NavLink>
             <NavLink to="/record" className={({ isActive }) => isActive ? 'text-berry font-medium' : 'text-ink-2 hover:text-berry'}>The record</NavLink>
-            <NavLink to="/cycling-brain" className={({ isActive }) => isActive ? 'text-berry font-medium' : 'text-ink-2 hover:text-berry'}>The cycling brain</NavLink>
             <NavLink to="/methods" className={({ isActive }) => isActive ? 'text-berry font-medium' : 'text-ink-2 hover:text-berry'}>Methods</NavLink>
             <NavLink to="/data" className={({ isActive }) => isActive ? 'text-berry font-medium' : 'text-ink-2 hover:text-berry'}>Data</NavLink>
             <NavLink to="/about" className={({ isActive }) => isActive ? 'text-berry font-medium' : 'text-ink-2 hover:text-berry'}>About</NavLink>
+            {/* Experiments: dark chips, set apart from the chapters */}
+            <span className="nav-divider" aria-hidden />
+            {EXPERIMENTS.map(e => (
+              <NavLink key={e.path} to={e.path} className={({ isActive }) => `nav-exp ${isActive ? 'is-active' : ''}`}>{e.label}</NavLink>
+            ))}
           </nav>
         </div>
       </header>
@@ -65,6 +78,9 @@ export default function App() {
           <Route path="/cycling-brain" element={<CyclingBrain />} />
           <Route path="/cycling-brain/methods" element={<CyclingBrainMethods />} />
           <Route path="/cycling-brain/data" element={<CyclingBrainData />} />
+          <Route path="/pregnancy-brain" element={<PregnantBrain />} />
+          <Route path="/pregnancy-brain/methods" element={<PregnantBrainMethods />} />
+          <Route path="/pregnancy-brain/data" element={<PregnantBrainData />} />
           <Route path="/chapters/tested-on-men" element={<Chapter1 />} />
           <Route path="/chapters/pain-gap" element={<Chapter2 />} />
           <Route path="/chapters/funding-vs-burden" element={<Chapter3 />} />

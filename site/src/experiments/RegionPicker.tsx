@@ -1,11 +1,11 @@
-import type { Region } from '../lib/data'
+export type Region = { name: string; labels: number[]; group: string; center_mm?: number[] }
 
-type Props = { regions: Record<string, Region>; value: string; onChange: (k: string) => void }
+type Props = { regions: Record<string, Region>; value: string; onChange: (k: string) => void; order?: string[] }
 
 const ORDER = ['medial temporal lobe', 'subcortical', 'temporal', 'cortex', 'whole brain', 'fluid']
 
-export default function RegionPicker({ regions, value, onChange }: Props) {
-  const groups = ORDER.map(g => ({ g, keys: Object.keys(regions).filter(k => regions[k].group === g) })).filter(x => x.keys.length)
+export default function RegionPicker({ regions, value, onChange, order = ORDER }: Props) {
+  const groups = order.map(g => ({ g, keys: Object.keys(regions).filter(k => regions[k].group === g) })).filter(x => x.keys.length)
   return (
     <label className="flex flex-col gap-1 text-xs font-semibold tracking-wide text-ink-2">
       <span className="eyebrow">Highlight</span>

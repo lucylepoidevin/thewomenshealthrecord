@@ -195,11 +195,6 @@ export default function Home() {
         <Story blocks={blocks} />
       </div>
 
-      <section className="mx-auto max-w-3xl px-4 py-16 text-center">
-        <p className="eyebrow">Next</p>
-        <h2 className="display mt-3 text-2xl sm:text-3xl font-medium">Version 2: the brain through pregnancy. Version 3: a man's thirty days, for comparison.</h2>
-        <p className="mt-3 text-ink-2">Both datasets come from the same lab and are already public. They are next.</p>
-      </section>
     </div>
   )
 }

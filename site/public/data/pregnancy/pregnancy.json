@@ -1,0 +1,2826 @@
+{
+ "subject": "Maternal Brain Project pilot, sub-01: one woman, 27 sessions, 3 weeks before conception to 2 years 8 months after",
+ "baseline_sessions": [
+  1,
+  2,
+  3,
+  4
+ ],
+ "hormone_units": {
+  "estradiol": "pg/mL",
+  "progesterone": "ng/mL",
+  "lh": "mIU/mL"
+ },
+ "regions": {
+  "cortical_gm": {
+   "name": "Cortical grey matter",
+   "labels": [
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132
+   ],
+   "group": "whole brain",
+   "center_mm": [
+    -30.3,
+    -20.1,
+    15.8
+   ]
+  },
+  "cerebral_wm": {
+   "name": "Cerebral white matter",
+   "labels": [
+    14,
+    15
+   ],
+   "group": "whole brain",
+   "center_mm": [
+    -27.5,
+    -19.8,
+    16.7
+   ]
+  },
+  "lateral_ventricles": {
+   "name": "Lateral ventricles",
+   "labels": [
+    18,
+    19,
+    20,
+    21
+   ],
+   "group": "fluid",
+   "center_mm": [
+    -17.3,
+    -18.2,
+    8.7
+   ]
+  },
+  "third_fourth_ventricles": {
+   "name": "3rd + 4th ventricles",
+   "labels": [
+    1,
+    2
+   ],
+   "group": "fluid",
+   "center_mm": [
+    1.1,
+    -34.9,
+    -17.5
+   ]
+  },
+  "hippocampus": {
+   "name": "Hippocampus",
+   "labels": [
+    16,
+    17
+   ],
+   "group": "medial temporal lobe",
+   "center_mm": [
+    -26.7,
+    -24.3,
+    -16.1
+   ]
+  },
+  "entorhinal": {
+   "name": "Entorhinal cortex",
+   "labels": [
+    49,
+    50
+   ],
+   "group": "medial temporal lobe",
+   "center_mm": [
+    -22.4,
+    -0.5,
+    -30.6
+   ]
+  },
+  "parahippocampal": {
+   "name": "Parahippocampal gyrus",
+   "labels": [
+    97,
+    98
+   ],
+   "group": "medial temporal lobe",
+   "center_mm": [
+    -22.3,
+    -23.7,
+    -26.0
+   ]
+  },
+  "amygdala": {
+   "name": "Amygdala",
+   "labels": [
+    5,
+    6
+   ],
+   "group": "medial temporal lobe",
+   "center_mm": [
+    -21.3,
+    -6.4,
+    -21.3
+   ]
+  },
+  "thalamus": {
+   "name": "Thalamus",
+   "labels": [
+    26,
+    27
+   ],
+   "group": "subcortical",
+   "center_mm": [
+    -11.7,
+    -20.5,
+    4.9
+   ]
+  },
+  "caudate": {
+   "name": "Caudate",
+   "labels": [
+    8,
+    9
+   ],
+   "group": "subcortical",
+   "center_mm": [
+    -11.8,
+    9.7,
+    9.7
+   ]
+  },
+  "putamen": {
+   "name": "Putamen",
+   "labels": [
+    24,
+    25
+   ],
+   "group": "subcortical",
+   "center_mm": [
+    -24.9,
+    0.7,
+    0.5
+   ]
+  },
+  "pallidum": {
+   "name": "Pallidum",
+   "labels": [
+    22,
+    23
+   ],
+   "group": "subcortical",
+   "center_mm": [
+    -19.0,
+    -4.4,
+    -2.0
+   ]
+  },
+  "accumbens": {
+   "name": "Nucleus accumbens",
+   "labels": [
+    3,
+    4
+   ],
+   "group": "subcortical",
+   "center_mm": [
+    -10.0,
+    17.8,
+    -10.8
+   ]
+  },
+  "superior_frontal": {
+   "name": "Superior frontal gyrus",
+   "labels": [
+    115,
+    116
+   ],
+   "group": "cortex",
+   "center_mm": [
+    -16.3,
+    25.6,
+    49.7
+   ]
+  },
+  "middle_frontal": {
+   "name": "Middle frontal gyrus",
+   "labels": [
+    71,
+    72
+   ],
+   "group": "cortex",
+   "center_mm": [
+    -34.4,
+    29.8,
+    33.2
+   ]
+  },
+  "precuneus": {
+   "name": "Precuneus",
+   "labels": [
+    95,
+    96
+   ],
+   "group": "cortex",
+   "center_mm": [
+    -8.5,
+    -59.7,
+    34.7
+   ]
+  },
+  "posterior_cingulate": {
+   "name": "Posterior cingulate",
+   "labels": [
+    93,
+    94
+   ],
+   "group": "cortex",
+   "center_mm": [
+    -6.7,
+    -41.6,
+    22.7
+   ]
+  },
+  "anterior_cingulate": {
+   "name": "Anterior cingulate",
+   "labels": [
+    35,
+    36
+   ],
+   "group": "cortex",
+   "center_mm": [
+    -4.5,
+    34.9,
+    7.4
+   ]
+  },
+  "insula_anterior": {
+   "name": "Anterior insula",
+   "labels": [
+    37,
+    38
+   ],
+   "group": "cortex",
+   "center_mm": [
+    -34.0,
+    11.1,
+    -2.0
+   ]
+  },
+  "superior_temporal": {
+   "name": "Superior temporal gyrus",
+   "labels": [
+    125,
+    126
+   ],
+   "group": "cortex",
+   "center_mm": [
+    -58.8,
+    -22.2,
+    -3.1
+   ]
+  },
+  "fusiform": {
+   "name": "Fusiform gyrus",
+   "labels": [
+    55,
+    56
+   ],
+   "group": "cortex",
+   "center_mm": [
+    -34.4,
+    -40.2,
+    -24.5
+   ]
+  },
+  "precentral": {
+   "name": "Precentral gyrus",
+   "labels": [
+    109,
+    110
+   ],
+   "group": "cortex",
+   "center_mm": [
+    -37.4,
+    -9.4,
+    49.5
+   ]
+  },
+  "postcentral": {
+   "name": "Postcentral gyrus",
+   "labels": [
+    103,
+    104
+   ],
+   "group": "cortex",
+   "center_mm": [
+    -40.1,
+    -25.2,
+    50.3
+   ]
+  },
+  "calcarine": {
+   "name": "Calcarine cortex",
+   "labels": [
+    43,
+    44
+   ],
+   "group": "cortex",
+   "center_mm": [
+    -9.3,
+    -79.2,
+    7.7
+   ]
+  },
+  "cerebellum": {
+   "name": "Cerebellum",
+   "labels": [
+    10,
+    11,
+    12,
+    13,
+    30,
+    31,
+    32
+   ],
+   "group": "whole brain",
+   "center_mm": [
+    -22.5,
+    -56.7,
+    -40.4
+   ]
+  },
+  "brainstem": {
+   "name": "Brain stem",
+   "labels": [
+    7
+   ],
+   "group": "whole brain",
+   "center_mm": [
+    0.9,
+    -32.8,
+    -32.5
+   ]
+  },
+  "total_brain": {
+   "name": "Whole brain (no ventricles)",
+   "labels": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132
+   ],
+   "group": "whole brain",
+   "center_mm": [
+    -27.8,
+    -23.5,
+    9.0
+   ]
+  },
+  "all_ventricles": {
+   "name": "All ventricles",
+   "labels": [
+    1,
+    2,
+    18,
+    19,
+    20,
+    21
+   ],
+   "group": "fluid",
+   "center_mm": [
+    -17.3,
+    -18.2,
+    8.7
+   ]
+  }
+ },
+ "labels": {
+  "0": "background",
+  "1": "3rd-Ventricle",
+  "2": "4th-Ventricle",
+  "3": "Right-Accumbens-Area",
+  "4": "Left-Accumbens-Area",
+  "5": "Right-Amygdala",
+  "6": "Left-Amygdala",
+  "7": "Brain-Stem",
+  "8": "Right-Caudate",
+  "9": "Left-Caudate",
+  "10": "Right-Cerebellum-Exterior",
+  "11": "Left-Cerebellum-Exterior",
+  "12": "Right-Cerebellum-White-Matter",
+  "13": "Left-Cerebellum-White-Matter",
+  "14": "Right-Cerebral-White-Matter",
+  "15": "Left-Cerebral-White-Matter",
+  "16": "Right-Hippocampus",
+  "17": "Left-Hippocampus",
+  "18": "Right-Inf-Lat-Vent",
+  "19": "Left-Inf-Lat-Vent",
+  "20": "Right-Lateral-Ventricle",
+  "21": "Left-Lateral-Ventricle",
+  "22": "Right-Pallidum",
+  "23": "Left-Pallidum",
+  "24": "Right-Putamen",
+  "25": "Left-Putamen",
+  "26": "Right-Thalamus-Proper",
+  "27": "Left-Thalamus-Proper",
+  "28": "Right-Ventral-DC",
+  "29": "Left-Ventral-DC",
+  "30": "Cerebellar-Vermal-Lobules-I-V",
+  "31": "Cerebellar-Vermal-Lobules-VI-VII",
+  "32": "Cerebellar-Vermal-Lobules-VIII-X",
+  "33": "Left-Basal-Forebrain",
+  "34": "Right-Basal-Forebrain",
+  "35": "Right-ACgG--anterior-cingulate-gyrus",
+  "36": "Left-ACgG--anterior-cingulate-gyrus",
+  "37": "Right-AIns--anterior-insula",
+  "38": "Left-AIns--anterior-insula",
+  "39": "Right-AOrG--anterior-orbital-gyrus",
+  "40": "Left-AOrG--anterior-orbital-gyrus",
+  "41": "Right-AnG---angular-gyrus",
+  "42": "Left-AnG---angular-gyrus",
+  "43": "Right-Calc--calcarine-cortex",
+  "44": "Left-Calc--calcarine-cortex",
+  "45": "Right-CO----central-operculum",
+  "46": "Left-CO----central-operculum",
+  "47": "Right-Cun---cuneus",
+  "48": "Left-Cun---cuneus",
+  "49": "Right-Ent---entorhinal-area",
+  "50": "Left-Ent---entorhinal-area",
+  "51": "Right-FO----frontal-operculum",
+  "52": "Left-FO----frontal-operculum",
+  "53": "Right-FRP---frontal-pole",
+  "54": "Left-FRP---frontal-pole",
+  "55": "Right-FuG---fusiform-gyrus ",
+  "56": "Left-FuG---fusiform-gyrus",
+  "57": "Right-GRe---gyrus-rectus",
+  "58": "Left-GRe---gyrus-rectus",
+  "59": "Right-IOG---inferior-occipital-gyrus",
+  "60": "Left-IOG---inferior-occipital-gyrus",
+  "61": "Right-ITG---inferior-temporal-gyrus",
+  "62": "Left-ITG---inferior-temporal-gyrus",
+  "63": "Right-LiG---lingual-gyrus",
+  "64": "Left-LiG---lingual-gyrus",
+  "65": "Right-LOrG--lateral-orbital-gyrus",
+  "66": "Left-LOrG--lateral-orbital-gyrus",
+  "67": "Right-MCgG--middle-cingulate-gyrus",
+  "68": "Left-MCgG--middle-cingulate-gyrus",
+  "69": "Right-MFC---medial-frontal-cortex",
+  "70": "Left-MFC---medial-frontal-cortex",
+  "71": "Right-MFG---middle-frontal-gyrus",
+  "72": "Left-MFG---middle-frontal-gyrus",
+  "73": "Right-MOG---middle-occipital-gyrus",
+  "74": "Left-MOG---middle-occipital-gyrus",
+  "75": "Right-MOrG--medial-orbital-gyrus",
+  "76": "Left-MOrG--medial-orbital-gyrus",
+  "77": "Right-MPoG--postcentral-gyrus",
+  "78": "Left-MPoG--postcentral-gyrus",
+  "79": "Right-MPrG--precentral-gyrus",
+  "80": "Left-MPrG--precentral-gyrus",
+  "81": "Right-MSFG--superior-frontal-gyrus",
+  "82": "Left-MSFG--superior-frontal-gyrus",
+  "83": "Right-MTG---middle-temporal-gyrus",
+  "84": "Left-MTG---middle-temporal-gyrus",
+  "85": "Right-OCP---occipital-pole",
+  "86": "Left-OCP---occipital-pole",
+  "87": "Right-OFuG--occipital-fusiform-gyrus",
+  "88": "Left-OFuG--occipital-fusiform-gyrus",
+  "89": "Right-OpIFG-opercular-part-of-the-IFG",
+  "90": "Left-OpIFG-opercular-part-of-the-IFG",
+  "91": "Right-OrIFG-orbital-part-of-the-IFG",
+  "92": "Left-OrIFG-orbital-part-of-the-IFG",
+  "93": "Right-PCgG--posterior-cingulate-gyrus",
+  "94": "Left-PCgG--posterior-cingulate-gyrus",
+  "95": "Right-PCu---precuneus",
+  "96": "Left-PCu---precuneus",
+  "97": "Right-PHG---parahippocampal-gyrus",
+  "98": "Left-PHG---parahippocampal-gyrus",
+  "99": "Right-PIns--posterior-insula",
+  "100": "Left-PIns--posterior-insula",
+  "101": "Right-PO----parietal-operculum",
+  "102": "Left-PO----parietal-operculum",
+  "103": "Right-PoG---postcentral-gyrus",
+  "104": "Left-PoG---postcentral-gyrus",
+  "105": "Right-POrG--posterior-orbital-gyrus",
+  "106": "Left-POrG--posterior-orbital-gyrus",
+  "107": "Right-PP----planum-polare",
+  "108": "Left-PP----planum-polare",
+  "109": "Right-PrG---precentral-gyrus",
+  "110": "Left-PrG---precentral-gyrus",
+  "111": "Right-PT----planum-temporale",
+  "112": "Left-PT----planum-temporale",
+  "113": "Right-SCA---subcallosal-area",
+  "114": "Left-SCA---subcallosal-area",
+  "115": "Right-SFG---superior-frontal-gyrus",
+  "116": "Left-SFG---superior-frontal-gyrus",
+  "117": "Right-SMC---supplementary-motor-cortex",
+  "118": "Left-SMC---supplementary-motor-cortex",
+  "119": "Right-SMG---supramarginal-gyrus",
+  "120": "Left-SMG---supramarginal-gyrus",
+  "121": "Right-SOG---superior-occipital-gyrus",
+  "122": "Left-SOG---superior-occipital-gyrus",
+  "123": "Right-SPL---superior-parietal-lobule",
+  "124": "Left-SPL---superior-parietal-lobule",
+  "125": "Right-STG---superior-temporal-gyrus",
+  "126": "Left-STG---superior-temporal-gyrus",
+  "127": "Right-TMP---temporal-pole",
+  "128": "Left-TMP---temporal-pole",
+  "129": "Right-TrIFG-triangular-part-of-the-IFG",
+  "130": "Left-TrIFG-triangular-part-of-the-IFG",
+  "131": "Right-TTG---transverse-temporal-gyrus",
+  "132": "Left-TTG---transverse-temporal-gyrus"
+ },
+ "sessions": [
+  {
+   "session": 1,
+   "week": -3.0,
+   "trimester": "pre",
+   "site": "UCSB",
+   "date": "07/12/2019",
+   "retest_of": null,
+   "hormones": {
+    "estradiol": null,
+    "progesterone": null,
+    "lh": null
+   },
+   "mood": {
+    "psqi": 4.0,
+    "pss": 18.0,
+    "stai": 48.0,
+    "poms_total_mood": 48.0
+   },
+   "volumes": {
+    "cortical_gm": 524804.4,
+    "cerebral_wm": 354326.9,
+    "lateral_ventricles": 13764.4,
+    "third_fourth_ventricles": 4429.8,
+    "hippocampus": 7059.7,
+    "entorhinal": 4155.5,
+    "parahippocampal": 5457.0,
+    "amygdala": 2150.9,
+    "thalamus": 15064.5,
+    "caudate": 6655.4,
+    "putamen": 8704.7,
+    "pallidum": 3207.0,
+    "accumbens": 1139.5,
+    "superior_frontal": 25950.1,
+    "middle_frontal": 33550.9,
+    "precuneus": 21865.2,
+    "posterior_cingulate": 9324.5,
+    "anterior_cingulate": 9806.1,
+    "insula_anterior": 7813.2,
+    "superior_temporal": 14610.3,
+    "fusiform": 12227.7,
+    "precentral": 25075.3,
+    "postcentral": 22127.3,
+    "calcarine": 8348.6,
+    "cerebellum": 120324.2,
+    "brainstem": 15092.4,
+    "total_brain": 1069175.9,
+    "all_ventricles": 18194.2
+   },
+   "has_scan": true,
+   "affine_scale": 0.65596
+  },
+  {
+   "session": 2,
+   "week": -0.5,
+   "trimester": "pre",
+   "site": "UCSB",
+   "date": "07/31/2019",
+   "retest_of": null,
+   "hormones": {
+    "estradiol": 3.42,
+    "progesterone": 0.84,
+    "lh": null
+   },
+   "mood": {
+    "psqi": 4.0,
+    "pss": 18.0,
+    "stai": 35.0,
+    "poms_total_mood": 23.0
+   },
+   "volumes": {
+    "cortical_gm": 529371.1,
+    "cerebral_wm": 354505.1,
+    "lateral_ventricles": 13501.3,
+    "third_fourth_ventricles": 4415.1,
+    "hippocampus": 7175.6,
+    "entorhinal": 4301.3,
+    "parahippocampal": 5461.6,
+    "amygdala": 2121.9,
+    "thalamus": 15264.1,
+    "caudate": 6731.6,
+    "putamen": 8592.4,
+    "pallidum": 3242.1,
+    "accumbens": 1167.4,
+    "superior_frontal": 26101.5,
+    "middle_frontal": 34035.0,
+    "precuneus": 21956.6,
+    "posterior_cingulate": 9511.9,
+    "anterior_cingulate": 9979.3,
+    "insula_anterior": 7892.9,
+    "superior_temporal": 14881.6,
+    "fusiform": 12255.7,
+    "precentral": 25464.9,
+    "postcentral": 22467.1,
+    "calcarine": 7960.5,
+    "cerebellum": 121549.0,
+    "brainstem": 14938.5,
+    "total_brain": 1075309.7,
+    "all_ventricles": 17916.4
+   },
+   "has_scan": true,
+   "affine_scale": 0.65763
+  },
+  {
+   "session": 3,
+   "week": 1.0,
+   "trimester": "pre",
+   "site": "UCSB",
+   "date": "08/13/2019",
+   "retest_of": null,
+   "hormones": {
+    "estradiol": 386.0,
+    "progesterone": null,
+    "lh": null
+   },
+   "mood": {
+    "psqi": 7.0,
+    "pss": 14.0,
+    "stai": 43.0,
+    "poms_total_mood": 44.0
+   },
+   "volumes": {
+    "cortical_gm": 531168.9,
+    "cerebral_wm": 353424.6,
+    "lateral_ventricles": 13370.8,
+    "third_fourth_ventricles": 4445.6,
+    "hippocampus": 7101.9,
+    "entorhinal": 4314.5,
+    "parahippocampal": 5519.0,
+    "amygdala": 2191.0,
+    "thalamus": 15147.8,
+    "caudate": 6654.4,
+    "putamen": 8844.9,
+    "pallidum": 3257.8,
+    "accumbens": 1074.9,
+    "superior_frontal": 25818.5,
+    "middle_frontal": 34027.9,
+    "precuneus": 22251.3,
+    "posterior_cingulate": 9335.2,
+    "anterior_cingulate": 9962.6,
+    "insula_anterior": 8037.7,
+    "superior_temporal": 14898.3,
+    "fusiform": 12257.2,
+    "precentral": 25240.9,
+    "postcentral": 22616.5,
+    "calcarine": 8130.7,
+    "cerebellum": 120568.1,
+    "brainstem": 15104.1,
+    "total_brain": 1075333.5,
+    "all_ventricles": 17816.4
+   },
+   "has_scan": true,
+   "affine_scale": 0.65574
+  },
+  {
+   "session": 4,
+   "week": 1.5,
+   "trimester": "pre",
+   "site": "UCSB",
+   "date": "08/17/2019",
+   "retest_of": null,
+   "hormones": {
+    "estradiol": 1238.0,
+    "progesterone": null,
+    "lh": null
+   },
+   "mood": {
+    "psqi": 10.0,
+    "pss": 12.0,
+    "stai": 37.0,
+    "poms_total_mood": 46.0
+   },
+   "volumes": {
+    "cortical_gm": 528778.3,
+    "cerebral_wm": 353101.0,
+    "lateral_ventricles": 13236.6,
+    "third_fourth_ventricles": 4372.4,
+    "hippocampus": 7150.8,
+    "entorhinal": 4279.5,
+    "parahippocampal": 5530.2,
+    "amygdala": 2185.4,
+    "thalamus": 14983.7,
+    "caudate": 6813.4,
+    "putamen": 8911.0,
+    "pallidum": 3298.5,
+    "accumbens": 1057.7,
+    "superior_frontal": 25938.4,
+    "middle_frontal": 33259.8,
+    "precuneus": 22240.1,
+    "posterior_cingulate": 9540.4,
+    "anterior_cingulate": 9689.2,
+    "insula_anterior": 8046.4,
+    "superior_temporal": 14976.6,
+    "fusiform": 12498.5,
+    "precentral": 25356.2,
+    "postcentral": 21920.1,
+    "calcarine": 8124.1,
+    "cerebellum": 123544.5,
+    "brainstem": 15254.5,
+    "total_brain": 1075894.3,
+    "all_ventricles": 17609.0
+   },
+   "has_scan": true,
+   "affine_scale": 0.65114
+  },
+  {
+   "session": 5,
+   "week": 2.0,
+   "trimester": "first",
+   "site": "UCSB",
+   "date": "08/19/2019",
+   "retest_of": null,
+   "hormones": {
+    "estradiol": 1350.0,
+    "progesterone": 2.94,
+    "lh": null
+   },
+   "mood": {
+    "psqi": 6.0,
+    "pss": 10.0,
+    "stai": 37.0,
+    "poms_total_mood": 19.0
+   },
+   "volumes": {
+    "cortical_gm": 528269.2,
+    "cerebral_wm": 350761.6,
+    "lateral_ventricles": 13598.9,
+    "third_fourth_ventricles": 4390.2,
+    "hippocampus": 7116.7,
+    "entorhinal": 4208.3,
+    "parahippocampal": 5491.0,
+    "amygdala": 2153.5,
+    "thalamus": 15169.6,
+    "caudate": 6664.1,
+    "putamen": 8784.5,
+    "pallidum": 3252.3,
+    "accumbens": 1073.9,
+    "superior_frontal": 26075.0,
+    "middle_frontal": 33399.5,
+    "precuneus": 21958.7,
+    "posterior_cingulate": 9525.6,
+    "anterior_cingulate": 9956.9,
+    "insula_anterior": 8004.7,
+    "superior_temporal": 14842.0,
+    "fusiform": 12310.6,
+    "precentral": 25588.3,
+    "postcentral": 22367.1,
+    "calcarine": 7903.5,
+    "cerebellum": 122632.1,
+    "brainstem": 15149.8,
+    "total_brain": 1071719.4,
+    "all_ventricles": 17989.1
+   },
+   "has_scan": true,
+   "affine_scale": 0.6511
+  },
+  {
+   "session": 6,
+   "week": 3.0,
+   "trimester": "first",
+   "site": "UCSB",
+   "date": "08/29/2019",
+   "retest_of": null,
+   "hormones": {
+    "estradiol": 241.0,
+    "progesterone": 8.76,
+    "lh": null
+   },
+   "mood": {
+    "psqi": 4.0,
+    "pss": 11.0,
+    "stai": 36.0,
+    "poms_total_mood": 15.0
+   },
+   "volumes": {
+    "cortical_gm": 530802.2,
+    "cerebral_wm": 349918.8,
+    "lateral_ventricles": 13525.2,
+    "third_fourth_ventricles": 4448.7,
+    "hippocampus": 7075.6,
+    "entorhinal": 4254.0,
+    "parahippocampal": 5513.4,
+    "amygdala": 2183.4,
+    "thalamus": 15076.1,
+    "caudate": 6746.8,
+    "putamen": 8682.4,
+    "pallidum": 3205.6,
+    "accumbens": 1038.3,
+    "superior_frontal": 25838.8,
+    "middle_frontal": 33798.8,
+    "precuneus": 22127.9,
+    "posterior_cingulate": 9501.3,
+    "anterior_cingulate": 9828.9,
+    "insula_anterior": 7874.7,
+    "superior_temporal": 14898.4,
+    "fusiform": 12259.7,
+    "precentral": 25491.3,
+    "postcentral": 22456.5,
+    "calcarine": 8000.1,
+    "cerebellum": 123298.6,
+    "brainstem": 15159.0,
+    "total_brain": 1073947.4,
+    "all_ventricles": 17973.9
+   },
+   "has_scan": true,
+   "affine_scale": 0.65335
+  },
+  {
+   "session": 7,
+   "week": 9.0,
+   "trimester": "first",
+   "site": "UCI",
+   "date": "10/10/2019",
+   "retest_of": null,
+   "hormones": {
+    "estradiol": null,
+    "progesterone": null,
+    "lh": null
+   },
+   "mood": {
+    "psqi": 3.0,
+    "pss": 11.0,
+    "stai": 37.0,
+    "poms_total_mood": 12.0
+   },
+   "volumes": {
+    "cortical_gm": 513985.9,
+    "cerebral_wm": 357851.9,
+    "lateral_ventricles": 13225.4,
+    "third_fourth_ventricles": 4437.5,
+    "hippocampus": 6771.7,
+    "entorhinal": 4333.3,
+    "parahippocampal": 5304.2,
+    "amygdala": 2112.8,
+    "thalamus": 14523.4,
+    "caudate": 6488.3,
+    "putamen": 8542.2,
+    "pallidum": 3218.2,
+    "accumbens": 1074.5,
+    "superior_frontal": 25212.9,
+    "middle_frontal": 32948.8,
+    "precuneus": 21864.1,
+    "posterior_cingulate": 9216.3,
+    "anterior_cingulate": 9768.0,
+    "insula_anterior": 7680.6,
+    "superior_temporal": 14262.8,
+    "fusiform": 11921.9,
+    "precentral": 24290.4,
+    "postcentral": 21170.8,
+    "calcarine": 7557.1,
+    "cerebellum": 119256.9,
+    "brainstem": 15363.2,
+    "total_brain": 1059626.6,
+    "all_ventricles": 17662.9
+   },
+   "has_scan": true,
+   "affine_scale": 0.64779
+  },
+  {
+   "session": 8,
+   "week": 12.0,
+   "trimester": "first",
+   "site": "UCI",
+   "date": "10/25/2019",
+   "retest_of": null,
+   "hormones": {
+    "estradiol": null,
+    "progesterone": null,
+    "lh": null
+   },
+   "mood": {
+    "psqi": 3.0,
+    "pss": 11.0,
+    "stai": 30.0,
+    "poms_total_mood": -3.0
+   },
+   "volumes": {
+    "cortical_gm": 520483.1,
+    "cerebral_wm": 344154.9,
+    "lateral_ventricles": 13579.4,
+    "third_fourth_ventricles": 4475.0,
+    "hippocampus": 6887.6,
+    "entorhinal": 4166.7,
+    "parahippocampal": 5417.9,
+    "amygdala": 2133.1,
+    "thalamus": 14670.8,
+    "caudate": 6558.9,
+    "putamen": 8634.1,
+    "pallidum": 3166.4,
+    "accumbens": 1053.1,
+    "superior_frontal": 25903.8,
+    "middle_frontal": 33226.8,
+    "precuneus": 21851.5,
+    "posterior_cingulate": 9255.9,
+    "anterior_cingulate": 9746.1,
+    "insula_anterior": 7775.1,
+    "superior_temporal": 14554.4,
+    "fusiform": 12137.8,
+    "precentral": 25154.5,
+    "postcentral": 21938.3,
+    "calcarine": 8029.5,
+    "cerebellum": 120630.5,
+    "brainstem": 14842.0,
+    "total_brain": 1053745.0,
+    "all_ventricles": 18054.4
+   },
+   "has_scan": true,
+   "affine_scale": 0.64259
+  },
+  {
+   "session": 9,
+   "week": 14.0,
+   "trimester": "second",
+   "site": "UCI",
+   "date": "11/12/2019",
+   "retest_of": null,
+   "hormones": {
+    "estradiol": null,
+    "progesterone": null,
+    "lh": null
+   },
+   "mood": {
+    "psqi": 4.0,
+    "pss": 10.0,
+    "stai": 33.0,
+    "poms_total_mood": 9.0
+   },
+   "volumes": {
+    "cortical_gm": 523040.0,
+    "cerebral_wm": 342454.7,
+    "lateral_ventricles": 13688.3,
+    "third_fourth_ventricles": 4449.7,
+    "hippocampus": 6997.3,
+    "entorhinal": 4232.2,
+    "parahippocampal": 5459.6,
+    "amygdala": 2127.5,
+    "thalamus": 14671.3,
+    "caudate": 6504.6,
+    "putamen": 8616.3,
+    "pallidum": 3099.8,
+    "accumbens": 1019.5,
+    "superior_frontal": 26172.0,
+    "middle_frontal": 33368.5,
+    "precuneus": 22050.0,
+    "posterior_cingulate": 9265.0,
+    "anterior_cingulate": 9661.8,
+    "insula_anterior": 7809.6,
+    "superior_temporal": 14477.2,
+    "fusiform": 12151.5,
+    "precentral": 25352.2,
+    "postcentral": 22093.8,
+    "calcarine": 8049.9,
+    "cerebellum": 121143.7,
+    "brainstem": 14657.0,
+    "total_brain": 1054846.9,
+    "all_ventricles": 18138.0
+   },
+   "has_scan": true,
+   "affine_scale": 0.6434
+  },
+  {
+   "session": 10,
+   "week": 15.0,
+   "trimester": "second",
+   "site": "UCI",
+   "date": "11/18/2019",
+   "retest_of": null,
+   "hormones": {
+    "estradiol": 4700.0,
+    "progesterone": 53.9,
+    "lh": 1.45
+   },
+   "mood": {
+    "psqi": 2.0,
+    "pss": 13.0,
+    "stai": 36.0,
+    "poms_total_mood": 1.0
+   },
+   "volumes": {
+    "cortical_gm": 518594.7,
+    "cerebral_wm": 356865.8,
+    "lateral_ventricles": 13378.4,
+    "third_fourth_ventricles": 4363.3,
+    "hippocampus": 6980.0,
+    "entorhinal": 4246.5,
+    "parahippocampal": 5367.6,
+    "amygdala": 2127.5,
+    "thalamus": 14417.3,
+    "caudate": 6690.0,
+    "putamen": 8484.8,
+    "pallidum": 3123.3,
+    "accumbens": 1031.3,
+    "superior_frontal": 24782.7,
+    "middle_frontal": 33079.9,
+    "precuneus": 22367.6,
+    "posterior_cingulate": 9337.7,
+    "anterior_cingulate": 10005.2,
+    "insula_anterior": 7932.6,
+    "superior_temporal": 14454.9,
+    "fusiform": 11924.5,
+    "precentral": 23955.6,
+    "postcentral": 21454.2,
+    "calcarine": 8067.7,
+    "cerebellum": 119587.7,
+    "brainstem": 15514.1,
+    "total_brain": 1064032.8,
+    "all_ventricles": 17741.7
+   },
+   "has_scan": true,
+   "affine_scale": 0.653
+  },
+  {
+   "session": 11,
+   "week": 17.0,
+   "trimester": "second",
+   "site": "UCI",
+   "date": "12/3/2019",
+   "retest_of": null,
+   "hormones": {
+    "estradiol": 4100.0,
+    "progesterone": 56.8,
+    "lh": 0.87
+   },
+   "mood": {
+    "psqi": 3.0,
+    "pss": 13.0,
+    "stai": 30.0,
+    "poms_total_mood": 11.0
+   },
+   "volumes": {
+    "cortical_gm": 519703.0,
+    "cerebral_wm": 352914.1,
+    "lateral_ventricles": 13117.8,
+    "third_fourth_ventricles": 4233.7,
+    "hippocampus": 6962.2,
+    "entorhinal": 4322.1,
+    "parahippocampal": 5381.3,
+    "amygdala": 2106.7,
+    "thalamus": 14581.4,
+    "caudate": 6603.6,
+    "putamen": 8443.1,
+    "pallidum": 3140.0,
+    "accumbens": 1078.0,
+    "superior_frontal": 25135.2,
+    "middle_frontal": 33202.9,
+    "precuneus": 22079.6,
+    "posterior_cingulate": 9269.1,
+    "anterior_cingulate": 10053.9,
+    "insula_anterior": 7944.2,
+    "superior_temporal": 14466.5,
+    "fusiform": 12202.9,
+    "precentral": 24135.5,
+    "postcentral": 21436.9,
+    "calcarine": 8196.2,
+    "cerebellum": 122787.5,
+    "brainstem": 15043.1,
+    "total_brain": 1063978.5,
+    "all_ventricles": 17351.5
+   },
+   "has_scan": true,
+   "affine_scale": 0.64844
+  },
+  {
+   "session": 12,
+   "week": 19.0,
+   "trimester": "second",
+   "site": "UCI",
+   "date": "12/17/2019",
+   "retest_of": null,
+   "hormones": {
+    "estradiol": 6190.0,
+    "progesterone": 70.6,
+    "lh": 0.93
+   },
+   "mood": {
+    "psqi": 4.0,
+    "pss": 10.0,
+    "stai": 40.0,
+    "poms_total_mood": 19.0
+   },
+   "volumes": {
+    "cortical_gm": 520855.8,
+    "cerebral_wm": 351127.9,
+    "lateral_ventricles": 13150.8,
+    "third_fourth_ventricles": 4378.0,
+    "hippocampus": 6944.4,
+    "entorhinal": 4237.3,
+    "parahippocampal": 5312.2,
+    "amygdala": 2120.4,
+    "thalamus": 14396.9,
+    "caudate": 6667.1,
+    "putamen": 8613.8,
+    "pallidum": 3146.6,
+    "accumbens": 1164.3,
+    "superior_frontal": 25193.7,
+    "middle_frontal": 33064.7,
+    "precuneus": 21973.8,
+    "posterior_cingulate": 9267.1,
+    "anterior_cingulate": 9926.0,
+    "insula_anterior": 7859.8,
+    "superior_temporal": 14650.5,
+    "fusiform": 11849.8,
+    "precentral": 24311.7,
+    "postcentral": 21530.9,
+    "calcarine": 8210.9,
+    "cerebellum": 122634.6,
+    "brainstem": 15129.5,
+    "total_brain": 1063389.7,
+    "all_ventricles": 17528.8
+   },
+   "has_scan": true,
+   "affine_scale": 0.64766
+  },
+  {
+   "session": 13,
+   "week": 22.0,
+   "trimester": "second",
+   "site": "UCI",
+   "date": "1/7/2020",
+   "retest_of": null,
+   "hormones": {
+    "estradiol": 9640.0,
+    "progesterone": 54.7,
+    "lh": 0.62
+   },
+   "mood": {
+    "psqi": 5.0,
+    "pss": 12.0,
+    "stai": 32.0,
+    "poms_total_mood": 8.0
+   },
+   "volumes": {
+    "cortical_gm": 519053.6,
+    "cerebral_wm": 353824.9,
+    "lateral_ventricles": 13020.8,
+    "third_fourth_ventricles": 4302.3,
+    "hippocampus": 6959.2,
+    "entorhinal": 4213.9,
+    "parahippocampal": 5365.1,
+    "amygdala": 2084.8,
+    "thalamus": 14605.3,
+    "caudate": 6541.6,
+    "putamen": 8453.8,
+    "pallidum": 3058.2,
+    "accumbens": 1166.9,
+    "superior_frontal": 24977.8,
+    "middle_frontal": 32881.3,
+    "precuneus": 21989.1,
+    "posterior_cingulate": 9327.1,
+    "anterior_cingulate": 10062.7,
+    "insula_anterior": 7900.1,
+    "superior_temporal": 14439.1,
+    "fusiform": 12023.5,
+    "precentral": 24063.3,
+    "postcentral": 21534.9,
+    "calcarine": 8152.5,
+    "cerebellum": 123241.2,
+    "brainstem": 15118.3,
+    "total_brain": 1064672.3,
+    "all_ventricles": 17323.1
+   },
+   "has_scan": true,
+   "affine_scale": 0.64977
+  },
+  {
+   "session": 14,
+   "week": 24.0,
+   "trimester": "second",
+   "site": "UCI",
+   "date": "1/22/2020",
+   "retest_of": null,
+   "hormones": {
+    "estradiol": 8800.0,
+    "progesterone": 64.1,
+    "lh": 0.73
+   },
+   "mood": {
+    "psqi": 2.0,
+    "pss": 9.0,
+    "stai": 32.0,
+    "poms_total_mood": 0.0
+   },
+   "volumes": {
+    "cortical_gm": 519538.5,
+    "cerebral_wm": 348805.8,
+    "lateral_ventricles": 13271.6,
+    "third_fourth_ventricles": 4334.4,
+    "hippocampus": 6928.8,
+    "entorhinal": 4274.4,
+    "parahippocampal": 5346.3,
+    "amygdala": 2115.9,
+    "thalamus": 14509.2,
+    "caudate": 6529.9,
+    "putamen": 8444.1,
+    "pallidum": 3115.6,
+    "accumbens": 1096.3,
+    "superior_frontal": 24978.7,
+    "middle_frontal": 32986.5,
+    "precuneus": 21920.0,
+    "posterior_cingulate": 9214.2,
+    "anterior_cingulate": 9967.6,
+    "insula_anterior": 7764.4,
+    "superior_temporal": 14520.4,
+    "fusiform": 12112.4,
+    "precentral": 24169.5,
+    "postcentral": 21600.0,
+    "calcarine": 7976.2,
+    "cerebellum": 122606.1,
+    "brainstem": 14999.4,
+    "total_brain": 1059090.6,
+    "all_ventricles": 17606.0
+   },
+   "has_scan": true,
+   "affine_scale": 0.65371
+  },
+  {
+   "session": 15,
+   "week": 27.0,
+   "trimester": "third",
+   "site": "UCI",
+   "date": "02/07/2020",
+   "retest_of": null,
+   "hormones": {
+    "estradiol": 8970.0,
+    "progesterone": 61.4,
+    "lh": 0.73
+   },
+   "mood": {
+    "psqi": 2.0,
+    "pss": 11.0,
+    "stai": 32.0,
+    "poms_total_mood": -7.0
+   },
+   "volumes": {
+    "cortical_gm": 517482.1,
+    "cerebral_wm": 348921.1,
+    "lateral_ventricles": 13438.8,
+    "third_fourth_ventricles": 4366.4,
+    "hippocampus": 6947.5,
+    "entorhinal": 4267.8,
+    "parahippocampal": 5335.6,
+    "amygdala": 2136.2,
+    "thalamus": 14608.3,
+    "caudate": 6581.8,
+    "putamen": 8488.8,
+    "pallidum": 3078.1,
+    "accumbens": 1071.4,
+    "superior_frontal": 24970.1,
+    "middle_frontal": 32890.5,
+    "precuneus": 22018.6,
+    "posterior_cingulate": 9255.4,
+    "anterior_cingulate": 9887.4,
+    "insula_anterior": 7915.8,
+    "superior_temporal": 14380.7,
+    "fusiform": 12100.7,
+    "precentral": 24226.4,
+    "postcentral": 21547.1,
+    "calcarine": 8021.9,
+    "cerebellum": 121753.7,
+    "brainstem": 15110.2,
+    "total_brain": 1056588.3,
+    "all_ventricles": 17805.2
+   },
+   "has_scan": true,
+   "affine_scale": 0.65137
+  },
+  {
+   "session": 16,
+   "week": 29.0,
+   "trimester": "third",
+   "site": "UCI",
+   "date": "02/24/2020",
+   "retest_of": null,
+   "hormones": {
+    "estradiol": 10200.0,
+    "progesterone": 74.2,
+    "lh": 0.69
+   },
+   "mood": {
+    "psqi": 7.0,
+    "pss": 10.0,
+    "stai": 36.0,
+    "poms_total_mood": 23.0
+   },
+   "volumes": {
+    "cortical_gm": 517887.2,
+    "cerebral_wm": 347843.7,
+    "lateral_ventricles": 13416.9,
+    "third_fourth_ventricles": 4331.3,
+    "hippocampus": 6994.2,
+    "entorhinal": 4189.6,
+    "parahippocampal": 5407.8,
+    "amygdala": 2141.8,
+    "thalamus": 14852.1,
+    "caudate": 6661.5,
+    "putamen": 8443.1,
+    "pallidum": 3122.8,
+    "accumbens": 1016.0,
+    "superior_frontal": 25059.5,
+    "middle_frontal": 32699.0,
+    "precuneus": 21968.8,
+    "posterior_cingulate": 9140.1,
+    "anterior_cingulate": 9940.2,
+    "insula_anterior": 7901.5,
+    "superior_temporal": 14431.5,
+    "fusiform": 12130.7,
+    "precentral": 24595.7,
+    "postcentral": 21800.7,
+    "calcarine": 8194.2,
+    "cerebellum": 122538.7,
+    "brainstem": 15059.4,
+    "total_brain": 1057065.6,
+    "all_ventricles": 17748.2
+   },
+   "has_scan": true,
+   "affine_scale": 0.65096
+  },
+  {
+   "session": 17,
+   "week": 31.0,
+   "trimester": "third",
+   "site": "UCI",
+   "date": "3/12/2020",
+   "retest_of": null,
+   "hormones": {
+    "estradiol": 9920.0,
+    "progesterone": 83.0,
+    "lh": 0.77
+   },
+   "mood": {
+    "psqi": 6.0,
+    "pss": 15.0,
+    "stai": 42.0,
+    "poms_total_mood": 38.0
+   },
+   "volumes": {
+    "cortical_gm": 517392.8,
+    "cerebral_wm": 346026.5,
+    "lateral_ventricles": 13938.2,
+    "third_fourth_ventricles": 4373.4,
+    "hippocampus": 6947.0,
+    "entorhinal": 4194.6,
+    "parahippocampal": 5377.3,
+    "amygdala": 2075.8,
+    "thalamus": 14573.2,
+    "caudate": 6543.2,
+    "putamen": 8455.8,
+    "pallidum": 3093.7,
+    "accumbens": 1131.8,
+    "superior_frontal": 24973.1,
+    "middle_frontal": 32846.8,
+    "precuneus": 21874.3,
+    "posterior_cingulate": 9214.2,
+    "anterior_cingulate": 9870.1,
+    "insula_anterior": 7873.7,
+    "superior_temporal": 14450.2,
+    "fusiform": 12199.3,
+    "precentral": 24213.7,
+    "postcentral": 21422.2,
+    "calcarine": 8023.5,
+    "cerebellum": 122677.3,
+    "brainstem": 14838.4,
+    "total_brain": 1054213.4,
+    "all_ventricles": 18311.6
+   },
+   "has_scan": true,
+   "affine_scale": 0.65429
+  },
+  {
+   "session": 18,
+   "week": 33.0,
+   "trimester": "third",
+   "site": "UCI",
+   "date": "03/24/2020",
+   "retest_of": null,
+   "hormones": {
+    "estradiol": 9860.0,
+    "progesterone": 95.3,
+    "lh": 0.83
+   },
+   "mood": {
+    "psqi": 6.0,
+    "pss": 19.0,
+    "stai": 47.0,
+    "poms_total_mood": 38.0
+   },
+   "volumes": {
+    "cortical_gm": 511400.8,
+    "cerebral_wm": 342358.6,
+    "lateral_ventricles": 14599.7,
+    "third_fourth_ventricles": 4525.3,
+    "hippocampus": 6923.6,
+    "entorhinal": 4253.0,
+    "parahippocampal": 5412.9,
+    "amygdala": 2089.9,
+    "thalamus": 14396.4,
+    "caudate": 6383.1,
+    "putamen": 8346.5,
+    "pallidum": 3021.7,
+    "accumbens": 1014.5,
+    "superior_frontal": 24658.7,
+    "middle_frontal": 32346.9,
+    "precuneus": 21650.2,
+    "posterior_cingulate": 9261.5,
+    "anterior_cingulate": 9713.1,
+    "insula_anterior": 7860.4,
+    "superior_temporal": 14340.0,
+    "fusiform": 11987.4,
+    "precentral": 24078.0,
+    "postcentral": 21069.7,
+    "calcarine": 8095.1,
+    "cerebellum": 121037.4,
+    "brainstem": 15094.4,
+    "total_brain": 1042386.5,
+    "all_ventricles": 19125.0
+   },
+   "has_scan": true,
+   "affine_scale": 0.64602
+  },
+  {
+   "session": 19,
+   "week": 36.0,
+   "trimester": "third",
+   "site": "UCI",
+   "date": "04/15/2020",
+   "retest_of": null,
+   "hormones": {
+    "estradiol": 12400.0,
+    "progesterone": 103.0,
+    "lh": 0.59
+   },
+   "mood": {
+    "psqi": 8.0,
+    "pss": 10.0,
+    "stai": 33.0,
+    "poms_total_mood": 15.0
+   },
+   "volumes": {
+    "cortical_gm": 517620.7,
+    "cerebral_wm": 346147.4,
+    "lateral_ventricles": 14101.2,
+    "third_fourth_ventricles": 4617.8,
+    "hippocampus": 6995.8,
+    "entorhinal": 4222.6,
+    "parahippocampal": 5363.0,
+    "amygdala": 2075.7,
+    "thalamus": 14556.5,
+    "caudate": 6482.2,
+    "putamen": 8381.1,
+    "pallidum": 3064.8,
+    "accumbens": 1036.4,
+    "superior_frontal": 24931.5,
+    "middle_frontal": 32511.4,
+    "precuneus": 21660.4,
+    "posterior_cingulate": 9258.9,
+    "anterior_cingulate": 9787.2,
+    "insula_anterior": 7913.2,
+    "superior_temporal": 14284.1,
+    "fusiform": 12239.9,
+    "precentral": 24324.4,
+    "postcentral": 21240.3,
+    "calcarine": 8388.7,
+    "cerebellum": 123268.0,
+    "brainstem": 15084.8,
+    "total_brain": 1055139.8,
+    "all_ventricles": 18719.0
+   },
+   "has_scan": true,
+   "affine_scale": 0.65694
+  },
+  {
+   "session": 20,
+   "week": 43.0,
+   "trimester": "post",
+   "site": "UCI",
+   "date": "06/04/2020",
+   "retest_of": null,
+   "hormones": {
+    "estradiol": 9.18,
+    "progesterone": 0.12,
+    "lh": 0.96
+   },
+   "mood": {
+    "psqi": 5.0,
+    "pss": 18.0,
+    "stai": 46.0,
+    "poms_total_mood": 32.0
+   },
+   "volumes": {
+    "cortical_gm": 510950.6,
+    "cerebral_wm": 350033.6,
+    "lateral_ventricles": 14277.5,
+    "third_fourth_ventricles": 4460.9,
+    "hippocampus": 6830.2,
+    "entorhinal": 4245.9,
+    "parahippocampal": 5378.3,
+    "amygdala": 2053.9,
+    "thalamus": 14558.5,
+    "caudate": 6472.5,
+    "putamen": 8414.6,
+    "pallidum": 2939.3,
+    "accumbens": 1056.1,
+    "superior_frontal": 24229.5,
+    "middle_frontal": 32212.8,
+    "precuneus": 21561.9,
+    "posterior_cingulate": 9307.2,
+    "anterior_cingulate": 9627.3,
+    "insula_anterior": 7913.2,
+    "superior_temporal": 14307.5,
+    "fusiform": 12102.3,
+    "precentral": 24006.4,
+    "postcentral": 21113.9,
+    "calcarine": 8000.6,
+    "cerebellum": 122167.8,
+    "brainstem": 15198.6,
+    "total_brain": 1051029.3,
+    "all_ventricles": 18738.4
+   },
+   "has_scan": true,
+   "affine_scale": 0.65463
+  },
+  {
+   "session": 21,
+   "week": 46.0,
+   "trimester": "post",
+   "site": "UCI",
+   "date": "06/25/2020",
+   "retest_of": null,
+   "hormones": {
+    "estradiol": 20.7,
+    "progesterone": 0.043,
+    "lh": 4.01
+   },
+   "mood": {
+    "psqi": null,
+    "pss": null,
+    "stai": null,
+    "poms_total_mood": null
+   },
+   "volumes": {
+    "cortical_gm": 515036.2,
+    "cerebral_wm": 355671.5,
+    "lateral_ventricles": 13565.9,
+    "third_fourth_ventricles": 4413.6,
+    "hippocampus": 6830.7,
+    "entorhinal": 4175.3,
+    "parahippocampal": 5335.0,
+    "amygdala": 2102.1,
+    "thalamus": 14637.7,
+    "caudate": 6421.2,
+    "putamen": 8306.4,
+    "pallidum": 2990.1,
+    "accumbens": 1074.9,
+    "superior_frontal": 24527.1,
+    "middle_frontal": 32810.2,
+    "precuneus": 21769.2,
+    "posterior_cingulate": 9231.0,
+    "anterior_cingulate": 9903.6,
+    "insula_anterior": 7798.0,
+    "superior_temporal": 14405.6,
+    "fusiform": 12057.0,
+    "precentral": 24160.9,
+    "postcentral": 21268.8,
+    "calcarine": 7929.5,
+    "cerebellum": 123610.1,
+    "brainstem": 15299.7,
+    "total_brain": 1062435.9,
+    "all_ventricles": 17979.5
+   },
+   "has_scan": true,
+   "affine_scale": 0.65726
+  },
+  {
+   "session": 22,
+   "week": 49.0,
+   "trimester": "post",
+   "site": "UCI",
+   "date": "07/14/2020",
+   "retest_of": null,
+   "hormones": {
+    "estradiol": 17.5,
+    "progesterone": 0.068,
+    "lh": 7.58
+   },
+   "mood": {
+    "psqi": 4.0,
+    "pss": 8.0,
+    "stai": 32.0,
+    "poms_total_mood": 4.0
+   },
+   "volumes": {
+    "cortical_gm": 517456.1,
+    "cerebral_wm": 353784.8,
+    "lateral_ventricles": 13193.5,
+    "third_fourth_ventricles": 4350.1,
+    "hippocampus": 6893.2,
+    "entorhinal": 4174.3,
+    "parahippocampal": 5354.5,
+    "amygdala": 2077.8,
+    "thalamus": 14637.2,
+    "caudate": 6539.6,
+    "putamen": 8478.1,
+    "pallidum": 3021.6,
+    "accumbens": 1142.0,
+    "superior_frontal": 24692.3,
+    "middle_frontal": 32765.5,
+    "precuneus": 21686.4,
+    "posterior_cingulate": 9325.0,
+    "anterior_cingulate": 9731.9,
+    "insula_anterior": 7957.4,
+    "superior_temporal": 14451.8,
+    "fusiform": 12249.6,
+    "precentral": 24143.1,
+    "postcentral": 21319.5,
+    "calcarine": 8297.3,
+    "cerebellum": 124577.9,
+    "brainstem": 15294.1,
+    "total_brain": 1064368.9,
+    "all_ventricles": 17543.6
+   },
+   "has_scan": true,
+   "affine_scale": 0.65498
+  },
+  {
+   "session": 23,
+   "week": 51.0,
+   "trimester": "post",
+   "site": "UCI",
+   "date": "07/30/2020",
+   "retest_of": null,
+   "hormones": {
+    "estradiol": 11.5,
+    "progesterone": 0.042,
+    "lh": 4.67
+   },
+   "mood": {
+    "psqi": 4.0,
+    "pss": 9.0,
+    "stai": 30.0,
+    "poms_total_mood": 4.0
+   },
+   "volumes": {
+    "cortical_gm": 519828.3,
+    "cerebral_wm": 351004.4,
+    "lateral_ventricles": 13188.4,
+    "third_fourth_ventricles": 4380.6,
+    "hippocampus": 6913.0,
+    "entorhinal": 4207.8,
+    "parahippocampal": 5428.0,
+    "amygdala": 2077.7,
+    "thalamus": 14751.5,
+    "caudate": 6571.1,
+    "putamen": 8437.0,
+    "pallidum": 3021.7,
+    "accumbens": 1061.8,
+    "superior_frontal": 24989.9,
+    "middle_frontal": 32820.9,
+    "precuneus": 21808.8,
+    "posterior_cingulate": 9352.4,
+    "anterior_cingulate": 9791.3,
+    "insula_anterior": 7858.9,
+    "superior_temporal": 14554.4,
+    "fusiform": 12125.6,
+    "precentral": 24246.7,
+    "postcentral": 21740.7,
+    "calcarine": 7966.0,
+    "cerebellum": 123690.6,
+    "brainstem": 15050.7,
+    "total_brain": 1062812.4,
+    "all_ventricles": 17569.0
+   },
+   "has_scan": true,
+   "affine_scale": 0.65749
+  },
+  {
+   "session": 24,
+   "week": 68.0,
+   "trimester": "post",
+   "site": "UCI",
+   "date": "11/25/2020",
+   "retest_of": null,
+   "hormones": {
+    "estradiol": null,
+    "progesterone": null,
+    "lh": null
+   },
+   "mood": {
+    "psqi": 4.0,
+    "pss": 14.0,
+    "stai": 29.0,
+    "poms_total_mood": 9.0
+   },
+   "volumes": {
+    "cortical_gm": 521232.3,
+    "cerebral_wm": 353679.7,
+    "lateral_ventricles": 12701.7,
+    "third_fourth_ventricles": 4346.0,
+    "hippocampus": 6878.4,
+    "entorhinal": 4261.7,
+    "parahippocampal": 5427.5,
+    "amygdala": 2067.1,
+    "thalamus": 14707.3,
+    "caudate": 6608.1,
+    "putamen": 8427.3,
+    "pallidum": 3125.2,
+    "accumbens": 1100.4,
+    "superior_frontal": 24769.9,
+    "middle_frontal": 32950.4,
+    "precuneus": 21574.6,
+    "posterior_cingulate": 9393.6,
+    "anterior_cingulate": 9838.1,
+    "insula_anterior": 7970.7,
+    "superior_temporal": 14732.7,
+    "fusiform": 12215.6,
+    "precentral": 24322.9,
+    "postcentral": 21722.5,
+    "calcarine": 8214.5,
+    "cerebellum": 125649.2,
+    "brainstem": 15362.2,
+    "total_brain": 1069266.1,
+    "all_ventricles": 17047.7
+   },
+   "has_scan": true,
+   "affine_scale": 0.65827
+  },
+  {
+   "session": 25,
+   "week": 93.0,
+   "trimester": "post",
+   "site": "UCI",
+   "date": "5/18/2021",
+   "retest_of": null,
+   "hormones": {
+    "estradiol": null,
+    "progesterone": null,
+    "lh": null
+   },
+   "mood": {
+    "psqi": 5.0,
+    "pss": 15.0,
+    "stai": 38.0,
+    "poms_total_mood": 29.0
+   },
+   "volumes": {
+    "cortical_gm": 523137.0,
+    "cerebral_wm": 353785.3,
+    "lateral_ventricles": 12433.1,
+    "third_fourth_ventricles": 4278.9,
+    "hippocampus": 6986.1,
+    "entorhinal": 4309.5,
+    "parahippocampal": 5463.1,
+    "amygdala": 2085.8,
+    "thalamus": 14679.4,
+    "caudate": 6636.1,
+    "putamen": 8651.8,
+    "pallidum": 3181.1,
+    "accumbens": 1190.7,
+    "superior_frontal": 25108.8,
+    "middle_frontal": 33334.0,
+    "precuneus": 21654.3,
+    "posterior_cingulate": 9337.2,
+    "anterior_cingulate": 9766.9,
+    "insula_anterior": 7996.5,
+    "superior_temporal": 14609.8,
+    "fusiform": 12286.2,
+    "precentral": 24614.5,
+    "postcentral": 21689.9,
+    "calcarine": 8277.5,
+    "cerebellum": 125672.0,
+    "brainstem": 15343.4,
+    "total_brain": 1071914.2,
+    "all_ventricles": 16712.0
+   },
+   "has_scan": true,
+   "affine_scale": 0.65481
+  },
+  {
+   "session": 26,
+   "week": 162.0,
+   "trimester": "post",
+   "site": "UCI",
+   "date": "9/14/2022",
+   "retest_of": null,
+   "hormones": {
+    "estradiol": null,
+    "progesterone": null,
+    "lh": null
+   },
+   "mood": {
+    "psqi": null,
+    "pss": null,
+    "stai": null,
+    "poms_total_mood": null
+   },
+   "volumes": {
+    "cortical_gm": 519317.4,
+    "cerebral_wm": 354366.0,
+    "lateral_ventricles": 12790.1,
+    "third_fourth_ventricles": 4306.4,
+    "hippocampus": 7021.2,
+    "entorhinal": 4207.8,
+    "parahippocampal": 5422.0,
+    "amygdala": 2067.1,
+    "thalamus": 14516.4,
+    "caudate": 6599.6,
+    "putamen": 8578.2,
+    "pallidum": 3099.4,
+    "accumbens": 1196.4,
+    "superior_frontal": 24866.9,
+    "middle_frontal": 33250.7,
+    "precuneus": 21632.5,
+    "posterior_cingulate": 9424.6,
+    "anterior_cingulate": 9715.6,
+    "insula_anterior": 7890.4,
+    "superior_temporal": 14629.6,
+    "fusiform": 12144.4,
+    "precentral": 24648.1,
+    "postcentral": 21336.3,
+    "calcarine": 8343.0,
+    "cerebellum": 126269.4,
+    "brainstem": 15740.6,
+    "total_brain": 1069303.2,
+    "all_ventricles": 17096.5
+   },
+   "has_scan": true,
+   "affine_scale": 0.65759
+  },
+  {
+   "session": 27,
+   "week": 162.0,
+   "trimester": "post",
+   "site": "UCSB_retest",
+   "date": "9/15/2022",
+   "retest_of": 26,
+   "hormones": {
+    "estradiol": null,
+    "progesterone": null,
+    "lh": null
+   },
+   "mood": {
+    "psqi": null,
+    "pss": null,
+    "stai": null,
+    "poms_total_mood": null
+   },
+   "volumes": {
+    "cortical_gm": 532492.1,
+    "cerebral_wm": 342210.3,
+    "lateral_ventricles": 13126.4,
+    "third_fourth_ventricles": 4343.5,
+    "hippocampus": 7130.4,
+    "entorhinal": 4256.6,
+    "parahippocampal": 5511.4,
+    "amygdala": 2121.9,
+    "thalamus": 14993.3,
+    "caudate": 6616.3,
+    "putamen": 8759.6,
+    "pallidum": 3241.1,
+    "accumbens": 1097.8,
+    "superior_frontal": 26440.8,
+    "middle_frontal": 33438.6,
+    "precuneus": 22065.8,
+    "posterior_cingulate": 9458.1,
+    "anterior_cingulate": 9648.0,
+    "insula_anterior": 7903.1,
+    "superior_temporal": 14919.2,
+    "fusiform": 12619.4,
+    "precentral": 26499.3,
+    "postcentral": 23041.8,
+    "calcarine": 8179.0,
+    "cerebellum": 122640.7,
+    "brainstem": 14767.3,
+    "total_brain": 1066820.2,
+    "all_ventricles": 17469.9
+   },
+   "has_scan": true,
+   "affine_scale": 0.66058
+  }
+ ],
+ "stats": {
+  "cortical_gm": {
+   "baseline": 528530.7,
+   "n_baseline": 4,
+   "baseline_cv_pct": 0.51,
+   "min_pregnancy": {
+    "session": 18,
+    "week": 33.0,
+    "pct": -3.24
+   },
+   "max_pregnancy": {
+    "session": 6,
+    "week": 3.0,
+    "pct": 0.43
+   },
+   "third_trimester_pct": -2.3,
+   "two_years_pct": -1.38,
+   "early_postpartum_pct": -2.41,
+   "retest_diff_pct": 2.54,
+   "rho_estradiol": -0.284,
+   "p_estradiol": 0.2383,
+   "n_estradiol": 19,
+   "rho_progesterone": -0.159,
+   "p_progesterone": 0.5414,
+   "n_progesterone": 17
+  },
+  "cerebral_wm": {
+   "baseline": 353839.4,
+   "n_baseline": 4,
+   "baseline_cv_pct": 0.19,
+   "min_pregnancy": {
+    "session": 18,
+    "week": 33.0,
+    "pct": -3.24
+   },
+   "max_pregnancy": {
+    "session": 7,
+    "week": 9.0,
+    "pct": 1.13
+   },
+   "third_trimester_pct": -2.14,
+   "two_years_pct": 0.07,
+   "early_postpartum_pct": -0.34,
+   "retest_diff_pct": -3.43,
+   "rho_estradiol": -0.584,
+   "p_estradiol": 0.0086,
+   "n_estradiol": 19,
+   "rho_progesterone": -0.691,
+   "p_progesterone": 0.0021,
+   "n_progesterone": 17
+  },
+  "lateral_ventricles": {
+   "baseline": 13468.3,
+   "n_baseline": 4,
+   "baseline_cv_pct": 1.67,
+   "min_pregnancy": {
+    "session": 13,
+    "week": 22.0,
+    "pct": -3.32
+   },
+   "max_pregnancy": {
+    "session": 18,
+    "week": 33.0,
+    "pct": 8.4
+   },
+   "third_trimester_pct": 3.2,
+   "two_years_pct": -6.36,
+   "early_postpartum_pct": 0.65,
+   "retest_diff_pct": 2.63,
+   "rho_estradiol": 0.107,
+   "p_estradiol": 0.6628,
+   "n_estradiol": 19,
+   "rho_progesterone": 0.194,
+   "p_progesterone": 0.4565,
+   "n_progesterone": 17
+  },
+  "third_fourth_ventricles": {
+   "baseline": 4415.7,
+   "n_baseline": 4,
+   "baseline_cv_pct": 0.71,
+   "min_pregnancy": {
+    "session": 11,
+    "week": 17.0,
+    "pct": -4.12
+   },
+   "max_pregnancy": {
+    "session": 19,
+    "week": 36.0,
+    "pct": 4.58
+   },
+   "third_trimester_pct": 0.61,
+   "two_years_pct": -2.79,
+   "early_postpartum_pct": -0.33,
+   "retest_diff_pct": 0.86,
+   "rho_estradiol": -0.226,
+   "p_estradiol": 0.3515,
+   "n_estradiol": 19,
+   "rho_progesterone": -0.034,
+   "p_progesterone": 0.896,
+   "n_progesterone": 17
+  },
+  "hippocampus": {
+   "baseline": 7122.0,
+   "n_baseline": 4,
+   "baseline_cv_pct": 0.72,
+   "min_pregnancy": {
+    "session": 7,
+    "week": 9.0,
+    "pct": -4.92
+   },
+   "max_pregnancy": {
+    "session": 5,
+    "week": 2.0,
+    "pct": -0.07
+   },
+   "third_trimester_pct": -2.25,
+   "two_years_pct": -1.66,
+   "early_postpartum_pct": -3.58,
+   "retest_diff_pct": 1.56,
+   "rho_estradiol": 0.088,
+   "p_estradiol": 0.721,
+   "n_estradiol": 19,
+   "rho_progesterone": 0.265,
+   "p_progesterone": 0.3045,
+   "n_progesterone": 17
+  },
+  "entorhinal": {
+   "baseline": 4262.7,
+   "n_baseline": 4,
+   "baseline_cv_pct": 1.71,
+   "min_pregnancy": {
+    "session": 8,
+    "week": 12.0,
+    "pct": -2.25
+   },
+   "max_pregnancy": {
+    "session": 7,
+    "week": 9.0,
+    "pct": 1.66
+   },
+   "third_trimester_pct": -0.87,
+   "two_years_pct": -0.1,
+   "early_postpartum_pct": -1.45,
+   "retest_diff_pct": 1.16,
+   "rho_estradiol": -0.118,
+   "p_estradiol": 0.6318,
+   "n_estradiol": 19,
+   "rho_progesterone": 0.206,
+   "p_progesterone": 0.4279,
+   "n_progesterone": 17
+  },
+  "parahippocampal": {
+   "baseline": 5491.9,
+   "n_baseline": 4,
+   "baseline_cv_pct": 0.69,
+   "min_pregnancy": {
+    "session": 7,
+    "week": 9.0,
+    "pct": -3.42
+   },
+   "max_pregnancy": {
+    "session": 6,
+    "week": 3.0,
+    "pct": 0.39
+   },
+   "third_trimester_pct": -2.05,
+   "two_years_pct": -0.9,
+   "early_postpartum_pct": -2.15,
+   "retest_diff_pct": 1.65,
+   "rho_estradiol": -0.296,
+   "p_estradiol": 0.2177,
+   "n_estradiol": 19,
+   "rho_progesterone": -0.172,
+   "p_progesterone": 0.5103,
+   "n_progesterone": 17
+  },
+  "amygdala": {
+   "baseline": 2162.3,
+   "n_baseline": 4,
+   "baseline_cv_pct": 1.49,
+   "min_pregnancy": {
+    "session": 19,
+    "week": 36.0,
+    "pct": -4.0
+   },
+   "max_pregnancy": {
+    "session": 6,
+    "week": 3.0,
+    "pct": 0.98
+   },
+   "third_trimester_pct": -2.7,
+   "two_years_pct": -3.97,
+   "early_postpartum_pct": -3.9,
+   "retest_diff_pct": 2.65,
+   "rho_estradiol": -0.068,
+   "p_estradiol": 0.7808,
+   "n_estradiol": 19,
+   "rho_progesterone": 0.007,
+   "p_progesterone": 0.9777,
+   "n_progesterone": 17
+  },
+  "thalamus": {
+   "baseline": 15115.0,
+   "n_baseline": 4,
+   "baseline_cv_pct": 0.79,
+   "min_pregnancy": {
+    "session": 18,
+    "week": 33.0,
+    "pct": -4.75
+   },
+   "max_pregnancy": {
+    "session": 5,
+    "week": 2.0,
+    "pct": 0.36
+   },
+   "third_trimester_pct": -3.43,
+   "two_years_pct": -3.42,
+   "early_postpartum_pct": -3.1,
+   "retest_diff_pct": 3.29,
+   "rho_estradiol": -0.496,
+   "p_estradiol": 0.0306,
+   "n_estradiol": 19,
+   "rho_progesterone": -0.554,
+   "p_progesterone": 0.021,
+   "n_progesterone": 17
+  },
+  "caudate": {
+   "baseline": 6713.7,
+   "n_baseline": 4,
+   "baseline_cv_pct": 1.13,
+   "min_pregnancy": {
+    "session": 18,
+    "week": 33.0,
+    "pct": -4.92
+   },
+   "max_pregnancy": {
+    "session": 6,
+    "week": 3.0,
+    "pct": 0.49
+   },
+   "third_trimester_pct": -2.73,
+   "two_years_pct": -1.43,
+   "early_postpartum_pct": -3.17,
+   "retest_diff_pct": 0.25,
+   "rho_estradiol": -0.189,
+   "p_estradiol": 0.4372,
+   "n_estradiol": 19,
+   "rho_progesterone": -0.098,
+   "p_progesterone": 0.7082,
+   "n_progesterone": 17
+  },
+  "putamen": {
+   "baseline": 8763.2,
+   "n_baseline": 4,
+   "baseline_cv_pct": 1.63,
+   "min_pregnancy": {
+    "session": 18,
+    "week": 33.0,
+    "pct": -4.76
+   },
+   "max_pregnancy": {
+    "session": 5,
+    "week": 2.0,
+    "pct": 0.24
+   },
+   "third_trimester_pct": -3.88,
+   "two_years_pct": -1.69,
+   "early_postpartum_pct": -4.04,
+   "retest_diff_pct": 2.11,
+   "rho_estradiol": -0.198,
+   "p_estradiol": 0.4157,
+   "n_estradiol": 19,
+   "rho_progesterone": -0.091,
+   "p_progesterone": 0.7291,
+   "n_progesterone": 17
+  },
+  "pallidum": {
+   "baseline": 3251.4,
+   "n_baseline": 4,
+   "baseline_cv_pct": 1.17,
+   "min_pregnancy": {
+    "session": 18,
+    "week": 33.0,
+    "pct": -7.06
+   },
+   "max_pregnancy": {
+    "session": 5,
+    "week": 2.0,
+    "pct": 0.03
+   },
+   "third_trimester_pct": -5.39,
+   "two_years_pct": -3.42,
+   "early_postpartum_pct": -7.94,
+   "retest_diff_pct": 4.57,
+   "rho_estradiol": -0.013,
+   "p_estradiol": 0.9573,
+   "n_estradiol": 19,
+   "rho_progesterone": 0.2,
+   "p_progesterone": 0.4418,
+   "n_progesterone": 17
+  },
+  "accumbens": {
+   "baseline": 1109.9,
+   "n_baseline": 4,
+   "baseline_cv_pct": 4.69,
+   "min_pregnancy": {
+    "session": 18,
+    "week": 33.0,
+    "pct": -8.59
+   },
+   "max_pregnancy": {
+    "session": 13,
+    "week": 22.0,
+    "pct": 5.14
+   },
+   "third_trimester_pct": -5.03,
+   "two_years_pct": 7.54,
+   "early_postpartum_pct": -2.36,
+   "retest_diff_pct": -8.24,
+   "rho_estradiol": -0.244,
+   "p_estradiol": 0.3142,
+   "n_estradiol": 19,
+   "rho_progesterone": -0.24,
+   "p_progesterone": 0.3531,
+   "n_progesterone": 17
+  },
+  "superior_frontal": {
+   "baseline": 25952.1,
+   "n_baseline": 4,
+   "baseline_cv_pct": 0.45,
+   "min_pregnancy": {
+    "session": 18,
+    "week": 33.0,
+    "pct": -4.98
+   },
+   "max_pregnancy": {
+    "session": 9,
+    "week": 14.0,
+    "pct": 0.85
+   },
+   "third_trimester_pct": -3.98,
+   "two_years_pct": -3.72,
+   "early_postpartum_pct": -5.17,
+   "retest_diff_pct": 6.33,
+   "rho_estradiol": -0.16,
+   "p_estradiol": 0.5138,
+   "n_estradiol": 19,
+   "rho_progesterone": 0.02,
+   "p_progesterone": 0.9405,
+   "n_progesterone": 17
+  },
+  "middle_frontal": {
+   "baseline": 33718.4,
+   "n_baseline": 4,
+   "baseline_cv_pct": 1.13,
+   "min_pregnancy": {
+    "session": 18,
+    "week": 33.0,
+    "pct": -4.07
+   },
+   "max_pregnancy": {
+    "session": 6,
+    "week": 3.0,
+    "pct": 0.24
+   },
+   "third_trimester_pct": -3.14,
+   "two_years_pct": -1.26,
+   "early_postpartum_pct": -3.16,
+   "retest_diff_pct": 0.57,
+   "rho_estradiol": -0.305,
+   "p_estradiol": 0.2038,
+   "n_estradiol": 19,
+   "rho_progesterone": -0.172,
+   "p_progesterone": 0.5103,
+   "n_progesterone": 17
+  },
+  "precuneus": {
+   "baseline": 22078.3,
+   "n_baseline": 4,
+   "baseline_cv_pct": 0.89,
+   "min_pregnancy": {
+    "session": 18,
+    "week": 33.0,
+    "pct": -1.94
+   },
+   "max_pregnancy": {
+    "session": 10,
+    "week": 15.0,
+    "pct": 1.31
+   },
+   "third_trimester_pct": -1.1,
+   "two_years_pct": -1.97,
+   "early_postpartum_pct": -1.68,
+   "retest_diff_pct": 2.0,
+   "rho_estradiol": 0.039,
+   "p_estradiol": 0.8753,
+   "n_estradiol": 19,
+   "rho_progesterone": 0.056,
+   "p_progesterone": 0.8298,
+   "n_progesterone": 17
+  },
+  "posterior_cingulate": {
+   "baseline": 9428.0,
+   "n_baseline": 4,
+   "baseline_cv_pct": 1.21,
+   "min_pregnancy": {
+    "session": 16,
+    "week": 29.0,
+    "pct": -3.05
+   },
+   "max_pregnancy": {
+    "session": 5,
+    "week": 2.0,
+    "pct": 1.04
+   },
+   "third_trimester_pct": -2.14,
+   "two_years_pct": -0.5,
+   "early_postpartum_pct": -1.32,
+   "retest_diff_pct": 0.36,
+   "rho_estradiol": -0.604,
+   "p_estradiol": 0.0062,
+   "n_estradiol": 19,
+   "rho_progesterone": -0.585,
+   "p_progesterone": 0.0137,
+   "n_progesterone": 17
+  },
+  "anterior_cingulate": {
+   "baseline": 9859.3,
+   "n_baseline": 4,
+   "baseline_cv_pct": 1.4,
+   "min_pregnancy": {
+    "session": 9,
+    "week": 14.0,
+    "pct": -2.0
+   },
+   "max_pregnancy": {
+    "session": 13,
+    "week": 22.0,
+    "pct": 2.06
+   },
+   "third_trimester_pct": -0.2,
+   "two_years_pct": -1.2,
+   "early_postpartum_pct": -0.97,
+   "retest_diff_pct": -0.7,
+   "rho_estradiol": 0.132,
+   "p_estradiol": 0.5913,
+   "n_estradiol": 19,
+   "rho_progesterone": 0.022,
+   "p_progesterone": 0.933,
+   "n_progesterone": 17
+  },
+  "insula_anterior": {
+   "baseline": 7947.5,
+   "n_baseline": 4,
+   "baseline_cv_pct": 1.43,
+   "min_pregnancy": {
+    "session": 7,
+    "week": 9.0,
+    "pct": -3.36
+   },
+   "max_pregnancy": {
+    "session": 5,
+    "week": 2.0,
+    "pct": 0.72
+   },
+   "third_trimester_pct": -0.69,
+   "two_years_pct": -0.05,
+   "early_postpartum_pct": -0.83,
+   "retest_diff_pct": 0.16,
+   "rho_estradiol": -0.089,
+   "p_estradiol": 0.7182,
+   "n_estradiol": 19,
+   "rho_progesterone": -0.072,
+   "p_progesterone": 0.7826,
+   "n_progesterone": 17
+  },
+  "superior_temporal": {
+   "baseline": 14841.7,
+   "n_baseline": 4,
+   "baseline_cv_pct": 1.08,
+   "min_pregnancy": {
+    "session": 7,
+    "week": 9.0,
+    "pct": -3.9
+   },
+   "max_pregnancy": {
+    "session": 6,
+    "week": 3.0,
+    "pct": 0.38
+   },
+   "third_trimester_pct": -3.13,
+   "two_years_pct": -1.5,
+   "early_postpartum_pct": -2.78,
+   "retest_diff_pct": 1.98,
+   "rho_estradiol": -0.439,
+   "p_estradiol": 0.0603,
+   "n_estradiol": 19,
+   "rho_progesterone": -0.338,
+   "p_progesterone": 0.1842,
+   "n_progesterone": 17
+  },
+  "fusiform": {
+   "baseline": 12309.8,
+   "n_baseline": 4,
+   "baseline_cv_pct": 1.03,
+   "min_pregnancy": {
+    "session": 12,
+    "week": 19.0,
+    "pct": -3.74
+   },
+   "max_pregnancy": {
+    "session": 5,
+    "week": 2.0,
+    "pct": 0.01
+   },
+   "third_trimester_pct": -1.45,
+   "two_years_pct": -0.77,
+   "early_postpartum_pct": -1.43,
+   "retest_diff_pct": 3.91,
+   "rho_estradiol": -0.3,
+   "p_estradiol": 0.2121,
+   "n_estradiol": 19,
+   "rho_progesterone": -0.191,
+   "p_progesterone": 0.4623,
+   "n_progesterone": 17
+  },
+  "precentral": {
+   "baseline": 25284.3,
+   "n_baseline": 4,
+   "baseline_cv_pct": 0.66,
+   "min_pregnancy": {
+    "session": 10,
+    "week": 15.0,
+    "pct": -5.26
+   },
+   "max_pregnancy": {
+    "session": 5,
+    "week": 2.0,
+    "pct": 1.2
+   },
+   "third_trimester_pct": -3.94,
+   "two_years_pct": -2.58,
+   "early_postpartum_pct": -4.53,
+   "retest_diff_pct": 7.51,
+   "rho_estradiol": -0.114,
+   "p_estradiol": 0.642,
+   "n_estradiol": 19,
+   "rho_progesterone": 0.064,
+   "p_progesterone": 0.808,
+   "n_progesterone": 17
+  },
+  "postcentral": {
+   "baseline": 22282.8,
+   "n_baseline": 4,
+   "baseline_cv_pct": 1.42,
+   "min_pregnancy": {
+    "session": 18,
+    "week": 33.0,
+    "pct": -5.44
+   },
+   "max_pregnancy": {
+    "session": 6,
+    "week": 3.0,
+    "pct": 0.78
+   },
+   "third_trimester_pct": -3.89,
+   "two_years_pct": -3.45,
+   "early_postpartum_pct": -4.14,
+   "retest_diff_pct": 7.99,
+   "rho_estradiol": -0.258,
+   "p_estradiol": 0.2864,
+   "n_estradiol": 19,
+   "rho_progesterone": -0.213,
+   "p_progesterone": 0.4112,
+   "n_progesterone": 17
+  },
+  "calcarine": {
+   "baseline": 8141.0,
+   "n_baseline": 4,
+   "baseline_cv_pct": 1.96,
+   "min_pregnancy": {
+    "session": 7,
+    "week": 9.0,
+    "pct": -7.17
+   },
+   "max_pregnancy": {
+    "session": 19,
+    "week": 36.0,
+    "pct": 3.04
+   },
+   "third_trimester_pct": 0.05,
+   "two_years_pct": 2.08,
+   "early_postpartum_pct": -1.14,
+   "retest_diff_pct": -1.97,
+   "rho_estradiol": 0.463,
+   "p_estradiol": 0.0458,
+   "n_estradiol": 19,
+   "rho_progesterone": 0.547,
+   "p_progesterone": 0.0232,
+   "n_progesterone": 17
+  },
+  "cerebellum": {
+   "baseline": 121496.5,
+   "n_baseline": 4,
+   "baseline_cv_pct": 1.21,
+   "min_pregnancy": {
+    "session": 7,
+    "week": 9.0,
+    "pct": -1.84
+   },
+   "max_pregnancy": {
+    "session": 6,
+    "week": 3.0,
+    "pct": 1.48
+   },
+   "third_trimester_pct": 0.62,
+   "two_years_pct": 3.68,
+   "early_postpartum_pct": 1.66,
+   "retest_diff_pct": -2.87,
+   "rho_estradiol": -0.191,
+   "p_estradiol": 0.4329,
+   "n_estradiol": 19,
+   "rho_progesterone": -0.346,
+   "p_progesterone": 0.1743,
+   "n_progesterone": 17
+  },
+  "brainstem": {
+   "baseline": 15097.4,
+   "n_baseline": 4,
+   "baseline_cv_pct": 0.86,
+   "min_pregnancy": {
+    "session": 9,
+    "week": 14.0,
+    "pct": -2.92
+   },
+   "max_pregnancy": {
+    "session": 10,
+    "week": 15.0,
+    "pct": 2.76
+   },
+   "third_trimester_pct": -0.4,
+   "two_years_pct": 2.95,
+   "early_postpartum_pct": 0.75,
+   "retest_diff_pct": -6.18,
+   "rho_estradiol": -0.316,
+   "p_estradiol": 0.1878,
+   "n_estradiol": 19,
+   "rho_progesterone": -0.431,
+   "p_progesterone": 0.0838,
+   "n_progesterone": 17
+  },
+  "total_brain": {
+   "baseline": 1073928.3,
+   "n_baseline": 4,
+   "baseline_cv_pct": 0.3,
+   "min_pregnancy": {
+    "session": 18,
+    "week": 33.0,
+    "pct": -2.94
+   },
+   "max_pregnancy": {
+    "session": 6,
+    "week": 3.0,
+    "pct": 0.0
+   },
+   "third_trimester_pct": -1.94,
+   "two_years_pct": -0.31,
+   "early_postpartum_pct": -1.28,
+   "retest_diff_pct": -0.23,
+   "rho_estradiol": -0.468,
+   "p_estradiol": 0.0431,
+   "n_estradiol": 19,
+   "rho_progesterone": -0.5,
+   "p_progesterone": 0.041,
+   "n_progesterone": 17
+  },
+  "all_ventricles": {
+   "baseline": 17884.0,
+   "n_baseline": 4,
+   "baseline_cv_pct": 1.36,
+   "min_pregnancy": {
+    "session": 13,
+    "week": 22.0,
+    "pct": -3.14
+   },
+   "max_pregnancy": {
+    "session": 18,
+    "week": 33.0,
+    "pct": 6.94
+   },
+   "third_trimester_pct": 2.56,
+   "two_years_pct": -5.48,
+   "early_postpartum_pct": 0.41,
+   "retest_diff_pct": 2.18,
+   "rho_estradiol": 0.058,
+   "p_estradiol": 0.8139,
+   "n_estradiol": 19,
+   "rho_progesterone": 0.189,
+   "p_progesterone": 0.4682,
+   "n_progesterone": 17
+  }
+ }
+}
