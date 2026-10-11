@@ -9,4 +9,6 @@ export const EXPERIMENTS: Experiment[] = [
     dek: '40 MRI scans at 7 am and 8 pm over 30 days (28andHe), with testosterone and cortisol. The same pipeline as the menstrual cycle study, for comparison.' },
   { n: 4, path: '/your-dose', label: 'Drug dose', title: 'Drug levels in the blood, by sex and body weight', short: 'Drug dose',
     dek: 'A pharmacokinetic simulator for acetaminophen, caffeine and metoprolol, using published sex-specific parameters. Adjustable for weight, oral contraception and pregnancy.' },
+  { n: 5, path: '/ingredient-check', label: 'Ingredient check', title: 'Cosmetic ingredients against the official hormone-disruptor lists', short: 'Ingredient check',
+    dek: 'Paste a product\'s ingredient list. Each ingredient on the EU endocrine disruptor lists or California\'s Proposition 65 list comes back with the list\'s own grade, a note and the source.' },
 ]

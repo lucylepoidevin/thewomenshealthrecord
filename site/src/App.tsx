@@ -25,6 +25,9 @@ import YourDose from './dose/pages/YourDose'
 import YourDoseMethods from './dose/pages/YourDoseMethods'
 import YourDoseData from './dose/pages/YourDoseData'
 import Experiments from './experiments/pages/Experiments'
+import IngredientCheck from './ingredients/pages/IngredientCheck'
+import IngredientCheckMethods from './ingredients/pages/IngredientCheckMethods'
+import IngredientCheckData from './ingredients/pages/IngredientCheckData'
 import { CHAPTERS } from './lib/chapters'
 
 import { EXPERIMENTS } from './experiments/list'
@@ -91,6 +94,9 @@ export default function App() {
           <Route path="/your-dose" element={<YourDose />} />
           <Route path="/your-dose/methods" element={<YourDoseMethods />} />
           <Route path="/your-dose/data" element={<YourDoseData />} />
+          <Route path="/ingredient-check" element={<IngredientCheck />} />
+          <Route path="/ingredient-check/methods" element={<IngredientCheckMethods />} />
+          <Route path="/ingredient-check/data" element={<IngredientCheckData />} />
           <Route path="/chapters/tested-on-men" element={<Chapter1 />} />
           <Route path="/chapters/pain-gap" element={<Chapter2 />} />
           <Route path="/chapters/funding-vs-burden" element={<Chapter3 />} />

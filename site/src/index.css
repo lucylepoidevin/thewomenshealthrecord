@@ -136,3 +136,11 @@ input[type="range"].day-slider:disabled::-webkit-slider-thumb { background: var(
 .nav-exp.is-active { border-bottom-color: #8B1E4B; }
 :root[data-theme="dark"] .nav-exp { color: var(--color-berry); }
 :root[data-theme="dark"] .nav-exp:hover, :root[data-theme="dark"] .nav-exp.is-active { border-bottom-color: var(--color-berry); }
+
+/* Ingredient check grade tags: four quiet labels, no red X */
+.grade { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 2px 8px; border-radius: 4px; border: 1px solid var(--color-hairline); color: var(--color-ink); }
+.grade-confirmed { border-color: var(--color-berry); color: var(--color-berry); }
+.grade-review { border-color: var(--c-progesterone); color: var(--c-progesterone); }
+.grade-flagged { border-color: var(--c-lh); color: var(--c-lh); }
+.grade-california { border-color: var(--color-ink-3); color: var(--color-ink-2); }
+textarea.ctl { resize: vertical; }

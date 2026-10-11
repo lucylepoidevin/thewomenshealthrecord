@@ -21,6 +21,11 @@
    "url": "https://edlists.org/the-ed-lists/list-iii-substances-identified-as-endocrine-disruptors-by-participating-national-authorities",
    "retrieved": "2026-10-11"
   },
+  "prop65": {
+   "text": "California Office of Environmental Health Hazard Assessment. The Proposition 65 List of chemicals known to the State to cause cancer or reproductive toxicity, with basis and listing date (p65chemicalslist.xlsx).",
+   "url": "https://oehha.ca.gov/proposition-65/proposition-65-list",
+   "retrieved": "2026-10-11"
+  },
   "pubchem": {
    "text": "PubChem (National Library of Medicine), compound synonyms by CAS registry number, used to recognise label names.",
    "url": "https://pubchem.ncbi.nlm.nih.gov/",
@@ -32,6 +37,50 @@
   "review": "Under review",
   "flagged": "Flagged by one authority",
   "california": "Reportable in California"
+ },
+ "explainers": {
+  "99-76-3": "A preservative used for decades, and the mildest of the parabens in hormone-activity tests. The EU's scientific committee considers it safe at the permitted concentration (up to 0.4%). It is on List II because the EU is still evaluating its endocrine activity, and one national authority has placed it on List III.",
+  "94-13-3": "A preservative. The EU cut its permitted concentration to 0.14% in 2014 and banned it from leave-on products for the nappy area of children under three. Under evaluation at EU level; a harmonised classification as a reproductive toxicant was proposed in 2024.",
+  "94-26-8": "A preservative. Added to the EU's candidate list of substances of very high concern in 2020 for endocrine-disrupting effects on human health, which is why it sits on List I. Still permitted in cosmetics up to 0.14%, with the same nappy-area ban as propylparaben.",
+  "4247-02-3": "Banned in EU cosmetics since 2014, with isopropyl-, phenyl-, benzyl- and pentylparaben, because the safety data to keep them were missing. On the candidate list for endocrine disruption since 2023.",
+  "131-57-7": "A UV filter, also called oxybenzone. The EU lowered its permitted concentration in 2022 (6% in most products, 2.2% in body sprays). Under EU evaluation; the 2025 assessment under REACH concluded it has endocrine-disrupting properties, and one national authority lists it.",
+  "131-56-6": "A UV absorber, mostly used to protect the product rather than the skin. On the Commission's 2019 list of potential endocrine disruptors in cosmetics; under evaluation.",
+  "131-55-5": "A UV absorber. Flagged by one national authority and on the Commission's 2019 cosmetics list.",
+  "36861-47-9": "A UV filter (enzacamene). Identified as an endocrine disruptor at EU level and added to the candidate list in 2022. Never approved in the US; being removed from EU cosmetics.",
+  "80-54-6": "A lily-of-the-valley fragrance ingredient, known as Lilial. Banned in EU cosmetics from March 2022 after classification as toxic to reproduction, and on the Commission's 2019 list of potential endocrine disruptors. Still permitted in the US. If you see it on an EU label, the product predates the ban.",
+  "128-37-0": "An antioxidant that stops oils going rancid. Under EU evaluation since 2016; the EU's scientific committee judged it safe at cosmetic concentrations in 2021.",
+  "25013-16-5": "An antioxidant. On California's Proposition 65 list as a carcinogen (1990), concluded to have endocrine-disrupting properties in a 2024 EU assessment, with a harmonised classification proposed in 2025.",
+  "55406-53-6": "A preservative. The EU's biocides committee concluded in 2025 that it has endocrine-disrupting properties. Permitted in cosmetics at up to 0.02%, not in lip or oral products or in body products for children under three.",
+  "70356-09-1": "The most widely used UVA filter (avobenzone). Under EU evaluation since 2015, chiefly for environmental concerns.",
+  "71617-10-2": "A UVB filter. Under EU evaluation since 2016.",
+  "541-02-6": "A silicone (D5) that gives slip and quick drying. Restricted in EU wash-off cosmetics to 0.1% since 2020 for environmental persistence; on the Commission's 2019 list for its possible hormonal activity, under evaluation.",
+  "556-67-2": "A silicone (D4). Classified in the EU as toxic to reproduction (category 2) and restricted in wash-off cosmetics to 0.1% since 2020. Flagged by a national authority as an endocrine disruptor.",
+  "69430-24-6": "A mixture of cyclic silicones, mostly D4 and D5. See those two.",
+  "3380-34-5": "An antibacterial. The EU restricts it to 0.3% in a few product types and bans it from most; the US FDA removed it from consumer hand soaps in 2016. Under EU evaluation as an endocrine disruptor since 2012.",
+  "101-20-2": "An antibacterial, mostly in soaps. Removed from US consumer hand soaps by the FDA in 2016 alongside triclosan. Flagged by a national authority, under EU evaluation.",
+  "108-46-3": "Used in hair dyes. Interferes with thyroid hormone production at high doses; under EU evaluation, with a harmonised classification proposed in 2024 and a national authority listing in 2025.",
+  "69-72-7": "An exfoliant and preservative, and the active metabolite of aspirin. Flagged by a national authority. The EU's scientific committee judged it safe in 2019 at cosmetic concentrations (up to 2% in most products, 3% in rinse-off hair products), except in products for children under three.",
+  "38083-17-9": "An anti-dandruff agent. Restricted in the EU (0.5% in rinse-off shampoo, 0.2% in other products); a harmonised classification is proposed for 2026.",
+  "7681-49-4": "The fluoride in toothpaste, which prevents cavities. Under EU evaluation; a harmonised classification was proposed in 2024. Toothpaste fluoride is capped at 0.15%.",
+  "115-86-6": "A plasticiser used in nail polish. Identified as an endocrine disruptor at EU level (2023) and on the candidate list.",
+  "84-74-2": "A phthalate once used in nail polish. Banned in EU cosmetics, on the EU authorisation list, and on California's Proposition 65 list for developmental and reproductive toxicity.",
+  "117-81-7": "A phthalate plasticiser. Banned in EU cosmetics; on the EU authorisation list for both human health and the environment.",
+  "85-68-7": "A phthalate plasticiser. Banned in EU cosmetics; on the EU authorisation list; on Proposition 65 for developmental toxicity.",
+  "13463-67-7": "A white pigment (CI 77891) and mineral sunscreen. California's listing concerns airborne, unbound particles of a size that can be inhaled, so it is relevant to loose powders and sprays, not to creams or pressed products. The EU bans it in sprayable products that could reach the lungs.",
+  "1333-86-4": "A black pigment (CI 77266) in eyeliner and mascara. California's listing, like titanium dioxide's, concerns airborne, unbound particles that can be inhaled, not pigment bound in a product.",
+  "14807-96-6": "A mineral powder. California's listing is for talc containing asbestiform fibers; cosmetic-grade talc is required to be asbestos-free, and that requirement is the subject of ongoing litigation and testing.",
+  "68-26-8": "Vitamin A. California lists retinol and its esters for developmental toxicity at daily doses above 10,000 IU, a level that refers to total intake. The EU capped retinol in cosmetics in 2024 (0.3% in face products, 0.05% in body products) over total-intake concerns.",
+  "79-81-2": "A vitamin A ester (retinyl palmitate). California lists retinol and its esters for developmental toxicity at daily doses above 10,000 IU, a level that refers to total intake. The EU capped retinoids in cosmetics in 2024.",
+  "127-47-9": "A vitamin A ester. Same listing as retinol: developmental toxicity at daily doses above 10,000 IU.",
+  "68603-42-9": "A foaming agent in shampoos and washes. On Proposition 65 as a carcinogen (2012). The EU restricts it to limit the formation of nitrosamines.",
+  "50-00-0": "A carcinogen (Proposition 65, 1988; EU category 1B). Banned as an ingredient in EU cosmetics; some preservatives release it slowly, and EU labels must say so above 0.001%.",
+  "108-88-3": "A solvent in nail polish. On Proposition 65 for developmental toxicity (1991). The EU allows it in nail products up to 25%.",
+  "119-61-9": "A fragrance ingredient and UV stabiliser. On Proposition 65 as a carcinogen (2012).",
+  "140-67-0": "A natural component of basil, tarragon and fennel oils. On Proposition 65 as a carcinogen (1999), based on high-dose animal studies; restricted in EU fragrance.",
+  "94-59-7": "A natural component of sassafras and some spice oils. On Proposition 65 as a carcinogen (1988); banned as an added fragrance ingredient in the EU.",
+  "123-35-3": "A natural terpene in many essential oils (hops, lemongrass, thyme). On Proposition 65 as a carcinogen (2015), based on high-dose rodent studies.",
+  "301-04-2": "Once used in progressive hair dyes. On Proposition 65; banned in EU cosmetics and, since 2018, in US hair dyes.",
+  "80-05-7": "Bisphenol A, a plastics chemical rather than a cosmetic ingredient; it turns up in packaging. Identified as an endocrine disruptor at EU level and on Proposition 65 for reproductive and developmental toxicity."
  },
  "ingredients": [
   {
@@ -55,6 +104,7 @@
      "listed_name": "(1R,3E,4S)-1,7,7-trimethyl-3-(4- methylbenzylidene)bicyclo[2.2.1]heptan-2-one (4-MBC)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "(1R,3E,4S)-1,7,7-trimethyl-3-(4- methylbenzylidene)bicyclo[2.2.1]heptan-2-one (4-MBC)",
     "Enzacamene, (+)-",
@@ -107,6 +157,7 @@
      "listed_name": "(1R,3Z,4S)-1,7,7-trimethyl-3-(4- methylbenzylidene)bicyclo[2.2.1]heptan-2-one (4-MBC)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "(1R,3Z,4S)-1,7,7-trimethyl-3-(4- methylbenzylidene)bicyclo[2.2.1]heptan-2-one (4-MBC)",
     "4-Methylbenzylidene-camphor",
@@ -136,6 +187,7 @@
      "listed_name": "(1R,4S)-1,7,7-trimethyl-3-(4-methylbenzylidene)bicyclo[2.2.1]heptan-2-one (4-MBC)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "(1R,4S)-1,7,7-trimethyl-3-(4-methylbenzylidene)bicyclo[2.2.1]heptan-2-one (4-MBC)",
     "(1R,4S)-1,7,7-trimethyl-3-(4-methylbenzylidene)bicyclo[2.2.1]heptan-2-one"
@@ -162,6 +214,7 @@
      "listed_name": "(1S,3E,4R)-1,7,7-trimethyl-3-(4- methylbenzylidene)bicyclo[2.2.1]heptan-2-one (4-MBC)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "(1S,3E,4R)-1,7,7-trimethyl-3-(4- methylbenzylidene)bicyclo[2.2.1]heptan-2-one (4-MBC)",
     "Enzacamene, (-)",
@@ -189,6 +242,7 @@
      "listed_name": "(1S,3Z,4R)-1,7,7-trimethyl-3-(4-methylbenzylidene)bicyclo[2.2.1]heptan-2-one (4-MBC)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "(1S,3Z,4R)-1,7,7-trimethyl-3-(4-methylbenzylidene)bicyclo[2.2.1]heptan-2-one (4-MBC)",
     "(1S,3Z,4R)-1,7,7-trimethyl-3-(4-methylbenzylidene)bicyclo[2.2.1]heptan-2-one"
@@ -215,6 +269,7 @@
      "listed_name": "(3E)-1,7,7-trimethyl-3-(4-methylbenzylidene)bicyclo[2.2.1]heptan-2-one (4-MBC)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "(3E)-1,7,7-trimethyl-3-(4-methylbenzylidene)bicyclo[2.2.1]heptan-2-one (4-MBC)",
     "4-Methylbenzylidene camphor",
@@ -246,7 +301,7 @@
   {
    "id": "36861-47-9",
    "name": "(±)-1,7,7-trimethyl-3-[(4-methylphenyl)methylene]bicyclo[2.2.1]heptan-2- (4-MBC)",
-   "inci_hint": null,
+   "inci_hint": "4-Methylbenzylidene Camphor",
    "cas": [
     "36861-47-9"
    ],
@@ -286,6 +341,10 @@
      "listed_name": "(±)-1,7,7-trimethyl-3-[(4-methylphenyl)methylene]bicyclo[2.2.1]heptan-2- (4-MBC)"
     }
    ],
+   "aliases": [
+    "4-Methylbenzylidene Camphor",
+    "Enzacamene"
+   ],
    "synonyms": [
     "(±)-1,7,7-trimethyl-3-[(4-methylphenyl)methylene]bicyclo[2.2.1]heptan-2- (4-MBC)",
     "3-(4'-Methylbenzylidene)camphor",
@@ -319,6 +378,7 @@
      "listed_name": "1,7,7-trimethyl-3-[(4-methylphenyl)methylene]bicyclo[2.2.1]heptan-2-one; 3-BC"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "1,7,7-trimethyl-3-[(4-methylphenyl)methylene]bicyclo[2.2.1]heptan-2-one; 3-BC",
     "3-benzylidenebornan-2-one",
@@ -374,6 +434,7 @@
      "listed_name": "14-(nonylphenoxy)-3,6,9,12-tetraoxatetradecan-1-ol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "14-(nonylphenoxy)-3,6,9,12-tetraoxatetradecan-1-ol",
     "3,6,9,12-Tetraoxatetradecan-1-ol, 14-(nonylphenoxy)-",
@@ -417,6 +478,7 @@
      "listed_name": "17-(4-nonylphenoxy)-3,6,9,12,15-pentaoxaheptadecan-1-ol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "17-(4-nonylphenoxy)-3,6,9,12,15-pentaoxaheptadecan-1-ol",
     "2-[2-[2-[2-[2-[2-(4-nonylphenoxy)ethoxy]ethoxy]ethoxy]ethoxy]ethoxy]ethanol",
@@ -460,6 +522,7 @@
      "listed_name": "2,2-dibromo-2-cyanoacetamide (DBNPA)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "2,2-dibromo-2-cyanoacetamide (DBNPA)",
     "2,2-DIBROMO-2-CYANOACETAMIDE",
@@ -534,6 +597,7 @@
      "listed_name": "2-(4-nonylphenoxy)ethanol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "2-(4-nonylphenoxy)ethanol",
     "2-(p-Nonylphenoxy)ethanol",
@@ -598,6 +662,7 @@
      "listed_name": "2-(isononylphenoxy)ethanol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "2-(isononylphenoxy)ethanol",
     "EINECS 284-987-5",
@@ -638,6 +703,7 @@
      "listed_name": "2-(nonylphenoxy)ethanol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "2-(nonylphenoxy)ethanol",
     "Terics",
@@ -691,6 +757,7 @@
      "listed_name": "2-[2-(4-nonylphenoxy)ethoxy]ethanol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "2-[2-(4-nonylphenoxy)ethoxy]ethanol",
     "4-Nonylphenol diethoxylate",
@@ -761,6 +828,7 @@
      "listed_name": "2-[2-(nonylphenoxy)ethoxy]ethanol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "2-[2-(nonylphenoxy)ethoxy]ethanol",
     "PONPE-2",
@@ -808,6 +876,7 @@
      "listed_name": "2-[2-[2-[2-(4-nonylphenoxy)ethoxy]ethoxy]ethoxy]ethanol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "2-[2-[2-[2-(4-nonylphenoxy)ethoxy]ethoxy]ethoxy]ethanol",
     "Ethanol, 2-[2-[2-[2-(4-nonylphenoxy)ethoxy]ethoxy]ethoxy]-",
@@ -857,6 +926,7 @@
      "listed_name": "2-[4-(1,1,3,3-tetramethylbutyl)phenoxy]ethanol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "2-[4-(1,1,3,3-tetramethylbutyl)phenoxy]ethanol",
     "Triton X 100",
@@ -959,6 +1029,7 @@
      "listed_name": "2-[4-(3,6-dimethylheptan-3-yl)phenoxy]ethanol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "2-[4-(3,6-dimethylheptan-3-yl)phenoxy]ethanol",
     "687-832-3",
@@ -1001,6 +1072,7 @@
      "listed_name": "2-{2-[4-(2,4,4-trimethylpentan-2-yl)phenoxy]ethoxy}ethanol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "2-{2-[4-(2,4,4-trimethylpentan-2-yl)phenoxy]ethoxy}ethanol",
     "2-[2-[4-(2,4,4-trimethylpentan-2-yl)phenoxy]ethoxy]ethanol",
@@ -1060,6 +1132,7 @@
      "listed_name": "2-{2-[4-(3,6-dimethylheptan-3-yl)phenoxy]ethoxy}ethanol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "2-{2-[4-(3,6-dimethylheptan-3-yl)phenoxy]ethoxy}ethanol",
     "2-[2-[4-(3,6-dimethylheptan-3-yl)phenoxy]ethoxy]ethanol",
@@ -1103,6 +1176,7 @@
      "listed_name": "20-(4-nonylphenoxy)-3,6,9,12,15,18-hexaoxaicosan-1-ol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "20-(4-nonylphenoxy)-3,6,9,12,15,18-hexaoxaicosan-1-ol",
     "20-(4-Nonylphenoxy)-3,6,9,12,15,18-hexaoxaeicosan-1-ol",
@@ -1147,6 +1221,7 @@
      "listed_name": "20-(nonylphenoxy)-3,6,9,12,15,18-hexaoxaicosan-1-ol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "20-(nonylphenoxy)-3,6,9,12,15,18-hexaoxaicosan-1-ol",
     "EINECS 248-292-0",
@@ -1187,6 +1262,7 @@
      "listed_name": "20-[4-(1,1,3,3-tetramethylbutyl)phenoxy]-3,6,9,12,15,18-hexaoxaicosan-1-ol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "20-[4-(1,1,3,3-tetramethylbutyl)phenoxy]-3,6,9,12,15,18-hexaoxaicosan-1-ol",
     "EINECS 219-682-8",
@@ -1255,6 +1331,7 @@
      "listed_name": "23-(nonylphenoxy)-3,6,9,12,15,18,21-heptaoxatricosan-1-ol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "23-(nonylphenoxy)-3,6,9,12,15,18,21-heptaoxatricosan-1-ol",
     "Octaethylene glycol mono(p-nonylphenyl) ether",
@@ -1312,6 +1389,7 @@
      "listed_name": "26-(4-Nonylphenoxy)-3,6,9,12,15,18,21,24- octaoxahexacosan -1-ol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "26-(4-Nonylphenoxy)-3,6,9,12,15,18,21,24- octaoxahexacosan -1-ol",
     "Nonoxynol-9",
@@ -1407,6 +1485,7 @@
      "listed_name": "26-(nonylphenoxy)-3,6,9,12,15,18,21,24-octaoxahexacosan-1-ol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "26-(nonylphenoxy)-3,6,9,12,15,18,21,24-octaoxahexacosan-1-ol",
     "Nonoxynol-9",
@@ -1502,6 +1581,7 @@
      "listed_name": "29-(nonylphenoxy)-3,6,9,12,15,18,21,24,27-nonaoxanonacosanol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "29-(nonylphenoxy)-3,6,9,12,15,18,21,24,27-nonaoxanonacosanol",
     "EINECS 248-294-1",
@@ -1540,6 +1620,7 @@
      "listed_name": "3,6,9,12,15,18,21,24,27-Nonaoxanonacosan-1-ol, 29-(isononylphenoxy)-"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "3,6,9,12,15,18,21,24,27-Nonaoxanonacosan-1-ol, 29-(isononylphenoxy)-",
     "HYZLLJKTXYYLDT-UHFFFAOYSA-N"
@@ -1577,6 +1658,7 @@
      "listed_name": "3,6,9,12,15-Pentaoxaheptadecan-1-ol, 17-(nonylphenoxy)-"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "3,6,9,12,15-Pentaoxaheptadecan-1-ol, 17-(nonylphenoxy)-",
     "hexaethylene glycol nonylphenyl ether",
@@ -1619,6 +1701,7 @@
      "listed_name": "3,6,9,12-Tetraoxatetradecan-1-ol, 14-(4-nonylphenoxy)-"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "3,6,9,12-Tetraoxatetradecan-1-ol, 14-(4-nonylphenoxy)-",
     "Pentaethylene glycol mono(p-nonylphenyl) ether",
@@ -1671,6 +1754,7 @@
      "listed_name": "3,6,9,12-Tetraoxatetradecan-1-ol, 14-(4-nonylphenoxy)-, branched"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "3,6,9,12-Tetraoxatetradecan-1-ol, 14-(4-nonylphenoxy)-, branched"
    ]
@@ -1707,6 +1791,7 @@
      "listed_name": "4,4'-(1-methylpropylidene)bisphenol: Bisphenol B"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4,4'-(1-methylpropylidene)bisphenol: Bisphenol B",
     "Bisphenol B",
@@ -1770,7 +1855,7 @@
   {
    "id": "80-05-7",
    "name": "4,4'-isopropylidenediphenol; Bisphenol A",
-   "inci_hint": "Dian",
+   "inci_hint": "Bisphenol A",
    "cas": [
     "80-05-7"
    ],
@@ -1800,15 +1885,30 @@
     },
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 1 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for female; reported to the Safe Cosmetics Program in 1 products",
+     "year": "2015",
+     "field": "Bisphenol A (BPA)",
+     "health": true,
+     "env": false,
+     "source": "california",
+     "listed_name": "Bisphenol A (BPA)"
+    },
+    {
+     "grade": "california",
+     "list": "California Proposition 65",
+     "status": "listed for developmental; reported to the Safe Cosmetics Program in 1 products",
+     "year": "2020",
+     "field": "Bisphenol A (BPA)",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Bisphenol A (BPA)"
     }
+   ],
+   "aliases": [
+    "Bisphenol A",
+    "BPA"
    ],
    "synonyms": [
     "4,4'-isopropylidenediphenol; Bisphenol A",
@@ -1987,6 +2087,7 @@
      "listed_name": "4,4'-sulphonyldiphenol, Bisphenol S (BPS)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4,4'-sulphonyldiphenol, Bisphenol S (BPS)",
     "4,4'-Sulfonyldiphenol",
@@ -2100,6 +2201,7 @@
      "listed_name": "4-(1,1,3,3-tetramethylbutyl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-(1,1,3,3-tetramethylbutyl)phenol",
     "4-tert-Octylphenol",
@@ -2195,6 +2297,7 @@
      "listed_name": "4-(1,1,5-Trimethylhexyl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-(1,1,5-Trimethylhexyl)phenol",
     "4-(2,6-DIMETHYL-2-HEPTYL)PHENOL",
@@ -2228,6 +2331,7 @@
      "listed_name": "4-(1-Ethyl-1,3-dimethylpentyl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-(1-Ethyl-1,3-dimethylpentyl)phenol",
     "353 Nonylphenol",
@@ -2269,6 +2373,7 @@
      "listed_name": "4-(1-Ethyl-1,4-dimethylpentyl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-(1-Ethyl-1,4-dimethylpentyl)phenol",
     "4-Nonylphenol 112",
@@ -2308,6 +2413,7 @@
      "listed_name": "4-(1-ethyl-1-methylhexyl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-(1-ethyl-1-methylhexyl)phenol",
     "Phenol, 4-(1-ethyl-1-methylhexyl)-",
@@ -2342,6 +2448,7 @@
      "listed_name": "4-(2,2-dimethylpentan-3-yl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-(2,2-dimethylpentan-3-yl)phenol",
     "4-(1-Ethyl-2,2-dimethylpropyl)phenol"
@@ -2368,6 +2475,7 @@
      "listed_name": "4-(2,3,3-trimethylbutan-2-yl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-(2,3,3-trimethylbutan-2-yl)phenol",
     "4-(1,1,2,2-tetramethylpropyl)phenol"
@@ -2394,6 +2502,7 @@
      "listed_name": "4-(2,3-dimethylpentan-2-yl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-(2,3-dimethylpentan-2-yl)phenol",
     "854-135-2",
@@ -2422,6 +2531,7 @@
      "listed_name": "4-(2,4-dimethylpentan-2-yl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-(2,4-dimethylpentan-2-yl)phenol",
     "4-(1,1,3-Trimethylbutyl)phenol",
@@ -2449,6 +2559,7 @@
      "listed_name": "4-(2,4-dimethylpentan-3-yl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-(2,4-dimethylpentan-3-yl)phenol",
     "4-[2-Methyl-1-(1-methylethyl)propyl]phenol"
@@ -2475,6 +2586,7 @@
      "listed_name": "4-(2-methylhexan-2-yl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-(2-methylhexan-2-yl)phenol",
     "4-(1,1-Dimethylpentyl)phenol"
@@ -2501,6 +2613,7 @@
      "listed_name": "4-(3,3-dimethylpentan-2-yl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-(3,3-dimethylpentan-2-yl)phenol",
     "4-(1,2,2-Trimethylbutyl)phenol"
@@ -2527,6 +2640,7 @@
      "listed_name": "4-(3-ethylheptan-2-yl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-(3-ethylheptan-2-yl)phenol",
     "635-696-0",
@@ -2558,6 +2672,7 @@
      "listed_name": "4-(3-ethylpentan-3-yl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-(3-ethylpentan-3-yl)phenol",
     "4-(1,1-diethylpropyl)phenol",
@@ -2587,6 +2702,7 @@
      "listed_name": "4-(3-ethylpentyl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-(3-ethylpentyl)phenol"
    ]
@@ -2612,6 +2728,7 @@
      "listed_name": "4-(3-methylhexan-2-yl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-(3-methylhexan-2-yl)phenol",
     "4-(1,2-Dimethylpentyl)phenol"
@@ -2638,6 +2755,7 @@
      "listed_name": "4-(3-methylhexan-3-yl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-(3-methylhexan-3-yl)phenol",
     "854-958-7",
@@ -2668,6 +2786,7 @@
      "listed_name": "4-(3-methylhexyl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-(3-methylhexyl)phenol",
     "DYPMMJSBCKKOSC-UHFFFAOYSA-N"
@@ -2694,6 +2813,7 @@
      "listed_name": "4-(4,4-dimethylpentan-2-yl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-(4,4-dimethylpentan-2-yl)phenol",
     "4-(1,3,3-Trimethylbutyl)phenol"
@@ -2720,6 +2840,7 @@
      "listed_name": "4-(4-methylhexan-2-yl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-(4-methylhexan-2-yl)phenol",
     "4-(1,3-Dimethylpentyl)phenol"
@@ -2746,6 +2867,7 @@
      "listed_name": "4-(4-methylhexyl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-(4-methylhexyl)phenol"
    ]
@@ -2771,6 +2893,7 @@
      "listed_name": "4-(5-methylhexan-2-yl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-(5-methylhexan-2-yl)phenol",
     "4-(1,4-Dimethylpentyl)phenol"
@@ -2797,6 +2920,7 @@
      "listed_name": "4-(5-methylhexan-3-yl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-(5-methylhexan-3-yl)phenol",
     "4-(1-Ethyl-3-methylbutyl)phenol"
@@ -2823,6 +2947,7 @@
      "listed_name": "4-(5-methylhexyl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-(5-methylhexyl)phenol"
    ]
@@ -2848,6 +2973,7 @@
      "listed_name": "4-(heptan-2-yl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-(heptan-2-yl)phenol",
     "4-(1-Methylhexyl)phenol",
@@ -2875,6 +3001,7 @@
      "listed_name": "4-(heptan-3-yl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-(heptan-3-yl)phenol",
     "4-(1-Ethylpentyl)phenol",
@@ -2902,6 +3029,7 @@
      "listed_name": "4-(heptan-4-yl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-(heptan-4-yl)phenol",
     "4-heptan-4-ylphenol",
@@ -2935,6 +3063,7 @@
      "listed_name": "4-heptylphenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-heptylphenol",
     "4-n-Heptylphenol",
@@ -2998,6 +3127,7 @@
      "listed_name": "4-isododecylphenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-isododecylphenol",
     "Phenol, 4-isododecyl-",
@@ -3061,6 +3191,7 @@
      "listed_name": "4-Nonylphenol, branched, ethoxylated 1 - 2.5 moles ethoxylated"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-Nonylphenol, branched, ethoxylated",
     "4-Nonylphenol, branched, ethoxylated 1 - 2.5 moles ethoxylated"
@@ -3098,6 +3229,7 @@
      "listed_name": "4-Nonylphenol, ethoxylated 1 - 2.5 moles ethoxylated"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-Nonylphenol, ethoxylated 1 - 2.5 moles ethoxylated"
    ]
@@ -3134,6 +3266,7 @@
      "listed_name": "4-t-Nonylphenol-diethoxylate"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-t-Nonylphenol-diethoxylate",
     "4-(1,1-Dimethylheptyl)phenol Diethoxylate",
@@ -3175,6 +3308,7 @@
      "listed_name": "4-tert-butylphenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-tert-butylphenol",
     "p-tert-Butylphenol",
@@ -3293,6 +3427,7 @@
      "listed_name": "44-(nonylphenoxy)-3,6,9,12,15,18,21,24,27,30,33,36,39,42-tetradecaoxatetratetracontanol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "44-(nonylphenoxy)-3,6,9,12,15,18,21,24,27,30,33,36,39,42-tetradecaoxatetratetracontanol",
     "EINECS 260-678-0",
@@ -3331,6 +3466,7 @@
      "listed_name": "Asulam"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Asulam",
     "Asulox",
@@ -3441,6 +3577,7 @@
      "listed_name": "Benthiavalicarb"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Benthiavalicarb",
     "FLUBENTHIAVALICARB",
@@ -3455,7 +3592,7 @@
   {
    "id": "85-68-7",
    "name": "Benzyl butyl phthalate (BBP)",
-   "inci_hint": "Butyl Benzyl Phthalate",
+   "inci_hint": "Benzyl Butyl Phthalate",
    "cas": [
     "85-68-7"
    ],
@@ -3483,6 +3620,10 @@
      "source": "edlist1",
      "listed_name": "Benzyl butyl phthalate (BBP)"
     }
+   ],
+   "aliases": [
+    "Benzyl Butyl Phthalate",
+    "BBP"
    ],
    "synonyms": [
     "Benzyl butyl phthalate (BBP)",
@@ -3577,7 +3718,7 @@
   {
    "id": "117-81-7",
    "name": "Bis(2-ethylhexyl) phthalate (DEHP)",
-   "inci_hint": "Dehp",
+   "inci_hint": "Diethylhexyl Phthalate",
    "cas": [
     "117-81-7"
    ],
@@ -3627,6 +3768,10 @@
      "source": "edlist1",
      "listed_name": "Bis(2-ethylhexyl) phthalate (DEHP)"
     }
+   ],
+   "aliases": [
+    "Diethylhexyl Phthalate",
+    "DEHP"
    ],
    "synonyms": [
     "Bis(2-ethylhexyl) phthalate (DEHP)",
@@ -3754,7 +3899,7 @@
   {
    "id": "94-26-8",
    "name": "Butyl 4-hydroxybenzoate; Butylparaben",
-   "inci_hint": "Butylparaben [Ii]",
+   "inci_hint": "Butylparaben",
    "cas": [
     "94-26-8"
    ],
@@ -3793,6 +3938,9 @@
      "source": "edlist1",
      "listed_name": "Butyl 4-hydroxybenzoate; Butylparaben"
     }
+   ],
+   "aliases": [
+    "Butylparaben"
    ],
    "synonyms": [
     "Butyl 4-hydroxybenzoate; Butylparaben",
@@ -3949,6 +4097,7 @@
      "listed_name": "Cholecalciferol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Cholecalciferol",
     "Vitamin D3",
@@ -4104,6 +4253,7 @@
      "listed_name": "Clofentezine"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Clofentezine",
     "3,6-Bis(2-chlorophenyl)-1,2,4,5-tetrazine",
@@ -4184,6 +4334,7 @@
      "listed_name": "Cyanamide"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Cyanamide",
     "Hydrogen cyanamide",
@@ -4236,7 +4387,7 @@
   {
    "id": "84-74-2",
    "name": "Dibutyl phthalate (DBP)",
-   "inci_hint": "Dibutylphthalate",
+   "inci_hint": "Dibutyl Phthalate",
    "cas": [
     "84-74-2"
    ],
@@ -4277,15 +4428,19 @@
     },
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 5 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for developmental, female, male; reported to the Safe Cosmetics Program in 5 products",
+     "year": "2005",
+     "field": "Di-n-butyl phthalate (DBP)",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Di-n-butyl phthalate (DBP)"
     }
+   ],
+   "aliases": [
+    "Dibutyl Phthalate",
+    "DBP"
    ],
    "synonyms": [
     "Dibutyl phthalate (DBP)",
@@ -4486,6 +4641,7 @@
      "listed_name": "Dicyclohexyl phthalate (DCHP)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Dicyclohexyl phthalate (DCHP)",
     "DICYCLOHEXYL PHTHALATE",
@@ -4563,6 +4719,7 @@
      "listed_name": "Diisobutyl phthalate (DIBP)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Diisobutyl phthalate (DIBP)",
     "DIISOBUTYL PHTHALATE",
@@ -4651,6 +4808,7 @@
      "listed_name": "Dimethomorph"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Dimethomorph",
     "Acrobat",
@@ -4701,6 +4859,7 @@
      "listed_name": "Flufenacet"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Flufenacet",
     "Fluthiamide",
@@ -4762,6 +4921,7 @@
      "listed_name": "Formaldehyde, reaction products with branched and linear heptylphenol, carbon disulfide and hydrazine"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Formaldehyde, reaction products with branched and linear heptylphenol, carbon disulfide and hydrazine"
    ]
@@ -4769,7 +4929,7 @@
   {
    "id": "4247-02-3",
    "name": "Isobutyl 4-hydroxybenzoate; Isobutylparaben",
-   "inci_hint": "Isobutyl Para Hydroxy Benzoate",
+   "inci_hint": "Isobutylparaben",
    "cas": [
     "4247-02-3"
    ],
@@ -4808,6 +4968,9 @@
      "source": "edlist1",
      "listed_name": "Isobutyl 4-hydroxybenzoate; Isobutylparaben"
     }
+   ],
+   "aliases": [
+    "Isobutylparaben"
    ],
    "synonyms": [
     "Isobutyl 4-hydroxybenzoate; Isobutylparaben",
@@ -4884,6 +5047,7 @@
      "listed_name": "Isononylphenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Isononylphenol",
     "o-Isononylphenol",
@@ -4929,6 +5093,7 @@
      "listed_name": "Isononylphenol, ethoxylated"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Isononylphenol, ethoxylated",
     "Nonoxynol-1",
@@ -5049,6 +5214,7 @@
      "listed_name": "Mancozeb"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Mancozeb",
     "Dithane",
@@ -5134,6 +5300,7 @@
      "listed_name": "Medetomidine"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Medetomidine",
     "Medetomidina",
@@ -5205,6 +5372,7 @@
      "listed_name": "Mepanipyrim"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Mepanipyrim",
     "4-Methyl-N-phenyl-6-(1-propynyl)-2-pyrimidinamine",
@@ -5262,6 +5430,7 @@
      "listed_name": "Metiram"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Metiram"
    ]
@@ -5298,6 +5467,7 @@
      "listed_name": "Metribuzin"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Metribuzin",
     "Lexone",
@@ -5417,6 +5587,7 @@
      "listed_name": "Nonylphenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Nonylphenol",
     "Phenol, nonyl-",
@@ -5512,6 +5683,7 @@
      "listed_name": "Poly (oxy-1,2-ethanediyl), alpha -(nonylphenyl)-omega-hydroxy-, branched"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Nonylphenol, branched, ethoxylated 1 - 2.5 moles ethoxylated",
     "Poly (oxy-1,2-ethanediyl), alpha -(nonylphenyl)-omega-hydroxy-, branched"
@@ -5659,6 +5831,7 @@
      "listed_name": "Poly(oxy-1,2-ethanediyl), a-(nonylphenyl)-w-hydroxy-"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Nonylphenol, ethoxylated",
     "Nonylphenol, ethoxylated (10-EO)",
@@ -5723,6 +5896,7 @@
      "listed_name": "p-(1,1-dimethylheptyl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "p-(1,1-dimethylheptyl)phenol",
     "Phenol, 4-(1,1-dimethylheptyl)-",
@@ -5767,6 +5941,7 @@
      "listed_name": "p-(1,1-dimethylpropyl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "p-(1,1-dimethylpropyl)phenol",
     "4-tert-Pentylphenol",
@@ -5868,6 +6043,7 @@
      "listed_name": "p-(1-methyloctyl)phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "p-(1-methyloctyl)phenol",
     "Phenol, 4-(1-methyloctyl)-",
@@ -5900,6 +6076,7 @@
      "listed_name": "p-isononylphenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "p-isononylphenol",
     "284-325-5",
@@ -5951,6 +6128,7 @@
      "listed_name": "p-nonylphenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "p-nonylphenol",
     "4-nonylphenol",
@@ -6045,6 +6223,7 @@
      "listed_name": "Phenol, (tetrapropenyl) derivatives"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Phenol, (tetrapropenyl) derivatives"
    ]
@@ -6070,6 +6249,7 @@
      "listed_name": "Phenol, 4-(1-ethyl-1,2-dimethylpropyl)-"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Phenol, 4-(1-ethyl-1,2-dimethylpropyl)-",
     "4-(1-Ethyl-1,2-dimethylpropyl)phenol"
@@ -6107,6 +6287,7 @@
      "listed_name": "Phenol, 4-dodecyl, branched"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Phenol, 4-dodecyl, branched"
    ]
@@ -6143,6 +6324,7 @@
      "listed_name": "Phenol, 4-isododecyl-"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Phenol, 4-isododecyl-",
     "608-055-8",
@@ -6172,6 +6354,7 @@
      "listed_name": "Phenol, 4-nonyl-, branched"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Phenol, 4-nonyl-, branched"
    ]
@@ -6197,6 +6380,7 @@
      "listed_name": "Phenol, 4-nonyl-, phosphite (3:1)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Phenol, 4-nonyl-, phosphite (3:1)",
     "Antioxidant TNP",
@@ -6250,6 +6434,7 @@
      "listed_name": "Phenol, 4-tert-heptyl-"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Phenol, 4-tert-heptyl-"
    ]
@@ -6297,6 +6482,7 @@
      "listed_name": "Phenol, dodecyl-, branched"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Phenol, dodecyl-, branched",
     "4-(3,4,5-trimethylheptyl)phenol",
@@ -6325,6 +6511,7 @@
      "listed_name": "Phenol, heptyl derivs"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Phenol, heptyl derivs"
    ]
@@ -6350,6 +6537,7 @@
      "listed_name": "Phenol, nonyl-, branched"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Phenol, nonyl-, branched"
    ]
@@ -6375,6 +6563,7 @@
      "listed_name": "Phenol, p-isononyl-, phosphite (3:1)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Phenol, p-isononyl-, phosphite (3:1)"
    ]
@@ -6400,6 +6589,7 @@
      "listed_name": "Phenol, p-sec-nonyl-, phosphite"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Phenol, p-sec-nonyl-, phosphite",
     "p-sec-Nonylphenol phosphite"
@@ -6437,6 +6627,7 @@
      "listed_name": "Phenol, tetrapropylene-"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Phenol, tetrapropylene-",
     "4-(2,4-dimethyl-3-propylheptyl)phenol",
@@ -6475,6 +6666,7 @@
      "listed_name": "Poly(oxy-1,2-ethanediyl), α-[(1,1,3,3-tetramethylbutyl)phenyl]-ω-hydroxy-"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Poly(oxy-1,2-ethanediyl), α-[(1,1,3,3-tetramethylbutyl)phenyl]-ω-hydroxy-"
    ]
@@ -6511,6 +6703,7 @@
      "listed_name": "Polyethylene glycol p-(1,1,3,3-tetramethylbutyl)phenyl ether"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Polyethylene glycol p-(1,1,3,3-tetramethylbutyl)phenyl ether"
    ]
@@ -6547,6 +6740,7 @@
      "listed_name": "Propiconazole"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Propiconazole",
     "Desmel",
@@ -6647,6 +6841,7 @@
      "listed_name": "Reaction product of 1,3,4-thiadiazolidine-2,5-dithione, formaldehyde and phenol, heptyl derivs."
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Reaction product of 1,3,4-thiadiazolidine-2,5-dithione, formaldehyde and phenol, heptyl derivs."
    ]
@@ -6683,6 +6878,7 @@
      "listed_name": "Triflusulfuron-methyl"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Triflusulfuron-methyl",
     "Triflusulfuron-methyl [ISO]",
@@ -6764,6 +6960,9 @@
      "listed_name": "Triphenyl phosphate (TPP)"
     }
    ],
+   "aliases": [
+    "Triphenyl Phosphate"
+   ],
    "synonyms": [
     "Triphenyl phosphate (TPP)",
     "TRIPHENYL PHOSPHATE",
@@ -6838,6 +7037,7 @@
      "listed_name": "Tris(nonylphenyl) phosphite"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Tris(nonylphenyl) phosphite",
     "Phenol, 4-nonyl-, phosphite (3:1)",
@@ -6891,6 +7091,7 @@
      "listed_name": "(1-methylethylidene)bis(4,1-phenyleneoxy-3,1-propanediyl) bismethacrylate"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "(1-methylethylidene)bis(4,1-phenyleneoxy-3,1-propanediyl) bismethacrylate",
     "2,2-Bis-(4-(3-methacryloxypropoxy)phenyl)propane",
@@ -6926,6 +7127,7 @@
      "listed_name": "1,1,2,2,3,3,4,4,4-nonafluorobutane-1-sulphonic acid"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "1,1,2,2,3,3,4,4,4-nonafluorobutane-1-sulphonic acid",
     "perfluorobutanesulfonic acid",
@@ -6990,6 +7192,7 @@
      "listed_name": "1,3,4,6,7,8- hexahydro-4,6,6,7,8,8- hexamethylindeno[5 ,6-c]pyran (HHCB)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "1,3,4,6,7,8- hexahydro-4,6,6,7,8,8- hexamethylindeno[5 ,6-c]pyran (HHCB)",
     "Abbalide",
@@ -7063,6 +7266,7 @@
      "listed_name": "1,3-dihydro-4(or 5)-methyl-2H-benzimidazole-2-thione"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "1,3-dihydro-4(or 5)-methyl-2H-benzimidazole-2-thione",
     "Methyl-2-mercaptobenzimidazole",
@@ -7141,6 +7345,7 @@
      "listed_name": "1,3-dihydro-4(or 5)-methyl-2H-benzimidazole-2-thione, zinc salt"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "1,3-dihydro-4(or 5)-methyl-2H-benzimidazole-2-thione, zinc salt",
     "Zinc bis(4-methyl-1H-benzimidazole-2-thiolate)",
@@ -7175,6 +7380,7 @@
      "listed_name": "1-(5,6,7,8-tetrahydro-3,5,5,6,8,8-hexamethyl-2-naphthyl)ethan-1-one"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "1-(5,6,7,8-tetrahydro-3,5,5,6,8,8-hexamethyl-2-naphthyl)ethan-1-one",
     "Tonalide",
@@ -7244,7 +7450,7 @@
   {
    "id": "70356-09-1",
    "name": "1-[4-(1,1-dimethylethyl)phenyl]-3-(4-methoxyphenyl)propane-1,3-dione",
-   "inci_hint": "4-Tert-Butyl-4'-Methoxydibenzoylmethane",
+   "inci_hint": "Butyl Methoxydibenzoylmethane",
    "cas": [
     "70356-09-1"
    ],
@@ -7260,22 +7466,14 @@
      "env": true,
      "source": "edlist2",
      "listed_name": "1-[4-(1,1-dimethylethyl)phenyl]-3-(4-methoxyphenyl)propane-1,3-dione"
-    },
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 10 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Avobenzone"
     }
+   ],
+   "aliases": [
+    "Butyl Methoxydibenzoylmethane",
+    "Avobenzone"
    ],
    "synonyms": [
     "1-[4-(1,1-dimethylethyl)phenyl]-3-(4-methoxyphenyl)propane-1,3-dione",
-    "Avobenzone",
     "Parsol 1789",
     "Butyl methoxydibenzoylmethane",
     "Escalol 517",
@@ -7402,6 +7600,7 @@
      "listed_name": "1-isopropyl-2,2-dimethyltrimethylene diisobutyrate"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "1-isopropyl-2,2-dimethyltrimethylene diisobutyrate",
     "2,2,4-Trimethyl-1,3-pentanediol diisobutyrate",
@@ -7472,6 +7671,7 @@
      "listed_name": "2,2'-[(1-methylethylidene)bis(4,1-phenyleneoxy)]bisethyl diacetate"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "2,2'-[(1-methylethylidene)bis(4,1-phenyleneoxy)]bisethyl diacetate",
     "EINECS 242-895-2",
@@ -7505,6 +7705,7 @@
      "listed_name": "2,2,6,6-tetrabromo-4,4-isopropylidenediphenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "2,2,6,6-tetrabromo-4,4-isopropylidenediphenol",
     "Tetrabromobisphenol A",
@@ -7628,6 +7829,7 @@
      "listed_name": "2,2′,6,6′-Tetra-tert-butyl-4,4′- methylenediphenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "2,2′,6,6′-Tetra-tert-butyl-4,4′- methylenediphenol",
     "4,4'-METHYLENEBIS(2,6-DI-TERT-BUTYLPHENOL)",
@@ -7722,6 +7924,7 @@
      "listed_name": "2,4,6-tribromophenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "2,4,6-tribromophenol",
     "Bromol",
@@ -7807,6 +8010,7 @@
      "listed_name": "2,4-di-tert-butylphenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "2,4-di-tert-butylphenol",
     "2,4-ditert-butylphenol",
@@ -7872,7 +8076,7 @@
   {
    "id": "128-37-0",
    "name": "2,6-di-tert-butyl-p-cresol; butylated hydroxytoluene (BHT)",
-   "inci_hint": "Dbpc",
+   "inci_hint": "BHT",
    "cas": [
     "128-37-0"
    ],
@@ -7900,6 +8104,10 @@
      "source": "edlist2",
      "listed_name": "2,6-di-tert-butyl-p-cresol; butylated hydroxytoluene (BHT)"
     }
+   ],
+   "aliases": [
+    "BHT",
+    "Butylated Hydroxytoluene"
    ],
    "synonyms": [
     "2,6-di-tert-butyl-p-cresol; butylated hydroxytoluene (BHT)",
@@ -8045,6 +8253,7 @@
      "listed_name": "2-[4-[2-[4-(2-hydroxyethoxy)phenyl]propan-2-yl]phenoxy]ethanol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "2-[4-[2-[4-(2-hydroxyethoxy)phenyl]propan-2-yl]phenoxy]ethanol"
    ]
@@ -8070,6 +8279,7 @@
      "listed_name": "2-Propenoic acid, methyl ester, reaction products with mixed O,O-bis(branched and linear pentyl and iso-Bu) phosphorodithioates"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "2-Propenoic acid, methyl ester, reaction products with mixed O,O-bis(branched and linear pentyl and iso-Bu) phosphorodithioates"
    ]
@@ -8077,7 +8287,7 @@
   {
    "id": "25013-16-5",
    "name": "2-tert-butyl-4-methoxyphenol (BHA)",
-   "inci_hint": "3-Bha",
+   "inci_hint": "BHA",
    "cas": [
     "121-00-6",
     "25013-16-5"
@@ -8196,15 +8406,19 @@
     },
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 384 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 384 products",
+     "year": "1990",
+     "field": "Butylated hydroxyanisole",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Butylated hydroxyanisole"
     }
+   ],
+   "aliases": [
+    "BHA",
+    "Butylated Hydroxyanisole"
    ],
    "synonyms": [
     "2-tert-butyl-4-methoxyphenol (BHA)",
@@ -8334,6 +8548,7 @@
      "listed_name": "3,3,4,4,5,5,6,6,7,7,8,8,8-tridecafluorooctyl acrylate"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "3,3,4,4,5,5,6,6,7,7,8,8,8-tridecafluorooctyl acrylate",
     "1h,1h,2h,2h-perfluorooctyl acrylate",
@@ -8385,6 +8600,7 @@
      "listed_name": "3,3,4,4,5,5,6,6,7,7,8,8,8-tridecafluorooctyl methacrylate"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "3,3,4,4,5,5,6,6,7,7,8,8,8-tridecafluorooctyl methacrylate",
     "Tridecafluorohexylethyl methacrylate",
@@ -8444,6 +8660,7 @@
      "listed_name": "3-aminopropyldiethylamine"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "3-aminopropyldiethylamine",
     "3-(Diethylamino)propylamine",
@@ -8522,6 +8739,7 @@
      "listed_name": "3-aminopropyldimethylamine"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "3-aminopropyldimethylamine",
     "3-Dimethylaminopropylamine",
@@ -8610,7 +8828,7 @@
   {
    "id": "55406-53-6",
    "name": "3-iodo-2-propynylbutylcarbamate (IPBC)",
-   "inci_hint": "3-Iodo-2-Propynylbutylcarbamate",
+   "inci_hint": "Iodopropynyl Butylcarbamate",
    "cas": [
     "55406-53-6"
    ],
@@ -8627,6 +8845,10 @@
      "source": "edlist2",
      "listed_name": "3-iodo-2-propynylbutylcarbamate (IPBC)"
     }
+   ],
+   "aliases": [
+    "Iodopropynyl Butylcarbamate",
+    "IPBC"
    ],
    "synonyms": [
     "3-iodo-2-propynylbutylcarbamate (IPBC)",
@@ -8769,6 +8991,7 @@
      "listed_name": "3-methylpyrazole"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "3-methylpyrazole",
     "1H-Pyrazole, 3-methyl-",
@@ -8839,6 +9062,7 @@
      "listed_name": "4,4'-isopropylidenebis[2-allylphenol]"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4,4'-isopropylidenebis[2-allylphenol]",
     "Phenol, 4,4'-(1-methylethylidene)bis[2-(2-propenyl)-",
@@ -8971,6 +9195,7 @@
      "listed_name": "4,4'-isopropylidenedi-2,6-xylol (TMBPA)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4,4'-isopropylidenedi-2,6-xylol (TMBPA)",
     "4,4'-Isopropylidenedi-2,6-xylol",
@@ -9027,6 +9252,7 @@
      "listed_name": "4,4'-isopropylidenedi-o-cresol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4,4'-isopropylidenedi-o-cresol",
     "Bisphenol C",
@@ -9109,6 +9335,7 @@
      "listed_name": "4-(4-isopropoxyphenylsulfonyl)phenol (D-8)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "4-(4-isopropoxyphenylsulfonyl)phenol (D-8)",
     "BPSIP compound",
@@ -9157,6 +9384,7 @@
      "listed_name": "6,6'-di-tert-butyl-4,4'-butylidenedi-m-cresol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "6,6'-di-tert-butyl-4,4'-butylidenedi-m-cresol",
     "Sumilizer BBM",
@@ -9247,6 +9475,7 @@
      "listed_name": "6,6'-di-tert-butyl-4,4'-thiodi-m-cresol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "6,6'-di-tert-butyl-4,4'-thiodi-m-cresol",
     "4,4'-Thiobis(6-tert-butyl-m-cresol)",
@@ -9391,6 +9620,7 @@
      "listed_name": "Ammonium perchlorate"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Ammonium perchlorate",
     "PKHA",
@@ -9420,7 +9650,7 @@
   {
    "id": "131-56-6",
    "name": "Benzophenone-1 (BP-1)",
-   "inci_hint": "2,4-Dihydroxybenzophenone",
+   "inci_hint": "Benzophenone-1",
    "cas": [
     "131-56-6"
    ],
@@ -9437,6 +9667,9 @@
      "source": "edlist2",
      "listed_name": "Benzophenone-1 (BP-1)"
     }
+   ],
+   "aliases": [
+    "Benzophenone-1"
    ],
    "synonyms": [
     "Benzophenone-1 (BP-1)",
@@ -9552,6 +9785,7 @@
      "listed_name": "Benzotriazole"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Benzotriazole",
     "1H-Benzotriazole",
@@ -9663,6 +9897,7 @@
      "listed_name": "Bis(2-propylheptyl) phthalate"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Bis(2-propylheptyl) phthalate",
     "di(2-propylheptyl)phthalate",
@@ -9704,6 +9939,7 @@
      "listed_name": "Buprofezin"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Buprofezin",
     "2-(tert-butylimino)-5-phenyl-3-(propan-2-yl)-1,3,5-thiadiazinan-4-one",
@@ -9781,6 +10017,7 @@
      "listed_name": "Butanone"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Butanone",
     "2-Butanone",
@@ -9871,7 +10108,7 @@
   {
    "id": "80-54-6",
    "name": "Butylphenyl methylpropianol",
-   "inci_hint": "Beta-Lilial",
+   "inci_hint": "Butylphenyl Methylpropional",
    "cas": [
     "80-54-6"
    ],
@@ -9888,6 +10125,10 @@
      "source": "edlist2",
      "listed_name": "Butylphenyl methylpropianol"
     }
+   ],
+   "aliases": [
+    "Butylphenyl Methylpropional",
+    "Lilial"
    ],
    "synonyms": [
     "Butylphenyl methylpropianol",
@@ -9986,6 +10227,7 @@
      "listed_name": "Chlorobenzene"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Chlorobenzene",
     "Monochlorobenzene",
@@ -10093,6 +10335,7 @@
      "listed_name": "Chloroethane"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Chloroethane",
     "ETHYL CHLORIDE",
@@ -10201,6 +10444,7 @@
      "listed_name": "Cinmethylin"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Cinmethylin",
     "Argold",
@@ -10242,7 +10486,7 @@
   {
    "id": "38083-17-9",
    "name": "Climbazole",
-   "inci_hint": "Climbazole [Inn]",
+   "inci_hint": "Climbazole",
    "cas": [
     "38083-17-9"
    ],
@@ -10270,6 +10514,9 @@
      "source": "edlist2",
      "listed_name": "Climbazole"
     }
+   ],
+   "aliases": [
+    "Climbazole"
    ],
    "synonyms": [
     "Climbazole",
@@ -10345,7 +10592,7 @@
   {
    "id": "69430-24-6",
    "name": "Cyclomethicone",
-   "inci_hint": "Dodecamethylcyclohexasiloxane",
+   "inci_hint": "Cyclopentasiloxane",
    "cas": [
     "540-97-6",
     "541-02-6",
@@ -10365,6 +10612,13 @@
      "source": "edlist2",
      "listed_name": "Cyclomethicone"
     }
+   ],
+   "aliases": [
+    "Cyclopentasiloxane",
+    "D5",
+    "Cyclotetrasiloxane",
+    "D4",
+    "Cyclomethicone"
    ],
    "synonyms": [
     "Cyclomethicone",
@@ -10510,6 +10764,7 @@
      "listed_name": "Cyflufenamid"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Cyflufenamid",
     "605-896-2",
@@ -10544,6 +10799,7 @@
      "listed_name": "Cyprodinil"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Cyprodinil",
     "4-Cyclopropyl-6-methyl-N-phenylpyrimidin-2-amine",
@@ -10596,7 +10852,7 @@
   {
    "id": "541-02-6",
    "name": "Decamethylcyclopentasiloxane (D5)",
-   "inci_hint": "Decamethylcyclopentasiloxane",
+   "inci_hint": "Cyclopentasiloxane",
    "cas": [
     "541-02-6"
    ],
@@ -10613,6 +10869,10 @@
      "source": "edlist2",
      "listed_name": "Decamethylcyclopentasiloxane (D5)"
     }
+   ],
+   "aliases": [
+    "Cyclopentasiloxane",
+    "D5"
    ],
    "synonyms": [
     "Decamethylcyclopentasiloxane (D5)",
@@ -10705,6 +10965,7 @@
      "listed_name": "Deltamethrin"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Deltamethrin",
     "Decamethrin",
@@ -10812,6 +11073,7 @@
      "listed_name": "dioctyltin oxide"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "dioctyltin oxide",
     "Stannane, dioctyloxo-",
@@ -10874,6 +11136,7 @@
      "listed_name": "Diuron"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Diuron",
     "3-(3,4-Dichlorophenyl)-1,1-dimethylurea",
@@ -11018,6 +11281,7 @@
      "listed_name": "Ethiprole"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Ethiprole",
     "446-630-3",
@@ -11058,6 +11322,7 @@
      "listed_name": "Fenoxaprop-P"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Fenoxaprop-P",
     "615-273-7",
@@ -11095,6 +11360,7 @@
      "listed_name": "Fludioxonil"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Fludioxonil",
     "4-(2,2-Difluoro-1,3-benzodioxol-4-yl)-1H-pyrrole-3-carbonitrile",
@@ -11138,7 +11404,7 @@
   {
    "id": "71617-10-2",
    "name": "Isopentyl p-methoxycinnamate",
-   "inci_hint": null,
+   "inci_hint": "Isoamyl p-Methoxycinnamate",
    "cas": [
     "71617-10-2"
    ],
@@ -11155,6 +11421,10 @@
      "source": "edlist2",
      "listed_name": "Isopentyl p-methoxycinnamate"
     }
+   ],
+   "aliases": [
+    "Isoamyl p-Methoxycinnamate",
+    "Amiloxate"
    ],
    "synonyms": [
     "Isopentyl p-methoxycinnamate",
@@ -11242,6 +11512,9 @@
      "source": "edlist3",
      "listed_name": "Methyl 4-hydroxybenzoate (Methylparaben)"
     }
+   ],
+   "aliases": [
+    "Methylparaben"
    ],
    "synonyms": [
     "Methyl 4-hydroxybenzoate (Methylparaben)",
@@ -11387,6 +11660,7 @@
      "listed_name": "Methyl N-{[dimethoxy(methyl)silyl]methyl}carbamate"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Methyl N-{[dimethoxy(methyl)silyl]methyl}carbamate",
     "EC 457-690-5",
@@ -11401,7 +11675,7 @@
   {
    "id": "131-57-7",
    "name": "Oxybenzone (BP-3)",
-   "inci_hint": "2-Hydroxy-4-Methoxybenzophenone",
+   "inci_hint": "Benzophenone-3",
    "cas": [
     "131-57-7"
    ],
@@ -11494,23 +11768,16 @@
      "env": true,
      "source": "edlist3",
      "listed_name": "Oxybenzone (BP-3)"
-    },
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 8 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Benzophenone-3"
     }
+   ],
+   "aliases": [
+    "Benzophenone-3",
+    "Oxybenzone"
    ],
    "synonyms": [
     "Oxybenzone (BP-3)",
-    "Benzophenone-3",
     "2-HYDROXY-4-METHOXYBENZOPHENONE",
+    "Benzophenone-3",
     "2-Benzoyl-5-methoxyphenol",
     "Advastab 45",
     "Methanone, (2-hydroxy-4-methoxyphenyl)phenyl-",
@@ -11651,6 +11918,7 @@
      "listed_name": "Phenmedipham"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Phenmedipham",
     "BETANAL",
@@ -11755,6 +12023,7 @@
      "listed_name": "Phenol, isopropylated, phosphate (3:1)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Phenol, isopropylated, phosphate (3:1)"
    ]
@@ -11835,6 +12104,7 @@
      "listed_name": "Phenol, methylstyrenated; Oligomerisation and alkylation reaction products of 2-phenylpropene and phenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Phenol, methylstyrenated; Oligomerisation and alkylation reaction products of 2-phenylpropene and phenol"
    ]
@@ -11871,6 +12141,7 @@
      "listed_name": "Phenol, styrenated (reaction mass of 2,4,6-tris(1-phenyl-ethyl)phenol and Bis(1-phenylethyl) phenol)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Phenol, styrenated (reaction mass of 2,4,6-tris(1-phenyl-ethyl)phenol and Bis(1-phenylethyl) phenol)"
    ]
@@ -11896,6 +12167,7 @@
      "listed_name": "Potassium chlorate"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Potassium chlorate",
     "Potcrate",
@@ -11969,6 +12241,7 @@
      "listed_name": "Potassium dicyanoargentate"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Potassium dicyanoargentate",
     "POTASSIUM SILVER CYANIDE",
@@ -12124,6 +12397,9 @@
      "source": "edlist3",
      "listed_name": "Propyl 4-hydroxybenzoate; Propylparaben"
     }
+   ],
+   "aliases": [
+    "Propylparaben"
    ],
    "synonyms": [
     "Propyl 4-hydroxybenzoate; Propylparaben",
@@ -12346,6 +12622,7 @@
      "listed_name": "Reaction products of phosphoryl trichloride and 2-methyloxirane (TCPP)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Reaction products of phosphoryl trichloride and 2-methyloxirane (TCPP)"
    ]
@@ -12353,7 +12630,7 @@
   {
    "id": "108-46-3",
    "name": "Resorcinol",
-   "inci_hint": "Resorcin [Jan]",
+   "inci_hint": "Resorcinol",
    "cas": [
     "108-46-3"
    ],
@@ -12469,6 +12746,9 @@
      "source": "edlist3",
      "listed_name": "Resorcinol"
     }
+   ],
+   "aliases": [
+    "Resorcinol"
    ],
    "synonyms": [
     "Resorcinol",
@@ -12614,6 +12894,7 @@
      "listed_name": "Sodium chlorate"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Sodium chlorate",
     "Chloric acid, sodium salt",
@@ -12695,7 +12976,7 @@
   {
    "id": "7681-49-4",
    "name": "Sodium Fluoride",
-   "inci_hint": "Kaylaan",
+   "inci_hint": "Sodium Fluoride",
    "cas": [
     "7681-49-4"
    ],
@@ -12712,6 +12993,9 @@
      "source": "edlist2",
      "listed_name": "Sodium Fluoride"
     }
+   ],
+   "aliases": [
+    "Sodium Fluoride"
    ],
    "synonyms": [
     "Sodium Fluoride",
@@ -12868,6 +13152,7 @@
      "listed_name": "Sodium perchlorate"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Sodium perchlorate",
     "Perchloric acid, sodium salt",
@@ -12919,6 +13204,7 @@
      "listed_name": "Thiabendazole"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Thiabendazole",
     "Tiabendazole",
@@ -13063,6 +13349,7 @@
      "listed_name": "Thiophanate-methyl"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Thiophanate-methyl",
     "Methylthiofanate",
@@ -13184,7 +13471,7 @@
   {
    "id": "3380-34-5",
    "name": "Triclosan",
-   "inci_hint": "5-Chloro-2-(2,4-Dichlorophenoxy)Phenol",
+   "inci_hint": "Triclosan",
    "cas": [
     "3380-34-5"
    ],
@@ -13212,6 +13499,9 @@
      "source": "edlist2",
      "listed_name": "Triclosan"
     }
+   ],
+   "aliases": [
+    "Triclosan"
    ],
    "synonyms": [
     "Triclosan",
@@ -13357,6 +13647,7 @@
      "listed_name": "Triethyl phosphate (TEP)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Triethyl phosphate (TEP)",
     "TRIETHYL PHOSPHATE",
@@ -13424,6 +13715,7 @@
      "listed_name": "Tris(2-ethylhexyl) benzene-1,2,4-tricarboxylate"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Tris(2-ethylhexyl) benzene-1,2,4-tricarboxylate",
     "TRIS(2-ETHYLHEXYL) TRIMELLITATE",
@@ -13502,6 +13794,7 @@
      "listed_name": "Tris(2-ethylhexyl) phosphate (TEHP)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Tris(2-ethylhexyl) phosphate (TEHP)",
     "Tris(2-ethylhexyl) phosphate",
@@ -13597,6 +13890,7 @@
      "listed_name": "Tris[2-chloro-1-(chloromethyl)ethyl] phosphate (TDCP)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Tris[2-chloro-1-(chloromethyl)ethyl] phosphate (TDCP)",
     "TDCPP",
@@ -13670,6 +13964,7 @@
      "listed_name": "Ziram"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Ziram",
     "Zinc dimethyldithiocarbamate",
@@ -13814,6 +14109,7 @@
      "listed_name": "α-cyano-3-phenoxybenzyl 3-(2,2-dichlorovinyl)-2,2-dimethylcyclopropanecarboxylate (Cypermethrin)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "α-cyano-3-phenoxybenzyl 3-(2,2-dichlorovinyl)-2,2-dimethylcyclopropanecarboxylate (Cypermethrin)",
     "cypermethrin",
@@ -13940,7 +14236,7 @@
   {
    "id": "131-55-5",
    "name": "Benzophenone-2 (BP-2)",
-   "inci_hint": "Benzophenone, 2,2',4,4'-Tetrahydroxy-",
+   "inci_hint": "Benzophenone-2",
    "cas": [
     "131-55-5"
    ],
@@ -13967,24 +14263,16 @@
      "env": false,
      "source": "edlist3",
      "listed_name": "Benzophenone-2 (BP-2)"
-    },
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 3 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Benzophenone-2"
     }
+   ],
+   "aliases": [
+    "Benzophenone-2"
    ],
    "synonyms": [
     "Benzophenone-2 (BP-2)",
-    "Benzophenone-2",
     "2,2',4,4'-Tetrahydroxybenzophenone",
     "Bis(2,4-dihydroxyphenyl)methanone",
+    "Benzophenone-2",
     "Methanone, bis(2,4-dihydroxyphenyl)-",
     "Uvinol D-50",
     "Uvinul D-50",
@@ -14057,6 +14345,7 @@
      "listed_name": "Bisphenol AF"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Bisphenol AF",
     "2,2-Bis(4-hydroxyphenyl)hexafluoropropane",
@@ -14147,6 +14436,7 @@
      "listed_name": "Dipentyl phthalate"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Dipentyl phthalate",
     "DIAMYL PHTHALATE",
@@ -14219,6 +14509,7 @@
      "listed_name": "Lithium salts (lithium chloride, lithium carbonate, lithium hydroxide)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Lithium salts (lithium chloride, lithium carbonate, lithium hydroxide)",
     "Lithium hydroxide",
@@ -14345,7 +14636,7 @@
   {
    "id": "556-67-2",
    "name": "Octamethylcyclo-tetrasiloxane (D4)",
-   "inci_hint": "Octamethylcyclotetrasiloxane",
+   "inci_hint": "Cyclotetrasiloxane",
    "cas": [
     "556-67-2"
    ],
@@ -14362,6 +14653,10 @@
      "source": "edlist3",
      "listed_name": "Octamethylcyclo-tetrasiloxane (D4)"
     }
+   ],
+   "aliases": [
+    "Cyclotetrasiloxane",
+    "D4"
    ],
    "synonyms": [
     "Octamethylcyclo-tetrasiloxane (D4)",
@@ -14443,6 +14738,7 @@
      "listed_name": "Prochloraz"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Prochloraz",
     "Octave",
@@ -14503,7 +14799,7 @@
   {
    "id": "69-72-7",
    "name": "Salicylic acid",
-   "inci_hint": "Clarify",
+   "inci_hint": "Salicylic Acid",
    "cas": [
     "69-72-7"
    ],
@@ -14531,6 +14827,9 @@
      "source": "edlist3",
      "listed_name": "Salicylic acid"
     }
+   ],
+   "aliases": [
+    "Salicylic Acid"
    ],
    "synonyms": [
     "Salicylic acid",
@@ -14658,7 +14957,7 @@
   {
    "id": "101-20-2",
    "name": "Triclocarban",
-   "inci_hint": "3,4,4'-Trichlorocarbanilide",
+   "inci_hint": "Triclocarban",
    "cas": [
     "101-20-2"
    ],
@@ -14697,6 +14996,9 @@
      "source": "edlist3",
      "listed_name": "Triclocarban"
     }
+   ],
+   "aliases": [
+    "Triclocarban"
    ],
    "synonyms": [
     "Triclocarban",
@@ -14828,6 +15130,7 @@
      "listed_name": "Tris(methylphenyl)phosphate"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Tris(methylphenyl)phosphate"
    ]
@@ -14843,16 +15146,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 57 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 57 products",
+     "year": "1988",
+     "field": "1,4-Dioxane",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "1,4-Dioxane"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "1,4-Dioxane",
     "Dioxane",
@@ -14951,16 +15255,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 1 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 1 products",
+     "year": "1996",
+     "field": "2,2-Bis(bromomethyl)-1,3-propanediol",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "2,2-Bis(bromomethyl)-1,3-propanediol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "2,2-Bis(bromomethyl)-1,3-propanediol",
     "2,2-Bis(bromomethyl)propane-1,3-diol",
@@ -15029,16 +15334,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 29 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 29 products",
+     "year": "1988",
+     "field": "Acetaldehyde",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Acetaldehyde"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Acetaldehyde",
     "ethanal",
@@ -15129,18 +15435,22 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 5 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for developmental; reported to the Safe Cosmetics Program in 5 products",
+     "year": "1989",
+     "field": "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 2,000 retinol equivalents",
      "health": true,
      "env": false,
      "source": "california",
-     "listed_name": "Acetic acid, retinyl ester"
+     "listed_name": "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 2,000 retinol equivalents"
     }
+   ],
+   "aliases": [
+    "Retinyl Acetate"
    ],
    "synonyms": [
     "Acetic acid, retinyl ester",
+    "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 2,000 retinol equivalents",
     "RETINYL ACETATE",
     "Vitamin A acetate",
     "Retinol acetate",
@@ -15264,16 +15574,28 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 4 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 4 products",
+     "year": "1990",
+     "field": "Acrylamide",
+     "health": true,
+     "env": false,
+     "source": "california",
+     "listed_name": "Acrylamide"
+    },
+    {
+     "grade": "california",
+     "list": "California Proposition 65",
+     "status": "listed for developmental, male; reported to the Safe Cosmetics Program in 4 products",
+     "year": "2011",
+     "field": "Acrylamide",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Acrylamide"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Acrylamide",
     "2-Propenamide",
@@ -15388,16 +15710,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 3 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for developmental; reported to the Safe Cosmetics Program in 3 products",
+     "year": "1989",
+     "field": "All-trans retinoic acid",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "All-trans retinoic acid"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "All-trans retinoic acid",
     "Retinoic acid",
@@ -15532,18 +15855,20 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 8 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for developmental, female; reported to the Safe Cosmetics Program in 8 products",
+     "year": "1990",
+     "field": "Aspirin (NOTE:  It is especially  important not to use aspirin during the last three months of pregnancy,  unless specifically directed to do so by a physician because it may cause  problems in the unborn child or  complications during delivery.)",
      "health": true,
      "env": false,
      "source": "california",
-     "listed_name": "Aspirin"
+     "listed_name": "Aspirin (NOTE:  It is especially  important not to use aspirin during the last three months of pregnancy,  unless specifically directed to do so by a physician because it may cause  problems in the unborn child or  complications during delivery.)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Aspirin",
+    "Aspirin (NOTE:  It is especially  important not to use aspirin during the last three months of pregnancy,  unless specifically directed to do so by a physician because it may cause  problems in the unborn child or  complications during delivery.)",
     "ACETYLSALICYLIC ACID",
     "2-Acetoxybenzoic acid",
     "2-(Acetyloxy)benzoic acid",
@@ -15661,8 +15986,7 @@
     "Aspirin Nsaid",
     "Aspirin Packs",
     "AspirinLow Dose",
-    "Bayer Aspirin",
-    "Disprin cv"
+    "Bayer Aspirin"
    ]
   },
   {
@@ -15676,16 +16000,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 1 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 1 products",
+     "year": "1987",
+     "field": "Benz[a]anthracene",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Benz[a]anthracene"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Benz[a]anthracene",
     "1,2-Benzanthracene",
@@ -15754,16 +16079,28 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 4 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 4 products",
+     "year": "1987",
+     "field": "Benzene",
+     "health": true,
+     "env": false,
+     "source": "california",
+     "listed_name": "Benzene"
+    },
+    {
+     "grade": "california",
+     "list": "California Proposition 65",
+     "status": "listed for developmental, male; reported to the Safe Cosmetics Program in 4 products",
+     "year": "1997",
+     "field": "Benzene",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Benzene"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Benzene",
     "benzol",
@@ -15894,16 +16231,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 1 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 1 products",
+     "year": "1987",
+     "field": "Benzo[a]pyrene",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Benzo[a]pyrene"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Benzo[a]pyrene",
     "3,4-Benzopyrene",
@@ -15995,7 +16333,7 @@
   {
    "id": "119-61-9",
    "name": "Benzophenone",
-   "inci_hint": "Wln: Rvr",
+   "inci_hint": "Benzophenone",
    "cas": [
     "119-61-9"
    ],
@@ -16003,15 +16341,18 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 94 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 94 products",
+     "year": "2012",
+     "field": "Benzophenone",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Benzophenone"
     }
+   ],
+   "aliases": [
+    "Benzophenone"
    ],
    "synonyms": [
     "Benzophenone",
@@ -16124,131 +16465,6 @@
    ]
   },
   {
-   "id": "4065-45-6",
-   "name": "Benzophenone-4",
-   "inci_hint": "2-Hydroxy-4-Methoxy-5-Sulfobenzophenone",
-   "cas": [
-    "4065-45-6"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 5 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Benzophenone-4"
-    }
-   ],
-   "synonyms": [
-    "Benzophenone-4",
-    "Sulisobenzone",
-    "5-Benzoyl-4-hydroxy-2-methoxybenzenesulfonic acid",
-    "2-Hydroxy-4-methoxybenzophenone-5-sulfonic acid",
-    "Sungard",
-    "Uval",
-    "Seesorb 101S",
-    "Syntase 230",
-    "Spectra-Sorb UV 284",
-    "Sulisobenzona",
-    "Uvinul MS 40",
-    "Benzenesulfonic acid, 5-benzoyl-4-hydroxy-2-methoxy-",
-    "Sulfisobenzone",
-    "Sulisobenzonum",
-    "MS 40",
-    "Uvinuc ms 40",
-    "Uvasorb s 5",
-    "Escalol 577",
-    "Viosorb 111",
-    "Uvinul d 5030",
-    "3-Benzoyl-4-hydroxy-6-methoxybenzenesulfonic acid",
-    "2-Benzoyl-5-methoxy-1-phenol-4-sulfonic acid",
-    "5-Benzoyl-4-hydroxy-2-methoxybenzene sulfonic acid",
-    "5-benzoyl-4-hydroxy-2-methoxy-besylic acid",
-    "BP-4 benzophenone",
-    "anti-frizz sheets",
-    "223-772-2",
-    "2-HYDROXY-4-METHOXY-5-SULFOBENZOPHENONE",
-    "UVINUL MS40",
-    "1-Phenol-4-sulfonic acid, 2-benzoyl-5-methoxy-",
-    "SULISOBENZONE [HSDB]",
-    "SULISOBENZONE [MART.]",
-    "5-benzoyl-4-hydroxy-2-methoxy-benzenesulfonic acid",
-    "Tox21_111639",
-    "Uval sodium salt",
-    "NCGC00159404-02",
-    "NCGC00159404-04",
-    "AC-19869",
-    "2-Hydroxy-4-methoxybenzophenone-5-sulfonic acid hydrate",
-    "4-hydroxy-2-methoxy-5-(phenylcarbonyl)benzenesulfonic acid",
-    "Uvinul MS 40 sodium salt",
-    "Cyasorb UV 284 sodium salt",
-    "Sulisobenzonum [INN-Latin]",
-    "Sulisobenzona [INN-Spanish]",
-    "HMBS",
-    "Uvinul MS-40 substanz",
-    "EINECS 223-772-2",
-    "2-Hydoxy-4-methoxy-5-sulfobenzophenone",
-    "Sulisobenzone [USAN:USP:INN]",
-    "5-benzoyl-4-hydroxy-2-methoxybenzenesulfonic acid hydrate",
-    "1-Phenol-4-sulf",
-    "2-Hydroxy-4-Methoxy-5-sulfonylbenzophenone(BP-4)",
-    "Sungard (TN)",
-    "Uval (*sodium salt*)",
-    "Sulisobenzone (Standard)",
-    "CBMicro_016354",
-    "Sulisobenzone (USP/INN)",
-    "SULISOBENZONE [MI]",
-    "EC 223-772-2",
-    "SULISOBENZONE [INN]",
-    "5-Benzoyl-4-hydroxy-2-methoxybenzolsulfonsaeure",
-    "Spectra-Sorb U.V. 284",
-    "SULISOBENZONE [USAN]",
-    "SULFISOBENZONE [VANDF]",
-    "Sulisobenzone; Benzophenone 4",
-    "SULISOBENZONE [USP-RS]",
-    "SULISOBENZONE [WHO-DD]",
-    "5-Benzoyl-4-hydroxy-2-methoxybenzene-1-sulfonic acid",
-    "Cyasorb UV 284 (Salt/Mix)",
-    "HY-B1162R",
-    "Sulisobenzone, analytical standard",
-    "Uvinul MS 40 (*sodium salt*)",
-    "ALBB-025816",
-    "Cyasorb UV 284 (*sodium salt*)",
-    "HY-B1162",
-    "Tox21_202332",
-    "Tox21_303469",
-    "s4652",
-    "SULISOBENZONE [USP MONOGRAPH]",
-    "MSK3412-1000A",
-    "Tox21_111639_1",
-    "CCG-267557",
-    "CS-4610",
-    "Sulisobenzone (USAN) (*sodium salt*)",
-    "NCGC00159404-03",
-    "NCGC00159404-05",
-    "NCGC00257488-01",
-    "NCGC00259881-01",
-    "AS-12605",
-    "DB-049626",
-    "H0466",
-    "T0691",
-    "D05964",
-    "F11240",
-    "SBI-0016590.0002",
-    "F238749",
-    "5-Benzoyl-4-hydroxy-2-methoxybenzenesulfonic acid ammoniate",
-    "1-Phenol-4-sulfonic acid, 2-benzoyl-5-methoxy-, sodium salt",
-    "4-hydroxy-2-methoxy-5-(oxo-phenylmethyl)benzenesulfonic acid",
-    "Sulisobenzone, United States Pharmacopeia (USP) Reference Standard",
-    "I4Y"
-   ]
-  },
-  {
    "id": "100-44-7",
    "name": "Benzyl chloride",
    "inci_hint": "Benzyl Chloride",
@@ -16259,16 +16475,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 4 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 4 products",
+     "year": "1990",
+     "field": "Benzyl chloride",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Benzyl chloride"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Benzyl chloride",
     "(Chloromethyl)benzene",
@@ -16353,15 +16570,19 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 30 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 30 products",
+     "year": "2015",
+     "field": "beta-Myrcene",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "beta-Myrcene"
     }
+   ],
+   "aliases": [
+    "Myrcene",
+    "beta-Myrcene"
    ],
    "synonyms": [
     "beta-Myrcene",
@@ -16441,16 +16662,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 1 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 1 products",
+     "year": "1992",
+     "field": "C.I. Acid Red 114",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "C.I. Acid Red 114"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "C.I. Acid Red 114",
     "Polar Red RS",
@@ -16522,16 +16744,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 6 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 6 products",
+     "year": "1994",
+     "field": "Caffeic acid",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Caffeic acid"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Caffeic acid",
     "3,4-Dihydroxycinnamic acid",
@@ -16650,153 +16873,9 @@
    ]
   },
   {
-   "id": "58-08-2",
-   "name": "Caffeine",
-   "inci_hint": "Caffeine Anhydrous",
-   "cas": [
-    "58-08-2"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 37 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Caffeine"
-    }
-   ],
-   "synonyms": [
-    "Caffeine",
-    "Guaranine",
-    "1,3,7-Trimethylxanthine",
-    "Methyltheobromine",
-    "Theine",
-    "Thein",
-    "Cafeina",
-    "Caffein",
-    "Cafipel",
-    "Koffein",
-    "Mateina",
-    "Alert-pep",
-    "Coffeine",
-    "Anhydrous caffeine",
-    "Refresh'n",
-    "Vivarin",
-    "Stim",
-    "No-Doz",
-    "Cafamil",
-    "Cafecon",
-    "Caffine",
-    "Dexitac",
-    "Nodaca",
-    "7-Methyltheophylline",
-    "Eldiatric C",
-    "Durvitan",
-    "Hycomine",
-    "Organex",
-    "Nix Nap",
-    "Methyltheobromide",
-    "Coffeinum",
-    "Coffein",
-    "3,7-Dihydro-1,3,7-trimethyl-1H-purine-2,6-dione",
-    "Tirend",
-    "1,3,7-Trimethylpurine-2,6-dione",
-    "1,3,7-Trimethyl-2,6-dioxopurine",
-    "Tri-Aqua",
-    "Kofein",
-    "Caffeine, anhydrous",
-    "1-methyltheobromine",
-    "1H-Purine-2,6-dione, 3,7-dihydro-1,3,7-trimethyl-",
-    "Methylxanthine theophylline",
-    "teina",
-    "Caffeina",
-    "1,3,7-Trimethyl-3,7-dihydro-1H-purine-2,6-dione",
-    "NCI-C02733",
-    "1,3,7-trimethyl-2,3,6,7-tetrahydro-1H-purine-2,6-dione",
-    "cafeine",
-    "Caffeinum",
-    "1,3,7-trimethyl-1H-purine-2,6(3H,7H)-dione",
-    "Caffeine melting point standard",
-    "TREZIX COMPONENT CAFFEINE",
-    "NoDoz Caplets and Chewable Tablets",
-    "Quick Pep",
-    "3,7-Dihydro-1,3,7-trimethyl-1H-purin-2,6-dion",
-    "QuickPep",
-    "NODOZ",
-    "Zanthine",
-    "Awake",
-    "NoSnooze",
-    "Allertness Aid",
-    "Diurex Ultimate",
-    "trimethylxanthine",
-    "Uplift Chewable",
-    "Alertness Aid",
-    "Diurex Ultra",
-    "Yeast-vite",
-    "Conrx Alert",
-    "Pro-plus",
-    "Sprayable Energy",
-    "Stay Awake",
-    "Alert Aid",
-    "Hair Care",
-    "Nano Ppc",
-    "Caffeine 200mg",
-    "Diurex Water Pills",
-    "Topcare Stay Awake",
-    "Alert Alertness Aid",
-    "NoDoz Alertness Aid",
-    "Sohmed Alertness Aid",
-    "357 Super Magnum",
-    "Caffeine 1508",
-    "Awake Maximum Strength",
-    "Diurex Water Pills XPL",
-    "Caffeine 200 mg Tablets",
-    "Jet Alert Double Strength",
-    "Jet Alert Regular Strength",
-    "Caffeine Tablets, 200 mg",
-    "Stay Awake Maximum Strength",
-    "Caffeine tablet, film-coated",
-    "Topcare Stay Awake Maximum Strength",
-    "NoDoz Alertness Aid Maximum Strength",
-    "Valumeds Maximum Strength Stay Awake",
-    "200-362-1",
-    "619-173-4",
-    "Phensal",
-    "Caffeine, synthetic",
-    "Synalgos",
-    "Theophylline, 7-methyl",
-    "DHCplus",
-    "Miudol",
-    "Theobromine, 1-methyl-",
-    "Propoxyphene Compound 65",
-    "Kofein [Czech]",
-    "Coffein [German]",
-    "Koffein [German]",
-    "Caffeine (natural)",
-    "Xanthine, 1,3,7-trimethyl",
-    "Caffeina [Italian]",
-    "Theophylline Me",
-    "Theobromine Me",
-    "SK-65 Compound",
-    "Anacin",
-    "Anacin Maximum Strength",
-    "P-A-C Analgesic Tablets",
-    "NSC 5036",
-    "A.S.A. and Codeine Compound",
-    "AI3-20154",
-    "CFF",
-    "caffenium"
-   ]
-  },
-  {
    "id": "1333-86-4",
    "name": "Carbon black",
-   "inci_hint": "Supersorbon S1",
+   "inci_hint": "Carbon Black",
    "cas": [
     "1333-86-4"
    ],
@@ -16804,18 +16883,23 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 750 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 750 products",
+     "year": "2003",
+     "field": "Carbon black (airborne, unbound particles of respirable size)",
      "health": true,
      "env": false,
      "source": "california",
-     "listed_name": "Carbon black"
+     "listed_name": "Carbon black (airborne, unbound particles of respirable size)"
     }
+   ],
+   "aliases": [
+    "Carbon Black",
+    "CI 77266"
    ],
    "synonyms": [
     "Carbon black",
+    "Carbon black (airborne, unbound particles of respirable size)",
     "Elemental Carbon",
     "Carbon, Vitreous",
     "Carbon 12",
@@ -16933,58 +17017,7 @@
     "Carbomet",
     "Carbomix",
     "Carbon",
-    "Carbon Activated",
-    "Carbon Black BV and V"
-   ]
-  },
-  {
-   "id": "8002-45-2",
-   "name": "Coal Tar",
-   "inci_hint": null,
-   "cas": [
-    "8002-45-2"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 2 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Coal Tar"
-    }
-   ],
-   "synonyms": [
-    "Coal Tar"
-   ]
-  },
-  {
-   "id": "8007-45-2",
-   "name": "Coal Tar",
-   "inci_hint": null,
-   "cas": [
-    "8007-45-2"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 10 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Coal Tar"
-    }
-   ],
-   "synonyms": [
-    "Coal Tar"
+    "Carbon Activated"
    ]
   },
   {
@@ -16998,18 +17031,20 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 1 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 1 products",
+     "year": "2012",
+     "field": "Coconut oil diethanolamine condensate (cocamide diethanolamine)",
      "health": true,
      "env": false,
      "source": "california",
-     "listed_name": "Cocamide diethanolamine"
+     "listed_name": "Coconut oil diethanolamine condensate (cocamide diethanolamine)"
     }
    ],
+   "aliases": [],
    "synonyms": [
-    "Cocamide diethanolamine"
+    "Cocamide diethanolamine",
+    "Coconut oil diethanolamine condensate (cocamide diethanolamine)"
    ]
   },
   {
@@ -17023,43 +17058,20 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 7 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 7 products",
+     "year": "2012",
+     "field": "Coconut oil diethanolamine condensate (cocamide diethanolamine)",
      "health": true,
      "env": false,
      "source": "california",
-     "listed_name": "Cocamide diethanolamine"
+     "listed_name": "Coconut oil diethanolamine condensate (cocamide diethanolamine)"
     }
    ],
+   "aliases": [],
    "synonyms": [
-    "Cocamide diethanolamine"
-   ]
-  },
-  {
-   "id": "661791-31-9",
-   "name": "Cocamide diethanolamine",
-   "inci_hint": null,
-   "cas": [
-    "661791-31-9"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 6 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Cocamide diethanolamine"
-    }
-   ],
-   "synonyms": [
-    "Cocamide diethanolamine"
+    "Cocamide diethanolamine",
+    "Coconut oil diethanolamine condensate (cocamide diethanolamine)"
    ]
   },
   {
@@ -17073,24 +17085,26 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 30 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 30 products",
+     "year": "2012",
+     "field": "Coconut oil diethanolamine condensate (cocamide diethanolamine)",
      "health": true,
      "env": false,
      "source": "california",
-     "listed_name": "Cocamide diethanolamine"
+     "listed_name": "Coconut oil diethanolamine condensate (cocamide diethanolamine)"
     }
    ],
+   "aliases": [],
    "synonyms": [
-    "Cocamide diethanolamine"
+    "Cocamide diethanolamine",
+    "Coconut oil diethanolamine condensate (cocamide diethanolamine)"
    ]
   },
   {
    "id": "68603-42-9",
    "name": "Cocamide diethanolamine",
-   "inci_hint": null,
+   "inci_hint": "Cocamide DEA",
    "cas": [
     "68603-42-9"
    ],
@@ -17098,70 +17112,22 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 745 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 745 products",
+     "year": "2012",
+     "field": "Coconut oil diethanolamine condensate (cocamide diethanolamine)",
      "health": true,
      "env": false,
      "source": "california",
-     "listed_name": "Cocamide diethanolamine"
+     "listed_name": "Coconut oil diethanolamine condensate (cocamide diethanolamine)"
     }
    ],
-   "synonyms": [
-    "Cocamide diethanolamine"
-   ]
-  },
-  {
-   "id": "68140-00-1",
-   "name": "Cocamide MEA",
-   "inci_hint": null,
-   "cas": [
-    "68140-00-1"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 87 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Cocamide MEA"
-    }
+   "aliases": [
+    "Cocamide DEA"
    ],
    "synonyms": [
-    "Cocamide MEA"
-   ]
-  },
-  {
-   "id": "84650-00-0",
-   "name": "Coffea arabica extract",
-   "inci_hint": null,
-   "cas": [
-    "84650-00-0"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 55 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Coffea arabica extract"
-    }
-   ],
-   "synonyms": [
-    "Coffea arabica extract",
-    "Coffee CO2 Colombia (oil soluble)",
-    "Coffee CO2 extract Arabica (oil soluble)"
+    "Cocamide diethanolamine",
+    "Coconut oil diethanolamine condensate (cocamide diethanolamine)"
    ]
   },
   {
@@ -17175,16 +17141,28 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 6 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 6 products",
+     "year": "1996",
+     "field": "Dichloroacetic acid",
+     "health": true,
+     "env": false,
+     "source": "california",
+     "listed_name": "Dichloroacetic acid"
+    },
+    {
+     "grade": "california",
+     "list": "California Proposition 65",
+     "status": "listed for developmental, male; reported to the Safe Cosmetics Program in 6 products",
+     "year": "2009",
+     "field": "Dichloroacetic acid",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Dichloroacetic acid"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Dichloroacetic acid",
     "2,2-Dichloroacetic acid",
@@ -17266,16 +17244,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 6 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 6 products",
+     "year": "1988",
+     "field": "Dichloromethane (Methylene chloride)",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Dichloromethane (Methylene chloride)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Dichloromethane (Methylene chloride)",
     "DICHLOROMETHANE",
@@ -17410,16 +17389,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 30 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 30 products",
+     "year": "2012",
+     "field": "Diethanolamine",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Diethanolamine"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Diethanolamine",
     "2,2'-Iminodiethanol",
@@ -17529,34 +17509,9 @@
    ]
   },
   {
-   "id": "65996-92-1",
-   "name": "Distillates (coal tar)",
-   "inci_hint": null,
-   "cas": [
-    "65996-92-1"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 1 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Distillates (coal tar)"
-    }
-   ],
-   "synonyms": [
-    "Distillates (coal tar)"
-   ]
-  },
-  {
    "id": "140-67-0",
    "name": "Estragole",
-   "inci_hint": "1-Methoxy-4-(2-Propenyl)Benzene",
+   "inci_hint": "Estragole",
    "cas": [
     "140-67-0"
    ],
@@ -17564,15 +17519,18 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 135 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 135 products",
+     "year": "1999",
+     "field": "Estragole",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Estragole"
     }
+   ],
+   "aliases": [
+    "Estragole"
    ],
    "synonyms": [
     "Estragole",
@@ -17673,150 +17631,6 @@
    ]
   },
   {
-   "id": "64-17-5",
-   "name": "Ethanol in alcoholic beverages",
-   "inci_hint": "C2H5Oh",
-   "cas": [
-    "64-17-5"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 4 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Ethanol in alcoholic beverages"
-    }
-   ],
-   "synonyms": [
-    "Ethanol in alcoholic beverages",
-    "ethanol",
-    "ethyl alcohol",
-    "alcohol",
-    "grain alcohol",
-    "Methylcarbinol",
-    "Ethyl hydroxide",
-    "Ethyl hydrate",
-    "Tecsol",
-    "Algrain",
-    "Anhydrol",
-    "EtOH",
-    "Hydroxyethane",
-    "Alkohol",
-    "Jaysol S",
-    "Potato alcohol",
-    "Absolute ethanol",
-    "1-Hydroxyethane",
-    "Ethanol 200 proof",
-    "Aethylalkohol",
-    "Denatured ethanol",
-    "Aethanol",
-    "Dehydrated ethanol",
-    "Alcool ethylique",
-    "etanol",
-    "Fermentation alcohol",
-    "Tecsol C",
-    "Alcool etilico",
-    "Alcohol, ethyl",
-    "Alcohol, diluted",
-    "Dehydrated alcohol",
-    "Etanolo",
-    "Jaysol",
-    "Etylowy alkohol",
-    "absolute alcohol",
-    "Alcohol dehydrated",
-    "Alkoholu etylowego",
-    "Ethyl alcohol usp",
-    "Synasol",
-    "Alcohol, anhydrous",
-    "Ethyl alcohol anhydrous",
-    "Ethylalcohol",
-    "Spirt",
-    "Alcare Hand Degermer",
-    "Anhydrous ethanol",
-    "Alcohol, Absolute",
-    "Alcohol (ethyl alcohol)",
-    "Ethicap",
-    "NCI-C03134",
-    "C2H5OH",
-    "Ethylicum",
-    "Edible alcohol",
-    "Alcohol denatured",
-    "SD alcohol 23-hydrogen",
-    "Ethanol, dehydrated",
-    "Alcoholum",
-    "Ethanolum",
-    "Ethyl alcohol, absolute",
-    "Sd alcohol",
-    "Ethyl alcohol, dehydrated",
-    "Alcohol determination--alcohol",
-    "Alcohol 190 proof",
-    "PM-6193-200",
-    "Alcohol, Grain",
-    "Ethylic alcohol",
-    "Alcohol Hand Sanitizer",
-    "Instant Hand Sanitizer",
-    "dicolor",
-    "handsanttizer",
-    "simplepleasures",
-    "Activessence",
-    "Antiseptique",
-    "Cleansified",
-    "Dentovations",
-    "Germstarcitrus",
-    "germstarGel",
-    "germstarLuxe",
-    "Gingerbread",
-    "Handsanitizer",
-    "Handzitizer",
-    "Margaritaville",
-    "Microsilver",
-    "Professional",
-    "Sanitizetek",
-    "Spatheraphy",
-    "Advanced",
-    "Alchohol",
-    "Alcochol",
-    "Alcoscrub",
-    "Alochol",
-    "Alvaclean",
-    "Applause",
-    "Biopure",
-    "Biorell",
-    "Biosilk",
-    "Caresour",
-    "Cavalry",
-    "Claires",
-    "Clensil",
-    "Cupcake",
-    "Deconimo",
-    "Dermokil",
-    "Dynamic",
-    "enMotion",
-    "Evergreen",
-    "Facilipro",
-    "Fressly",
-    "Gelclor",
-    "Hanitizer",
-    "Hygenize",
-    "Instant",
-    "Kandesn",
-    "Kanechom",
-    "Kleanops",
-    "Livpure",
-    "livWell",
-    "Lollipop",
-    "Medline",
-    "Medpanol",
-    "Mixline"
-   ]
-  },
-  {
    "id": "140-88-5",
    "name": "Ethyl acrylate",
    "inci_hint": "Ethyl Acrylate",
@@ -17827,16 +17641,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 3 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 3 products",
+     "year": "1989",
+     "field": "Ethyl acrylate",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Ethyl acrylate"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Ethyl acrylate",
     "Acrylic acid ethyl ester",
@@ -17928,21 +17743,22 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 14 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for developmental; reported to the Safe Cosmetics Program in 14 products",
+     "year": "2015",
+     "field": "Ethylene glycol (ingested)",
      "health": true,
      "env": false,
      "source": "california",
-     "listed_name": "Ethylene glycol"
+     "listed_name": "Ethylene glycol (ingested)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Ethylene glycol",
+    "Ethylene glycol (ingested)",
     "Ethane-1,2-diol",
     "1,2-ethanediol",
-    "glycol",
     "monoethylene glycol",
     "2-hydroxyethanol",
     "1,2-Dihydroxyethane",
@@ -18072,18 +17888,42 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 30 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 30 products",
+     "year": "1987",
+     "field": "Ethylene oxide",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Ethylene oxide"
+    },
+    {
+     "grade": "california",
+     "list": "California Proposition 65",
+     "status": "listed for female; reported to the Safe Cosmetics Program in 30 products",
+     "year": "1987",
+     "field": "Ethylene oxide [Basis for listing changed effective November 22, 2013]",
+     "health": true,
+     "env": false,
+     "source": "california",
+     "listed_name": "Ethylene oxide [Basis for listing changed effective November 22, 2013]"
+    },
+    {
+     "grade": "california",
+     "list": "California Proposition 65",
+     "status": "listed for developmental, male; reported to the Safe Cosmetics Program in 30 products",
+     "year": "2009",
+     "field": "Ethylene oxide [Basis for listing changed effective November 22, 2013]",
+     "health": true,
+     "env": false,
+     "source": "california",
+     "listed_name": "Ethylene oxide [Basis for listing changed effective November 22, 2013]"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Ethylene oxide",
+    "Ethylene oxide [Basis for listing changed effective November 22, 2013]",
     "Oxirane",
     "Epoxyethane",
     "1,2-Epoxyethane",
@@ -18171,34 +18011,9 @@
    ]
   },
   {
-   "id": "30525-89-4",
-   "name": "Formaldehyde",
-   "inci_hint": null,
-   "cas": [
-    "30525-89-4"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 1 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Formaldehyde"
-    }
-   ],
-   "synonyms": [
-    "Formaldehyde"
-   ]
-  },
-  {
    "id": "50-00-0",
    "name": "Formaldehyde (gas)",
-   "inci_hint": "Fyde",
+   "inci_hint": "Formaldehyde",
    "cas": [
     "50-00-0"
    ],
@@ -18206,15 +18021,18 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 95 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 95 products",
+     "year": "1988",
+     "field": "Formaldehyde (gas)",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Formaldehyde (gas)"
     }
+   ],
+   "aliases": [
+    "Formaldehyde"
    ],
    "synonyms": [
     "Formaldehyde (gas)",
@@ -18340,322 +18158,6 @@
    ]
   },
   {
-   "id": "446-72-0",
-   "name": "Genistein (purified)",
-   "inci_hint": "Tempo Hot Flash Relief",
-   "cas": [
-    "446-72-0"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 2 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Genistein (purified)"
-    }
-   ],
-   "synonyms": [
-    "Genistein (purified)",
-    "genistein",
-    "Prunetol",
-    "4',5,7-Trihydroxyisoflavone",
-    "Genisteol",
-    "5,7-dihydroxy-3-(4-hydroxyphenyl)-4H-chromen-4-one",
-    "5,7-dihydroxy-3-(4-hydroxyphenyl)chromen-4-one",
-    "5,7,4'-Trihydroxyisoflavone",
-    "Bonistein",
-    "Genestein",
-    "4H-1-Benzopyran-4-one, 5,7-dihydroxy-3-(4-hydroxyphenyl)-",
-    "5,7-Dihydroxy-3-(4-hydroxyphenyl)-4H-1-benzopyran-4-one",
-    "NPI-031L",
-    "BIO-300",
-    "SIPI-807-1",
-    "FW-635I-2",
-    "TEMPO HOT FLASH RELIEF",
-    "alpha-ISOSPARTEINE, (-)-",
-    "SPARTEINE L-alpha-ISOSPARTEINE",
-    "207-174-9",
-    "Differenol A",
-    "C.I. 75610",
-    "Genistein (Standard)",
-    "NSC 36586",
-    "4,5,7-Trihydroxyiso-flavone",
-    "Genistein [USAN]",
-    "5,7-Dihydroxy-3-(4-hydroxyphenyl)-4-benzopyrone",
-    "ISOFLAVONE, 4',5,7-TRIHYDROXY-",
-    "s1342",
-    "GEN",
-    "NCGC00015479-09",
-    "Lactoferrin-genistein",
-    "CCRIS 7675",
-    "1x7r",
-    "SR-01000075498",
-    "EINECS 207-174-9",
-    "Genistein?",
-    "4',5,7-Trihydroxy isoflavone",
-    "PTI G4660",
-    "SIPI-9764-I",
-    "AgeGuard GN",
-    "3kgt",
-    "3kgu",
-    "Genistein, 8",
-    "PTI-G 4660",
-    "Genistein (GEN)",
-    "Spectrum_000320",
-    "Tocris-1110",
-    "2qa8",
-    "GENISTEIN [INN]",
-    "SpecPlus_000305",
-    "GENISTEIN [MI]",
-    "GENISTEIN [HSDB]",
-    "Spectrum2_000638",
-    "Spectrum3_000678",
-    "Spectrum4_001543",
-    "Spectrum5_000106",
-    "Lopac-G-6649",
-    "4',7-Trihydroxyisoflavone",
-    "Epitope ID:613462",
-    "GENISTEIN [MART.]",
-    "MolMap_000022",
-    "UPCMLD-DP096",
-    "G 6649",
-    "G10000",
-    "GENISTEIN [USP-RS]",
-    "GENISTEIN [WHO-DD]",
-    "Isoflavone,5,7-trihydroxy-",
-    "Lopac0_000520",
-    "Oprea1_224620",
-    "Oprea1_437815",
-    "BSPBio_002375",
-    "KBioGR_002006",
-    "KBioGR_002564",
-    "KBioSS_000800",
-    "KBioSS_002573",
-    "NPI031L",
-    "BIDD:ER0113",
-    "DivK1c_006401",
-    "Genistein, analytical standard",
-    "SPBio_000636",
-    "MEGxp0_000568",
-    "4,5,7-Trihydroxy Iso-Flavone",
-    "UPCMLD-DP096:001",
-    "ACon1_001065",
-    "cid_5280961",
-    "KBio1_001345",
-    "KBio2_000800",
-    "KBio2_002564",
-    "KBio2_003368",
-    "KBio2_005132",
-    "KBio2_005936",
-    "KBio2_007700",
-    "KBio3_001595",
-    "KBio3_003042",
-    "CHEBI: 28088",
-    "cMAP_000086",
-    "Bio1_000445",
-    "Bio1_000934",
-    "Bio1_001423",
-    "GLXC-06701",
-    "ALBB-015886",
-    "Tox21_110161",
-    "Tox21_201428",
-    "Tox21_300585",
-    "Tox21_500520",
-    "5,7,4'-trihydroxy dihydroisoflavone",
-    "AC-472",
-    "CCG-38551",
-    "EBC-11079",
-    "HY-14596R",
-    "WHO 11073",
-    "Tox21_110161_1",
-    "CS-1534",
-    "KS-5128",
-    "SDCCGSBI-0050503.P003",
-    "SMP1_000133",
-    "Genistein; 4',5,7-Trihydroxyisoflavone",
-    "NCGC00015479-01",
-    "NCGC00015479-02"
-   ]
-  },
-  {
-   "id": "90045-36-6",
-   "name": "Ginkgo biloba extract",
-   "inci_hint": null,
-   "cas": [
-    "90045-36-6"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 61 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Ginkgo biloba extract"
-    }
-   ],
-   "synonyms": [
-    "Ginkgo biloba extract",
-    "10:1 purification aqueous extract",
-    "24/6 GINKGO BILOBA EXTRACT 24/6",
-    "azane;3,5-dinitro-4-(1-phenyltetrazol-5-yl)sulfanylbenzoic acid"
-   ]
-  },
-  {
-   "id": "120-40-1",
-   "name": "Lauramide DEA",
-   "inci_hint": "N,N-Di(2-Hydroxyethyl)Lauramide",
-   "cas": [
-    "120-40-1"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 21 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Lauramide DEA"
-    }
-   ],
-   "synonyms": [
-    "Lauramide DEA",
-    "N,N-Bis(2-hydroxyethyl)dodecanamide",
-    "Lauric diethanolamide",
-    "Lauryl diethanolamide",
-    "Lauric acid diethanolamide",
-    "Alkamide LE",
-    "Standamidd ld",
-    "Comperlan LD",
-    "Condensate PL",
-    "Mackamide LL",
-    "Diethanollauramide",
-    "Hetamide ML",
-    "Mackamide LLM",
-    "Empilan LDE",
-    "Ethylan MLD",
-    "Lauroyldiethanolamine",
-    "Clindrol 100L",
-    "Rolamid cd",
-    "Lankrostat JP",
-    "Incromide LR",
-    "Standamid LD",
-    "Lauramido DEA",
-    "N,N-Bis(2-hydroxyethyl)lauramide",
-    "Richamide STD",
-    "Aminon L 02",
-    "Lalmin D",
-    "Crillon LDE",
-    "Rewomid DLMS",
-    "Stepan LDA",
-    "Varamid ml 1",
-    "Varamide ML 1",
-    "Bis(2-hydroxyethyl)lauramide",
-    "Clindrol 101CG",
-    "Clindrol 200L",
-    "Clindrol 203CG",
-    "Clindrol 210CGN",
-    "Monamide 150LW",
-    "Chemistat 2500",
-    "Richamide 6310",
-    "Crillon L.D.E.",
-    "Super Amide L-9A",
-    "Super Amide L-9C",
-    "Synotol L-60",
-    "Unamide J-56",
-    "Clindrol superamide 100L",
-    "Dodecanamide, N,N-bis(2-hydroxyethyl)-",
-    "Onyxol 345",
-    "N,N-Diethanollauramide",
-    "N,N-Diethylollauramide",
-    "Rewomid DL 203/S",
-    "Duspar LA 2000",
-    "Steinamid DL 203 S",
-    "LDA (surfactant)",
-    "Ninol 4821",
-    "Ninol aa62",
-    "N,N-Bis(hydroxyethyl)lauramide",
-    "Chemstat LD 100",
-    "EMID 6511",
-    "Monamid 150-LW",
-    "N,N-Diethanollauric acid amide",
-    "N,N-DI(2-HYDROXYETHYL)LAURAMIDE",
-    "NCI-C55323",
-    "N,N-Bis(2-hydroxyethyl)laurylamide",
-    "Lauric acid diethanolamine condensate",
-    "N,N-Bis(2-hydroxyethyl)lauroylamide",
-    "N,N-Bis(beta-hydroxyethyl)lauramide",
-    "204-393-1",
-    "Monamid 150LW",
-    "lauramide diethanolamine",
-    "Lauroyl diethanolamide",
-    "Ninol P-621",
-    "Diethanolamine lauroylamide",
-    "Lauric acid diethanolamine",
-    "C11DEA",
-    "Lauric acid-diethanol amide",
-    "LDE",
-    "Lauric acid diethanolamine condensate (1:1)",
-    "NCGC00181001-01",
-    "Ninol aa-62 extra",
-    "Caswell No. 519A",
-    "Dehydat 10",
-    "CCRIS 4662",
-    "lauric diethanol amide",
-    "EINECS 204-393-1",
-    "EPA Pesticide Chemical Code 079018",
-    "Methyl laurate-diethanolamine condensate",
-    "Clindrol",
-    "AI3-09484",
-    "Hartamide LDA",
-    "Stremid K",
-    "Ablumide LDE",
-    "diethanol lauramide",
-    "Mackamide L10",
-    "Schercomid SL-EX",
-    "Carsamide SAL-7",
-    "Alkamide 327",
-    "Schercomid SL-Extra",
-    "Witcamide 5138",
-    "Witcamide 5195",
-    "LDEA",
-    "Clindrol 200 L",
-    "N-Lauroyldiethanolamine",
-    "Monamid 150-LMWC",
-    "Ninol 30-LL",
-    "Ninol AA 62",
-    "Pionin D 1110",
-    "N,N-Diethanoldodecanamide",
-    "N-Dodecanoyldiethanolamine",
-    "Diethanolamide lauric acid",
-    "C11-Coconut diethanolamide",
-    "Diethanol lauric acid amide",
-    "EC 204-393-1",
-    "LAURAMIDE DEA [VANDF]",
-    "Lauryl Diethanolamide (LDEA)",
-    "Schercomid 1214 (Salt/Mix)",
-    "Diethanolamide of methyl laurate",
-    "LAURAMIDE DEA [WHO-DD]",
-    "Lauric bis(2-hydroxyethyl)amide",
-    "EMID 6541",
-    "LAURIC DIETHANOLAMIDE [II]"
-   ]
-  },
-  {
    "id": "7439-92-1",
    "name": "Lead",
    "inci_hint": "Lead",
@@ -18666,16 +18168,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 6 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; developmental; female and male reproductive; reported to the Safe Cosmetics Program in 6 products",
+     "year": "1987",
+     "field": "Lead",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Lead"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Lead",
     "Lead element",
@@ -18802,7 +18305,7 @@
   {
    "id": "301-04-2",
    "name": "Lead acetate",
-   "inci_hint": "Plumbum Aceticum",
+   "inci_hint": "Lead Acetate",
    "cas": [
     "301-04-2"
    ],
@@ -18810,15 +18313,18 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 5 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 5 products",
+     "year": "1988",
+     "field": "Lead acetate",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Lead acetate"
     }
+   ],
+   "aliases": [
+    "Lead Acetate"
    ],
    "synonyms": [
     "Lead acetate",
@@ -18876,130 +18382,6 @@
    ]
   },
   {
-   "id": "7439-97-6",
-   "name": "Mercury and mercury compounds",
-   "inci_hint": "Mercury",
-   "cas": [
-    "7439-97-6"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 3 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Mercury and mercury compounds"
-    }
-   ],
-   "synonyms": [
-    "Mercury and mercury compounds",
-    "MERCURY",
-    "Quicksilver",
-    "Hydrargyrum",
-    "Metallic mercury",
-    "Quecksilber",
-    "Mercure",
-    "Mercurio",
-    "Colloidal mercury",
-    "Kwik",
-    "Mercurius vivus",
-    "Mercury metal",
-    "Mercury, elemental",
-    "NCI-C60399",
-    "MERCURY ELEMENT",
-    "Dietary Mercury",
-    "Mercury metal: Colloidal mercury",
-    "Mercurius 12X",
-    "Mercurius 21X",
-    "Mercurius vivus 8",
-    "Mercurius vivus 6X",
-    "Mercurius Vivus 30X",
-    "TOTAL MERCURY",
-    "Mercurius auratus 15X",
-    "Mercurius vivus 200C",
-    "Mercurius vivus 5 Special Order",
-    "Mercurius Vivus 6 Special Order",
-    "Mercurius vivus 12 Special Order",
-    "Mercurius auratus 15 Special Order",
-    "Mercurius 10/20/30 Special Order",
-    "Mercurius vivus 10/20/30 Special Order",
-    "231-106-7",
-    "mercury(II)",
-    "mercury(II) cation",
-    "Mercury(II) ion",
-    "Quick silver",
-    "Rtec",
-    "elemental mercury",
-    "RCRA waste number U151",
-    "mercury atom",
-    "Mercury standard",
-    "Hg Standard Solution",
-    "N458",
-    "Mercury vapor",
-    "Mercury, metallic",
-    "Mercure [French]",
-    "Mercurio [Italian]",
-    "RTEC [Polish]",
-    "KWIK [Dutch]",
-    "Quecksilber [German]",
-    "Caswell No. 546",
-    "CCRIS 1578",
-    "Mercury vapor (as Hg)",
-    "Mercury - Hg @ 1000 microg/g in Hydrocarbon Oil",
-    "EINECS 231-106-7",
-    "RCRA waste no. U151",
-    "EPA Pesticide Chemical Code 052301",
-    "azogue",
-    "Marcero",
-    "Mercuruy",
-    "Rathje",
-    "Atomic Mercury",
-    "Element Mercury",
-    "Element-Hg",
-    "Mercury (atomic)",
-    "Hg (element)",
-    "mercury(0)",
-    "Seawater (Hg)",
-    "Mercury, redistilled",
-    "Mercury solution CRS",
-    "Mercury, elemental and inorganic forms",
-    "BLUE OINTMENT",
-    "31 - Mercury",
-    "32 - Mercury",
-    "MERCURY [VANDF]",
-    "MERCURY [HSDB]",
-    "MERCURY [MI]",
-    "MERCURY [MART.]",
-    "Mercury, Electronic Grade",
-    "MERCURY [WHO-DD]",
-    "80Hg",
-    "EC 231-106-7",
-    "Coastal sea water - Mercury",
-    "Hg(0)",
-    "MERCURIUS VIVUS [HPUS]",
-    "Mercury (Hg) Standard Solution",
-    "Mercury [UN2809]  [Corrosive]",
-    "Water - Mercury (NIM-GBW08603)",
-    "Water - Mercury (NIM-GBW08617)",
-    "UN 2809",
-    "Water Supply QC Check Sample: Mercury",
-    "Water Pollution QC Check Sample: Mercury",
-    "AA standard MERCURY 1M HNO3 1000 ppm",
-    "AA standard MERCURY 1M HNO3 10000 ppm",
-    "C01319",
-    "Chinese Pharmacopoeia Mercury Reference stock solution",
-    "Mercury Standard: Hg @ 1000 microg/g in Hydrocarbon Oil",
-    "Mercury Hollow Cathode Lamp: 1.5\" Diameter, 2-pin, Non-Coded",
-    "Mercury Hollow Cathode Lamp: 2.0\" Diameter, 4-pin, Cableless",
-    "Mercury Hollow Cathode Lamp: 2.0\" Diameter, 9-pin, Non-Coded"
-   ]
-  },
-  {
    "id": "67-56-1",
    "name": "Methanol",
    "inci_hint": "Ch3Oh",
@@ -19010,16 +18392,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 6 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for developmental; reported to the Safe Cosmetics Program in 6 products",
+     "year": "2012",
+     "field": "Methanol",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Methanol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Methanol",
     "methyl alcohol",
@@ -19154,18 +18537,31 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 6 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for developmental; reported to the Safe Cosmetics Program in 6 products",
+     "year": "2000",
+     "field": "Methyl chloride",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Methyl chloride"
+    },
+    {
+     "grade": "california",
+     "list": "California Proposition 65",
+     "status": "listed for male; reported to the Safe Cosmetics Program in 6 products",
+     "year": "2009",
+     "field": "Methyl chloride [Basis for listing changed effective March 7, 2014]",
+     "health": true,
+     "env": false,
+     "source": "california",
+     "listed_name": "Methyl chloride [Basis for listing changed effective March 7, 2014]"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Methyl chloride",
+    "Methyl chloride [Basis for listing changed effective March 7, 2014]",
     "Chloromethane",
     "Monochloromethane",
     "Methane, chloro-",
@@ -19230,64 +18626,6 @@
    ]
   },
   {
-   "id": "463-57-0",
-   "name": "Methylene glycol",
-   "inci_hint": null,
-   "cas": [
-    "463-57-0"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 3 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Methylene glycol"
-    }
-   ],
-   "synonyms": [
-    "Methylene glycol",
-    "Methanediol",
-    "dihydroxymethane",
-    "207-339-5",
-    "formaldehyde hydrate",
-    "EINECS 207-339-5",
-    "Paraformaldehyde, powder",
-    "Aldacide; Flo-Mor; Granuform; Paraform; TransFix",
-    "F543822"
-   ]
-  },
-  {
-   "id": "82115-62-6",
-   "name": "Methylene glycol",
-   "inci_hint": null,
-   "cas": [
-    "82115-62-6"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 2 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Methylene glycol"
-    }
-   ],
-   "synonyms": [
-    "Methylene glycol"
-   ]
-  },
-  {
    "id": "93-15-2",
    "name": "Methyleugenol",
    "inci_hint": "Methyleugenol",
@@ -19298,16 +18636,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 103 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 103 products",
+     "year": "2001",
+     "field": "Methyleugenol",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Methyleugenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Methyleugenol",
     "Methyl eugenol",
@@ -19395,143 +18734,6 @@
    ]
   },
   {
-   "id": "12001-26-2",
-   "name": "Mica",
-   "inci_hint": "Mica",
-   "cas": [
-    "12001-26-2"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 615 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Mica"
-    }
-   ],
-   "synonyms": [
-    "Mica",
-    "Muscovite mica",
-    "Zimmwaldite",
-    "Suzorite",
-    "Abhrak",
-    "Suzorite mica",
-    "Mica, fluorian",
-    "Silicate, mica",
-    "Micromica W 1",
-    "Suzorite 60S",
-    "Davenite P 12",
-    "Sansostory SHC2000",
-    "P 80P",
-    "HX 610",
-    "CI 77019",
-    "Beautyturess 24K Gold Peel-Off Mask 120g",
-    "Beautyturess Gold Foil Snail Peel-Off Mask 50g 24K",
-    "601-648-2",
-    "C 1000",
-    "Mica-group minerals",
-    "S 200",
-    "COMMON MICA",
-    "MICA [WHO-DD]"
-   ]
-  },
-  {
-   "id": "8020-83-5",
-   "name": "Mineral oils, untreated and mildly treated",
-   "inci_hint": null,
-   "cas": [
-    "8020-83-5"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 2 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Mineral oils, untreated and mildly treated"
-    }
-   ],
-   "synonyms": [
-    "Mineral oils, untreated and mildly treated",
-    "chondroitinase b",
-    "DB-088283"
-   ]
-  },
-  {
-   "id": "81-15-2",
-   "name": "Musk xylene",
-   "inci_hint": "Moschus Xylol",
-   "cas": [
-    "81-15-2"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 4 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Musk xylene"
-    }
-   ],
-   "synonyms": [
-    "Musk xylene",
-    "Musk xylol",
-    "Xylene musk",
-    "2,4,6-Trinitro-1,3-dimethyl-5-tert-butylbenzene",
-    "5-tert-Butyl-2,4,6-trinitro-m-xylene",
-    "5-tert-Butyl-2,4,6-trinitroxylene",
-    "1-tert-Butyl-3,5-dimethyl-2,4,6-trinitrobenzene",
-    "2,4,6-Trinitro-5-tert-butyl-m-xylene",
-    "m-Xylene, 5-tert-butyl-2,4,6-trinitro-",
-    "2,4,6-Trinitro-3,5-dimethyl-1-tert-butylbenzene",
-    "1-(1,1-Dimethylethyl)-3,5-dimethyl-2,4,6-trinitrobenzene",
-    "Benzene, 1-tert-butyl-3,5-dimethyl-2,4,6-trinitro-",
-    "BENZENE, 1-(1,1-DIMETHYLETHYL)-3,5-DIMETHYL-2,4,6-TRINITRO-",
-    "2,4,6-Trinitro-3,5-dimethyl-tert-butylbenzene",
-    "201-329-4",
-    "NSC 59844",
-    "1-tert-butyl-3,5-dimethyl-2,4,6-trinitro-benzene",
-    "CCRIS 2391",
-    "EINECS 201-329-4",
-    "AI3-09017",
-    "MOSCHUS XYLOL",
-    "MUSK XYLENE [HSDB]",
-    "MUSK XYLENE [IARC]",
-    "MUSK XYLENE [WHO-DD]",
-    "Tox21_302248",
-    "5-t-Butyl-2,4,6-trinitro-m-xylene",
-    "Benzene,5-dimethyl-2,4,6-trinitro-",
-    "Musk xylene 10 microg/mL in Cyclohexane",
-    "NCGC00255244-01",
-    "Musk xylene 100 microg/mL in Cyclohexane",
-    "2,6-Trinitro-3,5-dimethyl-tert-butylbenzene",
-    "C19462",
-    "1-t-butyl-3,5-dimethyl-2,4,6-trinitrobenzene",
-    "2,4,6-Trinitro-1,3-dimethyl-5-t-butylbenzene",
-    "2,6-Trinitro-1,3-dimethyl-5-tert-butylbenzene",
-    "5-tert-Butyl-2,4,6-trinitro-m-xylene or musk xylene",
-    "2,4,6-TRINITRO-1-tert-BUTYL-3,5-DIMETHYLBENZENE",
-    "Benzene,1-dimethylethyl)-3,5-dimethyl-2,4,6-trinitro-",
-    "5-tert-Butyl-2,4,6-trinitro-m-xylene or musk xylene [UN2956]  [Flammable solid]"
-   ]
-  },
-  {
    "id": "99-97-8",
    "name": "N,N-Dimethyl-p-toluidine",
    "inci_hint": "N,N,4-Trimethylaniline",
@@ -19542,16 +18744,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 11 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 11 products",
+     "year": "2014",
+     "field": "N,N-Dimethyl-p-toluidine",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "N,N-Dimethyl-p-toluidine"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "N,N-Dimethyl-p-toluidine",
     "Dimethyl-p-toluidine",
@@ -19613,16 +18816,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 11 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for developmental; reported to the Safe Cosmetics Program in 11 products",
+     "year": "2001",
+     "field": "N-Methylpyrrolidone",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "N-Methylpyrrolidone"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "N-Methylpyrrolidone",
     "1-METHYL-2-PYRROLIDINONE",
@@ -19757,16 +18961,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 1 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 1 products",
+     "year": "1988",
+     "field": "N-Nitrosodiethanolamine",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "N-Nitrosodiethanolamine"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "N-Nitrosodiethanolamine",
     "Ndela",
@@ -19846,16 +19051,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 4 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 4 products",
+     "year": "1987",
+     "field": "N-Nitrosodimethylamine",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "N-Nitrosodimethylamine"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "N-Nitrosodimethylamine",
     "Dimethylnitrosamine",
@@ -19948,16 +19154,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 2 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 2 products",
+     "year": "1989",
+     "field": "Nickel (Metallic)",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Nickel (Metallic)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Nickel (Metallic)",
     "NICKEL",
@@ -20082,143 +19289,6 @@
    ]
   },
   {
-   "id": "106-50-3",
-   "name": "o-Phenylenediamine and its salts",
-   "inci_hint": "1,4-Benzenediamine",
-   "cas": [
-    "106-50-3"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 2 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "o-Phenylenediamine and its salts"
-    }
-   ],
-   "synonyms": [
-    "o-Phenylenediamine and its salts",
-    "p-Phenylenediamine",
-    "1,4-BENZENEDIAMINE",
-    "1,4-Diaminobenzene",
-    "1,4-Phenylenediamine",
-    "4-Aminoaniline",
-    "para-phenylenediamine",
-    "p-Aminoaniline",
-    "p-Diaminobenzene",
-    "Orsin",
-    "Paraphenylenediamine",
-    "Ursol D",
-    "4-Phenylenediamine",
-    "p-Benzenediamine",
-    "Fouramine D",
-    "Futramine D",
-    "Benzofur D",
-    "Developer PF",
-    "Fourrine D",
-    "Fur Yellow",
-    "Santoflex IC",
-    "Santoflex LC",
-    "Durafur Black R",
-    "Pelagol D",
-    "Tertral D",
-    "Pelagol DR",
-    "Pelagol Grey D",
-    "Peltol D",
-    "Fourrine 1",
-    "Furro D",
-    "Renal PF",
-    "Zoba Black D",
-    "Developer 13",
-    "Nako H",
-    "BASF ursol D",
-    "Fenylenodwuamina",
-    "Oxidation base 10",
-    "Rodol D",
-    "Usaf ek-394",
-    "C.I. Developer 13",
-    "Fur Black 41867",
-    "Paraphenylen-diamine",
-    "p-Fenylendiamin",
-    "FUR Brown 41866",
-    "P-PHENYLENE DIAMINE",
-    "C.I. Oxidation Base 10",
-    "CI Developer 13",
-    "paraphenylene-diamine",
-    "CI Oxidation Base 10",
-    "Fur Black 41866",
-    "CI 76060",
-    "C.I. 76060",
-    "1,4-phenyldiamine",
-    "black henna",
-    "1,4-phenylene diamine",
-    "ELF Color",
-    "TMCA HAIR COLOR Number Six (Natural dark brown)",
-    "BEAUTIFUL WOMANS HAIR LOVES COLORFUL BUBBLES HAIR DYE 3N DARK BROWN",
-    "203-404-7",
-    "para",
-    "benzene-1,4-diamine",
-    "p-Phenyldiamine",
-    "NSC 4777",
-    "p-phenylenediamine base",
-    "p-PhenylenediaMine(p-PDA)",
-    "NCGC00159375-02",
-    "NCGC00159375-04",
-    "p-Fenylendiamin [Czech]",
-    "Fenylenodwuamina [Polish]",
-    "CCRIS 509",
-    "4-phenylene diamine",
-    "(4-Aminophenyl)amine",
-    "Phenylenediamine, para-",
-    "EINECS 203-404-7",
-    "AI3-00710",
-    "p-phenylendiamine",
-    "4-amino-aniline",
-    "Aminogen II",
-    "para-diaminobenzene",
-    "aniline, 4-amino-",
-    "1,4-diamino benzene",
-    "para-phenylene diamine",
-    "WLN: ZR DZ",
-    "Epitope ID:114080",
-    "EC 203-404-7",
-    "HSDB 6256 (Salt/Mix)",
-    "P-PHENYLENEDIAMINE [MI]",
-    "C.I. 76076 (Salt/Mix)",
-    "1,4-BENZENEDIAMINE [HSDB]",
-    "P-PHENYLENEDIAMINE [WHO-DD]",
-    "PARAPHENYLENEDIAMINE [VANDF]",
-    "PARAPHENYLENEDIAMINE [MART.]",
-    "Tox21_111615",
-    "Tox21_201993",
-    "Tox21_302943",
-    "EBC-26044",
-    "MSK1226-100A",
-    "Tox21_111615_1",
-    "1,4-Benzendiamine;1,4-Di-aminobenzol",
-    "UN 1673",
-    "NCGC00159375-03",
-    "NCGC00159375-05",
-    "NCGC00256482-01",
-    "NCGC00259542-01",
-    "BP-31236",
-    "P0170",
-    "EN300-19064",
-    "C19499",
-    "F238391",
-    "1,4-Phenylenediamine 2000 microg/mL in Acetonitrile",
-    "p-Phenylenediamine [UN1673]  [Keep away from food]",
-    "p-Phenylenediamine Solution in Acetonitrile, 100ug/mL",
-    "InChI=1/C6H8N2/c7-5-1-2-6(8)4-3-5/h1-4H,7-8H"
-   ]
-  },
-  {
    "id": "95-54-5",
    "name": "o-Phenylenediamine and its salts",
    "inci_hint": "O-Phenylenediamine",
@@ -20229,16 +19299,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 4 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 4 products",
+     "year": "1998",
+     "field": "o-Phenylenediamine and its salts",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "o-Phenylenediamine and its salts"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "o-Phenylenediamine and its salts",
     "O-PHENYLENEDIAMINE",
@@ -20343,16 +19414,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 8 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 8 products",
+     "year": "2000",
+     "field": "o-Phenylphenol",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "o-Phenylphenol"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "o-Phenylphenol",
     "2-Phenylphenol",
@@ -20487,16 +19559,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 14 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 14 products",
+     "year": "1988",
+     "field": "Oil Orange SS",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Oil Orange SS"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Oil Orange SS",
     "Orange OT",
@@ -20573,276 +19646,6 @@
    ]
   },
   {
-   "id": "101-54-2",
-   "name": "p-Aminodiphenylamine",
-   "inci_hint": "P-Aminodiphenylamine",
-   "cas": [
-    "101-54-2"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 1 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "p-Aminodiphenylamine"
-    }
-   ],
-   "synonyms": [
-    "p-Aminodiphenylamine",
-    "4-Aminodiphenylamine",
-    "N-Phenyl-p-phenylenediamine",
-    "p-Anilinoaniline",
-    "Variamine Blue RT",
-    "Azosalt R",
-    "Luxan Black R",
-    "N-Phenyl-1,4-benzenediamine",
-    "p-Semidine",
-    "N-Phenyl-1,4-phenylenediamine",
-    "Diphenyl Black",
-    "N-4'-Bianiline",
-    "N-Phenyl-p-aminoaniline",
-    "Semidin",
-    "p-(Phenylamino)aniline",
-    "Acna Black DF Base",
-    "Peltol BR",
-    "Fast Blue R Salt",
-    "Peltol BR II",
-    "Oxy Acid Black Base",
-    "Naphthoelan Navy Blue",
-    "p-Aminodifenylamin",
-    "C.I. Developer 15",
-    "Variamine Blue Salt RT",
-    "Diphenylamine, p-amino-",
-    "Rodol Gray B base",
-    "Diphenylamine, 4-amino-",
-    "C.I. Oxidation Base 2",
-    "p-Phenylenediamine, N-phenyl-",
-    "Black Base P",
-    "CI Developer 15",
-    "C.I. Azoic Diazo Component 22",
-    "CI Oxidation Base 2",
-    "N-Fenyl-p-fenylendiamin",
-    "NCI-C02233",
-    "N-phenylbenzene-1,4-diamine",
-    "para-aminodiphenylamine",
-    "C.I. 37240",
-    "C.I. 76085",
-    "CI Azoic Diazo Component 22",
-    "1,4-Benzenediamine, N1-phenyl-",
-    "CI 76085",
-    "CI 37240",
-    "202-951-9",
-    "N1-phenylbenzene-1,4-diamine",
-    "Semidine",
-    "N-(4-Aminophenyl)aniline",
-    "1,4-Benzenediamine, N-phenyl-",
-    "4-(Phenylamino)aniline",
-    "4-N-phenylbenzene-1,4-diamine",
-    "Azoic Diazo Component 22",
-    "NSC 3401",
-    "N4-phenylbenzene-1,4-diamine",
-    "(4-aminophenyl)phenylamine",
-    "N-Phenyl-benzene-1,4-diamine",
-    "WLN: ZR DMR",
-    "p-Aminodifenylamin [Czech]",
-    "CCRIS 513",
-    "N-Fenyl-p-fenylendiamin [Czech]",
-    "Variamine Blue RT Base",
-    "N-?Phenyl-?p-?phenylenediamine(p-Anilinoaniline)",
-    "EINECS 202-951-9",
-    "AI3-15983",
-    "p-aminodiphenylamin",
-    "paraaminodiphenylamine",
-    "UBOB",
-    "aniline, 4-phenylamino-",
-    "N-Phenyl-p-phenylenediamine(p-Anilinoaniline)",
-    "Epitope ID:122685",
-    "EC 202-951-9",
-    "4-(N-phenylamino)-aniline",
-    "cid_7564",
-    "N-phenyl-p-phenylene diamine",
-    "Oprea1_628520",
-    "N-phenyl-1,4-diaminobenzene",
-    "n1-phenyl-1,4-benzenediamine",
-    "aniline, N-(4-amino)phenyl-",
-    "N-Phenylphenylene-1,4-diamine",
-    "p-AMINODIPHENYLAMINE, TECH",
-    "N~1~-Phenylbenzene-1,4-diamine",
-    "P-AMINODIPHENYLAMINE [HSDB]",
-    "Tox21_202144",
-    "Tox21_300027",
-    "EBC-04005",
-    "MSK000029-1000A",
-    "NCGC00164239-01",
-    "NCGC00164239-02",
-    "NCGC00164239-03",
-    "NCGC00164239-04",
-    "NCGC00254187-01",
-    "NCGC00259693-01",
-    "AC-10080",
-    "P0203",
-    "EN300-20711",
-    "F87397",
-    "N-Phenyl-p-phenylenediamine, capsule (15??mg)",
-    "F216681",
-    "SR-01000393954",
-    "SR-01000393954-1",
-    "F0900-1525",
-    "4-Aminodiphenylamine Solution in Acetonitrile, 1000ug/mL",
-    "SOJ"
-   ]
-  },
-  {
-   "id": "52645-53-1",
-   "name": "Permethrin",
-   "inci_hint": "Vectra 3D Component Permethrin",
-   "cas": [
-    "52645-53-1"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 2 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Permethrin"
-    }
-   ],
-   "synonyms": [
-    "Permethrin",
-    "Pounce",
-    "Permethrine",
-    "Elimite",
-    "Kudos",
-    "Permethrinum",
-    "Acticin",
-    "Ambushfog",
-    "Chinetrin",
-    "Corsair",
-    "Dragnet",
-    "Ecsumin",
-    "Ectiban",
-    "Efmethrin",
-    "Imperator",
-    "Kaleait",
-    "Kestrel",
-    "Lyclear",
-    "Outflank",
-    "Perigen",
-    "Permasect",
-    "Perthrine",
-    "Quamlin",
-    "Stomoxi",
-    "Stomoxin",
-    "Stomozan",
-    "Coopex",
-    "Cosair",
-    "Eksmin",
-    "Exsmin",
-    "Ipitox",
-    "Picket",
-    "Pramex",
-    "Exmin",
-    "Expar",
-    "Kafil",
-    "Kavil",
-    "Anomethrin N",
-    "Ridect pour-on",
-    "Diffusil H",
-    "Insorbcid MP",
-    "Stomoxin P",
-    "Perigen W",
-    "Dragnet FT",
-    "Picket G",
-    "Permethrin,racemic",
-    "Mitin BC",
-    "Permanone 80",
-    "Kestrel (pesticide)",
-    "Antiborer 3768",
-    "Bematin 987",
-    "Activyl tick plus",
-    "ICI-PP 557",
-    "MP79",
-    "NRDC 143",
-    "SBP 15131TEC",
-    "OMS 1821",
-    "FMC 33297",
-    "FMC 41655",
-    "NIA 33297",
-    "PP 557",
-    "JF 7065",
-    "WL 43479",
-    "S 3151",
-    "(+-)-3-Phenoxybenzyl 3-(2,2-dichlorovinyl)-2,2-dimethylcyclopropanecarboxylate",
-    "m-Phenoxybenzyl (+-)-3-(2,2-dichlorovinyl)-2,2-dimethylcyclopropanecarboxylate",
-    "permetrin",
-    "Lythrin",
-    "cis permethrin",
-    "Lice Treatment",
-    "trans permethrin",
-    "Leader Lice Treatment",
-    "Airline Pesticide Detox",
-    "cis-(1RS)-permethrin",
-    "trans-(1RS)-Permethrin",
-    "permethrin, cis-(1RS)-",
-    "Nix Complete Lice Treatment",
-    "Permethrin, trans-(1RS)-",
-    "Nix Lice Killing Creme Rinse",
-    "Airline Pesticide Detox 6030",
-    "Topcare lice killing creme rinse",
-    "P03AC04",
-    "good sense lice killing creme rinse",
-    "Good Neighbor Pharmacy Lice Treatment",
-    "VECTRA 3D COMPONENT PERMETHRIN",
-    "258-067-9",
-    "S3151",
-    "Ambush",
-    "C21H20Cl2O3",
-    "(+-)-cis-Permethrin",
-    "1RS cis-Permethrin",
-    "NCGC00159390-02",
-    "m-Phenoxybenzyl 3-(2,2-dichlorovinyl)-2,2-dimethylcyclopropanecarboxylate",
-    "trans-(+-)-Permethrin",
-    "Indothrin",
-    "NRDC 148",
-    "SBP-1513",
-    "(+-)-trans-Permethrin",
-    "Permethrine,c&t",
-    "(+-)-cis-Fmc 33297",
-    "Outflank-stockade",
-    "Permasect-25EC",
-    "FMC 35171",
-    "LE 79-519",
-    "Permethrinum [Latin]",
-    "Permetrin (Hungarian)",
-    "Permitrene (Hungarian)",
-    "Permetrina [Portuguese]",
-    "Caswell No. 652BB",
-    "Hemoglobin atlanta-coventry",
-    "Permethrine [ISO-French]",
-    "SBP-1513TEC",
-    "Permethrin [USAN:INN:BAN]",
-    "AI3-29296",
-    "CCRIS 2001",
-    "3-Phenoxybenzyl 2,2-dimethyl-3-(2,2-dichlorovinyl)cyclopropanecarboxylate",
-    "BW-21-Z",
-    "Hb Atlanta-coventry",
-    "EINECS 258-067-9",
-    "Elimite (TN)"
-   ]
-  },
-  {
    "id": "63-98-9",
    "name": "Phenacemide",
    "inci_hint": "Phenacemide [Mi]",
@@ -20853,16 +19656,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 1 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for developmental; reported to the Safe Cosmetics Program in 1 products",
+     "year": "1990",
+     "field": "Phenacemide",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Phenacemide"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Phenacemide",
     "Phenurone",
@@ -20981,16 +19785,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 32 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 32 products",
+     "year": "1989",
+     "field": "Phenacetin",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Phenacetin"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Phenacetin",
     "N-(4-Ethoxyphenyl)acetamide",
@@ -21125,16 +19930,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 2 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 2 products",
+     "year": "1988",
+     "field": "Polygeenan",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Polygeenan"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Polygeenan"
    ]
@@ -21150,16 +19956,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 20 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 20 products",
+     "year": "1988",
+     "field": "Progesterone",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Progesterone"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Progesterone",
     "Pregn-4-ene-3,20-dione",
@@ -21294,16 +20101,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 9 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 9 products",
+     "year": "2004",
+     "field": "Propylene glycol mono-t-butyl ether",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Propylene glycol mono-t-butyl ether"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Propylene glycol mono-t-butyl ether",
     "1-tert-butoxy-2-propanol",
@@ -21355,16 +20163,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 5 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 5 products",
+     "year": "1988",
+     "field": "Propylene oxide",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Propylene oxide"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Propylene oxide",
     "1,2-Epoxypropane",
@@ -21450,16 +20259,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 6 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 6 products",
+     "year": "2014",
+     "field": "Pulegone",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Pulegone"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Pulegone",
     "(+)-Pulegone",
@@ -21522,239 +20332,9 @@
    ]
   },
   {
-   "id": "14808-60-7",
-   "name": "Quartz",
-   "inci_hint": "Silicon Dioxide",
-   "cas": [
-    "14808-60-7"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 21 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Quartz"
-    }
-   ],
-   "synonyms": [
-    "Quartz",
-    "SILICON DIOXIDE",
-    "Silica",
-    "Dioxosilane",
-    "Silicic anhydride",
-    "Diatomaceous silica",
-    "Wessalon",
-    "Zorbax sil",
-    "Silica, amorphous",
-    "Silica, colloidal",
-    "Sillikolloid",
-    "Acticel",
-    "Carplex",
-    "Extrusil",
-    "Porasil",
-    "Santocel",
-    "Silikil",
-    "Siloxid",
-    "Sipernat",
-    "Neosil",
-    "Neosyl",
-    "Zipax",
-    "colloidal silica",
-    "White carbon",
-    "Silicone dioxide",
-    "Vulkasil S",
-    "Snowtex O",
-    "Corasil II",
-    "Cab-o-sil M-5",
-    "Tokusil TPLM",
-    "Dri-Die",
-    "Manosil vn 3",
-    "Ultrasil VH 3",
-    "Ultrasil VN 3",
-    "Aerosil K 7",
-    "Carplex 30",
-    "Carplex 80",
-    "Snowtex 30",
-    "Syton 2X",
-    "Zeofree 80",
-    "Min-U-Sil",
-    "Positive sol 232",
-    "Aerogel 200",
-    "Aerosil 300",
-    "Aerosil 380",
-    "Ludox hs 40",
-    "Silanox 101",
-    "Vitasil 220",
-    "Amorphous silica dust",
-    "Positive sol 130M",
-    "Aerosil A 300",
-    "Aerosil E 300",
-    "Silicon dioxide (amorphous)",
-    "Silicon dioxide, fumed",
-    "Nalfloc N 1050",
-    "Quso 51",
-    "Quso G 30",
-    "Sg-67",
-    "Aerosil 200",
-    "HK 400",
-    "CI 7811",
-    "U 333",
-    "INS NO.551",
-    "INS-551",
-    "E-551",
-    "Precipitated amorphous silica",
-    "Sandstone",
-    "Silicea",
-    "Silica marina",
-    "Naturasil Scars",
-    "Olea Olidental",
-    "Super-cel",
-    "Fire Agate",
-    "Red Jasper",
-    "Red Quartz",
-    "Tigers Eye",
-    "Chrysolith 6X",
-    "Dioxide, Silicon",
-    "Silicea 3X",
-    "Silicea 6X",
-    "Dental type silica",
-    "Honest-Paste Kids",
-    "Quartz 8",
-    "Silicea 12X",
-    "Silicea 30C",
-    "Silicea 30X",
-    "Aventurine 8101",
-    "Chrysoprase 8113",
-    "Quartz 30",
-    "Sandstone 8144",
-    "Aerosil 130",
-    "Silicea 200C",
-    "Silicea 200X",
-    "SKIN ERUPTIONS",
-    "Syloid 244",
-    "380, Aerosil",
-    "Carneol 8109",
-    "Citrine 8114",
-    "Fire Agate 8116",
-    "Red Jasper 8138",
-    "Red Quartz 8139",
-    "Silicea 8012",
-    "Tigers Eye 8152",
-    "Rose Quartz 8142",
-    "Quso G32",
-    "Naturasil Stretch Marks",
-    "Cab-O-Sil M-5P",
-    "Silica 6 Special Order",
-    "SILICEA 200ck",
-    "G32, Quso",
-    "Quso F-22",
-    "Quso G 32",
-    "silica (silicon dioxide)",
-    "OPRECARE 12",
-    "OPRECARE 24",
-    "TONICPET 12",
-    "Jasper 17 Special Order",
-    "Quartz 60 Special Order",
-    "Silica 20 Special Order",
-    "Silica 30 Special Order"
-   ]
-  },
-  {
-   "id": "91-22-5",
-   "name": "Quinoline and its strong acid salts",
-   "inci_hint": "Quinoline [Mi]",
-   "cas": [
-    "91-22-5"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 5 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Quinoline and its strong acid salts"
-    }
-   ],
-   "synonyms": [
-    "Quinoline and its strong acid salts",
-    "1-Benzazine",
-    "Chinoline",
-    "Chinolin",
-    "Quinolin",
-    "1-Azanaphthalene",
-    "Leucol",
-    "Leukol",
-    "Benzopyridine",
-    "2,3-Benzopyridine",
-    "Benzo[b]pyridine",
-    "USAF EK-218",
-    "1-Benzine",
-    "B 500",
-    "AI3-01241",
-    "202-051-6",
-    "Quinoline-3-D",
-    "Quinoline-4-D",
-    "Quinoline-5-D",
-    "Quinoline-6-D",
-    "Quinoline-7-D",
-    "NSC 3396",
-    "CCRIS 547",
-    "Quinoline (8CI,9CI)",
-    "Chinolin [Czech]",
-    "Benzopyridine (VAN)",
-    "EINECS 202-051-6",
-    "hydroquinoline",
-    "Quinoline [UN2656] [Poison]",
-    "Quinoline (tech grade)",
-    "QUINOLINE [MI]",
-    "QUINOLINE [FHFI]",
-    "QUINOLINE [HSDB]",
-    "QUINOLINE [IARC]",
-    "Epitope ID:140096",
-    "EC 202-051-6",
-    "NCIOpen2_007906",
-    "WLN: T66 BNJ",
-    "BIDD:ER0666",
-    "Quinoline, analytical standard",
-    "FEMA 3470",
-    "1-Benzazine, 2,3-Benzopyridine",
-    "Quinoline, redistilled from glass",
-    "Tox21_201478",
-    "Tox21_300068",
-    "Quinoline 500 microg/mL in Methanol",
-    "EBC-151078",
-    "UN 2656",
-    "NCGC00091190-01",
-    "NCGC00091190-02",
-    "NCGC00091190-03",
-    "NCGC00091190-04",
-    "NCGC00254119-01",
-    "NCGC00259029-01",
-    "DB-057248",
-    "EN300-19120",
-    "C06413",
-    "D97671",
-    "AE-641/01960007",
-    "F227698",
-    "F0001-2218",
-    "InChI=1/C9H7N/c1-2-6-9-8(4-1)5-3-7-10-9/h1-7"
-   ]
-  },
-  {
    "id": "68-26-8",
    "name": "Retinol",
-   "inci_hint": "Retinol Vitamin E",
+   "inci_hint": "Retinol",
    "cas": [
     "68-26-8"
    ],
@@ -21762,277 +20342,22 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 143 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for developmental; reported to the Safe Cosmetics Program in 143 products",
+     "year": "1989",
+     "field": "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 2,000 retinol equivalents",
      "health": true,
      "env": false,
      "source": "california",
-     "listed_name": "Retinol"
+     "listed_name": "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 2,000 retinol equivalents"
     }
+   ],
+   "aliases": [
+    "Retinol"
    ],
    "synonyms": [
     "Retinol",
-    "all-trans-Retinol",
-    "Agoncal",
-    "trans-retinol",
-    "Veroftal",
-    "Bentavit A",
-    "Homagenets Aoral",
-    "Sehkraft A",
-    "Testavol S",
-    "all-trans-Vitamin A",
-    "Super A",
-    "Axerophtholum",
-    "Wachstumsvitamin",
-    "Vitaminum A",
-    "Vitamine A",
-    "Retinolo",
-    "Retinolum",
-    "Retinol, all trans-",
-    "Ro-a-vit",
-    "Antixerophthalmisches Vitamin",
-    "3,7-dimethyl-9-(2,6,6-trimethyl-1-cyclohexenyl)-nona-2,4,6,8-tetraen-1-ol",
-    "Nepalm",
-    "RerinolCream",
-    "Surfree Firming",
-    "Highy-Stable",
-    "Neck Firming",
-    "Pure Retinol",
-    "Bean Moisturizing",
-    "Vitamin A 1",
-    "CVC Retinol collagen",
-    "Ultra Brightening Fade",
-    "RETINOL VITAMIN E",
-    "retinolum densatum oleosum",
-    "A11CA01",
-    "D10AD02",
-    "R01AX02",
-    "S01XA02",
-    "3,7-Dimethyl-9-(2,6, 6-trimethyl-1-cyclohexen-1-yl)-2,4,6,8-nonatetraen-1-ol",
-    "200-683-7",
-    "Vitamin A",
-    "Vitamin A1",
-    "Alphalin",
-    "Chocola A",
-    "Vitpex",
-    "Vogan",
-    "Apostavit",
-    "Axerophthol",
-    "Epiteliol",
-    "Prepalin",
-    "Testavol",
-    "Agiolan",
-    "Apexol",
-    "Avibon",
-    "Avitol",
-    "Axerol",
-    "Vaflol",
-    "Aoral",
-    "Vitamin A alcohol",
-    "Anatola A",
-    "A-Mulsal",
-    "Alphasterol",
-    "Aquasynth",
-    "Biosterol",
-    "Ophthalamin",
-    "Vi-Alpha",
-    "Anatola",
-    "Myvpack",
-    "Dofsol",
-    "Disatabs Tabs",
-    "Oleovitamin A",
-    "Lard Factor",
-    "all-trans-Retinyl alcohol",
-    "all-trans-Vitamin A alcohol",
-    "Dohyfral A",
-    "Vitamin A1 alcohol",
-    "A-Sol",
-    "Alcovit A",
-    "Vogan-Neu",
-    "Plivit A",
-    "A-Vitan",
-    "ATAV",
-    "Atars",
-    "Vafol",
-    "Retrovitamin A",
-    "Hi-A-Vita",
-    "Nio-A-Let",
-    "A-Vi-Pel",
-    "ACON",
-    "Anti-infective vitamin",
-    "Solu-A",
-    "Vio-A",
-    "Antixerophthalmic vitamin",
-    "Vitavel A",
-    "Thalasphere",
-    "beta-Retinol",
-    "Vitamin A1, all-trans-",
-    "all-trans-Vitamin A1",
-    "trans-Vitamin A alcohol",
-    "Vitamin A alcohol, all-trans-",
-    "Vitamin A [Natural]",
-    "Vitamin A1 alcohol, all-trans-",
-    "C20H30O",
-    "Retinolo [DCIT]",
-    "NCGC00017343-07",
-    "Retinol [INN:BAN]",
-    "Hydrovit A",
-    "Retinolum [INN-Latin]",
-    "tROL",
-    "Vitamin A alcohol (VAN)",
-    "Aquasol A Parenteral",
-    "Vi-alpha; Vi-alpha",
-    "Rovimix A 500",
-    "Retinol (Vit A)",
-    "[11,12-3H]-Retinol",
-    "Vitamin A (USP)",
-    "CCRIS 5444",
-    "SR-01000763813",
-    "Retin-11,12-t2-ol (9CI)",
-    "EINECS 200-683-7",
-    "NSC 122759"
-   ]
-  },
-  {
-   "id": "79-81-2",
-   "name": "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 3,000 retinol equivalents.",
-   "inci_hint": "Vitamin A Palmitate",
-   "cas": [
-    "79-81-2"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 847 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 3,000 retinol equivalents."
-    }
-   ],
-   "synonyms": [
-    "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 3,000 retinol equivalents.",
-    "retinyl palmitate",
-    "VITAMIN A PALMITATE",
-    "Retinol palmitate",
-    "Retinol, hexadecanoate",
-    "all-trans-Retinyl palmitate",
-    "Arovit",
-    "Optovit-A",
-    "Retinyl hexadecanoate",
-    "Vitamin A Solubilized",
-    "Retinol, palmitate, all-trans",
-    "All-(e)-retinol palmitate",
-    "Vitamin a palmitate (solubilized)",
-    "palmitate-1-14c",
-    "Retinol-15-3H",
-    "Retinyl-10,11-14C2",
-    "201-228-5",
-    "Afaxin",
-    "Del-Vi-A",
-    "Vi-Dom-A",
-    "Aquapalm",
-    "Dispatabs Tabs",
-    "Vitazyme A",
-    "Axerophthol palmitate",
-    "trans-Retinol palmitate",
-    "trans-Retinyl palmitate",
-    "Lutavit A 500 Plus",
-    "all-trans-Retinol palmitate",
-    "Arovit (Roche)",
-    "all-trans-Vitamin A palmitate",
-    "Aquasol A (TN)",
-    "Retinol palmitate [JAN]",
-    "Retinol palmitate (6CI,7CI)",
-    "Palmitic acid, ester with retinol",
-    "Retinol, palmitate, all-trans- (8CI)",
-    "NCGC00095056-03",
-    "CCRIS 3280",
-    "EINECS 201-228-5",
-    "retinylpalmitate",
-    "all-trans-RetinylPalmitate-d5(Major)",
-    "Retinol, all-trans-, palmitate",
-    "Vitamin A palmitate;Retinol palmitate",
-    "Retinyl palmitic acid",
-    "Vitamin A Palmitate oil",
-    "Retinyl hexadecanoic acid",
-    "Spectrum5_001201",
-    "EC 201-228-5",
-    "Retinol palmitate (JP18)",
-    "all-trans-retinyl hexadecanoate",
-    "Retinol, O-(1-oxohexadecyl)-",
-    "RETINYL PALMITATE [VANDF]",
-    "VITAMIN A PALMITATE [MI]",
-    "Pharmakon1600-01503604",
-    "RETINOL PALMITATE [WHO-DD]",
-    "RETINYL PALMITATE [USP-RS]",
-    "HY-B1384",
-    "VAE 16:0",
-    "VITAMIN A PALMITATE [VANDF]",
-    "Tox21_113452",
-    "Tox21_303008",
-    "CCG-39342",
-    "EBC-74036",
-    "retinol, O~15~-(1-oxohexadecyl)-",
-    "NSC 758478",
-    "Vitamin A palmitate, 1.7 M.I.U./g",
-    "IDI1_000249",
-    "NCGC00095056-01",
-    "NCGC00095056-02",
-    "NCGC00256427-01",
-    "AC-20001",
-    "MS-29721",
-    "Retinol, hexadecanoate; Retinol palmitate",
-    "VITAMIN A PALMITATE [ORANGE BOOK]",
-    "SBI-0051830.P002",
-    "ALL-(E)-RETINOL PALMITATE [WHO-IP]",
-    "CS-0013116",
-    "R1879",
-    "T1059",
-    "C02588",
-    "C76552",
-    "D00164",
-    "AB00052360_04",
-    "VITAMINAPALMITATE,LIQUIDINOIL,1MILLIONIU/G",
-    "SR-05000001910",
-    "VITAMIN A PALMITATE (SOLUBILIZED) [VANDF]",
-    "SR-05000001910-1",
-    "Retinyl palmitate (Vitamin A palmitate; Retinol palmitate)",
-    "Retinyl palmitate, potency: >=1,700,000 USP units per g",
-    "VITAMIN A (AS PALMITATE & BETA CAROTENE) [VANDF]",
-    "Retinyl palmitate, United States Pharmacopeia (USP) Reference Standard"
-   ]
-  },
-  {
-   "id": "11103-57-4",
-   "name": "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 3,000 retinol equivalents.",
-   "inci_hint": "Retinol Vitamin E",
-   "cas": [
-    "11103-57-4"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 49 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 3,000 retinol equivalents."
-    }
-   ],
-   "synonyms": [
-    "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 3,000 retinol equivalents.",
-    "retinol",
+    "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 2,000 retinol equivalents",
     "all-trans-Retinol",
     "Agoncal",
     "trans-retinol",
@@ -22154,6 +20479,269 @@
    ]
   },
   {
+   "id": "79-81-2",
+   "name": "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 3,000 retinol equivalents.",
+   "inci_hint": "Retinyl Palmitate",
+   "cas": [
+    "79-81-2"
+   ],
+   "top_grade": "california",
+   "grades": [
+    {
+     "grade": "california",
+     "list": "California Proposition 65",
+     "status": "listed for developmental; reported to the Safe Cosmetics Program in 847 products",
+     "year": "1989",
+     "field": "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 2,000 retinol equivalents",
+     "health": true,
+     "env": false,
+     "source": "california",
+     "listed_name": "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 2,000 retinol equivalents"
+    }
+   ],
+   "aliases": [
+    "Retinyl Palmitate"
+   ],
+   "synonyms": [
+    "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 3,000 retinol equivalents.",
+    "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 2,000 retinol equivalents",
+    "retinyl palmitate",
+    "VITAMIN A PALMITATE",
+    "Retinol palmitate",
+    "Retinol, hexadecanoate",
+    "all-trans-Retinyl palmitate",
+    "Arovit",
+    "Optovit-A",
+    "Retinyl hexadecanoate",
+    "Vitamin A Solubilized",
+    "Retinol, palmitate, all-trans",
+    "All-(e)-retinol palmitate",
+    "Vitamin a palmitate (solubilized)",
+    "palmitate-1-14c",
+    "Retinol-15-3H",
+    "Retinyl-10,11-14C2",
+    "201-228-5",
+    "Afaxin",
+    "Del-Vi-A",
+    "Vi-Dom-A",
+    "Aquapalm",
+    "Dispatabs Tabs",
+    "Vitazyme A",
+    "Axerophthol palmitate",
+    "trans-Retinol palmitate",
+    "trans-Retinyl palmitate",
+    "Lutavit A 500 Plus",
+    "all-trans-Retinol palmitate",
+    "Arovit (Roche)",
+    "all-trans-Vitamin A palmitate",
+    "Aquasol A (TN)",
+    "Retinol palmitate [JAN]",
+    "Retinol palmitate (6CI,7CI)",
+    "Palmitic acid, ester with retinol",
+    "Retinol, palmitate, all-trans- (8CI)",
+    "NCGC00095056-03",
+    "CCRIS 3280",
+    "EINECS 201-228-5",
+    "retinylpalmitate",
+    "all-trans-RetinylPalmitate-d5(Major)",
+    "Retinol, all-trans-, palmitate",
+    "Vitamin A palmitate;Retinol palmitate",
+    "Retinyl palmitic acid",
+    "Vitamin A Palmitate oil",
+    "Retinyl hexadecanoic acid",
+    "Spectrum5_001201",
+    "EC 201-228-5",
+    "Retinol palmitate (JP18)",
+    "all-trans-retinyl hexadecanoate",
+    "Retinol, O-(1-oxohexadecyl)-",
+    "RETINYL PALMITATE [VANDF]",
+    "VITAMIN A PALMITATE [MI]",
+    "Pharmakon1600-01503604",
+    "RETINOL PALMITATE [WHO-DD]",
+    "RETINYL PALMITATE [USP-RS]",
+    "HY-B1384",
+    "VAE 16:0",
+    "VITAMIN A PALMITATE [VANDF]",
+    "Tox21_113452",
+    "Tox21_303008",
+    "CCG-39342",
+    "EBC-74036",
+    "retinol, O~15~-(1-oxohexadecyl)-",
+    "NSC 758478",
+    "Vitamin A palmitate, 1.7 M.I.U./g",
+    "IDI1_000249",
+    "NCGC00095056-01",
+    "NCGC00095056-02",
+    "NCGC00256427-01",
+    "AC-20001",
+    "MS-29721",
+    "Retinol, hexadecanoate; Retinol palmitate",
+    "VITAMIN A PALMITATE [ORANGE BOOK]",
+    "SBI-0051830.P002",
+    "ALL-(E)-RETINOL PALMITATE [WHO-IP]",
+    "CS-0013116",
+    "R1879",
+    "T1059",
+    "C02588",
+    "C76552",
+    "D00164",
+    "AB00052360_04",
+    "VITAMINAPALMITATE,LIQUIDINOIL,1MILLIONIU/G",
+    "SR-05000001910",
+    "VITAMIN A PALMITATE (SOLUBILIZED) [VANDF]",
+    "SR-05000001910-1",
+    "Retinyl palmitate (Vitamin A palmitate; Retinol palmitate)",
+    "Retinyl palmitate, potency: >=1,700,000 USP units per g",
+    "VITAMIN A (AS PALMITATE & BETA CAROTENE) [VANDF]",
+    "Retinyl palmitate, United States Pharmacopeia (USP) Reference Standard"
+   ]
+  },
+  {
+   "id": "11103-57-4",
+   "name": "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 3,000 retinol equivalents.",
+   "inci_hint": "Retinol Vitamin E",
+   "cas": [
+    "11103-57-4"
+   ],
+   "top_grade": "california",
+   "grades": [
+    {
+     "grade": "california",
+     "list": "California Proposition 65",
+     "status": "listed for developmental; reported to the Safe Cosmetics Program in 49 products",
+     "year": "1989",
+     "field": "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 2,000 retinol equivalents",
+     "health": true,
+     "env": false,
+     "source": "california",
+     "listed_name": "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 2,000 retinol equivalents"
+    }
+   ],
+   "aliases": [],
+   "synonyms": [
+    "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 3,000 retinol equivalents.",
+    "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 2,000 retinol equivalents",
+    "retinol",
+    "all-trans-Retinol",
+    "Agoncal",
+    "trans-retinol",
+    "Veroftal",
+    "Bentavit A",
+    "Homagenets Aoral",
+    "Sehkraft A",
+    "Testavol S",
+    "all-trans-Vitamin A",
+    "Super A",
+    "Axerophtholum",
+    "Wachstumsvitamin",
+    "Vitaminum A",
+    "Vitamine A",
+    "Retinolo",
+    "Retinolum",
+    "Retinol, all trans-",
+    "Ro-a-vit",
+    "Antixerophthalmisches Vitamin",
+    "3,7-dimethyl-9-(2,6,6-trimethyl-1-cyclohexenyl)-nona-2,4,6,8-tetraen-1-ol",
+    "Nepalm",
+    "RerinolCream",
+    "Surfree Firming",
+    "Highy-Stable",
+    "Neck Firming",
+    "Pure Retinol",
+    "Bean Moisturizing",
+    "Vitamin A 1",
+    "CVC Retinol collagen",
+    "Ultra Brightening Fade",
+    "RETINOL VITAMIN E",
+    "retinolum densatum oleosum",
+    "A11CA01",
+    "D10AD02",
+    "R01AX02",
+    "S01XA02",
+    "3,7-Dimethyl-9-(2,6, 6-trimethyl-1-cyclohexen-1-yl)-2,4,6,8-nonatetraen-1-ol",
+    "200-683-7",
+    "Vitamin A",
+    "Vitamin A1",
+    "Alphalin",
+    "Chocola A",
+    "Vitpex",
+    "Vogan",
+    "Apostavit",
+    "Axerophthol",
+    "Epiteliol",
+    "Prepalin",
+    "Testavol",
+    "Agiolan",
+    "Apexol",
+    "Avibon",
+    "Avitol",
+    "Axerol",
+    "Vaflol",
+    "Aoral",
+    "Vitamin A alcohol",
+    "Anatola A",
+    "A-Mulsal",
+    "Alphasterol",
+    "Aquasynth",
+    "Biosterol",
+    "Ophthalamin",
+    "Vi-Alpha",
+    "Anatola",
+    "Myvpack",
+    "Dofsol",
+    "Disatabs Tabs",
+    "Oleovitamin A",
+    "Lard Factor",
+    "all-trans-Retinyl alcohol",
+    "all-trans-Vitamin A alcohol",
+    "Dohyfral A",
+    "Vitamin A1 alcohol",
+    "A-Sol",
+    "Alcovit A",
+    "Vogan-Neu",
+    "Plivit A",
+    "A-Vitan",
+    "ATAV",
+    "Atars",
+    "Vafol",
+    "Retrovitamin A",
+    "Hi-A-Vita",
+    "Nio-A-Let",
+    "A-Vi-Pel",
+    "ACON",
+    "Anti-infective vitamin",
+    "Solu-A",
+    "Vio-A",
+    "Antixerophthalmic vitamin",
+    "Vitavel A",
+    "Thalasphere",
+    "beta-Retinol",
+    "Vitamin A1, all-trans-",
+    "all-trans-Vitamin A1",
+    "trans-Vitamin A alcohol",
+    "Vitamin A alcohol, all-trans-",
+    "Vitamin A [Natural]",
+    "Vitamin A1 alcohol, all-trans-",
+    "C20H30O",
+    "Retinolo [DCIT]",
+    "NCGC00017343-07",
+    "Retinol [INN:BAN]",
+    "Hydrovit A",
+    "Retinolum [INN-Latin]",
+    "tROL",
+    "Vitamin A alcohol (VAN)",
+    "Aquasol A Parenteral",
+    "Vi-alpha; Vi-alpha",
+    "Rovimix A 500",
+    "Retinol (Vit A)",
+    "[11,12-3H]-Retinol",
+    "Vitamin A (USP)",
+    "CCRIS 5444",
+    "SR-01000763813",
+    "Retin-11,12-t2-ol (9CI)"
+   ]
+  },
+  {
    "id": "79-82-1",
    "name": "Retinyl palmitate",
    "inci_hint": null,
@@ -22164,24 +20752,26 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 5 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for developmental; reported to the Safe Cosmetics Program in 5 products",
+     "year": "1989",
+     "field": "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 2,000 retinol equivalents",
      "health": true,
      "env": false,
      "source": "california",
-     "listed_name": "Retinyl palmitate"
+     "listed_name": "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 2,000 retinol equivalents"
     }
    ],
+   "aliases": [],
    "synonyms": [
-    "Retinyl palmitate"
+    "Retinyl palmitate",
+    "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 2,000 retinol equivalents"
    ]
   },
   {
    "id": "94-59-7",
    "name": "Safrole",
-   "inci_hint": "Safrole [Iarc]",
+   "inci_hint": "Safrole",
    "cas": [
     "94-59-7"
    ],
@@ -22189,15 +20779,18 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 28 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 28 products",
+     "year": "1988",
+     "field": "Safrole",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Safrole"
     }
+   ],
+   "aliases": [
+    "Safrole"
    ],
    "synonyms": [
     "Safrole",
@@ -22319,16 +20912,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 3 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 3 products",
+     "year": "1989",
+     "field": "Selenium sulfide",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Selenium sulfide"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Selenium sulfide",
     "Selenium sulfide (SeS)",
@@ -22349,137 +20943,6 @@
    ]
   },
   {
-   "id": "7488-56-4",
-   "name": "Selenium sulfide",
-   "inci_hint": "Selenium Disulfide [Mi]",
-   "cas": [
-    "7488-56-4"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 2 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Selenium sulfide"
-    }
-   ],
-   "synonyms": [
-    "Selenium sulfide",
-    "Selenium disulfide",
-    "Selenium disulphide",
-    "Selenium(IV) disulfide",
-    "Selsun Blue",
-    "Exsel",
-    "Selsun",
-    "Lenium",
-    "Sebusan",
-    "Seleen",
-    "Selenex",
-    "Selenix",
-    "Selukos",
-    "Zeran",
-    "Sulfur selenide",
-    "Selenium sulfide (SeS2)",
-    "Selenium(IV) sulfide",
-    "Sul-Blue",
-    "Sel-O-Rinse",
-    "Selen(IV) sulfid",
-    "Tersi",
-    "Caswell No. 732A",
-    "RCRA waste number U205",
-    "Seledruff",
-    "Selenium sulfide [USP]",
-    "Selenium(IV) Disulfide (1:2)",
-    "RCRA waste no. U205",
-    "EINECS 231-303-8",
-    "Selenium sulfide, micronized",
-    "Selenium sulphide, micronized",
-    "EPA Pesticide Chemical Code 072003",
-    "Selenium(IV) sulphide",
-    "Selenium(IV) disulphide",
-    "Selenium sulphide (ses2)",
-    "Selenium sulfide (ses(sub 2))",
-    "Selendisulfid",
-    "Selenii disulfidum",
-    "S2Se",
-    "Exsel (TN)",
-    "Selenium disulfide [UN2657] [Poison]",
-    "SELENIUM DISULFIDE [MI]",
-    "SELENIUM SULFIDE [HSDB]",
-    "SELENIUM SULFIDE [VANDF]",
-    "SELENIUM DISULFIDE [HSDB]",
-    "SELENIUM SULFIDE [MART.]",
-    "JNMWHTHYDQTDQZ-UHFFFAOYSA-N",
-    "SELENIUM SULFIDE [USP-RS]",
-    "SELENIUM SULFIDE [WHO-DD]",
-    "SELENIUM DISULFIDE [WHO-IP]",
-    "Bis(sulfanylidene)-lambda~4~-selane",
-    "SELENIUM SULFIDE [ORANGE BOOK]",
-    "SELENIUM DISULFIDE [GREEN BOOK]",
-    "SELENIUM SULFIDE [USP MONOGRAPH]",
-    "SELENIUM DISULFIDE [EP MONOGRAPH]",
-    "SELENII DISULFIDUM [WHO-IP LATIN]",
-    "D05815",
-    "T83624"
-   ]
-  },
-  {
-   "id": "7789-38-0",
-   "name": "Sodium Bromate",
-   "inci_hint": "Sodium Bromate",
-   "cas": [
-    "7789-38-0"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 1 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Sodium Bromate"
-    }
-   ],
-   "synonyms": [
-    "Sodium Bromate",
-    "Bromic acid, sodium salt",
-    "Dyetone",
-    "Bromate de sodium",
-    "Neutralizer K-126",
-    "Neutralizer K-140",
-    "Neutralizer K-938",
-    "Sodium bromate(DOT)",
-    "Sodium bromate (NaBrO3)",
-    "NaBrO3",
-    "232-160-4",
-    "Bromate de sodium [French]",
-    "EINECS 232-160-4",
-    "NSC 77383",
-    "CCRIS 9265",
-    "EC 232-160-4",
-    "Bromic acid, sodium salt (1:1)",
-    "BrNaO3",
-    "Sodium bromate [UN1494] [Oxidizer]",
-    "Na Br O3",
-    "SODIUM BROMATE [MI]",
-    "SODIUM BROMATE [HSDB]",
-    "Tox21_202534",
-    "NCGC00090778-01",
-    "NCGC00090778-02",
-    "NCGC00260083-01"
-   ]
-  },
-  {
    "id": "52-01-7",
    "name": "Spironolactone",
    "inci_hint": "Cardalis Component Spironolactone",
@@ -22490,16 +20953,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 1 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 1 products",
+     "year": "1997",
+     "field": "Spironolactone",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Spironolactone"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Spironolactone",
     "Aldactone",
@@ -22634,16 +21098,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 51 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 51 products",
+     "year": "2016",
+     "field": "Styrene",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Styrene"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Styrene",
     "Ethenylbenzene",
@@ -22767,7 +21232,7 @@
   {
    "id": "14807-96-6",
    "name": "Talc",
-   "inci_hint": "Talc (Not Containing Asbestos Fibers)",
+   "inci_hint": "Talc",
    "cas": [
     "14807-96-6"
    ],
@@ -22775,18 +21240,22 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 539 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 539 products",
+     "year": "1990",
+     "field": "Talc containing asbestiform fibers",
      "health": true,
      "env": false,
      "source": "california",
-     "listed_name": "Talc"
+     "listed_name": "Talc containing asbestiform fibers"
     }
+   ],
+   "aliases": [
+    "Talc"
    ],
    "synonyms": [
     "Talc",
+    "Talc containing asbestiform fibers",
     "Huashifen",
     "Pulvis talci",
     "Talc powder",
@@ -22851,93 +21320,6 @@
    ]
   },
   {
-   "id": "139-96-8",
-   "name": "TEA-Lauryl Sulfate",
-   "inci_hint": "Triethanolamine Lauryl Sulfate",
-   "cas": [
-    "139-96-8"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 2 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "TEA-Lauryl Sulfate"
-    }
-   ],
-   "synonyms": [
-    "TEA-Lauryl Sulfate",
-    "TRIETHANOLAMINE LAURYL SULFATE",
-    "Drene",
-    "Texapon TH",
-    "Sterling wat",
-    "Sulfetal lt",
-    "Dodecyl sulfate triethanolamine salt",
-    "Standapol T",
-    "Propaste T",
-    "Richonol T",
-    "Akyposal TLS",
-    "Cycloryl WAT",
-    "Maprofix TLS",
-    "Stepanol WAT",
-    "Cycloryl TAWF",
-    "Sipon LT",
-    "Melanol LP20T",
-    "Maprofix TLS 65",
-    "Standapol TLS 40",
-    "Steinapol TLS 40",
-    "Rewopol TLS 40",
-    "Texapon T-35",
-    "Texapon T-42",
-    "Tylorol LT 50",
-    "Sipon LT-6",
-    "Emersal 6434",
-    "Maprofix TLS 500",
-    "EMAL T",
-    "Triethanolamine dodecyl sulfate",
-    "Elfan 4240 T",
-    "Triethanolamine monododecyl sulfate",
-    "Lauryl sulfate triethanolamine salt",
-    "Laurylsulfuric acid triethanolamine salt",
-    "Sulfuric acid, dodecyl ester, triethanolamine salt",
-    "TROLAMINE LAURYL SULFATE",
-    "Sulfuric acid, monododecyl ester, compd with 2,2',2''-nitrilotriethanol (1:1)",
-    "Sulfuric acid, monododecyl ester, compd with 2,2',2''-nitrilotris(ethanol) (1:1)",
-    "Sulfuric Acid, Monododecyl Ester, Compd. With 2,2',2''-",
-    "205-388-7",
-    "Sipon LT-40",
-    "2-[bis(2-hydroxyethyl)amino]ethanol;dodecyl hydrogen sulfate",
-    "EINECS 205-388-7",
-    "triethanolamine laurylsulfate",
-    "Dodecyl sulfate triethanolamine",
-    "Tris(2-hydroxyethyl)ammonium lauryl sulphate",
-    "TEA LAURYL SULPHATE",
-    "TROLAMINE LAURYLSULFATE",
-    "triethanolamine lauryl sulphate",
-    "TROLAMINE LAURYL SULPHATE",
-    "TEA-LAURYL SULFATE [VANDF]",
-    "Tox21_303076",
-    "2,2,2-Nitriloethanol lauryl sulfate",
-    "Trihydroxytriethylamine lauryl sulfate",
-    "tris(Hydroxyethyl)amine lauryl sulfate",
-    "TROLAMINE LAURYL SULFATE [II]",
-    "TROLAMINE LAURYLSULFATE [WHO-DD]",
-    "NCGC00256950-01",
-    "Triethanolamine lauryl sulfate, AldrichCPR",
-    "DB-234105",
-    "TRIETHANOLAMINE LAURYL SULFATE [HSDB]",
-    "F866356",
-    "Ethanol, 2,2',2''-nitrilotris-, dodecyl sulfate (salt)",
-    "Dodecyl hydrogen sulfate--2,2',2''-nitrilotri(ethan-1-ol) (1/1)"
-   ]
-  },
-  {
    "id": "1317-70-0",
    "name": "Titanium dioxide",
    "inci_hint": "Titanium Dioxide",
@@ -22948,18 +21330,20 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 46 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 46 products",
+     "year": "2011",
+     "field": "Titanium dioxide (airborne, unbound particles of respirable size)",
      "health": true,
      "env": false,
      "source": "california",
-     "listed_name": "Titanium dioxide"
+     "listed_name": "Titanium dioxide (airborne, unbound particles of respirable size)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Titanium dioxide",
+    "Titanium dioxide (airborne, unbound particles of respirable size)",
     "Titania",
     "Titanium(IV) oxide",
     "Titanium White",
@@ -23077,8 +21461,7 @@
     "C.I. 77891",
     "E 171",
     "R 680",
-    "CL 310",
-    "Orgasol 1002D White 10 Extra Cos"
+    "CL 310"
    ]
   },
   {
@@ -23092,18 +21475,20 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 2 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 2 products",
+     "year": "2011",
+     "field": "Titanium dioxide (airborne, unbound particles of respirable size)",
      "health": true,
      "env": false,
      "source": "california",
-     "listed_name": "Titanium dioxide"
+     "listed_name": "Titanium dioxide (airborne, unbound particles of respirable size)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Titanium dioxide",
+    "Titanium dioxide (airborne, unbound particles of respirable size)",
     "Titania",
     "Titanium(IV) oxide",
     "Titanium White",
@@ -23221,8 +21606,7 @@
     "C.I. 77891",
     "E 171",
     "R 680",
-    "CL 310",
-    "Orgasol 1002D White 10 Extra Cos"
+    "CL 310"
    ]
   },
   {
@@ -23236,18 +21620,23 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 29033 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 29033 products",
+     "year": "2011",
+     "field": "Titanium dioxide (airborne, unbound particles of respirable size)",
      "health": true,
      "env": false,
      "source": "california",
-     "listed_name": "Titanium dioxide"
+     "listed_name": "Titanium dioxide (airborne, unbound particles of respirable size)"
     }
+   ],
+   "aliases": [
+    "Titanium Dioxide",
+    "CI 77891"
    ],
    "synonyms": [
     "Titanium dioxide",
+    "Titanium dioxide (airborne, unbound particles of respirable size)",
     "Titania",
     "Titanium(IV) oxide",
     "Titanium White",
@@ -23365,8 +21754,7 @@
     "C.I. 77891",
     "E 171",
     "R 680",
-    "CL 310",
-    "Orgasol 1002D White 10 Extra Cos"
+    "CL 310"
    ]
   },
   {
@@ -23380,18 +21768,20 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 38 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 38 products",
+     "year": "2011",
+     "field": "Titanium dioxide (airborne, unbound particles of respirable size)",
      "health": true,
      "env": false,
      "source": "california",
-     "listed_name": "Titanium dioxide"
+     "listed_name": "Titanium dioxide (airborne, unbound particles of respirable size)"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Titanium dioxide",
+    "Titanium dioxide (airborne, unbound particles of respirable size)",
     "Titania",
     "Titanium(IV) oxide",
     "Titanium White",
@@ -23509,14 +21899,13 @@
     "C.I. 77891",
     "E 171",
     "R 680",
-    "CL 310",
-    "Orgasol 1002D White 10 Extra Cos"
+    "CL 310"
    ]
   },
   {
    "id": "108-88-3",
    "name": "Toluene",
-   "inci_hint": "Toluene-3,5-D2",
+   "inci_hint": "Toluene",
    "cas": [
     "108-88-3"
    ],
@@ -23524,18 +21913,33 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 53 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for developmental; reported to the Safe Cosmetics Program in 53 products",
+     "year": "1991",
+     "field": "Toluene",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Toluene"
+    },
+    {
+     "grade": "california",
+     "list": "California Proposition 65",
+     "status": "listed for female; reported to the Safe Cosmetics Program in 53 products",
+     "year": "2009",
+     "field": "Toluene [Click here for the basis for the removal of female reproductive endpoint effective March 7, 2014]",
+     "health": true,
+     "env": false,
+     "source": "california",
+     "listed_name": "Toluene [Click here for the basis for the removal of female reproductive endpoint effective March 7, 2014]"
     }
+   ],
+   "aliases": [
+    "Toluene"
    ],
    "synonyms": [
     "Toluene",
+    "Toluene [Click here for the basis for the removal of female reproductive endpoint effective March 7, 2014]",
     "methylbenzene",
     "toluol",
     "Phenylmethane",
@@ -23645,16 +22049,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 3 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 3 products",
+     "year": "2013",
+     "field": "Trichloroacetic acid",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Trichloroacetic acid"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Trichloroacetic acid",
     "Aceto-caustin",
@@ -23764,140 +22169,6 @@
    ]
   },
   {
-   "id": "102-71-6",
-   "name": "Triethanolamine",
-   "inci_hint": "Triethanolamine",
-   "cas": [
-    "102-71-6"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 345 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Triethanolamine"
-    }
-   ],
-   "synonyms": [
-    "Triethanolamine",
-    "Trolamine",
-    "2,2',2''-Nitrilotriethanol",
-    "Sterolamide",
-    "Daltogen",
-    "Tris(2-hydroxyethyl)amine",
-    "Nitrilotriethanol",
-    "Triethylolamine",
-    "Trihydroxytriethylamine",
-    "Thiofaco T-35",
-    "Sting-Kill",
-    "Triethanolamin",
-    "Tri(hydroxyethyl)amine",
-    "Teoa",
-    "Tris(beta-hydroxyethyl)amine",
-    "Nitrilo-2,2',2''-triethanol",
-    "Ethanol, 2,2',2''-nitrilotris-",
-    "2-[bis(2-hydroxyethyl)amino]ethanol",
-    "TEA (amino alcohol)",
-    "Tris(hydroxyethyl)amine",
-    "Triethanolamin-NG",
-    "H3tea",
-    "Triaethanolamin-NG",
-    "Mobisyl",
-    "N(CH2CH2OH)3",
-    "2,2',2''-Nitrilotrisethanol",
-    "2,2',2''-Trihydroxytriethylamine",
-    "Mobisy",
-    "Triethylamine, 2,2',2''-trihydroxy-",
-    "Ethanol, 2,2',2''-nitrilotri-",
-    "2-[bis(2-hydroxyethyl)amino]ethan-1-ol",
-    "203-049-8",
-    "Tru-micin",
-    "Mobisyl (as salicylate)",
-    "Sodium ISA",
-    "Nitrilotris(ethanol)",
-    "Trolamine [INN]",
-    "Trola",
-    "Trihydroxyethylamine",
-    "Trolamine (NF)",
-    "NSC 36718",
-    "Mobisy (TN)",
-    "NCIOpen2_004601",
-    "2,2',2-Nitrilotris(ethanol)",
-    "NCGC00159411-02",
-    "Caswell No. 886",
-    "Biafine",
-    "CCRIS 606",
-    "EINECS 203-049-8",
-    "EPA Pesticide Chemical Code 004208",
-    "Cerumenex",
-    "Trolamina",
-    "Alkano",
-    "AI3-01140",
-    "Trolamine CRS",
-    "Mobisyl (Salt/Mix)",
-    "Triethanolamine, USP",
-    "TRIETHANOL AMINE",
-    "TROLAMINE [II]",
-    "TROLAMINE [HSDB]",
-    "Tris(b-hydroxyethyl)amine",
-    "TROLAMINE [VANDF]",
-    "2,2''-Nitrilotriethanol",
-    "TROLAMINE [MART.]",
-    "EC 203-049-8",
-    "Nitrilo-2,2''-triethanol",
-    "TROLAMINE [WHO-DD]",
-    "TRIETHANOLAMINE [MI]",
-    "Oprea1_614203",
-    "WLN: Q2N2Q2Q",
-    "2,2''-Nitrilotris[ethanol]",
-    "BIDD:ER0261",
-    "TRIETHANOLAMINE [IARC]",
-    "Ethanol,2',2''-nitrilotri-",
-    "TRIETHANOLAMINE [VANDF]",
-    "Ethanol,2',2''-nitrilotris-",
-    "TROLAMINE [EP IMPURITY]",
-    "2,2',2Quot -Nitrilotriethanol",
-    "TROLAMINE [EP MONOGRAPH]",
-    "2,2',2''-Nitrilotri-Ethanol",
-    "Nitrilo-2,2',2quot -triethanol",
-    "Triethylamine,2',2''-trihydroxy-",
-    "HY-B1809",
-    "Tox21_113166",
-    "Tox21_202062",
-    "Tox21_300527",
-    "2,2',2''-Trihydroxy-Triethylamine",
-    "2,2',2''-Nitrilotri(ethan-1-ol)",
-    "CS-5859",
-    "SMP2_000190",
-    "NCGC00159411-03",
-    "NCGC00159411-04",
-    "NCGC00159411-05",
-    "NCGC00159411-06",
-    "NCGC00254460-01",
-    "NCGC00259611-01",
-    "BP-21029",
-    "DA-78611",
-    "LS-13235",
-    "Triethanolamine, analytical reference material",
-    "C06771",
-    "D00215",
-    "F242387",
-    "SR-01000944572",
-    "SR-01000944572-1",
-    "B886EF22-ACA3-4597-9C73-A087E02F54A7",
-    "Trolamine, European Pharmacopoeia (EP) Reference Standard",
-    "Trolamine, United States Pharmacopeia (USP) Reference Standard",
-    "InChI=1/C6H15NO3/c8-4-1-7(2-5-9)3-6-10/h8-10H,1-6H",
-    "Trolamine, Pharmaceutical Secondary Standard; Certified Reference Material"
-   ]
-  },
-  {
    "id": "108-05-4",
    "name": "Vinyl acetate",
    "inci_hint": "Vinyl Acetate",
@@ -23908,16 +22179,17 @@
    "grades": [
     {
      "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 1 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
+     "list": "California Proposition 65",
+     "status": "listed for cancer; reported to the Safe Cosmetics Program in 1 products",
+     "year": "2025",
+     "field": "Vinyl acetate",
      "health": true,
      "env": false,
      "source": "california",
      "listed_name": "Vinyl acetate"
     }
    ],
+   "aliases": [],
    "synonyms": [
     "Vinyl acetate",
     "Ethenyl acetate",
@@ -24003,31 +22275,6 @@
     "Vinyl Acetate contains 3-20 ppm hydroquinone as inhibitor",
     "Vinyl acetate, European Pharmacopoeia (EP) Reference Standard",
     "Vinyl Acetate Monomer (stabilized with HQ)(Discontinued,See C4X-25761)"
-   ]
-  },
-  {
-   "id": "79-91-2",
-   "name": "Vitamin A palmitate",
-   "inci_hint": null,
-   "cas": [
-    "79-91-2"
-   ],
-   "top_grade": "california",
-   "grades": [
-    {
-     "grade": "california",
-     "list": "California reportable",
-     "status": "reported in 1 products",
-     "year": null,
-     "field": "Prop 65 / CSCP",
-     "health": true,
-     "env": false,
-     "source": "california",
-     "listed_name": "Vitamin A palmitate"
-    }
-   ],
-   "synonyms": [
-    "Vitamin A palmitate"
    ]
   }
  ]
