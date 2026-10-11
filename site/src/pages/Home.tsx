@@ -49,10 +49,11 @@ export default function Home() {
           <h2 className="display text-2xl font-medium">Experiments</h2>
           <span className="text-xs tracking-wide text-ink-3">Interactive, built on public data, one at a time</span>
         </div>
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {[
-            { to: '/cycling-brain', n: 1, title: 'The cycling brain', dek: 'One woman scanned every morning for thirty days across a menstrual cycle, her hormones drawn alongside. Drag through the month and watch her brain, with any of 23 structures measured on each day.' },
-            { to: '/pregnancy-brain', n: 2, title: 'The pregnant brain', dek: 'One woman scanned 27 times from three weeks before conception to two years after the birth. Watch the brain change through pregnancy, every structure measured against its pre-pregnancy size.' },
+            { to: '/cycling-brain', n: 1, title: 'The cycling brain', dek: 'Thirty consecutive mornings across a menstrual cycle, hormones drawn alongside. Drag through the month and watch her brain, with any of 23 structures measured each day.' },
+            { to: '/pregnancy-brain', n: 2, title: 'The pregnant brain', dek: 'Twenty-seven scans from three weeks before conception to two years after the birth. Watch a brain change through pregnancy, every structure measured against its pre-pregnancy size.' },
+            { to: '/male-brain', n: 3, title: "A man's month", dek: 'The companion study: forty scans in thirty days at 7 am and 8 pm, on the same scanner, with testosterone and cortisol alongside. His brain keeps a daily rhythm; her month sits beside it.' },
           ].map(e => (
             <Link key={e.to} to={e.to} className="group block rounded-3xl p-6 sm:p-8 transition hover:-translate-y-0.5" style={{ background: '#180C12', color: '#FBEEF2' }}>
               <div className="flex items-center justify-between">

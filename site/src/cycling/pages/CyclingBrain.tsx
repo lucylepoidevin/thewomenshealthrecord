@@ -174,7 +174,7 @@ export default function Home() {
       <section className="mx-auto max-w-4xl px-4 pt-20 pb-12 sm:pt-28 text-center fade-up">
         <p className="eyebrow">Experiment 1</p>
         <h1 className="display mt-5 text-4xl sm:text-6xl lg:text-7xl font-light leading-[1.02]">
-          One woman. Thirty mornings.<br />
+          Thirty mornings, one cycle.<br />
           <span className="italic font-medium text-berry">Her brain, and her hormones,</span> day by day.
         </h1>
         <p className="mx-auto mt-7 max-w-2xl text-lg text-ink-2 leading-relaxed">

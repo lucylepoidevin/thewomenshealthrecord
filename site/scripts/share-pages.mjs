@@ -13,8 +13,9 @@ const pages = [
   { slug: 'male-default', title: 'The male default body', desc: 'The animals drugs are tested on, the trials that follow, and the label you are handed: three places where the male body is still the standard, measured.', img: 'male-default.png' },
 ]
 // Experiments live outside /chapters/; `path` overrides the folder and hash route.
-pages.push({ slug: 'cycling-brain', path: 'cycling-brain', title: 'The cycling brain', desc: 'One woman scanned every morning for thirty days across a menstrual cycle, her hormones drawn alongside. Drag through the month and watch her brain.', img: 'cycling-brain.png' })
-pages.push({ slug: 'pregnancy-brain', path: 'pregnancy-brain', title: 'The pregnant brain', desc: 'One woman scanned 27 times from three weeks before conception to two years after the birth. Watch her brain change through pregnancy, every structure measured against its pre-pregnancy size.', img: 'pregnancy-brain.png' })
+pages.push({ slug: 'cycling-brain', path: 'cycling-brain', title: 'The cycling brain', desc: 'Thirty consecutive mornings across a menstrual cycle, hormones drawn alongside. Drag through the month and watch her brain change.', img: 'cycling-brain.png' })
+pages.push({ slug: 'pregnancy-brain', path: 'pregnancy-brain', title: 'The pregnant brain', desc: 'Twenty-seven scans from three weeks before conception to two years after the birth. Watch a brain change through pregnancy, every structure measured against its pre-pregnancy size.', img: 'pregnancy-brain.png' })
+pages.push({ slug: 'male-brain', path: 'male-brain', title: "A man's month", desc: 'Forty scans in thirty days at 7 am and 8 pm, with testosterone and cortisol alongside. A man\'s brain keeps a daily rhythm; the cycling brain sits beside it for comparison.', img: 'male-brain.png' })
 const route = p => p.path ? p.path : `chapters/${p.slug}`
 const html = p => `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>${p.title} · The Women's Health Record</title>
 <meta name="description" content="${p.desc}"><meta property="og:type" content="article"><meta property="og:site_name" content="The Women's Health Record">
