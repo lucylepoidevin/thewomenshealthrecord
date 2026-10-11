@@ -150,16 +150,15 @@ export default function PregnantBrain() {
       <section className="mx-auto max-w-4xl px-4 pt-20 pb-12 sm:pt-28 text-center">
         <p className="eyebrow">Experiment 2</p>
         <h1 className="display mt-5 text-4xl sm:text-6xl lg:text-7xl font-light leading-[1.02]">
-          The brain that carried a child.<br />
-          <span className="italic font-medium text-berry">Twenty-seven scans,</span> from before conception to two years after.
+          One woman's brain through pregnancy
         </h1>
         <p className="mx-auto mt-7 max-w-2xl text-lg text-ink-2 leading-relaxed">
-          A neuroscientist had her own brain scanned before she conceived, through every stage of pregnancy, and for more than two years afterwards, with her hormones drawn alongside.
-          Drag through the arc and watch the brain change, with any of 28 structures measured against its pre-pregnancy size.
+          27 MRI scans of one woman from three weeks before conception to two years eight months after birth, with hormone levels at most visits
+          (Maternal Brain Project pilot). Move through the timeline to see any of 28 brain structures measured against its pre-pregnancy size.
         </p>
         <div className="mt-9 flex flex-wrap justify-center gap-3">
-          <a href="#viewer" onClick={jumpTo('viewer')} className="btn btn-solid">Start before conception <span aria-hidden>↓</span></a>
-          <Link to="/pregnancy-brain/methods" className="btn">How it was made</Link>
+          <a href="#viewer" onClick={jumpTo('viewer')} className="btn btn-solid">Open the viewer</a>
+          <Link to="/pregnancy-brain/methods" className="btn">Methods</Link>
         </div>
       </section>
       {error && <p className="mx-auto max-w-2xl px-4 text-center text-sm text-berry">Could not load the data: {error}</p>}

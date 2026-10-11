@@ -7,7 +7,7 @@ export default function YourDoseMethods() {
   return (
     <div className="mx-auto max-w-3xl px-4 pt-16 pb-24">
       <p className="eyebrow">Methods · Experiment 4</p>
-      <h1 className="display mt-3 text-4xl sm:text-5xl font-light leading-tight">How the curves are drawn</h1>
+      <h1 className="display mt-3 text-4xl sm:text-5xl font-light leading-tight">Methods: drug level simulator</h1>
       <p className="mt-6 text-lg text-ink-2 leading-relaxed">A one-compartment model with first-order absorption and elimination, the standard teaching model of oral pharmacokinetics, fed with published sex-specific parameters.</p>
       <h2 className="display mt-12 text-2xl font-medium">The model</h2>
       <p className="mt-3 text-ink-2 leading-relaxed">For a single oral dose D with bioavailability F, absorption rate k<sub>a</sub>, volume of distribution V and clearance CL (so elimination rate k<sub>e</sub> = CL / V), the plasma concentration at time t after the dose is</p>
@@ -31,7 +31,7 @@ export default function YourDoseMethods() {
       <pre className="panel mt-3 overflow-x-auto text-sm leading-relaxed text-ink"><code>{`cd "your dose project/pipeline"
 python3 build_drugs.py     # writes site/public/data/dose/drugs.json with every value's citation`}</code></pre>
       {data && (<><h2 className="display mt-12 text-2xl font-medium">Sources</h2><div className="mt-4"><SourceList file={data} /></div></>)}
-      <p className="mt-12 text-sm text-ink-3">Back to <Link to="/your-dose" className="text-berry underline underline-offset-2">your body, your dose</Link>.</p>
+      <p className="mt-12 text-sm text-ink-3">Back to <Link to="/your-dose" className="text-berry underline underline-offset-2">the simulator</Link>.</p>
     </div>
   )
 }

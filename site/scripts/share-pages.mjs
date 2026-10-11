@@ -13,10 +13,10 @@ const pages = [
   { slug: 'male-default', title: 'The male default body', desc: 'The animals drugs are tested on, the trials that follow, and the label you are handed: three places where the male body is still the standard, measured.', img: 'male-default.png' },
 ]
 // Experiments live outside /chapters/; `path` overrides the folder and hash route.
-pages.push({ slug: 'cycling-brain', path: 'cycling-brain', title: 'The cycling brain', desc: 'Thirty consecutive mornings across a menstrual cycle, hormones drawn alongside. Drag through the month and watch her brain change.', img: 'cycling-brain.png' })
-pages.push({ slug: 'pregnancy-brain', path: 'pregnancy-brain', title: 'The pregnant brain', desc: 'Twenty-seven scans from three weeks before conception to two years after the birth. Watch a brain change through pregnancy, every structure measured against its pre-pregnancy size.', img: 'pregnancy-brain.png' })
-pages.push({ slug: 'male-brain', path: 'male-brain', title: "A man's month", desc: 'Forty scans in thirty days at 7 am and 8 pm, with testosterone and cortisol alongside. A man\'s brain keeps a daily rhythm; the cycling brain sits beside it for comparison.', img: 'male-brain.png' })
-pages.push({ slug: 'your-dose', path: 'your-dose', title: 'Your body, your dose', desc: 'Same pill, different body. Acetaminophen, caffeine and a common heart drug drawn over a day in a woman\'s body and a man\'s, from the published sex-specific numbers.', img: 'your-dose.png' })
+pages.push({ slug: 'cycling-brain', path: 'cycling-brain', title: 'One woman\'s brain across a menstrual cycle', desc: '30 daily MRI scans and blood tests over one cycle. Brain structure volumes and hormone levels, day by day.', img: 'cycling-brain.png' })
+pages.push({ slug: 'pregnancy-brain', path: 'pregnancy-brain', title: 'One woman\'s brain through pregnancy', desc: '27 MRI scans from before conception to two years after birth. Brain structure volumes against their pre-pregnancy size.', img: 'pregnancy-brain.png' })
+pages.push({ slug: 'male-brain', path: 'male-brain', title: 'One man\'s brain, morning and evening, for 30 days', desc: '40 MRI scans at 7 am and 8 pm with testosterone and cortisol, run through the same pipeline as the menstrual cycle study.', img: 'male-brain.png' })
+pages.push({ slug: 'your-dose', path: 'your-dose', title: 'Drug levels in the blood, by sex and body weight', desc: 'A pharmacokinetic simulator for acetaminophen, caffeine and metoprolol using published sex-specific parameters.', img: 'your-dose.png' })
 const route = p => p.path ? p.path : `chapters/${p.slug}`
 const html = p => `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>${p.title} · The Women's Health Record</title>
 <meta name="description" content="${p.desc}"><meta property="og:type" content="article"><meta property="og:site_name" content="The Women's Health Record">

@@ -125,16 +125,15 @@ export default function MaleBrain() {
       <section className="mx-auto max-w-4xl px-4 pt-20 pb-12 sm:pt-28 text-center">
         <p className="eyebrow">Experiment 3</p>
         <h1 className="display mt-5 text-4xl sm:text-6xl lg:text-7xl font-light leading-[1.02]">
-          Morning and evening.<br />
-          <span className="italic font-medium text-berry">A man's month,</span> beside hers.
+          One man's brain, morning and evening, for 30 days
         </h1>
         <p className="mx-auto mt-7 max-w-2xl text-lg text-ink-2 leading-relaxed">
-          The cycling brain's companion study: a 26-year-old man scanned forty times in thirty days, at 7 am and 8 pm, on the same scanner, with his testosterone and cortisol drawn alongside.
-          His hormones keep a daily rhythm instead of a monthly one. Drag through the month and watch what that does.
+          40 MRI scans of one healthy 26-year-old at 7 am and 8 pm over 30 days, with testosterone, cortisol and estradiol (28andHe, UC Santa Barbara).
+          The same scanner and pipeline as the menstrual cycle study, so the two can be compared.
         </p>
         <div className="mt-9 flex flex-wrap justify-center gap-3">
-          <a href="#viewer" onClick={jumpTo('viewer')} className="btn btn-solid">Start on day 1 <span aria-hidden>↓</span></a>
-          <Link to="/male-brain/methods" className="btn">How it was made</Link>
+          <a href="#viewer" onClick={jumpTo('viewer')} className="btn btn-solid">Open the viewer</a>
+          <Link to="/male-brain/methods" className="btn">Methods</Link>
         </div>
       </section>
       {error && <p className="mx-auto max-w-2xl px-4 text-center text-sm text-berry">Could not load the data: {error}</p>}

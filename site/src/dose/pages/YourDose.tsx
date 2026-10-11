@@ -94,16 +94,15 @@ export default function YourDose() {
       <section className="mx-auto max-w-4xl px-4 pt-20 pb-12 sm:pt-28 text-center">
         <p className="eyebrow">Experiment 4</p>
         <h1 className="display mt-5 text-4xl sm:text-6xl lg:text-7xl font-light leading-[1.02]">
-          Same pill, different body.<br />
-          <span className="italic font-medium text-berry">Your body, your dose,</span> drawn from the published numbers.
+          Drug levels in the blood, by sex and body weight
         </h1>
         <p className="mx-auto mt-7 max-w-2xl text-lg text-ink-2 leading-relaxed">
-          Pick a drug, set a body, and watch its level in the blood rise and fall over a day beside the body the dose was designed around. Acetaminophen, caffeine and a common heart drug,
-          each with sex-specific numbers from the original studies.
+          A pharmacokinetic simulator for acetaminophen, caffeine and metoprolol. Each curve uses published sex-specific parameters from the original studies,
+          adjustable for body weight, oral contraception and pregnancy.
         </p>
         <div className="mt-9 flex flex-wrap justify-center gap-3">
-          <a href="#simulator" onClick={jumpTo('simulator')} className="btn btn-solid">Open the simulator <span aria-hidden>↓</span></a>
-          <Link to="/your-dose/methods" className="btn">How it was made</Link>
+          <a href="#simulator" onClick={jumpTo('simulator')} className="btn btn-solid">Open the simulator</a>
+          <Link to="/your-dose/methods" className="btn">Methods</Link>
         </div>
       </section>
       {error && <p className="mx-auto max-w-2xl px-4 text-center text-sm text-berry">Could not load the data: {error}</p>}

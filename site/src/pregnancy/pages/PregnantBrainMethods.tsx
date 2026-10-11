@@ -14,7 +14,7 @@ export default function PregnantBrainMethods() {
   return (
     <div className="mx-auto max-w-3xl px-4 pt-16 pb-24">
       <p className="eyebrow">Methods · Experiment 2</p>
-      <h1 className="display mt-3 text-4xl sm:text-5xl font-light leading-tight">How the pregnant brain was measured</h1>
+      <h1 className="display mt-3 text-4xl sm:text-5xl font-light leading-tight">Methods: brain through pregnancy</h1>
       <p className="mt-6 text-lg text-ink-2 leading-relaxed">The same six-step pipeline as the cycling brain, pointed at a different dataset, with one extra step for the comparison. Code lives next to the site.</p>
       <ol className="mt-10 space-y-8">
         {steps.map(s => (
@@ -41,7 +41,7 @@ export default function PregnantBrainMethods() {
 .venv/bin/python export_web.py       # public/data/pregnancy/{pregnancy.json, brain/*}`}</code></pre>
       <h2 className="display mt-14 text-2xl font-medium">Sources</h2>
       <div className="mt-4"><SourceList /></div>
-      <p className="mt-12 text-sm text-ink-3">Back to <Link to="/pregnancy-brain" className="text-berry underline underline-offset-2">the pregnant brain</Link>.</p>
+      <p className="mt-12 text-sm text-ink-3">Back to <Link to="/pregnancy-brain" className="text-berry underline underline-offset-2">the experiment</Link>.</p>
     </div>
   )
 }

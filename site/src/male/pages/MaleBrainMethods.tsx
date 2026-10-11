@@ -14,7 +14,7 @@ export default function MaleBrainMethods() {
   return (
     <div className="mx-auto max-w-3xl px-4 pt-16 pb-24">
       <p className="eyebrow">Methods · Experiment 3</p>
-      <h1 className="display mt-3 text-4xl sm:text-5xl font-light leading-tight">How the man's month was measured</h1>
+      <h1 className="display mt-3 text-4xl sm:text-5xl font-light leading-tight">Methods: male brain, morning and evening</h1>
       <p className="mt-6 text-lg text-ink-2 leading-relaxed">The same pipeline as the two experiments before it, with the comparison step built around time of day instead of cycle phase or gestation.</p>
       <ol className="mt-10 space-y-8">
         {steps.map(s => (
@@ -41,7 +41,7 @@ export default function MaleBrainMethods() {
 .venv/bin/python export_web.py        # public/data/male/{male.json, brain/*}`}</code></pre>
       <h2 className="display mt-14 text-2xl font-medium">Sources</h2>
       <div className="mt-4"><SourceList /></div>
-      <p className="mt-12 text-sm text-ink-3">Back to <Link to="/male-brain" className="text-berry underline underline-offset-2">a man's month</Link>.</p>
+      <p className="mt-12 text-sm text-ink-3">Back to <Link to="/male-brain" className="text-berry underline underline-offset-2">the experiment</Link>.</p>
     </div>
   )
 }

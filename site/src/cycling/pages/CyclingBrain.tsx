@@ -175,16 +175,15 @@ export default function Home() {
       <section className="mx-auto max-w-4xl px-4 pt-20 pb-12 sm:pt-28 text-center">
         <p className="eyebrow">Experiment 1</p>
         <h1 className="display mt-5 text-4xl sm:text-6xl lg:text-7xl font-light leading-[1.02]">
-          Thirty mornings, one cycle.<br />
-          <span className="italic font-medium text-berry">Her brain, and her hormones,</span> day by day.
+          One woman's brain across a menstrual cycle
         </h1>
         <p className="mx-auto mt-7 max-w-2xl text-lg text-ink-2 leading-relaxed">
-          A healthy 23-year-old was scanned and blood-tested every day for a month, across one full menstrual cycle. Drag through the month and watch
-          estradiol and progesterone rise and fall, with the structure of your choice measured on each day.
+          30 daily MRI scans and blood tests from one healthy 23-year-old over a full cycle (28andMe, UC Santa Barbara). Move through the month to see
+          her hormone levels and the measured volume of any of 25 brain structures on each day.
         </p>
         <div className="mt-9 flex flex-wrap justify-center gap-3">
-          <a href="#viewer" onClick={jumpTo('viewer')} className="btn btn-solid">Start on day 1 <span aria-hidden>↓</span></a>
-          <Link to="/cycling-brain/methods" className="btn">How it was made</Link>
+          <a href="#viewer" onClick={jumpTo('viewer')} className="btn btn-solid">Open the viewer</a>
+          <Link to="/cycling-brain/methods" className="btn">Methods</Link>
         </div>
       </section>
 

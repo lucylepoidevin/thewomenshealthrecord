@@ -9,12 +9,11 @@ export default function Experiments() {
       <section className="mx-auto max-w-4xl px-4 pt-20 pb-10 sm:pt-28 text-center">
         <p className="eyebrow">Experiments</p>
         <h1 className="display mt-5 text-4xl sm:text-6xl font-light leading-[1.05]">
-          The chapters count what medicine does to women.<br />
-          <span className="italic font-medium text-berry">The experiments</span> let you watch it happen.
+          Interactive studies built from public data
         </h1>
         <p className="mx-auto mt-7 max-w-2xl text-lg text-ink-2 leading-relaxed">
-          Four interactive studies built from public data with one published method, each on a single person or a single published number, each honest about what one person can and cannot show.
-          Three brains and three hormonal clocks: a day, a month, a pregnancy. Then the dose chart, which is what medicine does with that.
+          Three single-person brain imaging datasets from the same lab run through one measurement pipeline, and a drug-level simulator built from published
+          sex-specific pharmacology. Each page states what a single person can and cannot show.
         </p>
       </section>
 
@@ -35,7 +34,7 @@ export default function Experiments() {
       <section className="mx-auto max-w-5xl px-4 py-10">
         <div className="graphic-card p-4 sm:p-7">
           <p className="eyebrow mb-1">Three brains on one scale</p>
-          <h2 className="display text-2xl sm:text-3xl font-medium mb-4">A day, a month, a pregnancy</h2>
+          <h2 className="display text-2xl sm:text-3xl font-medium mb-4">Whole-brain volume across the three studies</h2>
           <ThreeBrains />
         </div>
       </section>
