@@ -1,0 +1,1372 @@
+{
+ "generated": "2026-10-11",
+ "msynth": {
+  "retrieved": "2026-10-11",
+  "contrast": "1.06",
+  "px_mm": 0.085,
+  "labels": {
+   "fatty": "Almost entirely fatty",
+   "scattered": "Scattered fibroglandular",
+   "hetero": "Heterogeneously dense",
+   "dense": "Extremely dense"
+  },
+  "cases": [
+   {
+    "id": "fatty-5mm-100-1",
+    "density": "fatty",
+    "size_mm": 5.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.793026706231454,
+     "y": 0.5580357142857143
+    },
+    "w": 1053,
+    "h": 1400,
+    "radius_frac": 0.043637633094780935,
+    "phantom": 1,
+    "member": "SIM/P2_5.0_fatty.8336130.1/1/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "fatty-5mm-100-3",
+    "density": "fatty",
+    "size_mm": 5.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.8888059701492538,
+     "y": 0.25279017857142855
+    },
+    "w": 1047,
+    "h": 1400,
+    "radius_frac": 0.043898156277436345,
+    "phantom": 3,
+    "member": "SIM/P2_5.0_fatty.8336130.3/3/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "fatty-5mm-100-5",
+    "density": "fatty",
+    "size_mm": 5.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.8851351351351351,
+     "y": 0.6149553571428571
+    },
+    "w": 1041,
+    "h": 1400,
+    "radius_frac": 0.04416180886769122,
+    "phantom": 5,
+    "member": "SIM/P2_5.0_fatty.8336130.5/5/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "fatty-5mm-100-7",
+    "density": "fatty",
+    "size_mm": 5.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.612759643916914,
+     "y": 0.3515625
+    },
+    "w": 1053,
+    "h": 1400,
+    "radius_frac": 0.043637633094780935,
+    "phantom": 7,
+    "member": "SIM/P2_5.0_fatty.8336130.7/7/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "fatty-5mm-100-2",
+    "density": "fatty",
+    "size_mm": 5.0,
+    "dose": 100,
+    "lesion": null,
+    "w": 1041,
+    "h": 1400,
+    "radius_frac": null,
+    "phantom": 2,
+    "member": "SIM/P2_5.0_fatty.8336130.2/2/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "fatty-5mm-100-4",
+    "density": "fatty",
+    "size_mm": 5.0,
+    "dose": 100,
+    "lesion": null,
+    "w": 1047,
+    "h": 1400,
+    "radius_frac": null,
+    "phantom": 4,
+    "member": "SIM/P2_5.0_fatty.8336130.4/4/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "fatty-7mm-100-1",
+    "density": "fatty",
+    "size_mm": 7.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.7522255192878339,
+     "y": 0.5290178571428571
+    },
+    "w": 1053,
+    "h": 1400,
+    "radius_frac": 0.06109268633269331,
+    "phantom": 1,
+    "member": "SIM/P2_7.0_fatty.8336194.1/1/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "fatty-7mm-100-3",
+    "density": "fatty",
+    "size_mm": 7.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.8052238805970149,
+     "y": 0.7003348214285714
+    },
+    "w": 1047,
+    "h": 1400,
+    "radius_frac": 0.06145741878841088,
+    "phantom": 3,
+    "member": "SIM/P2_7.0_fatty.8336194.3/3/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "fatty-7mm-100-5",
+    "density": "fatty",
+    "size_mm": 7.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.8438438438438438,
+     "y": 0.5859375
+    },
+    "w": 1041,
+    "h": 1400,
+    "radius_frac": 0.0618265324147677,
+    "phantom": 5,
+    "member": "SIM/P2_7.0_fatty.8336194.5/5/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "fatty-7mm-100-7",
+    "density": "fatty",
+    "size_mm": 7.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.7596439169139466,
+     "y": 0.45033482142857145
+    },
+    "w": 1053,
+    "h": 1400,
+    "radius_frac": 0.06109268633269331,
+    "phantom": 7,
+    "member": "SIM/P2_7.0_fatty.8336194.7/7/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "fatty-7mm-100-2",
+    "density": "fatty",
+    "size_mm": 7.0,
+    "dose": 100,
+    "lesion": null,
+    "w": 1041,
+    "h": 1400,
+    "radius_frac": null,
+    "phantom": 2,
+    "member": "SIM/P2_7.0_fatty.8336194.2/2/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "fatty-7mm-100-4",
+    "density": "fatty",
+    "size_mm": 7.0,
+    "dose": 100,
+    "lesion": null,
+    "w": 1047,
+    "h": 1400,
+    "radius_frac": null,
+    "phantom": 4,
+    "member": "SIM/P2_7.0_fatty.8336194.4/4/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "fatty-9mm-100-1",
+    "density": "fatty",
+    "size_mm": 9.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.7067164179104478,
+     "y": 0.49720982142857145
+    },
+    "w": 1047,
+    "h": 1400,
+    "radius_frac": 0.07901668129938542,
+    "phantom": 1,
+    "member": "SIM/P2_9.0_fatty.8336209.1/1/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "fatty-9mm-100-3",
+    "density": "fatty",
+    "size_mm": 9.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.7611940298507462,
+     "y": 0.6702008928571429
+    },
+    "w": 1047,
+    "h": 1400,
+    "radius_frac": 0.07901668129938542,
+    "phantom": 3,
+    "member": "SIM/P2_9.0_fatty.8336209.3/3/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "fatty-9mm-100-5",
+    "density": "fatty",
+    "size_mm": 9.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.6501501501501501,
+     "y": 0.35714285714285715
+    },
+    "w": 1041,
+    "h": 1400,
+    "radius_frac": 0.0794912559618442,
+    "phantom": 5,
+    "member": "SIM/P2_9.0_fatty.8336209.5/5/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "fatty-9mm-100-7",
+    "density": "fatty",
+    "size_mm": 9.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.7166172106824926,
+     "y": 0.4185267857142857
+    },
+    "w": 1053,
+    "h": 1400,
+    "radius_frac": 0.07854773957060568,
+    "phantom": 7,
+    "member": "SIM/P2_9.0_fatty.8336209.7/7/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "fatty-9mm-100-2",
+    "density": "fatty",
+    "size_mm": 9.0,
+    "dose": 100,
+    "lesion": null,
+    "w": 1041,
+    "h": 1400,
+    "radius_frac": null,
+    "phantom": 2,
+    "member": "SIM/P2_9.0_fatty.8336209.2/2/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "fatty-9mm-100-4",
+    "density": "fatty",
+    "size_mm": 9.0,
+    "dose": 100,
+    "lesion": null,
+    "w": 1047,
+    "h": 1400,
+    "radius_frac": null,
+    "phantom": 4,
+    "member": "SIM/P2_9.0_fatty.8336209.4/4/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "fatty-7mm-20-1",
+    "density": "fatty",
+    "size_mm": 7.0,
+    "dose": 20,
+    "lesion": {
+     "x": 0.7522255192878339,
+     "y": 0.5290178571428571
+    },
+    "w": 1053,
+    "h": 1400,
+    "radius_frac": 0.06109268633269331,
+    "phantom": 1,
+    "member": "SIM/P2_7.0_fatty.8336198.1/1/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "fatty-7mm-20-3",
+    "density": "fatty",
+    "size_mm": 7.0,
+    "dose": 20,
+    "lesion": {
+     "x": 0.8052238805970149,
+     "y": 0.7003348214285714
+    },
+    "w": 1047,
+    "h": 1400,
+    "radius_frac": 0.06145741878841088,
+    "phantom": 3,
+    "member": "SIM/P2_7.0_fatty.8336198.3/3/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "scattered-5mm-100-1",
+    "density": "scattered",
+    "size_mm": 5.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.6634980988593155,
+     "y": 0.4270304568527919
+    },
+    "w": 935,
+    "h": 1400,
+    "radius_frac": 0.05591590248266607,
+    "phantom": 1,
+    "member": "SIM/P2_5.0_scattered.8336546.1/1/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "scattered-5mm-100-3",
+    "density": "scattered",
+    "size_mm": 5.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.416988416988417,
+     "y": 0.2914540816326531
+    },
+    "w": 925,
+    "h": 1400,
+    "radius_frac": 0.05677946854417442,
+    "phantom": 3,
+    "member": "SIM/P2_5.0_scattered.8336546.3/3/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "scattered-5mm-100-5",
+    "density": "scattered",
+    "size_mm": 5.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.7518867924528302,
+     "y": 0.3061868686868687
+    },
+    "w": 937,
+    "h": 1400,
+    "radius_frac": 0.05549389567147613,
+    "phantom": 5,
+    "member": "SIM/P2_5.0_scattered.8336546.5/5/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "scattered-5mm-100-7",
+    "density": "scattered",
+    "size_mm": 5.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.6925287356321839,
+     "y": 0.26136363636363635
+    },
+    "w": 923,
+    "h": 1400,
+    "radius_frac": 0.05634437683119224,
+    "phantom": 7,
+    "member": "SIM/P2_5.0_scattered.8336546.7/7/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "scattered-5mm-100-2",
+    "density": "scattered",
+    "size_mm": 5.0,
+    "dose": 100,
+    "lesion": null,
+    "w": 946,
+    "h": 1400,
+    "radius_frac": null,
+    "phantom": 2,
+    "member": "SIM/P2_5.0_scattered.8336546.2/2/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "scattered-5mm-100-4",
+    "density": "scattered",
+    "size_mm": 5.0,
+    "dose": 100,
+    "lesion": null,
+    "w": 923,
+    "h": 1400,
+    "radius_frac": null,
+    "phantom": 4,
+    "member": "SIM/P2_5.0_scattered.8336546.4/4/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "scattered-7mm-100-1",
+    "density": "scattered",
+    "size_mm": 7.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.6112167300380228,
+     "y": 0.3934010152284264
+    },
+    "w": 935,
+    "h": 1400,
+    "radius_frac": 0.07828226347573249,
+    "phantom": 1,
+    "member": "SIM/P2_7.0_scattered.8336531.1/1/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "scattered-7mm-100-3",
+    "density": "scattered",
+    "size_mm": 7.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.7606177606177607,
+     "y": 0.32971938775510207
+    },
+    "w": 925,
+    "h": 1400,
+    "radius_frac": 0.07949125596184418,
+    "phantom": 3,
+    "member": "SIM/P2_7.0_scattered.8336531.3/3/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "scattered-7mm-100-5",
+    "density": "scattered",
+    "size_mm": 7.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.7,
+     "y": 0.27146464646464646
+    },
+    "w": 937,
+    "h": 1400,
+    "radius_frac": 0.07769145394006659,
+    "phantom": 5,
+    "member": "SIM/P2_7.0_scattered.8336531.5/5/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "scattered-7mm-100-7",
+    "density": "scattered",
+    "size_mm": 7.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.7059386973180076,
+     "y": 0.5723350253807107
+    },
+    "w": 927,
+    "h": 1400,
+    "radius_frac": 0.07888212756366914,
+    "phantom": 7,
+    "member": "SIM/P2_7.0_scattered.8336531.7/7/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "scattered-7mm-100-2",
+    "density": "scattered",
+    "size_mm": 7.0,
+    "dose": 100,
+    "lesion": null,
+    "w": 946,
+    "h": 1400,
+    "radius_frac": null,
+    "phantom": 2,
+    "member": "SIM/P2_7.0_scattered.8336531.2/2/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "scattered-7mm-100-4",
+    "density": "scattered",
+    "size_mm": 7.0,
+    "dose": 100,
+    "lesion": null,
+    "w": 923,
+    "h": 1400,
+    "radius_frac": null,
+    "phantom": 4,
+    "member": "SIM/P2_7.0_scattered.8336531.4/4/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "scattered-9mm-100-1",
+    "density": "scattered",
+    "size_mm": 9.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.620722433460076,
+     "y": 0.5653553299492385
+    },
+    "w": 935,
+    "h": 1400,
+    "radius_frac": 0.10064862446879892,
+    "phantom": 1,
+    "member": "SIM/P2_9.0_scattered.8336516.1/1/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "scattered-9mm-100-3",
+    "density": "scattered",
+    "size_mm": 9.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.5106177606177607,
+     "y": 0.42346938775510207
+    },
+    "w": 925,
+    "h": 1400,
+    "radius_frac": 0.10220304337951396,
+    "phantom": 3,
+    "member": "SIM/P2_9.0_scattered.8336516.3/3/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "scattered-9mm-100-5",
+    "density": "scattered",
+    "size_mm": 9.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.7100760456273765,
+     "y": 0.42487373737373735
+    },
+    "w": 930,
+    "h": 1400,
+    "radius_frac": 0.10064862446879892,
+    "phantom": 5,
+    "member": "SIM/P2_9.0_scattered.8336516.5/5/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "scattered-9mm-100-7",
+    "density": "scattered",
+    "size_mm": 9.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.6747104247104247,
+     "y": 0.4073604060913706
+    },
+    "w": 920,
+    "h": 1400,
+    "radius_frac": 0.10220304337951396,
+    "phantom": 7,
+    "member": "SIM/P2_9.0_scattered.8336516.7/7/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "scattered-9mm-100-2",
+    "density": "scattered",
+    "size_mm": 9.0,
+    "dose": 100,
+    "lesion": null,
+    "w": 946,
+    "h": 1400,
+    "radius_frac": null,
+    "phantom": 2,
+    "member": "SIM/P2_9.0_scattered.8336516.2/2/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "scattered-9mm-100-4",
+    "density": "scattered",
+    "size_mm": 9.0,
+    "dose": 100,
+    "lesion": null,
+    "w": 923,
+    "h": 1400,
+    "radius_frac": null,
+    "phantom": 4,
+    "member": "SIM/P2_9.0_scattered.8336516.4/4/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "scattered-7mm-20-1",
+    "density": "scattered",
+    "size_mm": 7.0,
+    "dose": 20,
+    "lesion": {
+     "x": 0.6112167300380228,
+     "y": 0.3934010152284264
+    },
+    "w": 935,
+    "h": 1400,
+    "radius_frac": 0.07828226347573249,
+    "phantom": 1,
+    "member": "SIM/P2_7.0_scattered.8336535.1/1/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "scattered-7mm-20-3",
+    "density": "scattered",
+    "size_mm": 7.0,
+    "dose": 20,
+    "lesion": {
+     "x": 0.7606177606177607,
+     "y": 0.32971938775510207
+    },
+    "w": 925,
+    "h": 1400,
+    "radius_frac": 0.07949125596184418,
+    "phantom": 3,
+    "member": "SIM/P2_7.0_scattered.8336535.3/3/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "hetero-5mm-100-1",
+    "density": "hetero",
+    "size_mm": 5.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.49238578680203043,
+     "y": 0.4673913043478261
+    },
+    "w": 857,
+    "h": 1400,
+    "radius_frac": 0.0746491489997014,
+    "phantom": 1,
+    "member": "SIM/P2_5.0_hetero.8337614.1/1/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "hetero-5mm-100-3",
+    "density": "hetero",
+    "size_mm": 5.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.7461139896373057,
+     "y": 0.4083850931677019
+    },
+    "w": 839,
+    "h": 1400,
+    "radius_frac": 0.07619628162145686,
+    "phantom": 3,
+    "member": "SIM/P2_5.0_hetero.8337614.3/3/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "hetero-5mm-100-5",
+    "density": "hetero",
+    "size_mm": 5.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.5435897435897435,
+     "y": 0.4076086956521739
+    },
+    "w": 848,
+    "h": 1400,
+    "radius_frac": 0.07541478129713423,
+    "phantom": 5,
+    "member": "SIM/P2_5.0_hetero.8337614.5/5/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "hetero-5mm-100-7",
+    "density": "hetero",
+    "size_mm": 5.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.5958549222797928,
+     "y": 0.4945652173913043
+    },
+    "w": 839,
+    "h": 1400,
+    "radius_frac": 0.07619628162145686,
+    "phantom": 7,
+    "member": "SIM/P2_5.0_hetero.8337614.7/7/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "hetero-5mm-100-2",
+    "density": "hetero",
+    "size_mm": 5.0,
+    "dose": 100,
+    "lesion": null,
+    "w": 839,
+    "h": 1400,
+    "radius_frac": null,
+    "phantom": 2,
+    "member": "SIM/P2_5.0_hetero.8337614.2/2/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "hetero-5mm-100-4",
+    "density": "hetero",
+    "size_mm": 5.0,
+    "dose": 100,
+    "lesion": null,
+    "w": 848,
+    "h": 1400,
+    "radius_frac": null,
+    "phantom": 4,
+    "member": "SIM/P2_5.0_hetero.8337614.4/4/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "hetero-7mm-100-1",
+    "density": "hetero",
+    "size_mm": 7.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.7068527918781726,
+     "y": 0.5427018633540373
+    },
+    "w": 857,
+    "h": 1400,
+    "radius_frac": 0.10450880859958195,
+    "phantom": 1,
+    "member": "SIM/P2_7.0_hetero.8337599.1/1/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "hetero-7mm-100-3",
+    "density": "hetero",
+    "size_mm": 7.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.677461139896373,
+     "y": 0.3672360248447205
+    },
+    "w": 839,
+    "h": 1400,
+    "radius_frac": 0.1066747942700396,
+    "phantom": 3,
+    "member": "SIM/P2_7.0_hetero.8337599.3/3/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "hetero-7mm-100-5",
+    "density": "hetero",
+    "size_mm": 7.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.7205128205128205,
+     "y": 0.41537267080745344
+    },
+    "w": 848,
+    "h": 1400,
+    "radius_frac": 0.10558069381598792,
+    "phantom": 5,
+    "member": "SIM/P2_7.0_hetero.8337599.5/5/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "hetero-7mm-100-7",
+    "density": "hetero",
+    "size_mm": 7.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.7603626943005182,
+     "y": 0.36335403726708076
+    },
+    "w": 839,
+    "h": 1400,
+    "radius_frac": 0.1066747942700396,
+    "phantom": 7,
+    "member": "SIM/P2_7.0_hetero.8337599.7/7/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "hetero-7mm-100-2",
+    "density": "hetero",
+    "size_mm": 7.0,
+    "dose": 100,
+    "lesion": null,
+    "w": 839,
+    "h": 1400,
+    "radius_frac": null,
+    "phantom": 2,
+    "member": "SIM/P2_7.0_hetero.8337599.2/2/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "hetero-7mm-100-4",
+    "density": "hetero",
+    "size_mm": 7.0,
+    "dose": 100,
+    "lesion": null,
+    "w": 848,
+    "h": 1400,
+    "radius_frac": null,
+    "phantom": 4,
+    "member": "SIM/P2_7.0_hetero.8337599.4/4/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "hetero-7mm-20-1",
+    "density": "hetero",
+    "size_mm": 7.0,
+    "dose": 20,
+    "lesion": {
+     "x": 0.7068527918781726,
+     "y": 0.5427018633540373
+    },
+    "w": 857,
+    "h": 1400,
+    "radius_frac": 0.10450880859958195,
+    "phantom": 1,
+    "member": "SIM/P2_7.0_hetero.8337603.1/1/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "hetero-7mm-20-3",
+    "density": "hetero",
+    "size_mm": 7.0,
+    "dose": 20,
+    "lesion": {
+     "x": 0.677461139896373,
+     "y": 0.3672360248447205
+    },
+    "w": 839,
+    "h": 1400,
+    "radius_frac": 0.1066747942700396,
+    "phantom": 3,
+    "member": "SIM/P2_7.0_hetero.8337603.3/3/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "dense-5mm-100-1",
+    "density": "dense",
+    "size_mm": 5.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.6689944134078212,
+     "y": 0.41693037974683544
+    },
+    "w": 793,
+    "h": 1400,
+    "radius_frac": 0.0821557673348669,
+    "phantom": 1,
+    "member": "SIM/P2_5.0_dense.8337930.1/1/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "dense-5mm-100-3",
+    "density": "dense",
+    "size_mm": 5.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.7231638418079096,
+     "y": 0.43474842767295596
+    },
+    "w": 779,
+    "h": 1400,
+    "radius_frac": 0.08308408109006314,
+    "phantom": 3,
+    "member": "SIM/P2_5.0_dense.8337930.3/3/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "dense-5mm-100-5",
+    "density": "dense",
+    "size_mm": 5.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.770949720670391,
+     "y": 0.47705696202531644
+    },
+    "w": 793,
+    "h": 1400,
+    "radius_frac": 0.0821557673348669,
+    "phantom": 5,
+    "member": "SIM/P2_5.0_dense.8337930.5/5/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "dense-5mm-100-7",
+    "density": "dense",
+    "size_mm": 5.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.5642458100558659,
+     "y": 0.52890625
+    },
+    "w": 783,
+    "h": 1400,
+    "radius_frac": 0.0821557673348669,
+    "phantom": 7,
+    "member": "SIM/P2_5.0_dense.8337930.7/7/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "dense-5mm-100-2",
+    "density": "dense",
+    "size_mm": 5.0,
+    "dose": 100,
+    "lesion": null,
+    "w": 783,
+    "h": 1400,
+    "radius_frac": null,
+    "phantom": 2,
+    "member": "SIM/P2_5.0_dense.8337930.2/2/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "dense-5mm-100-4",
+    "density": "dense",
+    "size_mm": 5.0,
+    "dose": 100,
+    "lesion": null,
+    "w": 779,
+    "h": 1400,
+    "radius_frac": null,
+    "phantom": 4,
+    "member": "SIM/P2_5.0_dense.8337930.4/4/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "dense-7mm-100-1",
+    "density": "dense",
+    "size_mm": 7.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.6773743016759777,
+     "y": 0.5609177215189873
+    },
+    "w": 793,
+    "h": 1400,
+    "radius_frac": 0.11501807426881366,
+    "phantom": 1,
+    "member": "SIM/P2_7.0_dense.8337915.1/1/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "dense-7mm-100-3",
+    "density": "dense",
+    "size_mm": 7.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.7259887005649718,
+     "y": 0.5833333333333334
+    },
+    "w": 779,
+    "h": 1400,
+    "radius_frac": 0.11631771352608838,
+    "phantom": 3,
+    "member": "SIM/P2_7.0_dense.8337915.3/3/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "dense-7mm-100-5",
+    "density": "dense",
+    "size_mm": 7.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.5670391061452514,
+     "y": 0.553006329113924
+    },
+    "w": 793,
+    "h": 1400,
+    "radius_frac": 0.11501807426881366,
+    "phantom": 5,
+    "member": "SIM/P2_7.0_dense.8337915.5/5/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "dense-7mm-100-7",
+    "density": "dense",
+    "size_mm": 7.0,
+    "dose": 100,
+    "lesion": {
+     "x": 0.5670391061452514,
+     "y": 0.54296875
+    },
+    "w": 783,
+    "h": 1400,
+    "radius_frac": 0.11501807426881366,
+    "phantom": 7,
+    "member": "SIM/P2_7.0_dense.8337915.7/7/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "dense-7mm-100-2",
+    "density": "dense",
+    "size_mm": 7.0,
+    "dose": 100,
+    "lesion": null,
+    "w": 783,
+    "h": 1400,
+    "radius_frac": null,
+    "phantom": 2,
+    "member": "SIM/P2_7.0_dense.8337915.2/2/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "dense-7mm-100-4",
+    "density": "dense",
+    "size_mm": 7.0,
+    "dose": 100,
+    "lesion": null,
+    "w": 779,
+    "h": 1400,
+    "radius_frac": null,
+    "phantom": 4,
+    "member": "SIM/P2_7.0_dense.8337915.4/4/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "dense-7mm-20-1",
+    "density": "dense",
+    "size_mm": 7.0,
+    "dose": 20,
+    "lesion": {
+     "x": 0.6773743016759777,
+     "y": 0.5609177215189873
+    },
+    "w": 793,
+    "h": 1400,
+    "radius_frac": 0.11501807426881366,
+    "phantom": 1,
+    "member": "SIM/P2_7.0_dense.8337919.1/1/DICOM_dm/000.dcm"
+   },
+   {
+    "id": "dense-7mm-20-3",
+    "density": "dense",
+    "size_mm": 7.0,
+    "dose": 20,
+    "lesion": {
+     "x": 0.7259887005649718,
+     "y": 0.5833333333333334
+    },
+    "w": 779,
+    "h": 1400,
+    "radius_frac": 0.11631771352608838,
+    "phantom": 3,
+    "member": "SIM/P2_7.0_dense.8337919.3/3/DICOM_dm/000.dcm"
+   }
+  ]
+ },
+ "stats": {
+  "bcsc_risk": {
+   "years": "1996-2002",
+   "exams": 2392998,
+   "with_density": 1656488,
+   "by_density": [
+    {
+     "density": "fatty",
+     "exams": 148209,
+     "cancers": 328,
+     "per1000": 2.21
+    },
+    {
+     "density": "scattered",
+     "exams": 782384,
+     "cancers": 3361,
+     "per1000": 4.3
+    },
+    {
+     "density": "hetero",
+     "exams": 674008,
+     "cancers": 3726,
+     "per1000": 5.53
+    },
+    {
+     "density": "dense",
+     "exams": 136011,
+     "cancers": 717,
+     "per1000": 5.27
+    }
+   ],
+   "by_age": [
+    {
+     "age": "40-49",
+     "exams": 481513,
+     "per1000": [
+      0.8,
+      1.92,
+      3.25,
+      3.8
+     ],
+     "share": [
+      4.7,
+      35.4,
+      46.2,
+      13.7
+     ]
+    },
+    {
+     "age": "50-59",
+     "exams": 550963,
+     "per1000": [
+      1.37,
+      3.58,
+      5.6,
+      6.26
+     ],
+     "share": [
+      7.6,
+      44.6,
+      40.6,
+      7.2
+     ]
+    },
+    {
+     "age": "60-69",
+     "exams": 364778,
+     "per1000": [
+      2.26,
+      5.33,
+      7.67,
+      8.05
+     ],
+     "share": [
+      11.2,
+      51.5,
+      33.3,
+      4.0
+     ]
+    },
+    {
+     "age": "70-79",
+     "exams": 259234,
+     "per1000": [
+      3.35,
+      6.63,
+      8.47,
+      6.74
+     ],
+     "share": [
+      13.4,
+      53.8,
+      29.6,
+      3.3
+     ]
+    }
+   ],
+   "source": "bcsc_risk",
+   "note": "Cancer = invasive or ductal carcinoma in situ diagnosed within one year of the screening mammogram. Exams with unknown density excluded. Ages 40-79."
+  },
+  "bcsc_bench": {
+   "years": "2011-2021",
+   "source": "bcsc_bench",
+   "note": "Share of screening examinations and of examinations with a cancer diagnosed within one year, by the radiologist's BI-RADS density, from the BCSC's Table 1 (image on the benchmarks page). DM = digital mammography, DBT = tomosynthesis.",
+   "dm": {
+    "exams": 2695664,
+    "cancers": 16801,
+    "by_density": [
+     {
+      "density": "fatty",
+      "exams": 260121,
+      "cancers": 1163
+     },
+     {
+      "density": "scattered",
+      "exams": 1127150,
+      "cancers": 7199
+     },
+     {
+      "density": "hetero",
+      "exams": 960474,
+      "cancers": 6540
+     },
+     {
+      "density": "dense",
+      "exams": 193199,
+      "cancers": 1186
+     }
+    ],
+    "unknown": [
+     154720,
+     713
+    ],
+    "sensitivity": 87.4,
+    "specificity": 90.6,
+    "recall": 9.9,
+    "cdr": 5.4
+   },
+   "dbt": {
+    "exams": 998135,
+    "cancers": 7083,
+    "by_density": [
+     {
+      "density": "fatty",
+      "exams": 101261,
+      "cancers": 413
+     },
+     {
+      "density": "scattered",
+      "exams": 446783,
+      "cancers": 3032
+     },
+     {
+      "density": "hetero",
+      "exams": 365791,
+      "cancers": 3001
+     },
+     {
+      "density": "dense",
+      "exams": 70633,
+      "cancers": 543
+     }
+    ],
+    "unknown": [
+     13667,
+     94
+    ],
+    "sensitivity": 88.0,
+    "specificity": 91.9,
+    "recall": 8.7,
+    "cdr": 6.2
+   }
+  },
+  "interval": {
+   "source": "kerlikowske2015",
+   "years": "2002-2011",
+   "exams": 831455,
+   "women": 365426,
+   "threshold": 1.0,
+   "note": "Interval cancers: diagnosed within 12 months of a negative screening mammogram, per 1,000 mammograms. The authors treat more than 1 per 1,000 as a high rate.",
+   "by_age": [
+    {
+     "age": "40-49",
+     "v": [
+      0.19,
+      0.26,
+      0.76,
+      0.98
+     ]
+    },
+    {
+     "age": "50-59",
+     "v": [
+      0.14,
+      0.33,
+      0.8,
+      1.11
+     ]
+    },
+    {
+     "age": "60-69",
+     "v": [
+      0.23,
+      0.49,
+      0.96,
+      1.13
+     ]
+    },
+    {
+     "age": "70-74",
+     "v": [
+      0.35,
+      0.55,
+      1.15,
+      3.45
+     ]
+    }
+   ],
+   "by_risk": [
+    {
+     "risk": "under 1.00%",
+     "v": [
+      0.14,
+      0.21,
+      0.63,
+      0.72
+     ]
+    },
+    {
+     "risk": "1.00 to 1.66%",
+     "v": [
+      0.31,
+      0.38,
+      0.58,
+      0.89
+     ]
+    },
+    {
+     "risk": "1.67 to 2.49%",
+     "v": [
+      0.48,
+      0.43,
+      0.83,
+      1.17
+     ]
+    },
+    {
+     "risk": "2.50% or more",
+     "v": [
+      null,
+      0.9,
+      1.48,
+      1.62
+     ]
+    }
+   ],
+   "share": [
+    11.6,
+    40.9,
+    39.4,
+    8.0
+   ],
+   "conclusion": "Breast density should not be the sole criterion for deciding whether supplemental imaging is justified, because not all women with dense breasts have high interval cancer rates."
+  },
+  "sens2011": {
+   "source": "kerlikowske2011",
+   "years": "2000-2006",
+   "note": "Digital mammography, adjusted to median facility performance, 95% confidence interval. n = cancers.",
+   "rows": [
+    {
+     "density": "fatty",
+     "n": 92,
+     "sens": 78.3,
+     "lo": 59.4,
+     "hi": 89.9,
+     "spec": 94.7
+    },
+    {
+     "density": "scattered",
+     "n": 835,
+     "sens": 86.6,
+     "lo": 80.3,
+     "hi": 91.1,
+     "spec": 91.2
+    },
+    {
+     "density": "hetero",
+     "n": 1069,
+     "sens": 82.1,
+     "lo": 76.6,
+     "hi": 86.6,
+     "spec": 87.3
+    },
+    {
+     "density": "dense",
+     "n": 163,
+     "sens": 83.6,
+     "lo": 69.7,
+     "hi": 91.9,
+     "spec": 88.7
+    }
+   ]
+  },
+  "sprague2014": {
+   "source": "sprague2014",
+   "dense_40_74_pct": 43.3,
+   "ci": [
+    43.1,
+    43.4
+   ],
+   "women_40_74_millions": 27.6,
+   "age_40_44_pct": 56.6,
+   "normal_bmi_pct": 58.9,
+   "obese_pct": 25.0,
+   "years": "2007-2010",
+   "mammograms": 1518599
+  },
+  "fda": {
+   "source": "fda_rule",
+   "effective": "2024-09-10",
+   "published": "2023-03-10",
+   "statements": [
+    "The breasts are almost entirely fatty.",
+    "There are scattered areas of fibroglandular density.",
+    "The breasts are heterogeneously dense, which may obscure small masses.",
+    "The breasts are extremely dense, which lowers the sensitivity of mammography."
+   ],
+   "lay_not_dense": "Breast tissue can be either dense or not dense. Dense tissue makes it harder to find breast cancer on a mammogram and also raises the risk of developing breast cancer. Your breast tissue is not dense. Talk to your healthcare provider about breast density, risks for breast cancer, and your individual situation.",
+   "lay_dense": "Breast tissue can be either dense or not dense. Dense tissue makes it harder to find breast cancer on a mammogram and also raises the risk of developing breast cancer. Your breast tissue is dense. In some people with dense tissue, other imaging tests in addition to a mammogram may help find cancers. Talk to your healthcare provider about breast density, risks for breast cancer, and your individual situation.",
+   "press_half": "Approximately half of women over the age of 40 in the U.S. have dense breast tissue"
+  },
+  "uspstf": {
+   "source": "uspstf2024",
+   "date": "2024-04-30",
+   "grade_b": "biennial screening mammography for women aged 40 to 74 years",
+   "dense_i": "the current evidence is insufficient to assess the balance of benefits and harms of supplemental screening for breast cancer using breast ultrasonography or magnetic resonance imaging (MRI) in women identified to have dense breasts on an otherwise negative screening mammogram"
+  },
+  "screening_performance": null
+ },
+ "sources": {
+  "msynth": {
+   "text": "Sizikova E, Saharkhiz N, Sharma D, Lago M, Sahiner B, Delfino JG, Badano A. Knowledge-based in silico models and dataset for the comparative evaluation of mammography AI for a range of breast characteristics, lesion conspicuities and doses. NeurIPS 2023 (Datasets and Benchmarks). M-SYNTH dataset, US FDA Division of Imaging, Diagnostics and Software Reliability, CC0.",
+   "url": "https://huggingface.co/datasets/didsr/msynth",
+   "retrieved": "2026-10-11"
+  },
+  "victre": {
+   "text": "Badano A, Graff CG, Badal A, et al. Evaluation of digital breast tomosynthesis as replacement of full-field digital mammography using an in silico imaging trial. JAMA Network Open 2018;1(7):e185474. The VICTRE pipeline.",
+   "url": "https://github.com/DIDSR/VICTRE",
+   "retrieved": "2026-10-11"
+  },
+  "bcsc_bench": {
+   "text": "Breast Cancer Surveillance Consortium. Screening performance benchmarks: clinical demographics and performance measures for 3,693,799 screening mammography examinations, 2011 to 2021 (2,695,664 digital mammography, 998,135 digital breast tomosynthesis). Tables dated 22 April 2026. Funded by the National Cancer Institute (P01CA154292).",
+   "url": "https://www.bcsc-research.org/statistics/screening-performance-benchmarks",
+   "retrieved": "2026-10-11"
+  },
+  "bcsc_risk": {
+   "text": "Breast Cancer Surveillance Consortium. Risk Estimation Dataset: 2,392,998 screening mammograms, 1996 to 2002, aggregated by risk factors and one-year cancer outcome. Barlow WE et al. J Natl Cancer Inst 2006;98:1204-14. Data collection and sharing supported by the NCI-funded BCSC (HHSN261201100031C).",
+   "url": "https://www.bcsc-research.org/datasets/rfdataset",
+   "retrieved": "2026-10-11"
+  },
+  "kerlikowske2015": {
+   "text": "Kerlikowske K, Zhu W, Tosteson ANA, Sprague BL, Tice JA, Lehman CD, Miglioretti DL. Identifying women with dense breasts at high risk for interval cancer: a cohort study. Ann Intern Med 2015;162(10):673-81. 831,455 digital screening mammograms, 2002 to 2011.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4443857/",
+   "retrieved": "2026-10-11"
+  },
+  "kerlikowske2011": {
+   "text": "Kerlikowske K, Hubbard RA, Miglioretti DL, et al. Comparative effectiveness of digital versus film-screen mammography in community practice in the United States. Ann Intern Med 2011;155(8):493-502. Table 3.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3726800/",
+   "retrieved": "2026-10-11"
+  },
+  "sprague2014": {
+   "text": "Sprague BL, Gangnon RE, Burt V, et al. Prevalence of mammographically dense breasts in the United States. J Natl Cancer Inst 2014;106(10):dju255.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4200066/",
+   "retrieved": "2026-10-11"
+  },
+  "lehman2017": {
+   "text": "Lehman CD, Arao RF, Sprague BL, et al. National performance benchmarks for modern screening digital mammography: update from the Breast Cancer Surveillance Consortium. Radiology 2017;283(1):49-58.",
+   "url": "https://pubs.rsna.org/doi/10.1148/radiol.2016161174",
+   "retrieved": "2026-10-11"
+  },
+  "fda_rule": {
+   "text": "US Food and Drug Administration. Mammography Quality Standards Act; final rule amending 21 CFR 900.12, published 10 March 2023 (document 2023-04550), effective 10 September 2024. Breast density reporting language in 900.12(c)(1)(vi) and (c)(2)(iii)-(iv).",
+   "url": "https://www.federalregister.gov/documents/2023/03/10/2023-04550/mammography-quality-standards-act",
+   "retrieved": "2026-10-11"
+  },
+  "fda_press": {
+   "text": "US FDA press announcement, 9 March 2023: FDA updates mammography regulations to require reporting of breast density information.",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-updates-mammography-regulations-require-reporting-breast-density-information-and-enhance",
+   "retrieved": "2026-10-11"
+  },
+  "uspstf2024": {
+   "text": "US Preventive Services Task Force. Screening for breast cancer: recommendation statement. JAMA 2024;331(22):1918-30. Published 30 April 2024.",
+   "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/breast-cancer-screening",
+   "retrieved": "2026-10-11"
+  }
+ }
+}

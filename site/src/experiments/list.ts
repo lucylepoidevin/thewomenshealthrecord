@@ -11,4 +11,6 @@ export const EXPERIMENTS: Experiment[] = [
     dek: 'A pharmacokinetic simulator for acetaminophen, caffeine and metoprolol, using published sex-specific parameters. Adjustable for weight, oral contraception and pregnancy.' },
   { n: 5, path: '/ingredient-check', label: 'Ingredient check', title: 'Cosmetic ingredients against the official hormone-disruptor lists', short: 'Ingredient check',
     dek: 'Paste a product\'s ingredient list. Each ingredient on the EU endocrine disruptor lists or California\'s Proposition 65 list comes back with the list\'s own grade, a note and the source.' },
+  { n: 6, path: '/dense-breast', label: 'Breast density', title: 'Breast density, and what a mammogram can miss', short: 'Breast density',
+    dek: 'Synthetic mammograms from the FDA at four breast densities, some with a mass and some without. Try to find it, then see the screening numbers by density: who has dense breasts, what gets missed, what it raises.' },
 ]

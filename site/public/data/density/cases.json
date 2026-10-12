@@ -1,0 +1,967 @@
+{
+ "retrieved": "2026-10-11",
+ "contrast": "1.06",
+ "px_mm": 0.085,
+ "cases": [
+  {
+   "id": "fatty-5mm-100-1",
+   "density": "fatty",
+   "size_mm": 5.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.793026706231454,
+    "y": 0.5580357142857143
+   },
+   "w": 1053,
+   "h": 1400,
+   "radius_frac": 0.043637633094780935,
+   "phantom": 1,
+   "member": "SIM/P2_5.0_fatty.8336130.1/1/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "fatty-5mm-100-3",
+   "density": "fatty",
+   "size_mm": 5.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.8888059701492538,
+    "y": 0.25279017857142855
+   },
+   "w": 1047,
+   "h": 1400,
+   "radius_frac": 0.043898156277436345,
+   "phantom": 3,
+   "member": "SIM/P2_5.0_fatty.8336130.3/3/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "fatty-5mm-100-5",
+   "density": "fatty",
+   "size_mm": 5.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.8851351351351351,
+    "y": 0.6149553571428571
+   },
+   "w": 1041,
+   "h": 1400,
+   "radius_frac": 0.04416180886769122,
+   "phantom": 5,
+   "member": "SIM/P2_5.0_fatty.8336130.5/5/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "fatty-5mm-100-7",
+   "density": "fatty",
+   "size_mm": 5.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.612759643916914,
+    "y": 0.3515625
+   },
+   "w": 1053,
+   "h": 1400,
+   "radius_frac": 0.043637633094780935,
+   "phantom": 7,
+   "member": "SIM/P2_5.0_fatty.8336130.7/7/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "fatty-5mm-100-2",
+   "density": "fatty",
+   "size_mm": 5.0,
+   "dose": 100,
+   "lesion": null,
+   "w": 1041,
+   "h": 1400,
+   "radius_frac": null,
+   "phantom": 2,
+   "member": "SIM/P2_5.0_fatty.8336130.2/2/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "fatty-5mm-100-4",
+   "density": "fatty",
+   "size_mm": 5.0,
+   "dose": 100,
+   "lesion": null,
+   "w": 1047,
+   "h": 1400,
+   "radius_frac": null,
+   "phantom": 4,
+   "member": "SIM/P2_5.0_fatty.8336130.4/4/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "fatty-7mm-100-1",
+   "density": "fatty",
+   "size_mm": 7.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.7522255192878339,
+    "y": 0.5290178571428571
+   },
+   "w": 1053,
+   "h": 1400,
+   "radius_frac": 0.06109268633269331,
+   "phantom": 1,
+   "member": "SIM/P2_7.0_fatty.8336194.1/1/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "fatty-7mm-100-3",
+   "density": "fatty",
+   "size_mm": 7.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.8052238805970149,
+    "y": 0.7003348214285714
+   },
+   "w": 1047,
+   "h": 1400,
+   "radius_frac": 0.06145741878841088,
+   "phantom": 3,
+   "member": "SIM/P2_7.0_fatty.8336194.3/3/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "fatty-7mm-100-5",
+   "density": "fatty",
+   "size_mm": 7.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.8438438438438438,
+    "y": 0.5859375
+   },
+   "w": 1041,
+   "h": 1400,
+   "radius_frac": 0.0618265324147677,
+   "phantom": 5,
+   "member": "SIM/P2_7.0_fatty.8336194.5/5/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "fatty-7mm-100-7",
+   "density": "fatty",
+   "size_mm": 7.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.7596439169139466,
+    "y": 0.45033482142857145
+   },
+   "w": 1053,
+   "h": 1400,
+   "radius_frac": 0.06109268633269331,
+   "phantom": 7,
+   "member": "SIM/P2_7.0_fatty.8336194.7/7/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "fatty-7mm-100-2",
+   "density": "fatty",
+   "size_mm": 7.0,
+   "dose": 100,
+   "lesion": null,
+   "w": 1041,
+   "h": 1400,
+   "radius_frac": null,
+   "phantom": 2,
+   "member": "SIM/P2_7.0_fatty.8336194.2/2/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "fatty-7mm-100-4",
+   "density": "fatty",
+   "size_mm": 7.0,
+   "dose": 100,
+   "lesion": null,
+   "w": 1047,
+   "h": 1400,
+   "radius_frac": null,
+   "phantom": 4,
+   "member": "SIM/P2_7.0_fatty.8336194.4/4/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "fatty-9mm-100-1",
+   "density": "fatty",
+   "size_mm": 9.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.7067164179104478,
+    "y": 0.49720982142857145
+   },
+   "w": 1047,
+   "h": 1400,
+   "radius_frac": 0.07901668129938542,
+   "phantom": 1,
+   "member": "SIM/P2_9.0_fatty.8336209.1/1/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "fatty-9mm-100-3",
+   "density": "fatty",
+   "size_mm": 9.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.7611940298507462,
+    "y": 0.6702008928571429
+   },
+   "w": 1047,
+   "h": 1400,
+   "radius_frac": 0.07901668129938542,
+   "phantom": 3,
+   "member": "SIM/P2_9.0_fatty.8336209.3/3/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "fatty-9mm-100-5",
+   "density": "fatty",
+   "size_mm": 9.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.6501501501501501,
+    "y": 0.35714285714285715
+   },
+   "w": 1041,
+   "h": 1400,
+   "radius_frac": 0.0794912559618442,
+   "phantom": 5,
+   "member": "SIM/P2_9.0_fatty.8336209.5/5/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "fatty-9mm-100-7",
+   "density": "fatty",
+   "size_mm": 9.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.7166172106824926,
+    "y": 0.4185267857142857
+   },
+   "w": 1053,
+   "h": 1400,
+   "radius_frac": 0.07854773957060568,
+   "phantom": 7,
+   "member": "SIM/P2_9.0_fatty.8336209.7/7/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "fatty-9mm-100-2",
+   "density": "fatty",
+   "size_mm": 9.0,
+   "dose": 100,
+   "lesion": null,
+   "w": 1041,
+   "h": 1400,
+   "radius_frac": null,
+   "phantom": 2,
+   "member": "SIM/P2_9.0_fatty.8336209.2/2/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "fatty-9mm-100-4",
+   "density": "fatty",
+   "size_mm": 9.0,
+   "dose": 100,
+   "lesion": null,
+   "w": 1047,
+   "h": 1400,
+   "radius_frac": null,
+   "phantom": 4,
+   "member": "SIM/P2_9.0_fatty.8336209.4/4/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "fatty-7mm-20-1",
+   "density": "fatty",
+   "size_mm": 7.0,
+   "dose": 20,
+   "lesion": {
+    "x": 0.7522255192878339,
+    "y": 0.5290178571428571
+   },
+   "w": 1053,
+   "h": 1400,
+   "radius_frac": 0.06109268633269331,
+   "phantom": 1,
+   "member": "SIM/P2_7.0_fatty.8336198.1/1/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "fatty-7mm-20-3",
+   "density": "fatty",
+   "size_mm": 7.0,
+   "dose": 20,
+   "lesion": {
+    "x": 0.8052238805970149,
+    "y": 0.7003348214285714
+   },
+   "w": 1047,
+   "h": 1400,
+   "radius_frac": 0.06145741878841088,
+   "phantom": 3,
+   "member": "SIM/P2_7.0_fatty.8336198.3/3/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "scattered-5mm-100-1",
+   "density": "scattered",
+   "size_mm": 5.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.6634980988593155,
+    "y": 0.4270304568527919
+   },
+   "w": 935,
+   "h": 1400,
+   "radius_frac": 0.05591590248266607,
+   "phantom": 1,
+   "member": "SIM/P2_5.0_scattered.8336546.1/1/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "scattered-5mm-100-3",
+   "density": "scattered",
+   "size_mm": 5.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.416988416988417,
+    "y": 0.2914540816326531
+   },
+   "w": 925,
+   "h": 1400,
+   "radius_frac": 0.05677946854417442,
+   "phantom": 3,
+   "member": "SIM/P2_5.0_scattered.8336546.3/3/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "scattered-5mm-100-5",
+   "density": "scattered",
+   "size_mm": 5.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.7518867924528302,
+    "y": 0.3061868686868687
+   },
+   "w": 937,
+   "h": 1400,
+   "radius_frac": 0.05549389567147613,
+   "phantom": 5,
+   "member": "SIM/P2_5.0_scattered.8336546.5/5/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "scattered-5mm-100-7",
+   "density": "scattered",
+   "size_mm": 5.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.6925287356321839,
+    "y": 0.26136363636363635
+   },
+   "w": 923,
+   "h": 1400,
+   "radius_frac": 0.05634437683119224,
+   "phantom": 7,
+   "member": "SIM/P2_5.0_scattered.8336546.7/7/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "scattered-5mm-100-2",
+   "density": "scattered",
+   "size_mm": 5.0,
+   "dose": 100,
+   "lesion": null,
+   "w": 946,
+   "h": 1400,
+   "radius_frac": null,
+   "phantom": 2,
+   "member": "SIM/P2_5.0_scattered.8336546.2/2/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "scattered-5mm-100-4",
+   "density": "scattered",
+   "size_mm": 5.0,
+   "dose": 100,
+   "lesion": null,
+   "w": 923,
+   "h": 1400,
+   "radius_frac": null,
+   "phantom": 4,
+   "member": "SIM/P2_5.0_scattered.8336546.4/4/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "scattered-7mm-100-1",
+   "density": "scattered",
+   "size_mm": 7.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.6112167300380228,
+    "y": 0.3934010152284264
+   },
+   "w": 935,
+   "h": 1400,
+   "radius_frac": 0.07828226347573249,
+   "phantom": 1,
+   "member": "SIM/P2_7.0_scattered.8336531.1/1/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "scattered-7mm-100-3",
+   "density": "scattered",
+   "size_mm": 7.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.7606177606177607,
+    "y": 0.32971938775510207
+   },
+   "w": 925,
+   "h": 1400,
+   "radius_frac": 0.07949125596184418,
+   "phantom": 3,
+   "member": "SIM/P2_7.0_scattered.8336531.3/3/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "scattered-7mm-100-5",
+   "density": "scattered",
+   "size_mm": 7.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.7,
+    "y": 0.27146464646464646
+   },
+   "w": 937,
+   "h": 1400,
+   "radius_frac": 0.07769145394006659,
+   "phantom": 5,
+   "member": "SIM/P2_7.0_scattered.8336531.5/5/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "scattered-7mm-100-7",
+   "density": "scattered",
+   "size_mm": 7.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.7059386973180076,
+    "y": 0.5723350253807107
+   },
+   "w": 927,
+   "h": 1400,
+   "radius_frac": 0.07888212756366914,
+   "phantom": 7,
+   "member": "SIM/P2_7.0_scattered.8336531.7/7/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "scattered-7mm-100-2",
+   "density": "scattered",
+   "size_mm": 7.0,
+   "dose": 100,
+   "lesion": null,
+   "w": 946,
+   "h": 1400,
+   "radius_frac": null,
+   "phantom": 2,
+   "member": "SIM/P2_7.0_scattered.8336531.2/2/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "scattered-7mm-100-4",
+   "density": "scattered",
+   "size_mm": 7.0,
+   "dose": 100,
+   "lesion": null,
+   "w": 923,
+   "h": 1400,
+   "radius_frac": null,
+   "phantom": 4,
+   "member": "SIM/P2_7.0_scattered.8336531.4/4/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "scattered-9mm-100-1",
+   "density": "scattered",
+   "size_mm": 9.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.620722433460076,
+    "y": 0.5653553299492385
+   },
+   "w": 935,
+   "h": 1400,
+   "radius_frac": 0.10064862446879892,
+   "phantom": 1,
+   "member": "SIM/P2_9.0_scattered.8336516.1/1/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "scattered-9mm-100-3",
+   "density": "scattered",
+   "size_mm": 9.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.5106177606177607,
+    "y": 0.42346938775510207
+   },
+   "w": 925,
+   "h": 1400,
+   "radius_frac": 0.10220304337951396,
+   "phantom": 3,
+   "member": "SIM/P2_9.0_scattered.8336516.3/3/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "scattered-9mm-100-5",
+   "density": "scattered",
+   "size_mm": 9.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.7100760456273765,
+    "y": 0.42487373737373735
+   },
+   "w": 930,
+   "h": 1400,
+   "radius_frac": 0.10064862446879892,
+   "phantom": 5,
+   "member": "SIM/P2_9.0_scattered.8336516.5/5/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "scattered-9mm-100-7",
+   "density": "scattered",
+   "size_mm": 9.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.6747104247104247,
+    "y": 0.4073604060913706
+   },
+   "w": 920,
+   "h": 1400,
+   "radius_frac": 0.10220304337951396,
+   "phantom": 7,
+   "member": "SIM/P2_9.0_scattered.8336516.7/7/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "scattered-9mm-100-2",
+   "density": "scattered",
+   "size_mm": 9.0,
+   "dose": 100,
+   "lesion": null,
+   "w": 946,
+   "h": 1400,
+   "radius_frac": null,
+   "phantom": 2,
+   "member": "SIM/P2_9.0_scattered.8336516.2/2/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "scattered-9mm-100-4",
+   "density": "scattered",
+   "size_mm": 9.0,
+   "dose": 100,
+   "lesion": null,
+   "w": 923,
+   "h": 1400,
+   "radius_frac": null,
+   "phantom": 4,
+   "member": "SIM/P2_9.0_scattered.8336516.4/4/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "scattered-7mm-20-1",
+   "density": "scattered",
+   "size_mm": 7.0,
+   "dose": 20,
+   "lesion": {
+    "x": 0.6112167300380228,
+    "y": 0.3934010152284264
+   },
+   "w": 935,
+   "h": 1400,
+   "radius_frac": 0.07828226347573249,
+   "phantom": 1,
+   "member": "SIM/P2_7.0_scattered.8336535.1/1/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "scattered-7mm-20-3",
+   "density": "scattered",
+   "size_mm": 7.0,
+   "dose": 20,
+   "lesion": {
+    "x": 0.7606177606177607,
+    "y": 0.32971938775510207
+   },
+   "w": 925,
+   "h": 1400,
+   "radius_frac": 0.07949125596184418,
+   "phantom": 3,
+   "member": "SIM/P2_7.0_scattered.8336535.3/3/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "hetero-5mm-100-1",
+   "density": "hetero",
+   "size_mm": 5.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.49238578680203043,
+    "y": 0.4673913043478261
+   },
+   "w": 857,
+   "h": 1400,
+   "radius_frac": 0.0746491489997014,
+   "phantom": 1,
+   "member": "SIM/P2_5.0_hetero.8337614.1/1/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "hetero-5mm-100-3",
+   "density": "hetero",
+   "size_mm": 5.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.7461139896373057,
+    "y": 0.4083850931677019
+   },
+   "w": 839,
+   "h": 1400,
+   "radius_frac": 0.07619628162145686,
+   "phantom": 3,
+   "member": "SIM/P2_5.0_hetero.8337614.3/3/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "hetero-5mm-100-5",
+   "density": "hetero",
+   "size_mm": 5.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.5435897435897435,
+    "y": 0.4076086956521739
+   },
+   "w": 848,
+   "h": 1400,
+   "radius_frac": 0.07541478129713423,
+   "phantom": 5,
+   "member": "SIM/P2_5.0_hetero.8337614.5/5/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "hetero-5mm-100-7",
+   "density": "hetero",
+   "size_mm": 5.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.5958549222797928,
+    "y": 0.4945652173913043
+   },
+   "w": 839,
+   "h": 1400,
+   "radius_frac": 0.07619628162145686,
+   "phantom": 7,
+   "member": "SIM/P2_5.0_hetero.8337614.7/7/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "hetero-5mm-100-2",
+   "density": "hetero",
+   "size_mm": 5.0,
+   "dose": 100,
+   "lesion": null,
+   "w": 839,
+   "h": 1400,
+   "radius_frac": null,
+   "phantom": 2,
+   "member": "SIM/P2_5.0_hetero.8337614.2/2/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "hetero-5mm-100-4",
+   "density": "hetero",
+   "size_mm": 5.0,
+   "dose": 100,
+   "lesion": null,
+   "w": 848,
+   "h": 1400,
+   "radius_frac": null,
+   "phantom": 4,
+   "member": "SIM/P2_5.0_hetero.8337614.4/4/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "hetero-7mm-100-1",
+   "density": "hetero",
+   "size_mm": 7.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.7068527918781726,
+    "y": 0.5427018633540373
+   },
+   "w": 857,
+   "h": 1400,
+   "radius_frac": 0.10450880859958195,
+   "phantom": 1,
+   "member": "SIM/P2_7.0_hetero.8337599.1/1/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "hetero-7mm-100-3",
+   "density": "hetero",
+   "size_mm": 7.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.677461139896373,
+    "y": 0.3672360248447205
+   },
+   "w": 839,
+   "h": 1400,
+   "radius_frac": 0.1066747942700396,
+   "phantom": 3,
+   "member": "SIM/P2_7.0_hetero.8337599.3/3/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "hetero-7mm-100-5",
+   "density": "hetero",
+   "size_mm": 7.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.7205128205128205,
+    "y": 0.41537267080745344
+   },
+   "w": 848,
+   "h": 1400,
+   "radius_frac": 0.10558069381598792,
+   "phantom": 5,
+   "member": "SIM/P2_7.0_hetero.8337599.5/5/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "hetero-7mm-100-7",
+   "density": "hetero",
+   "size_mm": 7.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.7603626943005182,
+    "y": 0.36335403726708076
+   },
+   "w": 839,
+   "h": 1400,
+   "radius_frac": 0.1066747942700396,
+   "phantom": 7,
+   "member": "SIM/P2_7.0_hetero.8337599.7/7/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "hetero-7mm-100-2",
+   "density": "hetero",
+   "size_mm": 7.0,
+   "dose": 100,
+   "lesion": null,
+   "w": 839,
+   "h": 1400,
+   "radius_frac": null,
+   "phantom": 2,
+   "member": "SIM/P2_7.0_hetero.8337599.2/2/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "hetero-7mm-100-4",
+   "density": "hetero",
+   "size_mm": 7.0,
+   "dose": 100,
+   "lesion": null,
+   "w": 848,
+   "h": 1400,
+   "radius_frac": null,
+   "phantom": 4,
+   "member": "SIM/P2_7.0_hetero.8337599.4/4/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "hetero-7mm-20-1",
+   "density": "hetero",
+   "size_mm": 7.0,
+   "dose": 20,
+   "lesion": {
+    "x": 0.7068527918781726,
+    "y": 0.5427018633540373
+   },
+   "w": 857,
+   "h": 1400,
+   "radius_frac": 0.10450880859958195,
+   "phantom": 1,
+   "member": "SIM/P2_7.0_hetero.8337603.1/1/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "hetero-7mm-20-3",
+   "density": "hetero",
+   "size_mm": 7.0,
+   "dose": 20,
+   "lesion": {
+    "x": 0.677461139896373,
+    "y": 0.3672360248447205
+   },
+   "w": 839,
+   "h": 1400,
+   "radius_frac": 0.1066747942700396,
+   "phantom": 3,
+   "member": "SIM/P2_7.0_hetero.8337603.3/3/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "dense-5mm-100-1",
+   "density": "dense",
+   "size_mm": 5.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.6689944134078212,
+    "y": 0.41693037974683544
+   },
+   "w": 793,
+   "h": 1400,
+   "radius_frac": 0.0821557673348669,
+   "phantom": 1,
+   "member": "SIM/P2_5.0_dense.8337930.1/1/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "dense-5mm-100-3",
+   "density": "dense",
+   "size_mm": 5.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.7231638418079096,
+    "y": 0.43474842767295596
+   },
+   "w": 779,
+   "h": 1400,
+   "radius_frac": 0.08308408109006314,
+   "phantom": 3,
+   "member": "SIM/P2_5.0_dense.8337930.3/3/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "dense-5mm-100-5",
+   "density": "dense",
+   "size_mm": 5.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.770949720670391,
+    "y": 0.47705696202531644
+   },
+   "w": 793,
+   "h": 1400,
+   "radius_frac": 0.0821557673348669,
+   "phantom": 5,
+   "member": "SIM/P2_5.0_dense.8337930.5/5/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "dense-5mm-100-7",
+   "density": "dense",
+   "size_mm": 5.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.5642458100558659,
+    "y": 0.52890625
+   },
+   "w": 783,
+   "h": 1400,
+   "radius_frac": 0.0821557673348669,
+   "phantom": 7,
+   "member": "SIM/P2_5.0_dense.8337930.7/7/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "dense-5mm-100-2",
+   "density": "dense",
+   "size_mm": 5.0,
+   "dose": 100,
+   "lesion": null,
+   "w": 783,
+   "h": 1400,
+   "radius_frac": null,
+   "phantom": 2,
+   "member": "SIM/P2_5.0_dense.8337930.2/2/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "dense-5mm-100-4",
+   "density": "dense",
+   "size_mm": 5.0,
+   "dose": 100,
+   "lesion": null,
+   "w": 779,
+   "h": 1400,
+   "radius_frac": null,
+   "phantom": 4,
+   "member": "SIM/P2_5.0_dense.8337930.4/4/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "dense-7mm-100-1",
+   "density": "dense",
+   "size_mm": 7.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.6773743016759777,
+    "y": 0.5609177215189873
+   },
+   "w": 793,
+   "h": 1400,
+   "radius_frac": 0.11501807426881366,
+   "phantom": 1,
+   "member": "SIM/P2_7.0_dense.8337915.1/1/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "dense-7mm-100-3",
+   "density": "dense",
+   "size_mm": 7.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.7259887005649718,
+    "y": 0.5833333333333334
+   },
+   "w": 779,
+   "h": 1400,
+   "radius_frac": 0.11631771352608838,
+   "phantom": 3,
+   "member": "SIM/P2_7.0_dense.8337915.3/3/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "dense-7mm-100-5",
+   "density": "dense",
+   "size_mm": 7.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.5670391061452514,
+    "y": 0.553006329113924
+   },
+   "w": 793,
+   "h": 1400,
+   "radius_frac": 0.11501807426881366,
+   "phantom": 5,
+   "member": "SIM/P2_7.0_dense.8337915.5/5/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "dense-7mm-100-7",
+   "density": "dense",
+   "size_mm": 7.0,
+   "dose": 100,
+   "lesion": {
+    "x": 0.5670391061452514,
+    "y": 0.54296875
+   },
+   "w": 783,
+   "h": 1400,
+   "radius_frac": 0.11501807426881366,
+   "phantom": 7,
+   "member": "SIM/P2_7.0_dense.8337915.7/7/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "dense-7mm-100-2",
+   "density": "dense",
+   "size_mm": 7.0,
+   "dose": 100,
+   "lesion": null,
+   "w": 783,
+   "h": 1400,
+   "radius_frac": null,
+   "phantom": 2,
+   "member": "SIM/P2_7.0_dense.8337915.2/2/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "dense-7mm-100-4",
+   "density": "dense",
+   "size_mm": 7.0,
+   "dose": 100,
+   "lesion": null,
+   "w": 779,
+   "h": 1400,
+   "radius_frac": null,
+   "phantom": 4,
+   "member": "SIM/P2_7.0_dense.8337915.4/4/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "dense-7mm-20-1",
+   "density": "dense",
+   "size_mm": 7.0,
+   "dose": 20,
+   "lesion": {
+    "x": 0.6773743016759777,
+    "y": 0.5609177215189873
+   },
+   "w": 793,
+   "h": 1400,
+   "radius_frac": 0.11501807426881366,
+   "phantom": 1,
+   "member": "SIM/P2_7.0_dense.8337919.1/1/DICOM_dm/000.dcm"
+  },
+  {
+   "id": "dense-7mm-20-3",
+   "density": "dense",
+   "size_mm": 7.0,
+   "dose": 20,
+   "lesion": {
+    "x": 0.7259887005649718,
+    "y": 0.5833333333333334
+   },
+   "w": 779,
+   "h": 1400,
+   "radius_frac": 0.11631771352608838,
+   "phantom": 3,
+   "member": "SIM/P2_7.0_dense.8337919.3/3/DICOM_dm/000.dcm"
+  }
+ ]
+}

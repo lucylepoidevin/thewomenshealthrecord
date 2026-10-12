@@ -28,6 +28,9 @@ import Experiments from './experiments/pages/Experiments'
 import IngredientCheck from './ingredients/pages/IngredientCheck'
 import IngredientCheckMethods from './ingredients/pages/IngredientCheckMethods'
 import IngredientCheckData from './ingredients/pages/IngredientCheckData'
+import DenseBreast from './density/pages/DenseBreast'
+import DenseBreastMethods from './density/pages/DenseBreastMethods'
+import DenseBreastData from './density/pages/DenseBreastData'
 import { CHAPTERS } from './lib/chapters'
 
 import { EXPERIMENTS } from './experiments/list'
@@ -97,6 +100,9 @@ export default function App() {
           <Route path="/ingredient-check" element={<IngredientCheck />} />
           <Route path="/ingredient-check/methods" element={<IngredientCheckMethods />} />
           <Route path="/ingredient-check/data" element={<IngredientCheckData />} />
+          <Route path="/dense-breast" element={<DenseBreast />} />
+          <Route path="/dense-breast/methods" element={<DenseBreastMethods />} />
+          <Route path="/dense-breast/data" element={<DenseBreastData />} />
           <Route path="/chapters/tested-on-men" element={<Chapter1 />} />
           <Route path="/chapters/pain-gap" element={<Chapter2 />} />
           <Route path="/chapters/funding-vs-burden" element={<Chapter3 />} />
