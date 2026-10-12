@@ -15,4 +15,6 @@ export const EXPERIMENTS: Experiment[] = [
     dek: 'Synthetic mammograms from the FDA at four breast densities, some with a mass and some without. Try to find it, then see the screening numbers by density: who has dense breasts, what gets missed, what it raises.' },
   { n: 7, path: '/mammography-access', label: 'Mammography access', title: 'Mammography facilities by county, and the counties with none', short: 'Mammography access',
     dek: 'Every FDA-certified mammography facility placed on a county map and counted against the women aged 40 to 74 who live there. The counties with none, and how far their women have to travel.' },
+  { n: 8, path: '/mammography-ai', label: 'Mammography AI', title: 'Who the FDA\'s mammography AI was tested on', short: 'Mammography AI',
+    dek: 'Every FDA-authorised AI that reads mammograms, and what its public summary says about the test patients: how many, from where, on which machines, and whether age, race and breast density were reported at all.' },
 ]

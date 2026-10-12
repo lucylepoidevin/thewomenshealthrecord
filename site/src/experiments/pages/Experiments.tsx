@@ -13,8 +13,8 @@ export default function Experiments() {
         </h1>
         <p className="mx-auto mt-7 max-w-2xl text-lg text-ink-2 leading-relaxed">
           Three single-person brain imaging datasets from the same lab run through one measurement pipeline, a drug-level simulator built from published
-          sex-specific pharmacology, an ingredient checker against the official hormone-disruptor lists, and the FDA's synthetic mammograms at four breast
-          densities. Each page states what its data can and cannot show.
+          sex-specific pharmacology, an ingredient checker against the official hormone-disruptor lists, and three mammography studies: the FDA's synthetic mammograms at four
+          breast densities, every certified facility on a county map, and what the FDA's summaries say about who mammography AI was tested on. Each page states what its data can and cannot show.
         </p>
       </section>
 

@@ -34,6 +34,9 @@ import DenseBreastData from './density/pages/DenseBreastData'
 import MammographyAccess from './deserts/pages/MammographyAccess'
 import MammographyAccessMethods from './deserts/pages/MammographyAccessMethods'
 import MammographyAccessData from './deserts/pages/MammographyAccessData'
+import MammoAI from './mammoai/pages/MammoAI'
+import MammoAIMethods from './mammoai/pages/MammoAIMethods'
+import MammoAIData from './mammoai/pages/MammoAIData'
 import { CHAPTERS } from './lib/chapters'
 
 import { EXPERIMENTS } from './experiments/list'
@@ -109,6 +112,9 @@ export default function App() {
           <Route path="/mammography-access" element={<MammographyAccess />} />
           <Route path="/mammography-access/methods" element={<MammographyAccessMethods />} />
           <Route path="/mammography-access/data" element={<MammographyAccessData />} />
+          <Route path="/mammography-ai" element={<MammoAI />} />
+          <Route path="/mammography-ai/methods" element={<MammoAIMethods />} />
+          <Route path="/mammography-ai/data" element={<MammoAIData />} />
           <Route path="/chapters/tested-on-men" element={<Chapter1 />} />
           <Route path="/chapters/pain-gap" element={<Chapter2 />} />
           <Route path="/chapters/funding-vs-burden" element={<Chapter3 />} />
