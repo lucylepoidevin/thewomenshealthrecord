@@ -26,6 +26,6 @@ export function useDeserts() {
   }, [])
   return { data, topo, error }
 }
-export const ORDER = ['mqsa_list', 'mqsa_stats', 'popest', 'uspstf2024', 'geocoder', 'zcta', 'cenpop']
+export const ORDER = ['mqsa_list', 'mqsa_stats', 'geocoder', 'zcta', 'popest', 'uspstf2024', 'cenpop']
 export const fmtN = (n: number) => n.toLocaleString('en-US')
 export const km = (v: number) => `${Math.round(v)} km (${Math.round(v * 0.621)} mi)`

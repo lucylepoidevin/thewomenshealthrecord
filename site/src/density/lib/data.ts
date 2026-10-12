@@ -37,7 +37,7 @@ export function useDensity() {
 }
 
 /** Source numbering follows first use on the page. */
-export const ORDER = ['msynth', 'victre', 'fda_rule', 'bcsc_bench', 'sprague2014', 'bcsc_risk', 'kerlikowske2015', 'kerlikowske2011', 'uspstf2024', 'fda_press', 'lehman2017']
+export const ORDER = ['fda_rule', 'bcsc_bench', 'sprague2014', 'bcsc_risk', 'msynth', 'victre', 'kerlikowske2015', 'kerlikowske2011', 'uspstf2024', 'fda_press']
 export function srcNumber(id: string, sources: Record<string, Source>) {
   const ids = [...ORDER.filter(i => sources[i]), ...Object.keys(sources).filter(i => !ORDER.includes(i))]
   return ids.indexOf(id) + 1

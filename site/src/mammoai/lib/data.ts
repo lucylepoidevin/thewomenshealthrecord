@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 
 export type Role = 'detection' | 'triage' | 'density' | 'other' | 'risk'
+export const ROLE_SHORT: Record<Role, string> = { detection: 'Detection', triage: 'Triage', density: 'Density', other: 'Other', risk: 'Risk' }
 export const ROLE_LABEL: Record<Role, string> = { detection: 'Detection and diagnosis', triage: 'Triage', density: 'Breast density', other: 'Other (arterial calcification)', risk: 'Risk prediction' }
 export type Device = {
   submission: string; device: string; company: string; role: Role; decision_date: string; year: number; url: string; on_ai_list: boolean; product_code: string
@@ -31,5 +32,5 @@ export function useAudit() {
   useEffect(() => { fetch(`${DATA}audit.json`).then(r => r.json()).then(setData).catch(e => setError(String(e))) }, [])
   return { data, error }
 }
-export const ORDER = ['ai_list', 'summaries', 'fr2025', 'schema']
+export const ORDER = ['ai_list', 'summaries', 'schema', 'fr2025']
 export const fmtN = (n: number) => n.toLocaleString('en-US')

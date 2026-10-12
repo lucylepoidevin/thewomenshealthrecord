@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useMemo, useRef, useState } from 'react'
 import { DENSITIES, LETTER, SHORT, img, type Case, type Density, type DensityFile } from '../lib/data'
 
 type Guess = { x: number; y: number } | 'none' | null
@@ -20,8 +20,8 @@ function hit(c: Case, g: { x: number; y: number }, aspect: number) {
  */
 export default function Finder({ file }: { file: DensityFile }) {
   const [density, setDensity] = useState<Density>('fatty')
-  const [seen, setSeen] = useState<Record<string, true>>({})
-  const [cur, setCur] = useState<Case | null>(null)
+  const [cur, setCur] = useState<Case | null>(() => { const p = file.msynth.cases.filter(c => c.density === 'fatty' && c.dose === 100); return p[Math.floor(Math.random() * p.length)] })
+  const [seen, setSeen] = useState<Record<string, true>>(() => (cur ? { [cur.id]: true } : {}))
   const [guess, setGuess] = useState<Guess>(null)
   const [revealed, setRevealed] = useState(false)
   const [tally, setTally] = useState<Tally>(emptyTally)
@@ -36,7 +36,6 @@ export default function Finder({ file }: { file: DensityFile }) {
     setCur(c); setGuess(null); setRevealed(false)
     setSeen(s => ({ ...s, [c.id]: true }))
   }
-  useEffect(() => { next('fatty') }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   const choose = (d: Density) => { setDensity(d); next(d) }
   const onClick = (e: React.MouseEvent<HTMLImageElement>) => {

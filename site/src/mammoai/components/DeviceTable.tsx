@@ -1,5 +1,5 @@
 import { Fragment, useState } from 'react'
-import { ROLE_LABEL, fmtN, type Device } from '../lib/data'
+import { ROLE_SHORT, fmtN, type Device } from '../lib/data'
 
 const Y = ({ v }: { v: boolean }) => <span className={v ? 'text-ink' : 'text-ink-3'}>{v ? 'yes' : 'no'}</span>
 /** Every clearance, newest first, with the quotes behind each coded value on demand. */
@@ -16,7 +16,7 @@ export default function DeviceTable({ devices }: { devices: Device[] }) {
               <tr className="border-t border-hairline/70 align-top cursor-pointer hover:bg-white/5" onClick={() => setOpen(o => o === d.submission ? null : d.submission)}>
                 <td className="py-1 pr-3 whitespace-nowrap tabular-nums">{d.decision_date.slice(-4)} <a className="text-berry underline underline-offset-2" href={d.url} target="_blank" rel="noreferrer" onClick={e => e.stopPropagation()}>{d.submission}</a></td>
                 <td className="py-1 pr-3">{d.device}<span className="text-ink-3"> · {d.company}</span></td>
-                <td className="py-1 pr-3">{ROLE_LABEL[d.role].split(' ')[0]}</td>
+                <td className="py-1 pr-3">{ROLE_SHORT[d.role]}</td>
                 <td className="py-1 pr-3 text-right tabular-nums whitespace-nowrap">{d.test_exams ? `${fmtN(d.test_exams)} ${d.test_exams_unit === 'not stated' ? '' : d.test_exams_unit}` : <span className="text-ink-3">not stated</span>}</td>
                 <td className="py-1 pr-3">{d.test_countries.length ? d.test_countries.map(c => c === 'United States' ? 'US' : c === 'United Kingdom' ? 'UK' : c).join(', ') : <span className="text-ink-3">not stated</span>}</td>
                 <td className="py-1 pr-3"><Y v={d.age_reported} /></td><td className="py-1 pr-3"><Y v={d.race_reported} /></td><td className="py-1 pr-3"><Y v={d.density_reported} /></td><td className="py-1 pr-3"><Y v={d.subgroup_performance_reported} /></td>

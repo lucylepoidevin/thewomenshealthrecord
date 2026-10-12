@@ -39,7 +39,7 @@ export default function DenseBreast() {
       <>
         <p className="eyebrow mb-1">Who has dense breasts</p>
         <h3 className="display text-xl font-medium mb-1">Share of screening mammograms in each density category, by age</h3>
-        <p className="text-xs text-ink-3 mb-3">Computed here from the BCSC risk estimation dataset: {fmtN(st.bcsc_risk.with_density)} mammograms with a recorded density, {st.bcsc_risk.years}.<Cite id="bcsc_risk" sources={S} /></p>
+        <p className="text-xs text-ink-3 mb-3">Computed here from the BCSC risk estimation dataset: {fmtN(st.bcsc_risk.with_density)} mammograms of women aged 40 to 79 with a recorded density, {st.bcsc_risk.years}.<Cite id="bcsc_risk" sources={S} /></p>
         <DensityBars rows={st.bcsc_risk.by_age.map(r => ({ label: r.age, v: r.share }))} unit="% of mammograms" fmt={v => `${v}%`} />
       </>
     ) },
@@ -69,15 +69,15 @@ export default function DenseBreast() {
     { type: 'text', id: 't3', body: (
       <>
         <p>
-          Sensitivity, the share of cancers present that the mammogram caught, tells the same story less cleanly, because the denominator depends on finding the cancers later. The one BCSC table
-          that gives it by density for digital mammography puts it at {st.sens2011.rows[0].sens} percent in fatty breasts and {st.sens2011.rows[3].sens} percent in extremely dense ones, with confidence intervals
+          Sensitivity, the share of cancers present that the mammogram caught, tells the same story less cleanly, because the denominator depends on finding the cancers later. A BCSC table that gives
+          it by density for digital mammography, from 2000 to 2006, puts it at {st.sens2011.rows[0].sens} percent in fatty breasts and {st.sens2011.rows[3].sens} percent in extremely dense ones, with confidence intervals
           twenty to thirty points wide in the small categories.<Cite id="kerlikowske2011" sources={S} /> Overall, modern digital screening in the consortium finds {dm.sensitivity} percent of cancers, tomosynthesis{' '}
           {st.bcsc_bench.dbt.sensitivity} percent.<Cite id="bcsc_bench" sources={S} /> The BCSC has released a 2.5-million-exam file that would let this page compute sensitivity by density directly; it is requested by form, and
           the methods page says what happens when it arrives.
         </p>
         <p>
-          Dose matters less than density. The pair below is the same virtual breast with the same 7 mm mass at the clinical dose and at a fifth of it: noisier, but the mass does not move from
-          one category to another.
+          Dose is the smaller effect here. The pair below is the same virtual breast with the same 7 mm mass at the clinical dose and at a fifth of it: the low-dose image is noisier,
+          but in these images it is density, not dose, that decides whether the mass can be seen.
         </p>
       </>
     ) },
@@ -117,8 +117,8 @@ export default function DenseBreast() {
         </p>
         <h2 className="display text-3xl font-medium mb-4 mt-10">What your report now says</h2>
         <p>
-          The federal rule gives every patient one of two paragraphs, verbatim.<Cite id="fda_rule" sources={S} /> It took effect on 10 September 2024, after a decade of state laws that said it in different ways
-          or not at all.<Cite id="fda_press" sources={S} />
+          The federal rule gives every patient one of two paragraphs, verbatim.<Cite id="fda_rule" sources={S} /> It took effect on 10 September 2024, after years of state laws that said it in different ways or
+          not at all.<Cite id="fda_press" sources={S} />
         </p>
         <div className="my-5 space-y-4 text-base">
           <blockquote className="border-l-2 border-hairline pl-4 text-ink-2"><span className="eyebrow block mb-1">Not dense (A or B)</span>{st.fda.lay_not_dense}</blockquote>

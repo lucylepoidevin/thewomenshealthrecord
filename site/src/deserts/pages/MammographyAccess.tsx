@@ -38,8 +38,8 @@ export default function MammographyAccess() {
         <h2 className="display text-3xl font-medium mb-4">The counties with none</h2>
         <p>
           {fmtN(n.counties_without)} of the {fmtN(n.counties)} counties, {Math.round(100 * n.counties_without / n.counties)} percent, have no certified facility inside them. They are mostly small: together they hold{' '}
-          {fmtN(n.women_without)} women aged 40 to 74, {n.women_without_pct} percent of the national total. Most of those women live within an hour of a facility in the next county, which is why a county
-          with none is not automatically a desert. Distance is the better measure, so the second map colours each of those counties by the distance from its population centre to the
+          {fmtN(n.women_without)} women aged 40 to 74, {n.women_without_pct} percent of the national total. {Math.round(100 * (n.women_without - n.nearest_over_50km_women) / n.women_without)} percent of those women live in a county whose population centre is within
+          50 kilometres of a facility in another county, which is why a county with none is not automatically a desert. Distance is the better measure, so the second map colours each of those counties by the distance from its population centre to the
           nearest certified facility anywhere.<Cite id="cenpop" sources={S} />
         </p>
         <p>

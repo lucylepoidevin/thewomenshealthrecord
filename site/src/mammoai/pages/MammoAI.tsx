@@ -33,7 +33,7 @@ export default function MammoAI() {
           For each, the public document the FDA releases with the decision was read in full: a 510(k) summary, a De Novo decision summary or a PMA summary of safety and effectiveness.<Cite id="summaries" sources={S} /> Each
           was coded against one schema: what the test set was, how big, from how many sites in which countries, on which manufacturers' machines, and whether the patients' age, race or
           ethnicity and breast density were reported, with a verbatim quote behind every value.<Cite id="schema" sources={S} /> {data.devices.length - described.length} documents describe no test at all, either because
-          the company filed a statement instead of a summary or because the clearance refers back to an earlier one, so the shares below are of the {described.length} that do.
+          the company filed a statement instead of a summary, because the clearance refers back to an earlier one, or because it covers a software change with no new clinical data, so the shares below are of the {described.length} that describe a test, whether or not they give its size.
         </p>
       </>
     ) },
@@ -41,7 +41,7 @@ export default function MammoAI() {
       <>
         <h2 className="display text-3xl font-medium mb-4">Who the test patients were</h2>
         <p>
-          Of the {described.length} summaries that describe a test set, {pct(d => d.race_reported)} percent say anything about the race or ethnicity of the patients in it, and{' '}
+          Of the {described.length} summaries that describe a test, {pct(d => d.race_reported)} percent say anything about the race or ethnicity of the patients in it, and{' '}
           {pct(d => d.density_reported)} percent give their breast density. Age is stated in {pct(d => d.age_reported)} percent. The country the images came from is named in{' '}
           {pct(d => d.test_countries.length > 0)} percent, and the United States in {pct(d => d.us_in_test)} percent.
         </p>
@@ -68,13 +68,14 @@ export default function MammoAI() {
         <h2 className="display text-3xl font-medium mb-4">How big, and on whose machines</h2>
         <p>
           Where a test set size is given, the median is {fmtN(s.median_size)} exams, cases or patients, with a range from a few hundred to {fmtN(biggest!.test_exams!)} ({biggest!.device}, {biggest!.company}).
-          Reader studies, in which radiologists read with and without the software, are mostly 240 cases, the design the FDA's own guidance on computer-aided detection made standard, and
-          they are cancer-enriched: the share of cancers in them is far above the handful per thousand in screening.
+          Reader studies, in which radiologists read with and without the software, are small: more than half use 240 cases, and they are cancer-enriched: the share of cancers in them is far above the
+          handful per thousand in screening.
         </p>
         <p>
-          The images come overwhelmingly from Hologic machines, named in {s.vendors['Hologic'] ?? 0} of the {s.n} summaries; GE in {s.vendors['GE'] ?? 0}, Siemens in {s.vendors['Siemens'] ?? 0}, Fujifilm in{' '}
-          {s.vendors['Fujifilm'] ?? 0}, Philips in {s.vendors['Philips'] ?? 0}. {s.hologic_only} summaries describe a test set from Hologic machines alone. Among countries, the United States is named in{' '}
-          {s.countries['United States'] ?? 0}, and {Object.keys(s.countries).length - 1} other countries appear at least once. Only a few summaries say where the training data came from at all.
+          Hologic is named in {s.vendors['Hologic'] ?? 0} of the {s.n} documents, as the machines the test images came from or as the systems the software supports; GE in {s.vendors['GE'] ?? 0}, Siemens in{' '}
+          {s.vendors['Siemens'] ?? 0}, Fujifilm in {s.vendors['Fujifilm'] ?? 0}, Philips in {s.vendors['Philips'] ?? 0}. {s.hologic_only} documents name Hologic alone. Among countries, the United States is named in{' '}
+          {s.countries['United States'] ?? 0}, and {Object.keys(s.countries).length - 1} other countries appear at least once. {data.devices.filter(d => d.training_data_described).length} of the {s.n} documents say anything about
+          where the training data came from.
         </p>
         <p>
           When race is reported, the categories are uneven and often small, and "unknown" is common. The De Novo decision for the risk model is the exception: 77,511 screening exams from five
@@ -126,7 +127,7 @@ export default function MammoAI() {
       {data && s && (
         <section id="timeline" className="mx-auto max-w-5xl px-4">
           <div className="grid gap-4 sm:grid-cols-4">
-            {[[s.n, 'authorisations read'], [`${pct(d => d.race_reported)}%`, 'of summaries with a test set report race or ethnicity'], [`${pct(d => d.density_reported)}%`, 'report breast density'], [`${s.vendors['Hologic'] ?? 0}`, 'name Hologic machines']].map(([v, l]) => (
+            {[[s.n, 'authorisations read'], [`${pct(d => d.race_reported)}%`, 'of summaries that describe a test report race or ethnicity'], [`${pct(d => d.density_reported)}%`, 'report breast density'], [`${s.vendors['Hologic'] ?? 0}`, 'name Hologic']].map(([v, l]) => (
               <div key={l as string} className="rule pt-3"><p className="display text-4xl font-light text-ink">{v}</p><p className="mt-1 text-sm text-ink-2">{l}</p></div>
             ))}
           </div>
