@@ -40,6 +40,30 @@ def collect_urls():
     return urls
 
 
+def verify_archive(url):
+    """An archived page link taken from an index capture can itself be blocked (HTTP 403) or missing; if so,
+    ask the Wayback availability API for the closest working capture of the original page."""
+    import urllib.request, urllib.parse
+    try:
+        req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=60) as r:
+            if r.status < 400:
+                return url
+    except Exception:
+        pass
+    original = url.split("/", 5)[-1] if "/web/" in url else url
+    try:
+        q = "https://archive.org/wayback/available?url=" + urllib.parse.quote(original, safe="")
+        with urllib.request.urlopen(q, timeout=60) as r:
+            closest = json.load(r).get("archived_snapshots", {}).get("closest") or {}
+            if closest.get("available"):
+                print(f"  archive link replaced: {url} -> {closest['url']}")
+                return closest["url"].replace("http://web.archive.org", "https://web.archive.org")
+    except Exception:
+        pass
+    return url
+
+
 def last_pair_after(label, text):
     """Find 'Female 30 (25.6) 28 (23.5) 58 (24.6)' and return the last (n, pct)."""
     best = None
@@ -96,6 +120,9 @@ def main():
             if slug not in urls:
                 urls[slug] = ("archive-cdx", f"https://web.archive.org/web/{ts}/{original}")
         print(f"  + archive-cdx pages: {sum(1 for v in urls.values() if v[0] == 'archive-cdx')}")
+    for slug, (src, u) in list(urls.items()):
+        if src != "live":
+            urls[slug] = (src, verify_archive(u))
     print(f"{len(urls)} snapshot URLs collected")
     # Pre-fetch into the cache: live pages first (fast), then archived pages with a small pool.
     from concurrent.futures import ThreadPoolExecutor

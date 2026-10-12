@@ -28,7 +28,7 @@
 }
 
 html { scroll-behavior: smooth; }
-body {
+body { overflow-wrap: anywhere;
   background: var(--color-blush);
   background-image: radial-gradient(1200px 600px at 50% -10%, #fff7f9 0%, var(--color-blush) 60%);
   color: var(--color-ink);
