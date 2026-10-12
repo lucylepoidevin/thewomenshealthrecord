@@ -31,6 +31,9 @@ import IngredientCheckData from './ingredients/pages/IngredientCheckData'
 import DenseBreast from './density/pages/DenseBreast'
 import DenseBreastMethods from './density/pages/DenseBreastMethods'
 import DenseBreastData from './density/pages/DenseBreastData'
+import MammographyAccess from './deserts/pages/MammographyAccess'
+import MammographyAccessMethods from './deserts/pages/MammographyAccessMethods'
+import MammographyAccessData from './deserts/pages/MammographyAccessData'
 import { CHAPTERS } from './lib/chapters'
 
 import { EXPERIMENTS } from './experiments/list'
@@ -103,6 +106,9 @@ export default function App() {
           <Route path="/dense-breast" element={<DenseBreast />} />
           <Route path="/dense-breast/methods" element={<DenseBreastMethods />} />
           <Route path="/dense-breast/data" element={<DenseBreastData />} />
+          <Route path="/mammography-access" element={<MammographyAccess />} />
+          <Route path="/mammography-access/methods" element={<MammographyAccessMethods />} />
+          <Route path="/mammography-access/data" element={<MammographyAccessData />} />
           <Route path="/chapters/tested-on-men" element={<Chapter1 />} />
           <Route path="/chapters/pain-gap" element={<Chapter2 />} />
           <Route path="/chapters/funding-vs-burden" element={<Chapter3 />} />
