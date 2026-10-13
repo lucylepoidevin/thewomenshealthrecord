@@ -8,7 +8,7 @@ export type DesertsFile = {
   generated: string
   national: { facilities_in_file: number; file_date: string; facilities_placed: { address: number; zip: number; unplaced: number }; excluded: { 'outside the 50 states and DC': number; 'by state': Record<string, number> }
     counties: number; women_40_74: number; counties_without: number; women_without: number; women_without_pct: number
-    nearest_over_50km_counties: number; nearest_over_50km_women: number; nearest_over_100km_counties: number; nearest_over_100km_women: number; per10k_national: number; unassigned_county: number }
+    nearest_over_30mi_counties: number; nearest_over_30mi_women: number; nearest_over_60mi_counties: number; nearest_over_60mi_women: number; per10k_national: number; unassigned_county: number }
   states: StateRow[]
   counties: County[]
   sources: Record<string, Source>
@@ -28,4 +28,6 @@ export function useDeserts() {
 }
 export const ORDER = ['mqsa_list', 'mqsa_stats', 'geocoder', 'zcta', 'popest', 'uspstf2024', 'cenpop']
 export const fmtN = (n: number) => n.toLocaleString('en-US')
-export const km = (v: number) => `${Math.round(v)} km (${Math.round(v * 0.621)} mi)`
+export const MI = 0.621371
+export const miles = (v: number) => `${Math.round(v * MI)} miles`
+export const mi = (v: number) => `${Math.round(v * MI)} mi`

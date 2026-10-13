@@ -6,7 +6,7 @@ import { jumpTo } from '../../cycling/lib/jump'
 import CountyMap, { type Metric } from '../components/CountyMap'
 import StateTable from '../components/StateTable'
 import Cite, { SourceList } from '../components/Cite'
-import { fmtN, km, useDeserts } from '../lib/data'
+import { fmtN, mi, miles, useDeserts } from '../lib/data'
 
 export default function MammographyAccess() {
   const { data, topo, error } = useDeserts()
@@ -38,15 +38,15 @@ export default function MammographyAccess() {
         <h2 className="display text-3xl font-medium mb-4">The counties with none</h2>
         <p>
           {fmtN(n.counties_without)} of the {fmtN(n.counties)} counties, {Math.round(100 * n.counties_without / n.counties)} percent, have no certified facility inside them. They are mostly small: together they hold{' '}
-          {fmtN(n.women_without)} women aged 40 to 74, {n.women_without_pct} percent of the national total. {Math.round(100 * (n.women_without - n.nearest_over_50km_women) / n.women_without)} percent of those women live in a county whose population centre is within
-          50 kilometres of a facility in another county, which is why a county with none is not automatically a desert. Distance is the better measure, so the second map colours each of those counties by the distance from its population centre to the
+          {fmtN(n.women_without)} women aged 40 to 74, {n.women_without_pct} percent of the national total. {Math.round(100 * (n.women_without - n.nearest_over_30mi_women) / n.women_without)} percent of those women live in a county whose population centre is within
+          30 miles of a facility in another county, which is why a county with none is not automatically a desert. Distance is the better measure, so the second map colours each of those counties by the distance from its population centre to the
           nearest certified facility anywhere.<Cite id="cenpop" sources={S} />
         </p>
         <p>
-          By that measure, {n.nearest_over_50km_counties} counties with {fmtN(n.nearest_over_50km_women)} women aged 40 to 74 are more than 50 kilometres, about 30 miles, from the nearest facility, and{' '}
-          {n.nearest_over_100km_counties} counties with {fmtN(n.nearest_over_100km_women)} women are more than 100 kilometres away. The furthest outside Alaska is {far.find(c => c.state !== 'AK')?.name},{' '}
-          {far.find(c => c.state !== 'AK')?.state}, at {km(far.find(c => c.state !== 'AK')!.nearest_km!)}. The largest county with no facility at all is {farBig[0].name}, {farBig[0].state}, with{' '}
-          {fmtN(farBig[0].women)} women in the screening age range and the nearest facility {km(farBig[0].nearest_km!)} from its population centre.
+          By that measure, {n.nearest_over_30mi_counties} counties with {fmtN(n.nearest_over_30mi_women)} women aged 40 to 74 are more than 30 miles from the nearest facility, and{' '}
+          {n.nearest_over_60mi_counties} counties with {fmtN(n.nearest_over_60mi_women)} women are more than 60 miles away. The furthest outside Alaska is {far.find(c => c.state !== 'AK')?.name},{' '}
+          {far.find(c => c.state !== 'AK')?.state}, at {miles(far.find(c => c.state !== 'AK')!.nearest_km!)}. The largest county with no facility at all is {farBig[0].name}, {farBig[0].state}, with{' '}
+          {fmtN(farBig[0].women)} women in the screening age range and the nearest facility {miles(farBig[0].nearest_km!)} from its population centre.
         </p>
       </>
     ) },
@@ -56,11 +56,11 @@ export default function MammographyAccess() {
         <h3 className="display text-xl font-medium mb-3">Furthest from a mammography facility, and most women without one</h3>
         <div className="grid gap-6 sm:grid-cols-2 text-xs">
           <table className="w-full"><thead><tr className="text-left text-ink-3"><th className="py-1 pr-2">Furthest (outside Alaska)</th><th className="py-1 pr-2 text-right">Women 40 to 74</th><th className="py-1 text-right">Nearest facility</th></tr></thead>
-            <tbody>{far.filter(c => c.state !== 'AK').slice(0, 10).map(c => <tr key={c.fips} className="border-t border-hairline/70"><td className="py-1 pr-2">{c.name}, {c.state}</td><td className="py-1 pr-2 text-right tabular-nums">{fmtN(c.women)}</td><td className="py-1 text-right tabular-nums">{km(c.nearest_km!)}</td></tr>)}</tbody></table>
+            <tbody>{far.filter(c => c.state !== 'AK').slice(0, 10).map(c => <tr key={c.fips} className="border-t border-hairline/70"><td className="py-1 pr-2">{c.name}, {c.state}</td><td className="py-1 pr-2 text-right tabular-nums">{fmtN(c.women)}</td><td className="py-1 text-right tabular-nums">{mi(c.nearest_km!)}</td></tr>)}</tbody></table>
           <table className="w-full"><thead><tr className="text-left text-ink-3"><th className="py-1 pr-2">Most women, no facility</th><th className="py-1 pr-2 text-right">Women 40 to 74</th><th className="py-1 text-right">Nearest facility</th></tr></thead>
-            <tbody>{farBig.map(c => <tr key={c.fips} className="border-t border-hairline/70"><td className="py-1 pr-2">{c.name}, {c.state}</td><td className="py-1 pr-2 text-right tabular-nums">{fmtN(c.women)}</td><td className="py-1 text-right tabular-nums">{km(c.nearest_km!)}</td></tr>)}</tbody></table>
+            <tbody>{farBig.map(c => <tr key={c.fips} className="border-t border-hairline/70"><td className="py-1 pr-2">{c.name}, {c.state}</td><td className="py-1 pr-2 text-right tabular-nums">{fmtN(c.women)}</td><td className="py-1 text-right tabular-nums">{mi(c.nearest_km!)}</td></tr>)}</tbody></table>
         </div>
-        <p className="mt-3 text-xs text-ink-3">Alaska's census areas are the furthest of all: {far[0].name} is {km(far[0].nearest_km!)} from the nearest certified facility. Distances are straight lines from the county's 2020 population centre, not road miles.</p>
+        <p className="mt-3 text-xs text-ink-3">Alaska's census areas are the furthest of all: {far[0].name} is {miles(far[0].nearest_km!)} from the nearest certified facility. Distances are straight lines from the county's 2020 population centre, not road miles.</p>
       </>
     ) },
     { type: 'text', id: 't3', body: (
