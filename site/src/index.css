@@ -61,6 +61,9 @@ sup.cite a { color: var(--color-berry); text-decoration: none; font-weight: 600;
 }
 svg text { font-family: var(--font-body); }
 .table-wrap { overflow-x: auto; }
+/* tables scroll sideways rather than breaking words; the body-level overflow-wrap is for prose */
+th, td { overflow-wrap: normal; }
+.table-wrap th { white-space: nowrap; }
 .th-sort { cursor: pointer; user-select: none; }
 .th-sort:hover { color: var(--color-berry); }
 
