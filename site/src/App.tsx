@@ -130,8 +130,6 @@ export default function App() {
         <div className="mx-auto max-w-6xl px-4 py-10 text-sm text-ink-2 border-t border-hairline/70 flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
           <div>
             <span className="display text-berry font-semibold">The Women's Health Record</span>
-            <span className="mx-2 text-ink-3">·</span>
-            <span>by Lucy LePoidevin</span>
           </div>
           <div className="flex gap-4">
             <a href="https://substack.com/@thewomenshealthrecord" className="hover:text-berry" target="_blank" rel="noreferrer">Substack</a>

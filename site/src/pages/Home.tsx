@@ -9,8 +9,8 @@ export default function Home() {
         <div className="max-w-[42rem]">
           <h1 className="display text-3xl sm:text-[2.5rem] font-medium leading-[1.15]">The Women's Health Record</h1>
           <p className="mt-4 text-[17px] text-ink-2 leading-relaxed">
-            Public data on how medicine measures, tests and treats women, re-analysed from the primary sources. Six chapters and eight interactive experiments,
-            by Lucy LePoidevin. Every number links to where it came from.
+            Public data on how medicine measures, tests and treats women, re-analysed from the primary sources. Six chapters and eight interactive experiments.
+            Every number links to where it came from.
           </p>
           <p className="mt-4 text-sm text-ink-3">
             <Link to={`/chapters/${CHAPTERS[0].slug}`} className="text-berry underline underline-offset-4">Start with chapter 1</Link>
