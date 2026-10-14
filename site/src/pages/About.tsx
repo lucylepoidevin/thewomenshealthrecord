@@ -18,7 +18,7 @@ export default function About() {
 
       <Section title="What it is">
         <p>The Women's Health Record is a series of data chapters and interactive experiments on where medicine treats women and men differently: who is studied, who is dosed, who waits longest, whose diseases are funded, and what the public record holds on breast screening.</p>
-        <p>Each chapter is an original analysis of a public dataset, published with its full method and a link from every number to its source. Chapters are added one at a time, alongside essays on <a href="https://substack.com/@thewomenshealthrecord" target="_blank" rel="noreferrer">Substack</a>.</p>
+        <p>Each chapter is an original analysis of a public dataset, published with its full method and a link from every number to its source.</p>
       </Section>
 
       <Section title="How to read it">
@@ -27,7 +27,7 @@ export default function About() {
       </Section>
 
       <Section title="Who">
-        <p>The Women's Health Record is written, analysed and built by Lucy LePoidevin. The data pipelines, the charts and the text are hers; the datasets belong to the public agencies and researchers who collected them, and are credited under every chart.</p>
+        <p>The Women's Health Record is written, analysed and built by Lucy LePoidevin.</p>
       </Section>
 
       <Section title="Sources">
