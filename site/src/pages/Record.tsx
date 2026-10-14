@@ -34,8 +34,8 @@ export default function Record() {
     <div className="mx-auto max-w-5xl px-4 pt-20 pb-16">
       <header className="pb-8">
         <p className="eyebrow">The record</p>
-        <h1 className="display mt-2 text-3xl sm:text-[2.5rem] font-medium leading-[1.15]">One condition, every chapter</h1>
-        <p className="mt-4 max-w-2xl text-[17px] text-ink-2 leading-relaxed">Pick a condition. This pulls together what the six chapters know about it: who it burdens, what research it gets, who is in its trials, who its drugs were tested on and what their labels say, how its patients fare in the emergency department, and, for cancers, when it is found.</p>
+        <h1 className="display mt-2 text-3xl sm:text-[2.5rem] font-medium leading-[1.15]">Condition lookup</h1>
+        <p className="mt-4 max-w-2xl text-[17px] text-ink-2 leading-relaxed">Select a condition to see its figures from each chapter: share of US disease burden carried by women, NIH funding against burden, share of women in its clinical trials and what the trials exclude, who its approved drugs were tested on and what their labels say about sex, pregnancy and dosing, triage and wait times in the emergency department, and, for cancers, stage and age at diagnosis by sex.</p>
         <p className="mt-6 text-[15px] text-ink-2">Show me{' '}
           <select value={c.disease} onChange={e => setPick(e.target.value)} className="max-w-full rounded-md border border-hairline bg-white px-4 py-2 text-[15px] outline-none focus:border-rose focus:ring-4 focus:ring-rose/10" aria-label="Condition">
             {data.conditions.map(x => <option key={x.disease} value={x.disease}>{x.disease}</option>)}

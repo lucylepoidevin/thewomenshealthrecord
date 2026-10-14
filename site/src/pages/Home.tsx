@@ -13,13 +13,6 @@ export default function Home() {
             the CDC's emergency department survey, NIH funding and WHO burden data, the SEER cancer registries, the FDA's mammography facility list and device summaries, and
             openly shared MRI datasets. Six chapters and eight interactive experiments.
           </p>
-          <p className="mt-4 text-sm text-ink-3">
-            <Link to={`/chapters/${CHAPTERS[0].slug}`} className="text-berry underline underline-offset-4">Start with chapter 1</Link>
-            <span className="mx-2">·</span>
-            <Link to="/record" className="text-berry underline underline-offset-4">Look up a condition</Link>
-            <span className="mx-2">·</span>
-            <Link to="/methods" className="text-berry underline underline-offset-4">Methods</Link>
-          </p>
         </div>
       </section>
 
