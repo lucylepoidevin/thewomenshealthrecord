@@ -12,7 +12,7 @@ export default function About() {
         <p className="eyebrow">About</p>
         <h1 className="display mt-2 text-3xl sm:text-[2.5rem] font-medium leading-[1.15]">About this project</h1>
         <p className="mt-4 max-w-2xl text-[17px] text-ink-2 leading-relaxed">
-          A series of analyses of public data on women's health, with the code and sources published alongside each one. By Lucy LePoidevin.
+          A series of analyses of public data on women's health, with the code and sources published alongside each one.
         </p>
       </header>
 
