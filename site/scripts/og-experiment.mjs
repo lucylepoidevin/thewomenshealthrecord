@@ -2,7 +2,7 @@
 // Needs the dev server running (npm run dev) on 5173.
 import { chromium } from 'playwright'
 const slug = process.argv[2] ?? 'cycling-brain'
-const url = `http://localhost:5173/thewomenshealthrecord/#/${slug}`
+const url = `http://localhost:5173/thewomenshealthrecord/#/${slug === 'home' ? '' : slug}`
 const browser = await chromium.launch()
 const page = await browser.newPage({ viewport: { width: 1200, height: 630 }, deviceScaleFactor: 2 })
 await page.goto(url, { waitUntil: 'networkidle' })
