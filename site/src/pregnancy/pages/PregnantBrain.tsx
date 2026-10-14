@@ -39,7 +39,7 @@ export default function PregnantBrain() {
   const blocks: Block[] = data ? [
     { type: 'text', id: 't1', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">What you are looking at</h2>
+        <h2 className="display text-3xl font-medium mb-4">The data</h2>
         <p>
           In the summer of 2019 a 38-year-old neuroscientist, one of the study's own authors, lay down in a scanner three weeks before she tried to conceive. She went back
           twenty-six more times: through an IVF conception, every few weeks of the pregnancy, and then across the two years and eight months after her child was born.
@@ -58,7 +58,7 @@ export default function PregnantBrain() {
     ) },
     { type: 'text', id: 't2', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">What pregnancy does, hormonally</h2>
+        <h2 className="display text-3xl font-medium mb-4">Hormone levels across pregnancy</h2>
         <p>
           If you came here from <Link to="/cycling-brain">the cycling brain</Link>, hold its numbers in your head. Across a menstrual cycle, estradiol moved between about 20 and
           260 pg/mL, and progesterone between almost nothing and 15 ng/mL. Those were the largest hormonal swings a non-pregnant body produces.<Cite id="cycling" />
@@ -75,7 +75,7 @@ export default function PregnantBrain() {
     { type: 'figure', id: 'f1', size: 'flow', body: <KeyNumbers data={data} /> },
     { type: 'text', id: 't3', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">What changed in her brain, by our measurement</h2>
+        <h2 className="display text-3xl font-medium mb-4">Brain volumes across the cycle</h2>
         <p>
           We ran all 27 scans through the same pipeline as the cycling brain: alignment to a standard template, a published model that splits the brain into 133 structures,<Cite id="unest" />
           and volumes counted in the scan's own space. Then every structure was compared with its size before conception. The method is on the <Link to="/pregnancy-brain/methods">methods page</Link>;
@@ -92,7 +92,7 @@ export default function PregnantBrain() {
     { type: 'figure', id: 'f2', size: 'flow', body: <FindingsTable data={data} /> },
     { type: 'text', id: 't4', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">What the original study found</h2>
+        <h2 className="display text-3xl font-medium mb-4">Published findings from the same dataset</h2>
         <p>
           The lab's own analysis, with a different segmentation and with cortical thickness and diffusion imaging we did not use, reported pronounced decreases in grey-matter volume
           and cortical thickness across the brain, about 4% in roughly 80% of the regions measured, in step with the rising hormones, alongside increases in ventricle volume and
@@ -111,7 +111,7 @@ export default function PregnantBrain() {
     ) },
     { type: 'text', id: 't5', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">What this can and cannot tell you</h2>
+        <h2 className="display text-3xl font-medium mb-4">Limitations</h2>
         <p><strong>This is one woman.</strong> One pregnancy, one brain, one set of scanners. It shows what <em>can</em> happen, not what will happen to anyone else.</p>
         <p>
           <strong>The scanner changed at week 9.</strong> The four baseline scans and the first two pregnancy scans were in Santa Barbara; everything from week 9 on was in Irvine, until
@@ -130,7 +130,7 @@ export default function PregnantBrain() {
     ) },
     { type: 'text', id: 't6', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">How it was made</h2>
+        <h2 className="display text-3xl font-medium mb-4">Method</h2>
         <p>
           The 27 T1-weighted scans were downloaded from OpenNeuro (ds005299, CC0).<Cite id="openneuro" /> Each was bias-corrected and affine-aligned to the MNI305 template with
           ANTs,<Cite id="ants" /><Cite id="mni305" /> segmented into 133 structures with the MONAI model-zoo bundle <em>wholeBrainSeg_Large_UNEST_segmentation</em>,<Cite id="unest" /> and

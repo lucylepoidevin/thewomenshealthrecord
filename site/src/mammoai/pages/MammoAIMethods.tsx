@@ -19,7 +19,7 @@ export default function MammoAIMethods() {
           <li key={t} className="flex gap-5"><span className="display mt-0.5 w-8 shrink-0 text-2xl font-light text-berry tabular-nums">{i + 1}</span><div><h2 className="display text-2xl font-medium">{t}</h2><p className="mt-2 text-ink-2 leading-relaxed">{b}</p></div></li>
         ))}
       </ol>
-      <h2 className="display mt-14 text-2xl font-medium">What to be careful about</h2>
+      <h2 className="display mt-14 text-2xl font-medium">Limitations</h2>
       <ul className="mt-3 space-y-3 text-ink-2 leading-relaxed list-disc pl-5">
         <li><strong className="text-ink">Summaries are not submissions.</strong> The FDA sees far more than it publishes. Silence in a summary is silence in the public record, not proof the company did not look.</li>
         <li><strong className="text-ink">Versions count separately.</strong> A company that cleared five versions of one product appears five times; that is how the public record is structured, and each version is its own row in the table.</li>
@@ -27,7 +27,7 @@ export default function MammoAIMethods() {
         <li><strong className="text-ink">Coding is judgement.</strong> Especially for "describes a test" and for population type. Every record is published with its quotes so a reader can disagree with the code and see why.</li>
         <li><strong className="text-ink">Not a performance review.</strong> The page says nothing about whether these devices work, only what their public documents say about who they were tested on.</li>
       </ul>
-      <h2 className="display mt-14 text-2xl font-medium">Run it</h2>
+      <h2 className="display mt-14 text-2xl font-medium">Reproduce</h2>
       <pre className="panel mt-3 overflow-x-auto text-sm leading-relaxed text-ink"><code>{`cd "mammography ai project/pipeline"
 python3 fetch_summaries.py   # downloads every FDA document in devices.py and extracts its text
 # code each data/raw/txt/<submission>.txt into data/coded/<submission>.json following data/coded/_SCHEMA.md

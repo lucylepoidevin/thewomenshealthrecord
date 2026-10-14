@@ -19,7 +19,7 @@ export default function MammographyAccess() {
   const blocks: Block[] = data && n ? [
     { type: 'text', id: 't1', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">What the map counts</h2>
+        <h2 className="display text-3xl font-medium mb-4">Data and definitions</h2>
         <p>
           Every mammography facility in the United States must hold a certificate under the Mammography Quality Standards Act, and the FDA publishes the list of certified facilities with their
           addresses every week.<Cite id="mqsa_list" sources={S} /> The file used here, dated {n.file_date}, holds {fmtN(n.facilities_in_file)} entries; the FDA's own scorecard counted 9,128 certified facilities with
@@ -35,7 +35,7 @@ export default function MammographyAccess() {
     ) },
     { type: 'text', id: 't2', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">The counties with none</h2>
+        <h2 className="display text-3xl font-medium mb-4">Counties with no certified facility</h2>
         <p>
           {fmtN(n.counties_without)} of the {fmtN(n.counties)} counties, {Math.round(100 * n.counties_without / n.counties)} percent, have no certified facility inside them. They are mostly small: together they hold{' '}
           {fmtN(n.women_without)} women aged 40 to 74, {n.women_without_pct} percent of the national total. {Math.round(100 * (n.women_without - n.nearest_over_30mi_women) / n.women_without)} percent of those women live in a county whose population centre is within
@@ -82,7 +82,7 @@ export default function MammographyAccess() {
     ) },
     { type: 'text', id: 't4', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">How it was made, and what it cannot say</h2>
+        <h2 className="display text-3xl font-medium mb-4">Method and limitations</h2>
         <p>
           A script downloads the FDA list, geocodes every address, assigns each point to its 2023 county boundary, joins the county population by age and sex, and measures the distance from
           every county's population centre to the nearest facility. {fmtN(n.facilities_placed.address)} facilities were placed by street address, {fmtN(n.facilities_placed.zip)} by ZIP code, and{' '}

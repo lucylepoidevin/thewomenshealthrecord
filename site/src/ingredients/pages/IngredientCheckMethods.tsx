@@ -19,7 +19,7 @@ export default function IngredientCheckMethods() {
           <li key={t} className="flex gap-5"><span className="display mt-0.5 w-8 shrink-0 text-2xl font-light text-berry tabular-nums">{i + 1}</span><div><h2 className="display text-2xl font-medium">{t}</h2><p className="mt-2 text-ink-2 leading-relaxed">{b}</p></div></li>
         ))}
       </ol>
-      <h2 className="display mt-14 text-2xl font-medium">What to be careful about</h2>
+      <h2 className="display mt-14 text-2xl font-medium">Limitations</h2>
       <ul className="mt-3 space-y-3 text-ink-2 leading-relaxed list-disc pl-5">
         <li><strong className="text-ink">Hazard, not risk.</strong> Every list is a hazard list. Dose, route and concentration decide risk, and cosmetics regulators set concentration limits for exactly that reason.</li>
         <li><strong className="text-ink">Short lists.</strong> About three hundred chemicals against tens of thousands of ingredients. A clean result is not an assessment.</li>
@@ -27,7 +27,7 @@ export default function IngredientCheckMethods() {
         <li><strong className="text-ink">Lists change.</strong> The EU lists update at least twice a year; the table is dated and the script re-runs in minutes.</li>
         <li><strong className="text-ink">Names are the weak point.</strong> A label spelling the synonym table has not met is simply not matched. Tell us and it gets added.</li>
       </ul>
-      <h2 className="display mt-14 text-2xl font-medium">Run it</h2>
+      <h2 className="display mt-14 text-2xl font-medium">Reproduce</h2>
       <pre className="panel mt-3 overflow-x-auto text-sm leading-relaxed text-ink"><code>{`cd "ingredient check project/pipeline"
 python3 build_lists.py     # downloads nothing itself; reads data/raw/ and writes site/public/data/ingredients/ingredients.json`}</code></pre>
       {data && <p className="mt-6 text-sm text-ink-3">Table generated {data.generated}.</p>}

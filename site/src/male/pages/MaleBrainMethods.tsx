@@ -24,7 +24,7 @@ export default function MaleBrainMethods() {
           </li>
         ))}
       </ol>
-      <h2 className="display mt-14 text-2xl font-medium">What to be careful about</h2>
+      <h2 className="display mt-14 text-2xl font-medium">Limitations</h2>
       <ul className="mt-3 space-y-3 text-ink-2 leading-relaxed list-disc pl-5">
         <li><strong className="text-ink">n = 1, and the comparison is n = 2.</strong> One man, one month; one woman, one month. Suggestive, not a sex difference.</li>
         <li><strong className="text-ink">Time of day carries more than hormones.</strong> Hours upright, food, drink and sleep all move brain water between 7 am and 8 pm. The paired change is real; its cause is not isolated.</li>
@@ -32,7 +32,7 @@ export default function MaleBrainMethods() {
         <li><strong className="text-ink">Blocks are confounded with days.</strong> Mornings came first, evenings last. Anything that drifted over the month (scanner, habits) lands partly in the morning-evening difference. The ten double days, which interleave the two, are the clean test.</li>
         <li><strong className="text-ink">Research tool.</strong> The model's authors state it is not for diagnostic use. Neither is this page.</li>
       </ul>
-      <h2 className="display mt-14 text-2xl font-medium">Run it</h2>
+      <h2 className="display mt-14 text-2xl font-medium">Reproduce</h2>
       <pre className="panel mt-3 overflow-x-auto text-sm leading-relaxed text-ink"><code>{`cd pipeline
 .venv/bin/python fetch_28andhe.py     # 40 T1w scans from OpenNeuro, ~700 MB
 .venv/bin/python preprocess.py        # N4 + affine to MNI305

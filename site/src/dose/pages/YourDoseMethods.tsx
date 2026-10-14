@@ -19,7 +19,7 @@ export default function YourDoseMethods() {
         <li><strong className="text-ink">Caffeine.</strong> Clearance, volume and time-to-peak for women off and on the pill from one oral study; the absorption rate is solved from the reported time-to-peak. Men from the control arm of an intravenous study, with volume derived from clearance and half-life and the women's absorption rate borrowed. Late pregnancy divides clearance by 3.5, the ratio of reported half-lives, with volume held, as that study found.</li>
         <li><strong className="text-ink">Metoprolol.</strong> Apparent oral clearance for S-metoprolol by sex straight from the original volunteers' steady-state exposure (dose over the 12-hour AUC: 240 L/h in men, 115 L/h in women); a 3.5 hour half-life from the label, which that study found did not differ by sex; volume from the two; and the absorption rate solved from the time-to-peak in a later published fit to the same data. That fit's own volume figures are inconsistent with its half-lives and are not used. Because clearance and volume are apparent values (already divided by bioavailability) F is set to 1, and because the study did not report body weights, the weight slider is disabled.</li>
       </ul>
-      <h2 className="display mt-12 text-2xl font-medium">What to be careful about</h2>
+      <h2 className="display mt-12 text-2xl font-medium">Limitations</h2>
       <ul className="mt-3 space-y-3 text-ink-2 leading-relaxed list-disc pl-5">
         <li>Each parameter set comes from eight to ten people. Individual variation is larger than the sex difference.</li>
         <li>Linear scaling with body weight is a convention, not a law; the acetaminophen study itself found distribution into weight above ideal weight is less than proportional.</li>
@@ -27,7 +27,7 @@ export default function YourDoseMethods() {
         <li>The lists update. The parameter file is dated, and every value can be traced and replaced.</li>
         <li>Not reviewed by a pharmacist or clinical pharmacologist yet. Not medical advice.</li>
       </ul>
-      <h2 className="display mt-12 text-2xl font-medium">Run it</h2>
+      <h2 className="display mt-12 text-2xl font-medium">Reproduce</h2>
       <pre className="panel mt-3 overflow-x-auto text-sm leading-relaxed text-ink"><code>{`cd "your dose project/pipeline"
 python3 build_drugs.py     # writes site/public/data/dose/drugs.json with every value's citation`}</code></pre>
       {data && (<><h2 className="display mt-12 text-2xl font-medium">Sources</h2><div className="mt-4"><SourceList file={data} /></div></>)}

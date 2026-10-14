@@ -20,7 +20,7 @@ export default function DenseBreastMethods() {
           <li key={t} className="flex gap-5"><span className="display mt-0.5 w-8 shrink-0 text-2xl font-light text-berry tabular-nums">{i + 1}</span><div><h2 className="display text-2xl font-medium">{t}</h2><p className="mt-2 text-ink-2 leading-relaxed">{b}</p></div></li>
         ))}
       </ol>
-      <h2 className="display mt-14 text-2xl font-medium">What to be careful about</h2>
+      <h2 className="display mt-14 text-2xl font-medium">Limitations</h2>
       <ul className="mt-3 space-y-3 text-ink-2 leading-relaxed list-disc pl-5">
         <li><strong className="text-ink">Simulations.</strong> The phantoms are statistical models of breast anatomy, not patients, and the dataset's authors say it cannot stand in for real patient examples when judging performance. The masses are round and smooth; real cancers are often neither, and calcifications are absent.</li>
         <li><strong className="text-ink">One view, one screen.</strong> A screening exam has two views per breast read at full resolution. The finder compresses one view to a web image.</li>
@@ -28,7 +28,7 @@ export default function DenseBreastMethods() {
         <li><strong className="text-ink">Old denominators.</strong> The public risk file is from 1996 to 2002, under an earlier BI-RADS density definition; its shares differ a little from the 2011 to 2021 tables, and the page shows both with their dates.</li>
         <li><strong className="text-ink">Density is not the whole risk.</strong> The BCSC's own conclusion is that density alone should not decide supplemental screening, and the USPSTF found the evidence for it insufficient.</li>
       </ul>
-      <h2 className="display mt-14 text-2xl font-medium">Run it</h2>
+      <h2 className="display mt-14 text-2xl font-medium">Reproduce</h2>
       <pre className="panel mt-3 overflow-x-auto text-sm leading-relaxed text-ink"><code>{`cd "breast density project/pipeline"
 python3 fetch_msynth.py     # range-fetches the sample DICOMs and .loc files into data/raw/msynth
 python3 render.py           # windows, crops and rotates them into site/public/data/density/img and writes cases.json

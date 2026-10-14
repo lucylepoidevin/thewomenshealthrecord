@@ -18,7 +18,7 @@ export default function DenseBreast() {
   const blocks: Block[] = data && st && dm ? [
     { type: 'text', id: 't1', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">What density is</h2>
+        <h2 className="display text-3xl font-medium mb-4">The four density categories</h2>
         <p>
           A mammogram is an X-ray. Fat lets X-rays through and shows dark; fibrous and glandular tissue absorbs them and shows white. A tumour also shows white. The radiologist sorts every
           breast into one of four categories by how much of it is white, and since September 2024 every mammography report in the United States has had to say which, in the regulation's own
@@ -45,7 +45,7 @@ export default function DenseBreast() {
     ) },
     { type: 'text', id: 't2', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">What it hides</h2>
+        <h2 className="display text-3xl font-medium mb-4">Masking: interval cancers by density</h2>
         <p>
           A mass in a fatty breast sits against a dark background; the same mass in a dense breast sits inside tissue of the same brightness. In the images above, the 7 mm mass that is
           obvious in the fatty breast is hard to find in the extremely dense one. These are the FDA's simulations, built from virtual breasts with a known mass at a known place, which is
@@ -90,7 +90,7 @@ export default function DenseBreast() {
     ) },
     { type: 'text', id: 't4', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">What it raises</h2>
+        <h2 className="display text-3xl font-medium mb-4">Risk: cancer rates by density</h2>
         <p>
           The second half of the mandated sentence, "also raises the risk of developing breast cancer", is a separate fact from the masking. Counting cancers diagnosed within a year of a screening
           mammogram in the consortium's public risk file, {fmtN(st.bcsc_risk.exams)} exams from {st.bcsc_risk.years}, the rate per thousand climbs from{' '}
@@ -114,7 +114,7 @@ export default function DenseBreast() {
           low to average five-year risk, and their interval cancer rates stayed under one per thousand.<Cite id="kerlikowske2015" sources={S} /> The US Preventive Services Task Force, in April 2024, found the
           evidence insufficient to say whether extra ultrasound or MRI helps women whose only flag is density.<Cite id="uspstf2024" sources={S} /> The letter in a report is a reason to ask about it, which is what the mandated text says, not a verdict.
         </p>
-        <h2 className="display text-3xl font-medium mb-4 mt-10">What your report now says</h2>
+        <h2 className="display text-3xl font-medium mb-4 mt-10">The mandated report wording</h2>
         <p>
           The federal rule gives every patient one of two paragraphs, verbatim.<Cite id="fda_rule" sources={S} /> It took effect on 10 September 2024, after years of state laws that said it in different ways or
           not at all.<Cite id="fda_press" sources={S} />
@@ -127,7 +127,7 @@ export default function DenseBreast() {
     ) },
     { type: 'text', id: 't6', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">How it was made</h2>
+        <h2 className="display text-3xl font-medium mb-4">Method</h2>
         <p>
           The images are from M-SYNTH, a public domain dataset the FDA's imaging division released in 2023: virtual breasts in the four density categories, some with a single round mass of 5,
           7 or 9 mm placed inside, imaged by Monte Carlo X-ray simulation of a real mammography system.<Cite id="msynth" sources={S} /> A script fetched a fixed sample of {data.msynth.cases.length} images, kept the lesion

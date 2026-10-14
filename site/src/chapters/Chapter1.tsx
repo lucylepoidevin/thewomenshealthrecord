@@ -47,37 +47,37 @@ export default function Chapter1() {
       <p>None of this required a new discovery. Intermezzo, a lower-dose zolpidem product approved in November 2011, already carried a lower recommended dose for women than for men.<Cite id="fda-dsc-2013" /> For the products most people were actually taking, the label caught up fourteen months later.</p>
     </>),
     T('snapshots', <>
-      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">Was Ambien a one-off?</p>
+      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">Trial participation by sex, 2015 onward.</p>
       <p>Since 2015 the FDA has published a "Drug Trials Snapshot" for each novel drug its drug centre approves, listing who was in the pivotal trials by sex, race and age.<Cite id="fda-snapshots" /></p>
       <p>We collected every snapshot we could retrieve, {s.n_drugs} drugs across {s.years[0]} to {s.years[1]}, including the ones the FDA has since removed from its live index.<Cite id="fda-snapshots-archive" /> Each dot below is one drug, placed by the share of its trial participants who were women. The median drug was tested on a population that was {s.median_trial_female_pct.toFixed(0)}% women.</p>
     </>),
-    F('beeswarm', <Beeswarm drugs={data.drugs} mode="low" title={`Who was in the trial, for ${s.n_drugs} new drugs`} subtitle={`Each dot is one FDA approval. In berry: the ${s.n_under_30} drugs approved on trials under 30% women. Hover for the drug.`} source={snapSrc} />, 'chart', true),
+    F('beeswarm', <Beeswarm drugs={data.drugs} mode="low" title={`Women's share of pivotal trial participants, ${s.n_drugs} new drugs`} subtitle={`Each dot is one FDA approval. In berry: the ${s.n_under_30} drugs approved on trials under 30% women. Hover for the drug.`} source={snapSrc} />, 'chart', true),
     T('low', <>
       <p>{s.n_under_30} of those drugs were approved on trials where fewer than 30% of participants were women. {s.n_under_40} were under 40%.</p>
       <p>Some of that is legitimate: a prostate cancer drug is tested on men, a Duchenne drug on boys, and those drugs are marked as sex-specific in the data and left out of every comparison that follows. But hover the dots on the left. Many treat conditions that do not spare women at all.</p>
     </>),
     T('faers', <>
-      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">The other side of the ledger.</p>
+      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">Adverse-event reports by sex.</p>
       <p>When a drug harms someone after approval, the report goes to the FDA Adverse Event Reporting System, FAERS.<Cite id="openfda-faers" /> Each report records the patient's sex.</p>
       <p>For every drug in the snapshots that is not sex-specific and has at least {MIN_REPORTS} reports ({s.n_with_faers} drugs), we pulled the share of adverse-event reports that came from women, and put it against the share of women who were in the trial.</p>
       <p>On the dotted line, the people reporting harm look like the people who were studied. Above it, more of the harm reports come from women than the trials would predict. The shaded corner is the one that matters: drugs tested on populations that were less than half women, where women nonetheless make up at least {GAP} points more of the adverse-event reports than they did of the trial.</p>
     </>),
-    F('scatter', <Scatter drugs={withFaers} mode="quadrant" gapThreshold={GAP} title="Who was studied vs. who reports harm" subtitle="One dot per drug. Dotted line: reports match the trial's sex mix. Shaded: the Ambien corner." source={faersSrc} />, 'tall', true),
+    F('scatter', <Scatter drugs={withFaers} mode="quadrant" gapThreshold={GAP} title="Women's share of trial participants against women's share of adverse-event reports" subtitle="One dot per drug. Dotted line: reports match the trial's sex mix. Shaded: the Ambien corner." source={faersSrc} />, 'tall', true),
     T('quadrant', <>
       <p>{quadrant.length} drugs sit in that corner. The median gap there is +{s.median_gap.toFixed(0)} points.</p>
       <p>This is the shape zolpidem taught people to look for, a thin trial and a loud signal, found {quadrant.length} times in drugs approved in the last decade. Zolpidem itself, as the end of this chapter shows, turned out to be mostly a story about who takes the drug; some of these will be too, and some will not. Here they are. Click a column to sort; click a drug name to open the FDA's own snapshot for it.</p>
     </>),
-    F('table', <DataTable drugs={quadrant} title={`${quadrant.length} drugs in the corner`} subtitle="Sorted by gap. Click a name for the FDA snapshot." source={faersSrc} />, 'flow', true),
+    F('table', <DataTable drugs={quadrant} title={`${quadrant.length} drugs with the largest gap`} subtitle="Sorted by gap. Click a name for the FDA snapshot." source={faersSrc} />, 'flow', true),
     T('table-text', <>
       <p>We are not claiming any of these drugs is unsafe for women. We are showing where the evidence base is thinnest exactly where the signal is loudest.</p>
     </>),
     T('caveats', <>
-      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">What this chart cannot say.</p>
+      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">Limitations of the comparison.</p>
       <p>FAERS is voluntary. It records reports, not rates. If more women than men take a drug, more women will report problems with it even if the drug treats both sexes identically. Women also report adverse events more often than men in general: across every report in the database with a recorded sex, {data.faers_overall ? (data.faers_overall.female / (data.faers_overall.female + data.faers_overall.male) * 100).toFixed(0) : '60'}% come from women.<Cite id="openfda-faers" /></p>
       <p>Zolpidem shows the limit cleanly: the FDA estimated that 63% of its patients were women,<Cite id="fda-dsc-2013" /> and women account for {zF.toFixed(0)}% of its {(z.female + z.male).toLocaleString()} sex-recorded reports. The reporting gap there is almost entirely usage. What proved the sex difference was blood-level data, not reports.</p>
     </>),
     F('zolpidem', (
-      <ChartFrame title="Zolpidem: reports track usage" subtitle="Why the gap is a flag, not a verdict" source="Sources: FDA Drug Safety Communication 2013 (usage); openFDA FAERS (reports).">
+      <ChartFrame title="Zolpidem: adverse-event reports and users, by sex" subtitle="Reports follow use; the gap is a screening signal" source="Sources: FDA Drug Safety Communication 2013 (usage); openFDA FAERS (reports).">
         <div className="grid sm:grid-cols-2 gap-4 py-2">
           <div className="rounded-2xl bg-blush-2/60 p-6"><div className="display text-6xl font-light text-bronze leading-none">63%</div><p className="mt-3 text-sm text-ink-2">of zolpidem patients were women (FDA estimate)</p></div>
           <div className="rounded-2xl bg-blush-2/60 p-6"><div className="display text-6xl font-light text-berry leading-none">{zF.toFixed(0)}%</div><p className="mt-3 text-sm text-ink-2">of zolpidem adverse-event reports are from women</p></div>
@@ -85,7 +85,7 @@ export default function Chapter1() {
       </ChartFrame>
     ), 'flow'),
     T('adjusted', <>
-      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">Adjusting for who actually takes it.</p>
+      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">Reports per user, by sex.</p>
       <p>The missing piece is a denominator: how many women and men take each drug. The federal Medical Expenditure Panel Survey asks a national sample of households about every prescription they fill, and records each person's sex.<Cite id="meps" /> We pooled seven years of it, 2018 to 2024, and counted the people who filled each of our drugs at least once.</p>
       <p>That turns the share of reports into something closer to a rate. If women are 53% of a drug's users and 65% of its adverse-event reports, they are filing about 1.6 times as many reports per user as men. On the chart, 1× means women and men report at the same rate per user.</p>
       <p>The survey is a sample of about 30,000 people a year, so it only sees drugs that enough people take. That leaves {s.n_with_rate} of our drugs with at least {30} surveyed users. Specialty biologics and cancer drugs mostly fall out, which is a limit of the data, not a finding.</p>
@@ -102,7 +102,7 @@ export default function Chapter1() {
       <p>Every number on this page is reproducible from public FDA data with the code in our repository. The <Link to="/methods">methods page</Link> explains each step, including the choices we made and what would change them.</p>
     </>),
     T('for-you', <>
-      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">What this means for you.</p>
+      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">Implications.</p>
       <p>Start with the drugs you actually take. If one was approved since 2015, it is in the box below: how many women were in the trials that approved it, and what the post-market reports look like. Any other drug can be checked live against the FDA's adverse-event reports.</p>
     </>),
     F('lookup', <DrugLookup drugs={data.drugs} minReports={MIN_REPORTS} />, 'flow'),
@@ -122,7 +122,7 @@ export default function Chapter1() {
     <article>
       <header className="mx-auto max-w-[42rem] px-4 pt-14 pb-8">
         <p className="eyebrow">{chapterRef('tested-on-men')}</p>
-        <h1 className="display mt-2 text-3xl sm:text-[2.5rem] font-medium leading-[1.15]">Tested on men, prescribed to women</h1>
+        <h1 className="display mt-2 text-3xl sm:text-[2.5rem] font-medium leading-[1.15]">Women in drug trials against women in adverse-event reports</h1>
         <p className="mt-4 max-w-2xl text-[17px] text-ink-2 leading-relaxed">Every new drug the FDA has approved since 2015, scored on who was in the trial against who reports the side effects.</p>
         <p className="mt-5 text-xs tracking-wide text-ink-3">data through {data.faers_last_updated ?? data.generated} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>
       </header>

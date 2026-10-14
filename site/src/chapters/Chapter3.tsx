@@ -36,7 +36,7 @@ export default function Chapter3() {
       <p>We rebuilt it with the newest numbers from both sources, for {S.n} diseases, and then asked what the 2021 paper could not: how this has moved since 2010, which specific diseases carry the gap, and which conditions never make it into the accounting at all.</p>
     </>),
     T('method', <>
-      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">Dollars against years.</p>
+      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">Funding against burden.</p>
       <p>NIH publishes how much it spends on each of about 330 research categories every fiscal year.<Cite id="nih-rcdc" /> The World Health Organization estimates, for every country and cause, the number of healthy years lost to death and disability, split by sex: disability-adjusted life years, or DALYs.<Cite id="who-ghe" /> Where an NIH category and a WHO cause describe the same disease, we matched them. That gives {S.n} diseases with both a price tag and a burden, {S.n_female} of them falling mostly on women, {S.n_male} mostly on men.</p>
       <p>Bigger diseases get more money, so the fair comparison is not dollars but dollars for the burden. The dotted line below is what funding a disease of a given size usually gets. Above it, a disease is funded beyond its burden; below it, short.</p>
     </>),
@@ -54,7 +54,7 @@ export default function Chapter3() {
       <p>The men's list has its own underfunded tail: interpersonal violence, hepatitis C, stomach and oesophageal cancer, suicide. And its top is distorted by two diseases NIH funds as global problems rather than American ones, HIV and tuberculosis, which is why the overall medians say so little.</p>
     </>),
     T('pairs', <>
-      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">Same burden, different money.</p>
+      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">Diseases of similar burden.</p>
       <p>The clearest way to see a funding gap is to hold the burden still. For each of the five most underfunded female-skewed diseases, here are the diseases of similar size and what each gets per year of health lost.</p>
     </>),
     F('pairs-fig', (
@@ -79,23 +79,23 @@ export default function Chapter3() {
       </ChartFrame>
     )),
     T('uncounted', <>
-      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">The conditions that are not counted.</p>
+      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">Conditions with no burden estimate.</p>
       <p>A funding-to-burden comparison can only include diseases whose burden has been estimated. For {data.uncounted.length} conditions NIH funds, together worth {money(uncountedTotal)} a year, the WHO has no burden estimate at all. The list is not random: fibromyalgia, chronic fatigue syndrome, lupus, interstitial cystitis, jaw disorders, Sjögren's disease, scleroderma, postural tachycardia syndrome, osteoporosis. Every one falls mostly on women.</p>
       <p>These conditions cannot be shown to be underfunded relative to burden, because nobody has measured the burden. That is a different kind of gap, and in some ways a worse one.</p>
     </>),
-    F('uncounted-fig', <Lollipop rows={[...data.uncounted].sort((a, b) => b.funding_m - a.funding_m).map(u => ({ label: u.label, value: u.funding_m, color: 'var(--c-female)' }))} title="Funded, but not measured" subtitle={`NIH funding, FY${data.funding_fy}, for conditions with no WHO burden estimate`} source={`Source: NIH RCDC category estimates, FY${data.funding_fy}. WHO Global Health Estimates has no cause for these conditions.`} axisLabel="NIH funding, $ millions" fmt={v => `$${v.toFixed(0)}M`} />),
+    F('uncounted-fig', <Lollipop rows={[...data.uncounted].sort((a, b) => b.funding_m - a.funding_m).map(u => ({ label: u.label, value: u.funding_m, color: 'var(--c-female)' }))} title="NIH-funded conditions with no WHO burden estimate" subtitle={`NIH funding, FY${data.funding_fy}, for conditions with no WHO burden estimate`} source={`Source: NIH RCDC category estimates, FY${data.funding_fy}. WHO Global Health Estimates has no cause for these conditions.`} axisLabel="NIH funding, $ millions" fmt={v => `$${v.toFixed(0)}M`} />),
     T('trend', <>
-      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">Has it moved?</p>
+      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">Change over time.</p>
       <p>The WHO has burden estimates for 2010, 2015, 2019, 2021 and 2023, and NIH funding for each of those years, so the comparison can be repeated across thirteen years. The share of female-skewed diseases sitting below the line was {data.trend[0].share_underfunded.female}% in 2010 and {data.trend[data.trend.length - 1].share_underfunded.female}% in 2023. For male-skewed diseases it was {data.trend[0].share_underfunded.male}% and {data.trend[data.trend.length - 1].share_underfunded.male}%. Thirteen years, seven of them under NIH's policy on sex as a biological variable, and the women's line has drifted up to meet the men's, not the other way round.</p>
     </>),
     F('trend-fig', <MultiLine series={[{ label: 'Mostly-women diseases', color: 'var(--c-female)', points: trendF }, { label: 'Mostly-men diseases', color: 'var(--c-male)', points: trendM }]} title="Share of diseases funded below their burden" subtitle="Diseases falling at least 60% on one sex, by burden year, with that year's NIH funding" source="Sources: NIH RCDC category estimates FY2010–FY2023; WHO Global Health Estimates 2010, 2015, 2019, 2021 and 2023, United States. The funding line is refitted for each year. Analysis by The Women's Health Record." yLabel="share below the line" fmt={v => `${v.toFixed(0)}%`} reference={{ value: 50, label: 'half' }} />, 'chart'),
     T('caveats', <>
-      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">What this does not settle.</p>
+      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">Limitations.</p>
       <p>Matching NIH categories to WHO causes is a judgement, and we show every match in the data file. NIH categories overlap, so a dollar can count towards more than one. A DALY is one way to weigh a disease, and it weighs disability by a schedule that is itself argued over. Some diseases are funded for reasons that have nothing to do with American burden: HIV and tuberculosis research is global, and we say so rather than drop them. A burden line fitted across 67 diseases is a description of what NIH does, not a rule for what it should do.</p>
       <p>What the data can say is narrower and firmer: at the same burden, the money varies by more than twenty-fold, the lowest-funded diseases on the women's side are the chronic painful ones, and the list of conditions nobody has measured is a list of women's conditions.</p>
     </>),
     T('for-you', <>
-      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">What this means for you.</p>
+      <p className="display text-2xl sm:text-[2rem] font-medium leading-snug mb-5 text-ink">Implications.</p>
       <p>If you live with one of these diseases, the number that matters when you write to a representative, a foundation or a journalist is dollars per year of health lost, set beside a disease everyone knows. Look yours up below. The funding history is there too; NIH's own figures, not ours.</p>
     </>),
     F('explorer', <DiseaseExplorer diseases={D} n={S.n} source={src} burdenYear={data.burden_year} />),
@@ -108,7 +108,7 @@ export default function Chapter3() {
     <article>
       <header className="mx-auto max-w-[42rem] px-4 pt-14 pb-8">
         <p className="eyebrow">{chapterRef('funding-vs-burden')}</p>
-        <h1 className="display mt-2 text-3xl sm:text-[2.5rem] font-medium leading-[1.15]">The research dollar</h1>
+        <h1 className="display mt-2 text-3xl sm:text-[2.5rem] font-medium leading-[1.15]">NIH funding against disease burden, by sex</h1>
         <p className="mt-4 max-w-2xl text-[17px] text-ink-2 leading-relaxed">{S.n} diseases, their NIH budgets and the healthy years they cost Americans: where the money follows the burden, where it doesn't, and which conditions are never measured.</p>
         <p className="mt-5 text-xs tracking-wide text-ink-3">NIH FY{data.funding_fy}, WHO {data.burden_year} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>
       </header>

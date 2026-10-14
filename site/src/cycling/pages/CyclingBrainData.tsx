@@ -10,7 +10,7 @@ export default function Data() {
   return (
     <div className="mx-auto max-w-5xl px-4 pt-16 pb-24">
       <p className="eyebrow">Data</p>
-      <h1 className="display mt-2 text-3xl sm:text-4xl font-medium leading-tight">Everything the page reads, for download</h1>
+      <h1 className="display mt-2 text-3xl sm:text-4xl font-medium leading-tight">Files</h1>
       <p className="mt-6 max-w-3xl text-lg text-ink-2 leading-relaxed">
         The source scans are on OpenNeuro under CC0. The derived files below are ours and are free to reuse with attribution to this page and to the original study.
       </p>
@@ -30,7 +30,7 @@ export default function Data() {
 
       {cycle && (
         <>
-          <h2 className="display mt-14 text-2xl font-medium">The month, day by day</h2>
+          <h2 className="display mt-14 text-2xl font-medium">Daily table</h2>
           <div className="table-wrap mt-4 rule pt-4">
             <table className="w-full text-xs sm:text-sm">
               <thead>

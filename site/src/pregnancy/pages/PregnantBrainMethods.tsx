@@ -24,7 +24,7 @@ export default function PregnantBrainMethods() {
           </li>
         ))}
       </ol>
-      <h2 className="display mt-14 text-2xl font-medium">What to be careful about</h2>
+      <h2 className="display mt-14 text-2xl font-medium">Limitations</h2>
       <ul className="mt-3 space-y-3 text-ink-2 leading-relaxed list-disc pl-5">
         <li><strong className="text-ink">n = 1.</strong> One participant, one pregnancy, conceived by IVF. A case description, not a population estimate.</li>
         <li><strong className="text-ink">Two scanners.</strong> Sessions 1-6 in Santa Barbara, 7-26 in Irvine, 27 back in Santa Barbara as a retest. The site change falls in the first trimester. We expose it rather than model it away.</li>
@@ -32,7 +32,7 @@ export default function PregnantBrainMethods() {
         <li><strong className="text-ink">Different method from the paper.</strong> The paper used surface-based cortical measures and diffusion imaging; we used a whole-brain volumetric model. Absolute numbers differ; the direction of the main findings agrees.</li>
         <li><strong className="text-ink">Research tool.</strong> The model's authors state it is not for diagnostic use. Neither is this page.</li>
       </ul>
-      <h2 className="display mt-14 text-2xl font-medium">Run it</h2>
+      <h2 className="display mt-14 text-2xl font-medium">Reproduce</h2>
       <pre className="panel mt-3 overflow-x-auto text-sm leading-relaxed text-ink"><code>{`cd pipeline
 .venv/bin/python fetch_mbp.py        # 27 T1w scans from OpenNeuro, ~470 MB
 .venv/bin/python preprocess.py       # N4 + affine to MNI305

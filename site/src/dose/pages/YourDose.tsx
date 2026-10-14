@@ -13,7 +13,7 @@ export default function YourDose() {
   const blocks: Block[] = data ? [
     { type: 'text', id: 't1', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">The dose was set on a body that may not be yours</h2>
+        <h2 className="display text-3xl font-medium mb-4">Sex differences in the published pharmacokinetics</h2>
         <p>
           In January 2013 the US Food and Drug Administration, for the first time, told doctors to prescribe a lower dose of a drug to women: zolpidem, the sleeping pill sold as Ambien, went from
           10 mg to 5 mg. Women cleared it more slowly, so the next morning they still had enough in their blood to impair driving. The dose had been set, like most doses, on trials dominated by
@@ -32,7 +32,7 @@ export default function YourDose() {
     ) },
     { type: 'text', id: 't2', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">How the model works, simply</h2>
+        <h2 className="display text-3xl font-medium mb-4">The model</h2>
         <p>
           A swallowed drug is absorbed into the blood, spreads into the body's water and fat, and is cleared by the liver and kidneys. Three numbers describe that for most drugs: how fast it is
           absorbed, how much space it spreads into (the volume of distribution), and how fast it is cleared. The volume sets how high the peak is; the clearance sets how fast it falls; the two
@@ -47,7 +47,7 @@ export default function YourDose() {
     ) },
     { type: 'text', id: 't3', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">What each drug shows</h2>
+        <h2 className="display text-3xl font-medium mb-4">The three drugs</h2>
         <p>
           <strong>Acetaminophen.</strong> Men clear it faster and have more body to spread it into, so on the same 1,000 mg a woman's blood level runs higher and stays higher. In the
           study behind these curves, a 55 kg woman's clearance was 227 mL a minute against 323 for a 71 kg man.<C file={data} id="abernethy1982" /> The twist is the pill: oral contraceptives
@@ -70,7 +70,7 @@ export default function YourDose() {
     ) },
     { type: 'text', id: 't4', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">What this can and cannot tell you</h2>
+        <h2 className="display text-3xl font-medium mb-4">Limitations</h2>
         <p><strong>Averages, not you.</strong> Each curve is the mean of eight to ten healthy volunteers. Your own liver enzymes, kidney function, age, other medicines and genes matter more than your sex. The spread between people is wider than the gap between the curves.</p>
         <p><strong>A simple model.</strong> One compartment, first-order everything. It captures the shape of the day well for these drugs and misses the detail: metoprolol's first pass saturates at higher doses, acetaminophen's absorption depends on what you ate.</p>
         <p><strong>Not advice.</strong> Nothing here says what dose anyone should take. The point is that the question "the same dose for whom?" has measurable answers, and that for most drugs nobody has published them. Of thousands of approved drugs, the 2020 review could find usable sex-specific data for 86.<C file={data} id="zucker2020" /></p>
@@ -78,7 +78,7 @@ export default function YourDose() {
     ) },
     { type: 'text', id: 't5', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">How it was made</h2>
+        <h2 className="display text-3xl font-medium mb-4">Method</h2>
         <p>
           The parameter table was built by hand from the primary studies and the FDA labels, with every value carrying its citation and, where derived, the arithmetic. It is published as a single
           data file on the <Link to="/your-dose/data">data page</Link>. The model runs in the browser; the maths is on the <Link to="/your-dose/methods">methods page</Link>.

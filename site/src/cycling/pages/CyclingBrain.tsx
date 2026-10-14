@@ -38,7 +38,7 @@ export default function Home() {
   const blocks: Block[] = cycle ? [
     { type: 'text', id: 't1', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">What you are looking at</h2>
+        <h2 className="display text-3xl font-medium mb-4">The data</h2>
         <p>
           In 2018 a 23-year-old woman walked into a scanner at the University of California, Santa Barbara every morning for thirty days in a row.
           Before each scan she gave blood, at ten o'clock, so that her hormones that morning could be measured alongside her brain that morning.
@@ -56,7 +56,7 @@ export default function Home() {
     ) },
     { type: 'text', id: 't2', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">What the cycle does, hormonally</h2>
+        <h2 className="display text-3xl font-medium mb-4">Hormone levels across the cycle</h2>
         <p>
           Two hormones carry most of the story. <strong>Estradiol</strong>, the main oestrogen, is made by the follicle that is ripening in the ovary.
           It climbs through the follicular phase, peaks the day the egg is released, and falls back. <strong>Progesterone</strong> comes afterwards,
@@ -77,7 +77,7 @@ export default function Home() {
     { type: 'figure', id: 'f1', size: 'flow', body: <KeyNumbers cycle={cycle} /> },
     { type: 'text', id: 't3', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">What changed in her brain, by our measurement</h2>
+        <h2 className="display text-3xl font-medium mb-4">Brain volumes across the cycle</h2>
         <p>
           We ran every one of the thirty scans through the same published segmentation model, which splits a brain into 133 named structures,<Cite id="unest" />
           then measured the size of each structure in each scan. The method is described below and on the <Link to="/cycling-brain/methods">methods page</Link>.
@@ -107,7 +107,7 @@ export default function Home() {
     { type: 'figure', id: 'f2', size: 'flow', body: <FindingsTable cycle={cycle} /> },
     { type: 'text', id: 't4', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">What the original lab found</h2>
+        <h2 className="display text-3xl font-medium mb-4">Published findings from the same dataset</h2>
         <p>
           The Jacobs lab did not use whole-brain segmentation for their structural paper. They took a separate, much sharper scan of the medial temporal
           lobe each day and traced the hippocampus into its subfields. In that analysis, day-to-day progesterone was associated with volume changes in CA2/3,
@@ -127,7 +127,7 @@ export default function Home() {
     ) },
     { type: 'text', id: 't5', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">What this can and cannot tell you</h2>
+        <h2 className="display text-3xl font-medium mb-4">Limitations</h2>
         <p>
           <strong>This is one woman.</strong> Thirty scans of one person can show what <em>can</em> happen to a brain across a cycle. They cannot
           tell you what happens to every woman, or to you. Cycles differ, hormones differ, and a single month contains one ovulation.
@@ -149,7 +149,7 @@ export default function Home() {
     ) },
     { type: 'text', id: 't6', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">How it was made</h2>
+        <h2 className="display text-3xl font-medium mb-4">Method</h2>
         <p>
           The thirty T1-weighted scans were downloaded from OpenNeuro (dataset ds002674, released CC0).<Cite id="openneuro" /> Each was bias-corrected and
           aligned to the MNI305 template with an affine transform using ANTs,<Cite id="ants" /><Cite id="mni305" /> then segmented into 133 structures with the

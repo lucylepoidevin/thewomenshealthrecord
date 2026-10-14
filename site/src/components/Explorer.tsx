@@ -27,7 +27,7 @@ export default function Explorer({ cells, source }: { cells: Cell[]; source: str
   const sel = 'rounded-full border border-hairline bg-white px-4 py-2 text-[15px] outline-none focus:border-rose focus:ring-4 focus:ring-rose/10'
   return (
     <div className="graphic-card p-5 sm:p-7">
-      <h3 className="display text-lg sm:text-[1.35rem] font-medium leading-tight text-ink">Someone like you walks in</h3>
+      <h3 className="display text-lg sm:text-[1.35rem] font-medium leading-tight text-ink">Visits by complaint and age</h3>
       <p className="mt-3 text-[15px] leading-relaxed text-ink-2">
         Show me adults aged{' '}
         <select value={age} onChange={e => setAge(e.target.value)} className={sel} aria-label="Age band">{AGES.map(([k, l]) => <option key={k} value={k}>{l}</option>)}</select>

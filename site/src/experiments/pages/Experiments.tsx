@@ -9,7 +9,7 @@ export default function Experiments() {
       <section className="mx-auto max-w-6xl px-4 pt-14 pb-8"><div className="max-w-[42rem]">
         <p className="eyebrow">Experiments</p>
         <h1 className="display mt-2 text-3xl sm:text-[2.5rem] font-medium leading-[1.15]">
-          Interactive studies built from public data
+          Experiments
         </h1>
         <p className="mt-4 max-w-2xl text-[17px] text-ink-2 leading-relaxed">
           Three single-person brain imaging datasets from the same lab run through one measurement pipeline, a drug-level simulator built from published
@@ -41,7 +41,7 @@ export default function Experiments() {
       </section>
 
       <section className="prose-step mx-auto max-w-[42rem] px-4 py-6 text-[18px] leading-[1.75] text-ink">
-        <h2 className="display text-3xl font-medium mb-4">What they add up to</h2>
+        <h2 className="display text-3xl font-medium mb-4">The three brains on one axis</h2>
         <p>
           On the same axis, the three brains move on three different scales. Across a menstrual cycle, with estradiol rising twelve-fold and progesterone several hundred-fold, her whole
           brain stayed within a third of a percent of its mean, which is less than the scan-to-scan noise. Across his day, the brain was about half a percent smaller at 8 pm than at 7 am,

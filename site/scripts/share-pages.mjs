@@ -5,12 +5,12 @@ import { fileURLToPath } from 'node:url'
 const dist = fileURLToPath(new URL('../dist/', import.meta.url))
 const site = 'https://lucylepoidevin.github.io/thewomenshealthrecord/'
 const pages = [
-  { slug: 'tested-on-men', title: 'Tested on men, prescribed to women', desc: 'Every new drug the FDA has approved since 2015, scored on who was in the trial against who reports the side effects.', img: 'tested-on-men.png' },
-  { slug: 'pain-gap', title: 'The urgency gap', desc: 'Twenty thousand emergency visits for pain and 377 heart attacks, 2018–2022: where women are rated lower, and where they are not.', img: 'pain-gap.png' },
-  { slug: 'funding-vs-burden', title: 'The research dollar', desc: '67 diseases, their NIH budgets and the healthy years they cost Americans: where the money follows the burden and which conditions are never measured.', img: 'funding-vs-burden.png' },
-  { slug: 'who-gets-studied', title: 'Who gets studied', desc: '56,591 trials and 21 million people: the share of women in each disease\'s trials against the share of women in the disease, and how few trials ever report what they found in women.', img: 'who-gets-studied.png' },
-  { slug: 'sent-home-with-a-label', title: 'Where the diagnosis gap lives', desc: '20,808 emergency visits and 4.3 million cancer cases: where women are diagnosed later or tested less than men, and where they are not.', img: 'sent-home-with-a-label.png' },
-  { slug: 'male-default', title: 'The male default body', desc: 'The animals drugs are tested on, the trials that follow, and the label you are handed: how often each one is male by default, measured.', img: 'male-default.png' },
+  { slug: 'tested-on-men', title: 'Women in drug trials against women in adverse-event reports', desc: 'Every new drug the FDA has approved since 2015, scored on who was in the trial against who reports the side effects.', img: 'tested-on-men.png' },
+  { slug: 'pain-gap', title: 'Pain, triage and waiting in the emergency department, by sex', desc: 'Twenty thousand emergency visits for pain and 377 heart attacks, 2018–2022: where women are rated lower, and where they are not.', img: 'pain-gap.png' },
+  { slug: 'funding-vs-burden', title: 'NIH funding against disease burden, by sex', desc: '67 diseases, their NIH budgets and the healthy years they cost Americans: where the money follows the burden and which conditions are never measured.', img: 'funding-vs-burden.png' },
+  { slug: 'who-gets-studied', title: 'Women\'s share of clinical trial participants, by disease', desc: '56,591 trials and 21 million people: the share of women in each disease\'s trials against the share of women in the disease, and how few trials ever report what they found in women.', img: 'who-gets-studied.png' },
+  { slug: 'sent-home-with-a-label', title: 'Emergency diagnoses and cancer stage at diagnosis, by sex', desc: '20,808 emergency visits and 4.3 million cancer cases: where women are diagnosed later or tested less than men, and where they are not.', img: 'sent-home-with-a-label.png' },
+  { slug: 'male-default', title: 'Male-only animal studies, trials and drug labels', desc: 'The animals drugs are tested on, the trials that follow, and the label you are handed: how often each one is male by default, measured.', img: 'male-default.png' },
 ]
 // Experiments live outside /chapters/; `path` overrides the folder and hash route.
 pages.push({ slug: 'cycling-brain', path: 'cycling-brain', title: 'One woman\'s brain across a menstrual cycle', desc: '30 daily MRI scans and blood tests over one cycle. Brain structure volumes and hormone levels, day by day.', img: 'cycling-brain.png' })

@@ -40,7 +40,7 @@ export default function Methods() {
         should be confirmed against the paper's supplement or with the lab.
       </p>
 
-      <h2 className="display mt-14 text-2xl font-medium">What to be careful about</h2>
+      <h2 className="display mt-14 text-2xl font-medium">Limitations</h2>
       <ul className="mt-3 space-y-3 text-ink-2 leading-relaxed list-disc pl-5">
         <li><strong className="text-ink">n = 1.</strong> One participant, one natural cycle. Everything here is a case description.</li>
         <li><strong className="text-ink">Different method from the papers.</strong> Taylor et al. segmented hippocampal subfields on a dedicated high-resolution T2 scan with ASHS. We used a whole-brain T1 model. Expect different absolute volumes and, possibly, different conclusions.</li>
@@ -49,7 +49,7 @@ export default function Methods() {
         <li><strong className="text-ink">Multiple comparisons.</strong> Correlations are reported uncorrected. Anything flagged on the main page should be read as a lead to check in the next dataset, not a finding.</li>
       </ul>
 
-      <h2 className="display mt-14 text-2xl font-medium">Run it</h2>
+      <h2 className="display mt-14 text-2xl font-medium">Reproduce</h2>
       <pre className="panel mt-3 overflow-x-auto text-sm leading-relaxed text-ink"><code>{`cd pipeline
 python3.12 -m venv .venv && .venv/bin/pip install -r requirements.txt
 .venv/bin/python fetch_28andme.py      # 30 T1w scans from OpenNeuro, ~540 MB

@@ -16,7 +16,7 @@ export default function IngredientCheck() {
   const blocks: Block[] = data ? [
     { type: 'text', id: 't1', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">What the lists are</h2>
+        <h2 className="display text-3xl font-medium mb-4">The three lists</h2>
         <p>
           Three official lists sit behind the checker. The first three grades come from the EU member states' endocrine disruptor lists, run by the authorities of Belgium, Denmark,
           France, the Netherlands, Spain and Sweden.<Src file={data} id="edlist1" /> <strong>List I</strong> holds substances formally identified as endocrine disruptors at EU level
@@ -36,7 +36,7 @@ export default function IngredientCheck() {
     ) },
     { type: 'text', id: 't2', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">What a listing means, and what it doesn't</h2>
+        <h2 className="display text-3xl font-medium mb-4">Hazard lists and risk</h2>
         <p>
           A hazard is what a chemical can do. A risk is what it does at the dose you meet. Every list here is a hazard list. Being on one says a substance can interfere with hormones,
           or cause cancer or reproductive harm, under some conditions, usually at doses far above what a cosmetic delivers. It does not say that a product containing it is harmful.
@@ -56,7 +56,7 @@ export default function IngredientCheck() {
     ) },
     { type: 'text', id: 't3', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">How the matching works</h2>
+        <h2 className="display text-3xl font-medium mb-4">Name matching</h2>
         <p>
           Labels use INCI names ("Butylphenyl Methylpropional"); regulators use chemical names and CAS registry numbers ("2-(4-tert-butylbenzyl)propionaldehyde, 80-54-6"). The three lists
           were joined on CAS number, then every listed chemical's names were pulled from PubChem,<Src file={data} id="pubchem" /> giving about fourteen thousand synonyms, and a hand-checked
@@ -71,7 +71,7 @@ export default function IngredientCheck() {
     ) },
     { type: 'text', id: 't4', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">How it was made</h2>
+        <h2 className="display text-3xl font-medium mb-4">Method</h2>
         <p>
           A script downloads the California dataset and the Proposition 65 list, reads the three EU list pages, joins them on CAS number, fetches synonyms from PubChem and writes one dated
           table with every source. The plain-language notes were written by hand from the regulations and scientific committee opinions they cite, and have not yet been reviewed by a

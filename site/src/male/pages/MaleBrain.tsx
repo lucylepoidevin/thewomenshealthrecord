@@ -33,7 +33,7 @@ export default function MaleBrain() {
   const blocks: Block[] = data ? [
     { type: 'text', id: 't1', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">What you are looking at</h2>
+        <h2 className="display text-3xl font-medium mb-4">The data</h2>
         <p>
           The same lab that scanned a woman every morning for a month went back and did it for a man. He was 26, healthy, and for thirty days he gave blood and lay in the same Santa Barbara
           scanner: at 7 am for the first ten days, at 7 am and 8 pm for the next ten, and at 8 pm for the last ten. Forty scans. The study is called 28andHe, and it is public.<Cite id="openneuro" /><Cite id="murata2024" />
@@ -50,7 +50,7 @@ export default function MaleBrain() {
     ) },
     { type: 'text', id: 't2', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">What a man's hormones do in a day</h2>
+        <h2 className="display text-3xl font-medium mb-4">Hormone levels across the day</h2>
         <p>
           Across her cycle, estradiol moved twelve-fold and progesterone several-hundred-fold over a month.<Cite id="cycling" /> His hormones move on a different clock. Testosterone is highest
           on waking and lowest at night; so is cortisol, the hormone that gets the body going in the morning; so, more gently, is the small amount of estradiol a man makes from his testosterone.
@@ -65,7 +65,7 @@ export default function MaleBrain() {
     { type: 'figure', id: 'f1', size: 'flow', body: <KeyNumbers data={data} /> },
     { type: 'text', id: 't3', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">What changed in his brain, by our measurement</h2>
+        <h2 className="display text-3xl font-medium mb-4">Brain volumes, morning and evening</h2>
         <p>
           Same pipeline as the two experiments before it: alignment to a standard template, a published model that splits the brain into 133 structures,<Cite id="unest" /> volumes counted in the
           scan's own space. The method is on the <Link to="/male-brain/methods">methods page</Link>; these are our numbers, not the lab's.
@@ -76,7 +76,7 @@ export default function MaleBrain() {
     ...(her ? [{ type: 'figure' as const, id: 'f2', size: 'flow' as const, body: <CompareTable data={data} her={her} /> }] : []),
     { type: 'text', id: 't4', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">What the original lab found</h2>
+        <h2 className="display text-3xl font-medium mb-4">Published findings from the same dataset</h2>
         <p>
           Their structural paper reports the same shape of result with sharper tools: from morning to evening his total brain volume, grey-matter volume and cortical thickness fell, in step with the fall in
           testosterone, estradiol and cortisol, while cerebrospinal fluid and the ventricles grew. The global change was driven by the occipital and parietal cortex at the back of the head.<Cite id="murata2024" />
@@ -90,7 +90,7 @@ export default function MaleBrain() {
     ) },
     { type: 'text', id: 't5', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">What this can and cannot tell you</h2>
+        <h2 className="display text-3xl font-medium mb-4">Limitations</h2>
         <p><strong>This is one man.</strong> One month, one brain. It shows what can happen, not what happens to every man.</p>
         <p>
           <strong>Time of day is not only hormones.</strong> Between 7 am and 8 pm he had also been upright for thirteen hours, eaten, drunk, and worked. All of that moves brain water. The hormones ride the same
@@ -108,7 +108,7 @@ export default function MaleBrain() {
     ) },
     { type: 'text', id: 't6', body: (
       <>
-        <h2 className="display text-3xl font-medium mb-4">How it was made</h2>
+        <h2 className="display text-3xl font-medium mb-4">Method</h2>
         <p>
           The 40 T1-weighted scans were downloaded from OpenNeuro (ds005115, CC0).<Cite id="openneuro" /> Each was bias-corrected and affine-aligned to the MNI305 template with ANTs,<Cite id="ants" /><Cite id="mni305" />
           segmented with the MONAI model-zoo bundle <em>wholeBrainSeg_Large_UNEST_segmentation</em>,<Cite id="unest" /> and measured after mapping each label map back into the scan's own space.

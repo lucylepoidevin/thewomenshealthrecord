@@ -19,7 +19,7 @@ export default function MammographyAccessMethods() {
           <li key={t} className="flex gap-5"><span className="display mt-0.5 w-8 shrink-0 text-2xl font-light text-berry tabular-nums">{i + 1}</span><div><h2 className="display text-2xl font-medium">{t}</h2><p className="mt-2 text-ink-2 leading-relaxed">{b}</p></div></li>
         ))}
       </ol>
-      <h2 className="display mt-14 text-2xl font-medium">What to be careful about</h2>
+      <h2 className="display mt-14 text-2xl font-medium">Limitations</h2>
       <ul className="mt-3 space-y-3 text-ink-2 leading-relaxed list-disc pl-5">
         <li><strong className="text-ink">A certificate is not capacity.</strong> One mobile unit and a hospital with six machines each count once. The FDA does not publish units or volume per facility.</li>
         <li><strong className="text-ink">Mobile units.</strong> The file does not flag them; some carry "Mobile" in the name. A mobile unit's listed address is its base, not where it screens.</li>
@@ -27,7 +27,7 @@ export default function MammographyAccessMethods() {
         <li><strong className="text-ink">Supply, not use.</strong> Screening rates depend on insurance, hours, language, transport and trust as well as distance. This page measures only where the facilities are.</li>
         <li><strong className="text-ink">Geocoding errors.</strong> About twelve percent of addresses were placed by ZIP code; a ZIP that straddles a county line can put a facility in the wrong county.</li>
       </ul>
-      <h2 className="display mt-14 text-2xl font-medium">Run it</h2>
+      <h2 className="display mt-14 text-2xl font-medium">Reproduce</h2>
       <pre className="panel mt-3 overflow-x-auto text-sm leading-relaxed text-ink"><code>{`cd "mammography deserts project/pipeline"
 python3 build_deserts.py   # reads data/raw (FDA list, geocoder output, Census files) and writes site/public/data/deserts/deserts.json and us.json`}</code></pre>
       {data && <p className="mt-6 text-sm text-ink-3">Data generated {data.generated}.</p>}
