@@ -11,9 +11,9 @@ export const DATA = `${BASE}data/ingredients/`
 export const GRADE_ORDER: Grade[] = ['confirmed', 'review', 'flagged', 'california']
 export const GRADE_HELP: Record<Grade, string> = {
   confirmed: 'On EU List I: identified as an endocrine disruptor at EU level after a full evaluation under REACH, the biocides or the pesticides regulation.',
-  review: 'On EU List II: currently under evaluation in an EU process because of explicit concern about endocrine disruption. Not a conclusion.',
+  review: 'On EU List II: currently under evaluation in an EU process because of explicit concern about endocrine disruption. This is not a conclusion.',
   flagged: 'On EU List III: a participating national authority considers it an endocrine disruptor; not confirmed EU-wide.',
-  california: "Reported to California's Safe Cosmetics Program, which collects products containing chemicals identified by authoritative bodies as causing cancer, birth defects or other reproductive harm. This reflects the chemical's hazard, not the amount in the product, and the program says inclusion does not mean the product has been shown to cause harm.",
+  california: "Reported to California's Safe Cosmetics Program, which collects products containing chemicals identified by authoritative bodies as causing cancer, birth defects or other reproductive harm. This reflects the chemical's hazard rather than the amount in the product, and the program states that inclusion does not mean the product has been shown to cause harm.",
 }
 
 export function useIngredients() {

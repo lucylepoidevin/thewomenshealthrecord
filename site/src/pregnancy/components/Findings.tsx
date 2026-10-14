@@ -25,22 +25,22 @@ export function FindingsProse({ data }: { data: Pregnancy }) {
   return (
     <>
       <p>
-        Start with the whole brain, ventricles excluded, because it is the one measure the two scanners agree on (the next-day retest differed by {fmt.pct(tb.retest_diff_pct ?? 0)}).
+        We begin with whole-brain volume, ventricles excluded, because it is the one measure on which the two scanners agree (the next-day retest differed by {fmt.pct(tb.retest_diff_pct ?? 0)}).
         Against the four scans before conception it was <strong>{fmt.pct(tb.third_trimester_pct ?? 0)}</strong> across the third trimester, with its lowest reading at week {tb.min_pregnancy?.week}
         ({fmt.pct(tb.min_pregnancy?.pct ?? 0)}). In the first three months after the birth it was {fmt.pct(tb.early_postpartum_pct ?? 0)}; two years on, {fmt.pct(tb.two_years_pct ?? 0)}.
-        A brain of {fmt.cm3(tb.baseline)} cm³ gave up roughly {Math.round(Math.abs(tb.min_pregnancy?.pct ?? 0) / 100 * tb.baseline / 1000)} cm³, about two tablespoons, and took most of it back.
+        A brain of {fmt.cm3(tb.baseline)} cm³ lost roughly {Math.round(Math.abs(tb.min_pregnancy?.pct ?? 0) / 100 * tb.baseline / 1000)} cm³ at its minimum and subsequently recovered most of that volume.
       </p>
       <p>
-        Grey and white matter need more care. Between the two scanners, the retest put cortical grey matter {fmt.pct(gm.retest_diff_pct ?? 0)} and white matter {fmt.pct(wm.retest_diff_pct ?? 0)}:
-        the Santa Barbara machine draws the boundary between the two tissues a little further out than the Irvine one, and the pre-conception scans were all in Santa Barbara.
-        So compare within the Irvine scans instead. Against the first three of them (weeks 9 to 14), cortical grey matter was {fmt.pct(pct(t3, 'cortical_gm', refOf('cortical_gm')))} in the third
+        Grey and white matter require a more careful comparison. Between the two scanners, the retest put cortical grey matter at {fmt.pct(gm.retest_diff_pct ?? 0)} and white matter at {fmt.pct(wm.retest_diff_pct ?? 0)}:
+        the Santa Barbara scanner places the boundary between the two tissues slightly further out than the Irvine scanner, and the pre-conception scans were all acquired in Santa Barbara.
+        We therefore compare within the Irvine scans. Against the first three of them (weeks 9 to 14), cortical grey matter was {fmt.pct(pct(t3, 'cortical_gm', refOf('cortical_gm')))} in the third
         trimester, {fmt.pct(pct(firstPost, 'cortical_gm', refOf('cortical_gm')))} at the first visit after the birth, and {fmt.pct(pct(twoYears, 'cortical_gm', refOf('cortical_gm')))} two years later.
-        White matter went {fmt.pct(pct(t3, 'cerebral_wm', refOf('cerebral_wm')))} by the third trimester and was back to {fmt.pct(pct(twoYears, 'cerebral_wm', refOf('cerebral_wm')))} at two years.
+        White matter was {fmt.pct(pct(t3, 'cerebral_wm', refOf('cerebral_wm')))} by the third trimester and had returned to {fmt.pct(pct(twoYears, 'cerebral_wm', refOf('cerebral_wm')))} at two years.
       </p>
       <p>
-        The hippocampus, which Experiment 1 watched move by half a percent across a month, read {fmt.pct(pct(t3, 'hippocampus', refOf('hippocampus')))} in the third trimester on the same-scanner
-        comparison and {fmt.pct(pct(twoYears, 'hippocampus', refOf('hippocampus')))} at two years. The lateral ventricles, at {lv.baseline_cv_pct?.toFixed(1)}% spread even between the baseline scans, are too
-        noisy at this resolution to read a trend from; the paper, with finer tools, found them growing. The whole brain's lowest point came at week {tbN.week}, scan {tbN.session}.
+        The hippocampus, which varied by half a percent across a month in Experiment 1, measured {fmt.pct(pct(t3, 'hippocampus', refOf('hippocampus')))} in the third trimester on the same-scanner
+        comparison and {fmt.pct(pct(twoYears, 'hippocampus', refOf('hippocampus')))} at two years. The lateral ventricles, with a spread of {lv.baseline_cv_pct?.toFixed(1)}% even between the baseline scans, are too
+        variable at this resolution for a trend to be inferred; the published paper, with higher-resolution methods, found them enlarging. Whole-brain volume reached its minimum at week {tbN.week}, scan {tbN.session}.
       </p>
     </>
   )

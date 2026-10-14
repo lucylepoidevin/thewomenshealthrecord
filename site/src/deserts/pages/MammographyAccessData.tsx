@@ -12,7 +12,7 @@ export default function MammographyAccessData() {
     <div className="mx-auto max-w-4xl px-4 pt-16 pb-24">
       <p className="eyebrow">Data · Experiment 7</p>
       <h1 className="display mt-2 text-3xl sm:text-4xl font-medium leading-tight">Data: mammography access</h1>
-      <p className="mt-4 text-ink-2 leading-relaxed">Everything the page uses: <a className="text-berry underline underline-offset-2" href={`${DATA}deserts.json`}>deserts.json</a> (every county and state, generated {data.generated}; distances in the file are kilometres) and <a className="text-berry underline underline-offset-2" href={`${DATA}us.json`}>us.json</a> (county and state boundaries, TopoJSON).</p>
+      <p className="mt-4 text-ink-2 leading-relaxed">All data used by the page: <a className="text-berry underline underline-offset-2" href={`${DATA}deserts.json`}>deserts.json</a> (every county and state, generated {data.generated}; distances in the file are kilometres) and <a className="text-berry underline underline-offset-2" href={`${DATA}us.json`}>us.json</a> (county and state boundaries, TopoJSON).</p>
       <h2 className="display mt-12 text-2xl font-medium">Counties ({fmtN(data.counties.length)})</h2>
       <input className="ctl mt-3 w-full max-w-sm" placeholder="Search a county or state code" value={q} onChange={e => setQ(e.target.value)} />
       <div className="table-wrap mt-3">

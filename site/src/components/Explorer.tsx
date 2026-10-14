@@ -9,7 +9,7 @@ const ROWS: { key: string; label: string; unit: string; note?: string }[] = [
   { key: 'ems', label: 'arrive by ambulance', unit: '%' },
   { key: 'urgent', label: 'are triaged urgent', unit: '%' },
   { key: 'wait_mean', label: 'minutes to see a clinician', unit: ' min' },
-  { key: 'analgesic_ed', label: 'are given any painkiller', unit: '%' },
+  { key: 'analgesic_ed', label: 'are given any analgesic', unit: '%' },
   { key: 'opioid_ed', label: 'are given an opioid', unit: '%' },
   { key: 'anyimage', label: 'get any imaging', unit: '%' },
   { key: 'tests_count', label: 'tests ordered, on average', unit: '' },
@@ -62,7 +62,7 @@ export default function Explorer({ cells, source }: { cells: Cell[]; source: str
               })}
             </tbody>
           </table>
-          <p className="mt-3 text-[11px] text-ink-3">Based on {cell.n_women.toLocaleString()} sampled visits by women and {cell.n_men.toLocaleString()} by men. Small ranges under each number are 95% confidence intervals; a gap in bold is one the interval does not reach across. {source}</p>
+          <p className="mt-3 text-[11px] text-ink-3">Based on {cell.n_women.toLocaleString()} sampled visits by women and {cell.n_men.toLocaleString()} by men. The ranges under each number are 95% confidence intervals; a gap in bold is one whose interval excludes zero. {source}</p>
         </div>
       )}
     </div>

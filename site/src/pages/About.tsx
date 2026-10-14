@@ -17,13 +17,13 @@ export default function About() {
       </header>
 
       <Section title="What it is">
-        <p>The Women's Health Record is a series of data chapters on where medicine treats women and men differently: who gets studied, who gets dosed, who waits longest, whose diseases get funded.</p>
+        <p>The Women's Health Record is a series of data chapters on where medicine treats women and men differently: who is studied, who is dosed, who waits longest and whose diseases are funded.</p>
         <p>Each chapter is an original analysis of a public dataset, published with its full method and a link from every number to its source. Chapters are added one at a time, alongside essays on <a href="https://substack.com/@thewomenshealthrecord" target="_blank" rel="noreferrer">Substack</a>.</p>
       </Section>
 
       <Section title="How to read it">
-        <p>The charts show patterns in the evidence, not verdicts on individual drugs or doctors. Where a number could be misread, the chapter says so in the text rather than in a footnote.</p>
-        <p>Nothing here is medical advice. If a chart makes you wonder about a drug you take, bring the chart to your doctor, not a conclusion.</p>
+        <p>The charts show patterns in the evidence; they are not verdicts on individual drugs or clinicians. Where a number could be misread, the chapter says so in the text rather than in a footnote.</p>
+        <p>Nothing here is medical advice. Readers with questions about a drug they take should discuss the chart with their doctor rather than draw a conclusion from it.</p>
       </Section>
 
       <Section title="Who">

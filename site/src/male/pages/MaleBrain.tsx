@@ -11,7 +11,7 @@ function KeyNumbers({ data }: { data: Male }) {
   const hs = data.hormone_summary, tb = data.stats.total_brain
   const items = [
     { label: 'Testosterone, 7 am vs 8 pm', value: `${fmt.n(hs.testosterone.am_median)} vs ${fmt.n(hs.testosterone.pm_median)} ng/dL`, note: `medians over ${hs.testosterone.am_n} morning and ${hs.testosterone.pm_n} evening draws` },
-    { label: 'Cortisol, 7 am vs 8 pm', value: `${fmt.n(hs.cortisol.am_median)} vs ${fmt.n(hs.cortisol.pm_median)} µg/dL`, note: 'the body\'s wake-up hormone, at its peak and its floor' },
+    { label: 'Cortisol, 7 am vs 8 pm', value: `${fmt.n(hs.cortisol.am_median)} vs ${fmt.n(hs.cortisol.pm_median)} µg/dL`, note: 'at its daily peak and its daily trough' },
     { label: 'Whole brain, 7 am → 8 pm', value: tb?.ampm_mean_pct != null ? fmt.pct(tb.ampm_mean_pct, 2) : '–', note: tb ? `smaller in the evening on ${tb.ampm_n_down} of ${tb.ampm_n} double days` : '' },
     { label: 'Scans', value: '40 scans in 30 days', note: '0.8 mm T1-weighted MRI, the same Santa Barbara scanner as Experiment 1' },
   ]
@@ -35,16 +35,16 @@ export default function MaleBrain() {
       <>
         <h2 className="display text-3xl font-medium mb-4">The data</h2>
         <p>
-          The same lab that scanned a woman every morning for a month went back and did it for a man. He was 26, healthy, and for thirty days he gave blood and lay in the same Santa Barbara
-          scanner: at 7 am for the first ten days, at 7 am and 8 pm for the next ten, and at 8 pm for the last ten. Forty scans. The study is called 28andHe, and it is public.<Cite id="openneuro" /><Cite id="murata2024" />
+          The same lab that scanned a woman every morning for a month subsequently applied the same design to a man. He was 26 and healthy; for thirty days blood was drawn and he was scanned in the same Santa Barbara
+          scanner: at 7 am for the first ten days, at 7 am and 8 pm for the next ten, and at 8 pm for the last ten, giving forty scans in total. The study is called 28andHe, and the data are public.<Cite id="openneuro" /><Cite id="murata2024" />
         </p>
         <p>
-          Men have no monthly cycle. What they have, like everyone, is a daily one: testosterone and cortisol peak before dawn and fall through the day. The design here was built to catch
-          that rhythm at both ends, which is why the month is split into mornings, both, and evenings.
+          Men have no monthly hormonal cycle. They do, like everyone, have a daily one: testosterone and cortisol peak before dawn and fall through the day. The design was intended to sample
+          that rhythm at both ends, which is why the month is divided into morning-only, both, and evening-only blocks.
         </p>
         <p>
-          The brain above is his at each visit, morning scans drawn as filled dots and evening scans hollow. Pick a structure, slide through the month, and watch what moves. Then look at the
-          table further down, where his 30 days sit next to <Link to="/cycling-brain">the menstrual cycle data from Experiment 1</Link>.
+          The viewer above shows his brain at each visit; morning scans are drawn as filled dots and evening scans as hollow ones. Select a structure and move through the month to see how its volume changes. The
+          table further down places his 30 days beside <Link to="/cycling-brain">the menstrual cycle data from Experiment 1</Link>.
         </p>
       </>
     ) },
@@ -52,13 +52,13 @@ export default function MaleBrain() {
       <>
         <h2 className="display text-3xl font-medium mb-4">Hormone levels across the day</h2>
         <p>
-          Across her cycle, estradiol moved twelve-fold and progesterone several-hundred-fold over a month.<Cite id="cycling" /> His hormones move on a different clock. Testosterone is highest
-          on waking and lowest at night; so is cortisol, the hormone that gets the body going in the morning; so, more gently, is the small amount of estradiol a man makes from his testosterone.
-          The swing is large, and it repeats every twenty-four hours.
+          Across her cycle, estradiol moved twelve-fold and progesterone several-hundred-fold over a month.<Cite id="cycling" /> His hormones vary on a different timescale. Testosterone is highest
+          on waking and lowest at night; so is cortisol; so, less markedly, is the small amount of estradiol that men derive from testosterone.
+          The amplitude is large, and the pattern repeats every twenty-four hours.
         </p>
         <p>
-          That matters for every scan anyone has ever taken. A morning scan and an evening scan are not the same brain state, and until this study nobody had measured, in one person, how much the
-          anatomy itself follows the clock.
+          This has implications for the timing of any MRI scan. A morning scan and an evening scan sample different physiological states, and before this study no one had measured, in one person, how much the
+          anatomy itself varies with time of day.
         </p>
       </>
     ) },
@@ -67,8 +67,8 @@ export default function MaleBrain() {
       <>
         <h2 className="display text-3xl font-medium mb-4">Brain volumes, morning and evening</h2>
         <p>
-          Same pipeline as the two experiments before it: alignment to a standard template, a published model that splits the brain into 133 structures,<Cite id="unest" /> volumes counted in the
-          scan's own space. The method is on the <Link to="/male-brain/methods">methods page</Link>; these are our numbers, not the lab's.
+          The pipeline is the same as in the two preceding experiments: alignment to a standard template, a published model that splits the brain into 133 structures,<Cite id="unest" /> volumes counted in the
+          scan's own space. The method is on the <Link to="/male-brain/methods">methods page</Link>; these are our measurements, not the original lab's.
         </p>
         <FindingsProse data={data} her={her} />
       </>
@@ -78,31 +78,31 @@ export default function MaleBrain() {
       <>
         <h2 className="display text-3xl font-medium mb-4">Published findings from the same dataset</h2>
         <p>
-          Their structural paper reports the same shape of result with sharper tools: from morning to evening his total brain volume, grey-matter volume and cortical thickness fell, in step with the fall in
-          testosterone, estradiol and cortisol, while cerebrospinal fluid and the ventricles grew. The global change was driven by the occipital and parietal cortex at the back of the head.<Cite id="murata2024" />
+          Their structural paper reports the same pattern of results with higher-resolution methods: from morning to evening his total brain volume, grey-matter volume and cortical thickness fell, in step with the fall in
+          testosterone, estradiol and cortisol, while cerebrospinal fluid and the ventricles increased. The global change was driven by the occipital and parietal cortex, at the posterior of the brain.<Cite id="murata2024" />
         </p>
         <p>
-          Their functional paper found his resting networks, the dorsal attention network above all, reorganising with the same hormones, and more strongly than hers had with her cycle.<Cite id="grotzinger2024" />
-          Brain volume shrinking through the day is not new in itself: large MRI studies have seen it for years and put it down to hydration and posture.<Cite id="nakamura2015" /> What is new is pinning it, in
-          one person, to the hormones that rise and fall on the same clock.
+          Their functional paper found his resting-state networks, most notably the dorsal attention network, reorganising with the same hormones, and more strongly than hers had with her cycle.<Cite id="grotzinger2024" />
+          A decrease in brain volume over the course of the day is not itself a new observation: large MRI studies have reported it for years and attributed it to hydration and posture.<Cite id="nakamura2015" /> What is new is relating it, in
+          one person, to the hormones that rise and fall on the same daily schedule.
         </p>
       </>
     ) },
     { type: 'text', id: 't5', body: (
       <>
         <h2 className="display text-3xl font-medium mb-4">Limitations</h2>
-        <p><strong>This is one man.</strong> One month, one brain. It shows what can happen, not what happens to every man.</p>
+        <p><strong>This is one man.</strong> One month, one brain. It shows what can occur, not what occurs in men generally.</p>
         <p>
-          <strong>Time of day is not only hormones.</strong> Between 7 am and 8 pm he had also been upright for thirteen hours, eaten, drunk, and worked. All of that moves brain water. The hormones ride the same
-          clock, so one month in one person cannot pull them apart.
+          <strong>Time of day is not only hormones.</strong> Between 7 am and 8 pm he had also been upright for thirteen hours, and had eaten, drunk and worked. All of these affect brain water content. The hormones follow the same
+          daily schedule, so one month in one person cannot separate the two.
         </p>
         <p>
-          <strong>Her and him is not women and men.</strong> Two people on one scanner is a comparison of two people. It is suggestive, and it is the best like-for-like pair in the public record, but it is not a
+          <strong>Two individuals are not two sexes.</strong> Two people on one scanner constitute a comparison of two individuals. It is suggestive, and it is the closest like-for-like pair in the public record, but it does not establish a
           sex difference.
         </p>
         <p>
-          <strong>And still:</strong> the point of this experiment was never that men are different. It is that both brains keep time with their hormones. Hers to a month, his to a day. Neuroscience spent
-          decades treating the first as noise and the second as nothing. They are the same thing at two speeds.
+          <strong>Context:</strong> the aim of this experiment was not to show that men differ. The observation is that both brains vary with their hormones: hers on a monthly timescale, his on a daily one. Neuroscience spent
+          decades treating the first as a nuisance variable and the second as negligible. Both are hormone-linked variation on different timescales.
         </p>
       </>
     ) },
@@ -112,9 +112,9 @@ export default function MaleBrain() {
         <p>
           The 40 T1-weighted scans were downloaded from OpenNeuro (ds005115, CC0).<Cite id="openneuro" /> Each was bias-corrected and affine-aligned to the MNI305 template with ANTs,<Cite id="ants" /><Cite id="mni305" />
           segmented with the MONAI model-zoo bundle <em>wholeBrainSeg_Large_UNEST_segmentation</em>,<Cite id="unest" /> and measured after mapping each label map back into the scan's own space.
-          Hormones and time of day come from the dataset's participants table. The viewer is NiiVue.<Cite id="niivue" /> Details and downloads: <Link to="/male-brain/methods">methods</Link>, <Link to="/male-brain/data">data</Link>.
+          Hormones and time of day are taken from the dataset's participants table. The viewer is NiiVue.<Cite id="niivue" /> Details and downloads: <Link to="/male-brain/methods">methods</Link>, <Link to="/male-brain/data">data</Link>.
         </p>
-        <p>Thanks to Elle Murata, Hannah Grotzinger, Laura Pritschet, Emily Jacobs and the Ann S. Bowers Women's Brain Health Initiative for releasing the data openly.</p>
+        <p>We thank Elle Murata, Hannah Grotzinger, Laura Pritschet, Emily Jacobs and the Ann S. Bowers Women's Brain Health Initiative for releasing the data openly.</p>
       </>
     ) },
     { type: 'figure', id: 'f3', size: 'flow', body: (<><h3 className="display text-xl font-medium mb-4">Sources</h3><SourceList /></>) },

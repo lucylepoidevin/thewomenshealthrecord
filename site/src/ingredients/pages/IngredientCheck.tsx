@@ -18,18 +18,18 @@ export default function IngredientCheck() {
       <>
         <h2 className="display text-3xl font-medium mb-4">The three lists</h2>
         <p>
-          Three official lists sit behind the checker. The first three grades come from the EU member states' endocrine disruptor lists, run by the authorities of Belgium, Denmark,
+          The checker draws on three official lists. The first three grades come from the EU member states' endocrine disruptor lists, run by the authorities of Belgium, Denmark,
           France, the Netherlands, Spain and Sweden.<Src file={data} id="edlist1" /> <strong>List I</strong> holds substances formally identified as endocrine disruptors at EU level
-          after a full evaluation. <strong>List II</strong> holds substances currently under evaluation because of an explicit concern; that is a question being asked, not an answer.
+          after a full evaluation. <strong>List II</strong> holds substances currently under evaluation because of an explicit concern; listing there records an open question rather than a conclusion.
           <strong> List III</strong> holds substances one participating national authority considers endocrine disruptors but which have not been confirmed EU-wide.
         </p>
         <p>
           The fourth grade is Californian. Under the state's Safe Cosmetics Program, companies must report products sold in California that contain chemicals identified by
           authoritative bodies as causing cancer or reproductive harm.<Src file={data} id="california" /> The checker shows that grade only where the chemical is on the state's own
-          Proposition 65 list, with the basis and the date of listing.<Src file={data} id="prop65" /> The program's own words: inclusion does not mean the product has been shown to cause harm.
+          Proposition 65 list, with the basis and the date of listing.<Src file={data} id="prop65" /> In the program's own words, inclusion does not mean the product has been shown to cause harm.
         </p>
         <p>
-          Right now the table holds {data.ingredients.length} chemicals: {n!.confirmed} confirmed, {n!.review} under review, {n!.flagged} flagged by one authority and {n!.california} on Proposition 65 only.
+          The table currently holds {data.ingredients.length} chemicals: {n!.confirmed} confirmed, {n!.review} under review, {n!.flagged} flagged by one authority and {n!.california} on Proposition 65 only.
           Lists dated {data.generated}; they are updated twice a year and the date is shown with every result.
         </p>
       </>
@@ -38,18 +38,18 @@ export default function IngredientCheck() {
       <>
         <h2 className="display text-3xl font-medium mb-4">Hazard lists and risk</h2>
         <p>
-          A hazard is what a chemical can do. A risk is what it does at the dose you meet. Every list here is a hazard list. Being on one says a substance can interfere with hormones,
-          or cause cancer or reproductive harm, under some conditions, usually at doses far above what a cosmetic delivers. It does not say that a product containing it is harmful.
-          Several listings carry conditions that the checker spells out: California's titanium dioxide and carbon black entries concern inhaling loose particles; its retinol entry
+          A hazard is what a chemical is capable of causing; a risk is the harm it causes at the dose actually encountered. Every list here is a hazard list. Inclusion on one indicates that a substance can interfere with hormones,
+          or cause cancer or reproductive harm, under some conditions, usually at doses far above what a cosmetic delivers. It does not indicate that a product containing it is harmful.
+          Several listings carry conditions that the checker states: California's titanium dioxide and carbon black entries concern inhaling loose particles; its retinol entry
           concerns daily intake above 10,000 IU; its talc entry concerns talc with asbestos fibres.
         </p>
         <p>
-          The lists also lag and disagree. Butylphenyl methylpropional has been banned in EU cosmetics since 2022 and is still permitted in the US. The EU's scientific committee has
-          judged several List II and III substances safe at cosmetic concentrations, and said so; the listing records the question, the opinion records the answer. The checker shows both
-          where it can.
+          The lists also differ in timing and in conclusion. Butylphenyl methylpropional has been banned in EU cosmetics since 2022 and is still permitted in the US. The EU's scientific committee has
+          judged several List II and III substances safe at cosmetic concentrations and has published those opinions; the listing records the question and the opinion records the answer. The checker shows both
+          where they are available.
         </p>
         <p>
-          And the lists are short. About three hundred chemicals, against tens of thousands of cosmetic ingredients. A clean result means none of the ingredients the checker could read
+          The lists are also short: about three hundred chemicals, against tens of thousands of cosmetic ingredients. A result with no matches means that none of the ingredients the checker could read
           is on these three lists. It does not mean the product has been assessed.
         </p>
       </>
@@ -61,11 +61,11 @@ export default function IngredientCheck() {
           Labels use INCI names ("Butylphenyl Methylpropional"); regulators use chemical names and CAS registry numbers ("2-(4-tert-butylbenzyl)propionaldehyde, 80-54-6"). The three lists
           were joined on CAS number, then every listed chemical's names were pulled from PubChem,<Src file={data} id="pubchem" /> giving about fourteen thousand synonyms, and a hand-checked
           table of common label names was placed on top. Each ingredient on a pasted label is matched whole, after stripping punctuation and accents, including anything in brackets.
-          Nothing is matched by a word inside a longer name, so "Sodium Benzoate" does not trip "Benzophenone" and "Silica" does not trip the airborne crystalline silica listing.
+          Nothing is matched by a word inside a longer name, so "Sodium Benzoate" does not match "Benzophenone" and "Silica" does not match the airborne crystalline silica listing.
         </p>
         <p>
-          Two things the checker cannot see: anything behind the word "parfum" or "fragrance", which the law allows to stay unlisted, and any ingredient written in a way the synonym table
-          has not met. Both are said on screen when they apply. The whole lookup runs in your browser; what you paste is not sent anywhere.
+          The checker cannot detect two things: anything covered by the word "parfum" or "fragrance", which regulations allow to remain unitemised, and any ingredient written in a form the synonym table
+          does not contain. Both are stated on screen when they apply. The lookup runs entirely in the browser; pasted text is not transmitted.
         </p>
       </>
     ) },
@@ -75,7 +75,7 @@ export default function IngredientCheck() {
         <p>
           A script downloads the California dataset and the Proposition 65 list, reads the three EU list pages, joins them on CAS number, fetches synonyms from PubChem and writes one dated
           table with every source. The plain-language notes were written by hand from the regulations and scientific committee opinions they cite, and have not yet been reviewed by a
-          toxicologist or dermatologist; until they have, read them as a careful draft. Details on the <Link to="/ingredient-check/methods">methods page</Link>; the table on the{' '}
+          toxicologist or dermatologist; until they have, they should be read as a draft. Details on the <Link to="/ingredient-check/methods">methods page</Link>; the table on the{' '}
           <Link to="/ingredient-check/data">data page</Link>.
         </p>
       </>
@@ -97,8 +97,8 @@ export default function IngredientCheck() {
         <p className="eyebrow">Experiment 5</p>
         <h1 className="display mt-2 text-3xl sm:text-[2.5rem] font-medium leading-[1.15]">Cosmetic ingredients against the official hormone-disruptor lists</h1>
         <p className="mt-4 max-w-2xl text-[17px] text-ink-2 leading-relaxed">
-          Paste the ingredient list from any beauty or personal care product. Each ingredient on the EU endocrine disruptor lists or California's Proposition 65 list comes back with the
-          list's own grade, a one-line note and the source. No scores, no rankings.
+          Paste the ingredient list from any beauty or personal care product. Each ingredient on the EU endocrine disruptor lists or California's Proposition 65 list is returned with the
+          list's own grade, a one-line note and the source. No scores or rankings are given.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
           <a href="#checker" onClick={jumpTo('checker')} className="btn btn-solid">Open the checker</a>

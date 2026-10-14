@@ -7,7 +7,7 @@ export default function YourDoseData() {
     <div className="mx-auto max-w-5xl px-4 pt-16 pb-24">
       <p className="eyebrow">Data · Experiment 4</p>
       <h1 className="display mt-2 text-3xl sm:text-4xl font-medium leading-tight">Parameter table</h1>
-      <p className="mt-6 max-w-3xl text-lg text-ink-2 leading-relaxed">One JSON file holds every number the simulator uses, its unit, its source and, where derived, the arithmetic. Free to reuse with attribution to this page and to the original studies.</p>
+      <p className="mt-6 max-w-3xl text-lg text-ink-2 leading-relaxed">One JSON file holds every parameter the simulator uses, its unit, its source and, where derived, the arithmetic. Free to reuse with attribution to this page and to the original studies.</p>
       <ul className="mt-8 grid gap-3 sm:grid-cols-2">
         <li className="rule pt-4"><a href={`${DATA}drugs.json`} download className="font-semibold text-berry underline underline-offset-2">drugs.json</a><p className="mt-1 text-sm text-ink-2">Drugs, regimens, profiles by sex and hormonal state, parameters with citations, sources.{data && ` Generated ${data.generated}.`}</p></li>
       </ul>

@@ -43,8 +43,8 @@ export default function Experiments() {
       <section className="prose-step mx-auto max-w-[42rem] px-4 py-6 text-[18px] leading-[1.75] text-ink">
         <h2 className="display text-3xl font-medium mb-4">The three brains on one axis</h2>
         <p>
-          On the same axis, the three brains move on three different scales. Across a menstrual cycle, with estradiol rising twelve-fold and progesterone several hundred-fold, her whole
-          brain stayed within a third of a percent of its mean, which is less than the scan-to-scan noise. Across his day, the brain was about half a percent smaller at 8 pm than at 7 am,
+          Plotted on the same axis, the three brains vary on three different scales. Across a menstrual cycle, with estradiol rising twelve-fold and progesterone several hundred-fold, the woman's whole
+          brain stayed within a third of a percent of its mean, which is less than the scan-to-scan noise. Across the man's day, the brain was about half a percent smaller at 8 pm than at 7 am,
           on every day measured. Across a pregnancy, it was two to three percent smaller in the third trimester and took about two years to return.
         </p>
         <p>

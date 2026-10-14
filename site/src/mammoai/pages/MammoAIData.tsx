@@ -11,7 +11,7 @@ export default function MammoAIData() {
     <div className="mx-auto max-w-5xl px-4 pt-16 pb-24">
       <p className="eyebrow">Data · Experiment 8</p>
       <h1 className="display mt-2 text-3xl sm:text-4xl font-medium leading-tight">Data: mammography AI</h1>
-      <p className="mt-4 text-ink-2 leading-relaxed">Everything the page uses: <a className="text-berry underline underline-offset-2" href={`${DATA}audit.json`}>audit.json</a> (every coded record with its quotes and the FDA document link, generated {data.generated}). The coding schema and the raw text of every document are in the project folder.</p>
+      <p className="mt-4 text-ink-2 leading-relaxed">All data used by the page: <a className="text-berry underline underline-offset-2" href={`${DATA}audit.json`}>audit.json</a> (every coded record with its quotes and the FDA document link, generated {data.generated}). The coding schema and the raw text of every document are in the project folder.</p>
       <h2 className="display mt-12 text-2xl font-medium">By period</h2>
       <div className="table-wrap mt-3">
         <table className="w-full text-xs">

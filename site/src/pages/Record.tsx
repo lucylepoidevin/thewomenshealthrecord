@@ -46,13 +46,13 @@ export default function Record() {
       <section className="graphic-card p-5 sm:p-7">
         <div className="flex items-baseline justify-between gap-4"><h2 className="display text-xl font-medium">Burden and NIH funding</h2><Link to="/chapters/funding-vs-burden" className="text-xs text-berry underline underline-offset-2">{chapterRef('funding-vs-burden')}</Link></div>
         {F.uncounted ? (
-          <p className="mt-3 text-[15px] leading-relaxed text-ink">NIH spent <b>{money(F.funding_m)}</b> on this condition in fiscal 2024. The World Health Organization has no burden estimate for it, so it cannot be placed on the funding-to-burden chart at all. It is one of {data.conditions.filter(x => x.funding.uncounted).length} such conditions, nearly all of which fall mostly on women.</p>
+          <p className="mt-3 text-[15px] leading-relaxed text-ink">NIH spent <b>{money(F.funding_m)}</b> on this condition in fiscal 2024. The World Health Organization has no burden estimate for it, so it cannot be placed on the funding-to-burden chart. It is one of {data.conditions.filter(x => x.funding.uncounted).length} such conditions, nearly all of which fall mostly on women.</p>
         ) : (
           <div className="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-3">
             <Tile v={`${F.female_share!.toFixed(0)}%`} l="of its US burden falls on women" />
-            <Tile v={F.dalys_k! >= 1000 ? `${(F.dalys_k! / 1000).toFixed(1)}M` : `${F.dalys_k!.toFixed(0)}k`} l="healthy years lost in the US a year" />
+            <Tile v={F.dalys_k! >= 1000 ? `${(F.dalys_k! / 1000).toFixed(1)}M` : `${F.dalys_k!.toFixed(0)}k`} l="disability-adjusted life years lost in the US per year" />
             <Tile v={money(F.funding_m)} l="NIH funding, fiscal 2024" />
-            <Tile v={`$${F.dollars_per_daly!.toLocaleString()}`} l={`per year lost; ${F.ratio_to_expected!.toFixed(2)}× what the burden predicts, rank ${F.rank_by_ratio} of ${F.n_ranked} (1 = most underfunded)`} />
+            <Tile v={`$${F.dollars_per_daly!.toLocaleString()}`} l={`per DALY; ${F.ratio_to_expected!.toFixed(2)}× what the burden predicts, rank ${F.rank_by_ratio} of ${F.n_ranked} (1 = most underfunded)`} />
           </div>
         )}
       </section>
@@ -81,7 +81,7 @@ export default function Record() {
                 <tr key={d.brand} className="border-t border-hairline/60"><td className="py-2 pr-3"><a href={d.snapshot_url} target="_blank" rel="noreferrer" className="font-medium text-ink hover:text-berry">{d.brand}</a></td><td className="py-2 pr-3 text-right tabular-nums">{d.year ?? ''}</td><td className={`py-2 pr-3 text-right tabular-nums ${d.trial_female_pct < 30 ? 'font-bold text-berry' : ''}`}>{d.trial_female_pct.toFixed(0)}%</td><td className="py-2 pr-3 text-right tabular-nums">{d.faers_female_pct != null ? `${d.faers_female_pct.toFixed(0)}%` : '–'}</td><td className="py-2 pr-3 text-right tabular-nums">{d.rate_ratio != null ? `${d.rate_ratio.toFixed(1)}×` : '–'}</td><td className="py-2 text-[12px] text-ink-2">{d.label_sex ? <>{d.label_sex}{d.label_no_preg != null ? ` · ${d.label_no_preg ? 'none or insufficient' : 'some'}` : ''}</> : '–'}</td></tr>
               ))}</tbody>
             </table>
-            <p className="mt-2 text-[11px] text-ink-3">Drugs whose FDA snapshot indication mentions this condition. Bold: trials under 30% women. Reports per user needs enough surveyed users and is blank for most specialty drugs. The last column is what the current label's pharmacology section says about sex (<Link to="/chapters/male-default" className="underline">{chapterRef('male-default')}</Link>), and whether it reports human pregnancy data.</p>
+            <p className="mt-2 text-[11px] text-ink-3">Drugs whose FDA snapshot indication mentions this condition. Bold: trials under 30% women. Reports per user requires sufficient surveyed users and is blank for most specialty drugs. The last column is what the current label's pharmacology section says about sex (<Link to="/chapters/male-default" className="underline">{chapterRef('male-default')}</Link>), and whether it reports human pregnancy data.</p>
           </div>
         )}
       </section>
@@ -94,10 +94,10 @@ export default function Record() {
             <table className="w-full border-collapse text-[13px] sm:text-[14px]">
               <thead><tr className="text-[12px] font-semibold text-ink-3"><th className="py-2 pr-3 text-left font-bold">Of those visits…</th><th className="py-2 pr-3 text-right font-bold text-rose">Women</th><th className="py-2 pr-3 text-right font-bold text-bronze">Men</th><th className="py-2 text-right font-bold">Gap</th></tr></thead>
               <tbody>
-                <Row label="rated their pain 7 to 10" c={c.ed.metrics.severe_share} /><Row label="arrived by ambulance" c={c.ed.metrics.ems} /><Row label="were triaged urgent" c={c.ed.metrics.urgent} /><Row label="minutes to see a clinician" c={c.ed.metrics.wait_mean} unit=" min" /><Row label="were given any painkiller" c={c.ed.metrics.analgesic_ed} /><Row label="were given an opioid" c={c.ed.metrics.opioid_ed} /><Row label="were given an opioid, pain 7 to 10" c={c.ed.metrics.opioid_ed_severe} /><Row label="were admitted, observed or transferred" c={c.ed.metrics.admitted} />
+                <Row label="rated their pain 7 to 10" c={c.ed.metrics.severe_share} /><Row label="arrived by ambulance" c={c.ed.metrics.ems} /><Row label="were triaged urgent" c={c.ed.metrics.urgent} /><Row label="minutes to see a clinician" c={c.ed.metrics.wait_mean} unit=" min" /><Row label="were given any analgesic" c={c.ed.metrics.analgesic_ed} /><Row label="were given an opioid" c={c.ed.metrics.opioid_ed} /><Row label="were given an opioid, pain 7 to 10" c={c.ed.metrics.opioid_ed_severe} /><Row label="were admitted, observed or transferred" c={c.ed.metrics.admitted} />
               </tbody>
             </table>
-            <p className="mt-2 text-[11px] text-ink-3">A gap in bold is one the 95% interval does not reach across. Full intervals in the chapter and the data files.</p>
+            <p className="mt-2 text-[11px] text-ink-3">A gap in bold is one whose 95% interval excludes zero. Full intervals are in the chapter and the data files.</p>
           </div>
         )}
       </section>
@@ -118,8 +118,8 @@ export default function Record() {
         <section className="graphic-card p-5 sm:p-7 mt-6">
           <div className="flex items-baseline justify-between gap-4"><h2 className="display text-xl font-medium">Cancer stage and age at diagnosis</h2><Link to="/chapters/sent-home-with-a-label" className="text-xs text-berry underline underline-offset-2">{chapterRef('sent-home-with-a-label')}</Link></div>
           <div className="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-3">
-            <Tile v={`${c.cancer.distant.women.est.toFixed(0)}%`} l="of women's cases found after the cancer had spread" />
-            <Tile v={`${c.cancer.distant.men.est.toFixed(0)}%`} l="of men's cases found after it had spread" c="text-bronze" />
+            <Tile v={`${c.cancer.distant.women.est.toFixed(0)}%`} l="of women's cases diagnosed at distant stage" />
+            <Tile v={`${c.cancer.distant.men.est.toFixed(0)}%`} l="of men's cases diagnosed at distant stage" c="text-bronze" />
             <Tile v={`${c.cancer.distant.diff > 0 ? '+' : ''}${c.cancer.distant.diff.toFixed(1)} pts`} l={`women minus men, interval ${c.cancer.distant.diff_lo.toFixed(1)} to ${c.cancer.distant.diff_hi.toFixed(1)}; ${(c.cancer.cases_women + c.cancer.cases_men).toLocaleString()} cases 2013–2022`} />
             {c.cancer.median_age && <Tile v={`${c.cancer.median_age.women} / ${c.cancer.median_age.men}`} l="median age at diagnosis, women / men, 2018–2022" />}
           </div>
@@ -133,13 +133,13 @@ export default function Record() {
             <table className="w-full border-collapse text-[13px] sm:text-[14px]">
               <thead><tr className="text-[12px] font-semibold text-ink-3"><th className="py-2 pr-3 text-left font-bold">Of those visits…</th><th className="py-2 pr-3 text-right font-bold text-rose">Women</th><th className="py-2 pr-3 text-right font-bold text-bronze">Men</th><th className="py-2 text-right font-bold">Gap</th></tr></thead>
               <tbody>
-                <Row label="tests ordered, on average" c={c.ed_label.metrics.tests_count} unit="" /><Row label="got any imaging" c={c.ed_label.metrics.anyimage} /><Row label="left with a symptom code, not a diagnosis" c={c.ed_label.metrics.symptom_dx} /><Row label="had an anxiety or stress code attached" c={c.ed_label.metrics.anxiety_any} /><Row label="were admitted, observed or transferred" c={c.ed_label.metrics.admitted} /><Row label="had been in the same ED in the last 72 hours" c={c.ed_label.metrics.seen72} />
+                <Row label="tests ordered, on average" c={c.ed_label.metrics.tests_count} unit="" /><Row label="received any imaging" c={c.ed_label.metrics.anyimage} /><Row label="left with a symptom code rather than a diagnosis" c={c.ed_label.metrics.symptom_dx} /><Row label="had an anxiety or stress code attached" c={c.ed_label.metrics.anxiety_any} /><Row label="were admitted, observed or transferred" c={c.ed_label.metrics.admitted} /><Row label="had been seen in the same ED in the previous 72 hours" c={c.ed_label.metrics.seen72} />
               </tbody>
             </table>
           </div>
         </section>
       )}
-      <p className="mt-8 text-sm text-ink-2 text-center">Every figure here links to its chapter and its source. Download the full tables on the <Link to="/data" className="text-berry underline underline-offset-2">data page</Link>.</p>
+      <p className="mt-8 text-sm text-ink-2 text-center">Every figure here links to its chapter and its source. The full tables are available on the <Link to="/data" className="text-berry underline underline-offset-2">data page</Link>.</p>
     </div>
   )
 }

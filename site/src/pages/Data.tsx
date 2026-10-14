@@ -12,7 +12,7 @@ export default function Data() {
       <header className="pb-8">
         <p className="eyebrow">Data</p>
         <h1 className="display mt-2 text-3xl sm:text-[2.5rem] font-medium leading-[1.15]">Data files</h1>
-        <p className="mt-4 max-w-2xl text-[17px] text-ink-2 leading-relaxed">Every chart on this site is drawn from these files. Download them, check them, build on them. The code that produces them is in the repository.</p>
+        <p className="mt-4 max-w-2xl text-[17px] text-ink-2 leading-relaxed">Every chart on this site is drawn from these files. They may be downloaded, checked and built upon. The code that produces them is in the repository.</p>
       </header>
       <section className="grid gap-3 sm:grid-cols-[11rem_1fr] sm:gap-10 py-8 border-t border-hairline/70">
         <h2 className="eyebrow pt-1">How to cite</h2>

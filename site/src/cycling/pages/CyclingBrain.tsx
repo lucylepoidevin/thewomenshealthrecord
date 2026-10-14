@@ -16,7 +16,7 @@ function KeyNumbers({ cycle }: { cycle: NonNullable<ReturnType<typeof useCycle>[
   const items = [
     { label: 'Estradiol, lowest to highest morning', value: `${Math.min(...e2)} → ${Math.max(...e2)} pg/mL`, note: `${(Math.max(...e2) / Math.min(...e2)).toFixed(0)}-fold, peak on day ${peak(e2, 'estradiol')}` },
     { label: 'Progesterone, lowest to highest morning', value: `${Math.min(...p4)} → ${Math.max(...p4)} ng/mL`, note: `from essentially undetectable, peak on day ${peak(p4, 'progesterone')}` },
-    { label: 'LH surge', value: `${Math.max(...lh)} mIU/mL on day ${peak(lh, 'lh')}`, note: `against a baseline near ${Math.round(lh.sort((a, b) => a - b)[Math.floor(lh.length / 2)])}: ovulation` },
+    { label: 'LH surge', value: `${Math.max(...lh)} mIU/mL on day ${peak(lh, 'lh')}`, note: `against a median baseline near ${Math.round(lh.sort((a, b) => a - b)[Math.floor(lh.length / 2)])}, marking ovulation` },
     { label: 'Scans', value: '30 mornings, 30 scans', note: 'blood drawn at 10 am ± 30 min, then a 0.8 mm T1-weighted MRI at 3 T' },
   ]
   return (
@@ -40,17 +40,17 @@ export default function Home() {
       <>
         <h2 className="display text-3xl font-medium mb-4">The data</h2>
         <p>
-          In 2018 a 23-year-old woman walked into a scanner at the University of California, Santa Barbara every morning for thirty days in a row.
-          Before each scan she gave blood, at ten o'clock, so that her hormones that morning could be measured alongside her brain that morning.
+          In 2018 a 23-year-old woman was scanned at the University of California, Santa Barbara every morning for thirty consecutive days.
+          Before each scan, at ten o'clock, a blood sample was drawn so that her hormone levels could be measured alongside the same morning's scan.
           The study is called 28andMe. It was run by Emily Jacobs's lab, and the scans are public.<Cite id="pritschet2020" /><Cite id="openneuro" />
         </p>
         <p>
-          The brain above is hers, one scan per day. The curves are her blood. The slider walks you through the month: she started in the late
-          luteal phase, her period arrived on day 11, her LH surge (the trigger for ovulation) came on day 23, and by day 30 progesterone was climbing again.
-          Pick a structure and the pink shape shows where it is; the chart under the hormones shows how big it measured that day.
+          The viewer above shows her brain, one scan per day, with her serum hormone levels plotted beneath. The slider moves through the month: she began in the late
+          luteal phase, menstruation began on day 11, the LH surge (the trigger for ovulation) occurred on day 23, and by day 30 progesterone was rising again.
+          Select a structure to highlight its location in pink; the chart under the hormones shows its measured volume on that day.
         </p>
         <p>
-          Almost no one outside the original lab has put this data in front of the public. That is the point of this page.
+          To our knowledge, these data have rarely been presented to the public outside the original lab. This page is intended to do so.
         </p>
       </>
     ) },
@@ -58,19 +58,19 @@ export default function Home() {
       <>
         <h2 className="display text-3xl font-medium mb-4">Hormone levels across the cycle</h2>
         <p>
-          Two hormones carry most of the story. <strong>Estradiol</strong>, the main oestrogen, is made by the follicle that is ripening in the ovary.
-          It climbs through the follicular phase, peaks the day the egg is released, and falls back. <strong>Progesterone</strong> comes afterwards,
-          from the corpus luteum that the empty follicle turns into. If there is no pregnancy, the corpus luteum fades after about two weeks,
-          progesterone collapses, and the lining of the womb is shed: a period.
+          Two hormones are of principal interest. <strong>Estradiol</strong>, the main oestrogen, is produced by the follicle maturing in the ovary.
+          It rises through the follicular phase, peaks on the day the egg is released, and then falls. <strong>Progesterone</strong> follows,
+          produced by the corpus luteum that forms from the emptied follicle. In the absence of pregnancy, the corpus luteum regresses after about two weeks,
+          progesterone falls sharply, and the endometrium is shed as menstruation.
         </p>
         <p>
-          Her month shows the whole arc. On day 1 progesterone was already high (she was late luteal). It fell through the first ten days, hit its floor as
-          her period began on day 11, and stayed there for two weeks. Estradiol rose from day 18, spiked on day 23 with a surge of luteinising hormone
-          (LH, the pituitary's signal to ovulate), and dropped within two days. From day 26, progesterone rose steeply again.<Cite id="my28brains" />
+          Her month covers the full sequence. On day 1 progesterone was already high (late luteal phase). It fell over the first ten days, reached its minimum as
+          menstruation began on day 11, and remained low for two weeks. Estradiol rose from day 18, peaked on day 23 together with a surge of luteinising hormone
+          (LH, the pituitary signal for ovulation), and fell within two days. From day 26, progesterone rose steeply again.<Cite id="my28brains" />
         </p>
         <p>
-          The scale of these swings is the part that is easy to forget. Between her quietest and her loudest mornings, estradiol changed about
-          twelve-fold and progesterone several-hundred-fold. The brain is full of receptors for both.<Cite id="pritschet2020" />
+          The magnitude of these changes is notable. Between her lowest and highest mornings, estradiol varied about
+          twelve-fold and progesterone several-hundred-fold. Receptors for both hormones are widely distributed in the brain.<Cite id="pritschet2020" />
         </p>
       </>
     ) },
@@ -81,25 +81,25 @@ export default function Home() {
         <p>
           We ran every one of the thirty scans through the same published segmentation model, which splits a brain into 133 named structures,<Cite id="unest" />
           then measured the size of each structure in each scan. The method is described below and on the <Link to="/cycling-brain/methods">methods page</Link>.
-          This is our own measurement, not the lab's, and it will not match theirs exactly.
+          These are our own measurements, not the original lab's, and they will not match theirs exactly.
         </p>
         <FindingsProse cycle={cycle} />
         <p>
-          The first thing to take from this is how <em>stable</em> a brain is. Whole-brain volume moved by a third of a percent from day to day.
-          Most of that is measurement: the scanner, her head position, how much water she had drunk. A hormone effect on a single structure
-          would have to be bigger than that wobble to be seen in one person, and in this month, in most structures, it was not.
+          The first observation is how <em>stable</em> the measured volumes are. Whole-brain volume varied by a third of a percent from day to day.
+          Most of that is measurement variation: the scanner, head position and hydration. For a hormone effect on a single structure
+          to be detectable in one person, it would have to exceed that variation, and in this month, in most structures, it did not.
         </p>
         <p>
           {cycle.stats.precuneus && cycle.stats.precuneus.p_progesterone != null && cycle.stats.precuneus.p_progesterone < 0.01 ? (
             <>
-              One region did stand out. The precuneus, a patch of cortex on the inner face of the parietal lobe, tracked progesterone with
-              r = {fmt.r(cycle.stats.precuneus.r_progesterone!)} ({fmt.p(cycle.stats.precuneus.p_progesterone)}): larger on high-progesterone mornings.
-              Cerebral white matter leaned the same way (r = {fmt.r(cycle.stats.cerebral_wm.r_progesterone!)}). That is one person, one month,
-              and about a hundred comparisons, so hold it loosely. But it does rhyme with the 2025 multi-person study, which found progesterone
-              tracking widespread grey-matter volume, including parietal cortex.<Cite id="heller2025" />
+              One region was an exception. The precuneus, a region of cortex on the medial surface of the parietal lobe, correlated with progesterone at
+              r = {fmt.r(cycle.stats.precuneus.r_progesterone!)} ({fmt.p(cycle.stats.precuneus.p_progesterone)}): it was larger on high-progesterone mornings.
+              Cerebral white matter showed a correlation in the same direction (r = {fmt.r(cycle.stats.cerebral_wm.r_progesterone!)}). This is one person, one month,
+              and about a hundred comparisons, so the result should be treated with caution. It is, however, consistent with the 2025 multi-person study, which found progesterone
+              associated with widespread grey-matter volume, including parietal cortex.<Cite id="heller2025" />
             </>
           ) : (
-            <>No single region cleared a strict threshold once you account for the number of comparisons.</>
+            <>No single region passed a strict threshold once the number of comparisons was accounted for.</>
           )}
         </p>
       </>
@@ -109,19 +109,19 @@ export default function Home() {
       <>
         <h2 className="display text-3xl font-medium mb-4">Published findings from the same dataset</h2>
         <p>
-          The Jacobs lab did not use whole-brain segmentation for their structural paper. They took a separate, much sharper scan of the medial temporal
-          lobe each day and traced the hippocampus into its subfields. In that analysis, day-to-day progesterone was associated with volume changes in CA2/3,
-          entorhinal, perirhinal and parahippocampal cortex; estradiol was not; and when she took an oral contraceptive the following year, which holds
-          progesterone down, the cycle-linked changes disappeared.<Cite id="taylor2020" />
+          The Jacobs lab did not use whole-brain segmentation for their structural paper. They acquired a separate, higher-resolution scan of the medial temporal
+          lobe each day and segmented the hippocampus into its subfields. In that analysis, day-to-day progesterone was associated with volume changes in CA2/3,
+          entorhinal, perirhinal and parahippocampal cortex; estradiol was not; and when she took an oral contraceptive the following year, which suppresses
+          progesterone, the cycle-linked changes were no longer observed.<Cite id="taylor2020" />
         </p>
         <p>
-          Their functional work on the same thirty days found that the brain's resting networks reorganised with the hormones too, most sharply around
-          ovulation. On day 23, with estradiol and LH at their peak, the default mode network briefly re-wired.<Cite id="pritschet2020" /><Cite id="mueller2021" />
+          Their functional work on the same thirty days found that resting-state networks also reorganised with the hormones, most markedly around
+          ovulation. On day 23, with estradiol and LH at their peak, the default mode network showed a transient reorganisation.<Cite id="pritschet2020" /><Cite id="mueller2021" />
         </p>
         <p>
           In 2025, a group in Jena pooled 28andMe with three more densely-sampled women and a man and found that patterns of grey-matter volume across the
           whole brain rose and fell with progesterone in typical cycles, and with estradiol in a woman with endometriosis and one on the pill. The man's brain
-          changed over the weeks too, but not in step with any hormone.<Cite id="heller2025" />
+          also changed over the weeks, but not in association with any hormone.<Cite id="heller2025" />
         </p>
       </>
     ) },
@@ -130,20 +130,20 @@ export default function Home() {
         <h2 className="display text-3xl font-medium mb-4">Limitations</h2>
         <p>
           <strong>This is one woman.</strong> Thirty scans of one person can show what <em>can</em> happen to a brain across a cycle. They cannot
-          tell you what happens to every woman, or to you. Cycles differ, hormones differ, and a single month contains one ovulation.
+          establish what happens in women generally. Cycles differ, hormones differ, and a single month contains one ovulation.
         </p>
         <p>
-          <strong>Correlation is not mechanism.</strong> Progesterone and the precuneus moving together over a month is a pattern, not a cause.
-          Hydration, sleep, time of day and scanner drift all move brain volume by amounts similar to anything shown here.
+          <strong>Correlation is not mechanism.</strong> The covariation of progesterone and precuneus volume over a month is an association, not evidence of causation.
+          Hydration, sleep, time of day and scanner drift all alter measured brain volume by amounts comparable to those shown here.
         </p>
         <p>
-          <strong>Our numbers are ours.</strong> We used a public model built for research, not a clinical tool, and a different method from the original
-          papers. Expect the values to differ from theirs. Where they disagree, trust the paper. Nothing on this page is medical advice.
+          <strong>Our measurements are independent of the original papers.</strong> We used a publicly available research model, not a clinical tool, and a different method from the original
+          papers. The values are expected to differ from theirs. Where they disagree, the published papers should take precedence. Nothing on this page is medical advice.
         </p>
         <p>
-          <strong>And still:</strong> for most of the history of neuroscience, the menstrual cycle was treated as noise to exclude rather than a
-          variable to study. Females were left out of neuroscience for decades, in animals and in people, on the belief that their hormones made them too variable to study, a belief that the evidence does not
-          support.<Cite id="beery2011" /> This page exists because one lab decided the variation was the point.
+          <strong>Context:</strong> for most of the history of neuroscience, the menstrual cycle was treated as a source of variance to be excluded rather than a
+          variable to be studied. Females were excluded from neuroscience research for decades, in animals and in humans, on the assumption that their hormones made them too variable to study, an assumption that the evidence does not
+          support.<Cite id="beery2011" /> This page draws on a study that treated that variation as its object.
         </p>
       </>
     ) },
@@ -154,7 +154,7 @@ export default function Home() {
           The thirty T1-weighted scans were downloaded from OpenNeuro (dataset ds002674, released CC0).<Cite id="openneuro" /> Each was bias-corrected and
           aligned to the MNI305 template with an affine transform using ANTs,<Cite id="ants" /><Cite id="mni305" /> then segmented into 133 structures with the
           MONAI model-zoo bundle <em>wholeBrainSeg_Large_UNEST_segmentation</em>.<Cite id="unest" /><Cite id="monai" /> Volumes were counted after mapping
-          each label map back into the scan's own space, so the template's scaling does not leak into the numbers. The brain viewer is NiiVue.<Cite id="niivue" />
+          each label map back into the scan's own space, so that the template's scaling does not enter the volumes. The brain viewer is NiiVue.<Cite id="niivue" />
         </p>
         <p>
           The hormone assays were published with the original papers but not deposited with the scans; the table here is reproduced from the Jacobs and
@@ -162,8 +162,8 @@ export default function Home() {
           <Link to="/cycling-brain/methods">methods</Link> and <Link to="/cycling-brain/data">data</Link> pages.
         </p>
         <p>
-          Thanks to Emily Jacobs, Laura Pritschet, Caitlin Taylor and the Ann S. Bowers Women's Brain Health Initiative at UC Santa Barbara for making the data public,
-          and to Nina Miolane's group for publishing their analysis openly.<Cite id="jacobslab" />
+          We thank Emily Jacobs, Laura Pritschet, Caitlin Taylor and the Ann S. Bowers Women's Brain Health Initiative at UC Santa Barbara for making the data public,
+          and Nina Miolane's group for publishing their analysis openly.<Cite id="jacobslab" />
         </p>
       </>
     ) },

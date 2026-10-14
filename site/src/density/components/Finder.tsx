@@ -57,13 +57,13 @@ export default function Finder({ file }: { file: DensityFile }) {
       if (guess === 'none') return `There was a ${cur.size_mm} mm mass. It is circled.`
       return hit(cur, guess, aspect) ? `Found it: a ${cur.size_mm} mm mass.` : `Missed. The ${cur.size_mm} mm mass is circled; your mark is the small dot.`
     }
-    return guess === 'none' ? 'Correct: no mass in this one.' : 'There was no mass in this one. What you marked is ordinary fibroglandular tissue, which is how false alarms happen.'
+    return guess === 'none' ? 'Correct: no mass in this image.' : 'There was no mass in this image. The marked region is ordinary fibroglandular tissue, which is how false alarms arise.'
   }
   const t = tally[density]
   return (
     <section id="finder" className="mx-auto max-w-5xl px-4">
       <div className="mb-4 border-l-2 border-berry pl-4 py-1 text-sm text-ink-2">
-        <strong className="text-ink">What this is.</strong> Synthetic mammograms simulated by the US FDA (M-SYNTH), not patients. Some contain one round mass of 5, 7 or 9 mm; some contain none. Click where you think the mass is, or say there is none, then see the answer. It is a demonstration of what density does to an image, not a test of you or of mammography.
+        <strong className="text-ink">What this is.</strong> Synthetic mammograms simulated by the US FDA (M-SYNTH); they are not images of patients. Some contain one round mass of 5, 7 or 9 mm; some contain none. Click where you think the mass is, or indicate that there is none, then reveal the answer. The exercise demonstrates the effect of density on an image; it is not a test of the reader or of mammography.
       </div>
       <div className="flex flex-wrap items-center gap-x-1 gap-y-2">
         <span className="eyebrow mr-3">Density</span>
@@ -88,7 +88,7 @@ export default function Finder({ file }: { file: DensityFile }) {
               <>
                 <button type="button" className={`btn ${guess === 'none' ? 'btn-solid' : ''}`} onClick={() => setGuess('none')}>No mass here</button>
                 <button type="button" className="btn btn-solid" disabled={guess == null} style={{ opacity: guess == null ? 0.45 : 1 }} onClick={reveal}>Show the answer</button>
-                <span className="text-xs text-ink-3">{guess == null ? 'Click the image to mark a spot.' : guess === 'none' ? 'You said no mass.' : 'Spot marked. Click again to move it.'}</span>
+                <span className="text-xs text-ink-3">{guess == null ? 'Click the image to mark a location.' : guess === 'none' ? 'Marked as no mass.' : 'Location marked. Click again to move it.'}</span>
               </>
             ) : (
               <>
@@ -99,7 +99,7 @@ export default function Finder({ file }: { file: DensityFile }) {
           </div>
         </div>
         <aside className="text-sm">
-          <p className="eyebrow">Your tally, this density</p>
+          <p className="eyebrow">Tally for this density</p>
           <p className="mt-2 text-ink"><span className="display text-3xl font-light">{t.found}</span> <span className="text-ink-2">of {t.masses} masses found</span></p>
           <p className="text-ink-2">{t.falseAlarms} false alarm{t.falseAlarms === 1 ? '' : 's'} · {t.shown} of {pool.length} images seen</p>
           <div className="rule mt-4 pt-3">
@@ -117,7 +117,7 @@ export default function Finder({ file }: { file: DensityFile }) {
             </table>
           </div>
           <p className="rule mt-4 pt-3 text-xs leading-relaxed text-ink-3">
-            Radiologists read two views per breast at full resolution with magnification, on calibrated monitors, against prior exams. This single compressed view is a demonstration, not a reading.
+            Radiologists read two views per breast at full resolution with magnification, on calibrated monitors, with reference to prior examinations. This single compressed view is a demonstration and not a clinical reading.
           </p>
         </aside>
       </div>

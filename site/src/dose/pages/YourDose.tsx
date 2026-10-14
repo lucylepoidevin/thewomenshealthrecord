@@ -15,18 +15,18 @@ export default function YourDose() {
       <>
         <h2 className="display text-3xl font-medium mb-4">Sex differences in the published pharmacokinetics</h2>
         <p>
-          In January 2013 the US Food and Drug Administration, for the first time, told doctors to prescribe a lower dose of a drug to women: zolpidem, the sleeping pill sold as Ambien, went from
-          10 mg to 5 mg. Women cleared it more slowly, so the next morning they still had enough in their blood to impair driving. The dose had been set, like most doses, on trials dominated by
-          men's results.<C file={data} id="fdazolpidem2013" />
+          In January 2013 the US Food and Drug Administration, for the first time, recommended a lower dose of a drug for women: the recommended dose of zolpidem, the hypnotic sold as Ambien, was reduced from
+          10 mg to 5 mg. Women cleared the drug more slowly, and the following morning their blood concentrations remained high enough to impair driving. The dose had been set, as most doses are, on trials in which
+          men predominated.<C file={data} id="fdazolpidem2013" />
         </p>
         <p>
-          Zolpidem was the case that made the news. It was not the exception. A 2020 review went looking for every drug with published sex-specific pharmacokinetics and found 86. In 76 of them,
-          women ended up with higher blood levels or slower clearance on the same dose, and where the drug had known side effects, that difference predicted which sex suffered them. Women report
+          Zolpidem was the most widely reported case, but not an isolated one. A 2020 review identified every drug with published sex-specific pharmacokinetics and found 86. In 76 of them,
+          women had higher blood concentrations or slower clearance on the same dose, and where the drug had known adverse effects, that difference predicted which sex experienced them. Women report
           adverse drug reactions nearly twice as often as men.<C file={data} id="zucker2020" />
         </p>
         <p>
-          The simulator above takes three drugs almost everyone has taken and draws what the published numbers imply: the same tablet, in a woman's body and in a man's, across one day.
-          Change her weight. Put her on the pill. For caffeine, make her pregnant. Every curve traces back to a study, listed under the chart.
+          The simulator above takes three widely used drugs and plots what the published parameters imply: the same dose, in a woman and in a man, over one day.
+          Body weight, oral contraceptive use and, for caffeine, pregnancy can be adjusted. Every curve is derived from a cited study, listed under the chart.
         </p>
       </>
     ) },
@@ -34,14 +34,14 @@ export default function YourDose() {
       <>
         <h2 className="display text-3xl font-medium mb-4">The model</h2>
         <p>
-          A swallowed drug is absorbed into the blood, spreads into the body's water and fat, and is cleared by the liver and kidneys. Three numbers describe that for most drugs: how fast it is
-          absorbed, how much space it spreads into (the volume of distribution), and how fast it is cleared. The volume sets how high the peak is; the clearance sets how fast it falls; the two
-          together set the half-life. Repeated doses stack on top of what is left from the last one.
+          An orally administered drug is absorbed into the blood, distributes into the body's water and fat, and is cleared by the liver and kidneys. For most drugs, three parameters describe this process: the rate of
+          absorption, the space into which the drug distributes (the volume of distribution), and the rate of clearance. The volume determines the height of the peak; the clearance determines the rate of decline; the two
+          together determine the half-life. Repeated doses are superimposed on what remains of the previous ones.
         </p>
         <p>
-          Each of those numbers has been measured separately in men and women for the drugs here, and that is all the simulator does: it plugs in the women's numbers and the men's numbers,
-          scaled by body weight where the studies report them per kilogram, and draws both. The maths is on the <Link to="/your-dose/methods">methods page</Link>. It is a teaching model, not a
-          clinical one: real people vary more within a sex than the averages differ between them.
+          Each of those parameters has been measured separately in men and women for the drugs included here. The simulator substitutes the women's values and the men's values,
+          scaled by body weight where the studies report them per kilogram, and plots both curves. The equations are on the <Link to="/your-dose/methods">methods page</Link>. It is a teaching model rather than a
+          clinical one: variation between individuals within a sex exceeds the difference between the sex means.
         </p>
       </>
     ) },
@@ -49,31 +49,30 @@ export default function YourDose() {
       <>
         <h2 className="display text-3xl font-medium mb-4">The three drugs</h2>
         <p>
-          <strong>Acetaminophen.</strong> Men clear it faster and have more body to spread it into, so on the same 1,000 mg a woman's blood level runs higher and stays higher. In the
-          study behind these curves, a 55 kg woman's clearance was 227 mL a minute against 323 for a 71 kg man.<C file={data} id="abernethy1982" /> The twist is the pill: oral contraceptives
-          induce the liver enzyme that handles acetaminophen, and women on them cleared it 49% faster than women off them, faster even than the men.<C file={data} id="miners1983" /> Same tablet,
-          three different bodies.
+          <strong>Acetaminophen.</strong> Men clear it faster and have a larger volume of distribution, so on the same 1,000 mg dose a woman's blood concentration is higher and remains higher. In the
+          study behind these curves, a 55 kg woman's clearance was 227 mL a minute against 323 for a 71 kg man.<C file={data} id="abernethy1982" /> Oral contraceptives
+          induce the hepatic enzyme that metabolises acetaminophen, and women taking them cleared it 49% faster than women not taking them, and faster than the men.<C file={data} id="miners1983" />
         </p>
         <p>
-          <strong>Caffeine.</strong> Between men and women off hormonal contraception the difference is small. Oestrogen is what matters. The pill slowed caffeine clearance by 40% and stretched its
-          half-life from 5.4 to 7.9 hours;<C file={data} id="abernethy1985" /> late pregnancy stretched it from 3 to 10.5 hours.<C file={data} id="knutti1982" /> Set the state to pregnancy and
-          watch a 1 pm coffee still sitting in the blood at bedtime, and the next morning. Even the late luteal phase of an ordinary cycle slows it, in step with progesterone.<C file={data} id="lane1992" />
-          In <Link to="/cycling-brain">Experiment 1, the menstrual cycle</Link>, this is the same hormone, doing something else.
+          <strong>Caffeine.</strong> Between men and women not using hormonal contraception the difference is small; the principal factor is oestrogen. Oral contraception slowed caffeine clearance by 40% and extended its
+          half-life from 5.4 to 7.9 hours;<C file={data} id="abernethy1985" /> late pregnancy extended it from 3 to 10.5 hours.<C file={data} id="knutti1982" /> With the state set to pregnancy,
+          caffeine from a 1 pm dose remains in the blood at bedtime, and the next morning. The late luteal phase of an ordinary cycle also slows clearance, in step with progesterone.<C file={data} id="lane1992" />
+          In <Link to="/cycling-brain">Experiment 1, the menstrual cycle</Link>, the same hormone is followed day by day across a cycle.
         </p>
         <p>
-          <strong>Metoprolol.</strong> A beta-blocker taken by millions for blood pressure and after heart attacks. Twenty healthy volunteers took 100 mg twice a day; the women ended up with about
-          twice the exposure of the men, and their heart rates fell further on exercise, because more of the drug got through the liver's first pass.<C file={data} id="luzier1999" /> A later
-          modelling study concluded that 50 mg in a woman gives roughly the exposure of 100 mg in a man; tick the box to see that curve.<C file={data} id="eugene2016" /> The immediate-release label describes one dose for
-          everyone,<C file={data} id="lopressor2023" /> and the extended-release label states that sex has no significant effect on the drug's kinetics.<C file={data} id="toprol2024" />
+          <strong>Metoprolol.</strong> A beta-blocker taken by millions for blood pressure and after heart attacks. Twenty healthy volunteers took 100 mg twice a day; the women had about
+          twice the exposure of the men, and their heart rates fell further on exercise, because a larger fraction of the dose escaped first-pass metabolism in the liver.<C file={data} id="luzier1999" /> A later
+          modelling study concluded that 50 mg in a woman gives roughly the exposure of 100 mg in a man; tick the box to see that curve.<C file={data} id="eugene2016" /> The immediate-release label describes a single dose
+          irrespective of sex,<C file={data} id="lopressor2023" /> and the extended-release label states that sex has no significant effect on the drug's kinetics.<C file={data} id="toprol2024" />
         </p>
       </>
     ) },
     { type: 'text', id: 't4', body: (
       <>
         <h2 className="display text-3xl font-medium mb-4">Limitations</h2>
-        <p><strong>Averages, not you.</strong> Each curve is the mean of eight to ten healthy volunteers. Your own liver enzymes, kidney function, age, other medicines and genes matter more than your sex. The spread between people is wider than the gap between the curves.</p>
-        <p><strong>A simple model.</strong> One compartment, first-order everything. It captures the shape of the day well for these drugs and misses the detail: metoprolol's first pass saturates at higher doses, acetaminophen's absorption depends on what you ate.</p>
-        <p><strong>Not advice.</strong> Nothing here says what dose anyone should take. The point is that the question "the same dose for whom?" has measurable answers, and that for most drugs nobody has published them. Of thousands of approved drugs, the 2020 review could find usable sex-specific data for 86.<C file={data} id="zucker2020" /></p>
+        <p><strong>Averages, not individuals.</strong> Each curve is the mean of eight to ten healthy volunteers. An individual's liver enzymes, kidney function, age, other medicines and genes matter more than their sex. The spread between individuals is wider than the gap between the curves.</p>
+        <p><strong>A simple model.</strong> One compartment, with first-order absorption and elimination. It captures the shape of the daily curve for these drugs but omits detail: metoprolol's first-pass metabolism saturates at higher doses, and acetaminophen's absorption depends on food intake.</p>
+        <p><strong>Not advice.</strong> Nothing here indicates what dose any individual should take. The purpose is to show that sex differences in exposure at the same dose are measurable, and that for most drugs they have not been published. Of thousands of approved drugs, the 2020 review could find usable sex-specific data for 86.<C file={data} id="zucker2020" /></p>
       </>
     ) },
     { type: 'text', id: 't5', body: (
@@ -82,7 +81,7 @@ export default function YourDose() {
         <p>
           The parameter table was built by hand from the primary studies and the FDA labels, with every value carrying its citation and, where derived, the arithmetic. It is published as a single
           data file on the <Link to="/your-dose/data">data page</Link>. The model runs in the browser; the maths is on the <Link to="/your-dose/methods">methods page</Link>.
-          A clinical pharmacologist or pharmacist has not yet reviewed it; until one has, read it as a draft.
+          A clinical pharmacologist or pharmacist has not yet reviewed it; until one has, it should be read as a draft.
         </p>
       </>
     ) },

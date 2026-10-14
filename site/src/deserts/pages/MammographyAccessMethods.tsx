@@ -23,7 +23,7 @@ export default function MammographyAccessMethods() {
       <ul className="mt-3 space-y-3 text-ink-2 leading-relaxed list-disc pl-5">
         <li><strong className="text-ink">A certificate is not capacity.</strong> One mobile unit and a hospital with six machines each count once. The FDA does not publish units or volume per facility.</li>
         <li><strong className="text-ink">Mobile units.</strong> The file does not flag them; some carry "Mobile" in the name. A mobile unit's listed address is its base, not where it screens.</li>
-        <li><strong className="text-ink">Straight lines.</strong> In mountains and on islands the road is much longer than the line; in cities the nearest facility may not be the one a woman can use.</li>
+        <li><strong className="text-ink">Straight lines.</strong> In mountainous and island areas the road distance is much longer than the straight-line distance; in cities the nearest facility may not be one a woman is able to use.</li>
         <li><strong className="text-ink">Supply, not use.</strong> Screening rates depend on insurance, hours, language, transport and trust as well as distance. This page measures only where the facilities are.</li>
         <li><strong className="text-ink">Geocoding errors.</strong> About twelve percent of addresses were placed by ZIP code; a ZIP that straddles a county line can put a facility in the wrong county.</li>
       </ul>

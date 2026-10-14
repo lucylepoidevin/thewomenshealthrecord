@@ -17,16 +17,16 @@ export function FindingsProse({ cycle }: { cycle: Cycle }) {
   return (
     <>
       <p>
-        Across her {h.n} scans, her hippocampus (both sides together) measured <strong>{fmt.cm3(h.mean)} cm³</strong> on average.
-        From one morning to the next it moved by about {h.cv_pct.toFixed(1)}% (that is its coefficient of variation). Its smallest reading came on
+        Across her {h.n} scans, hippocampal volume (both hemispheres combined) averaged <strong>{fmt.cm3(h.mean)} cm³</strong>.
+        Its day-to-day coefficient of variation was about {h.cv_pct.toFixed(1)}%. Its smallest value was recorded on
         day {h.min_day} ({fmt.pct(devPct('hippocampus', h.min_day))}) and its largest on day {h.max_day} ({fmt.pct(devPct('hippocampus', h.max_day))}).
-        Her whole brain, ventricles excluded, averaged {fmt.cm3(tb.mean)} cm³ and wobbled by {tb.cv_pct.toFixed(2)}% day to day; her lateral ventricles,
-        the fluid-filled spaces that are the most sensitive gauge of hydration and time of day, moved by {lv.cv_pct.toFixed(1)}%.
+        Whole-brain volume, ventricles excluded, averaged {fmt.cm3(tb.mean)} cm³ with a day-to-day coefficient of variation of {tb.cv_pct.toFixed(2)}%; the lateral ventricles,
+        the fluid-filled spaces most sensitive to hydration and time of day, varied by {lv.cv_pct.toFixed(1)}%.
       </p>
       <p>
-        Lined up against the same morning's blood draw, the same-day correlation between progesterone and hippocampal volume was
+        Against the same morning's blood draw, the same-day correlation between progesterone and hippocampal volume was
         r = {fmt.r(h.r_progesterone ?? 0)} ({fmt.p(h.p_progesterone ?? 1)}); with estradiol it was r = {fmt.r(h.r_estradiol ?? 0)} ({fmt.p(h.p_estradiol ?? 1)}).
-        The table below gives the same figures for every region you can highlight above.
+        The table below gives the same figures for every region available in the viewer above.
       </p>
     </>
   )
@@ -65,7 +65,7 @@ export function FindingsTable({ cycle }: { cycle: Cycle }) {
       </table>
       <p className="mt-3 text-xs text-ink-3 leading-relaxed">
         Volumes measured in the brain's own space after inverting each day's affine. Same-day Pearson r across the scanned days; bold where p &lt; 0.01, uncorrected.
-        With about a hundred region-by-hormone pairs in one person, a few will pass that line by chance. Treat them as things to look at again, not findings.
+        With about a hundred region-by-hormone pairs in one person, a few will pass that threshold by chance. They should be read as candidates for re-examination, not as findings.
       </p>
     </div>
   )

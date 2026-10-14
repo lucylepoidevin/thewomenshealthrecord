@@ -19,7 +19,7 @@ export default function Checker({ file }: { file: IngredientsFile }) {
   return (
     <section id="checker" className="mx-auto max-w-4xl px-4">
       <div className="mb-4 border-l-2 border-berry pl-4 py-1 text-sm text-ink-2">
-        <strong className="text-ink">What this is.</strong> A lookup against three official lists, with the list's own words. Being on a list says a chemical <em>can</em> be harmful under some conditions; it does not say a product is harmful. No scores, no rankings, no brands.
+        <strong className="text-ink">What this is.</strong> A lookup against three official lists, reported in each list's own terms. Inclusion on a list indicates that a chemical <em>can</em> be harmful under some conditions; it does not indicate that a product is harmful. No scores, rankings or brands are given.
       </div>
       <label className="block">
         <span className="eyebrow">Paste an ingredient list</span>
@@ -34,7 +34,7 @@ export default function Checker({ file }: { file: IngredientsFile }) {
 
       {tokens.length > 0 && (
         <div className="mt-6">
-          {hits.length === 0 && <p className="rule pt-4 text-ink-2">None of the {tokens.length} ingredients read from this list appears on the three lists checked{fragrance ? ', apart from an undisclosed fragrance' : ''}. That is a statement about the lists, not a safety verdict.</p>}
+          {hits.length === 0 && <p className="rule pt-4 text-ink-2">None of the {tokens.length} ingredients read from this list appears on the three lists checked{fragrance ? ', apart from an undisclosed fragrance' : ''}. This is a statement about the lists rather than a safety assessment.</p>}
           {GRADE_ORDER.map(g => byGrade(g).length > 0 && (
             <div key={g} className="mb-8">
               <div className="rule pt-4 flex flex-wrap items-baseline gap-x-3 gap-y-1">
@@ -47,7 +47,7 @@ export default function Checker({ file }: { file: IngredientsFile }) {
             </div>
           ))}
           {fragrance && (
-            <p className="rule pt-4 text-sm text-ink-2"><strong className="text-ink">"Parfum" or "fragrance"</strong> stands for a mixture that does not have to be itemised on the label. Several listed substances are fragrance ingredients (butylphenyl methylpropional, benzyl salicylate, some musks). Nothing can be checked behind that word.</p>
+            <p className="rule pt-4 text-sm text-ink-2"><strong className="text-ink">"Parfum" or "fragrance"</strong> denotes a mixture that need not be itemised on the label. Several listed substances are fragrance ingredients (butylphenyl methylpropional, benzyl salicylate, some musks). Ingredients covered by that term cannot be checked.</p>
           )}
         </div>
       )}
@@ -67,7 +67,7 @@ function Card({ hit, file }: { hit: Hit; file: IngredientsFile }) {
         <p className="text-xs text-ink-3">{i.name}{i.cas.length ? ` · CAS ${i.cas[0]}` : ''}{hit.matched.toLowerCase() !== hit.token.toLowerCase().trim() ? ` · matched as "${hit.matched}"` : ''}</p>
       </div>
       <div className="text-sm leading-relaxed text-ink-2">
-        {explainer ? <p>{explainer}</p> : <p>Listed as shown below. No plain-language note has been written for this one yet.</p>}
+        {explainer ? <p>{explainer}</p> : <p>Listed as shown below. No plain-language note has yet been written for this ingredient.</p>}
         <button type="button" onClick={() => setOpen(o => !o)} className="mt-1 text-xs text-berry underline underline-offset-2">{open ? 'Hide' : 'Show'} the listings ({rows.length})</button>
         {open && (
           <table className="mt-2 w-full text-xs">

@@ -12,7 +12,7 @@ export default function Data() {
       <p className="eyebrow">Data</p>
       <h1 className="display mt-2 text-3xl sm:text-4xl font-medium leading-tight">Files</h1>
       <p className="mt-6 max-w-3xl text-lg text-ink-2 leading-relaxed">
-        The source scans are on OpenNeuro under CC0. The derived files below are ours and are free to reuse with attribution to this page and to the original study.
+        The source scans are on OpenNeuro under CC0. The derived files below were produced by us and may be reused with attribution to this page and to the original study.
       </p>
       <ul className="mt-8 grid gap-3 sm:grid-cols-2">
         {[

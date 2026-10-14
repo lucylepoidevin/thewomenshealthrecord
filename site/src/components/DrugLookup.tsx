@@ -98,7 +98,7 @@ export default function DrugLookup({ drugs, minReports }: { drugs: Drug[]; minRe
             </div>
             <div className="rounded-2xl bg-blush-2/60 p-4">
               <div className="display text-4xl font-light leading-none text-berry">{d.faers_female_pct != null && (d.faers_n ?? 0) >= minReports ? `${d.faers_female_pct.toFixed(0)}%` : '—'}</div>
-              <p className="mt-2 text-xs text-ink-2">{d.faers_female_pct != null && (d.faers_n ?? 0) >= minReports ? `of its ${d.faers_n!.toLocaleString()} adverse-event reports are from women` : `too few adverse-event reports to say (under ${minReports})`}</p>
+              <p className="mt-2 text-xs text-ink-2">{d.faers_female_pct != null && (d.faers_n ?? 0) >= minReports ? `of its ${d.faers_n!.toLocaleString()} adverse-event reports are from women` : `too few adverse-event reports for a reliable share (under ${minReports})`}</p>
             </div>
             <div className="rounded-2xl bg-blush-2/60 p-4">
               <div className="display text-4xl font-light leading-none text-berry">{d.gap != null && (d.faers_n ?? 0) >= minReports ? `${d.gap > 0 ? '+' : ''}${d.gap.toFixed(0)}` : '—'}</div>
@@ -106,7 +106,7 @@ export default function DrugLookup({ drugs, minReports }: { drugs: Drug[]; minRe
             </div>
           </div>
           {d.rate_ratio != null && (
-            <p className="mt-3 text-sm text-ink-2">Adjusted for who takes it: women are {d.meps_female_pct!.toFixed(0)}% of its users in the federal prescription survey, so they file <span className="font-semibold text-berry">{d.rate_ratio.toFixed(1)}×</span> as many adverse-event reports per user as men.</p>
+            <p className="mt-3 text-sm text-ink-2">Adjusted for the user population: women are {d.meps_female_pct!.toFixed(0)}% of its users in the federal prescription survey, and file <span className="font-semibold text-berry">{d.rate_ratio.toFixed(1)}×</span> as many adverse-event reports per user as men.</p>
           )}
           <p className="mt-4 text-xs text-ink-3">
             <a className="text-berry underline underline-offset-2" href={d.snapshot_url} target="_blank" rel="noreferrer">Read the FDA's snapshot for {d.brand}</a>
@@ -128,14 +128,14 @@ export default function DrugLookup({ drugs, minReports }: { drugs: Drug[]; minRe
             </div>
             <div className="rounded-2xl bg-blush-2/60 p-4">
               <div className="display text-4xl font-light leading-none text-berry">{live.female + live.male >= minReports ? `${pct(live.female, live.male).toFixed(0)}%` : '—'}</div>
-              <p className="mt-2 text-xs text-ink-2">{live.female + live.male >= minReports ? `of its ${(live.female + live.male).toLocaleString()} sex-recorded adverse-event reports are from women` : `only ${(live.female + live.male).toLocaleString()} sex-recorded reports, too few to read anything into`}</p>
+              <p className="mt-2 text-xs text-ink-2">{live.female + live.male >= minReports ? `of its ${(live.female + live.male).toLocaleString()} sex-recorded adverse-event reports are from women` : `only ${(live.female + live.male).toLocaleString()} sex-recorded reports, too few for a reliable share`}</p>
             </div>
             <div className="rounded-2xl bg-blush-2/60 p-4">
               <div className="display text-4xl font-light leading-none text-berry">60%</div>
               <p className="mt-2 text-xs text-ink-2">of all FAERS reports with a recorded sex are from women, for comparison</p>
             </div>
           </div>
-          <p className="mt-4 text-xs text-ink-3">Live from openFDA{live.updated ? `, data through ${live.updated}` : ''}. Reports, not rates: a drug taken mostly by women will have mostly female reports.</p>
+          <p className="mt-4 text-xs text-ink-3">Live from openFDA{live.updated ? `, data through ${live.updated}` : ''}. These are report counts rather than rates: a drug taken mostly by women will have mostly female reports.</p>
         </div>
       )}
     </div>

@@ -39,7 +39,7 @@ export default function Simulator({ file }: { file: DrugsFile }) {
   return (
     <section id="simulator" className="mx-auto max-w-6xl px-4">
       <div className="mb-4 border-l-2 border-berry pl-4 py-1 text-sm text-ink-2">
-        <strong className="text-berry">Educational only.</strong> These curves are population averages from small studies of healthy adults, drawn with a simple model. They are not dosing advice. Never change a dose without your doctor or pharmacist.
+        <strong className="text-berry">Educational only.</strong> These curves are population means from small studies of healthy adults, drawn with a simple model. They are not dosing advice. Doses should not be changed without consulting a doctor or pharmacist.
       </div>
       <div className="graphic-card p-4 sm:p-6">
         <div className="flex flex-wrap mb-4 rule pt-1">
@@ -63,7 +63,7 @@ export default function Simulator({ file }: { file: DrugsFile }) {
               <span className="text-[11px] text-ink-3">Volume and clearance scale with weight, as the studies report them per kilogram.</span>
             </label>
             {hasMale && (
-              <label className="flex items-center gap-2 text-sm text-ink-2"><input type="checkbox" checked={showMale} onChange={e => setShowMale(e.target.checked)} /> Show the men's curve (the body most doses were set on)</label>
+              <label className="flex items-center gap-2 text-sm text-ink-2"><input type="checkbox" checked={showMale} onChange={e => setShowMale(e.target.checked)} /> Show the men's curve (the population on which most doses were set)</label>
             )}
             {drug.alt_dose && (
               <label className="flex items-center gap-2 text-sm text-ink-2"><input type="checkbox" checked={showAlt} onChange={e => setShowAlt(e.target.checked)} /> {drug.alt_dose.label}</label>
@@ -72,9 +72,9 @@ export default function Simulator({ file }: { file: DrugsFile }) {
               <p className="eyebrow mb-2">Read-outs · {drug.profiles[femaleKey].name.toLowerCase()}</p>
               <p>Half-life <strong className="text-ink">{fmt.h(halfLife(pHer))}</strong></p>
               <p>Peak <strong className="text-ink">{fmt.conc(herPeak.c, drug.unit)}</strong> at {clock(herPeak.t)}</p>
-              <p>At bedtime (11 pm) <strong className="text-ink">{fmt.conc(at(her.curve, bedtime), drug.unit)}</strong>{drug.key === 'caffeine' && <span className="text-ink-2"> ≈ {Math.round(mgInBody(at(her.curve, bedtime)))} mg still in the body, {(mgInBody(at(her.curve, bedtime)) / drug.regimen.dose_mg).toFixed(1)} cups' worth</span>}</p>
+              <p>At bedtime (11 pm) <strong className="text-ink">{fmt.conc(at(her.curve, bedtime), drug.unit)}</strong>{drug.key === 'caffeine' && <span className="text-ink-2"> ≈ {Math.round(mgInBody(at(her.curve, bedtime)))} mg remaining in the body, {(mgInBody(at(her.curve, bedtime)) / drug.regimen.dose_mg).toFixed(1)} cups' equivalent</span>}</p>
               <p>Next morning (7 am) <strong className="text-ink">{fmt.conc(at(her.curve, morning), drug.unit)}</strong></p>
-              {ratio != null && <p className="mt-2 border-t border-hairline/60 pt-2">Her day's total exposure vs the men's curve: <strong className="text-berry">{fmt.x(ratio)}</strong></p>}
+              {ratio != null && <p className="mt-2 border-t border-hairline/60 pt-2">Her daily total exposure relative to the men's curve:<strong className="text-berry">{fmt.x(ratio)}</strong></p>}
             </div>
           </div>
           <div>
@@ -83,7 +83,7 @@ export default function Simulator({ file }: { file: DrugsFile }) {
         </div>
         <div className="mt-5"><Params file={file} drug={drug} profiles={[femaleKey, ...(hasMale ? ['male'] : [])]} /></div>
       </div>
-      <p className="mt-3 text-center text-xs text-ink-3">Hover or tap the chart to read every curve. The day shown is the fifth identical day, so repeated doses have settled. Night shaded 11 pm to 7 am.</p>
+      <p className="mt-3 text-center text-xs text-ink-3">Hover or tap the chart to read every curve. The day shown is the fifth identical day, so repeated doses have reached steady state. Night is shaded 11 pm to 7 am.</p>
     </section>
   )
 }
