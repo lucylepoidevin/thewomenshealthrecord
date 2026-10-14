@@ -28,3 +28,14 @@ export function explainerFor(file: IngredientsFile, ing: Ingredient) {
   for (const c of [ing.id, ...ing.cas]) { const e = file.explainers?.[c]; if (e) return e }
   return undefined
 }
+
+
+/** Ingredients that readers commonly expect to see flagged, with the regulatory position where a primary source exists.
+ *  Keyed by normalised label name (see match.ts norm). Shown only when the ingredient is read and is on none of the three lists. */
+export const NOT_LISTED: Record<string, { note: string; source: string; url: string }> = {
+  'phenoxyethanol': {
+    note: 'Not on EU List I, II or III and not on Proposition 65. The EU Scientific Committee on Consumer Safety concluded in 2016 that phenoxyethanol is safe for use as a preservative at a maximum concentration of 1.0%, which is the limit in the EU Cosmetics Regulation.',
+    source: 'SCCS, Opinion on Phenoxyethanol, SCCS/1575/16, final version of 6 October 2016',
+    url: 'https://health.ec.europa.eu/system/files/2021-08/sccs_o_195_0.pdf',
+  },
+}

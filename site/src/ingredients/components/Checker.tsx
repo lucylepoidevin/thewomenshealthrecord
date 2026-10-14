@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
-import { GRADE_HELP, GRADE_ORDER, explainerFor, type Grade, type IngredientsFile } from '../lib/data'
-import { buildIndex, match, tokenize, type Hit } from '../lib/match'
+import { GRADE_HELP, GRADE_ORDER, NOT_LISTED, explainerFor, type Grade, type IngredientsFile } from '../lib/data'
+import { buildIndex, match, norm, tokenize, type Hit } from '../lib/match'
 
 const SAMPLE = 'Aqua, Glycerin, Cetearyl Alcohol, Methylparaben, Propylparaben, Cyclopentasiloxane, Butylphenyl Methylpropional, Benzophenone-3, Parfum, Titanium Dioxide (CI 77891)'
 
@@ -16,6 +16,8 @@ export default function Checker({ file }: { file: IngredientsFile }) {
   const hits = useMemo(() => match(tokens, idx), [tokens, idx])
   const byGrade = (g: Grade) => hits.filter(h => h.ingredient.top_grade === g)
   const fragrance = tokens.some(t => /^(parfum|fragrance|aroma|flavor|flavour)$/i.test(t.trim()))
+  const hitTokens = useMemo(() => new Set(hits.map(h => h.token)), [hits])
+  const notListed = useMemo(() => tokens.filter(t => !hitTokens.has(t) && NOT_LISTED[norm(t)]).map(t => [t.trim(), NOT_LISTED[norm(t)]] as const), [tokens, hitTokens])
   return (
     <section id="checker" className="mx-auto max-w-4xl px-4">
       <div className="mb-4 border-l-2 border-berry pl-4 py-1 text-sm text-ink-2">
@@ -34,7 +36,20 @@ export default function Checker({ file }: { file: IngredientsFile }) {
 
       {tokens.length > 0 && (
         <div className="mt-6">
-          {hits.length === 0 && <p className="rule pt-4 text-ink-2">None of the {tokens.length} ingredients read from this list appears on the three lists checked{fragrance ? ', apart from an undisclosed fragrance' : ''}. This is a statement about the lists rather than a safety assessment.</p>}
+          <div className="rule pt-4">
+            <p className="text-xs text-ink-3 mb-2">Ingredients read ({tokens.length}); those on a list are marked.</p>
+            <p className="text-[13px] leading-relaxed text-ink-2">
+              {tokens.map((t, i) => { const on = hitTokens.has(t); return <span key={i} className={on ? 'text-berry font-semibold' : ''}>{t.replace(/\s+/g, ' ')}{i < tokens.length - 1 ? ', ' : ''}</span> })}
+            </p>
+          </div>
+          {hits.length === 0 && (
+            <p className="mt-4 text-ink-2">None of the {tokens.length} ingredients read is on EU List I, II or III or on California's Proposition 65 list (lists dated {file.generated}){fragrance ? ', apart from an undisclosed fragrance, which cannot be checked' : ''}. This is a statement about those three lists rather than a safety assessment; ingredients that appear on non-official lists are not flagged here.</p>
+          )}
+          {notListed.length > 0 && (
+            <ul className="mt-4 space-y-3 text-sm leading-relaxed text-ink-2">
+              {notListed.map(([t, n]) => <li key={t}><strong className="text-ink">{t}.</strong> {n.note} <a href={n.url} target="_blank" rel="noreferrer" className="text-berry underline underline-offset-2">{n.source}</a>.</li>)}
+            </ul>
+          )}
           {GRADE_ORDER.map(g => byGrade(g).length > 0 && (
             <div key={g} className="mb-8">
               <div className="rule pt-4 flex flex-wrap items-baseline gap-x-3 gap-y-1">
