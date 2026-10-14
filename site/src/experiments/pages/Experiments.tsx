@@ -58,7 +58,7 @@ export default function Experiments() {
         </p>
         <p className="text-sm text-ink-2">
           All source data is public (OpenNeuro datasets ds002674, ds005299 and ds005115 from the Jacobs lab at UC Santa Barbara; primary pharmacology papers and FDA labels for Experiment 4).
-          Every number on every page links to its source; every pipeline is published. Nothing here is medical advice.
+          Sources are listed on each page and every pipeline is published. Nothing here is medical advice.
         </p>
       </section>
     </div>

@@ -17,7 +17,7 @@ export default function About() {
       </header>
 
       <Section title="What it is">
-        <p>The Women's Health Record is a series of data chapters on where medicine treats women and men differently: who is studied, who is dosed, who waits longest and whose diseases are funded.</p>
+        <p>The Women's Health Record is a series of data chapters and interactive experiments on where medicine treats women and men differently: who is studied, who is dosed, who waits longest, whose diseases are funded, and what the public record holds on breast screening.</p>
         <p>Each chapter is an original analysis of a public dataset, published with its full method and a link from every number to its source. Chapters are added one at a time, alongside essays on <a href="https://substack.com/@thewomenshealthrecord" target="_blank" rel="noreferrer">Substack</a>.</p>
       </Section>
 
@@ -31,7 +31,7 @@ export default function About() {
       </Section>
 
       <Section title="Sources">
-        <p>Only official or peer-reviewed datasets: FDA approval records, adverse-event reports and drug labels; the CDC's emergency department survey and body-measurement reference data; NIH funding data; WHO burden estimates; ClinicalTrials.gov; the National Cancer Institute's SEER registries; and PubMed's index. Every retrieval date is recorded, and every chart can be regenerated from the repository.</p>
+        <p>Only official or peer-reviewed datasets. Chapters: FDA approval records, adverse-event reports and drug labels; the CDC's emergency department survey and body-measurement reference data; NIH funding data; WHO burden estimates; ClinicalTrials.gov; the National Cancer Institute's SEER registries; and PubMed's index. Experiments: OpenNeuro MRI datasets from the Jacobs laboratory at UC Santa Barbara; published pharmacokinetic studies and FDA labels; the EU endocrine disruptor lists and California's Proposition 65 list; the FDA's M-SYNTH synthetic mammograms, certified facility list and device authorisation documents; the Breast Cancer Surveillance Consortium's public files; and US Census Bureau population data. Every retrieval date is recorded, and every chart can be regenerated from the repository.</p>
       </Section>
 
     </div>

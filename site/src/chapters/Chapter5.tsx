@@ -140,7 +140,7 @@ export default function Chapter5() {
       <header className="mx-auto max-w-[42rem] px-4 pt-14 pb-8">
         <p className="eyebrow">{chapterRef('sent-home-with-a-label')}</p>
         <h1 className="display mt-2 text-3xl sm:text-[2.5rem] font-medium leading-[1.15]">Emergency diagnoses and cancer stage at diagnosis, by sex</h1>
-        <p className="mt-4 max-w-2xl text-[17px] text-ink-2 leading-relaxed">The common account holds that women are discharged undiagnosed, under-tested and told the cause is anxiety. We examined {S.n.toLocaleString()} emergency visits and {(C.cases_total / 1e6).toFixed(1)} million cancer cases. A gap exists, but not where the account places it.</p>
+        <p className="mt-4 max-w-2xl text-[17px] text-ink-2 leading-relaxed">{S.n.toLocaleString()} emergency visits and {(C.cases_total / 1e6).toFixed(1)} million cancer cases: where women are diagnosed later or tested less than men, and where they are not.</p>
         <p className="mt-5 text-xs tracking-wide text-ink-3">NHAMCS {data.years[0]}–{data.years[1]} · SEER {C.years_stage} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>
       </header>
       <Story blocks={blocks} />

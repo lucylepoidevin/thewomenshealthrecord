@@ -4,7 +4,7 @@ import { chromium } from 'playwright'
 import { readFileSync, writeFileSync } from 'node:fs'
 const app = readFileSync('src/App.tsx', 'utf8')
 const routes = [...new Set([...app.matchAll(/path="([^"]+)"/g)].map(m => m[1]))].filter(r => r !== '*')
-const base = 'http://localhost:5173/thewomenshealthrecord/#'
+const base = (process.env.SITE_BASE ?? 'http://localhost:5173/thewomenshealthrecord/') + '#'
 const browser = await chromium.launch()
 const out = { routes: {}, external: new Set(), internalBad: [] }
 for (const viewport of [{ width: 1280, height: 900 }, { width: 375, height: 812 }]) {

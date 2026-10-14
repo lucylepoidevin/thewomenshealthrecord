@@ -152,7 +152,7 @@ export default function Chapter6() {
       <header className="mx-auto max-w-[42rem] px-4 pt-14 pb-8">
         <p className="eyebrow">{chapterRef('male-default')}</p>
         <h1 className="display mt-2 text-3xl sm:text-[2.5rem] font-medium leading-[1.15]">Male-only animal studies, trials and drug labels</h1>
-        <p className="mt-4 max-w-2xl text-[17px] text-ink-2 leading-relaxed">The animals drugs are tested on, the trials that follow, and the drug label: three places where the male body remains the reference standard, measured.</p>
+        <p className="mt-4 max-w-2xl text-[17px] text-ink-2 leading-relaxed">The animals drugs are tested on, the trials that follow, and the drug label: how often each is male by default.</p>
         <p className="mt-5 text-xs tracking-wide text-ink-3">PubMed {P.years[0]}–{y1}, openFDA labels retrieved {data.generated} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>
       </header>
       <Story blocks={blocks} />

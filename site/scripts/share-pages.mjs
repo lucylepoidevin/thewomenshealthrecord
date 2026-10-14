@@ -1,26 +1,24 @@
 // Generate static share pages: dist/chapters/<slug>/index.html with Open Graph tags,
 // redirecting to the hash route. Crawlers get the card; people get the chapter.
-import { mkdirSync, writeFileSync } from 'node:fs'
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 const dist = fileURLToPath(new URL('../dist/', import.meta.url))
 const site = 'https://lucylepoidevin.github.io/thewomenshealthrecord/'
-const pages = [
-  { slug: 'tested-on-men', title: 'Women in drug trials against women in adverse-event reports', desc: 'Every new drug the FDA has approved since 2015, scored on who was in the trial against who reports the side effects.', img: 'tested-on-men.png' },
-  { slug: 'pain-gap', title: 'Pain, triage and waiting in the emergency department, by sex', desc: 'Twenty thousand emergency visits for pain and 377 heart attacks, 2018–2022: where women are rated lower, and where they are not.', img: 'pain-gap.png' },
-  { slug: 'funding-vs-burden', title: 'NIH funding against disease burden, by sex', desc: '67 diseases, their NIH budgets and the healthy years they cost Americans: where the money follows the burden and which conditions are never measured.', img: 'funding-vs-burden.png' },
-  { slug: 'who-gets-studied', title: 'Women\'s share of clinical trial participants, by disease', desc: '56,591 trials and 21 million people: the share of women in each disease\'s trials against the share of women in the disease, and how few trials ever report what they found in women.', img: 'who-gets-studied.png' },
-  { slug: 'sent-home-with-a-label', title: 'Emergency diagnoses and cancer stage at diagnosis, by sex', desc: '20,808 emergency visits and 4.3 million cancer cases: where women are diagnosed later or tested less than men, and where they are not.', img: 'sent-home-with-a-label.png' },
-  { slug: 'male-default', title: 'Male-only animal studies, trials and drug labels', desc: 'The animals drugs are tested on, the trials that follow, and the label you are handed: how often each one is male by default, measured.', img: 'male-default.png' },
-]
+// Titles and descriptions come from the same source files the site renders, so share cards never drift from the pages.
+const src = fileURLToPath(new URL('../src/', import.meta.url))
+const unq = t => t.replace(/\\'/g, "'")
+const field = (line, key) => { const m = line.match(new RegExp(key + ": '((?:[^'\\\\]|\\\\.)*)'")); return m ? unq(m[1]) : null }
+const pages = []
+for (const line of readFileSync(src + 'lib/chapters.ts', 'utf8').split('\n')) {
+  const slug = field(line, 'slug'); if (!slug) continue
+  pages.push({ slug, title: field(line, 'title'), desc: field(line, 'dek'), img: `${slug}.png` })
+}
 // Experiments live outside /chapters/; `path` overrides the folder and hash route.
-pages.push({ slug: 'cycling-brain', path: 'cycling-brain', title: 'One woman\'s brain across a menstrual cycle', desc: '30 daily MRI scans and blood tests over one cycle. Brain structure volumes and hormone levels, day by day.', img: 'cycling-brain.png' })
-pages.push({ slug: 'pregnancy-brain', path: 'pregnancy-brain', title: 'One woman\'s brain through pregnancy', desc: '27 MRI scans from before conception to two years after birth. Brain structure volumes against their pre-pregnancy size.', img: 'pregnancy-brain.png' })
-pages.push({ slug: 'male-brain', path: 'male-brain', title: 'One man\'s brain, morning and evening, for 30 days', desc: '40 MRI scans at 7 am and 8 pm with testosterone and cortisol, run through the same pipeline as the menstrual cycle study.', img: 'male-brain.png' })
-pages.push({ slug: 'your-dose', path: 'your-dose', title: 'Drug levels in the blood, by sex and body weight', desc: 'A pharmacokinetic simulator for acetaminophen, caffeine and metoprolol using published sex-specific parameters.', img: 'your-dose.png' })
-pages.push({ slug: 'ingredient-check', path: 'ingredient-check', title: 'Cosmetic ingredients against the official hormone-disruptor lists', desc: 'Paste a product\'s ingredient list and see which ingredients are on the EU endocrine disruptor lists or California\'s Proposition 65 list, with the list\'s own grade and source.', img: 'ingredient-check.png' })
-pages.push({ slug: 'dense-breast', path: 'dense-breast', title: 'Breast density, and what a mammogram can miss', desc: 'Synthetic mammograms from the FDA at four breast densities, some with a mass and some without. Try to find it, then see the screening numbers by density.', img: 'dense-breast.png' })
-pages.push({ slug: 'mammography-access', path: 'mammography-access', title: 'Mammography facilities by county, and the counties with none', desc: 'Every FDA-certified mammography facility on a county map, counted against the women aged 40 to 74 who live there, and the counties with none.', img: 'mammography-access.png' })
-pages.push({ slug: 'mammography-ai', path: 'mammography-ai', title: 'Who the FDA\'s mammography AI was tested on', desc: 'Every FDA-authorised AI that reads mammograms, and what its public summary says about the test patients: how many, from where, on which machines, and whether age, race and breast density were reported.', img: 'mammography-ai.png' })
+for (const entry of readFileSync(src + 'experiments/list.ts', 'utf8').match(/\{ n: \d+,[\s\S]*?\},?\n/g) ?? []) {
+  const path = field(entry, 'path'); if (!path) continue
+  const slug = path.replace(/^\//, '')
+  pages.push({ slug, path: slug, title: field(entry, 'title'), desc: field(entry, 'dek'), img: `${slug}.png` })
+}
 const route = p => p.path ? p.path : `chapters/${p.slug}`
 const html = p => `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>${p.title} · The Women's Health Record</title>
 <meta name="description" content="${p.desc}"><meta property="og:type" content="article"><meta property="og:site_name" content="The Women's Health Record">
