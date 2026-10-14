@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import Story, { type Block } from '../../components/Story'
 import Checker from '../components/Checker'
+import Browse from '../components/Browse'
 import ExperimentNav from '../../experiments/ExperimentNav'
 import { jumpTo } from '../../cycling/lib/jump'
 import { useIngredients, type IngredientsFile } from '../lib/data'
@@ -108,6 +109,7 @@ export default function IngredientCheck() {
       {error && <p className="mx-auto max-w-2xl px-4 text-center text-sm text-berry">Could not load the data: {error}</p>}
       {!data && !error && <p className="mx-auto max-w-2xl px-4 text-center text-sm text-ink-3">Loading the lists…</p>}
       {data && <Checker file={data} />}
+      {data && <Browse file={data} />}
       <div className="mt-16"><Story blocks={blocks} /></div>
       <ExperimentNav current="/ingredient-check" />
     </div>

@@ -70,7 +70,7 @@ export default function Checker({ file }: { file: IngredientsFile }) {
   )
 }
 
-function Card({ hit, file }: { hit: Hit; file: IngredientsFile }) {
+export function Card({ hit, file }: { hit: Hit; file: IngredientsFile }) {
   const i = hit.ingredient
   const [open, setOpen] = useState(false)
   const rows = [...i.grades].sort((a, b) => GRADE_ORDER.indexOf(a.grade) - GRADE_ORDER.indexOf(b.grade) || String(b.year ?? '').localeCompare(String(a.year ?? '')))
