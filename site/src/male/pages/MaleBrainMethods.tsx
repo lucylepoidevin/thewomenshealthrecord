@@ -14,7 +14,7 @@ export default function MaleBrainMethods() {
   return (
     <div className="mx-auto max-w-3xl px-4 pt-16 pb-24">
       <p className="eyebrow">Methods · Experiment 3</p>
-      <h1 className="display mt-3 text-4xl sm:text-5xl font-light leading-tight">Methods: male brain, morning and evening</h1>
+      <h1 className="display mt-2 text-3xl sm:text-4xl font-medium leading-tight">Methods: male brain, morning and evening</h1>
       <p className="mt-6 text-lg text-ink-2 leading-relaxed">The same pipeline as the two experiments before it, with the comparison step built around time of day instead of cycle phase or gestation.</p>
       <ol className="mt-10 space-y-8">
         {steps.map(s => (

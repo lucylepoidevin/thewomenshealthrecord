@@ -46,10 +46,9 @@ export default function MammoAI() {
           {pct(d => d.test_countries.length > 0)} percent, and the United States in {pct(d => d.us_in_test)} percent.
         </p>
         <p>
-          The timing is the finding. Before 2024, {before24.filter(d => d.race_reported).length} of {before24.length} summaries reported race; from 2024 on, {since24.filter(d => d.race_reported).length} of{' '}
-          {since24.length} do. Density goes from {before24.filter(d => d.density_reported).length} of {before24.length} to {since24.filter(d => d.density_reported).length} of {since24.length}. The devices did not change
-          character in 2024; the documents did. In January 2025 the FDA published draft guidance for AI-enabled device submissions that asks companies for "evidence to evaluate whether a device
-          benefits all relevant demographic groups (e.g., race, ethnicity, sex, and age) similarly", which puts in writing what the summaries had already started to show.<Cite id="fr2025" sources={S} />
+          The change over time is the main finding. Before 2024, {before24.filter(d => d.race_reported).length} of {before24.length} summaries reported race; from 2024 on, {since24.filter(d => d.race_reported).length} of{' '}
+          {since24.length} do. Density goes from {before24.filter(d => d.density_reported).length} of {before24.length} to {since24.filter(d => d.density_reported).length} of {since24.length}. The devices did not change in 2024; the documents did. In January 2025 the FDA published draft guidance for AI-enabled device submissions that asks companies for "evidence to evaluate whether a device
+          benefits all relevant demographic groups (e.g., race, ethnicity, sex, and age) similarly", which came after the change in the summaries had begun.<Cite id="fr2025" sources={S} />
         </p>
       </>
     ) },
@@ -79,7 +78,7 @@ export default function MammoAI() {
         </p>
         <p>
           When race is reported, the categories are uneven and often small, and "unknown" is common. The De Novo decision for the risk model is the exception: 77,511 screening exams from five
-          named US sites, with race, ethnicity, age and density tabulated for both the exams and the cancers. That document is the standard the others can be read against.
+          named US sites, with race, ethnicity, age and density tabulated for both the exams and the cancers. It is the most complete of the sixty.
         </p>
       </>
     ) },
@@ -110,14 +109,14 @@ export default function MammoAI() {
   ] : []
   return (
     <div>
-      <section className="mx-auto max-w-4xl px-4 pt-20 pb-12 sm:pt-28 text-center">
+      <section className="mx-auto max-w-[42rem] px-4 pt-14 pb-8">
         <p className="eyebrow">Experiment 8</p>
-        <h1 className="display mt-5 text-4xl sm:text-6xl lg:text-7xl font-light leading-[1.02]">Who the FDA's mammography AI was tested on</h1>
-        <p className="mx-auto mt-7 max-w-2xl text-lg text-ink-2 leading-relaxed">
+        <h1 className="display mt-2 text-3xl sm:text-[2.5rem] font-medium leading-[1.15]">Who the FDA's mammography AI was tested on</h1>
+        <p className="mt-4 max-w-2xl text-[17px] text-ink-2 leading-relaxed">
           Every FDA-authorised AI that reads mammograms, and what its public summary says about the test patients: how many, from where, on which machines, and whether their age, race and
           breast density were reported at all.
         </p>
-        <div className="mt-9 flex flex-wrap justify-center gap-3">
+        <div className="mt-6 flex flex-wrap gap-3">
           <a href="#timeline" onClick={jumpTo('timeline')} className="btn btn-solid">See the record</a>
           <Link to="/mammography-ai/methods" className="btn">Methods</Link>
         </div>
@@ -126,11 +125,7 @@ export default function MammoAI() {
       {!data && !error && <p className="mx-auto max-w-2xl px-4 text-center text-sm text-ink-3">Loading…</p>}
       {data && s && (
         <section id="timeline" className="mx-auto max-w-5xl px-4">
-          <div className="grid gap-4 sm:grid-cols-4">
-            {[[s.n, 'authorisations read'], [`${pct(d => d.race_reported)}%`, 'of summaries that describe a test report race or ethnicity'], [`${pct(d => d.density_reported)}%`, 'report breast density'], [`${s.vendors['Hologic'] ?? 0}`, 'name Hologic']].map(([v, l]) => (
-              <div key={l as string} className="rule pt-3"><p className="display text-4xl font-light text-ink">{v}</p><p className="mt-1 text-sm text-ink-2">{l}</p></div>
-            ))}
-          </div>
+          <p className="rule pt-4 text-[15px] text-ink-2">{s.n} authorisations read. Of the {described.length} that describe a test, {pct(d => d.race_reported)} percent report the race or ethnicity of the test patients and {pct(d => d.density_reported)} percent their breast density. {s.vendors['Hologic'] ?? 0} name Hologic.</p>
         </section>
       )}
       <div className="mt-12"><Story blocks={blocks} /></div>

@@ -50,7 +50,7 @@ export function CompareTable({ data, her }: { data: Male; her: HerStats }) {
     <div className="table-wrap">
       <table className="w-full text-sm">
         <thead>
-          <tr className="text-left text-[11px] uppercase tracking-[0.14em] text-ink-3">
+          <tr className="text-left text-[12px] text-ink-3">
             <th className="py-2 pr-3 font-semibold">Region</th>
             <th className="py-2 pr-3 font-semibold text-right">Her mean cm³</th>
             <th className="py-2 pr-3 font-semibold text-right">His mean cm³</th>

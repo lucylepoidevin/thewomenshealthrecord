@@ -13,7 +13,7 @@ function Sensitivity() {
   return (
     <div className="mt-4 overflow-x-auto">
       <table className="w-full border-collapse text-[13px]">
-        <thead><tr className="text-[11px] font-bold uppercase tracking-[0.12em] text-ink-3"><th className="py-2 pr-3 text-left font-bold">Variant</th><th className="py-2 pr-3 text-right font-bold">Diseases</th><th className="py-2 pr-3 text-right font-bold">Median ratio, women / men</th><th className="py-2 pr-3 text-right font-bold">Below line, women / men</th><th className="py-2 pr-3 text-right font-bold">Shortfall</th><th className="py-2 text-right font-bold">Migraine</th></tr></thead>
+        <thead><tr className="text-[12px] font-semibold text-ink-3"><th className="py-2 pr-3 text-left font-bold">Variant</th><th className="py-2 pr-3 text-right font-bold">Diseases</th><th className="py-2 pr-3 text-right font-bold">Median ratio, women / men</th><th className="py-2 pr-3 text-right font-bold">Below line, women / men</th><th className="py-2 pr-3 text-right font-bold">Shortfall</th><th className="py-2 text-right font-bold">Migraine</th></tr></thead>
         <tbody>{rows.map(v => (
           <tr key={v.label} className="border-t border-hairline/60"><td className="py-2 pr-3 text-ink">{v.label}</td><td className="py-2 pr-3 text-right tabular-nums">{v.n}</td><td className="py-2 pr-3 text-right tabular-nums">{v.median_ratio.female?.toFixed(2)} / {v.median_ratio.male?.toFixed(2)}</td><td className="py-2 pr-3 text-right tabular-nums">{v.share_underfunded.female}% / {v.share_underfunded.male}%</td><td className="py-2 pr-3 text-right tabular-nums">${v.female_shortfall_m}M</td><td className="py-2 text-right tabular-nums">{v.migraine_ratio?.toFixed(2)}×</td></tr>
         ))}</tbody>
@@ -24,10 +24,10 @@ function Sensitivity() {
 
 export default function Methods() {
   return (
-    <div className="mx-auto max-w-3xl px-4 pt-20 pb-16 prose-step fade-up">
-      <header className="text-center pb-6">
+    <div className="mx-auto max-w-3xl px-4 pt-20 pb-16 prose-step">
+      <header className="pb-4">
         <p className="eyebrow">Methods</p>
-        <h1 className="display mt-4 text-4xl sm:text-6xl font-light leading-[1.05]">How every number <span className="italic font-medium text-berry">was made</span>.</h1>
+        <h1 className="display mt-2 text-3xl sm:text-[2.5rem] font-medium leading-[1.15]">Methods</h1>
       </header>
       <P>Every chart on this site is generated from a public dataset by a script in our repository. This page explains what each chapter measures, how, and where it can mislead.</P>
 

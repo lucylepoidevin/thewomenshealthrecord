@@ -7,7 +7,7 @@ export default function YourDoseMethods() {
   return (
     <div className="mx-auto max-w-3xl px-4 pt-16 pb-24">
       <p className="eyebrow">Methods · Experiment 4</p>
-      <h1 className="display mt-3 text-4xl sm:text-5xl font-light leading-tight">Methods: drug level simulator</h1>
+      <h1 className="display mt-2 text-3xl sm:text-4xl font-medium leading-tight">Methods: drug level simulator</h1>
       <p className="mt-6 text-lg text-ink-2 leading-relaxed">A one-compartment model with first-order absorption and elimination, the standard teaching model of oral pharmacokinetics, fed with published sex-specific parameters.</p>
       <h2 className="display mt-12 text-2xl font-medium">The model</h2>
       <p className="mt-3 text-ink-2 leading-relaxed">For a single oral dose D with bioavailability F, absorption rate k<sub>a</sub>, volume of distribution V and clearance CL (so elimination rate k<sub>e</sub> = CL / V), the plasma concentration at time t after the dose is</p>

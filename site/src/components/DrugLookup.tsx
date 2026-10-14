@@ -60,11 +60,11 @@ export default function DrugLookup({ drugs, minReports }: { drugs: Drug[]; minRe
           value={q}
           onChange={e => { setQ(e.target.value); reset() }}
           placeholder="Brand or generic name, e.g. Ozempic, Ambien, ibuprofen"
-          className="w-full rounded-full border border-hairline bg-white px-5 py-3 text-[15px] outline-none focus:border-rose focus:ring-4 focus:ring-rose/10"
+          className="w-full rounded-md border border-hairline bg-white px-5 py-3 text-[15px] outline-none focus:border-rose focus:ring-4 focus:ring-rose/10"
           aria-label="Search drugs"
         />
         {matches.length > 0 && !pick && (
-          <ul className="absolute left-0 top-full z-10 mt-2 w-full overflow-hidden rounded-2xl border border-hairline bg-white shadow-[0_20px_50px_-25px_rgba(139,30,75,0.35)]">
+          <ul className="absolute left-0 top-full z-10 mt-2 w-full overflow-hidden rounded-2xl border border-hairline bg-white">
             {matches.map(m => (
               <li key={m.slug}>
                 <button type="button" onClick={() => { setPick(m); setQ(m.brand) }} className="flex w-full items-baseline justify-between px-5 py-2.5 text-left hover:bg-blush-2/60">
@@ -76,7 +76,7 @@ export default function DrugLookup({ drugs, minReports }: { drugs: Drug[]; minRe
           </ul>
         )}
         {q.trim().length >= 3 && matches.length === 0 && !pick && !live && (
-          <button type="submit" disabled={busy} className="shrink-0 rounded-full bg-berry px-5 py-3 text-sm font-semibold text-white transition hover:bg-rose disabled:opacity-60">
+          <button type="submit" disabled={busy} className="shrink-0 rounded-md bg-berry px-5 py-3 text-sm font-semibold text-white transition hover:bg-rose disabled:opacity-60">
             {busy ? 'Searching…' : 'Search FDA reports'}
           </button>
         )}
@@ -85,7 +85,7 @@ export default function DrugLookup({ drugs, minReports }: { drugs: Drug[]; minRe
       {q.trim().length >= 2 && q.trim().length < 3 && matches.length === 0 && <p className="mt-3 text-sm text-ink-3">Keep typing to search the FDA's reports for any drug.</p>}
 
       {d && (
-        <div className="mt-5 fade-up">
+        <div className="mt-5">
           <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
             <span className="display text-2xl font-medium text-ink">{d.brand}</span>
             <span className="text-sm text-ink-3">{d.generic} · approved {d.year} · {d.category}</span>
@@ -116,7 +116,7 @@ export default function DrugLookup({ drugs, minReports }: { drugs: Drug[]; minRe
       )}
 
       {live && (
-        <div className="mt-5 fade-up">
+        <div className="mt-5">
           <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
             <span className="display text-2xl font-medium text-ink">{live.name}</span>
             <span className="text-sm text-ink-3">matched by {live.field} name in FAERS</span>

@@ -14,7 +14,7 @@ export default function Methods() {
   return (
     <div className="mx-auto max-w-3xl px-4 pt-16 pb-24">
       <p className="eyebrow">Methods</p>
-      <h1 className="display mt-3 text-4xl sm:text-5xl font-light leading-tight">Methods: brain across a menstrual cycle</h1>
+      <h1 className="display mt-2 text-3xl sm:text-4xl font-medium leading-tight">Methods: brain across a menstrual cycle</h1>
       <p className="mt-6 text-lg text-ink-2 leading-relaxed">
         Every number on the main page comes from a six-step pipeline that you can run yourself. The code lives next to the site in the project repository.
       </p>

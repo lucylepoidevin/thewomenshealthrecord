@@ -6,7 +6,7 @@ export default function MammoAIMethods() {
   return (
     <div className="mx-auto max-w-3xl px-4 pt-16 pb-24">
       <p className="eyebrow">Methods · Experiment 8</p>
-      <h1 className="display mt-3 text-4xl sm:text-5xl font-light leading-tight">Methods: mammography AI</h1>
+      <h1 className="display mt-2 text-3xl sm:text-4xl font-medium leading-tight">Methods: mammography AI</h1>
       <ol className="mt-10 space-y-8">
         {[
           ['Devices', 'The FDA\'s AI-enabled medical devices list (CSV, retrieved 11 October 2026, 1,615 entries) was filtered to software whose intended use is on 2D mammograms or digital breast tomosynthesis: by product code (QDQ detection/diagnosis, QFM triage, LLZ and QIH density and image processing), by company and by device name, then checked by hand. Breast ultrasound (Koios, QVCAD), optoacoustic imaging, breast MRI, pathology and X-ray hardware were excluded. The two PMA approvals that predate the list, ImageChecker (1998) and Second Look (2002), were added. The list also carries dental and chest devices under the mammography CAD code MYN; those were excluded.'],

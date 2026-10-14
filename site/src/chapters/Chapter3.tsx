@@ -67,7 +67,7 @@ export default function Chapter3() {
                   <td className="py-3 pr-4 w-[14rem]"><div className="font-semibold text-berry">{c.disease}</div><div className="text-[11px] text-ink-3">{(c.dalys_k / 1000).toFixed(c.dalys_k >= 1000 ? 1 : 2)}M DALYs · {c.female_share.toFixed(0)}% women · <b>${c.per_daly.toFixed(0)}</b> per DALY</div></td>
                   <td className="py-3">
                     <div className="flex flex-wrap gap-1.5">
-                      {c.others.map(o => <span key={o.disease} className="rounded-full bg-blush-2/70 px-3 py-1 text-[12px] text-ink"><span className="inline-block h-2 w-2 rounded-full mr-1.5 align-middle" style={{ background: col(o.skew) }} />{o.disease} <b>${o.per_daly.toLocaleString()}</b></span>)}
+                      {c.others.map(o => <span key={o.disease} className="rounded-md bg-blush-2/70 px-3 py-1 text-[12px] text-ink"><span className="inline-block h-2 w-2 rounded-full mr-1.5 align-middle" style={{ background: col(o.skew) }} />{o.disease} <b>${o.per_daly.toLocaleString()}</b></span>)}
                     </div>
                   </td>
                 </tr>
@@ -106,10 +106,10 @@ export default function Chapter3() {
 
   return (
     <article>
-      <header className="mx-auto max-w-3xl px-4 pt-20 pb-14 text-center fade-up">
+      <header className="mx-auto max-w-[42rem] px-4 pt-14 pb-8">
         <p className="eyebrow">{chapterRef('funding-vs-burden')}</p>
-        <h1 className="display mt-4 text-4xl sm:text-6xl font-light leading-[1.05]">The <span className="italic font-medium text-berry">research</span> dollar</h1>
-        <p className="mx-auto mt-6 max-w-xl text-lg text-ink-2 leading-relaxed">{S.n} diseases, their NIH budgets and the healthy years they cost Americans: where the money follows the burden, where it doesn't, and which conditions are never measured.</p>
+        <h1 className="display mt-2 text-3xl sm:text-[2.5rem] font-medium leading-[1.15]">The research dollar</h1>
+        <p className="mt-4 max-w-2xl text-[17px] text-ink-2 leading-relaxed">{S.n} diseases, their NIH budgets and the healthy years they cost Americans: where the money follows the burden, where it doesn't, and which conditions are never measured.</p>
         <p className="mt-5 text-xs tracking-wide text-ink-3">NIH FY{data.funding_fy}, WHO {data.burden_year} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>
       </header>
       <Story blocks={blocks} />

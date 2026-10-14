@@ -147,16 +147,16 @@ export default function PregnantBrain() {
 
   return (
     <div>
-      <section className="mx-auto max-w-4xl px-4 pt-20 pb-12 sm:pt-28 text-center">
+      <section className="mx-auto max-w-[42rem] px-4 pt-14 pb-8">
         <p className="eyebrow">Experiment 2</p>
-        <h1 className="display mt-5 text-4xl sm:text-6xl lg:text-7xl font-light leading-[1.02]">
+        <h1 className="display mt-2 text-3xl sm:text-[2.5rem] font-medium leading-[1.15]">
           One woman's brain through pregnancy
         </h1>
-        <p className="mx-auto mt-7 max-w-2xl text-lg text-ink-2 leading-relaxed">
+        <p className="mt-4 max-w-2xl text-[17px] text-ink-2 leading-relaxed">
           27 MRI scans of one woman from three weeks before conception to two years eight months after birth, with hormone levels at most visits
           (Maternal Brain Project pilot). Move through the timeline to see any of 28 brain structures measured against its pre-pregnancy size.
         </p>
-        <div className="mt-9 flex flex-wrap justify-center gap-3">
+        <div className="mt-6 flex flex-wrap gap-3">
           <a href="#viewer" onClick={jumpTo('viewer')} className="btn btn-solid">Open the viewer</a>
           <Link to="/pregnancy-brain/methods" className="btn">Methods</Link>
         </div>

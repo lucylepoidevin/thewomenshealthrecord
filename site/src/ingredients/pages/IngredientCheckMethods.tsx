@@ -6,7 +6,7 @@ export default function IngredientCheckMethods() {
   return (
     <div className="mx-auto max-w-3xl px-4 pt-16 pb-24">
       <p className="eyebrow">Methods · Experiment 5</p>
-      <h1 className="display mt-3 text-4xl sm:text-5xl font-light leading-tight">Methods: ingredient check</h1>
+      <h1 className="display mt-2 text-3xl sm:text-4xl font-medium leading-tight">Methods: ingredient check</h1>
       <ol className="mt-10 space-y-8">
         {[
           ['Sources', 'Three lists. California\'s Safe Cosmetics Program "Chemicals in Cosmetics" dataset (CHHS open data), which records products companies have reported as containing chemicals identified as causing cancer or reproductive harm. The EU member-state Endocrine Disruptor Lists I, II and III (edlists.org), read from the list pages because the site\'s export link returns a bot-check page. California\'s Proposition 65 list from OEHHA, with basis and listing date.'],

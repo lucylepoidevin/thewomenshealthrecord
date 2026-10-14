@@ -10,7 +10,7 @@ export default function Data() {
   return (
     <div className="mx-auto max-w-5xl px-4 pt-16 pb-24">
       <p className="eyebrow">Data</p>
-      <h1 className="display mt-3 text-4xl sm:text-5xl font-light leading-tight">Everything the page reads, for download</h1>
+      <h1 className="display mt-2 text-3xl sm:text-4xl font-medium leading-tight">Everything the page reads, for download</h1>
       <p className="mt-6 max-w-3xl text-lg text-ink-2 leading-relaxed">
         The source scans are on OpenNeuro under CC0. The derived files below are ours and are free to reuse with attribution to this page and to the original study.
       </p>
@@ -34,7 +34,7 @@ export default function Data() {
           <div className="table-wrap mt-4 rule pt-4">
             <table className="w-full text-xs sm:text-sm">
               <thead>
-                <tr className="text-left text-[10px] uppercase tracking-[0.14em] text-ink-3">
+                <tr className="text-left text-[12px] text-ink-3">
                   <th className="py-2 pr-2 font-semibold">Day</th><th className="py-2 pr-2 font-semibold">Cycle day</th>
                   {H.map(h => <th key={h.k} className="py-2 pr-2 font-semibold text-right">{h.label}</th>)}
                   <th className="py-2 pr-2 font-semibold text-right">Hippocampus cm³</th>

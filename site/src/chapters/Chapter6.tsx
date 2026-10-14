@@ -30,8 +30,8 @@ function LabelLookup({ drugs }: { drugs: Drug[] }) {
   const yes = (b: boolean) => b ? <span className="font-semibold text-berry">yes</span> : <span className="text-ink-3">no</span>
   return (
     <ChartFrame title="What your drug's label says about you" subtitle="Any new drug approved since 2015. What its current FDA label states about sex, pregnancy and breastfeeding." source="Source: openFDA drug labeling, current prescribing information; FDA Drug Trials Snapshots for the trial share. Text-mined with published rules; read the label itself before relying on this.">
-      <input value={q} onChange={e => { setQ(e.target.value); setPick(null) }} placeholder="Type a brand name, e.g. Ozempic" aria-label="Search drug labels" className="w-full sm:w-80 rounded-full border border-hairline bg-white px-4 py-2 text-[15px] outline-none focus:border-rose focus:ring-4 focus:ring-rose/10" />
-      {hits.length > 0 && !pick && <ul className="mt-2 flex flex-wrap gap-2">{hits.map(h => <li key={h.slug}><button onClick={() => setPick(h)} className="rounded-full bg-blush-2/70 px-3 py-1 text-[13px] hover:bg-blush-2">{h.brand}</button></li>)}</ul>}
+      <input value={q} onChange={e => { setQ(e.target.value); setPick(null) }} placeholder="Type a brand name, e.g. Ozempic" aria-label="Search drug labels" className="w-full sm:w-80 rounded-md border border-hairline bg-white px-4 py-2 text-[15px] outline-none focus:border-rose focus:ring-4 focus:ring-rose/10" />
+      {hits.length > 0 && !pick && <ul className="mt-2 flex flex-wrap gap-2">{hits.map(h => <li key={h.slug}><button onClick={() => setPick(h)} className="rounded-md bg-blush-2/70 px-3 py-1 text-[13px] hover:bg-blush-2">{h.brand}</button></li>)}</ul>}
       {d && (
         <div className="mt-4 grid gap-2 text-[15px] leading-relaxed">
           <p><b className="text-berry">{d.brand}</b> <span className="text-ink-3">· approved {d.year} · {d.category} · pivotal trials {d.trial_female_pct.toFixed(0)}% women</span></p>
@@ -109,7 +109,7 @@ export default function Chapter6() {
       <ChartFrame title="The labels that found a difference" subtitle="New drugs whose label quantifies a sex difference in exposure, with the share of women in their pivotal trials" source={srcL}>
         <div className="overflow-x-auto">
           <table className="w-full border-collapse text-[13px] sm:text-[14px]">
-            <thead><tr className="text-[11px] font-bold uppercase tracking-[0.12em] text-ink-3"><th className="py-2 pr-3 text-left font-bold">Drug</th><th className="py-2 pr-3 text-right font-bold">Women in trials</th><th className="py-2 text-left font-bold">What the label says</th></tr></thead>
+            <thead><tr className="text-[12px] font-semibold text-ink-3"><th className="py-2 pr-3 text-left font-bold">Drug</th><th className="py-2 pr-3 text-right font-bold">Women in trials</th><th className="py-2 text-left font-bold">What the label says</th></tr></thead>
             <tbody>{L.quantified_brands.filter((b, i, a) => a.findIndex(x => x.brand === b.brand) === i).map(b => (
               <tr key={b.brand} className="border-t border-hairline/60 align-top"><td className="py-2 pr-3 font-medium text-ink whitespace-nowrap">{b.brand}</td><td className="py-2 pr-3 text-right tabular-nums">{b.trial_female_pct.toFixed(0)}%</td><td className="py-2 text-ink-2 text-[13px]">{b.example}</td></tr>
             ))}</tbody>
@@ -127,7 +127,7 @@ export default function Chapter6() {
       <ChartFrame title="Flat-dosed drugs whose label says exposure rises as weight falls" subtitle={`${DS.flat_weight_affects_n} new drugs. Bold: the label also asserts no clinically significant difference by sex.`} source={srcL}>
         <div className="overflow-x-auto max-h-[32rem] overflow-y-auto">
           <table className="w-full border-collapse text-[13px]">
-            <thead><tr className="text-[11px] font-bold uppercase tracking-[0.12em] text-ink-3"><th className="py-2 pr-3 text-left font-bold">Drug</th><th className="py-2 pr-3 text-right font-bold">Women in trials</th><th className="py-2 text-left font-bold">What the label says</th></tr></thead>
+            <thead><tr className="text-[12px] font-semibold text-ink-3"><th className="py-2 pr-3 text-left font-bold">Drug</th><th className="py-2 pr-3 text-right font-bold">Women in trials</th><th className="py-2 text-left font-bold">What the label says</th></tr></thead>
             <tbody>{DS.flat_weight_affects_brands.map(b => (
               <tr key={b.brand} className={`border-t border-hairline/60 align-top ${b.no_difference ? 'font-semibold' : ''}`}><td className="py-2 pr-3 text-ink whitespace-nowrap">{b.brand}</td><td className="py-2 pr-3 text-right tabular-nums">{b.trial_female_pct.toFixed(0)}%</td><td className="py-2 text-ink-2 text-[12px] font-normal">{b.example}</td></tr>
             ))}</tbody>
@@ -149,10 +149,10 @@ export default function Chapter6() {
 
   return (
     <article>
-      <header className="mx-auto max-w-3xl px-4 pt-20 pb-14 text-center fade-up">
+      <header className="mx-auto max-w-[42rem] px-4 pt-14 pb-8">
         <p className="eyebrow">{chapterRef('male-default')}</p>
-        <h1 className="display mt-4 text-4xl sm:text-6xl font-light leading-[1.05]">The male <span className="italic font-medium text-berry">default</span> body</h1>
-        <p className="mx-auto mt-6 max-w-xl text-lg text-ink-2 leading-relaxed">The animals drugs are tested on, the trials that follow, and the label you are handed: three places where the male body is still the standard, measured.</p>
+        <h1 className="display mt-2 text-3xl sm:text-[2.5rem] font-medium leading-[1.15]">The male default body</h1>
+        <p className="mt-4 max-w-2xl text-[17px] text-ink-2 leading-relaxed">The animals drugs are tested on, the trials that follow, and the label you are handed: three places where the male body is still the standard, measured.</p>
         <p className="mt-5 text-xs tracking-wide text-ink-3">PubMed {P.years[0]}–{y1}, openFDA labels retrieved {data.generated} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>
       </header>
       <Story blocks={blocks} />

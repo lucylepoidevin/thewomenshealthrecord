@@ -9,7 +9,7 @@ export default function DenseBreastData() {
   return (
     <div className="mx-auto max-w-4xl px-4 pt-16 pb-24">
       <p className="eyebrow">Data · Experiment 6</p>
-      <h1 className="display mt-3 text-4xl sm:text-5xl font-light leading-tight">Data: breast density</h1>
+      <h1 className="display mt-2 text-3xl sm:text-4xl font-medium leading-tight">Data: breast density</h1>
       <p className="mt-4 text-ink-2 leading-relaxed">Everything the page uses, as one file: <a className="text-berry underline underline-offset-2" href={`${DATA}density.json`}>density.json</a> (generated {data.generated}). Images are in <code className="text-sm">data/density/img/</code>, one WebP per case, named by density, mass size, dose and M-SYNTH phantom number.</p>
 
       <h2 className="display mt-12 text-2xl font-medium">Cases ({data.msynth.cases.length})</h2>

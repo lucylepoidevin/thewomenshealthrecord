@@ -6,7 +6,7 @@ export default function MammographyAccessMethods() {
   return (
     <div className="mx-auto max-w-3xl px-4 pt-16 pb-24">
       <p className="eyebrow">Methods · Experiment 7</p>
-      <h1 className="display mt-3 text-4xl sm:text-5xl font-light leading-tight">Methods: mammography access</h1>
+      <h1 className="display mt-2 text-3xl sm:text-4xl font-medium leading-tight">Methods: mammography access</h1>
       <ol className="mt-10 space-y-8">
         {[
           ['Facilities', 'The FDA\'s MQSA certified facility file (public.zip on the "search for a certified facility" page), a pipe-delimited list of facility name, three address lines, city, state, ZIP, phone and fax, replaced weekly. The version used is dated 5 October 2026. Entries in Puerto Rico, the territories and overseas military post offices are excluded because the county population file does not cover them.'],

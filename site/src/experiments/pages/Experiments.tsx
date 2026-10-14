@@ -6,17 +6,17 @@ import ThreeBrains from '../ThreeBrains'
 export default function Experiments() {
   return (
     <div>
-      <section className="mx-auto max-w-4xl px-4 pt-20 pb-10 sm:pt-28 text-center">
+      <section className="mx-auto max-w-6xl px-4 pt-14 pb-8"><div className="max-w-[42rem]">
         <p className="eyebrow">Experiments</p>
-        <h1 className="display mt-5 text-4xl sm:text-6xl font-light leading-[1.05]">
+        <h1 className="display mt-2 text-3xl sm:text-[2.5rem] font-medium leading-[1.15]">
           Interactive studies built from public data
         </h1>
-        <p className="mx-auto mt-7 max-w-2xl text-lg text-ink-2 leading-relaxed">
+        <p className="mt-4 max-w-2xl text-[17px] text-ink-2 leading-relaxed">
           Three single-person brain imaging datasets from the same lab run through one measurement pipeline, a drug-level simulator built from published
           sex-specific pharmacology, an ingredient checker against the official hormone-disruptor lists, and three mammography studies: the FDA's synthetic mammograms at four
           breast densities, every certified facility on a county map, and what the FDA's summaries say about who mammography AI was tested on. Each page states what its data can and cannot show.
         </p>
-      </section>
+      </div></section>
 
       <section className="mx-auto max-w-6xl px-4 pb-10">
         <ol className="grid gap-4 sm:grid-cols-2">
@@ -43,18 +43,18 @@ export default function Experiments() {
       <section className="prose-step mx-auto max-w-[42rem] px-4 py-6 text-[18px] leading-[1.75] text-ink">
         <h2 className="display text-3xl font-medium mb-4">What they add up to</h2>
         <p>
-          Put the three brains on the same axis and the scale of each clock is plain. Across a menstrual cycle, with estradiol swinging twelve-fold and progesterone several-hundred-fold, her whole
-          brain held within a third of a percent of itself: at this resolution, the cycle is quieter than the scanner. Across his day, the brain shrank by half a percent from morning to evening, every
-          day, as testosterone and cortisol fell. Across a pregnancy, with estradiol at fifty times a cycle's peak, it gave up two to three percent, and took two years to get it back.
+          On the same axis, the three brains move on three different scales. Across a menstrual cycle, with estradiol rising twelve-fold and progesterone several hundred-fold, her whole
+          brain stayed within a third of a percent of its mean, which is less than the scan-to-scan noise. Across his day, the brain was about half a percent smaller at 8 pm than at 7 am,
+          on every day measured. Across a pregnancy, it was two to three percent smaller in the third trimester and took about two years to return.
         </p>
         <p>
-          The same hormones on three timescales, and the brain answering on all three, in proportion. That is not a story anyone could tell from a single study, and nobody had put the three public
-          datasets through one pipeline before. Each page says what its person cannot stand for. Together they say something the chapters measure from the other side: the hormonal body is not noise
-          around a male default, it is a system with its own rhythms, and medicine mostly has not measured it.
+          These are three single people, so none of the pages generalises beyond its own subject, and each one says so. What the comparison adds is a common scale: the same model, the same
+          pipeline and the same axis for the three public datasets, which had not been run together before.
         </p>
         <p>
-          The fourth experiment is the consequence. When the drugs that <em>have</em> been measured in both sexes are drawn in both bodies, most run higher in hers. The dose chart puts the published
-          numbers in your hands; the <Link to="/chapters/tested-on-men">chapter on trials</Link> counts how rarely those numbers exist.
+          The dose simulator uses the drugs that have been measured in both sexes; for most of them the same dose gives a higher blood level in a woman. The{' '}
+          <Link to="/chapters/tested-on-men">chapter on trials</Link> counts how rarely those measurements exist. The three mammography experiments take the same approach to screening: the FDA's
+          own synthetic images, the FDA's facility list, and the FDA's device summaries, read in full.
         </p>
         <p className="text-sm text-ink-2">
           All source data is public (OpenNeuro datasets ds002674, ds005299 and ds005115 from the Jacobs lab at UC Santa Barbara; primary pharmacology papers and FDA labels for the dose chart).

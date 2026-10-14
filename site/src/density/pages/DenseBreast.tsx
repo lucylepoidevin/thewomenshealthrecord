@@ -47,9 +47,9 @@ export default function DenseBreast() {
       <>
         <h2 className="display text-3xl font-medium mb-4">What it hides</h2>
         <p>
-          White on white. A mass in a fatty breast sits against a dark field; the same mass in a dense breast sits inside tissue the same shade as itself. The images above make the point without a
-          statistic: pick the extremely dense breast and the 7 mm mass that was obvious in the fatty one becomes a guess. These are the FDA's own simulations, built from virtual breasts with a
-          known mass at a known place, which is the only way to show the same lesion at four densities.<Cite id="msynth" sources={S} /><Cite id="victre" sources={S} />
+          A mass in a fatty breast sits against a dark background; the same mass in a dense breast sits inside tissue of the same brightness. In the images above, the 7 mm mass that is
+          obvious in the fatty breast is hard to find in the extremely dense one. These are the FDA's simulations, built from virtual breasts with a known mass at a known place, which is
+          what makes it possible to show the same lesion at four densities.<Cite id="msynth" sources={S} /><Cite id="victre" sources={S} />
         </p>
         <p>
           The cleanest clinical measure of what is missed is the interval cancer: one diagnosed within a year of a mammogram that was read as normal. In {fmtN(st.interval.exams)} digital
@@ -112,8 +112,7 @@ export default function DenseBreast() {
         <p>
           Density is one risk factor among several, and the same consortium's conclusion is that it should not decide supplemental screening on its own: about half of women with dense breasts have a
           low to average five-year risk, and their interval cancer rates stayed under one per thousand.<Cite id="kerlikowske2015" sources={S} /> The US Preventive Services Task Force, in April 2024, found the
-          evidence insufficient to say whether extra ultrasound or MRI helps women whose only flag is density.<Cite id="uspstf2024" sources={S} /> So the letter in a report is a reason for a conversation,
-          which is what the mandated text asks for, and not a verdict.
+          evidence insufficient to say whether extra ultrasound or MRI helps women whose only flag is density.<Cite id="uspstf2024" sources={S} /> The letter in a report is a reason to ask about it, which is what the mandated text says, not a verdict.
         </p>
         <h2 className="display text-3xl font-medium mb-4 mt-10">What your report now says</h2>
         <p>
@@ -151,14 +150,14 @@ export default function DenseBreast() {
   ] : []
   return (
     <div>
-      <section className="mx-auto max-w-4xl px-4 pt-20 pb-12 sm:pt-28 text-center">
+      <section className="mx-auto max-w-[42rem] px-4 pt-14 pb-8">
         <p className="eyebrow">Experiment 6</p>
-        <h1 className="display mt-5 text-4xl sm:text-6xl lg:text-7xl font-light leading-[1.02]">Breast density, and what a mammogram can miss</h1>
-        <p className="mx-auto mt-7 max-w-2xl text-lg text-ink-2 leading-relaxed">
+        <h1 className="display mt-2 text-3xl sm:text-[2.5rem] font-medium leading-[1.15]">Breast density, and what a mammogram can miss</h1>
+        <p className="mt-4 max-w-2xl text-[17px] text-ink-2 leading-relaxed">
           Synthetic mammograms from the FDA at four breast densities, some with a mass and some without. Find it if you can, then see what the screening data says about the breasts where you
           couldn't.
         </p>
-        <div className="mt-9 flex flex-wrap justify-center gap-3">
+        <div className="mt-6 flex flex-wrap gap-3">
           <a href="#finder" onClick={jumpTo('finder')} className="btn btn-solid">Try to find the mass</a>
           <Link to="/dense-breast/methods" className="btn">Methods</Link>
         </div>

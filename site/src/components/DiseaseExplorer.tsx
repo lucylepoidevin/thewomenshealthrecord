@@ -15,7 +15,7 @@ export default function DiseaseExplorer({ diseases, n, source, burdenYear = 2023
       <h3 className="display text-lg sm:text-[1.35rem] font-medium leading-tight text-ink">Look up a disease</h3>
       <p className="mt-3 text-[15px] text-ink-2">
         Show me{' '}
-        <select value={pick} onChange={e => setPick(e.target.value)} className="rounded-full border border-hairline bg-white px-4 py-2 text-[15px] outline-none focus:border-rose focus:ring-4 focus:ring-rose/10" aria-label="Disease">
+        <select value={pick} onChange={e => setPick(e.target.value)} className="rounded-md border border-hairline bg-white px-4 py-2 text-[15px] outline-none focus:border-rose focus:ring-4 focus:ring-rose/10" aria-label="Disease">
           {sorted.map(x => <option key={x.disease} value={x.disease}>{x.disease}</option>)}
         </select>
       </p>

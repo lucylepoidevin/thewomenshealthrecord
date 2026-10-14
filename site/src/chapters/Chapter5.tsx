@@ -46,7 +46,7 @@ function Explorer({ cells, source }: { cells: Cell[]; source: string }) {
       {cell && cell.n_women >= 30 && cell.n_men >= 30 && (
         <div className="mt-4 overflow-x-auto">
           <table className="w-full border-collapse text-[13px] sm:text-[14px]">
-            <thead><tr className="text-[11px] font-bold uppercase tracking-[0.12em] text-ink-3"><th className="py-2 pr-3 text-left font-bold">Of those visits…</th><th className="py-2 pr-3 text-right font-bold text-rose">Women</th><th className="py-2 pr-3 text-right font-bold text-bronze">Men</th><th className="py-2 text-right font-bold">Gap</th></tr></thead>
+            <thead><tr className="text-[12px] font-semibold text-ink-3"><th className="py-2 pr-3 text-left font-bold">Of those visits…</th><th className="py-2 pr-3 text-right font-bold text-rose">Women</th><th className="py-2 pr-3 text-right font-bold text-bronze">Men</th><th className="py-2 text-right font-bold">Gap</th></tr></thead>
             <tbody>{ROWS.map(r => {
               const c = cell.metrics[r.key]; if (!c) return null
               const clear = c.diff_lo > 0 || c.diff_hi < 0
@@ -137,10 +137,10 @@ export default function Chapter5() {
 
   return (
     <article>
-      <header className="mx-auto max-w-3xl px-4 pt-20 pb-14 text-center fade-up">
+      <header className="mx-auto max-w-[42rem] px-4 pt-14 pb-8">
         <p className="eyebrow">{chapterRef('sent-home-with-a-label')}</p>
-        <h1 className="display mt-4 text-4xl sm:text-6xl font-light leading-[1.05]">Where the <span className="italic font-medium text-berry">diagnosis gap</span> lives</h1>
-        <p className="mx-auto mt-6 max-w-xl text-lg text-ink-2 leading-relaxed">The story says she is sent home undiagnosed, under-tested and told it is anxiety. We looked in {S.n.toLocaleString()} emergency visits and {(C.cases_total / 1e6).toFixed(1)} million cancer cases. The gap is real. It is not where the story puts it.</p>
+        <h1 className="display mt-2 text-3xl sm:text-[2.5rem] font-medium leading-[1.15]">Where the diagnosis gap lives</h1>
+        <p className="mt-4 max-w-2xl text-[17px] text-ink-2 leading-relaxed">The story says she is sent home undiagnosed, under-tested and told it is anxiety. We looked in {S.n.toLocaleString()} emergency visits and {(C.cases_total / 1e6).toFixed(1)} million cancer cases. The gap is real. It is not where the story puts it.</p>
         <p className="mt-5 text-xs tracking-wide text-ink-3">NHAMCS {data.years[0]}–{data.years[1]} · SEER {C.years_stage} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>
       </header>
       <Story blocks={blocks} />

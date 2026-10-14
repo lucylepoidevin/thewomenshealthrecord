@@ -149,10 +149,10 @@ export default function Chapter2() {
 
   return (
     <article>
-      <header className="mx-auto max-w-3xl px-4 pt-20 pb-14 text-center fade-up">
+      <header className="mx-auto max-w-[42rem] px-4 pt-14 pb-8">
         <p className="eyebrow">{chapterRef('pain-gap')}</p>
-        <h1 className="display mt-4 text-4xl sm:text-6xl font-light leading-[1.05]">The <span className="italic font-medium text-berry">urgency</span> gap</h1>
-        <p className="mx-auto mt-6 max-w-xl text-lg text-ink-2 leading-relaxed">Twenty thousand emergency visits for pain and {data.heart_attack.n} heart attacks, {yrs}: women arrive reporting more pain, and where the system rates them lower it is in specific places: severe abdominal pain, young women's chest pain, and the heart attack.</p>
+        <h1 className="display mt-2 text-3xl sm:text-[2.5rem] font-medium leading-[1.15]">The urgency gap</h1>
+        <p className="mt-4 max-w-2xl text-[17px] text-ink-2 leading-relaxed">Twenty thousand emergency visits for pain and {data.heart_attack.n} heart attacks, {yrs}: women arrive reporting more pain, and where the system rates them lower it is in specific places: severe abdominal pain, young women's chest pain, and the heart attack.</p>
         <p className="mt-5 text-xs tracking-wide text-ink-3">data {yrs} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>
       </header>
       <Story blocks={blocks} />

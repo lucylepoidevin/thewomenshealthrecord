@@ -6,7 +6,7 @@ export default function DenseBreastMethods() {
   return (
     <div className="mx-auto max-w-3xl px-4 pt-16 pb-24">
       <p className="eyebrow">Methods · Experiment 6</p>
-      <h1 className="display mt-3 text-4xl sm:text-5xl font-light leading-tight">Methods: breast density</h1>
+      <h1 className="display mt-2 text-3xl sm:text-4xl font-medium leading-tight">Methods: breast density</h1>
       <ol className="mt-10 space-y-8">
         {[
           ['Images', 'M-SYNTH (FDA/DIDSR, CC0) is organised by mass contrast (1.0, 1.06, 1.1 times fibroglandular radiodensity), relative dose (20 to 100 percent), breast density, and mass radius (5, 7, 9 mm); each archive holds 300 virtual breasts, odd-numbered ones with a mass, even-numbered without. At this contrast the 9 mm masses exist only for the fatty and scattered phantoms. This page uses contrast 1.06 and the clinical dose: phantoms 1, 3, 5 and 7 (mass) and 2 and 4 (no mass) for every density and size, plus phantoms 1 and 3 at 7 mm and 20 percent dose for the dose pair. The archives are 8 to 9 GB each, so only the DICOM and lesion-location members are fetched, by HTTP range request.'],

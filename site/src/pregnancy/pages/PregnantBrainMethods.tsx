@@ -14,7 +14,7 @@ export default function PregnantBrainMethods() {
   return (
     <div className="mx-auto max-w-3xl px-4 pt-16 pb-24">
       <p className="eyebrow">Methods · Experiment 2</p>
-      <h1 className="display mt-3 text-4xl sm:text-5xl font-light leading-tight">Methods: brain through pregnancy</h1>
+      <h1 className="display mt-2 text-3xl sm:text-4xl font-medium leading-tight">Methods: brain through pregnancy</h1>
       <p className="mt-6 text-lg text-ink-2 leading-relaxed">The same six-step pipeline as the cycling brain, pointed at a different dataset, with one extra step for the comparison. Code lives next to the site.</p>
       <ol className="mt-10 space-y-8">
         {steps.map(s => (

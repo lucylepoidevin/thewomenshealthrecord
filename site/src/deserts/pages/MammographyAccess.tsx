@@ -101,14 +101,14 @@ export default function MammographyAccess() {
   ] : []
   return (
     <div>
-      <section className="mx-auto max-w-4xl px-4 pt-20 pb-12 sm:pt-28 text-center">
+      <section className="mx-auto max-w-[42rem] px-4 pt-14 pb-8">
         <p className="eyebrow">Experiment 7</p>
-        <h1 className="display mt-5 text-4xl sm:text-6xl lg:text-7xl font-light leading-[1.02]">Mammography facilities by county, and the counties with none</h1>
-        <p className="mx-auto mt-7 max-w-2xl text-lg text-ink-2 leading-relaxed">
+        <h1 className="display mt-2 text-3xl sm:text-[2.5rem] font-medium leading-[1.15]">Mammography facilities by county, and the counties with none</h1>
+        <p className="mt-4 max-w-2xl text-[17px] text-ink-2 leading-relaxed">
           Every FDA-certified mammography facility, placed on the map and counted against the women aged 40 to 74 who live in each county. Then the counties with no facility at all, and
           how far their women have to go.
         </p>
-        <div className="mt-9 flex flex-wrap justify-center gap-3">
+        <div className="mt-6 flex flex-wrap gap-3">
           <a href="#map" onClick={jumpTo('map')} className="btn btn-solid">See the map</a>
           <Link to="/mammography-access/methods" className="btn">Methods</Link>
         </div>

@@ -120,10 +120,10 @@ export default function Chapter1() {
 
   return (
     <article>
-      <header className="mx-auto max-w-3xl px-4 pt-20 pb-14 text-center fade-up">
+      <header className="mx-auto max-w-[42rem] px-4 pt-14 pb-8">
         <p className="eyebrow">{chapterRef('tested-on-men')}</p>
-        <h1 className="display mt-4 text-4xl sm:text-6xl font-light leading-[1.05]">Tested on men, <span className="italic font-medium text-berry">prescribed to women</span></h1>
-        <p className="mx-auto mt-6 max-w-xl text-lg text-ink-2 leading-relaxed">Every new drug the FDA has approved since 2015, scored on who was in the trial against who reports the side effects.</p>
+        <h1 className="display mt-2 text-3xl sm:text-[2.5rem] font-medium leading-[1.15]">Tested on men, prescribed to women</h1>
+        <p className="mt-4 max-w-2xl text-[17px] text-ink-2 leading-relaxed">Every new drug the FDA has approved since 2015, scored on who was in the trial against who reports the side effects.</p>
         <p className="mt-5 text-xs tracking-wide text-ink-3">data through {data.faers_last_updated ?? data.generated} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>
       </header>
       <Story blocks={blocks} />

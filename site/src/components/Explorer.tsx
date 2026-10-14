@@ -39,7 +39,7 @@ export default function Explorer({ cells, source }: { cells: Cell[]; source: str
         <div className="mt-5 overflow-x-auto">
           <table className="w-full border-collapse text-[14px]">
             <thead>
-              <tr className="text-[11px] font-bold uppercase tracking-[0.12em] text-ink-3">
+              <tr className="text-[12px] font-semibold text-ink-3">
                 <th className="py-2 pr-4 text-left font-bold">Of those visits…</th>
                 <th className="py-2 pr-4 text-right font-bold text-rose">Women</th>
                 <th className="py-2 pr-4 text-right font-bold text-bronze">Men</th>

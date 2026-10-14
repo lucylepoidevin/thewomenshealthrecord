@@ -7,15 +7,13 @@ const Section = ({ title, children }: { title: string; children: React.ReactNode
 
 export default function About() {
   return (
-    <div className="mx-auto max-w-3xl px-4 pt-20 pb-16 fade-up">
-      <header className="text-center pb-12">
+    <div className="mx-auto max-w-3xl px-4 pt-20 pb-16">
+      <header className="pb-8">
         <p className="eyebrow">About</p>
-        <h1 className="display mt-4 text-4xl sm:text-6xl font-light leading-[1.05]">About this project</h1>
-        <p className="display mx-auto mt-7 max-w-2xl text-xl sm:text-2xl font-light leading-snug text-ink-2">
-          Most of what gets said about sex bias in medicine is a handful of statistics repeated until they stop meaning anything.
-          This site goes back to the primary data, re-analyses it, and publishes the code.
+        <h1 className="display mt-2 text-3xl sm:text-[2.5rem] font-medium leading-[1.15]">About this project</h1>
+        <p className="mt-4 max-w-2xl text-[17px] text-ink-2 leading-relaxed">
+          A series of analyses of public data on women's health, with the code and sources published alongside each one. By Lucy LePoidevin.
         </p>
-        <p className="mt-6 text-sm tracking-wide text-ink-3">By Lucy LePoidevin</p>
       </header>
 
       <Section title="What it is">

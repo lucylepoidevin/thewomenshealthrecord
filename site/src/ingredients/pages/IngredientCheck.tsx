@@ -93,14 +93,14 @@ export default function IngredientCheck() {
   ] : []
   return (
     <div>
-      <section className="mx-auto max-w-4xl px-4 pt-20 pb-12 sm:pt-28 text-center">
+      <section className="mx-auto max-w-[42rem] px-4 pt-14 pb-8">
         <p className="eyebrow">Experiment 5</p>
-        <h1 className="display mt-5 text-4xl sm:text-6xl lg:text-7xl font-light leading-[1.02]">Cosmetic ingredients against the official hormone-disruptor lists</h1>
-        <p className="mx-auto mt-7 max-w-2xl text-lg text-ink-2 leading-relaxed">
+        <h1 className="display mt-2 text-3xl sm:text-[2.5rem] font-medium leading-[1.15]">Cosmetic ingredients against the official hormone-disruptor lists</h1>
+        <p className="mt-4 max-w-2xl text-[17px] text-ink-2 leading-relaxed">
           Paste the ingredient list from any beauty or personal care product. Each ingredient on the EU endocrine disruptor lists or California's Proposition 65 list comes back with the
           list's own grade, a one-line note and the source. No scores, no rankings.
         </p>
-        <div className="mt-9 flex flex-wrap justify-center gap-3">
+        <div className="mt-6 flex flex-wrap gap-3">
           <a href="#checker" onClick={jumpTo('checker')} className="btn btn-solid">Open the checker</a>
           <Link to="/ingredient-check/methods" className="btn">Methods</Link>
         </div>

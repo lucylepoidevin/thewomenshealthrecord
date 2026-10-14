@@ -10,8 +10,8 @@ export default function Summary({ items, source, title = 'In four numbers' }: { 
           <div key={i.label} className="rounded-xl bg-blush-2/60 p-4">
             {'women' in i ? (
               <div className="flex items-end gap-4">
-                <div><div className="display text-3xl sm:text-4xl font-light leading-none text-berry">{i.women}</div><div className="mt-1 text-[10px] font-semibold uppercase tracking-[0.15em] text-rose">women</div></div>
-                <div><div className="display text-3xl sm:text-4xl font-light leading-none text-bronze">{i.men}</div><div className="mt-1 text-[10px] font-semibold uppercase tracking-[0.15em] text-bronze">men</div></div>
+                <div><div className="display text-3xl sm:text-4xl font-light leading-none text-berry">{i.women}</div><div className="mt-1 text-[12px] font-semibold text-rose">women</div></div>
+                <div><div className="display text-3xl sm:text-4xl font-light leading-none text-bronze">{i.men}</div><div className="mt-1 text-[12px] font-semibold text-bronze">men</div></div>
               </div>
             ) : (
               <div className="display text-3xl sm:text-5xl font-light text-berry leading-none">{i.value}</div>

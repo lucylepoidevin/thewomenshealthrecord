@@ -53,7 +53,7 @@ export function FindingsTable({ data }: { data: Pregnancy }) {
     <div className="table-wrap">
       <table className="w-full text-sm">
         <thead>
-          <tr className="text-left text-[11px] uppercase tracking-[0.14em] text-ink-3">
+          <tr className="text-left text-[12px] text-ink-3">
             <th className="py-2 pr-3 font-semibold">Region</th>
             <th className="py-2 pr-3 font-semibold text-right">Before cm³</th>
             <th className="py-2 pr-3 font-semibold text-right">3rd trimester</th>

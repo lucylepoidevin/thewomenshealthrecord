@@ -43,13 +43,13 @@ function DiseaseTable({ diseases, source }: { diseases: Disease[]; source: strin
   return (
     <ChartFrame title="Every disease, every number" subtitle="US trials with posted results. Women's share of participants against women's share of US burden; what the eligibility text excludes." source={source}>
       <div className="flex flex-wrap items-center gap-3 mb-3">
-        <input value={q} onChange={e => setQ(e.target.value)} placeholder="Find a disease" aria-label="Find a disease" className="rounded-full border border-hairline bg-white px-4 py-2 text-[14px] outline-none focus:border-rose focus:ring-4 focus:ring-rose/10" />
+        <input value={q} onChange={e => setQ(e.target.value)} placeholder="Find a disease" aria-label="Find a disease" className="rounded-md border border-hairline bg-white px-4 py-2 text-[14px] outline-none focus:border-rose focus:ring-4 focus:ring-rose/10" />
         <span className="text-[12px] text-ink-3">Sort by</span>
         {(['ratio', 'trials', 'disease'] as const).map(k => <button key={k} onClick={() => setSort(k)} className={`rounded-full px-3 py-1 text-[12px] font-semibold ${sort === k ? 'bg-berry text-white' : 'bg-blush-2/70 text-ink-2 hover:bg-blush-2'}`}>{k === 'ratio' ? 'women vs burden' : k === 'trials' ? 'number of trials' : 'name'}</button>)}
       </div>
       <div className="overflow-x-auto">
         <table className="w-full border-collapse text-[12px] sm:text-[13px]">
-          <thead><tr className="text-[10px] font-bold uppercase tracking-[0.12em] text-ink-3"><th className="py-2 pr-3 text-left font-bold">Disease</th><th className="py-2 pr-3 text-right font-bold">Trials</th><th className="py-2 pr-3 text-right font-bold">Participants</th><th className="py-2 pr-3 text-right font-bold text-rose">Women in trials</th><th className="py-2 pr-3 text-right font-bold">Women in burden</th><th className="py-2 pr-3 text-right font-bold">Ratio</th><th className="py-2 pr-3 text-right font-bold">Industry / other</th><th className="py-2 pr-3 text-right font-bold">Exclude pregnant</th><th className="py-2 pr-3 text-right font-bold">Require contraception</th><th className="py-2 text-right font-bold">Upper age limit</th></tr></thead>
+          <thead><tr className="text-[12px] font-semibold text-ink-3"><th className="py-2 pr-3 text-left font-bold">Disease</th><th className="py-2 pr-3 text-right font-bold">Trials</th><th className="py-2 pr-3 text-right font-bold">Participants</th><th className="py-2 pr-3 text-right font-bold text-rose">Women in trials</th><th className="py-2 pr-3 text-right font-bold">Women in burden</th><th className="py-2 pr-3 text-right font-bold">Ratio</th><th className="py-2 pr-3 text-right font-bold">Industry / other</th><th className="py-2 pr-3 text-right font-bold">Exclude pregnant</th><th className="py-2 pr-3 text-right font-bold">Require contraception</th><th className="py-2 text-right font-bold">Upper age limit</th></tr></thead>
           <tbody>{rows.map(d => (
             <tr key={d.disease} className="border-t border-hairline/60">
               <td className="py-2 pr-3"><span className="inline-block h-2 w-2 rounded-full mr-1.5 align-middle" style={{ background: col(d.skew) }} />{d.disease}</td>
@@ -157,10 +157,10 @@ export default function Chapter4() {
 
   return (
     <article>
-      <header className="mx-auto max-w-3xl px-4 pt-20 pb-14 text-center fade-up">
+      <header className="mx-auto max-w-[42rem] px-4 pt-14 pb-8">
         <p className="eyebrow">{chapterRef('who-gets-studied')}</p>
-        <h1 className="display mt-4 text-4xl sm:text-6xl font-light leading-[1.05]">Who gets <span className="italic font-medium text-berry">studied</span></h1>
-        <p className="mx-auto mt-6 max-w-xl text-lg text-ink-2 leading-relaxed">{S.trials_us.toLocaleString()} trials, {m(S.participants_us)} people: the share of women in each disease's trials against the share of women in the disease, what the fine print excludes, and how few trials ever say what they found in women.</p>
+        <h1 className="display mt-2 text-3xl sm:text-[2.5rem] font-medium leading-[1.15]">Who gets studied</h1>
+        <p className="mt-4 max-w-2xl text-[17px] text-ink-2 leading-relaxed">{S.trials_us.toLocaleString()} trials, {m(S.participants_us)} people: the share of women in each disease's trials against the share of women in the disease, what the fine print excludes, and how few trials ever say what they found in women.</p>
         <p className="mt-5 text-xs tracking-wide text-ink-3">ClinicalTrials.gov, retrieved {data.generated} · <Link to="/methods" className="underline underline-offset-4 decoration-hairline hover:text-berry">methods</Link></p>
       </header>
       <Story blocks={blocks} />
