@@ -22,7 +22,7 @@ export type Male = {
   hormone_summary: Record<'testosterone' | 'cortisol' | 'estradiol', HormoneSummary>
   regions: Record<string, Region>; labels: Record<string, string>; sessions: Session[]; stats: Record<string, RegionStats>
 }
-/** The cycling brain's stats, loaded for the side-by-side. */
+/** Experiment 1's stats, loaded for the side-by-side. */
 export type HerStats = Record<string, { n: number; mean: number; cv_pct: number; range_pct: number; r_progesterone?: number; p_progesterone?: number; r_estradiol?: number; p_estradiol?: number }>
 
 export const BASE = import.meta.env.BASE_URL

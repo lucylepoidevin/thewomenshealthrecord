@@ -53,11 +53,11 @@ export default function Experiments() {
         </p>
         <p>
           The dose simulator uses the drugs that have been measured in both sexes; for most of them the same dose gives a higher blood level in a woman. The{' '}
-          <Link to="/chapters/tested-on-men">chapter on trials</Link> counts how rarely those measurements exist. The three mammography experiments take the same approach to screening: the FDA's
+          <Link to="/chapters/tested-on-men">chapter comparing women in drug trials with women in adverse-event reports</Link> counts how rarely those measurements exist. The three mammography experiments take the same approach to screening: the FDA's
           own synthetic images, the FDA's facility list, and the FDA's device summaries, read in full.
         </p>
         <p className="text-sm text-ink-2">
-          All source data is public (OpenNeuro datasets ds002674, ds005299 and ds005115 from the Jacobs lab at UC Santa Barbara; primary pharmacology papers and FDA labels for the dose chart).
+          All source data is public (OpenNeuro datasets ds002674, ds005299 and ds005115 from the Jacobs lab at UC Santa Barbara; primary pharmacology papers and FDA labels for Experiment 4).
           Every number on every page links to its source; every pipeline is published. Nothing here is medical advice.
         </p>
       </section>

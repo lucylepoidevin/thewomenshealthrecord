@@ -16,8 +16,8 @@ function KeyNumbers({ data }: { data: Pregnancy }) {
   const preE = ss.find(s => s.session === 2)?.hormones.estradiol ?? 0
   const gm = data.stats.total_brain
   const items = [
-    { label: 'Estradiol', value: `${fmt.n(preE)} → ${fmt.n(maxE.hormones.estradiol!)} pg/mL`, note: `${Math.round(maxE.hormones.estradiol! / preE).toLocaleString()}-fold, peak at week ${maxE.week}. The cycling brain's whole range was 22 to 264.` },
-    { label: 'Progesterone', value: `${fmt.n(ss.find(s => s.session === 2)?.hormones.progesterone ?? 0)} → ${fmt.n(maxP.hormones.progesterone!)} ng/mL`, note: `peak at week ${maxP.week}. The cycling brain's peak was 15.5.` },
+    { label: 'Estradiol', value: `${fmt.n(preE)} → ${fmt.n(maxE.hormones.estradiol!)} pg/mL`, note: `${Math.round(maxE.hormones.estradiol! / preE).toLocaleString()}-fold, peak at week ${maxE.week}. Experiment 1's whole range was 22 to 264.` },
+    { label: 'Progesterone', value: `${fmt.n(ss.find(s => s.session === 2)?.hormones.progesterone ?? 0)} → ${fmt.n(maxP.hormones.progesterone!)} ng/mL`, note: `peak at week ${maxP.week}. Experiment 1's peak was 15.5.` },
     { label: 'Whole brain, third trimester', value: gm ? fmt.pct(gm.third_trimester_pct ?? 0) : '–', note: gm ? `lowest ${fmt.pct(gm.min_pregnancy?.pct ?? 0)} at week ${gm.min_pregnancy?.week}; ${fmt.pct(gm.two_years_pct ?? 0)} two years after birth. Measured against the four scans before conception.` : '' },
     { label: 'Scans', value: '27 scans, 2 years 8 months', note: '0.8 mm T1-weighted MRI on two Siemens Prisma scanners, Santa Barbara then Irvine' },
   ]
@@ -60,7 +60,7 @@ export default function PregnantBrain() {
       <>
         <h2 className="display text-3xl font-medium mb-4">Hormone levels across pregnancy</h2>
         <p>
-          If you came here from <Link to="/cycling-brain">the cycling brain</Link>, hold its numbers in your head. Across a menstrual cycle, estradiol moved between about 20 and
+          For comparison with <Link to="/cycling-brain">Experiment 1, the menstrual cycle</Link>: Across a menstrual cycle, estradiol moved between about 20 and
           260 pg/mL, and progesterone between almost nothing and 15 ng/mL. Those were the largest hormonal swings a non-pregnant body produces.<Cite id="cycling" />
         </p>
         <p>
@@ -77,13 +77,13 @@ export default function PregnantBrain() {
       <>
         <h2 className="display text-3xl font-medium mb-4">Brain volumes across the cycle</h2>
         <p>
-          We ran all 27 scans through the same pipeline as the cycling brain: alignment to a standard template, a published model that splits the brain into 133 structures,<Cite id="unest" />
+          We ran all 27 scans through the same pipeline as Experiment 1: alignment to a standard template, a published model that splits the brain into 133 structures,<Cite id="unest" />
           and volumes counted in the scan's own space. Then every structure was compared with its size before conception. The method is on the <Link to="/pregnancy-brain/methods">methods page</Link>;
           these are our numbers, not the lab's.
         </p>
         <FindingsProse data={data} />
         <p>
-          In the cycling brain, the lesson was that nothing moved beyond the noise. Here, something does: the whole brain shrinks through pregnancy by an amount the scanner change
+          In Experiment 1, the result was that nothing moved beyond the noise. Here, something does: the whole brain shrinks through pregnancy by an amount the scanner change
           cannot explain, bottoms out in the third trimester or just after the birth, and climbs back over the following two years. The finer claims, which tissue, which region,
           are where our method runs out of resolution and the paper's begins.
         </p>

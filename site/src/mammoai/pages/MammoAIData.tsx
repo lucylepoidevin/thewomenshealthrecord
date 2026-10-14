@@ -24,7 +24,7 @@ export default function MammoAIData() {
       <div className="mt-3"><DeviceTable devices={data.devices} /></div>
       <h2 className="display mt-12 text-2xl font-medium">Sources</h2>
       <div className="mt-3"><SourceList sources={data.sources} /></div>
-      <p className="mt-12 text-sm text-ink-3">Back to <Link to="/mammography-ai" className="text-berry underline underline-offset-2">the audit</Link>.</p>
+      <p className="mt-12 text-sm text-ink-3">Back to <Link to="/mammography-ai" className="text-berry underline underline-offset-2">Experiment 8</Link>.</p>
     </div>
   )
 }

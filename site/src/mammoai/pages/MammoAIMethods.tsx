@@ -33,7 +33,7 @@ python3 fetch_summaries.py   # downloads every FDA document in devices.py and ex
 # code each data/raw/txt/<submission>.txt into data/coded/<submission>.json following data/coded/_SCHEMA.md
 python3 build_audit.py       # aggregates the coded files into site/public/data/mammoai/audit.json`}</code></pre>
       {data && <p className="mt-6 text-sm text-ink-3">Table generated {data.generated}; device list retrieved {data.ai_list_retrieved}.</p>}
-      <p className="mt-12 text-sm text-ink-3">Back to <Link to="/mammography-ai" className="text-berry underline underline-offset-2">the audit</Link>.</p>
+      <p className="mt-12 text-sm text-ink-3">Back to <Link to="/mammography-ai" className="text-berry underline underline-offset-2">Experiment 8</Link>.</p>
     </div>
   )
 }

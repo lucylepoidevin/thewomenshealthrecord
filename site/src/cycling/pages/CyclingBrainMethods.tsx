@@ -62,7 +62,7 @@ python3.12 -m venv .venv && .venv/bin/pip install -r requirements.txt
       <div className="mt-4"><SourceList /></div>
 
       <p className="mt-12 text-sm text-ink-3">
-        Back to <Link to="/cycling-brain" className="text-berry underline underline-offset-2">the experiment</Link>.
+        Back to <Link to="/cycling-brain" className="text-berry underline underline-offset-2">Experiment 1</Link>.
       </p>
     </div>
   )

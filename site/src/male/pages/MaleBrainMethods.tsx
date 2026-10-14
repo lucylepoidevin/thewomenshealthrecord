@@ -4,9 +4,9 @@ import { SourceList } from '../components/Cite'
 const steps = [
   { n: 1, title: 'Fetch', body: 'The T1-weighted MPRAGE scan (0.8 mm, Siemens Prisma, 64-channel coil) and its sidecar for each of the 40 sessions were pulled from the public OpenNeuro bucket for ds005115. The resting-state, fieldmap, hippocampal T2 and physiology files were left on the server.' },
   { n: 2, title: 'Correct and align', body: 'N4 bias-field correction, then a 12-parameter affine to the MNI305 template with ANTsPy; the forward affine is kept per session.' },
-  { n: 3, title: 'Segment', body: 'The MONAI model-zoo bundle wholeBrainSeg_Large_UNEST_segmentation (133 labels) with its published inference configuration. Same model and settings as the cycling and pregnant brains.' },
+  { n: 3, title: 'Segment', body: 'The MONAI model-zoo bundle wholeBrainSeg_Large_UNEST_segmentation (133 labels) with its published inference configuration. Same model and settings as Experiments 1 and 2.' },
   { n: 4, title: 'Measure', body: 'Each label map pulled back into its session\'s native space by inverting the affine with nearest-neighbour interpolation; voxels counted there.' },
-  { n: 5, title: 'Compare', body: 'For every region: spread (coefficient of variation) over all 40 scans, over the 20 morning scans and over the 20 evening scans; the paired morning-to-evening change on the ten days with both, with a one-sample t-test on the ten pairs; and Spearman correlations with same-session testosterone, cortisol and estradiol, over all draws and over morning draws only. Her side of the comparison table is the cycling brain\'s own statistics, read straight from that experiment\'s data file.' },
+  { n: 5, title: 'Compare', body: 'For every region: spread (coefficient of variation) over all 40 scans, over the 20 morning scans and over the 20 evening scans; the paired morning-to-evening change on the ten days with both, with a one-sample t-test on the ten pairs; and Spearman correlations with same-session testosterone, cortisol and estradiol, over all draws and over morning draws only. Her side of the comparison table is Experiment 1\'s own statistics, read straight from that experiment\'s data file.' },
   { n: 6, title: 'Publish', body: 'Aligned scans and label maps downsampled to 1.5 mm and 8-bit, drawn by NiiVue with a lookup table that is transparent except for the chosen structure.' },
 ]
 
@@ -14,7 +14,7 @@ export default function MaleBrainMethods() {
   return (
     <div className="mx-auto max-w-3xl px-4 pt-16 pb-24">
       <p className="eyebrow">Methods · Experiment 3</p>
-      <h1 className="display mt-2 text-3xl sm:text-4xl font-medium leading-tight">Methods: male brain, morning and evening</h1>
+      <h1 className="display mt-2 text-3xl sm:text-4xl font-medium leading-tight">Methods: brain, morning and evening, for 30 days</h1>
       <p className="mt-6 text-lg text-ink-2 leading-relaxed">The same pipeline as the two experiments before it, with the comparison step built around time of day instead of cycle phase or gestation.</p>
       <ol className="mt-10 space-y-8">
         {steps.map(s => (
@@ -41,7 +41,7 @@ export default function MaleBrainMethods() {
 .venv/bin/python export_web.py        # public/data/male/{male.json, brain/*}`}</code></pre>
       <h2 className="display mt-14 text-2xl font-medium">Sources</h2>
       <div className="mt-4"><SourceList /></div>
-      <p className="mt-12 text-sm text-ink-3">Back to <Link to="/male-brain" className="text-berry underline underline-offset-2">the experiment</Link>.</p>
+      <p className="mt-12 text-sm text-ink-3">Back to <Link to="/male-brain" className="text-berry underline underline-offset-2">Experiment 3</Link>.</p>
     </div>
   )
 }

@@ -30,7 +30,7 @@ export function FindingsProse({ data, her }: { data: Male; her: HerStats | null 
         Across all forty scans, his whole-brain volume varied by {tb.cv_pct.toFixed(2)}% and his hippocampus by {hip.cv_pct.toFixed(2)}%. Take only the mornings, so that time of day is held fixed,
         and the spread falls to {tb.am_cv_pct?.toFixed(2)}% and {hip.am_cv_pct?.toFixed(2)}%.
         {her && her.total_brain && her.hippocampus && (
-          <> Her thirty mornings, on the same scanner with the same pipeline, came out at {her.total_brain.cv_pct.toFixed(2)}% and {her.hippocampus.cv_pct.toFixed(2)}%. Morning to morning,
+          <> Her 30 mornings, on the same scanner with the same pipeline, came out at {her.total_brain.cv_pct.toFixed(2)}% and {her.hippocampus.cv_pct.toFixed(2)}%. Morning to morning,
           the two brains sit in the same narrow band, a few tenths of a percent, and his is if anything the steadier. The thing that moved his was the clock.</>
         )}
       </p>
@@ -75,7 +75,7 @@ export function CompareTable({ data, her }: { data: Male; her: HerStats }) {
         </tbody>
       </table>
       <p className="mt-3 text-xs text-ink-3 leading-relaxed">
-        Spread is the coefficient of variation across scans. Her column is the cycling brain's 30 mornings; his "mornings" column is his 20 scans at 7 am, so the two are like for like. "7 am → 8 pm" is the
+        Spread is the coefficient of variation across scans. Her column is Experiment 1's 30 mornings; his "mornings" column is his 20 scans at 7 am, so the two are like for like. "7 am → 8 pm" is the
         mean paired change on the ten double days, bold where p &lt; 0.01 (one-sample t-test on ten pairs). Same scanner, same model, same pipeline for both people; different heads, so absolute sizes are not comparable.
       </p>
     </div>

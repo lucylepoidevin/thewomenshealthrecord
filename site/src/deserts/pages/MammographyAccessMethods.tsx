@@ -31,7 +31,7 @@ export default function MammographyAccessMethods() {
       <pre className="panel mt-3 overflow-x-auto text-sm leading-relaxed text-ink"><code>{`cd "mammography deserts project/pipeline"
 python3 build_deserts.py   # reads data/raw (FDA list, geocoder output, Census files) and writes site/public/data/deserts/deserts.json and us.json`}</code></pre>
       {data && <p className="mt-6 text-sm text-ink-3">Data generated {data.generated}.</p>}
-      <p className="mt-12 text-sm text-ink-3">Back to <Link to="/mammography-access" className="text-berry underline underline-offset-2">the map</Link>.</p>
+      <p className="mt-12 text-sm text-ink-3">Back to <Link to="/mammography-access" className="text-berry underline underline-offset-2">Experiment 7</Link>.</p>
     </div>
   )
 }

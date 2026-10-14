@@ -89,7 +89,7 @@ export default function DenseBreastData() {
 
       <h2 className="display mt-12 text-2xl font-medium">Sources</h2>
       <div className="mt-3"><SourceList sources={data.sources} /></div>
-      <p className="mt-12 text-sm text-ink-3">Back to <Link to="/dense-breast" className="text-berry underline underline-offset-2">the experiment</Link>.</p>
+      <p className="mt-12 text-sm text-ink-3">Back to <Link to="/dense-breast" className="text-berry underline underline-offset-2">Experiment 6</Link>.</p>
     </div>
   )
 }

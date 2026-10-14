@@ -38,7 +38,7 @@ export function FindingsProse({ data }: { data: Pregnancy }) {
         White matter went {fmt.pct(pct(t3, 'cerebral_wm', refOf('cerebral_wm')))} by the third trimester and was back to {fmt.pct(pct(twoYears, 'cerebral_wm', refOf('cerebral_wm')))} at two years.
       </p>
       <p>
-        The hippocampus, which the cycling brain watched move by half a percent across a month, read {fmt.pct(pct(t3, 'hippocampus', refOf('hippocampus')))} in the third trimester on the same-scanner
+        The hippocampus, which Experiment 1 watched move by half a percent across a month, read {fmt.pct(pct(t3, 'hippocampus', refOf('hippocampus')))} in the third trimester on the same-scanner
         comparison and {fmt.pct(pct(twoYears, 'hippocampus', refOf('hippocampus')))} at two years. The lateral ventricles, at {lv.baseline_cv_pct?.toFixed(1)}% spread even between the baseline scans, are too
         noisy at this resolution to read a trend from; the paper, with finer tools, found them growing. The whole brain's lowest point came at week {tbN.week}, scan {tbN.session}.
       </p>

@@ -31,7 +31,7 @@ export default function IngredientCheckMethods() {
       <pre className="panel mt-3 overflow-x-auto text-sm leading-relaxed text-ink"><code>{`cd "ingredient check project/pipeline"
 python3 build_lists.py     # downloads nothing itself; reads data/raw/ and writes site/public/data/ingredients/ingredients.json`}</code></pre>
       {data && <p className="mt-6 text-sm text-ink-3">Table generated {data.generated}.</p>}
-      <p className="mt-12 text-sm text-ink-3">Back to <Link to="/ingredient-check" className="text-berry underline underline-offset-2">the checker</Link>.</p>
+      <p className="mt-12 text-sm text-ink-3">Back to <Link to="/ingredient-check" className="text-berry underline underline-offset-2">Experiment 5</Link>.</p>
     </div>
   )
 }

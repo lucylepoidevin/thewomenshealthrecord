@@ -34,7 +34,7 @@ python3 fetch_msynth.py     # range-fetches the sample DICOMs and .loc files int
 python3 render.py           # windows, crops and rotates them into site/public/data/density/img and writes cases.json
 python3 build_density.py    # computes the BCSC figures and writes density.json with every source`}</code></pre>
       {data && <p className="mt-6 text-sm text-ink-3">Table generated {data.generated}; images retrieved {data.msynth.retrieved}.</p>}
-      <p className="mt-12 text-sm text-ink-3">Back to <Link to="/dense-breast" className="text-berry underline underline-offset-2">the experiment</Link>.</p>
+      <p className="mt-12 text-sm text-ink-3">Back to <Link to="/dense-breast" className="text-berry underline underline-offset-2">Experiment 6</Link>.</p>
     </div>
   )
 }

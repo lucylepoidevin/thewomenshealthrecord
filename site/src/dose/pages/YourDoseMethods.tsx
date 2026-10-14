@@ -31,7 +31,7 @@ export default function YourDoseMethods() {
       <pre className="panel mt-3 overflow-x-auto text-sm leading-relaxed text-ink"><code>{`cd "your dose project/pipeline"
 python3 build_drugs.py     # writes site/public/data/dose/drugs.json with every value's citation`}</code></pre>
       {data && (<><h2 className="display mt-12 text-2xl font-medium">Sources</h2><div className="mt-4"><SourceList file={data} /></div></>)}
-      <p className="mt-12 text-sm text-ink-3">Back to <Link to="/your-dose" className="text-berry underline underline-offset-2">the simulator</Link>.</p>
+      <p className="mt-12 text-sm text-ink-3">Back to <Link to="/your-dose" className="text-berry underline underline-offset-2">Experiment 4</Link>.</p>
     </div>
   )
 }

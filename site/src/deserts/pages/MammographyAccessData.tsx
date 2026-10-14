@@ -24,7 +24,7 @@ export default function MammographyAccessData() {
       {rows.length === 400 && <p className="mt-2 text-xs text-ink-3">Showing the first 400; search to narrow, or open the JSON.</p>}
       <h2 className="display mt-12 text-2xl font-medium">Sources</h2>
       <div className="mt-3"><SourceList sources={data.sources} /></div>
-      <p className="mt-12 text-sm text-ink-3">Back to <Link to="/mammography-access" className="text-berry underline underline-offset-2">the map</Link>.</p>
+      <p className="mt-12 text-sm text-ink-3">Back to <Link to="/mammography-access" className="text-berry underline underline-offset-2">Experiment 7</Link>.</p>
     </div>
   )
 }

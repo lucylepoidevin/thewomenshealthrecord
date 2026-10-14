@@ -8,7 +8,7 @@ const LIST: Omit<Source, 'n'>[] = [
   { id: 'ants', text: 'Avants BB, Tustison NJ, Song G, et al. A reproducible evaluation of ANTs similarity metric performance in brain image registration. NeuroImage 2011;54:2033. N4: Tustison NJ et al., IEEE TMI 2010.', url: 'https://github.com/ANTsX/ANTsPy' },
   { id: 'niivue', text: 'NiiVue: a WebGL2 medical image viewer. Hanayik T, Rorden C, et al.', url: 'https://github.com/niivue/niivue' },
   { id: 'wbhi', text: 'Ann S. Bowers Women\'s Brain Health Initiative, UC Santa Barbara. Maternal Brain Project.', url: 'https://wbhi.ucsb.edu/' },
-  { id: 'cycling', text: 'The Women\'s Health Record, Experiment 1: The cycling brain (28andMe, the same lab\'s 30-day menstrual-cycle study).', url: 'https://lucylepoidevin.github.io/thewomenshealthrecord/#/cycling-brain' },
+  { id: 'cycling', text: 'The Women\'s Health Record, Experiment 1: One woman\'s brain across a menstrual cycle (28andMe, the same lab\'s 30-day menstrual-cycle study).', url: 'https://lucylepoidevin.github.io/thewomenshealthrecord/#/cycling-brain' },
 ]
 export const SOURCES: Source[] = LIST.map((s, i) => ({ ...s, n: i + 1 }))
 export const src = (id: string) => SOURCES.find(s => s.id === id)!

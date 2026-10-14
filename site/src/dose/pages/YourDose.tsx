@@ -58,7 +58,7 @@ export default function YourDose() {
           <strong>Caffeine.</strong> Between men and women off hormonal contraception the difference is small. Oestrogen is what matters. The pill slowed caffeine clearance by 40% and stretched its
           half-life from 5.4 to 7.9 hours;<C file={data} id="abernethy1985" /> late pregnancy stretched it from 3 to 10.5 hours.<C file={data} id="knutti1982" /> Set the state to pregnancy and
           watch a 1 pm coffee still sitting in the blood at bedtime, and the next morning. Even the late luteal phase of an ordinary cycle slows it, in step with progesterone.<C file={data} id="lane1992" />
-          If you have read <Link to="/cycling-brain">the cycling brain</Link>, this is the same hormone, doing something else.
+          In <Link to="/cycling-brain">Experiment 1, the menstrual cycle</Link>, this is the same hormone, doing something else.
         </p>
         <p>
           <strong>Metoprolol.</strong> A beta-blocker taken by millions for blood pressure and after heart attacks. Twenty healthy volunteers took 100 mg twice a day; the women ended up with about

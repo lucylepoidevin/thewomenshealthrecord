@@ -13,7 +13,7 @@ function KeyNumbers({ data }: { data: Male }) {
     { label: 'Testosterone, 7 am vs 8 pm', value: `${fmt.n(hs.testosterone.am_median)} vs ${fmt.n(hs.testosterone.pm_median)} ng/dL`, note: `medians over ${hs.testosterone.am_n} morning and ${hs.testosterone.pm_n} evening draws` },
     { label: 'Cortisol, 7 am vs 8 pm', value: `${fmt.n(hs.cortisol.am_median)} vs ${fmt.n(hs.cortisol.pm_median)} µg/dL`, note: 'the body\'s wake-up hormone, at its peak and its floor' },
     { label: 'Whole brain, 7 am → 8 pm', value: tb?.ampm_mean_pct != null ? fmt.pct(tb.ampm_mean_pct, 2) : '–', note: tb ? `smaller in the evening on ${tb.ampm_n_down} of ${tb.ampm_n} double days` : '' },
-    { label: 'Scans', value: '40 scans in 30 days', note: '0.8 mm T1-weighted MRI, the same Santa Barbara scanner as the cycling brain' },
+    { label: 'Scans', value: '40 scans in 30 days', note: '0.8 mm T1-weighted MRI, the same Santa Barbara scanner as Experiment 1' },
   ]
   return (
     <div className="grid gap-5 sm:grid-cols-2">
@@ -44,7 +44,7 @@ export default function MaleBrain() {
         </p>
         <p>
           The brain above is his at each visit, morning scans drawn as filled dots and evening scans hollow. Pick a structure, slide through the month, and watch what moves. Then look at the
-          table further down, where his month sits next to <Link to="/cycling-brain">hers</Link>.
+          table further down, where his 30 days sit next to <Link to="/cycling-brain">the menstrual cycle data from Experiment 1</Link>.
         </p>
       </>
     ) },
