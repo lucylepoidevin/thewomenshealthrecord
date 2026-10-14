@@ -2,13 +2,11 @@ import { Link } from 'react-router-dom'
 import { CHAPTERS } from '../lib/chapters'
 import { EXPERIMENTS } from '../experiments/list'
 
-const BASE = import.meta.env.BASE_URL
-
 export default function Home() {
   return (
     <div>
-      <section className="mx-auto max-w-6xl px-4 pt-12 pb-10 grid gap-8 lg:grid-cols-[minmax(0,26rem)_1fr] lg:items-center">
-        <div>
+      <section className="mx-auto max-w-6xl px-4 pt-12 pb-6">
+        <div className="max-w-[42rem]">
           <h1 className="display text-3xl sm:text-[2.5rem] font-medium leading-[1.15]">The Women's Health Record</h1>
           <p className="mt-4 text-[17px] text-ink-2 leading-relaxed">
             Public data on how medicine measures, tests and treats women, re-analysed from the primary sources. Six chapters and eight interactive experiments,
@@ -22,10 +20,6 @@ export default function Home() {
             <Link to="/methods" className="text-berry underline underline-offset-4">Methods</Link>
           </p>
         </div>
-        <Link to="/mammography-access" className="block overflow-hidden rounded-lg border border-hairline bg-[#121014]">
-          <img src={`${BASE}home/mammography-access.png`} alt="Every county in the United States coloured by certified mammography facilities per ten thousand women aged 40 to 74" className="block w-full" />
-          <p className="px-4 py-2.5 text-[13px] text-[#B9AEB4]">Certified mammography facilities per 10,000 women aged 40 to 74, by county. Experiment 7.</p>
-        </Link>
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-8 grid gap-x-12 gap-y-10 lg:grid-cols-2">

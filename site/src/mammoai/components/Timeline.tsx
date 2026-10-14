@@ -13,7 +13,7 @@ export default function Timeline({ devices, field }: { devices: Device[]; field:
   const w = Math.max(320, width), h = 230
   const m = { top: 16, right: 12, bottom: 28, left: 150 }
   const years = d3.extent(devices, d => d.year) as [number, number]
-  const x = d3.scaleLinear().domain([Math.min(years[0], 2016) - 0.5, years[1] + 0.5]).range([m.left, w - m.right])
+  const x = d3.scaleLinear().domain([2015.5, years[1] + 0.5]).range([m.left, w - m.right])
   const y = d3.scaleBand<Role>().domain(ROLES).range([m.top, h - m.bottom]).padding(0.3)
   const [hov, setHov] = useState<Device | null>(null)
   // stack dots within the same year and role
@@ -25,12 +25,18 @@ export default function Timeline({ devices, field }: { devices: Device[]; field:
       <svg width={w} height={h}>
         {ROLES.map(role => <g key={role}><line x1={m.left} x2={w - m.right} y1={(y(role) ?? 0) + y.bandwidth() / 2} y2={(y(role) ?? 0) + y.bandwidth() / 2} stroke="var(--c-grid)" /><text x={m.left - 8} y={(y(role) ?? 0) + y.bandwidth() / 2} dy="0.32em" textAnchor="end" fontSize={11} fill="var(--c-text-2)">{ROLE_LABEL[role]}</text></g>)}
         {d3.range(2016, years[1] + 1).map(yr => <text key={yr} x={x(yr)} y={h - 8} textAnchor="middle" fontSize={10} fill="var(--c-text-2)">{yr}</text>)}
-        {early.length > 0 && <text x={m.left + 2} y={m.top - 4} fontSize={9.5} fill="var(--c-text-2)">{early.length} earlier clearances (1998 to 2015) not drawn</text>}
-        {Array.from(groups.values()).flatMap(g => g.filter(d => d.year >= 2016).map((d, i) => {
-          const cx = x(d.year) + ((i % 4) - 1.5) * (r * 2.2), cy = (y(d.role) ?? 0) + y.bandwidth() / 2 + (Math.floor(i / 4) - 0.5) * (r * 2.2)
+        {early.length > 0 && <text x={w - m.right} y={m.top - 4} textAnchor="end" fontSize={9.5} fill="var(--c-text-2)">{early.length} earlier clearances (1998 to 2015) not drawn</text>}
+        {Array.from(groups.values()).flatMap(g0 => {
+          const g = g0.filter(d => d.year >= 2016)
+          const band = x(2017) - x(2016), step = r * 2.4, perRow = Math.max(1, Math.floor((band - step) / step))
+          const rows = Math.ceil(g.length / perRow)
+          return g.map((d, i) => {
+          const row = Math.floor(i / perRow), inRow = Math.min(perRow, g.length - row * perRow), col = i % perRow
+          const cx = x(d.year) + (col - (inRow - 1) / 2) * step, cy = (y(d.role) ?? 0) + y.bandwidth() / 2 + (row - (rows - 1) / 2) * step
           const on = Boolean(d[field])
           return <circle key={d.submission} cx={cx} cy={cy} r={r} fill={on ? 'var(--c-emphasis)' : 'transparent'} stroke="var(--c-emphasis)" strokeWidth={1.2} onPointerEnter={() => setHov(d)} onPointerLeave={() => setHov(null)} style={{ cursor: 'default' }} />
-        }))}
+          })
+        })}
       </svg>
       <div className="mt-1 flex flex-wrap items-center gap-x-4 gap-y-1 px-2 text-[11px] text-ink-2">
         <span className="inline-flex items-center gap-1.5"><span className="inline-block h-2.5 w-2.5 rounded-full" style={{ background: 'var(--c-emphasis)' }} />{FIELD_LABEL[field]}</span>
